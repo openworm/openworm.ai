@@ -11,7 +11,7 @@ class WormAtlasParser:
 
     html = None
 
-    def __init__(self, filename, title):
+    def __init__(self, title, filename):
         ref = title.replace(" ", "_")
 
         self.markdown = open("%s/%s.md" % (MARKDOWN_DIR, ref), "w")
@@ -35,6 +35,7 @@ class WormAtlasParser:
 
                 if element is not None:
                     # print(table.replace('\n', '%s\n'%count))
+
                     print("%s -- |%s...|\n" % (count, str(element)[:200]))
                     print(element.contents)
                     self.process_paragraph(element)
@@ -44,7 +45,11 @@ class WormAtlasParser:
 
     def process_paragraph(self, paragraph):
         p_md = str(paragraph)
-        p_md = p_md.replace("  ", "").replace("ï¿½", "'")
+
+        while "  " in p_md:
+            p_md = p_md.replace("  ", " ")
+
+        p_md.replace("ï¿½", "'").replace("\n", "")
 
         self.markdown.write("%s\n\n" % p_md)
 
@@ -63,7 +68,10 @@ class WormAtlasParser:
 
         p = str(paragraph)
 
-        p = p.replace("  ", "").replace("ï¿½", "'")
+        while "  " in p:
+            p = p.replace("  ", " ")
+
+        p = p.replace("ï¿½", "'").replace("\n", "")
 
         self.plaintext.write("%s\n\n" % p[3:-4])
 
@@ -76,6 +84,18 @@ class WormAtlasParser:
 
 
 if __name__ == "__main__":
-    filename = "../corpus/wormatlas/Handbook - Gap Junctions.html"
+    guides = {}
 
-    wbp = WormAtlasParser(filename, "Gap Junctions")
+    guides["Introduction"] = "../corpus/wormatlas/Handbook - Introduction.html"
+    guides["Gap Junctions"] = "../corpus/wormatlas/Handbook - Gap Junctions.html"
+
+    with open("../processed/markdown/wormatlas/README.md", "w") as readme:
+        readme.write("""
+## WormAtlas Handbooks
+ 
+The following handbooks from [WormAtlas](https://www.wormatlas.org/handbookhome.htm) have been translated to Markdown format
+
+""")
+        for g in guides:
+            wbp = WormAtlasParser(g, guides[g])
+            readme.write(f"**[{g}]({ g.replace(' ', '_') }.md)**\n\n")
