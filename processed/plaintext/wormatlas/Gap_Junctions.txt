@@ -1,3 +1,5 @@
+Gap Junctions
+
 The gap junctions (electrical synapses) of C. elegans
 constitute a ubiquitous type of cell-cell contact formed by innexin
 proteins. The innexins are expressed in almost every cell and while they
