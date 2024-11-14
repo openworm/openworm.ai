@@ -196,7 +196,7 @@ _<p><a id="Nguyen1999" name="Nguyen1999"></a>Nguyen, C.Q., Hall, D.H., Yang, Y.
 
 _<p><a id="Oshim2013" name="Oshim2013"></a>Oshima, A., Matsuzawa, T., Nishikawa, K. and Fujiyoshi, Y. 2013. Oligomeric structure and functional characterization of the <em>C. elegans</em> innexin-6 gap junction protein. J. Biol. Chem.<strong> 288</strong>: 10513-21. <a href="http://dx.doi.org/10.1074/jbc.M112.428383" target="_blank">Article</a></p>_
 
-<p> <a id="Oshima2016" name="Oshima2016"></a>Oshima, A., Matsuzawa, T., Murata, K., Tani, K. and Fujiyoshi, Y. 2016. Hexadecameric structure of an invertebrate gap junction channel. J. Mol. Biol. <strong>428</strong>: 1227-1236. <a href="https://doi.org/10.1016/j.jmb.2016.02.011" target="_blank">Article</a></p>
+_<p><a id="Oshima2016" name="Oshima2016"></a>Oshima, A., Matsuzawa, T., Murata, K., Tani, K. and Fujiyoshi, Y. 2016. Hexadecameric structure of an invertebrate gap junction channel. J. Mol. Biol. <strong>428</strong>: 1227-1236. <a href="https://doi.org/10.1016/j.jmb.2016.02.011" target="_blank">Article</a></p>_
 
 _<p><a id="Penuela2013" name="Penuela2013"></a>Penuela, S., Gehl, R. and Laird, D.W. 2013. The biochemistry and function of pannexin channels. BBA-Biomembranes <strong>1828</strong>: 15-22. <a href="https://doi.org/10.1016/j.bbamem.2012.01.017" target="_blank">Article</a></p>_
 

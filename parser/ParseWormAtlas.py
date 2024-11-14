@@ -150,7 +150,9 @@ class WormAtlasParser:
                 a = a.replace_with(a.next_element)
 
         tags_to_plaintext = ["em", "strong"]
-        tags_to_remove = ["u"]
+        tags_to_remove = ["u", "img"]
+        tags_to_return = ["div", "br"]
+        RETURN = "RETURN"
 
         for tag in tags_to_plaintext:
             for ee in paragraph.find_all(tag):
@@ -159,8 +161,12 @@ class WormAtlasParser:
                 ee = ee.replace_with(cc)
 
         for tag in tags_to_remove:
-            for ee in paragraph.find_all(tag):
-                ee = ee.replace_with("")
+            for rr in paragraph.find_all(tag):
+                rr = rr.replace_with("")
+
+        for tag in tags_to_return:
+            for rr in paragraph.find_all(tag):
+                rr = rr.replace_with(RETURN)
 
         for ss in paragraph.find_all("span"):
             cc = " ".join([str(c) for c in ss.strings])
@@ -171,14 +177,15 @@ class WormAtlasParser:
 
         p = p.replace("\t", "  ")
 
-        # p = p.replace("&lt;br/&gt;", "\n")
         while "  " in p:
             p = p.replace("  ", " ")
 
         p = self._fix_chars(p).replace("\n", "")
 
+        # p = p.replace("&lt;br/&gt;", "\n")
         p = p.replace("<br/>", "\n\n")
         p = p.replace("<br>", "\n\n")
+        p = p.replace(RETURN, "\n\n")
 
         if verbose:
             print(p)
