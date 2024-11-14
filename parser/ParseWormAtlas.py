@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup, NavigableString
+from bs4 import BeautifulSoup, NavigableString, Comment
 
 MARKDOWN_DIR = "../processed/markdown/wormatlas"
 PLAINTEXT_DIR = "../processed/plaintext/wormatlas"
@@ -79,7 +79,9 @@ class WormAtlasParser:
         plain = ""
         for s in element.contents:
             # print(" >>> %s" % s)
-            if type(s) is NavigableString:
+            if type(s) is Comment:
+                pass
+            elif type(s) is NavigableString:
                 plain += "%s" % s.replace("  ", " ")
             elif s.has_attr("name"):
                 pass
@@ -173,7 +175,7 @@ class WormAtlasParser:
             # print("[%s]" % cc)
             ss = ss.replace_with(cc)
 
-        p = str(paragraph)
+        p = self._get_plain_string(paragraph)
 
         p = p.replace("\t", "  ")
 
@@ -190,7 +192,7 @@ class WormAtlasParser:
         if verbose:
             print(p)
 
-        self.plaintext.write("%s\n\n" % p[3:-4])
+        self.plaintext.write("%s\n\n" % p)
 
     def finalise(self):
         self.plaintext.close()
