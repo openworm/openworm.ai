@@ -60,7 +60,7 @@ class WormAtlasParser:
                             self.process_reference(element)
                         else:
                             if (
-                                "style10x" not in element_str
+                                "style10" not in element_str
                                 and "style13x" not in element_str
                             ):
                                 self.process_paragraph(element)
@@ -141,21 +141,42 @@ class WormAtlasParser:
         if len(p_md) > 7:
             self.markdown.write("%s\n\n" % p_md)
 
+        ### Plaintext...
+
         for a in paragraph.find_all("a"):
             if "href" in a.attrs:
                 a = a.replace_with(a.next_element)
 
-        for em in paragraph.find_all("em"):
-            cc = " ".join([str(c) for c in em.contents])
-            em = em.replace_with(cc)
+        tags_to_plaintext = ["em", "strong"]
+        tags_to_remove = ["u"]
+
+        for tag in tags_to_plaintext:
+            for ee in paragraph.find_all(tag):
+                cc = " ".join([str(c) for c in ee.strings])
+                # print("[%s]" % cc)
+                ee = ee.replace_with(cc)
+
+        for tag in tags_to_remove:
+            for ee in paragraph.find_all(tag):
+                ee = ee.replace_with("")
+
+        """for ss in paragraph.find_all('span'):
+                cc = " ".join([str(c) for c in ee.strings])
+                # print("[%s]" % cc)
+                ee = ee.replace_with(cc)"""
 
         p = str(paragraph)
 
         p = p.replace("\t", "  ")
+
+        # p = p.replace("&lt;br/&gt;", "\n")
         while "  " in p:
             p = p.replace("  ", " ")
 
         p = self._fix_chars(p).replace("\n", "")
+
+        p = p.replace("<br/>", "\n\n")
+        p = p.replace("<br>", "\n\n")
 
         if verbose:
             print(p)
