@@ -16,7 +16,7 @@ class WormAtlasParser:
 
         self.markdown = open("%s/%s.md" % (MARKDOWN_DIR, ref), "w")
 
-        self.markdown.write("## %s\n\n" % title)
+        self.markdown.write("# %s\n\n" % title)
 
         self.plaintext = open("%s/%s.txt" % (PLAINTEXT_DIR, ref), "w")
 
@@ -24,45 +24,88 @@ class WormAtlasParser:
 
         self.json["title"] = title
 
+        verbose = False
+
         with open(filename, encoding="ISO-8859-1") as f:
             self.html = f.read()
 
             soup = BeautifulSoup(self.html, "html.parser")
 
             count = 0
-            for element in soup.body.find_all("table")[5].find_all("p"):
+            for element in soup.body.find_all("table")[5].find_all(["p", "span"]):
                 print("%s ==================================" % count)
+                element_str = str(element)
 
                 if element is not None:
                     # print(table.replace('\n', '%s\n'%count))
 
-                    print("%s -- |%s...|\n" % (count, str(element)[:200]))
-                    # print(element.contents)
-                    anchor = (
-                        element.contents[0]["name"]
-                        if (
-                            len(element.contents) > 0
-                            and type(element.contents[0]) is not NavigableString
-                            and element.contents[0].has_attr("name")
+                    if verbose:
+                        print(
+                            "%s -- |%s...|\n"
+                            % (count, element_str.replace("\n", "")[:200])
                         )
-                        else ""
-                    )
+                    if element.name == "p":
+                        # print(element.contents)
+                        anchor = (
+                            element.contents[0]["name"]
+                            if (
+                                len(element.contents) > 0
+                                and type(element.contents[0]) is not NavigableString
+                                and element.contents[0].has_attr("name")
+                            )
+                            else ""
+                        )
 
-                    print("Anchor: - %s" % anchor)
+                        if "19" in anchor or "20" in anchor:
+                            self.process_reference(element)
+                        else:
+                            if (
+                                "style10x" not in element_str
+                                and "style13x" not in element_str
+                            ):
+                                self.process_paragraph(element)
 
-                    if "19" in anchor or "20" in anchor:
-                        self.process_reference(element)
-                    else:
-                        self.process_paragraph(element)
+                    elif element.name == "span":
+                        if element.attrs["class"][0] == "style10":
+                            self.process_header(element, 1)
+                        if element.attrs["class"][0] == "style13":
+                            self.process_header(element, 2)
+
                 count += 1
 
         self.finalise()
 
+    def get_plain_string(self, element):
+        plain = ""
+        for s in element.contents:
+            # print(" >>> %s" % s)
+            if type(s) is NavigableString:
+                plain += "%s" % s.replace("  ", " ")
+            elif s.has_attr("name"):
+                pass
+            elif s.has_attr("href"):
+                plain += "(%s)" % s.attrs["href"]
+            else:
+                for c in s.contents:
+                    plain += "%s" % c
+
+        return plain.strip()
+
+    def process_header(self, element, depth):
+        print("  - HEADER: %s" % str(element).replace("\n", ""))
+        e_md = self.get_plain_string(element)
+
+        if len(e_md) > 0 and "style13" not in e_md:
+            print("  - HEADING: [%s]" % (e_md))
+            self.markdown.write("%s %s\n\n" % ("#" * (depth + 1), e_md))
+
     def process_reference(self, reference):
+        verbose = False
         reference.a["id"] = reference.a["name"]
         r_md = str(reference)
 
-        print("  - REF: %s...\n" % (r_md[:80]))
+        if verbose:
+            print("  - REF: %s...\n" % (r_md[:80]))
 
         r_md = r_md.replace("\t", "  ")
         while "  " in r_md:
@@ -73,7 +116,7 @@ class WormAtlasParser:
         self.markdown.write("_%s_\n\n" % r_md)
 
         for s in reference.contents:
-            print(" >>> %s" % s)
+            # print(" >>> %s" % s)
             if type(s) is NavigableString:
                 self.plaintext.write("%s" % s.replace("  ", " "))
             elif s.has_attr("name"):
@@ -87,28 +130,24 @@ class WormAtlasParser:
         self.plaintext.write("\n\n")
 
     def process_paragraph(self, paragraph):
+        verbose = False
         p_md = str(paragraph)
 
         p_md = p_md.replace("\t", "  ")
         while "  " in p_md:
             p_md = p_md.replace("  ", " ")
 
-        p_md.replace("ï¿½", "'").replace("\n", "")
+        p_md = p_md.replace("ï¿½", "'").replace("\n", "")
 
         self.markdown.write("%s\n\n" % p_md)
 
         for a in paragraph.find_all("a"):
-            print("--- %s" % a)
             if "href" in a.attrs:
                 a = a.replace_with(a.next_element)
-                print("------ %s" % a)
 
         for em in paragraph.find_all("em"):
-            print("--- %s" % em)
             cc = " ".join([str(c) for c in em.contents])
-            print("---- %s" % cc)
             em = em.replace_with(cc)
-            print("------ %s" % em)
 
         p = str(paragraph)
 
@@ -117,6 +156,9 @@ class WormAtlasParser:
             p = p.replace("  ", " ")
 
         p = p.replace("ï¿½", "'").replace("\n", "")
+
+        if verbose:
+            print(p)
 
         self.plaintext.write("%s\n\n" % p[3:-4])
 
