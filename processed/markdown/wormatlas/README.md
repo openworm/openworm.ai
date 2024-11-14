@@ -7,5 +7,7 @@ The following handbooks from [WormAtlas](https://www.wormatlas.org/handbookhome.
 
 **[Alimentary System](Alimentary_System.md)**
 
+**[Pharynx](Pharynx.md)**
+
 **[Gap Junctions](Gap_Junctions.md)**
 
