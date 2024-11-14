@@ -125,7 +125,9 @@ class WormAtlasParser:
 
         self.markdown.write("_%s_\n\n" % r_md)
 
-        self.plaintext.write("%s\n\n" % self._get_plain_string(reference))
+        self.plaintext.write(
+            "%s\n\n" % self._get_plain_string(reference).replace("\n", "")
+        )
 
     def process_paragraph(self, paragraph):
         verbose = False
@@ -160,10 +162,10 @@ class WormAtlasParser:
             for ee in paragraph.find_all(tag):
                 ee = ee.replace_with("")
 
-        """for ss in paragraph.find_all('span'):
-                cc = " ".join([str(c) for c in ee.strings])
-                # print("[%s]" % cc)
-                ee = ee.replace_with(cc)"""
+        for ss in paragraph.find_all("span"):
+            cc = " ".join([str(c) for c in ss.strings])
+            # print("[%s]" % cc)
+            ss = ss.replace_with(cc)
 
         p = str(paragraph)
 

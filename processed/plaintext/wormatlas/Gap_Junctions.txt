@@ -36,7 +36,7 @@ Transitory gap junctions have been shown to occur between developing neurons at 
 
    4.1) Muscle
 
-There are a handful of major groups of muscles in the animal, and within each grouping, gap junctions prominently link homologous (or related) muscles to their immediate neighbors (GapjunctFIG 3 and GapjunctFIG 4). This underlies coordinated contractions passing along the length of various body structures during normal behavior, or which operate during more complex sequential events, such as pharyngeal contractions during food consumption, egg-laying by the hermaphrodite, defecation by specialized tail muscles, and the male tail's discrete sequence of mating behaviors involving many different muscle groups. (For overview see Hermaphrodite Muscle System - Introduction.)<div align="center"><img align="middle" alt="Gapjunct 4 Gap junctions link muscle cells into functional units" border="0" class="Galborder" height="700" id="Gapjunct4" name="Gapjunct4" src="Handbook%20-%20Gap%20Junctions_files/GapjunctFIG4lr.jpg" width="600"/><a id="Gapjunct4" name="Gapjunct4"></a></div><span class="picturetitle"> GapjunctFIG 4: Gap junctions link muscle cells into functional units.</span><span class="style2"> A. Pharyngeal muscles fall into 8 segmental sets, pm1-pm8, with gap junctions (red symbols) linking neighboring segments to one another. Additional gap junctions link all muscles within a segment indirectly for pm2-pm7, via local gap junctions to marginal cells (not shown). Waves of radial contractions pass quickly along the pharynx, even without chemical synaptic input, causing widening of the central lumen. Each segment has been pulled slightly apart graphically to show where gap junctions link them to neighboring segments. Anterior is to the left in each panel.B. Head and bodywall muscles are arranged in almost segmental fashion, with gap junctions connecting all neighboring muscles, both in L/R groups, and linearly along the head and bodywall. Most gap junctions occur on extended muscle arms, as highlighted in panel C. Waves of contraction pass along the body, causing local shortening of either dorsal or ventral muscles, while the opposing quadrants relax in the same locale. View from left aspect at low power, showing only the left side BWM quadrants; compare to panel C showing all four BWM quadrants.C. Bodywall muscles (BWMs) contact neighbors via specialized long thin muscle arms extending medially, where they exchange gap junctions with other muscles, and receive neuromuscular junctions from motor axons lying in the two motor nerve cords (shown in red). White circles mark locales where neuromuscular junctions and gap junctions occur at dorsal and ventral muscle plates. D. Three types of specialized (non-equivalent) muscles for defecation in hermaphrodite tail extend muscle arms to the surface of pre-anal ganglion (shown in pale red). White dotted circle indicates zone where overlapping muscle arms form gap junctions with one another, and receive neuromuscular junctions from motor axons.</span>
+There are a handful of major groups of muscles in the animal, and within each grouping, gap junctions prominently link homologous (or related) muscles to their immediate neighbors (GapjunctFIG 3 and GapjunctFIG 4). This underlies coordinated contractions passing along the length of various body structures during normal behavior, or which operate during more complex sequential events, such as pharyngeal contractions during food consumption, egg-laying by the hermaphrodite, defecation by specialized tail muscles, and the male tail's discrete sequence of mating behaviors involving many different muscle groups. (For overview see Hermaphrodite Muscle System - Introduction.)<div align="center"><img align="middle" alt="Gapjunct 4 Gap junctions link muscle cells into functional units" border="0" class="Galborder" height="700" id="Gapjunct4" name="Gapjunct4" src="Handbook%20-%20Gap%20Junctions_files/GapjunctFIG4lr.jpg" width="600"/><a id="Gapjunct4" name="Gapjunct4"></a></div> GapjunctFIG 4: Gap junctions link muscle cells into functional units. A. Pharyngeal muscles fall into 8 segmental sets, pm1-pm8, with gap junctions ( red symbols ) linking neighboring segments to one another. Additional gap junctions link all muscles within a segment indirectly for pm2-pm7, via local gap junctions to marginal cells (not shown). Waves of radial contractions pass quickly along the pharynx, even without chemical synaptic input, causing widening of the central lumen. Each segment has been pulled slightly apart graphically to show where gap junctions link them to neighboring segments. Anterior is to the left in each panel. B. Head and bodywall muscles are arranged in almost segmental fashion, with gap junctions connecting all neighboring muscles, both in L/R groups, and linearly along the head and bodywall. Most gap junctions occur on extended muscle arms, as highlighted in panel C . Waves of contraction pass along the body, causing local shortening of either dorsal or ventral muscles, while the opposing quadrants relax in the same locale. View from left aspect at low power, showing only the left side BWM quadrants; compare to panel C showing all four BWM quadrants. C. Bodywall muscles (BWMs) contact neighbors via specialized long thin muscle arms extending medially, where they exchange gap junctions with other muscles, and receive neuromuscular junctions from motor axons lying in the two motor nerve cords (shown in red). White circles mark locales where neuromuscular junctions and gap junctions occur at dorsal and ventral muscle plates. D. Three types of specialized (non-equivalent) muscles for defecation in hermaphrodite tail extend muscle arms to the surface of pre-anal ganglion (shown in pale red). White dotted circle indicates zone where overlapping muscle arms form gap junctions with one another, and receive neuromuscular junctions from motor axons.
 
 The pharynx is responsible for the ingestion and preliminary processing of its main food source, small bacteria, by very rapid contractions of coordinated muscle groups that are well connected by gap junctions (see Hermaphrodite Alimentary System - Pharynx). Pharyngeal muscle groups lie in eight consecutive segments along the alimentary canal (GapjunctFIG 4A and GapjunctFIG 5). Muscles are linked within each set to all the other muscles in their segment via gap junctions to marginal cells (which separate muscles within each segment) (GapjunctFIG 3), and then linked again to muscles in the adjacent segment along the chain (Albertson and Thomson, 1976; Altun et al., 2009). These pharyngeal gap junctions underlie extremely fast radial contractions during feeding to sweep food items along the alimentary canal (Trojanowski et al., 2016). Virtually all pharyngeal muscle groups are organized in segmental fashion, and connected to their neighboring segments, including support cells, by a multiplicity of innexin channels (GapjunctFIG 5). Pharyngeal contractions are too rapid to be explained by chemical synaptic inputs from motor neurons, although pharyngeal neurons may influence the pharynx to change from one mode of action to the next (Raizen and Avery, 1994; Trojanowski and Fang-Yen, 2015). Instead, spontaneous contractility of the individual muscle types must drive the rate of action. It has been shown that virtually all pharyngeal neurons can be laser-ablated, individually or en masse, without abolishing the basal rhythm of muscle contraction (Avery and Horvitz, 1989). Pharyngeal muscles are divided into eight small groups of cells along the length of the organ (GapjunctFIG 3). Within one cell group (segment), all muscles appear to express the same set of innexins, and in virtually all cases they express several innexins either at high levels or at lower levels (Altun et al., 2009). Along the length of the pharynx, neighboring segmental groups express different assortments of innexins, so that heteromeric gap junctions between segments seem likely to be the rule here rather than the exception (GapjunctFIG 5). 
 
@@ -50,7 +50,7 @@ The layout of neuromuscular junction inputs to all bodywall muscle cells within 
 
 Head muscles use gap junctions to link all muscle cells in each of the four quadrants to one another within the quadrant, and via muscle arms extending near the anterior pharynx, contacting other muscle quadrants and the GLR support cells along the inner surface of the nerve ring (GapjunctFIG 6; Hermaphrodite Muscle System - GLR cells). GLRs are linked via gap junctions to each other, and also to a set of four RME motor neurons from the nerve ring. Importantly, the four muscle quadrants in the head can still operate somewhat independently from one another, so that the animal can control head motions in all directions, unlike the restricted range of motion possible for other bodywall muscles.
 
-<span class="picturetitle"> GapjunctFIG 6: Muscle arms of the head muscles are linked by gap junctions.</span><span class="style2"> A. Diagram showing two stylized head muscle arms (dark green) approaching nerve ring. Muscle arms from the 32 muscles in the head and neck project onto the inside surface of the nerve ring in a highly ordered fashion. Their terminal branches lie between the processes of GLR cells (golden yellow) on the inside and the motor neurons of the nerve ring (dark red and purple) on the outside. Arms from the somatic head muscles run posteriorly until they reach the posterior nerve ring region. The arms from each muscle row then make an anterior arc of about 45' and extend inward to reach between the outside surface of the GLRs and the inner surface of the neural plate. This inward turn involves close apposition to the GLR cell bodies. In the neck, somatic muscles extend arms both to the nerve ring and to either the ventral or dorsal nerve cords where they receive additional synapses (not shown). (Light green) pharynx; (orange) basal lamina. B. GLR cells make extensive gap junctions (red bars) to the muscle arms and to RME neurons as shown. For stylistic reasons, RME processes are shown inside the GLR cell layer. In actuality, they lie outside the GLRs and muscle plate. There are also gap junctions between RME neurons and between the muscle bellies of the muscles, occurring on lateral cell membranes where two muscles meet within the quadrant. No gap junctions are seen between the muscle arms of cells within the same quadrant, but gap junctions exist between arms of cells in different quadrants. (Based on White et al., 1986.)</span>
+ GapjunctFIG 6: Muscle arms of the head muscles are linked by gap junctions. A. Diagram showing two stylized head muscle arms ( dark green ) approaching nerve ring. Muscle arms from the 32 muscles in the head and neck project onto the inside surface of the nerve ring in a highly ordered fashion. Their terminal branches lie between the processes of GLR cells ( golden yellow ) on the inside and the motor neurons of the nerve ring ( dark red  and  purple ) on the outside. Arms from the somatic head muscles run posteriorly until they reach the posterior nerve ring region. The arms from each muscle row then make an anterior arc of about 45' and extend inward to reach between the outside surface of the GLRs and the inner surface of the neural plate. This inward turn involves close apposition to the GLR cell bodies. In the neck, somatic muscles extend arms both to the nerve ring and to either the ventral or dorsal nerve cords where they receive additional synapses (not shown). ( Light green ) pharynx; ( orange ) basal lamina.  B. GLR cells make extensive gap junctions ( red bars ) to the muscle arms and to RME neurons as shown. For stylistic reasons, RME  processes are shown inside the GLR cell layer. In actuality, they lie outside the GLRs and muscle plate. There are also gap junctions between RME  neurons and between the muscle bellies of the muscles, occurring on lateral cell membranes where two muscles meet within the quadrant. No gap junctions are seen between the muscle arms of cells within the same quadrant, but gap junctions exist between arms of cells in different quadrants. (Based on  White et al., 1986 .)
 
 4.1.4 Sex-specific Muscles
 
@@ -118,9 +118,7 @@ Gap junctions are prominent among motor neurons that lie in sequential fashion a
 
   5) References
 
-Abdus-Saboor, I., Mancuso, V.P., Murray, J.I., Palozola, K., Norris, C., Hall, D.H.,
- Howell, K., Huang, K. and Sundaram, M.V. 2011. Notch and Ras promote 
-sequential steps of excretory tube development in C. elegans. Development 138: 3545-55. (http://dx.doi.org/10.1242/dev.068148)
+Abdus-Saboor, I., Mancuso, V.P., Murray, J.I., Palozola, K., Norris, C., Hall, D.H., Howell, K., Huang, K. and Sundaram, M.V. 2011. Notch and Ras promote sequential steps of excretory tube development in C. elegans. Development 138: 3545-55. (http://dx.doi.org/10.1242/dev.068148)
 
 Albertson, D.G. and Thomson, J.N. 1984. The pharynx of C. elegans. Phil. Trans. Royal Soc. London 275B: 299-325. (http://www.wormatlas.org/ver1/albertson_1975/toc.html)
 
@@ -128,49 +126,29 @@ Altun, Z.F., Chen, B., Wang, Z-W. and Hall, D. H.. 2009. High resolution map of 
 
 Avery, L. and Horvitz, H.R. 1989. Pharyngeal pumping continues after laser killing of the pharyngeal nervous system of C. elegans. Neuron 3:473-485. (http://dx.doi.org/10.1016/0896-6273(89)90206-7)
 
-Bao, L., Samuels, S., Locovei, S.,
- Macagno, E.R., Muller, K.J. and Dahl, G. 2007. Innexins form two types 
-of channels. FEBS Letters 581: 5703-08. (https://dx.doi.org/10.1016/j.bpj.2011.09.041)
+Bao, L., Samuels, S., Locovei, S., Macagno, E.R., Muller, K.J. and Dahl, G. 2007. Innexins form two types of channels. FEBS Letters 581: 5703-08. (https://dx.doi.org/10.1016/j.bpj.2011.09.041)
 
-Baranova, A, Ivanov, D.,
- Petrash, N., Skoblov, M., Kelmanson, I., Shagin, D., Nazarenko, S., 
-Geraymovych, E., Litvin, O., Tiunova, A., Born, T.L., Usman, N., 
-Staroverov, D., Lukyanov, S. and Panchin, Y. 2004. The mammalian 
-pannexin family is homologous to the invertebrate innexin gap junction 
-proteins. Genomics 83: 706-716. (https://doi.org/10.1016/j.ygeno.2003.09.025)
+Baranova, A, Ivanov, D., Petrash, N., Skoblov, M., Kelmanson, I., Shagin, D., Nazarenko, S., Geraymovych, E., Litvin, O., Tiunova, A., Born, T.L., Usman, N., Staroverov, D., Lukyanov, S. and Panchin, Y. 2004. The mammalian pannexin family is homologous to the invertebrate innexin gap junction proteins. Genomics 83: 706-716. (https://doi.org/10.1016/j.ygeno.2003.09.025)
 
 Bargmann, C.I. 2006. Chemosensation in C. elegans. In WormBook (ed. The C. elegans Research Community), WormBook, doi/10.1895/wormbook.1.123.1. (http://dx.doi.org/10.1895/wormbook.1.123.1)
 
 Bischoff, M. and Schnabel, R. 2006. Global cell sorting is mediated by local cell-cell interactions in the C. elegans embryo. Dev. Biol. 294: 432-44. (https://doi.org/10.1016/j.ydbio.2006.03.005)
 
-Bouhours, M., Po, M.D., Gao,
- S., Hung, W., Li, H., Georgiou, J., Roder, J.C. and Zhen, M. 2011. A 
-co-operative regulation of neuronal excitability by UNC-7 innexin and 
-NCA/NALCN leak channel. Mol. Brain 4: 1-16. (https://doi.org/10.1186/1756-6606-4-16)
+Bouhours, M., Po, M.D., Gao, S., Hung, W., Li, H., Georgiou, J., Roder, J.C. and Zhen, M. 2011. A co-operative regulation of neuronal excitability by UNC-7 innexin and NCA/NALCN leak channel. Mol. Brain 4: 1-16. (https://doi.org/10.1186/1756-6606-4-16)
 
-Bruzzone, R., Hormuzdi, 
-S.G., Barbe, M.T., Herb, A. and Monyer, H. 2003. Pannexins, a family og 
-gap junction proteins expressed in brain. PNAS 100: 13644-13649. (https://doi.org/10.1073/pnas.2233464100)
+Bruzzone, R., Hormuzdi, S.G., Barbe, M.T., Herb, A. and Monyer, H. 2003. Pannexins, a family og gap junction proteins expressed in brain. PNAS 100: 13644-13649. (https://doi.org/10.1073/pnas.2233464100)
 
 Buechner, M., Hall, D.H., Bhatt, H. and Hedgecock, E.M. 1999. Cystic canal mutants in C. elegans are defective in the apical membrane domain of the renal (excretory) cell. Dev. Biol. 214: 227-241. (http://www.wormbase.org/db/misc/paper?name=WBPaper00003721;class=Paper)
 
-Byrd, D.T., Knobel, K., Affeldt,
- K., Crittenden, S.L. and Kimble, J. 2014. A DTC niche plexus surrounds 
-the germline stem cell pool in C. elegans. PLOS ONE. (https://doi.org/10.1371/journal.pone.0088372)
+Byrd, D.T., Knobel, K., Affeldt, K., Crittenden, S.L. and Kimble, J. 2014. A DTC niche plexus surrounds the germline stem cell pool in C. elegans. PLOS ONE. (https://doi.org/10.1371/journal.pone.0088372)
 
-Chalfie, M., Sulston, 
-J.E., White, J.G., Southgate, E., Thomson, J.N. and Brenner, S. 1985. 
-The neural circuit for touch sensitivity in Caenorhabditis elegans. J. Neurosci. 5: 956-964. (http://www.jneurosci.org/cgi/reprint/5/4/956)
+Chalfie, M., Sulston, J.E., White, J.G., Southgate, E., Thomson, J.N. and Brenner, S. 1985. The neural circuit for touch sensitivity in Caenorhabditis elegans. J. Neurosci. 5: 956-964. (http://www.jneurosci.org/cgi/reprint/5/4/956)
 
 Chiu, Y.H., Ravichandran, K.S. and Bayliss, D.A. 2014. Intrinsic properties and regulation of pannexin 1 channel. Channels 8: 103-109. (https://doi.org/10.4161/chan.27545)
 
-Chuang, C-F., VanHoven, M. K., Fetter, R. 
-D., Verselis, V. K. and Bargmann, C. I. 2007. An innexin-dependent 
-network establishes left-right neuronal asymmetry in C. elegans. Cell. 129: 787-799.(http://www.sciencedirect.com/science/article/pii/S0092867407004515)
+Chuang, C-F., VanHoven, M. K., Fetter, R. D., Verselis, V. K. and Bargmann, C. I. 2007. An innexin-dependent network establishes left-right neuronal asymmetry in C. elegans. Cell. 129: 787-799.(http://www.sciencedirect.com/science/article/pii/S0092867407004515)
 
-Cook, Britten, Jarrell, Wang, 
-Bloniarz, Yakovlev, Nguyen, Tang, Bayer, Buelow, Hobert, Hall and 
-Emmons. 2018. Whole-animal connectomes of the two adults sexes of Caenorhabditis elegans. In prep.
+Cook, Britten, Jarrell, Wang, Bloniarz, Yakovlev, Nguyen, Tang, Bayer, Buelow, Hobert, Hall and Emmons. 2018. Whole-animal connectomes of the two adults sexes of Caenorhabditis elegans. In prep.
 
 del Castillo, J., Rivera, A.,  Solï¿½rzano, S. and Serrato, J. 1989. Some aspects of the neuromuscular system of Ascaris. Exp. Physiol. 74: 1071-87. (http://dx.doi.org/10.1113/expphysiol.1989.sp003334)
 
@@ -192,80 +170,41 @@ Hall, D.H. 2017. The role of gap junctions in the C. elegans connectome. Neurosc
 
 Hall, D.H. and Russell, G.J. 1991. The posterior nervous system of the nematode Caenorhabditis elegans: Serial reconstruction of identified neurons and complete pattern of synaptic interactions. J. Neurosci. 11: 1-22.(http://www.wormatlas.org/HallRussell_1991/Hall_1991.html)
 
-Hall, D.H., Winfrey, V.P., 
-Blauer, G., Hoffman, L.H., Rose, K.L., Furuta, T., Hobert, O. and 
-Greenstein, D. 1999. Ultrastructural features of the adult hermaphrodite
- gonad of Caenorhabditis elegans: Relations between the germ line and soma. Dev. Biol. 212: 101-123. (http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6WDG-45GWBVD-66&_user=10&_coverDate=08%2F01%2F1999&_rdoc=9&_fmt=full&_orig=browse&_srch=doc-info(%23toc%236766%231999%23997879998%23299846%23FLP%23display%23Volume)&_cdi=6766&_sort=d&_docanchor=&_ct)
+Hall, D.H., Winfrey, V.P., Blauer, G., Hoffman, L.H., Rose, K.L., Furuta, T., Hobert, O. and Greenstein, D. 1999. Ultrastructural features of the adult hermaphrodite gonad of Caenorhabditis elegans: Relations between the germ line and soma. Dev. Biol. 212: 101-123. (http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6WDG-45GWBVD-66&_user=10&_coverDate=08%2F01%2F1999&_rdoc=9&_fmt=full&_orig=browse&_srch=doc-info(%23toc%236766%231999%23997879998%23299846%23FLP%23display%23Volume)&_cdi=6766&_sort=d&_docanchor=&_ct)
 
 Haspel, G. and O'Donovan, M.J. 2012. A connectivity model for the locomotor network of C. elegans. Worm 1: 125-8. (https://dx.doi.org/10.4161/worm.19392)
 
-Jang, H., Kim, K., Neal, S.J., 
-Macosko, E., Kim, D., Butcher, R.A., Zeiger, D.M., Bargmann, C.I. and 
-Sengupta, P. 2012. Neuromodulatory state and sex specify alternative 
-behaviors through antagonistic synaptic pathways in C. elegans. Neuron 75: 585-92. (http://dx.doi.org/10.1016/j.neuron.2012.06.034)
+Jang, H., Kim, K., Neal, S.J., Macosko, E., Kim, D., Butcher, R.A., Zeiger, D.M., Bargmann, C.I. and Sengupta, P. 2012. Neuromodulatory state and sex specify alternative behaviors through antagonistic synaptic pathways in C. elegans. Neuron 75: 585-92. (http://dx.doi.org/10.1016/j.neuron.2012.06.034)
 
-Jarrell, T.A., Wang, Y., 
-Bloniarz, A.E., Brittin, C.A., Xu, M., Thomson, J.N., Albertson, D.G., 
-Hall, D.H. and Emmons, S.W. 2012. The connectome of a decision making 
-neuronal network. Science 337: 437-444. (http://dx.doi.org/10.1126/science.1221762)
+Jarrell, T.A., Wang, Y., Bloniarz, A.E., Brittin, C.A., Xu, M., Thomson, J.N., Albertson, D.G., Hall, D.H. and Emmons, S.W. 2012. The connectome of a decision making neuronal network. Science 337: 437-444. (http://dx.doi.org/10.1126/science.1221762)
 
-Kawano, T., Po, M.D., Gao, 
-S., Leung, G., Ryu, W.S. and Zhen, M. 2011. An imbalancing act: gap 
-junctions reduce the backward motor circuit activity to bias C. elegans for forward locomotion, Neuron 72: 572-586. (http://dx.doi.org/10.1016/j.neuron.2011.09.005)
+Kawano, T., Po, M.D., Gao, S., Leung, G., Ryu, W.S. and Zhen, M. 2011. An imbalancing act: gap junctions reduce the backward motor circuit activity to bias C. elegans for forward locomotion, Neuron 72: 572-586. (http://dx.doi.org/10.1016/j.neuron.2011.09.005)
 
-Kim, B. and Emmons, S.W. 2017. 
-Multiple conserved cell adhesion protein interactions mediate neural 
-wiring of a sensory circuit in C. elegans. eLife 2017;6:e29257. (https://doi.org/10.7554/eLife.29257)
+Kim, B. and Emmons, S.W. 2017. Multiple conserved cell adhesion protein interactions mediate neural wiring of a sensory circuit in C. elegans. eLife 2017;6:e29257. (https://doi.org/10.7554/eLife.29257)
 
-Koeppen, M., Simske, J., 
-Sims, P., Firestein, B.L., Hall, D.H., Radice, A., Rongo, C. and Hardin,
- J. 2001. Cooperative regulation of AJM-1 controls junctional integrity 
-in Caenorhabditis elegans epithelia. Nature Cell Biol. 3: 983-991. (http://dx.doi.org/10.1038/ncb1101-983)
+Koeppen, M., Simske, J., Sims, P., Firestein, B.L., Hall, D.H., Radice, A., Rongo, C. and Hardin, J. 2001. Cooperative regulation of AJM-1 controls junctional integrity in Caenorhabditis elegans epithelia. Nature Cell Biol. 3: 983-991. (http://dx.doi.org/10.1038/ncb1101-983)
 
-Koval, M., Molina, S.A. and 
-Burt, J.M. 2014. Mix and match: Investigating heteromeric and 
-heterotypic gap junction channels in model systems and native tissues. 
-FEBS Lett. 588:11931204. (https://dx.doi.org/10.1016/j.febslet.2014.02.025)
+Koval, M., Molina, S.A. and Burt, J.M. 2014. Mix and match: Investigating heteromeric and heterotypic gap junction channels in model systems and native tissues. FEBS Lett. 588:11931204. (https://dx.doi.org/10.1016/j.febslet.2014.02.025)
 
 Lane, N.J., Skaer, H.L. and Swales, L.S. 1977. Intercellular junctions in the central nervous system of insects. J. Cell Sci. 26: 175-99. (http://jcs.biologists.org/content/26/1/175.long)
 
 Liu, P., Chen, B. and Wang Z-W. 2011. Gap junctions synchronize action potentials and Ca2+ transients in C. elegans body wall muscles. JBC 286: 44285-93. (http://dx.doi.org/10.1074/jbc.M111.292078)
 
-Liu, P., Chen, B., Altun, Z.F., 
-Gross, M.J., Shan, A., Schuman, B., Hall, D.H. and Wang, Z-W. 
-2013. Six innexins contribute to electrical coupling of C. elegans body-wall muscle. PLoS ONE 8: e76877.(http://dx.doi.org/10.1371/journal.pone.0076877)
+Liu, P., Chen, B., Altun, Z.F., Gross, M.J., Shan, A., Schuman, B., Hall, D.H. and Wang, Z-W. 2013. Six innexins contribute to electrical coupling of C. elegans body-wall muscle. PLoS ONE 8: e76877.(http://dx.doi.org/10.1371/journal.pone.0076877)
 
-Liu, P., Chen, B., Mailler, R. and
- Wang, Z.-W. 2017. Antidromic-rectifying gap junctions amplify chemical 
-transmission at functionally mixed electrical-chemical synapses. Nat. 
-Com. 8: 14818. (http://dx.doi.org/10.1038/ncomms14818)
+Liu, P., Chen, B., Mailler, R. and Wang, Z.-W. 2017. Antidromic-rectifying gap junctions amplify chemical transmission at functionally mixed electrical-chemical synapses. Nat. Com. 8: 14818. (http://dx.doi.org/10.1038/ncomms14818)
 
-Liu, Q., Chen, B., Gaier, E., 
-Joshi, J. and Wang, Z-W. 2006. Low conductance gap junctions mediate 
-specific electrical coupling in the body wall muscle cells of C. elegans. J Biol. Chem. 281: 7881-9. (http://dx.doi.org/10.1074/jbc.M512382200)
+Liu, Q., Chen, B., Gaier, E., Joshi, J. and Wang, Z-W. 2006. Low conductance gap junctions mediate specific electrical coupling in the body wall muscle cells of C. elegans. J Biol. Chem. 281: 7881-9. (http://dx.doi.org/10.1074/jbc.M512382200)
 
-Liu, S.J. and Zukin, R.S. 2007. 
-Ca2+ permeable AMPA receptors in synaptic plasticity and neuronal death.
- Trends Neurosci. 30: 126-34. (http://dx.doi.org/10.1016/j.tins.2007.01.006)
+Liu, S.J. and Zukin, R.S. 2007. Ca2+ permeable AMPA receptors in synaptic plasticity and neuronal death. Trends Neurosci. 30: 126-34. (http://dx.doi.org/10.1016/j.tins.2007.01.006)
 
-Luo, L., Wen, Q., Ren, J., 
-Hendricks, M., Gershow, M., Qin, Y., Greenwood, J., Soucy, E.R., 
-Klein, M., Smith-Parker, H.K., Calvo, A.C.,  Colï¿½n-Ramos, D.A., Samuel,
- A.D. and Zhang, Y. 2014. Dynamic encoding of perception, memory, and 
-movement in a C. elegans chemotaxis circuit. Neuron 82: 1115-28. (http://dx.doi.org/10.1016/j.neuron.2014.05.010)
+Luo, L., Wen, Q., Ren, J., Hendricks, M., Gershow, M., Qin, Y., Greenwood, J., Soucy, E.R., Klein, M., Smith-Parker, H.K., Calvo, A.C.,  Colï¿½n-Ramos, D.A., Samuel, A.D. and Zhang, Y. 2014. Dynamic encoding of perception, memory, and movement in a C. elegans chemotaxis circuit. Neuron 82: 1115-28. (http://dx.doi.org/10.1016/j.neuron.2014.05.010)
 
-Macosko, E.Z., Pokala, N.,
- Feinberg, E.H., Chalasani, S.H., Butcher, R.A., Clardy, J. and 
-Bargmann, C.I. 2009. A hub-and-spoke circuit drives pheromone attraction
- and social behavior in C. elegans. Nature 458: 1171-5.(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2760495/)
+Macosko, E.Z., Pokala, N., Feinberg, E.H., Chalasani, S.H., Butcher, R.A., Clardy, J. and Bargmann, C.I. 2009. A hub-and-spoke circuit drives pheromone attraction and social behavior in C. elegans. Nature 458: 1171-5.(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2760495/)
 
 Malnic, B., Hirono, J., Sato, T., and Buck, L.B. 1999. Combinatorial receptor codes for odors. Cell 96: 713-23. (https://doi.org/10.1016/S0092-8674(00)80581-4)
 
-Mancuso, V.P., Parry, 
-J.M., Storer, L., Poggioli, C., Nguyen, K.C., Hall, D.H. and Sundaram, 
-M.V. 2012. Extracellular leucine-rich repeat proteins are required to 
-organize the apical extracellular matrix and maintain epithelial 
-junction integrity in C. elegans. Development 139: 979-990. (http://dx.doi.org/10.1242/dev.077347)
+Mancuso, V.P., Parry, J.M., Storer, L., Poggioli, C., Nguyen, K.C., Hall, D.H. and Sundaram, M.V. 2012. Extracellular leucine-rich repeat proteins are required to organize the apical extracellular matrix and maintain epithelial junction integrity in C. elegans. Development 139: 979-990. (http://dx.doi.org/10.1242/dev.077347)
 
 Norman, K.R. and Villu Maricq, A. 2007. Innexin function: Minding the gap junction. Curr. Biol. 17: R812-R814. (https://doi.org/10.1016/j.cub.2007.07.043)
 
@@ -277,15 +216,11 @@ Oshima, A., Matsuzawa, T., Nishikawa, K. and Fujiyoshi, Y. 2013. Oligomeric stru
 
 Penuela, S., Gehl, R. and Laird, D.W. 2013. The biochemistry and function of pannexin channels. BBA-Biomembranes 1828: 15-22. (https://doi.org/10.1016/j.bbamem.2012.01.017)
 
-Peters, M.A., Teramoto, T., 
-White, J.Q., Iwasaki, K. and Jorgensen, E.M. 2007. A calcium wave 
-mediated by gap junctions coordinates a rhythmic behavior in C. elegans. Curr. Biol. 17: 1601-08. (https://doi.org/10.1016/j.cub.2007.08.031)
+Peters, M.A., Teramoto, T., White, J.Q., Iwasaki, K. and Jorgensen, E.M. 2007. A calcium wave mediated by gap junctions coordinates a rhythmic behavior in C. elegans. Curr. Biol. 17: 1601-08. (https://doi.org/10.1016/j.cub.2007.08.031)
 
 Phelan, P. and Starich, T.A. 2001. Innexins get into the gap. Bioessays 23: 388-396. (http://dx.doi.org/10.1002/bies.1057)
 
-Qadota, H., Matsunaga, Y., 
-Nguyen, K.C.Q., Mattheyse, A., Hall, D.H. and Benian, G.M. 
-2017. High-resolution imaging of muscle attachment structures in Caenorhabditis elegans. Cytoskeleton 74: 426-442. (https://dx.doi.org/10.1002/cm.21410)
+Qadota, H., Matsunaga, Y., Nguyen, K.C.Q., Mattheyse, A., Hall, D.H. and Benian, G.M. 2017. High-resolution imaging of muscle attachment structures in Caenorhabditis elegans. Cytoskeleton 74: 426-442. (https://dx.doi.org/10.1002/cm.21410)
 
 Quick, D.C. and Johnson, R.G. 1977. Gap junctions and rhombic particle arrays in planaria. J. Ultrastr. Res. 60: 348-61. (https://doi.org/10.1016/S0022-5320(77)80019-1)
 
@@ -293,29 +228,17 @@ Raizen, D.M., Lee, R.Y.N. and Avery, L. 1995. Interacting genes required for pha
 
 Retamal, M.A. and Saez, J.C. 2014. Hemichannels: from the molecule to the function. Front. Physiol. 5: 411. (https://dx.doi.org/10.3389%2Ffphys.2014.00411)
 
-Revel, J.P. and Karnovsky, M.J. 
-1967. Hexagonal array of subunits in intercellular junctions of the 
-mouse heart and liver. J. Cell Biol. 33: C7-C12.(https://dx.doi.org/10.1083/jcb.33.3.C7)
+Revel, J.P. and Karnovsky, M.J. 1967. Hexagonal array of subunits in intercellular junctions of the mouse heart and liver. J. Cell Biol. 33: C7-C12.(https://dx.doi.org/10.1083/jcb.33.3.C7)
 
 Rengarajan, S. and Hallem, E.A. 2016. Olfactory circuits and behaviors of nematodes. Curr. Opin. Neurobiol. 41: 136-148. (https://doi.org/10.1016/j.conb.2016.09.002)
 
-Richter, K., Kiefer, K.P., 
-Grzesik, B.A., Clauss, W.G. and Fronius, M. 2014 Hydrostatic pressure 
-activates ATP-sensitive K+ channels in lung epithelium by ATP release 
-through pannexin and connexin hemichannels. The FASEB Journal 28: 45-55. (https://doi.org/10.1096/fj.13-229252)
+Richter, K., Kiefer, K.P., Grzesik, B.A., Clauss, W.G. and Fronius, M. 2014 Hydrostatic pressure activates ATP-sensitive K+ channels in lung epithelium by ATP release through pannexin and connexin hemichannels. The FASEB Journal 28: 45-55. (https://doi.org/10.1096/fj.13-229252)
 
-Rodenas-Ruano, 
-A., Chavez, A.E., Cossio, M.J., Castillo, P.E. and Zukin, R.S. 2012. 
-REST-dependent epigenetic remodeling promotes the developmental switch 
-in synaptic NMDA receptors. Nat. Neurosci. 15: 1382-90. (https://dx.doi.org/10.1038/nn.3214)
+Rodenas-Ruano, A., Chavez, A.E., Cossio, M.J., Castillo, P.E. and Zukin, R.S. 2012. REST-dependent epigenetic remodeling promotes the developmental switch in synaptic NMDA receptors. Nat. Neurosci. 15: 1382-90. (https://dx.doi.org/10.1038/nn.3214)
 
 Simonsen, K.T., Moerman, D.G. and Naus, C.C. 2014. Gap junctions in C. elegans. Front. Physiol. 5: 40. (https://dx.doi.org/10.3389/fphys.2014.00040)
 
-Sosinsky, G.E., Boassa, D., 
-Dermietzel, R., Duffy, H.S., Laird, D.W., MacVicar, B., Naus, C.C., 
-Penuela, S., Scemes, E., Spray, D.C., Thompson, R.J., Zhao, H.B. and 
-Dahl, G. 2011. Pannexin channels are not gap junction hemichannels. 
-Channels 5: 193-197. (https://dx.doi.org/10.4161%2Fchan.5.3.15765)
+Sosinsky, G.E., Boassa, D., Dermietzel, R., Duffy, H.S., Laird, D.W., MacVicar, B., Naus, C.C., Penuela, S., Scemes, E., Spray, D.C., Thompson, R.J., Zhao, H.B. and Dahl, G. 2011. Pannexin channels are not gap junction hemichannels. Channels 5: 193-197. (https://dx.doi.org/10.4161%2Fchan.5.3.15765)
 
 Staehelin, L.A. 1974. Structure and function of intercellular junctions. Int. Rev. Cytol. 39: 191-283. (https://doi.org/10.1016/S0074-7696(08)60940-7)
 
@@ -323,36 +246,23 @@ Starich, T.A., Lee, R.Y., Panzarella, C., Avery, L. and Shaw, J.E. 1996. eat-5 a
 
 Starich, T.A., Miller, A. Nguyen, R.L., Hall, D.H. and Shaw, J.E. 2003. The Caenorhabditis elegans innexin INX-3 is localized to gap junctions and is essential for embryonic development. Dev. Biol. 256:403-417.  (http://dx.doi.org/10.1016/S0012-1606(02)00116-1)
 
-Starich, T.A., Hall, D.H. and
- Greenstein, D. 2014. Two classes of gap junction channels mediate 
-soma-germline interactions essential for germline proliferation and 
-gametogenesis in Caenorhabditis elegans. Genetics 198: 1127-53. (http://dx.doi.org/10.1534/genetics.114.168815)
+Starich, T.A., Hall, D.H. and Greenstein, D. 2014. Two classes of gap junction channels mediate soma-germline interactions essential for germline proliferation and gametogenesis in Caenorhabditis elegans. Genetics 198: 1127-53. (http://dx.doi.org/10.1534/genetics.114.168815)
 
 Stein, K.K. and Golden, A. 2015.  The C. elegans eggshell. WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.179.1(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5603424/)
 
-Stone, C.E., Hall, 
-D.H. and Sundaram, M.V. 2009. Lipocalin signaling controls 
-unicellular tube development in the Caenorhabditis elegans excretory system. Dev. Biol. 15: 201-11. (http://dx.doi.org/10.1016/j.ydbio.2009.02.030)
+Stone, C.E., Hall, D.H. and Sundaram, M.V. 2009. Lipocalin signaling controls unicellular tube development in the Caenorhabditis elegans excretory system. Dev. Biol. 15: 201-11. (http://dx.doi.org/10.1016/j.ydbio.2009.02.030)
 
-Stretton, A.O., Fishpool, R.M.,
- Southgate, E., Donmoyer, J.E., Walrond, J.P., Moses, J.E. and Kass, 
-I.S. 1978. Structure and physiological activity of the motoneurons of 
-the nematode Ascaris. 75: 3493-7. (http://www.pnas.org/content/75/7/3493.full.pdf)
+Stretton, A.O., Fishpool, R.M., Southgate, E., Donmoyer, J.E., Walrond, J.P., Moses, J.E. and Kass, I.S. 1978. Structure and physiological activity of the motoneurons of the nematode Ascaris. 75: 3493-7. (http://www.pnas.org/content/75/7/3493.full.pdf)
 
 Sulston, J.E., Albertson, D.G. and Thomson, J.N. 1980. The Caenorhabditis elegans male: postembryonic development of nongonadal structures. Dev Biol. 78: 542-576. (http://www.wormatlas.org/SulstonpostembMale_1980/SulstonpostembMale1980.html)
 
-Trojanowski, N.F. 
-and Fang-Yen, C. 2015. Simultaneous optogenetic stimulation of 
-individual pharyngeal neurons and monitoring of feeding behavior in 
-intact C. elegans. Methods Mol. Biol. 1327: 105-19. (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4862196/)
+Trojanowski, N.F. and Fang-Yen, C. 2015. Simultaneous optogenetic stimulation of individual pharyngeal neurons and monitoring of feeding behavior in intact C. elegans. Methods Mol. Biol. 1327: 105-19. (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4862196/)
 
 Trojanowski, N.F., Raizen, D.M. and Fang-Yen, C. 2016. Pharyngeal pumping in C. elegans depends on tonic and phasic signaling from the nervous system. Sci. Rep. 6: 22940.(http://dx.doi.org/10.1038/srep22940)
 
 Varshney, L.R., Chen, B.L., Paniagua, E., Hall, D.H. and Chklovskii, D.B. 2011. Structural properties of the Caenorhabditis elegans neuronal network. PLoS Comput. Biol. 7: e1001066. (http://dx.plos.org/10.1371/journal.pcbi.1001066)
 
-Walker, D.S. and Schafer, W.R. 
-2020. Distinct roles for innexin gap junctions and hemichannels in 
-mechanosensation. 9. pii: e50597. doi: 10.7554/eLife.50597. (https://doi.org/10.7554/eLife.50597)
+Walker, D.S. and Schafer, W.R. 2020. Distinct roles for innexin gap junctions and hemichannels in mechanosensation. 9. pii: e50597. doi: 10.7554/eLife.50597. (https://doi.org/10.7554/eLife.50597)
 
 White J.G., Southgate, E., Thomson, J.N. and Brenner, S. 1976. The structure of the ventral nerve cord of Caenorhabditis elegans. Philos. Trans. R. Soc. Lond. Series B. Biol. Sci. 275B: 327-348. (http://www.wormatlas.org/white_1976/White_1976.html)
 
@@ -360,9 +270,7 @@ White, J.G., Southgate, E., Thomson, J.N. and Brenner, S. 1986. The structure o
 
 White, T.W. 2003. Nonredundant gap junction functions. Physiology 18: 95-99. (https://doi.org/10.1152/nips.01430.2002)
 
-Zhang, J., Li, X., Jevince, A.R., Guan, L., Wang, J., Hall,
- D.H., Huang, X. and Ding, M. 2013. Neuronal target identification 
-requires AHA-1-mediated fine-tuning of Wnt signaling in C. elegans. PLoS Genetics 9: e1003618.(http://dx.doi.org/10.1371%2Fjournal.pgen.1003618)
+Zhang, J., Li, X., Jevince, A.R., Guan, L., Wang, J., Hall, D.H., Huang, X. and Ding, M. 2013. Neuronal target identification requires AHA-1-mediated fine-tuning of Wnt signaling in C. elegans. PLoS Genetics 9: e1003618.(http://dx.doi.org/10.1371%2Fjournal.pgen.1003618)
 
 <!-- END IMAGE AREA 6 --><img border="0" onmouseout="this.src='../../picts/topoff.gif'" onmouseover="this.src='../../picts/topon.gif'" src="Handbook%20-%20Gap%20Junctions_files/topoff.gif"/>
 

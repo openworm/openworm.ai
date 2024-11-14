@@ -28,19 +28,19 @@ Cuticle . A collagenous cuticle, secreted by the underlying epithelium, surround
 
 The Epithelial System . The hypodermis, which secretes cuticle, is made up of the main body syncytium (hyp 7), a series of concentric rings of five smaller syncytial cells in the head, and three mononucleate and one syncytial cell in the tail (see Hypodermis). On the lateral sides, the hypodermis is interrupted by the syncytial row of seam cells which form alae on the cuticle surface during certain developmental stages (IntroFIG 3C) (see Seam Cells). The hypodermis and the inner tissues that open to the outside are connected to one another by specialized interfacial cells.
 
-<span class="style19">The Nervous System.</span> The cells of the nervous system are organized into ganglia in the head and tail. The majority of C. elegans neurons are located in the head around the pharynx. In the body, a continuous row of neuron cell bodies lies at the midline, adjacent to the ventral hypodermis. In addition, there are two small posterior lateral ganglia on the sides, as well as some scattered neurons along the lateral body. The processes from most neurons travel in either the ventral or dorsal nerve cord and project to the nerve ring (NR) in the head which constitutes the major neuropil in the animal (IntroFIG 2C)(see Nervous System). 
+The Nervous System . The cells of the nervous system are organized into ganglia in the head and tail. The majority of C. elegans neurons are located in the head around the pharynx. In the body, a continuous row of neuron cell bodies lies at the midline, adjacent to the ventral hypodermis. In addition, there are two small posterior lateral ganglia on the sides, as well as some scattered neurons along the lateral body. The processes from most neurons travel in either the ventral or dorsal nerve cord and project to the nerve ring (NR) in the head which constitutes the major neuropil in the animal (IntroFIG 2C)(see Nervous System). 
 
-<span class="style1"><span class="style20">The Muscle System.</span> Neurons and the hypodermis are separated from the musculature by a thin basal lamina. The muscles receive input from the neurons by sending muscle arms to motor neuron processes that run along the nerve cords or reside in the nerve ring. The obliquely striated body wall muscles are arranged into strips in four quadrants, two dorsal and two ventral, along the whole length of the animal (IntroFIG 2A-F) (see Somatic Muscle System). Smaller, nonstriated muscles are found in the pharynx and around the vulva, intestine and rectum (see Nonstriated Muscle System). </span>
+The Muscle System .  Neurons and the hypodermis are separated from the musculature by a thin basal lamina. The muscles receive input from the neurons by sending muscle arms to motor neuron processes that run along the nerve cords or reside in the nerve ring. The obliquely striated body wall muscles are arranged into strips in four quadrants, two dorsal and two ventral, along the whole length of the animal ( IntroFIG 2A-F ) (see Somatic Muscle System ). Smaller, nonstriated muscles are found in the pharynx and around the vulva, intestine and rectum (see Nonstriated Muscle System ). 
 
-<span class="style1">The Excretory System . Four cells situated on the ventral side of the posterior head make up the excretory system, which functions in osmoregulation and waste disposal. The excretory system opens to the outside through the excretory pore (IntroFIG 3E) (see Excretory System).</span>2.2.2 Pseudocoelomic Cavity Organs
+The Excretory System . Four cells situated on the ventral side of the posterior head make up the excretory system, which functions in osmoregulation and waste disposal. The excretory system opens to the outside through the excretory pore ( IntroFIG 3E ) (see Excretory System ).2.2.2 Pseudocoelomic Cavity Organs
 
 The Coelomocyte system. Three pairs of coelomocytes located in the pseudocoelomic cavity function as scavenger cells that endocytose fluid from the pseudocoelom and are suggested to comprise a primitive immune system in C. elegans (see Coelomocyte System).
 
 2.2.3 Internal Organs 
 
-<span class="style22">The Alimentary system.</span>C. elegans feeds through a two lobed pharynx, which is nearly an autonomous organ with its own neuronal system, muscles, and epithelium (IntroFIG 1). The pharynx is separated from the outer tube of tissues and pseudocoelom by its own basal lamina (IntroFIG 2B-D). The lumen of the pharynx is continuous with the lumen of the intestine, and the pharynx passes ground food into the intestine via the intestinal pharyngeal valve. The intestine, which is the only somatic tissue derived from a single (E blast cell) lineage, is made of 20 cells arranged to form a tube with a central lumen. The apical surfaces of the intestinal cells carry numerous microvilli. The intestinal contents are excreted to the outside via a rectal valve that connects the gut to the rectum and anus. The four enteric muscles that contribute to defecation are located around the rectum and posterior intestine (see Alimentary System Sections: Pharynx, Intestine and Rectum and Anus). 
+The Alimentary system .C. elegans feeds through a two lobed pharynx, which is nearly an autonomous organ with its own neuronal system, muscles, and epithelium (IntroFIG 1). The pharynx is separated from the outer tube of tissues and pseudocoelom by its own basal lamina (IntroFIG 2B-D). The lumen of the pharynx is continuous with the lumen of the intestine, and the pharynx passes ground food into the intestine via the intestinal pharyngeal valve. The intestine, which is the only somatic tissue derived from a single (E blast cell) lineage, is made of 20 cells arranged to form a tube with a central lumen. The apical surfaces of the intestinal cells carry numerous microvilli. The intestinal contents are excreted to the outside via a rectal valve that connects the gut to the rectum and anus. The four enteric muscles that contribute to defecation are located around the rectum and posterior intestine (see Alimentary System Sections: Pharynx, Intestine and Rectum and Anus). 
 
- <span class="style23">The Reproductive system.</span> This system consists of somatic gonad, the germ line and the egg-laying apparatus. There are two bilaterally symmetric, U-shaped gonad arms that are connected to a central uterus through the spermatheca (IntroFIG 1). The germ line within the distal gonad arms (ovaries) is syncytial with germline nuclei surrounding a central cytoplasmic core. More proximally, germ cells pass sequentially through the mitotic, meiotic prophase and diakinesis stages. As they pass through the bend of the gonad arm (oviduct), oocytes enlarge, detach from the syncytium, and mature as they move more proximally. The oocytes are fertilized by the sperm in spermatheca. The resulting diploid zygotes are stored in the uterus and laid outside thorough the vulva, which protrudes at the ventral midline (see Reproductive System: Somatic Gonad, Germ Line and Egg-laying Apparatus).
+ The Reproductive system . This system consists of somatic gonad, the germ line and the egg-laying apparatus. There are two bilaterally symmetric, U-shaped gonad arms that are connected to a central uterus through the spermatheca (IntroFIG 1). The germ line within the distal gonad arms (ovaries) is syncytial with germline nuclei surrounding a central cytoplasmic core. More proximally, germ cells pass sequentially through the mitotic, meiotic prophase and diakinesis stages. As they pass through the bend of the gonad arm (oviduct), oocytes enlarge, detach from the syncytium, and mature as they move more proximally. The oocytes are fertilized by the sperm in spermatheca. The resulting diploid zygotes are stored in the uterus and laid outside thorough the vulva, which protrudes at the ventral midline (see Reproductive System: Somatic Gonad, Germ Line and Egg-laying Apparatus).
 
    2.3) Adult Male Anatomy
 
@@ -66,7 +66,7 @@ Post-embryonic development is triggered by feeding after hatching. In the presen
 
 3.2.1 L1 Larva 
 
-<span class="style21">Nervous system.</span> Of the eight classes of motor neurons (DAn, DBn, VAn, VBn, VCn, ASn, VDn, and DDn) in the adult hermaphrodite ventral cord, five (VAn, VBn, VCn, ASn and VDn) are generated at the end of the L1 stage from 13 precursors (W and P1-P12) (IntroFIG 8A) (Sulston, 1976; Sulston and Horvitz, 1977; Chalfie and White 1988). A few other neurons are generated from Q, G1, H2 and T blast cells. Also, during the L1 stage, one class of ventral cord motor neurons (DDn) go through complete synaptic reorganization without any cell-shape change. The initial pattern of synapses made by DD neurons is presynaptic and inhibitory to ventral body wall muscles, while being postsynaptic to neurons that activate dorsal body wall muscles. During late L1, after the birth of VD motor neurons, DD neurons change their synaptic pattern such that their dorsal branches become presynaptic and inhibitory to dorsal body wall muscles, whereas their ventral branches become postsynaptic to excitatory neurons that synapse on ventral body wall muscles (White et al., 1978; Walthall et al., 1993). 
+Nervous system . Of the eight classes of motor neurons (DAn, DBn, VAn, VBn, VCn, ASn, VDn, and DDn) in the adult hermaphrodite ventral cord, five (VAn, VBn, VCn, ASn and VDn) are generated at the end of the L1 stage from 13 precursors (W and P1-P12) (IntroFIG 8A) (Sulston, 1976; Sulston and Horvitz, 1977; Chalfie and White 1988). A few other neurons are generated from Q, G1, H2 and T blast cells. Also, during the L1 stage, one class of ventral cord motor neurons (DDn) go through complete synaptic reorganization without any cell-shape change. The initial pattern of synapses made by DD neurons is presynaptic and inhibitory to ventral body wall muscles, while being postsynaptic to neurons that activate dorsal body wall muscles. During late L1, after the birth of VD motor neurons, DD neurons change their synaptic pattern such that their dorsal branches become presynaptic and inhibitory to dorsal body wall muscles, whereas their ventral branches become postsynaptic to excitatory neurons that synapse on ventral body wall muscles (White et al., 1978; Walthall et al., 1993). 
 
 Reproductive System. During the second half of L1, somatic gonad precursors Z1 and Z4 produce 12 cells in the hermaphrodite (IntroFIG 8C). The germ line precursors Z2 and Z3 also start to divide. These Z2-Z3 divisions occur continuously from L1 through adulthood (Kimble and Hirsh, 1979). Ventral Pn.p cells are born. A central subset will give rise to the vulva in L3 and L4.
 
@@ -110,9 +110,7 @@ Out of 1090 somatic cells generated during hermaphrodite development, 131 underg
 
 Ambros, V. 2000. Control of developmental timing in Caenorhabditis  elegans. Curr. Opin. Genet. Dev. 10: 428-433.(http://dx.doi.org/10.1016/S0959-437X(00)00108-8)
 
-Anderson, P. 1995. Mutagenesis. In Caenorhabditis elegans: Modern
- biological analysis of an organism (ed. Epstein, H.F. and Shakes, 
-D.C.). Chapter 2. pp 31-54. Academic Press, California.
+Anderson, P. 1995. Mutagenesis. In Caenorhabditis elegans: Modern biological analysis of an organism (ed. Epstein, H.F. and Shakes, D.C.). Chapter 2. pp 31-54. Academic Press, California.
 
 Antebi, A., Norris, C.R., Hedgecock, E.M. and Garriga, G. 1997. Cell and Growth Cone Migrations. In C.  elegans II (ed. D.L. Riddle et al.). Chap. 21. pp. 583-609. Cold Spring Harbor Laboratory Press, Cold Spring Harbor,  New York. (http://www.ncbi.nlm.nih.gov/books/NBK20070/)
 
@@ -148,9 +146,7 @@ Jorgensen, E.M. and Mango, S.E. 2002. The art and design of genetic screens: Cae
 
 Kimble, J. and Hirsh, D. 1979. The postembryonic cell lineages of the hermaphrodite and male gonads in Caenorhabditis elegans. Dev. Biol. 70: 396-417. (https://www.wormatlas.org/ver1/Postemblingonad_1979/toc.html)
 
-Lewis, J.A. and Fleming J.T. 1995. Basic culture methods. In Caenorhabditis  elegans, Modern
- biological analysis of an organism (ed. Epstein, H.F. and Shakes, 
-D.C.). Chapter 1. pp 4-27. Academic Press, California.
+Lewis, J.A. and Fleming J.T. 1995. Basic culture methods. In Caenorhabditis  elegans, Modern biological analysis of an organism (ed. Epstein, H.F. and Shakes, D.C.). Chapter 1. pp 4-27. Academic Press, California.
 
 Liu, K.S. and Sternberg, P.W. 1995. Sensory regulation of male mating behavior in Caenorhabditis elegans. Neuron 14: 79-89. (http://dx.doi.org/doi:10.1016/0896-6273(95)90242-2)
 
@@ -172,22 +168,15 @@ Sulston, J.E., Albertson, D.G. and Thomson, J.N. 1980. The Caenorhabditis elegan
 
 Sulston, J.E., Schierenberg, E., White J.G. and Thomson, J.N. 1983. The embryonic cell lineage of the nematode Caenorhabditis elegans. Dev. Biol. 100: 64-119. (https://www.wormatlas.org/SulstonembCellLin_1983/SulstonembCellLin1983.html)
 
-Von Ehrenstein, G. and Schierenberg, E. 1980. Cell lineages and development of Caenorhabditis  elegans
- and other nematodes. In Nematodes as biological models Vol. I, 
-Behavioral and developmental models (ed. Zuckerman, B.M.). Chapter 1. 
-pp 2-68. Academic Press, New  York.
+Von Ehrenstein, G. and Schierenberg, E. 1980. Cell lineages and development of Caenorhabditis  elegans and other nematodes. In Nematodes as biological models Vol. I, Behavioral and developmental models (ed. Zuckerman, B.M.). Chapter 1. pp 2-68. Academic Press, New  York.
 
 Walthall, W.W., Li, L., Plunkett, J.A. and Hsu, C.Y. 1993. Changing synaptic specificities in the nervous system of Caenorhabditis elegans: Differentiation of the DD motoneurons. J.  Neurobiol. 24: 1589-1599. (http://dx.doi.org/10.1002/neu.480241204)
 
-Ward, S., Thomson, N., White, J.G. and 
-Brenner, S. 1975. Electron microscopical reconstruction of the anterior
- sensory anatomy of the nematode C. elegans. J. Comp.  Neurol. 160: 313-337. (https://www.wormatlas.org/ward_buildv0.1/Ward_buildv0.1.1.html)
+Ward, S., Thomson, N., White, J.G. and Brenner, S. 1975. Electron microscopical reconstruction of the anterior sensory anatomy of the nematode C. elegans. J. Comp.  Neurol. 160: 313-337. (https://www.wormatlas.org/ward_buildv0.1/Ward_buildv0.1.1.html)
 
 White, J. 1988. The Anatomy. In The nematode C. elegans (ed. W.B.  Wood). Chapter 4. pp 81-122. Cold Spring Harbor Laboratory Press, Cold Spring Harbor,  New York.(http://cshmonographs.org/index.php/monographs/article/view/5019)
 
-White, J.G., Albertson, D.G. and Anness, 
-M.A.R. 1978. Connectivity changes in a class of motoneurone during the 
-development of a nematode. Nature 271: 764-766.(http://dx.doi.org/doi:10.1038/271764a0)
+White, J.G., Albertson, D.G. and Anness, M.A.R. 1978. Connectivity changes in a class of motoneurone during the development of a nematode. Nature 271: 764-766.(http://dx.doi.org/doi:10.1038/271764a0)
 
 Wood, W.B. 1988a. Introduction to C. elegans biology. In The nematode C. elegans (ed. W.B.  Wood). Chapter 1. pp 1-16. Cold Spring Harbor Laboratory Press, Cold Spring Harbor,  New York. (http://cshmonographs.org/index.php/monographs/article/view/5016)
 
