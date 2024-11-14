@@ -1,6 +1,6 @@
 # Introduction
 
-## 1 Caenorhabditis elegans as a Genetic Organism
+## 1) Caenorhabditis elegans as a Genetic Organism
 
 <p><em>Caenorhabditis elegans</em> is a small, free-living soil nematode (roundworm) that lives in many parts of the world and survives by feeding on microbes, primarily bacteria (<a href="#IntroFIG1">IntroFIG 1</a>). It is an important model system for biological research in many fields including genomics, cell biology, neuroscience and aging (<a href="http://www.wormbook.org/">http://www.wormbook.org/</a>). Among its many advantages for study are its short life cycle, compact genome, stereotypical development, ease of propagation and small size. The adult body plan is anatomically simple with about 1000 somatic cells. <em>C. elegans</em> is amenable to genetic crosses and produces a large number of progeny per adult. It reproduces with a life cycle of about 3 days under optimal conditions. The animal can be maintained in the laboratory where it is grown on agar plates or liquid cultures with <em>E. coli </em>as the food source. It can be examined at the cellular level in living preparations by differential interference contrast (DIC) microscopy, because it is transparent throughout its life cycle. The anatomical description of the whole animal has been completed at the electron microscopy level and its <a href="https://www.wormatlas.org/celllineages.html" target="_blank">complete cell lineage</a>, which is invariant between animals, has been established (<a href="#Brenner1973">Brenner, 1973</a>; <a href="#Byerly1976">Byerly et al., 1976</a>; <a href="#Sulston1983">Sulston et al., 1983</a>; <a href="#Wood1988a">Wood, 1988a</a>; <a href="#Lewis1995">Lewis and Fleming, 1995</a>). </p>
 
@@ -10,21 +10,17 @@
 
 <p>Despite its simple anatomy, the animal displays a large repertoire of behavior including locomotion; foraging; feeding; defecation; egg laying; dauer larva formation; sensory responses to touch, smell, taste, and temperature; and some complex behaviors like male mating, social behavior, and learning and memory (<a href="#Rankin2002">Rankin, 2002</a>; <a href="#Debono2003">de Bono, 2003</a>).</p>
 
-## 2 Adult Anatomy
+## 2) Adult Anatomy
 
-### 2.1 Body Shape
-
-<p></p>
+### 2.1) Body Shape
 
 <p>Similar to other nematodes, <em>C. elegans</em> has an unsegmented, cylindrical body shape that is tapered at the ends (<a href="#IntroFIG1">IntroFIG 1</a>; <a href="#IntroMOVIE1">IntroMOVIE 1</a>). This is the typical nematode body plan, with an outer tube and an inner tube separated by the pseudocoelomic space (<a href="#IntroFIG2">IntroFIG 2</a>). The outer tube (body wall) consists of cuticle, hypodermis, excretory system, neurons, and muscles, and the inner tube comprises the pharynx, intestine, and, in the adult, gonad. All of these tissues are under an internal hydrostatic pressure, regulated by an osmoregulatory system (see <a href="https://www.wormatlas.org/hermaphrodite/excretory/Excframeset.html" target="_blank">Excretory System</a>).</p>
 
 <p><span class="style10"><strong><a name="Adulthermaphrotdite22"></a><span class="style13"><br/> 2.2 Adult Hermaphrodite Organs and Tissues</span></strong></span><strong><span class="style13"> <br/></span></strong><u><a id="Mantle321" name="Bodywall221"></a></u><strong><br/>2.2.1 Body Wall </strong> </p>
 
-### 2.2 Adult Hermaphrodite Organs and Tissues
+### 2.2) Adult Hermaphrodite Organs and Tissues
 
 <p><strong><em>Cuticle</em>.</strong> A collagenous cuticle, secreted by the underlying epithelium, surrounds the worm on the outside and also lines the pharynx and rectum (see <a href="https://www.wormatlas.org/hermaphrodite/cuticle/Cutframeset.html" target="_blank">Cuticle</a>). Various tissues open to the outside through this cuticle (<a href="#IntroFIG3">IntroFIG 3</a>). The excretory pore is located at midline on the ventral side of the head (<a href="#IntroFIG3">IntroFIG 3E).</a> The vulva is another large opening on the ventral side at the midbody (<a href="#IntroFIG3">IntroFIG 3D</a>), and the anus forms another ventral opening, just before the tail whip (<a href="#IntroFIG3">IntroFIG 3B</a>). Two cuticular inpockets form narrow openings at the lateral lips for the amphid sensilla (<a href="#IntroFIG4A">IntroFIG 4A</a> and <a href="#IntroFIG4C">IntroTABLE 1</a>). The lips also contain papillae for 6 inner labial (IL) sensilla and small bumps for 6 outer labial (OL) sensilla, as well as 4 cephalic (CEP) sensilla (<a href="#IntroFIG4A">IntroFIG 4A</a> and <a href="#IntroFIG4C">IntroTABLE 1</a>). There are two papillae for anterior deirids at the posterior of the head. These are situated within the lateral alae at the level of the excretory pore (<a href="#IntroFIG4C">IntroFIG4C</a> and <a href="https://www.wormatlas.org/hermaphrodite/excretory/Images/excfig2leg.htm" target="_blank">ExcFIG2B</a>). The two posterior deirid sensilla are situated dorsal to the cuticular alae (<a href="#IntroFIG4B">IntroFIG 4B</a>&amp;<a href="#IntroFIG4C">C</a>). Two much narrower openings on the lateral sides of the tail whip exist for the phasmid sensilla at the junction of the seam cells and the tail hypodermis (<a href="#IntroFIG4C">IntroFIG 4C</a>).<br/></p>
-
-<p></p>
 
 <p><strong><em>The Epithelial System</em>. </strong>The hypodermis, which secretes cuticle, is made up of the main body syncytium (hyp 7), a series of concentric rings of five smaller syncytial cells in the head, and three mononucleate and one syncytial cell in the tail (see <a href="https://www.wormatlas.org/hermaphrodite/hypodermis/Hypframeset.html" target="_blank">Hypodermis</a>). On the lateral sides, the hypodermis is interrupted by the syncytial row of seam cells which form alae on the cuticle surface during certain developmental stages (<a href="#IntroFIG3">IntroFIG 3C</a>) (see <a href="https://www.wormatlas.org/hermaphrodite/seam%20cells/Seamframeset.html" target="_blank">Seam Cells</a>). The hypodermis and the inner tissues that open to the outside are connected to one another by specialized interfacial cells.</p>
 
@@ -40,19 +36,19 @@
 
 <p> <span class="style23"><em>The Reproductive system</em>.</span> This system consists of somatic gonad, the germ line and the egg-laying apparatus. There are two bilaterally symmetric, U-shaped gonad arms that are connected to a central uterus through the spermatheca (<a href="#IntroFIG1">IntroFIG 1</a>). The germ line within the distal gonad arms (ovaries) is syncytial with germline nuclei surrounding a central cytoplasmic core. More proximally, germ cells pass sequentially through the mitotic, meiotic prophase and diakinesis stages. As they pass through the bend of the gonad arm (oviduct), oocytes enlarge, detach from the syncytium, and mature as they move more proximally. The oocytes are fertilized by the sperm in spermatheca. The resulting diploid zygotes are stored in the uterus and laid outside thorough the vulva, which protrudes at the ventral midline (see Reproductive System:<a href="https://www.wormatlas.org/hermaphrodite/somatic%20gonad/Somframeset.html" target="_blank"> Somatic Gonad</a>,<a href="https://www.wormatlas.org/hermaphrodite/germ%20line/Germframeset.html" target="_blank"> Germ Line</a> and <a href="https://www.wormatlas.org/hermaphrodite/egglaying%20apparatus/Eggframeset.html" target="_blank">Egg-laying Apparatus</a>).</p>
 
-### 2.3 Adult Male Anatomy
+### 2.3) Adult Male Anatomy
 
 <p>The male anatomy is the subject of a separate section (<a href="https://www.wormatlas.org/male/malehomepage.htm">Male Handbook</a>), but here we provide an overview of major differences between the male and the hermaphrodite sexes. Male <em>C. elegans</em> larvae initially display the same simple cylindrical body plan as hermaphrodites, but from the L2 stage onward, the shape of their posterior half changes as their sexual organs begin to develop (<a href="#IntroFIG5">IntroFIG 5</a>) (<a href="#Sulston1977">Sulston and Horvitz, 1977</a>; <a href="#Sulston1980">Sulston et al., 1980</a>; <a href="#Nguyen1999">Nguyen et al., 1999</a>). With the exception of perhaps the pharynx and the excretory system, virtually all tissue systems exhibit some degree of sexual dimorphism. The most profound differences are seen in tissues of the posterior, which bears the male copulatory apparatus. The muscle system of the male contains 41 additional sex-specific muscles (see <a href="https://www.wormatlas.org/male/musclemale/Musmaleframeset.html" target="_blank">Male-Specific Muscles</a>). The reproductive system consists of a single-armed gonad (<a href="#IntroFIG5">IntroFIG 5C</a>; Male <a href="https://www.wormatlas.org/male/somaticgonad/Somaticgonadframeset.html" target="_blank">Somatic Gonad</a> and <a href="https://www.wormatlas.org/male/germline/Germlineframeset.html" target="_blank">Germline</a>) that opens to the exterior at the cloaca (anus) via a modified rectal epithelial chamber called the proctodeum (<a href="#IntroFIG5">IntroFIG 5D</a>) (see<a href="https://www.wormatlas.org/male/proctodeum/Procframeset.html" target="_blank"> Proctodeum</a>). The proctodeum includes two sclerotic sensory spicules used by the male during mating to locate the hermaphrodite vulval slit and to hold the vulva open during sperm transfer (<a href="#Liu1995">Liu and Sternberg, 1995</a>; <a href="#Garcia2001">Garcia et al., 2001</a>). The nervous system has 91 additional neurons that include several classes of tail sensilla: the rays, which extend from the tail and lie in a cuticular fan (see <a href="https://www.wormatlas.org/male/rays/Rayframeset.html" target="_blank">Rays</a>); the hook (see <a href="https://www.wormatlas.org/male/hook/Hookframeset.html" target="_blank">Hook</a>); and the post-cloacal sensilla, which are located on the ventral exterior of the tail (see <a href="https://www.wormatlas.org/male/postcloacal/PCSframeset.html" target="_blank">PCS</a>). </p>
 
 <p><span class="subtitle"><a id="Lifecycle3" name="Lifecycle3"></a></span><span class="style10"><br/>3 Life cycle</span></p>
 
-## 3 Life cycle
+## 3) Life cycle
 
 <p>Similar to other nematodes, the life cycle of <em>C. elegans</em> is comprised of the embryonic stage, four larval stages (L1-L4) and adulthood. The end of each larval stage is marked with a molt, during which a new, stage-specific cuticle is synthesized and the old one is shed. During this period, pharyngeal pumping ceases and the animal enters a brief lethargus (<a href="#IntroFIG6">IntroFIG 6</a>; <a href="#IntroMOVIE2">IntroMOVIE 2</a>).</p>
 
 <p><strong><a id="Embryo31" name="Embryo31"></a><span class="style13"><br/>3.1 Embryo </span></strong></p>
 
-### 3.1 Embryo
+### 3.1) Embryo
 
 <p>Embryogenesis in <em>C. elegans</em> is roughly divided into two stages: (1) proliferation and (2) organogenesis/ morphogenesis (<a href="#IntroFIG7">IntroFIG 7</a>) (<a href="#Sulston1983">Sulston et al, 1983</a>). Proliferation (0 to 330-350 min post-fertilization at 22'C) includes cell divisions from a single cell to about 550 essentially undifferentiated cells by the end of the '16 E stage' (<a href="#Vonehrenstein1980">von Ehrenstein and Schierenberg, 1980</a>; <a href="#Wood1988b">Wood, 1988b</a>). This stage is further subdivided into two phases: The first phase (0-150 min) spans the time between zygote formation to generation of embryonic founder cells, and the second phase (150-350 min) covers the bulk of cell divisions and gastrulation until the beginning of organogenesis (<a href="#Bucher1994">Bucher and Seydoux, 1994</a>). The initial 150 min of proliferation takes place within the mother's uterus, and the embryo is laid outside when it reaches the approximate 30-cell stage (at gastrulation). There is considerable rearrangement of cells in the proliferation stage because of short-range shuffling, and once gastrulation begins, because of specific cell migrations (during gastrulation Ea and Ep sink in from the posterior and enter into the embryo at 100 min after first cell cleavage. P4 and MS progeny enter at 120-200 min, followed by C and D myoblasts entering from the posterior. AB-derived pharynx progenitors enter inside at 210-250 min. Once the cell migrations are completed, ventral cleft through which cells migrated in closes proceeding from the posterior (230 min) to anterior. Ventral cleft closure is completed at 290 min.) From this time onward, the embryonic substages can be defined by specific cell migrations, gain in cell number, and periods of synchronous stem-cell divisions. </p>
 
@@ -96,13 +92,11 @@
 
 <p>Out of 1090 somatic cells generated during hermaphrodite development, 131 undergo programmed cell death at characteristic times (<a href="#Driscoll1995">Driscoll, 1995</a>). Hence, the adult <em>C. elegans</em> hermaphrodite has 959 somatic nuclei, 302 of which are neurons and 95 are body wall muscle cells (<a href="#White1988">White, 1988</a>). The adult male, on the other hand, has 1031 somatic nuclei and 381 of these are neurons (extra neurons are mostly dedicated to male mating behavior) (<a href="#White1988">White, 1988</a>). Although it has more cells, the adult <em>C. elegans</em> male is more slender and slightly shorter (approx. 0.8 mm) than the hermaphrodite (<a href="#IntroFIG5">IntroFIG5</a>). For detailed review of anatomic structures in male, refer to <a href="https://www.wormatlas.org/male/malehomepage.htm">Male Handbook</a>.</p>
 
-## 4 References
+## 4) References
 
 _<p><a id="Ambros2000" name="Ambros2000"></a>Ambros, V. 2000. Control of developmental timing in <em>Caenorhabditis elegans. </em>Curr. Opin. Genet. Dev. <strong>10</strong>: 428-433.<a href="http://dx.doi.org/10.1016/S0959-437X(00)00108-8" target="_blank"> Abstract</a></p>_
 
-_<p><a id="Anderson1995" name="Anderson1995"></a>Anderson, P. 1995. Mutagenesis. In <em>Caenorhabditis elegans: </em>Modern
- biological analysis of an organism (ed. Epstein, H.F. and Shakes, 
-D.C.). Chapter 2. pp 31-54. Academic Press, California.</p>_
+_<p><a id="Anderson1995" name="Anderson1995"></a>Anderson, P. 1995. Mutagenesis. In <em>Caenorhabditis elegans: </em>Modern biological analysis of an organism (ed. Epstein, H.F. and Shakes, D.C.). Chapter 2. pp 31-54. Academic Press, California.</p>_
 
 _<p><a id="Antebi1997" name="Antebi1997"></a>Antebi, A., Norris, C.R., Hedgecock, E.M. and Garriga, G. 1997. Cell and Growth Cone Migrations. In <em>C. elegans II</em> (ed. D.L. Riddle et al.). Chap. 21. pp. 583-609. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York. <a href="http://www.ncbi.nlm.nih.gov/books/NBK20070/" target="_blank">Article</a></p>_
 
@@ -138,9 +132,7 @@ _<p><a id="Jorgensen2002" name="Jorgensen2002"></a>Jorgensen, E.M. and Mango, S.
 
 _<p><a id="Kimble1979" name="Kimble1979"></a>Kimble, J. and Hirsh, D. 1979. The postembryonic cell lineages of the hermaphrodite and male gonads in <em>Caenorhabditis elegans</em>. Dev. Biol. <strong>70</strong>: 396-417. <a href="https://www.wormatlas.org/ver1/Postemblingonad_1979/toc.html" target="_blank">Article</a></p>_
 
-_<p><a id="Lewis1995" name="Lewis1995"></a>Lewis, J.A. and Fleming J.T. 1995. Basic culture methods. In <em>Caenorhabditis elegans, </em>Modern
- biological analysis of an organism (ed. Epstein, H.F. and Shakes, 
-D.C.). Chapter 1. pp 4-27. Academic Press, California.</p>_
+_<p><a id="Lewis1995" name="Lewis1995"></a>Lewis, J.A. and Fleming J.T. 1995. Basic culture methods. In <em>Caenorhabditis elegans, </em>Modern biological analysis of an organism (ed. Epstein, H.F. and Shakes, D.C.). Chapter 1. pp 4-27. Academic Press, California.</p>_
 
 _<p><a id="Liu1995" name="Liu1995"></a>Liu, K.S. and Sternberg, P.W. 1995. Sensory regulation of male mating behavior in <em>Caenorhabditis elegans</em>. Neuron <strong>14</strong>: 79-89. <a href="http://dx.doi.org/doi:10.1016/0896-6273(95)90242-2" target="_blank">Article</a></p>_
 
@@ -162,22 +154,15 @@ _<p><a id="Sulston1980" name="Sulston1980"></a>Sulston, J.E., Albertson, D.G. an
 
 _<p><a id="Sulston1983" name="Sulston1983"></a>Sulston, J.E., Schierenberg, E., White J.G. and Thomson, J.N. 1983. The embryonic cell lineage of the nematode <em>Caenorhabditis elegans</em>. Dev. Biol. <strong>100</strong>: 64-119. <a href="https://www.wormatlas.org/SulstonembCellLin_1983/SulstonembCellLin1983.html" target="_blank">Article</a></p>_
 
-_<p><a id="Vonehrenstein1980" name="Vonehrenstein1980"></a>Von Ehrenstein, G. and Schierenberg, E. 1980. Cell lineages and development of <em>Caenorhabditis elegans</em>
- and other nematodes. In Nematodes as biological models Vol. I, 
-Behavioral and developmental models (ed. Zuckerman, B.M.). Chapter 1. 
-pp 2-68. Academic Press, New York.</p>_
+_<p><a id="Vonehrenstein1980" name="Vonehrenstein1980"></a>Von Ehrenstein, G. and Schierenberg, E. 1980. Cell lineages and development of <em>Caenorhabditis elegans</em> and other nematodes. In Nematodes as biological models Vol. I, Behavioral and developmental models (ed. Zuckerman, B.M.). Chapter 1. pp 2-68. Academic Press, New York.</p>_
 
 _<p><a id="Walthall1993" name="Walthall1993"></a>Walthall, W.W., Li, L., Plunkett, J.A. and Hsu, C.Y. 1993. Changing synaptic specificities in the nervous system of <em>Caenorhabditis elegans</em>: Differentiation of the DD motoneurons. J. Neurobiol. <strong>24</strong>: 1589-1599. <a href="http://dx.doi.org/10.1002/neu.480241204" target="_blank">Abstract</a></p>_
 
-_<p><a id="Ward1975" name="Ward1975"></a>Ward, S., Thomson, N., White, J.G. and 
-Brenner, S. 1975. Electron microscopical reconstruction of the anterior
- sensory anatomy of the nematode <em>C. elegans. </em>J. Comp. Neurol. <strong>160</strong>: 313-337. <a href="https://www.wormatlas.org/ward_buildv0.1/Ward_buildv0.1.1.html" target="_blank">Article</a></p>_
+_<p><a id="Ward1975" name="Ward1975"></a>Ward, S., Thomson, N., White, J.G. and Brenner, S. 1975. Electron microscopical reconstruction of the anterior sensory anatomy of the nematode <em>C. elegans. </em>J. Comp. Neurol. <strong>160</strong>: 313-337. <a href="https://www.wormatlas.org/ward_buildv0.1/Ward_buildv0.1.1.html" target="_blank">Article</a></p>_
 
 _<p><a id="White1988" name="White1988"></a>White, J. 1988. The Anatomy. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 4. pp 81-122. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York.<a href="http://cshmonographs.org/index.php/monographs/article/view/5019" target="_blank"> Abstract</a></p>_
 
-_<p><a id="White1978" name="White1978"></a>White, J.G., Albertson, D.G. and Anness, 
-M.A.R. 1978. Connectivity changes in a class of motoneurone during the 
-development of a nematode. Nature <strong>271</strong>: 764-766.<a href="http://dx.doi.org/doi:10.1038/271764a0" target="_blank"> Abstract</a></p>_
+_<p><a id="White1978" name="White1978"></a>White, J.G., Albertson, D.G. and Anness, M.A.R. 1978. Connectivity changes in a class of motoneurone during the development of a nematode. Nature <strong>271</strong>: 764-766.<a href="http://dx.doi.org/doi:10.1038/271764a0" target="_blank"> Abstract</a></p>_
 
 _<p><a id="Wood1988a" name="Wood1988a"></a>Wood, W.B. 1988a. Introduction to <em>C. elegans</em> biology. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 1. pp 1-16. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York. <a href="http://cshmonographs.org/index.php/monographs/article/view/5016" target="_blank">Abstract</a></p>_
 

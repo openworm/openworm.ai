@@ -75,7 +75,7 @@ class WormAtlasParser:
 
         self.finalise()
 
-    def get_plain_string(self, element):
+    def _get_plain_string(self, element):
         plain = ""
         for s in element.contents:
             # print(" >>> %s" % s)
@@ -91,13 +91,23 @@ class WormAtlasParser:
 
         return plain.strip()
 
+    def _fix_chars(self, text):
+        subs = {"ï¿½": "'", "ï¿œ": '"'}
+        for s in subs:
+            text = text.replace(s, subs[s])
+        return text
+
     def process_header(self, element, depth):
         print("  - HEADER: %s" % str(element).replace("\n", ""))
-        e_md = self.get_plain_string(element)
+        heading = self._get_plain_string(element)
 
-        if len(e_md) > 0 and "style13" not in e_md:
-            print("  - HEADING: [%s]" % (e_md))
-            self.markdown.write("%s %s\n\n" % ("#" * (depth + 1), e_md))
+        if len(heading) > 0 and "style13" not in heading:
+            print("  - HEADING: [%s]" % (heading))
+            h_number = heading.split(" ", 1)[0]
+            h_name = heading.split(" ", 1)[1]
+            self.markdown.write("%s %s) %s\n\n" % ("#" * (depth + 1), h_number, h_name))
+
+            self.plaintext.write("%s%s) %s\n\n" % (" " * (depth + 1), h_number, h_name))
 
     def process_reference(self, reference):
         verbose = False
@@ -111,35 +121,25 @@ class WormAtlasParser:
         while "  " in r_md:
             r_md = r_md.replace("  ", " ")
 
-        r_md.replace("ï¿½", "'").replace("\n", "")
+        r_md = self._fix_chars(r_md).replace("\n", "")
 
         self.markdown.write("_%s_\n\n" % r_md)
 
-        for s in reference.contents:
-            # print(" >>> %s" % s)
-            if type(s) is NavigableString:
-                self.plaintext.write("%s" % s.replace("  ", " "))
-            elif s.has_attr("name"):
-                pass
-            elif s.has_attr("href"):
-                self.plaintext.write("(%s)" % s.attrs["href"])
-            else:
-                for c in s.contents:
-                    self.plaintext.write("%s" % c)
-
-        self.plaintext.write("\n\n")
+        self.plaintext.write("%s\n\n" % self._get_plain_string(reference))
 
     def process_paragraph(self, paragraph):
         verbose = False
+
         p_md = str(paragraph)
 
         p_md = p_md.replace("\t", "  ")
         while "  " in p_md:
             p_md = p_md.replace("  ", " ")
 
-        p_md = p_md.replace("ï¿½", "'").replace("\n", "")
+        p_md = self._fix_chars(p_md).replace("\n", "")
 
-        self.markdown.write("%s\n\n" % p_md)
+        if len(p_md) > 7:
+            self.markdown.write("%s\n\n" % p_md)
 
         for a in paragraph.find_all("a"):
             if "href" in a.attrs:
@@ -155,7 +155,7 @@ class WormAtlasParser:
         while "  " in p:
             p = p.replace("  ", " ")
 
-        p = p.replace("ï¿½", "'").replace("\n", "")
+        p = self._fix_chars(p).replace("\n", "")
 
         if verbose:
             print(p)
