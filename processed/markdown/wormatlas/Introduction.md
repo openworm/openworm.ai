@@ -48,7 +48,7 @@ system, neurons, and muscles, and the inner tube comprises the pharynx,
 (see <a href="https://www.wormatlas.org/hermaphrodite/excretory/Excframeset.html" target="_blank">Excretory System</a>).</p>
 
 <p><span class="style10"><strong><a name="Adulthermaphrotdite22"></a><span class="style13"><br/>
- 	2.2 Adult Hermaphrodite Organs and Tissues</span></strong></span><strong><span class="style13"> <br/>
+ 2.2 Adult Hermaphrodite Organs and Tissues</span></strong></span><strong><span class="style13"> <br/>
 </span></strong><u><a id="Mantle321" name="Bodywall221"></a></u><strong><br/>
 2.2.1 Body Wall </strong> </p>
 
@@ -84,7 +84,7 @@ the ventral hypodermis. In addition, there are two small posterior
 lateral ganglia on the sides, as well as some scattered neurons along 
 the lateral body. The processes from most neurons travel in either the 
 ventral or dorsal nerve cord and project to the nerve ring (NR) in the 
-head which constitutes the major neuropil in the animal (<a href="#IntroFIG2">IntroFIG 2C</a>)(see <a href="https://www.wormatlas.org/hermaphrodite/nervous/Neuroframeset.html" target="_blank">Nervous System</a>). 		</p>
+head which constitutes the major neuropil in the animal (<a href="#IntroFIG2">IntroFIG 2C</a>)(see <a href="https://www.wormatlas.org/hermaphrodite/nervous/Neuroframeset.html" target="_blank">Nervous System</a>). </p>
 
 <p><span class="style1"><span class="style20"><em>The Muscle System</em>.</span>
  Neurons and the hypodermis are separated from the musculature by a thin
@@ -93,7 +93,7 @@ muscle arms to motor neuron processes that run along the nerve cords or
 reside in the nerve ring. The obliquely striated body wall muscles are 
 arranged into strips in four quadrants, two dorsal and two ventral, 
 along the whole length of the animal (<a href="#IntroFIG2">IntroFIG 2A-F</a>) (see <a href="https://www.wormatlas.org/hermaphrodite/musclesomatic/MusSomaticframeset.html" target="_blank">Somatic Muscle System</a>). Smaller, nonstriated muscles are found in the pharynx and around the vulva, intestine and rectum (see <a href="https://www.wormatlas.org/hermaphrodite/musclenonstriated/MusNonstriframeset.html" target="_blank">Nonstriated Muscle System</a>).
- 		</span></p>
+ </span></p>
 
 <p><span class="style1"><strong><em>The Excretory System</em>. </strong>Four
  cells situated on the ventral side of the posterior head make up the 
@@ -167,15 +167,15 @@ enters a brief lethargus (<a href="#IntroFIG6">IntroFIG 6</a>; <a href="#IntroMO
 </p>
 
 <p>Embryogenesis in <em>C. elegans</em> is roughly divided into two stages: (1) proliferation and (2) organogenesis/ morphogenesis (<a href="#IntroFIG7">IntroFIG 7</a>) (<a href="#Sulston1983">Sulston et al, 1983</a>).
- Proliferation (0 to 330-350 min post-fertilization at 22°C) includes 
+ Proliferation (0 to 330-350 min post-fertilization at 22ï¿½C) includes 
 cell divisions from a single cell to about 550 essentially 
-undifferentiated cells by the end of the 16 E stage (<a href="#Vonehrenstein1980">von Ehrenstein and Schierenberg, 1980</a>; <a href="#Wood1988b">Wood, 1988b</a>).
+undifferentiated cells by the end of the ï¿½16 E stageï¿½ (<a href="#Vonehrenstein1980">von Ehrenstein and Schierenberg, 1980</a>; <a href="#Wood1988b">Wood, 1988b</a>).
  This stage is further subdivided into two phases: The first phase 
 (0-150 min) spans the time between zygote formation to generation of 
 embryonic founder cells, and the second phase (150-350 min) covers the 
 bulk of cell divisions and gastrulation until the beginning of 
 organogenesis (<a href="#Bucher1994">Bucher and Seydoux, 1994</a>). The 
-initial 150 min of proliferation takes place within the mothers 
+initial 150 min of proliferation takes place within the motherï¿½s 
 uterus, and the embryo is laid outside when it reaches the approximate 
 30-cell stage (at gastrulation). There is considerable rearrangement of
  cells in the proliferation stage because of short-range shuffling, and 
@@ -198,7 +198,7 @@ organogenesis/morphogenesis stage (5.5-6 hr to 12-14 hr), terminal
 differentiation of cells occurs without many additional cell divisions, 
 and the embryo elongates threefold and takes form as an animal with 
 fully differentiated tissues and organs. Morphogenesis starts with the 
-lima bean stage. The first muscle twitches are observed at 430 min 
+ï¿½lima beanï¿½ stage. The first muscle twitches are observed at 430 min 
 after the first cell cleavage (between 1.5- and 2-fold stages) (<a href="#IntroFIG7">IntroFIG 7</a>).
  Sexual dimorphism becomes visible for the first time at 510 minutes 
 when the cephalic companion neurons (CEMs) die in the hermaphrodite, and
@@ -210,7 +210,7 @@ advanced motor system development. The embryo starts pharyngeal pumping
 
 <p>The main body plan of the animal is already established at the end 
 of embryogenesis. This general body plan does not change during 
-postembryonic development.		</p>
+postembryonic development. </p>
 
 <p><strong><a id="Postembryonicdevelopment32" name="Postembryonicdevelopment32"></a><span class="style13"></span>
 3.2 Post-embryonic Development</strong></p>
@@ -354,7 +354,7 @@ ventral hook and post-cloacal sensilla (<a href="#Emmons1997">Emmons and Sternbe
 <u><a name="Adult326"></a><br/>
 </u><strong>3.2.6 Adult</strong></p>
 
-<p>At approximately at 45-50 hrs posthatch at 22°C-25°C, a 
+<p>At approximately at 45-50 hrs posthatch at 22ï¿½C-25ï¿½C, a 
 newly matured hermaphrodite lays its first eggs, hence completing its 
 3-day reproductive life cycle (<a href="#Byerly1976">Byerly et al., 1976</a>; <a href="#Lewis1995">Lewis and Fleming, 1995</a>).
  The adult hermaphrodite produces oocytes for about 4 days, and after 
@@ -371,90 +371,90 @@ development, 131 undergo programmed cell death at characteristic times (<a href=
 these are neurons (extra neurons are mostly dedicated to male mating 
 behavior) (<a href="#White1988">White, 1988</a>). Although it has more cells, the adult <em>C. elegans</em> male is more slender and slightly shorter (approx. 0.8 mm) than the hermaphrodite (<a href="#IntroFIG5">IntroFIG5</a>). For detailed review of anatomic structures in male, refer to <a href="https://www.wormatlas.org/male/malehomepage.htm">Male Handbook</a>.</p>
 
-<p><a name="Ambros2000"></a>Ambros, V. 2000. Control of developmental timing in <em>Caenorhabditis elegans. </em>Curr. Opin. Genet. Dev. <strong>10</strong>: 428-433.<a href="http://dx.doi.org/10.1016/S0959-437X(00)00108-8" target="_blank"> Abstract</a></p>
+_<p><a id="Ambros2000" name="Ambros2000"></a>Ambros, V. 2000. Control of developmental timing in <em>Caenorhabditis elegans. </em>Curr. Opin. Genet. Dev. <strong>10</strong>: 428-433.<a href="http://dx.doi.org/10.1016/S0959-437X(00)00108-8" target="_blank"> Abstract</a></p>_
 
-<p><a name="Anderson1995"></a>Anderson, P. 1995. Mutagenesis. In <em>Caenorhabditis elegans: </em>Modern
+_<p><a id="Anderson1995" name="Anderson1995"></a>Anderson, P. 1995. Mutagenesis. In <em>Caenorhabditis elegans: </em>Modern
  biological analysis of an organism (ed. Epstein, H.F. and Shakes, 
-D.C.). Chapter 2. pp 31-54. Academic Press, California.</p>
+D.C.). Chapter 2. pp 31-54. Academic Press, California.</p>_
 
-<p><a name="Antebi1997"></a>Antebi, A., Norris, C.R., Hedgecock, E.M. and Garriga, G. 1997. Cell and Growth Cone Migrations. In <em>C. elegans II</em> (ed. D.L. Riddle et al.). Chap. 21. pp. 583-609. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York. <a href="http://www.ncbi.nlm.nih.gov/books/NBK20070/" target="_blank">Article</a></p>
+_<p><a id="Antebi1997" name="Antebi1997"></a>Antebi, A., Norris, C.R., Hedgecock, E.M. and Garriga, G. 1997. Cell and Growth Cone Migrations. In <em>C. elegans II</em> (ed. D.L. Riddle et al.). Chap. 21. pp. 583-609. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York. <a href="http://www.ncbi.nlm.nih.gov/books/NBK20070/" target="_blank">Article</a></p>_
 
-<p><a name="Bird1991"></a>Bird A.F. and Bird J. 1991. The structure of nematodes. Academic Press, California.</p>
+_<p><a id="Bird1991" name="Bird1991"></a>Bird A.F. and Bird J. 1991. The structure of nematodes. Academic Press, California.</p>_
 
-<p><a name="Brenner1973"></a>Brenner, S. 1973. The genetics of behavior. Br. Med. Bull. <strong>29</strong>:269-271. <a href="http://www.wormbase.org/db/misc/paper?name=WBPaper00000030;class=Paper" target="_blank">Abstract</a></p>
+_<p><a id="Brenner1973" name="Brenner1973"></a>Brenner, S. 1973. The genetics of behavior. Br. Med. Bull. <strong>29</strong>:269-271. <a href="http://www.wormbase.org/db/misc/paper?name=WBPaper00000030;class=Paper" target="_blank">Abstract</a></p>_
 
-<p><a name="Bucher1994"></a>Bucher, E.A. and Seydoux, G. 1994. Gastrulation in the nematode <em>Caenorhabditis elegans</em>. Sem. Dev. Biol. <strong>5</strong>: 121-130.<a href="http://www.wormbase.org/db/misc/paper?name=WBPaper00002040;class=Paper" target="_blank"> Abstract</a></p>
+_<p><a id="Bucher1994" name="Bucher1994"></a>Bucher, E.A. and Seydoux, G. 1994. Gastrulation in the nematode <em>Caenorhabditis elegans</em>. Sem. Dev. Biol. <strong>5</strong>: 121-130.<a href="http://www.wormbase.org/db/misc/paper?name=WBPaper00002040;class=Paper" target="_blank"> Abstract</a></p>_
 
-<p><a name="Byerly1976"></a>Byerly, L., Cassada, R.C. and Russell, R.L. 1976. The life cycle of the nematode <em>Caenorhabditis elegans</em>. Dev. Biol. <strong>51</strong>: 23-33. <a href="http://dx.doi.org/10.1016/0012-1606(76)90119-6" target="_blank">Abstract</a></p>
+_<p><a id="Byerly1976" name="Byerly1976"></a>Byerly, L., Cassada, R.C. and Russell, R.L. 1976. The life cycle of the nematode <em>Caenorhabditis elegans</em>. Dev. Biol. <strong>51</strong>: 23-33. <a href="http://dx.doi.org/10.1016/0012-1606(76)90119-6" target="_blank">Abstract</a></p>_
 
-<p><a name="Cassada1975"></a>Cassada, R.C. and Russell, R.L. 1975. The dauer larva, a postembryonic developmental variant of the nematode <em>Caenorhabditis elegans</em>. Dev. Biol. <strong>46</strong>: 326-342. <a href="http://dx.doi.org/10.1016/0012-1606(75)90109-8" target="_blank">Abstract</a></p>
+_<p><a id="Cassada1975" name="Cassada1975"></a>Cassada, R.C. and Russell, R.L. 1975. The dauer larva, a postembryonic developmental variant of the nematode <em>Caenorhabditis elegans</em>. Dev. Biol. <strong>46</strong>: 326-342. <a href="http://dx.doi.org/10.1016/0012-1606(75)90109-8" target="_blank">Abstract</a></p>_
 
-<p><a name="Chalfie1988"></a>Chalfie, M. and White, J. 1988. The nervous system. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 11. pp 337-391. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York.<a href="http://cshmonographs.org/index.php/monographs/article/view/5026" target="_blank"> Abstract</a></p>
+_<p><a id="Chalfie1988" name="Chalfie1988"></a>Chalfie, M. and White, J. 1988. The nervous system. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 11. pp 337-391. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York.<a href="http://cshmonographs.org/index.php/monographs/article/view/5026" target="_blank"> Abstract</a></p>_
 
-<p><a name="Chinsang2000"></a>Chin-Sang I.D. and Chisholm, A.D. 2000. Form of the worm: genetics of epidermal morphogenesis in <em>C. elegans. </em>Trends in Genetics <strong>16</strong>: 544-551. <a href="http://dx.doi.org/10.1016/S0168-9525(00)02143-0" target="_blank">Abstract</a></p>
+_<p><a id="Chinsang2000" name="Chinsang2000"></a>Chin-Sang I.D. and Chisholm, A.D. 2000. Form of the worm: genetics of epidermal morphogenesis in <em>C. elegans. </em>Trends in Genetics <strong>16</strong>: 544-551. <a href="http://dx.doi.org/10.1016/S0168-9525(00)02143-0" target="_blank">Abstract</a></p>_
 
-<p><a name="Debono2003"></a>de Bono, M. 2003. Molecular approaches to aggregation behavior and social attachment. J. Neurobiol. <strong>54</strong>: 78-92. <a href="http://dx.doi.org/10.1002/neu.10162" target="_blank">Article</a></p>
+_<p><a id="Debono2003" name="Debono2003"></a>de Bono, M. 2003. Molecular approaches to aggregation behavior and social attachment. J. Neurobiol. <strong>54</strong>: 78-92. <a href="http://dx.doi.org/10.1002/neu.10162" target="_blank">Article</a></p>_
 
-<p><a name="Driscoll1995"></a>Driscoll, M. 1995. Methods for the study of cell death in the nematode <em>C. elegans</em>. Methods Cell Biol. <strong>46</strong>: 323-353. <a href="http://dx.doi.org/10.1016/S0091-679X(08)61934-2" target="_blank">Abstract</a></p>
+_<p><a id="Driscoll1995" name="Driscoll1995"></a>Driscoll, M. 1995. Methods for the study of cell death in the nematode <em>C. elegans</em>. Methods Cell Biol. <strong>46</strong>: 323-353. <a href="http://dx.doi.org/10.1016/S0091-679X(08)61934-2" target="_blank">Abstract</a></p>_
 
-<p><a name="Emmons1997"></a>Emmons S.W. and Sternberg, P.W. 1997. Male Development and Mating Behavior. In <em>C. elegans II</em> (ed. D. L. Riddle et al.). Chapter 12. pp.295-334. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York. <a href="http://www.ncbi.nlm.nih.gov/books/NBK20073/#A395" target="_blank">Article</a></p>
+_<p><a id="Emmons1997" name="Emmons1997"></a>Emmons S.W. and Sternberg, P.W. 1997. Male Development and Mating Behavior. In <em>C. elegans II</em> (ed. D. L. Riddle et al.). Chapter 12. pp.295-334. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York. <a href="http://www.ncbi.nlm.nih.gov/books/NBK20073/#A395" target="_blank">Article</a></p>_
 
-<p><a name="Garcia2001"></a>Garcia, L.R., Mehta, P. and Sternberg, P.W. 2001. Regulation of distinct muscle behaviors controls the <em>C. elegans</em> male's copulatory spicules during mating. Cell <strong>107</strong>: 777-788. <a href="http://dx.doi.org/10.1016/S0092-8674(01)00600-6" target="_blank">Article</a></p>
+_<p><a id="Garcia2001" name="Garcia2001"></a>Garcia, L.R., Mehta, P. and Sternberg, P.W. 2001. Regulation of distinct muscle behaviors controls the <em>C. elegans</em> male's copulatory spicules during mating. Cell <strong>107</strong>: 777-788. <a href="http://dx.doi.org/10.1016/S0092-8674(01)00600-6" target="_blank">Article</a></p>_
 
-<p><a name="Greenwald1997"></a>Greenwald, I. 1997. Development of the Vulva. In <em>C. elegans II</em> (ed. D.L. Riddle et al.). Chap. 19. pp. 519-541. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York.<a href="http://www.ncbi.nlm.nih.gov/books/NBK20045/" target="_blank"> Article</a></p>
+_<p><a id="Greenwald1997" name="Greenwald1997"></a>Greenwald, I. 1997. Development of the Vulva. In <em>C. elegans II</em> (ed. D.L. Riddle et al.). Chap. 19. pp. 519-541. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York.<a href="http://www.ncbi.nlm.nih.gov/books/NBK20045/" target="_blank"> Article</a></p>_
 
-<p><a name="Hodgkin1988"></a>Hodgkin, J. 1988. Sexual dimorphism and sex determination. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chap. 9. pp 243-279. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York.<a href="http://cshmonographs.org/index.php/monographs/article/view/5024" target="_blank"> Abstract</a></p>
+_<p><a id="Hodgkin1988" name="Hodgkin1988"></a>Hodgkin, J. 1988. Sexual dimorphism and sex determination. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chap. 9. pp 243-279. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York.<a href="http://cshmonographs.org/index.php/monographs/article/view/5024" target="_blank"> Abstract</a></p>_
 
-<p><a name="Johnson1984"></a>Johnson, T.E., Mitchell, D.H., Kline, S., Kemal, R. and Foy, J. 1984. Arresting development arrests aging in the nematode <em>C. elegans</em>. Mech. Age. Dev.<strong> 28</strong>: 23-40. <a href="http://dx.doi.org/10.1016/0047-6374(84)90150-7" target="_blank">Abstract</a></p>
+_<p><a id="Johnson1984" name="Johnson1984"></a>Johnson, T.E., Mitchell, D.H., Kline, S., Kemal, R. and Foy, J. 1984. Arresting development arrests aging in the nematode <em>C. elegans</em>. Mech. Age. Dev.<strong> 28</strong>: 23-40. <a href="http://dx.doi.org/10.1016/0047-6374(84)90150-7" target="_blank">Abstract</a></p>_
 
-<p><a name="Jorgensen2002"></a>Jorgensen, E.M. and Mango, S.E. 2002. The art and design of genetic screens: <em>Caenorhabditis elegans</em>. Nat. Rev. Gen. <strong>3</strong>: 356-369. <a href="http://dx.doi.org/doi:10.1038/nrg794" target="_blank">Abstract</a></p>
+_<p><a id="Jorgensen2002" name="Jorgensen2002"></a>Jorgensen, E.M. and Mango, S.E. 2002. The art and design of genetic screens: <em>Caenorhabditis elegans</em>. Nat. Rev. Gen. <strong>3</strong>: 356-369. <a href="http://dx.doi.org/doi:10.1038/nrg794" target="_blank">Abstract</a></p>_
 
-<p><a name="Kimble1979"></a>Kimble, J. and Hirsh, D. 1979. The postembryonic cell lineages of the hermaphrodite and male gonads in <em>Caenorhabditis elegans</em>. Dev. Biol. <strong>70</strong>: 396-417. <a href="https://www.wormatlas.org/ver1/Postemblingonad_1979/toc.html" target="_blank">Article</a></p>
+_<p><a id="Kimble1979" name="Kimble1979"></a>Kimble, J. and Hirsh, D. 1979. The postembryonic cell lineages of the hermaphrodite and male gonads in <em>Caenorhabditis elegans</em>. Dev. Biol. <strong>70</strong>: 396-417. <a href="https://www.wormatlas.org/ver1/Postemblingonad_1979/toc.html" target="_blank">Article</a></p>_
 
-<p><a name="Lewis1995"></a>Lewis, J.A. and Fleming J.T. 1995. Basic culture methods. In <em>Caenorhabditis elegans, </em>Modern
+_<p><a id="Lewis1995" name="Lewis1995"></a>Lewis, J.A. and Fleming J.T. 1995. Basic culture methods. In <em>Caenorhabditis elegans, </em>Modern
  biological analysis of an organism (ed. Epstein, H.F. and Shakes, 
-D.C.). Chapter 1. pp 4-27. Academic Press, California.</p>
+D.C.). Chapter 1. pp 4-27. Academic Press, California.</p>_
 
-<p><a name="Liu1995"></a>Liu, K.S. and Sternberg, P.W. 1995. Sensory regulation of male mating behavior in <em>Caenorhabditis elegans</em>. Neuron <strong>14</strong>: 79-89. <a href="http://dx.doi.org/doi:10.1016/0896-6273(95)90242-2" target="_blank">Article</a></p>
+_<p><a id="Liu1995" name="Liu1995"></a>Liu, K.S. and Sternberg, P.W. 1995. Sensory regulation of male mating behavior in <em>Caenorhabditis elegans</em>. Neuron <strong>14</strong>: 79-89. <a href="http://dx.doi.org/doi:10.1016/0896-6273(95)90242-2" target="_blank">Article</a></p>_
 
-<p><a name="Nguyen1999"></a>Nguyen, C.Q., Hall, D.H., Yang, Y. and Fitch, D.H.A. 1999. Morphogenesis of the <em>Caenorhabditis elegans</em> male tail tip. Dev. Biol. <strong>207</strong>: 86-106. <a href="http://dx.doi.org/10.1006/dbio.1998.9173" target="_blank">Article</a></p>
+_<p><a id="Nguyen1999" name="Nguyen1999"></a>Nguyen, C.Q., Hall, D.H., Yang, Y. and Fitch, D.H.A. 1999. Morphogenesis of the <em>Caenorhabditis elegans</em> male tail tip. Dev. Biol. <strong>207</strong>: 86-106. <a href="http://dx.doi.org/10.1006/dbio.1998.9173" target="_blank">Article</a></p>_
 
-<p><a name="Rankin2002"></a>Rankin, C.H. 2002. From gene to identified neuron to behaviour in <em>Caenorhabditis elegans</em>. Nat. Rev. Genet. <strong>3</strong>: 622-630.<a href="http://dx.doi.org/doi:10.1038/nrg864" target="_blank"> Abstract</a></p>
+_<p><a id="Rankin2002" name="Rankin2002"></a>Rankin, C.H. 2002. From gene to identified neuron to behaviour in <em>Caenorhabditis elegans</em>. Nat. Rev. Genet. <strong>3</strong>: 622-630.<a href="http://dx.doi.org/doi:10.1038/nrg864" target="_blank"> Abstract</a></p>_
 
-<p><a name="Riddle1988"></a>Riddle, D.L. 1988. The dauer larva. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 12. pp 393-412. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York.<a href="http://cshmonographs.org/index.php/monographs/article/view/5027" target="_blank"> Abstract</a></p>
+_<p><a id="Riddle1988" name="Riddle1988"></a>Riddle, D.L. 1988. The dauer larva. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 12. pp 393-412. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York.<a href="http://cshmonographs.org/index.php/monographs/article/view/5027" target="_blank"> Abstract</a></p>_
 
-<p><a name="Slack1997"></a>Slack, F. and Ruvkun, G. 1997. Temporal pattern formation by heterochronic genes. Annu. Rev. Gen. <strong>31</strong>: 611-634. <a href="http://dx.doi.org/doi:10.1146/annurev.genet.31.1.611" target="_blank">Article</a></p>
+_<p><a id="Slack1997" name="Slack1997"></a>Slack, F. and Ruvkun, G. 1997. Temporal pattern formation by heterochronic genes. Annu. Rev. Gen. <strong>31</strong>: 611-634. <a href="http://dx.doi.org/doi:10.1146/annurev.genet.31.1.611" target="_blank">Article</a></p>_
 
-<p><a name="Sulston1976"></a>Sulston, J.E. 1976. Post-embryonic development in the ventral cord of <em>Caenorhabditis elegans. </em>Philos. Trans. R. Soc. Lond. B Biol. Sci. <strong>275</strong>: 287-297. <a href="https://www.wormatlas.org/SulstonpostembVNC_1976/Sulston_VNC_1976.html" target="_blank">Article</a></p>
+_<p><a id="Sulston1976" name="Sulston1976"></a>Sulston, J.E. 1976. Post-embryonic development in the ventral cord of <em>Caenorhabditis elegans. </em>Philos. Trans. R. Soc. Lond. B Biol. Sci. <strong>275</strong>: 287-297. <a href="https://www.wormatlas.org/SulstonpostembVNC_1976/Sulston_VNC_1976.html" target="_blank">Article</a></p>_
 
-<p><a name="Sulston1988"></a>Sulston, J. 1988. Cell lineage. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 5. pp 123-155. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York. <a href="http://cshmonographs.org/index.php/monographs/article/view/5020" target="_blank">Abstract</a></p>
+_<p><a id="Sulston1988" name="Sulston1988"></a>Sulston, J. 1988. Cell lineage. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 5. pp 123-155. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York. <a href="http://cshmonographs.org/index.php/monographs/article/view/5020" target="_blank">Abstract</a></p>_
 
-<p><a name="Sulston1977"></a>Sulston, J.E. and Horvitz, H.R. 1977. Post-embryonic cell lineages of the nematode <em>Caenorhabditis elegans</em>. <em>Dev. Biol.</em> <strong>56</strong>: 110-156. <a href="https://www.wormatlas.org/SulstonpostembCell_1977/SulstonpostembCell1977.html" target="_blank">Article</a></p>
+_<p><a id="Sulston1977" name="Sulston1977"></a>Sulston, J.E. and Horvitz, H.R. 1977. Post-embryonic cell lineages of the nematode <em>Caenorhabditis elegans</em>. <em>Dev. Biol.</em> <strong>56</strong>: 110-156. <a href="https://www.wormatlas.org/SulstonpostembCell_1977/SulstonpostembCell1977.html" target="_blank">Article</a></p>_
 
-<p><a name="Sulston1980"></a>Sulston, J.E., Albertson, D.G. and Thomson, J.N. 1980. The <em>Caenorhabditis elegans</em> male: Postembryonic development of nongonadal structures. Dev Biol. <strong>78</strong>: 542-576. <a href="https://www.wormatlas.org/SulstonpostembMale_1980/SulstonpostembMale1980.html" target="_blank">Article</a></p>
+_<p><a id="Sulston1980" name="Sulston1980"></a>Sulston, J.E., Albertson, D.G. and Thomson, J.N. 1980. The <em>Caenorhabditis elegans</em> male: Postembryonic development of nongonadal structures. Dev Biol. <strong>78</strong>: 542-576. <a href="https://www.wormatlas.org/SulstonpostembMale_1980/SulstonpostembMale1980.html" target="_blank">Article</a></p>_
 
-<p><a name="Sulston1983"></a>Sulston, J.E., Schierenberg, E., White J.G. and Thomson, J.N. 1983. The embryonic cell lineage of the nematode <em>Caenorhabditis elegans</em>. Dev. Biol. <strong>100</strong>: 64-119. <a href="https://www.wormatlas.org/SulstonembCellLin_1983/SulstonembCellLin1983.html" target="_blank">Article</a></p>
+_<p><a id="Sulston1983" name="Sulston1983"></a>Sulston, J.E., Schierenberg, E., White J.G. and Thomson, J.N. 1983. The embryonic cell lineage of the nematode <em>Caenorhabditis elegans</em>. Dev. Biol. <strong>100</strong>: 64-119. <a href="https://www.wormatlas.org/SulstonembCellLin_1983/SulstonembCellLin1983.html" target="_blank">Article</a></p>_
 
-<p><a name="Vonehrenstein1980"></a>Von Ehrenstein, G. and Schierenberg, E. 1980. Cell lineages and development of <em>Caenorhabditis elegans</em>
+_<p><a id="Vonehrenstein1980" name="Vonehrenstein1980"></a>Von Ehrenstein, G. and Schierenberg, E. 1980. Cell lineages and development of <em>Caenorhabditis elegans</em>
  and other nematodes. In Nematodes as biological models Vol. I, 
 Behavioral and developmental models (ed. Zuckerman, B.M.). Chapter 1. 
-pp 2-68. Academic Press, New York.</p>
+pp 2-68. Academic Press, New York.</p>_
 
-<p><a name="Walthall1993"></a>Walthall, W.W., Li, L., Plunkett, J.A. and Hsu, C.Y. 1993. Changing synaptic specificities in the nervous system of <em>Caenorhabditis elegans</em>: Differentiation of the DD motoneurons. J. Neurobiol. <strong>24</strong>: 1589-1599. <a href="http://dx.doi.org/10.1002/neu.480241204" target="_blank">Abstract</a></p>
+_<p><a id="Walthall1993" name="Walthall1993"></a>Walthall, W.W., Li, L., Plunkett, J.A. and Hsu, C.Y. 1993. Changing synaptic specificities in the nervous system of <em>Caenorhabditis elegans</em>: Differentiation of the DD motoneurons. J. Neurobiol. <strong>24</strong>: 1589-1599. <a href="http://dx.doi.org/10.1002/neu.480241204" target="_blank">Abstract</a></p>_
 
-<p><a name="Ward1975"></a>Ward, S., Thomson, N., White, J.G. and 
+_<p><a id="Ward1975" name="Ward1975"></a>Ward, S., Thomson, N., White, J.G. and 
 Brenner, S. 1975. Electron microscopical reconstruction of the anterior
- sensory anatomy of the nematode <em>C. elegans. </em>J. Comp. Neurol. <strong>160</strong>: 313-337. <a href="https://www.wormatlas.org/ward_buildv0.1/Ward_buildv0.1.1.html" target="_blank">Article</a></p>
+ sensory anatomy of the nematode <em>C. elegans. </em>J. Comp. Neurol. <strong>160</strong>: 313-337. <a href="https://www.wormatlas.org/ward_buildv0.1/Ward_buildv0.1.1.html" target="_blank">Article</a></p>_
 
-<p><a name="White1988"></a>White, J. 1988. The Anatomy. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 4. pp 81-122. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York.<a href="http://cshmonographs.org/index.php/monographs/article/view/5019" target="_blank"> Abstract</a></p>
+_<p><a id="White1988" name="White1988"></a>White, J. 1988. The Anatomy. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 4. pp 81-122. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York.<a href="http://cshmonographs.org/index.php/monographs/article/view/5019" target="_blank"> Abstract</a></p>_
 
-<p><a name="White1978"></a>White, J.G., Albertson, D.G. and Anness, 
+_<p><a id="White1978" name="White1978"></a>White, J.G., Albertson, D.G. and Anness, 
 M.A.R. 1978. Connectivity changes in a class of motoneurone during the 
-development of a nematode. Nature <strong>271</strong>: 764-766.<a href="http://dx.doi.org/doi:10.1038/271764a0" target="_blank"> Abstract</a></p>
+development of a nematode. Nature <strong>271</strong>: 764-766.<a href="http://dx.doi.org/doi:10.1038/271764a0" target="_blank"> Abstract</a></p>_
 
-<p><a name="Wood1988a"></a>Wood, W.B. 1988a. Introduction to <em>C. elegans</em> biology. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 1. pp 1-16. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York. <a href="http://cshmonographs.org/index.php/monographs/article/view/5016" target="_blank">Abstract</a></p>
+_<p><a id="Wood1988a" name="Wood1988a"></a>Wood, W.B. 1988a. Introduction to <em>C. elegans</em> biology. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 1. pp 1-16. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York. <a href="http://cshmonographs.org/index.php/monographs/article/view/5016" target="_blank">Abstract</a></p>_
 
-<p><a name="Wood1988b"></a>Wood, W.B. 1988b. Embryology. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 8. pp 215-241. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York. <a href="http://cshmonographs.org/index.php/monographs/article/view/5023" target="_blank">Abstract</a></p>
+_<p><a id="Wood1988b" name="Wood1988b"></a>Wood, W.B. 1988b. Embryology. In The nematode<em> C. elegans</em> (ed. W.B. Wood). Chapter 8. pp 215-241. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York. <a href="http://cshmonographs.org/index.php/monographs/article/view/5023" target="_blank">Abstract</a></p>_
 
-<p><a id="Zhang2016" name="Zhang2016"></a>Zhang, W.B., Sinha, D.B., Pittman, W.E., Hvatum, E., Stroustrup, N. and Pincus, Z. 2016. Extended twilight among isogenic <em>C. elegans</em> causes a disproportionate scaling between lifespan and health. Cell Syst. <strong>3: </strong>333045.e4 <a href="https://doi.org/10.1016/j.cels.2016.09.003" target="_blank">Article</a></p>
+_<p><a id="Zhang2016" name="Zhang2016"></a>Zhang, W.B., Sinha, D.B., Pittman, W.E., Hvatum, E., Stroustrup, N. and Pincus, Z. 2016. Extended twilight among isogenic <em>C. elegans</em> causes a disproportionate scaling between lifespan and health. Cell Syst. <strong>3: </strong>333045.e4 <a href="https://doi.org/10.1016/j.cels.2016.09.003" target="_blank">Article</a></p>_
 

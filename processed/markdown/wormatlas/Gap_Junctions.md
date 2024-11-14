@@ -715,364 +715,364 @@
  propagating from head to tail (class B excitors, including <a href="https://www.wormatlas.org/neurons/Individual%20Neurons/DBframeset.html" target="_blank">DB</a>, <a href="https://www.wormatlas.org/neurons/Individual%20Neurons/VBframeset.html" target="_blank">VB</a>), while others propagate signals from tail to head (class A
  excitors, including <a href="https://www.wormatlas.org/neurons/Individual%20Neurons/DAframeset.html" target="_blank">DA</a>, <a href="https://www.wormatlas.org/neurons/Individual%20Neurons/VAframeset.html" target="_blank">VA</a>). </p>
 
-<p><a id="AbdusSaboor2011" name="AbdusSaboor2011"></a>Abdus-Saboor, I., Mancuso, V.P.,
+_<p><a id="AbdusSaboor2011" name="AbdusSaboor2011"></a>Abdus-Saboor, I., Mancuso, V.P.,
  Murray, J.I., Palozola, K., Norris, C., Hall,<strong> </strong>D.H.,
  Howell, K., Huang, K. and Sundaram, M.V. 2011. Notch and Ras promote
  sequential steps of excretory tube development in <em>C. elegans</em>.
- Development <strong>138: </strong>3545-55. <a href="http://dx.doi.org/10.1242/dev.068148" target="_blank">Article</a></p>
+ Development <strong>138: </strong>3545-55. <a href="http://dx.doi.org/10.1242/dev.068148" target="_blank">Article</a></p>_
 
-<p><a id="Albertson1984" name="Albertson1984"></a>Albertson, D.G. and Thomson, J.N. 1984.
+_<p><a id="Albertson1984" name="Albertson1984"></a>Albertson, D.G. and Thomson, J.N. 1984.
  The pharynx of <em>C. elegans</em>. Phil. Trans. Royal Soc.
  London <strong>275B:</strong> 299-325. <a href="http://www.wormatlas.org/ver1/albertson_1975/toc.html" target="_blank">Article</a>
-</p>
+</p>_
 
-<p><a name="Altun2009"></a>Altun, Z.F., Chen, B., Wang, Z-W. and Hall, D. H.. 2009. High
+_<p><a id="Altun2009" name="Altun2009"></a>Altun, Z.F., Chen, B., Wang, Z-W. and Hall, D. H.. 2009. High
  resolution map of <em>Caenorhabditis elegans</em> gap junction proteins<em>. </em>Dev.
  Dyn. <strong>238:</strong> 1936-1950.<a href="http://onlinelibrary.wiley.com/doi/10.1002/dvdy.22025/full" target="_blank">
- Article</a></p>
+ Article</a></p>_
 
-<p><a id="Avery1989" name="Avery1989"></a>Avery, L. and Horvitz, H.R. 1989. Pharyngeal
+_<p><a id="Avery1989" name="Avery1989"></a>Avery, L. and Horvitz, H.R. 1989. Pharyngeal
  pumping continues after laser killing of the pharyngeal nervous system of <em>C.
- elegans</em>. Neuron <strong>3:</strong>473-485. <a href="http://dx.doi.org/10.1016/0896-6273(89)90206-7" target="_blank">Abstract</a></p>
+ elegans</em>. Neuron <strong>3:</strong>473-485. <a href="http://dx.doi.org/10.1016/0896-6273(89)90206-7" target="_blank">Abstract</a></p>_
 
-<p><a id="Bao2007" name="Bao2007"></a>Bao, L., Samuels, S., Locovei, S.,
+_<p><a id="Bao2007" name="Bao2007"></a>Bao, L., Samuels, S., Locovei, S.,
  Macagno, E.R., Muller, K.J. and Dahl, G. 2007. Innexins form two types
- of channels. FEBS Letters <strong>581</strong>: 5703-08. <a href="https://dx.doi.org/10.1016/j.bpj.2011.09.041" target="_blank">Article</a></p>
+ of channels. FEBS Letters <strong>581</strong>: 5703-08. <a href="https://dx.doi.org/10.1016/j.bpj.2011.09.041" target="_blank">Article</a></p>_
 
-<p><a id="Baranova2004" name="Baranova2004"></a>Baranova, A, Ivanov, D.,
+_<p><a id="Baranova2004" name="Baranova2004"></a>Baranova, A, Ivanov, D.,
  Petrash, N., Skoblov, M., Kelmanson, I., Shagin, D., Nazarenko, S.,
  Geraymovych, E., Litvin, O., Tiunova, A., Born, T.L., Usman, N.,
  Staroverov, D., Lukyanov, S. and Panchin, Y. 2004. The mammalian
  pannexin family is homologous to the invertebrate innexin gap junction
- proteins. Genomics<strong> 83</strong>: 706-716. <a href="https://doi.org/10.1016/j.ygeno.2003.09.025" target="_blank">Abstract</a></p>
+ proteins. Genomics<strong> 83</strong>: 706-716. <a href="https://doi.org/10.1016/j.ygeno.2003.09.025" target="_blank">Abstract</a></p>_
 
-<p><a id="Bargmann2006" name="Bargmann2006"></a>Bargmann, C.I. 2006. Chemosensation
+_<p><a id="Bargmann2006" name="Bargmann2006"></a>Bargmann, C.I. 2006. Chemosensation
  in <em>C. elegans</em>. In <em>WormBook </em>(ed. The <em>C.
- elegans </em>Research Community), WormBook, doi/10.1895/wormbook.1.123.1. <a href="http://dx.doi.org/10.1895/wormbook.1.123.1" target="_blank">Article</a></p>
+ elegans </em>Research Community), WormBook, doi/10.1895/wormbook.1.123.1. <a href="http://dx.doi.org/10.1895/wormbook.1.123.1" target="_blank">Article</a></p>_
 
-<p><a id="Bischoff2006" name="Bischoff2006"></a>Bischoff, M. and Schnabel, R. 2006. Global
+_<p><a id="Bischoff2006" name="Bischoff2006"></a>Bischoff, M. and Schnabel, R. 2006. Global
  cell sorting is mediated by local cell-cell interactions in the <em>C. elegans</em>
- embryo. Dev. Biol. <strong>294</strong>: 432-44. <a href="https://doi.org/10.1016/j.ydbio.2006.03.005" target="_blank">Article</a></p>
+ embryo. Dev. Biol. <strong>294</strong>: 432-44. <a href="https://doi.org/10.1016/j.ydbio.2006.03.005" target="_blank">Article</a></p>_
 
-<p><a id="Bischoff" name="Bouhours2011"></a>Bouhours, M., Po, M.D., Gao,
+_<p><a id="Bouhours2011" name="Bouhours2011"></a>Bouhours, M., Po, M.D., Gao,
  S., Hung, W., Li, H., Georgiou, J., Roder, J.C. and Zhen, M. 2011. A
  co-operative regulation of neuronal excitability by UNC-7 innexin and
- NCA/NALCN leak channel. Mol. Brain <strong>4</strong>: 1-16. <a href="https://doi.org/10.1186/1756-6606-4-16" target="_blank">Article</a></p>
+ NCA/NALCN leak channel. Mol. Brain <strong>4</strong>: 1-16. <a href="https://doi.org/10.1186/1756-6606-4-16" target="_blank">Article</a></p>_
 
-<p><a id="Bischoff2" name="Bruzzone2003"></a>Bruzzone, R., Hormuzdi,
+_<p><a id="Bruzzone2003" name="Bruzzone2003"></a>Bruzzone, R., Hormuzdi,
  S.G., Barbe, M.T., Herb, A. and Monyer, H. 2003. Pannexins, a family og
- gap junction proteins expressed in brain. PNAS <strong>100</strong>: 13644-13649. <a href="https://doi.org/10.1073/pnas.2233464100" target="_blank">Article</a></p>
+ gap junction proteins expressed in brain. PNAS <strong>100</strong>: 13644-13649. <a href="https://doi.org/10.1073/pnas.2233464100" target="_blank">Article</a></p>_
 
-<p><a id="Buechner1999" name="Buechner1999"></a>Buechner, M., Hall, D.H., Bhatt, H. and
+_<p><a id="Buechner1999" name="Buechner1999"></a>Buechner, M., Hall, D.H., Bhatt, H. and
  Hedgecock, E.M. 1999. Cystic canal mutants in <em>C. elegans</em> are defective
  in the apical membrane domain of the renal (excretory) cell. Dev.
- Biol. <strong>214</strong>: 227-241. <a href="http://www.wormbase.org/db/misc/paper?name=WBPaper00003721;class=Paper" target="_blank">Abstract</a> </p>
+ Biol. <strong>214</strong>: 227-241. <a href="http://www.wormbase.org/db/misc/paper?name=WBPaper00003721;class=Paper" target="_blank">Abstract</a> </p>_
 
-<p><a id="Byrd2014" name="Byrd2014"></a>Byrd, D.T., Knobel, K., Affeldt,
+_<p><a id="Byrd2014" name="Byrd2014"></a>Byrd, D.T., Knobel, K., Affeldt,
  K., Crittenden, S.L. and Kimble, J. 2014. A DTC niche plexus surrounds
- the germline stem cell pool in <em>C. elegans</em>. PLOS ONE. <a href="https://doi.org/10.1371/journal.pone.0088372" target="_blank">Article</a></p>
+ the germline stem cell pool in <em>C. elegans</em>. PLOS ONE. <a href="https://doi.org/10.1371/journal.pone.0088372" target="_blank">Article</a></p>_
 
-<p><a id="Chalfie1985" name="Chalfie1985"></a>Chalfie, M., Sulston,
+_<p><a id="Chalfie1985" name="Chalfie1985"></a>Chalfie, M., Sulston,
  J.E., White, J.G., Southgate, E., Thomson, J.N. and Brenner, S. 1985.
  The neural circuit for touch sensitivity in <em>Caenorhabditis elegans</em>. J.
- Neurosci. <strong>5:</strong> 956-964. <a href="http://www.jneurosci.org/cgi/reprint/5/4/956" target="_blank">Article</a></p>
+ Neurosci. <strong>5:</strong> 956-964. <a href="http://www.jneurosci.org/cgi/reprint/5/4/956" target="_blank">Article</a></p>_
 
-<p><a id="Chiu2014" name="Chiu2014"></a>Chiu, Y.H., Ravichandran, K.S. and Bayliss, D.A.
+_<p><a id="Chiu2014" name="Chiu2014"></a>Chiu, Y.H., Ravichandran, K.S. and Bayliss, D.A.
  2014. Intrinsic properties and regulation of pannexin 1 channel. Channels
- <strong>8</strong>: 103-109. <a href="https://doi.org/10.4161/chan.27545" target="_blank">Article</a></p>
+ <strong>8</strong>: 103-109. <a href="https://doi.org/10.4161/chan.27545" target="_blank">Article</a></p>_
 
-<p><a name="Chuang2007"></a>Chuang, C-F., VanHoven, M. K., Fetter, R.
+_<p><a id="Chuang2007" name="Chuang2007"></a>Chuang, C-F., VanHoven, M. K., Fetter, R.
  D., Verselis, V. K. and Bargmann, C. I. 2007. An innexin-dependent
  network establishes left-right neuronal asymmetry in <em>C. elegans. </em>Cell.
- <strong>129:</strong> 787-799.<a href="http://www.sciencedirect.com/science/article/pii/S0092867407004515" target="_blank"> Article</a></p>
+ <strong>129:</strong> 787-799.<a href="http://www.sciencedirect.com/science/article/pii/S0092867407004515" target="_blank"> Article</a></p>_
 
-<p><a id="Cook2018" name="Cook2018"></a>Cook, Britten, Jarrell, Wang,
+_<p><a id="Cook2018" name="Cook2018"></a>Cook, Britten, Jarrell, Wang,
  Bloniarz, Yakovlev, Nguyen, Tang, Bayer, Buelow, Hobert, Hall and
  Emmons. 2018. Whole-animal connectomes of the two adults sexes of <em>Caenorhabditis
- elegans. </em>In prep.</p>
+ elegans. </em>In prep.</p>_
 
-<p><a id="delCastillo1989" name="delCastillo1989"></a>del Castillo, J., Rivera, A.,
+_<p><a id="delCastillo1989" name="delCastillo1989"></a>del Castillo, J., Rivera, A.,
   Solï¿½rzano, S. and Serrato, J. 1989. Some aspects of the neuromuscular system of
  <em>Ascaris</em>. Exp. Physiol. <strong>74</strong>: 1071-87. <a href="http://dx.doi.org/10.1113/expphysiol.1989.sp003334" target="_blank">Article</a>
-</p>
+</p>_
 
-<p><a id="Emmons2016" name="Emmons2016"></a>Emmons, S.W. 2016. Connectomics, the Final
- Frontier. Curr. Top. Dev. Biol. <strong>116</strong>: 315-30. <a href="https://doi.org/10.1016/bs.ctdb.2015.11.001">Article</a></p>
+_<p><a id="Emmons2016" name="Emmons2016"></a>Emmons, S.W. 2016. Connectomics, the Final
+ Frontier. Curr. Top. Dev. Biol. <strong>116</strong>: 315-30. <a href="https://doi.org/10.1016/bs.ctdb.2015.11.001">Article</a></p>_
 
-<p><a id="Faumont2012" name="Faumont2012"></a>Faumont, S., Lindsay, T.H. and Lockery, S.R.
+_<p><a id="Faumont2012" name="Faumont2012"></a>Faumont, S., Lindsay, T.H. and Lockery, S.R.
  2012. Neuronal microcircuits for decision making in <em>C. elegans</em>. Curr. Opin.
- Neurobiol.<strong> 22: </strong>580-91. <a href="https://doi.org/10.1016/j.conb.2012.05.005" target="_blank">Abstract</a></p>
+ Neurobiol.<strong> 22: </strong>580-91. <a href="https://doi.org/10.1016/j.conb.2012.05.005" target="_blank">Abstract</a></p>_
 
-<p><a id="Goldberg2004" name="Goldberg2004"></a>Goldberg, G.S., Valiunas, V. and Brink, P.R.
+_<p><a id="Goldberg2004" name="Goldberg2004"></a>Goldberg, G.S., Valiunas, V. and Brink, P.R.
  2004. Selective permeability of gap junction channels. Biochim. Biophys. Acta
- <strong>1662</strong>: 96-101. <a href="https://doi.org/10.1016/j.bbamem.2003.11.022" target="_blank">Article</a></p>
+ <strong>1662</strong>: 96-101. <a href="https://doi.org/10.1016/j.bbamem.2003.11.022" target="_blank">Article</a></p>_
 
-<p><a id="Hall" name="Hall1977"></a>Hall D.H. 1977. ï¿½The posterior nervous system of the
+_<p><a id="Hall1977" name="Hall1977"></a>Hall D.H. 1977. ï¿½The posterior nervous system of the
  nematode <em>Caenorhabditis elegans</em>.ï¿½ Ph.D. thesis. California Institute of
- Technology, Pasadena.</p>
+ Technology, Pasadena.</p>_
 
-<p><a id="Hall2" name="Hall1987"></a>Hall D.H. 1987. Freeze-fracture and freeze-etch studies
+_<p><a id="Hall1987" name="Hall1987"></a>Hall D.H. 1987. Freeze-fracture and freeze-etch studies
  of the nematode <em>Caenorhabditis elegans</em>. Ann. N.Y. Acad.
- Sci. <strong>494:</strong> 215ï¿½217. <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1749-6632.1987.tb29527.x/abstract" target="_blank">Abstract</a></p>
+ Sci. <strong>494:</strong> 215ï¿½217. <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1749-6632.1987.tb29527.x/abstract" target="_blank">Abstract</a></p>_
 
-<p><a id="Hall2008" name="Hall2008"></a>Hall, D.H. and Altun, Z. 2008. <em>C.
- elegans </em>Atlas. Cold Spring Harbor Laboratory Press, New York. pp348. <a href="http://www.cshlpress.com/default.tpl?action=full&amp;cart=120779871146186400&amp;--eqskudatarq=560&amp;newtitle=C.%20elegans%20Atlas" target="_blank">Abstract</a></p>
+_<p><a id="Hall2008" name="Hall2008"></a>Hall, D.H. and Altun, Z. 2008. <em>C.
+ elegans </em>Atlas. Cold Spring Harbor Laboratory Press, New York. pp348. <a href="http://www.cshlpress.com/default.tpl?action=full&amp;cart=120779871146186400&amp;--eqskudatarq=560&amp;newtitle=C.%20elegans%20Atlas" target="_blank">Abstract</a></p>_
 
-<p><a id="Hall4" name="Hall2016"></a>Hall, D.H. 2016. Gap junctions in <em>C. elegans</em>:
- their roles in behavior and developmentl. Dev. Neurobiol. doi: 10.1002/dneu.22408. <a href="http://dx.doi.org/10.1002/dneu.22408" target="_blank">Article</a></p>
+_<p><a id="Hall2016" name="Hall2016"></a>Hall, D.H. 2016. Gap junctions in <em>C. elegans</em>:
+ their roles in behavior and developmentl. Dev. Neurobiol. doi: 10.1002/dneu.22408. <a href="http://dx.doi.org/10.1002/dneu.22408" target="_blank">Article</a></p>_
 
-<p><a id="Hall3" name="Hall2016"></a>Hall, D.H. 2017. The role of gap junctions in the
- <em>C. elegans </em>connectome. Neurosci. Lett. S0304-3940(17)30736-X. <a href="https://doi.org/10.1016/j.neulet.2017.09.002" target="_blank">Abstract</a></p>
+_<p><a id="Hall2016" name="Hall2016"></a>Hall, D.H. 2017. The role of gap junctions in the
+ <em>C. elegans </em>connectome. Neurosci. Lett. S0304-3940(17)30736-X. <a href="https://doi.org/10.1016/j.neulet.2017.09.002" target="_blank">Abstract</a></p>_
 
-<p><a id="Hall1991" name="Hall1991"></a>Hall, D.H. and Russell, G.J. 1991. The posterior
+_<p><a id="Hall1991" name="Hall1991"></a>Hall, D.H. and Russell, G.J. 1991. The posterior
  nervous system of the nematode <em>Caenorhabditis elegans</em>: Serial reconstruction
  of identified neurons and complete pattern of synaptic interactions. J.
- Neurosci.<strong> 11:</strong> 1-22.<a href="http://www.wormatlas.org/HallRussell_1991/Hall_1991.html" target="_blank"> Article</a></p>
+ Neurosci.<strong> 11:</strong> 1-22.<a href="http://www.wormatlas.org/HallRussell_1991/Hall_1991.html" target="_blank"> Article</a></p>_
 
-<p><a id="Hall1999" name="Hall1999"></a>Hall, D.H., Winfrey, V.P.,
+_<p><a id="Hall1999" name="Hall1999"></a>Hall, D.H., Winfrey, V.P.,
  Blauer, G., Hoffman, L.H., Rose, K.L., Furuta, T., Hobert, O. and
  Greenstein, D. 1999. Ultrastructural features of the adult hermaphrodite
  gonad of <em>Caenorhabditis elegans</em>: Relations between the germ line and soma.
- Dev. Biol. <strong>212:</strong> 101-123. <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&amp;_udi=B6WDG-45GWBVD-66&amp;_user=10&amp;_coverDate=08%2F01%2F1999&amp;_rdoc=9&amp;_fmt=full&amp;_orig=browse&amp;_srch=doc-info(%23toc%236766%231999%23997879998%23299846%23FLP%23display%23Volume)&amp;_cdi=6766&amp;_sort=d&amp;_docanchor=&amp;_ct" target="_blank">Article</a></p>
+ Dev. Biol. <strong>212:</strong> 101-123. <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&amp;_udi=B6WDG-45GWBVD-66&amp;_user=10&amp;_coverDate=08%2F01%2F1999&amp;_rdoc=9&amp;_fmt=full&amp;_orig=browse&amp;_srch=doc-info(%23toc%236766%231999%23997879998%23299846%23FLP%23display%23Volume)&amp;_cdi=6766&amp;_sort=d&amp;_docanchor=&amp;_ct" target="_blank">Article</a></p>_
 
-<p><a id="Haspel2012" name="Haspel2012"></a>Haspel, G. and O'Donovan, M.J. 2012. A
+_<p><a id="Haspel2012" name="Haspel2012"></a>Haspel, G. and O'Donovan, M.J. 2012. A
  connectivity model for the locomotor network of <em>C. elegans</em>. Worm
- <strong>1:</strong> 125-8. <a href="https://dx.doi.org/10.4161/worm.19392" target="_blank">Article</a></p>
+ <strong>1:</strong> 125-8. <a href="https://dx.doi.org/10.4161/worm.19392" target="_blank">Article</a></p>_
 
-<p><a id="Jang2012" name="Jang2012"></a>Jang, H., Kim, K., Neal, S.J.,
+_<p><a id="Jang2012" name="Jang2012"></a>Jang, H., Kim, K., Neal, S.J.,
  Macosko, E., Kim, D., Butcher, R.A., Zeiger, D.M., Bargmann, C.I. and
  Sengupta, P. 2012. Neuromodulatory state and sex specify alternative
  behaviors through antagonistic synaptic pathways in <em>C. elegans</em>. Neuron
- <strong>75:</strong> 585-92. <a href="http://dx.doi.org/10.1016/j.neuron.2012.06.034" target="_blank">Article</a></p>
+ <strong>75:</strong> 585-92. <a href="http://dx.doi.org/10.1016/j.neuron.2012.06.034" target="_blank">Article</a></p>_
 
-<p><a id="Jarrell2012" name="Jarrell2012"></a>Jarrell, T.A., Wang, Y.,
+_<p><a id="Jarrell2012" name="Jarrell2012"></a>Jarrell, T.A., Wang, Y.,
  Bloniarz, A.E., Brittin, C.A., Xu, M., Thomson, J.N., Albertson, D.G.,
  Hall, D.H. and Emmons, S.W. 2012. The connectome of a decision making
- neuronal network. Science<strong> 337</strong>: 437-444. <a href="http://dx.doi.org/10.1126/science.1221762" target="_blank">Abstract</a></p>
+ neuronal network. Science<strong> 337</strong>: 437-444. <a href="http://dx.doi.org/10.1126/science.1221762" target="_blank">Abstract</a></p>_
 
-<p><a id="Kawano2011" name="Kawano2011"></a>Kawano, T., Po, M.D., Gao,
+_<p><a id="Kawano2011" name="Kawano2011"></a>Kawano, T., Po, M.D., Gao,
  S., Leung, G., Ryu, W.S. and Zhen, M. 2011. An imbalancing act: gap
  junctions reduce the backward motor circuit activity to bias <em>C. elegans</em> for
- forward locomotion, Neuron <strong>72</strong>: 572-586. <a href="http://dx.doi.org/10.1016/j.neuron.2011.09.005" target="_blank">Article</a></p>
+ forward locomotion, Neuron <strong>72</strong>: 572-586. <a href="http://dx.doi.org/10.1016/j.neuron.2011.09.005" target="_blank">Article</a></p>_
 
-<p><a id="Kawano" name="Kim2017"></a>Kim, B. and Emmons, S.W. 2017.
+_<p><a id="Kim2017" name="Kim2017"></a>Kim, B. and Emmons, S.W. 2017.
  Multiple conserved cell adhesion protein interactions mediate neural
- wiring of a sensory circuit in <em>C. elegans</em>. eLife 2017;6:e29257. <a href="https://doi.org/10.7554/eLife.29257" target="_blank">Article</a></p>
+ wiring of a sensory circuit in <em>C. elegans</em>. eLife 2017;6:e29257. <a href="https://doi.org/10.7554/eLife.29257" target="_blank">Article</a></p>_
 
-<p><a id="Koeppen2001" name="Koeppen2001"></a>Koeppen, M., Simske, J.,
+_<p><a id="Koeppen2001" name="Koeppen2001"></a>Koeppen, M., Simske, J.,
  Sims, P., Firestein, B.L., Hall, D.H., Radice, A., Rongo, C. and Hardin,
  J. 2001. Cooperative regulation of AJM-1 controls junctional integrity
  in <em>Caenorhabditis elegans</em> epithelia. Nature Cell Biol. <strong>3</strong>:
- 983-991. <a href="http://dx.doi.org/10.1038/ncb1101-983" target="_blank">Abstract</a></p>
+ 983-991. <a href="http://dx.doi.org/10.1038/ncb1101-983" target="_blank">Abstract</a></p>_
 
-<p><a id="Koeppen" name="Koval2014"></a>Koval, M., Molina, S.A. and
+_<p><a id="Koval2014" name="Koval2014"></a>Koval, M., Molina, S.A. and
  Burt, J.M. 2014. Mix and match: Investigating heteromeric and
  heterotypic gap junction channels in model systems and native tissues.
- FEBS Lett. <strong>588</strong>:11931204. <a href="https://dx.doi.org/10.1016/j.febslet.2014.02.025" target="_blank">Article</a></p>
+ FEBS Lett. <strong>588</strong>:11931204. <a href="https://dx.doi.org/10.1016/j.febslet.2014.02.025" target="_blank">Article</a></p>_
 
-<p><a id="Lane1977" name="Lane1977"></a>Lane, N.J., Skaer, H.L. and Swales, L.S. 1977.
+_<p><a id="Lane1977" name="Lane1977"></a>Lane, N.J., Skaer, H.L. and Swales, L.S. 1977.
  Intercellular junctions in the central nervous system of insects. J. Cell Sci.
- <strong>26</strong>: 175-99. <a href="http://jcs.biologists.org/content/26/1/175.long" target="_blank">Article</a></p>
+ <strong>26</strong>: 175-99. <a href="http://jcs.biologists.org/content/26/1/175.long" target="_blank">Article</a></p>_
 
-<p><a id="Liu2011" name="Liu2011"></a>Liu, P., Chen, B. and Wang Z-W. 2011. Gap junctions
+_<p><a id="Liu2011" name="Liu2011"></a>Liu, P., Chen, B. and Wang Z-W. 2011. Gap junctions
  synchronize action potentials and Ca2+ transients in <em>C. elegans</em> body wall
- muscles. JBC<strong> 286</strong>: 44285-93. <a href="http://dx.doi.org/10.1074/jbc.M111.292078" target="_blank">Article</a></p>
+ muscles. JBC<strong> 286</strong>: 44285-93. <a href="http://dx.doi.org/10.1074/jbc.M111.292078" target="_blank">Article</a></p>_
 
-<p><a id="Liu2013" name="Liu2013"></a>Liu, P., Chen, B., Altun, Z.F.,
+_<p><a id="Liu2013" name="Liu2013"></a>Liu, P., Chen, B., Altun, Z.F.,
  Gross, M.J., Shan, A., Schuman, B., Hall, D.H. and Wang, Z-W.
  2013. Six innexins contribute to electrical coupling of <em>C. elegans </em>body-wall
  muscle. PLoS ONE<strong> 8:</strong> e76877.<a href="http://dx.doi.org/10.1371/journal.pone.0076877" target="_blank"> Article</a>
-</p>
+</p>_
 
-<p><a id="Liu2017" name="Liu2017"></a>Liu, P., Chen, B., Mailler, R. and
+_<p><a id="Liu2017" name="Liu2017"></a>Liu, P., Chen, B., Mailler, R. and
  Wang, Z.-W. 2017. Antidromic-rectifying gap junctions amplify chemical
  transmission at functionally mixed electrical-chemical synapses. Nat.
- Com. <strong>8</strong>: 14818. <a href="http://dx.doi.org/10.1038/ncomms14818" target="_blank">Article</a></p>
+ Com. <strong>8</strong>: 14818. <a href="http://dx.doi.org/10.1038/ncomms14818" target="_blank">Article</a></p>_
 
-<p><a id="Liu2006" name="Liu2006"></a>Liu, Q., Chen, B., Gaier, E.,
+_<p><a id="Liu2006" name="Liu2006"></a>Liu, Q., Chen, B., Gaier, E.,
  Joshi, J. and Wang, Z-W. 2006. Low conductance gap junctions mediate
  specific electrical coupling in the body wall muscle cells of <em>C. elegans</em>. J Biol.
- Chem.<strong> 281</strong>: 7881-9. <a href="http://dx.doi.org/10.1074/jbc.M512382200" target="_blank">Article</a></p>
+ Chem.<strong> 281</strong>: 7881-9. <a href="http://dx.doi.org/10.1074/jbc.M512382200" target="_blank">Article</a></p>_
 
-<p><a id="Liu2007" name="Liu2007"></a>Liu, S.J. and Zukin, R.S. 2007.
+_<p><a id="Liu2007" name="Liu2007"></a>Liu, S.J. and Zukin, R.S. 2007.
  Ca2+ permeable AMPA receptors in synaptic plasticity and neuronal death.
- Trends Neurosci. 30: 126-34. <a href="http://dx.doi.org/10.1016/j.tins.2007.01.006" target="_blank">Abstract</a></p>
+ Trends Neurosci. 30: 126-34. <a href="http://dx.doi.org/10.1016/j.tins.2007.01.006" target="_blank">Abstract</a></p>_
 
-<p><a id="Luo2014" name="Luo2014"></a>Luo, L., Wen, Q., Ren, J.,
+_<p><a id="Luo2014" name="Luo2014"></a>Luo, L., Wen, Q., Ren, J.,
  Hendricks, M., Gershow, M., Qin, Y., Greenwood, J., Soucy, E.R.,
  Klein, M., Smith-Parker, H.K., Calvo, A.C., Colï¿½n-Ramos, D.A., Samuel,
  A.D. and Zhang, Y. 2014. Dynamic encoding of perception, memory, and
  movement in a <em>C. elegans</em> chemotaxis circuit. Neuron <strong>82</strong>: 1115-28.
- <a href="http://dx.doi.org/10.1016/j.neuron.2014.05.010" target="_blank">Article</a></p>
+ <a href="http://dx.doi.org/10.1016/j.neuron.2014.05.010" target="_blank">Article</a></p>_
 
-<p><a id="Macosko2009" name="Macosko2009"></a>Macosko, E.Z., Pokala, N.,
+_<p><a id="Macosko2009" name="Macosko2009"></a>Macosko, E.Z., Pokala, N.,
  Feinberg, E.H., Chalasani, S.H., Butcher, R.A., Clardy, J. and
  Bargmann, C.I. 2009. A hub-and-spoke circuit drives pheromone attraction
  and social behavior in <em>C. elegans</em>. Nature <strong>458</strong>: 1171-5.<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2760495/" target="_blank">
- Article</a></p>
+ Article</a></p>_
 
-<p><a id="Malnic1999" name="Malnic1999"></a>Malnic, B., Hirono, J., Sato, T., and Buck, L.B.
- 1999. Combinatorial receptor codes for odors. Cell <strong>96</strong>: 713-23. <a href="https://doi.org/10.1016/S0092-8674(00)80581-4" target="_blank">Article</a></p>
+_<p><a id="Malnic1999" name="Malnic1999"></a>Malnic, B., Hirono, J., Sato, T., and Buck, L.B.
+ 1999. Combinatorial receptor codes for odors. Cell <strong>96</strong>: 713-23. <a href="https://doi.org/10.1016/S0092-8674(00)80581-4" target="_blank">Article</a></p>_
 
-<p><a id="Mancuso2012" name="Mancuso2012"></a>Mancuso, V.P., Parry,
+_<p><a id="Mancuso2012" name="Mancuso2012"></a>Mancuso, V.P., Parry,
  J.M., Storer, L., Poggioli, C., Nguyen, K.C., Hall, D.H. and Sundaram,
  M.V. 2012. Extracellular leucine-rich repeat proteins are required to
  organize the apical extracellular matrix and maintain epithelial
  junction integrity in<em> C. elegans</em>.
- Development <strong>139: </strong>979-990. <a href="http://dx.doi.org/10.1242/dev.077347" target="_blank">Abstract</a></p>
+ Development <strong>139: </strong>979-990. <a href="http://dx.doi.org/10.1242/dev.077347" target="_blank">Abstract</a></p>_
 
-<p><a id="Norman2007" name="Norman2007"></a>Norman, K.R. and Villu Maricq, A. 2007. Innexin
- function: Minding the gap junction. Curr. Biol. <strong>17</strong>: R812-R814. <a href="https://doi.org/10.1016/j.cub.2007.07.043" target="_blank">Article</a></p>
+_<p><a id="Norman2007" name="Norman2007"></a>Norman, K.R. and Villu Maricq, A. 2007. Innexin
+ function: Minding the gap junction. Curr. Biol. <strong>17</strong>: R812-R814. <a href="https://doi.org/10.1016/j.cub.2007.07.043" target="_blank">Article</a></p>_
 
-<p><a id="Nguyen1999" name="Nguyen1999"></a>Nguyen, C.Q., Hall, D.H., Yang, Y. and
+_<p><a id="Nguyen1999" name="Nguyen1999"></a>Nguyen, C.Q., Hall, D.H., Yang, Y. and
  Fitch, D.H.A. 1999. Morphogenesis in the male tail tip of <em>Caenorhabditis
- elegans</em>. Dev. Biol.<strong> 207</strong>: 86-106. <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&amp;_udi=B6WDG-45GWC3C-B5&amp;_user=10&amp;_rdoc=1&amp;_fmt=&amp;_orig=search&amp;_sort=d&amp;view=c&amp;_acct=C000050221&amp;_version=1&amp;_urlVersion=0&amp;_userid=10&amp;md5=12460ad4446caf049b84916667b91ae0" target="_blank">Article</a></p>
+ elegans</em>. Dev. Biol.<strong> 207</strong>: 86-106. <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&amp;_udi=B6WDG-45GWC3C-B5&amp;_user=10&amp;_rdoc=1&amp;_fmt=&amp;_orig=search&amp;_sort=d&amp;view=c&amp;_acct=C000050221&amp;_version=1&amp;_urlVersion=0&amp;_userid=10&amp;md5=12460ad4446caf049b84916667b91ae0" target="_blank">Article</a></p>_
 
-<p><a id="Oshim2013" name="Oshim2013"></a>Oshima, A., Matsuzawa, T., Nishikawa, K. and
+_<p><a id="Oshim2013" name="Oshim2013"></a>Oshima, A., Matsuzawa, T., Nishikawa, K. and
  Fujiyoshi, Y. 2013. Oligomeric structure and functional characterization of the <em>C.
  elegans</em> innexin-6 gap junction protein. J. Biol. Chem.<strong> 288</strong>:
  10513-21. <a href="http://dx.doi.org/10.1074/jbc.M112.428383" target="_blank">Article</a>
-</p>
+</p>_
 
 <p> <a id="Oshima2016" name="Oshima2016"></a>Oshima, A., Matsuzawa, T.,
  Murata, K., Tani, K. and Fujiyoshi, Y. 2016. Hexadecameric structure of
  an invertebrate gap junction channel. J. Mol. Biol. <strong>428</strong>: 1227-1236. <a href="https://doi.org/10.1016/j.jmb.2016.02.011" target="_blank">Article</a></p>
 
-<p><a id="Penuela2013" name="Penuela2013"></a>Penuela, S., Gehl, R. and Laird, D.W. 2013.
+_<p><a id="Penuela2013" name="Penuela2013"></a>Penuela, S., Gehl, R. and Laird, D.W. 2013.
  The biochemistry and function of pannexin channels. BBA-Biomembranes
- <strong>1828</strong>: 15-22. <a href="https://doi.org/10.1016/j.bbamem.2012.01.017" target="_blank">Article</a></p>
+ <strong>1828</strong>: 15-22. <a href="https://doi.org/10.1016/j.bbamem.2012.01.017" target="_blank">Article</a></p>_
 
-<p><a id="Peters2007" name="Peters2007"></a>Peters, M.A., Teramoto, T.,
+_<p><a id="Peters2007" name="Peters2007"></a>Peters, M.A., Teramoto, T.,
  White, J.Q., Iwasaki, K. and Jorgensen, E.M. 2007. A calcium wave
  mediated by gap junctions coordinates a rhythmic behavior in <em>C. elegans. </em>Curr.
- Biol.<strong> 17</strong>: 1601-08. <a href="https://doi.org/10.1016/j.cub.2007.08.031" target="_blank">Article</a></p>
+ Biol.<strong> 17</strong>: 1601-08. <a href="https://doi.org/10.1016/j.cub.2007.08.031" target="_blank">Article</a></p>_
 
-<p><a id="Phelan2001" name="Phelan2001"></a>Phelan, P. and Starich, T.A. 2001. Innexins get
- into the gap. Bioessays <strong>23:</strong> 388-396. <a href="http://dx.doi.org/10.1002/bies.1057" target="_blank">Abstract</a></p>
+_<p><a id="Phelan2001" name="Phelan2001"></a>Phelan, P. and Starich, T.A. 2001. Innexins get
+ into the gap. Bioessays <strong>23:</strong> 388-396. <a href="http://dx.doi.org/10.1002/bies.1057" target="_blank">Abstract</a></p>_
 
-<p><a id="Quick" name="Qadota2017"></a>Qadota, H., Matsunaga, Y.,
+_<p><a id="Qadota2017" name="Qadota2017"></a>Qadota, H., Matsunaga, Y.,
  Nguyen, K.C.Q., Mattheyse, A., Hall, D.H. and Benian, G.M.
  2017. High-resolution imaging of muscle attachment structures in <em>Caenorhabditis
- elegans</em>. Cytoskeleton <strong>74</strong>: 426-442. <a href="https://dx.doi.org/10.1002/cm.21410" target="_blank">Abstract</a></p>
+ elegans</em>. Cytoskeleton <strong>74</strong>: 426-442. <a href="https://dx.doi.org/10.1002/cm.21410" target="_blank">Abstract</a></p>_
 
-<p><a id="Quick1977" name="Quick1977"></a>Quick, D.C. and Johnson, R.G. 1977. Gap junctions
- and rhombic particle arrays in planaria. J. Ultrastr. Res. <strong>60</strong>: 348-61. <a href="https://doi.org/10.1016/S0022-5320(77)80019-1" target="_blank">Abstract</a></p>
+_<p><a id="Quick1977" name="Quick1977"></a>Quick, D.C. and Johnson, R.G. 1977. Gap junctions
+ and rhombic particle arrays in planaria. J. Ultrastr. Res. <strong>60</strong>: 348-61. <a href="https://doi.org/10.1016/S0022-5320(77)80019-1" target="_blank">Abstract</a></p>_
 
-<p><a id="Raizen1995" name="Raizen1995"></a>Raizen, D.M., Lee, R.Y.N. and Avery, L. 1995.
+_<p><a id="Raizen1995" name="Raizen1995"></a>Raizen, D.M., Lee, R.Y.N. and Avery, L. 1995.
  Interacting genes required for pharyngeal excitation by motor neuron MC
  in <em>Caenorhabditis elegans</em>.
- Genetics <strong>141:</strong> 1365-1382. <a href="http://www.genetics.org/content/141/4/1365.full.pdf+html" target="_blank">Article</a></p>
+ Genetics <strong>141:</strong> 1365-1382. <a href="http://www.genetics.org/content/141/4/1365.full.pdf+html" target="_blank">Article</a></p>_
 
-<p><a id="Raizen2" name="Revel1967"></a>Retamal, M.A. and Saez, J.C. 2014. Hemichannels:
- from the molecule to the function. Front. Physiol. <strong>5</strong>: 411. <a href="https://dx.doi.org/10.3389%2Ffphys.2014.00411" target="_blank">Article</a></p>
+_<p><a id="Revel1967" name="Revel1967"></a>Retamal, M.A. and Saez, J.C. 2014. Hemichannels:
+ from the molecule to the function. Front. Physiol. <strong>5</strong>: 411. <a href="https://dx.doi.org/10.3389%2Ffphys.2014.00411" target="_blank">Article</a></p>_
 
-<p><a id="Raizen" name="Revel1967"></a>Revel, J.P. and Karnovsky, M.J.
+_<p><a id="Revel1967" name="Revel1967"></a>Revel, J.P. and Karnovsky, M.J.
  1967. Hexagonal array of subunits in intercellular junctions of the
- mouse heart and liver. J. Cell Biol. <strong>33</strong>: C7-C12.<a href="https://dx.doi.org/10.1083/jcb.33.3.C7" target="_blank"> Article</a></p>
+ mouse heart and liver. J. Cell Biol. <strong>33</strong>: C7-C12.<a href="https://dx.doi.org/10.1083/jcb.33.3.C7" target="_blank"> Article</a></p>_
 
-<p><a id="Rengarajan2016" name="Rengarajan2016"></a>Rengarajan, S. and Hallem, E.A. 2016.
+_<p><a id="Rengarajan2016" name="Rengarajan2016"></a>Rengarajan, S. and Hallem, E.A. 2016.
  Olfactory circuits and behaviors of nematodes. Curr. Opin. Neurobiol. <strong>41:</strong>
  136-148. <a href="https://doi.org/10.1016/j.conb.2016.09.002" target="_blank">Abstract</a>
-</p>
+</p>_
 
-<p><a id="Rengarajan" name="Richter2014"></a>Richter, K., Kiefer, K.P.,
+_<p><a id="Richter2014" name="Richter2014"></a>Richter, K., Kiefer, K.P.,
  Grzesik, B.A., Clauss, W.G. and Fronius, M. 2014 Hydrostatic pressure
  activates ATP-sensitive K+ channels in lung epithelium by ATP release
  through pannexin and connexin hemichannels. The FASEB Journal <strong>28</strong>: 45-55.
- <a href="https://doi.org/10.1096/fj.13-229252" target="_blank">Article</a></p>
+ <a href="https://doi.org/10.1096/fj.13-229252" target="_blank">Article</a></p>_
 
-<p><a id="RodenasRuano2012" name="RodenasRuano2012"></a>Rodenas-Ruano,
+_<p><a id="RodenasRuano2012" name="RodenasRuano2012"></a>Rodenas-Ruano,
  A., Chavez, A.E., Cossio, M.J., Castillo, P.E. and Zukin, R.S. 2012.
  REST-dependent epigenetic remodeling promotes the developmental switch
- in synaptic NMDA receptors. Nat. Neurosci. <strong>15</strong>: 1382-90. <a href="https://dx.doi.org/10.1038/nn.3214" target="_blank">Article</a></p>
+ in synaptic NMDA receptors. Nat. Neurosci. <strong>15</strong>: 1382-90. <a href="https://dx.doi.org/10.1038/nn.3214" target="_blank">Article</a></p>_
 
-<p><a id="Simonsen2014" name="Simonsen2014"></a>Simonsen, K.T., Moerman, D.G. and Naus, C.C.
- 2014. Gap junctions in <em>C. elegans</em>. Front. Physiol. <strong>5</strong>: 40. <a href="https://dx.doi.org/10.3389/fphys.2014.00040" target="_blank">Article</a></p>
+_<p><a id="Simonsen2014" name="Simonsen2014"></a>Simonsen, K.T., Moerman, D.G. and Naus, C.C.
+ 2014. Gap junctions in <em>C. elegans</em>. Front. Physiol. <strong>5</strong>: 40. <a href="https://dx.doi.org/10.3389/fphys.2014.00040" target="_blank">Article</a></p>_
 
-<p><a id="Simonsen" name="Sosinsky2011"></a>Sosinsky, G.E., Boassa, D.,
+_<p><a id="Sosinsky2011" name="Sosinsky2011"></a>Sosinsky, G.E., Boassa, D.,
  Dermietzel, R., Duffy, H.S., Laird, D.W., MacVicar, B., Naus, C.C.,
  Penuela, S., Scemes, E., Spray, D.C., Thompson, R.J., Zhao, H.B. and
  Dahl, G. 2011. Pannexin channels are not gap junction hemichannels.
- Channels <strong>5</strong>: 193-197. <a href="https://dx.doi.org/10.4161%2Fchan.5.3.15765" target="_blank">Article</a></p>
+ Channels <strong>5</strong>: 193-197. <a href="https://dx.doi.org/10.4161%2Fchan.5.3.15765" target="_blank">Article</a></p>_
 
-<p><a id="Staehelin1974" name="Staehelin1974"></a>Staehelin, L.A. 1974. Structure and
- function of intercellular junctions. Int. Rev. Cytol. <strong>39</strong>: 191-283. <a href="https://doi.org/10.1016/S0074-7696(08)60940-7" target="_blank">Abstract</a></p>
+_<p><a id="Staehelin1974" name="Staehelin1974"></a>Staehelin, L.A. 1974. Structure and
+ function of intercellular junctions. Int. Rev. Cytol. <strong>39</strong>: 191-283. <a href="https://doi.org/10.1016/S0074-7696(08)60940-7" target="_blank">Abstract</a></p>_
 
-<p><a id="Starich" name="Starich1996"></a>Starich, T.A., Lee, R.Y., Panzarella, C., Avery,
+_<p><a id="Starich1996" name="Starich1996"></a>Starich, T.A., Lee, R.Y., Panzarella, C., Avery,
  L. and Shaw, J.E. 1996. <em>eat-5 </em>and <em>unc-7</em> represent a multigene family in
  <em>Caenorhabditis elegans</em> involved in cell-cell coupling. J. Cell Biol. <strong>134:
- </strong>537-548. <a href="https://dx.doi.org/10.1083/jcb.134.2.537" target="_blank">Article</a></p>
+ </strong>537-548. <a href="https://dx.doi.org/10.1083/jcb.134.2.537" target="_blank">Article</a></p>_
 
-<p><a id="Starich2003" name="Starich2003"></a>Starich, T.A., Miller, A. Nguyen,
+_<p><a id="Starich2003" name="Starich2003"></a>Starich, T.A., Miller, A. Nguyen,
  R.L., Hall, D.H. and Shaw, J.E. 2003. The <em>Caenorhabditis
  elegans</em> innexin INX-3 is localized to gap junctions and is essential for
- embryonic development. Dev. Biol. <strong>256</strong>:403-417.  <a href="http://dx.doi.org/10.1016/S0012-1606(02)00116-1" target="_blank">Article</a></p>
+ embryonic development. Dev. Biol. <strong>256</strong>:403-417.  <a href="http://dx.doi.org/10.1016/S0012-1606(02)00116-1" target="_blank">Article</a></p>_
 
-<p><a id="Starich2014" name="Starich2014"></a>Starich, T.A., Hall,
+_<p><a id="Starich2014" name="Starich2014"></a>Starich, T.A., Hall,
  D.H<strong>.</strong> and
  Greenstein, D. 2014. Two classes of gap junction channels mediate
  soma-germline interactions essential for germline proliferation and
  gametogenesis in <em>Caenorhabditis elegans</em>.
- Genetics<strong> 198:</strong> 1127-53. <a href="http://dx.doi.org/10.1534/genetics.114.168815" target="_blank">Article</a></p>
+ Genetics<strong> 198:</strong> 1127-53. <a href="http://dx.doi.org/10.1534/genetics.114.168815" target="_blank">Article</a></p>_
 
-<p><a id="Stein2015" name="Stein2015"></a>Stein, K.K. and Golden, A. 2015.  The <em>C.
+_<p><a id="Stein2015" name="Stein2015"></a>Stein, K.K. and Golden, A. 2015.  The <em>C.
  elegans</em> eggshell. <em>WormBook</em>, ed. The <em>C. elegans </em>Research
  Community, WormBook, doi/10.1895/wormbook.1.179.1<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5603424/" target="_blank">
- Article</a></p>
+ Article</a></p>_
 
-<p><a id="Stone2009" name="Stone2009"></a>Stone, C.E., Hall,
+_<p><a id="Stone2009" name="Stone2009"></a>Stone, C.E., Hall,
  D.H. and Sundaram, M.V. 2009. Lipocalin signaling controls
  unicellular tube development in the <em>Caenorhabditis elegans</em> excretory
- system. Dev. Biol.<strong> 15: </strong>201-11. <a href="http://dx.doi.org/10.1016/j.ydbio.2009.02.030" target="_blank">Article</a></p>
+ system. Dev. Biol.<strong> 15: </strong>201-11. <a href="http://dx.doi.org/10.1016/j.ydbio.2009.02.030" target="_blank">Article</a></p>_
 
-<p><a id="Stone" name="Stretton1978"></a>Stretton, A.O., Fishpool, R.M.,
+_<p><a id="Stretton1978" name="Stretton1978"></a>Stretton, A.O., Fishpool, R.M.,
  Southgate, E., Donmoyer, J.E., Walrond, J.P., Moses, J.E. and Kass,
  I.S. 1978. Structure and physiological activity of the motoneurons of
- the nematode<em> Ascaris</em>.<strong> 75</strong>: 3493-7. <a href="http://www.pnas.org/content/75/7/3493.full.pdf" target="_blank">Article</a></p>
+ the nematode<em> Ascaris</em>.<strong> 75</strong>: 3493-7. <a href="http://www.pnas.org/content/75/7/3493.full.pdf" target="_blank">Article</a></p>_
 
-<p><a id="Sulston1980" name="Sulston1980"></a>Sulston, J.E., Albertson, D.G. and Thomson,
+_<p><a id="Sulston1980" name="Sulston1980"></a>Sulston, J.E., Albertson, D.G. and Thomson,
  J.N. 1980. The <em>Caenorhabditis elegans</em> male: postembryonic development
- of nongonadal structures. Dev Biol. <strong>78: </strong>542-576. <a href="http://www.wormatlas.org/SulstonpostembMale_1980/SulstonpostembMale1980.html" target="_blank">Article</a></p>
+ of nongonadal structures. Dev Biol. <strong>78: </strong>542-576. <a href="http://www.wormatlas.org/SulstonpostembMale_1980/SulstonpostembMale1980.html" target="_blank">Article</a></p>_
 
-<p><a id="Trojanowski2015" name="Trojanowski2015"></a>Trojanowski, N.F.
+_<p><a id="Trojanowski2015" name="Trojanowski2015"></a>Trojanowski, N.F.
  and Fang-Yen, C. 2015. Simultaneous optogenetic stimulation of
  individual pharyngeal neurons and monitoring of feeding behavior in
  intact <em>C. elegans. </em>Methods Mol. Biol. <strong>1327</strong>: 105-19. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4862196/" target="_blank">Article</a>
-</p>
+</p>_
 
-<p><a id="Trojanowski2016" name="Trojanowski2016"></a> Trojanowski, N.F., Raizen, D.M. and
+_<p><a id="Trojanowski2016" name="Trojanowski2016"></a> Trojanowski, N.F., Raizen, D.M. and
  Fang-Yen, C. 2016. Pharyngeal pumping in <em>C. elegans</em> depends on tonic and phasic
- signaling from the nervous system. Sci. Rep. <strong>6</strong>: 22940.<a href="http://dx.doi.org/10.1038/srep22940" target="_blank"> Article</a></p>
+ signaling from the nervous system. Sci. Rep. <strong>6</strong>: 22940.<a href="http://dx.doi.org/10.1038/srep22940" target="_blank"> Article</a></p>_
 
-<p><a id="Varshney2011" name="Varshney2011"></a>Varshney, L.R., Chen, B.L., Paniagua,
+_<p><a id="Varshney2011" name="Varshney2011"></a>Varshney, L.R., Chen, B.L., Paniagua,
  E.,<strong> </strong>Hall, D.H.<strong> </strong>and Chklovskii, D.B. 2011.
  Structural properties of the<em> Caenorhabditis elegans</em> neuronal network.
- PLoS Comput. Biol. <strong>7: </strong>e1001066. <a href="http://dx.plos.org/10.1371/journal.pcbi.1001066" target="_blank">Article</a></p>
+ PLoS Comput. Biol. <strong>7: </strong>e1001066. <a href="http://dx.plos.org/10.1371/journal.pcbi.1001066" target="_blank">Article</a></p>_
 
-<p><a id="White2" name="Walker2020"></a>Walker, D.S. and Schafer, W.R.
+_<p><a id="Walker2020" name="Walker2020"></a>Walker, D.S. and Schafer, W.R.
  2020. Distinct roles for innexin gap junctions and hemichannels in
- mechanosensation. 9. pii: e50597. doi: 10.7554/eLife.50597. <a href="https://doi.org/10.7554/eLife.50597" target="_blank">Article</a></p>
+ mechanosensation. 9. pii: e50597. doi: 10.7554/eLife.50597. <a href="https://doi.org/10.7554/eLife.50597" target="_blank">Article</a></p>_
 
-<p><a id="White1976" name="White1976"></a>White J.G., Southgate, E., Thomson, J.N. and
+_<p><a id="White1976" name="White1976"></a>White J.G., Southgate, E., Thomson, J.N. and
  Brenner, S. 1976. The structure of the ventral nerve cord of<em> Caenorhabditis
  elegans</em>. Philos. Trans. R. Soc. Lond. Series B. Biol.
  Sci. <strong>275B:</strong> 327-348. <a href="http://www.wormatlas.org/white_1976/White_1976.html" target="_blank">Article</a>
-</p>
+</p>_
 
-<p><a id="White1986" name="White1986"></a>White, J.G., Southgate, E., Thomson, J.N. and
+_<p><a id="White1986" name="White1986"></a>White, J.G., Southgate, E., Thomson, J.N. and
  Brenner, S. 1986. The structure of the nervous system of the nematode <em>C.
  elegans</em>.  Philos. Trans. R. Soc. Lond. Series B. Biol.
  Sci. <strong>314:</strong> 1-340. <a href="http://www.wormatlas.org/MoW_built0.92/MoW.html" target="_blank">Article</a> 
- </p>
+ </p>_
 
-<p><a id="White" name="White2003"></a>White, T.W. 2003. Nonredundant gap junction functions.
- Physiology <strong>18</strong>: 95-99. <a href="https://doi.org/10.1152/nips.01430.2002" target="_blank">Article</a></p>
+_<p><a id="White2003" name="White2003"></a>White, T.W. 2003. Nonredundant gap junction functions.
+ Physiology <strong>18</strong>: 95-99. <a href="https://doi.org/10.1152/nips.01430.2002" target="_blank">Article</a></p>_
 
-<p><a id="Zhang2013" name="Zhang2013"></a>Zhang, J., Li, X., Jevince, A.R., Guan, L., Wang,
+_<p><a id="Zhang2013" name="Zhang2013"></a>Zhang, J., Li, X., Jevince, A.R., Guan, L., Wang,
  J.,<strong> </strong>Hall,
  D.H., Huang, X. and Ding, M. 2013. Neuronal target identification
  requires AHA-1-mediated fine-tuning of Wnt signaling in <em>C. elegans</em>. PLoS
- Genetics<strong> 9:</strong> e1003618.<a href="http://dx.doi.org/10.1371%2Fjournal.pgen.1003618" target="_blank"> Article</a></p>
+ Genetics<strong> 9:</strong> e1003618.<a href="http://dx.doi.org/10.1371%2Fjournal.pgen.1003618" target="_blank"> Article</a></p>_
 
 <p>
 <!-- END IMAGE AREA 6 -->

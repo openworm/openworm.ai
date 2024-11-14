@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString
 
 MARKDOWN_DIR = "../processed/markdown/wormatlas"
 PLAINTEXT_DIR = "../processed/plaintext/wormatlas"
@@ -37,15 +37,59 @@ class WormAtlasParser:
                     # print(table.replace('\n', '%s\n'%count))
 
                     print("%s -- |%s...|\n" % (count, str(element)[:200]))
-                    print(element.contents)
-                    self.process_paragraph(element)
+                    # print(element.contents)
+                    anchor = (
+                        element.contents[0]["name"]
+                        if (
+                            len(element.contents) > 0
+                            and type(element.contents[0]) is not NavigableString
+                            and element.contents[0].has_attr("name")
+                        )
+                        else ""
+                    )
+
+                    print("Anchor: - %s" % anchor)
+
+                    if "19" in anchor or "20" in anchor:
+                        self.process_reference(element)
+                    else:
+                        self.process_paragraph(element)
                 count += 1
 
         self.finalise()
 
+    def process_reference(self, reference):
+        reference.a["id"] = reference.a["name"]
+        r_md = str(reference)
+
+        print("  - REF: %s...\n" % (r_md[:80]))
+
+        r_md = r_md.replace("\t", "  ")
+        while "  " in r_md:
+            r_md = r_md.replace("  ", " ")
+
+        r_md.replace("ï¿½", "'").replace("\n", "")
+
+        self.markdown.write("_%s_\n\n" % r_md)
+
+        for s in reference.contents:
+            print(" >>> %s" % s)
+            if type(s) is NavigableString:
+                self.plaintext.write("%s" % s.replace("  ", " "))
+            elif s.has_attr("name"):
+                pass
+            elif s.has_attr("href"):
+                self.plaintext.write("(%s)" % s.attrs["href"])
+            else:
+                for c in s.contents:
+                    self.plaintext.write("%s" % c)
+
+        self.plaintext.write("\n\n")
+
     def process_paragraph(self, paragraph):
         p_md = str(paragraph)
 
+        p_md = p_md.replace("\t", "  ")
         while "  " in p_md:
             p_md = p_md.replace("  ", " ")
 
@@ -68,6 +112,7 @@ class WormAtlasParser:
 
         p = str(paragraph)
 
+        p = p.replace("\t", "  ")
         while "  " in p:
             p = p.replace("  ", " ")
 
