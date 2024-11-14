@@ -206,6 +206,9 @@ if __name__ == "__main__":
     guides = {}
 
     guides["Introduction"] = "../corpus/wormatlas/Handbook - Introduction.html"
+    guides["Alimentary System"] = (
+        "../corpus/wormatlas/Handbook - Alimentary System Overview.html"
+    )
     guides["Gap Junctions"] = "../corpus/wormatlas/Handbook - Gap Junctions.html"
 
     with open("../processed/markdown/wormatlas/README.md", "w") as readme:
