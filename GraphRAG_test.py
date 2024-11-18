@@ -35,7 +35,7 @@ for json_file in json_inputs:
             if len(all_text)==0:
                 all_text = ' '
             #print(f'---------------------\n{all_text}\n---------------------')
-            src_info = f'WormAtlas Handbook: {title}, Section {section} ({src_page})'
+            src_info = f'WormAtlas Handbook: [{title}, Section {section}]({src_page})'
             doc = Document(text=all_text, metadata={SOURCE_DOCUMENT:src_info})
             documents.append(doc)
 
