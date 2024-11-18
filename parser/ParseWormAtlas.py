@@ -1,17 +1,24 @@
 from bs4 import BeautifulSoup, NavigableString, Comment
 
+
+from Models import Document, Section, Paragraph
+
 MARKDOWN_DIR = "../processed/markdown/wormatlas"
 PLAINTEXT_DIR = "../processed/plaintext/wormatlas"
+JSON_DIR = "../processed/json/wormatlas"
 
 
 class WormAtlasParser:
     markdown = None
     plaintext = None
-    json = {}
+    doc_model = None
 
     html = None
 
-    def __init__(self, title, filename):
+    def __init__(self, title, info):
+        filename = info[0]
+
+        self.title = title
         ref = title.replace(" ", "_")
 
         self.markdown = open("%s/%s.md" % (MARKDOWN_DIR, ref), "w")
@@ -22,7 +29,9 @@ class WormAtlasParser:
 
         self.plaintext.write("%s\n\n" % title)
 
-        self.json["title"] = title
+        src = "https://www.wormatlas.org%s" % info[1]
+
+        self.doc_model = Document(id=title, title=title, source=src)
 
         verbose = False
 
@@ -107,6 +116,10 @@ class WormAtlasParser:
             print("  - HEADING: [%s]" % (heading))
             h_number = heading.split(" ", 1)[0]
             h_name = heading.split(" ", 1)[1]
+
+            self.current_section = Section("%s) %s" % (h_number, h_name))
+            self.doc_model.sections.append(self.current_section)
+
             self.markdown.write("%s %s) %s\n\n" % ("#" * (depth + 1), h_number, h_name))
 
             self.plaintext.write("%s%s) %s\n\n" % (" " * (depth + 1), h_number, h_name))
@@ -192,25 +205,39 @@ class WormAtlasParser:
         if verbose:
             print(p)
 
-        self.plaintext.write("%s\n\n" % p)
+        if len(p) > 0:
+            self.plaintext.write("%s\n\n" % p)
+            self.current_section.paragraphs.append(Paragraph(p))
 
     def finalise(self):
         self.plaintext.close()
         self.markdown.close()
-        # from bs4.diagnose import diagnose
 
-        # diagnose(self.html)
+        self.doc_model.to_json_file(
+            "%s/%s.json" % (JSON_DIR, self.title.replace(" ", "_"))
+        )
 
 
 if __name__ == "__main__":
     guides = {}
 
-    guides["Introduction"] = "../corpus/wormatlas/Handbook - Introduction.html"
-    guides["Alimentary System"] = (
-        "../corpus/wormatlas/Handbook - Alimentary System Overview.html"
-    )
-    guides["Pharynx"] = "../corpus/wormatlas/Handbook - Alimentary System Pharynx.html"
-    guides["Gap Junctions"] = "../corpus/wormatlas/Handbook - Gap Junctions.html"
+    guides["Introduction"] = [
+        "../corpus/wormatlas/Handbook - Introduction.html",
+        "/hermaphrodite/introduction/Introframeset.html",
+    ]
+    guides["Alimentary System"] = [
+        "../corpus/wormatlas/Handbook - Alimentary System Overview.html",
+        "/hermaphrodite/alimentary/Alimframeset.html",
+    ]
+
+    guides["Pharynx"] = [
+        "../corpus/wormatlas/Handbook - Alimentary System Pharynx.html",
+        "/hermaphrodite/pharynx/Phaframeset.html",
+    ]
+    guides["Gap Junctions"] = [
+        "../corpus/wormatlas/Handbook - Gap Junctions.html",
+        "/hermaphrodite/gapjunctions/Gapjunctframeset.html",
+    ]
 
     with open("../processed/markdown/wormatlas/README.md", "w") as readme:
         readme.write("""

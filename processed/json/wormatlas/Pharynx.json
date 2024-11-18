@@ -1,0 +1,298 @@
+{
+    "Pharynx": {
+        "title": "Pharynx",
+        "source": "https://www.wormatlas.org/hermaphrodite/pharynx/Phaframeset.html",
+        "sections": {
+            "1) Overview": {
+                "paragraphs": [
+                    {
+                        "contents": "C. elegans feeds on bacteria in liquid suspension. Bacteria taken in by the mouth are concentrated, ground and transported to the intestine by a tube-like muscular pump called the pharynx. The pharynx is an epithelial organ that has its own muscles, nervous system, gland cells and structural cells. It contains 9 epithelial cells, 20 muscle cells, 9 marginal cells, 4 gland cells and 20 neurons (PhaFIG 1), and 6 valve cells at its posterior (see also PharynxAtlas). It is about 100 \u00b5m long and has a diameter of approximately 20 \u00b5m at its widest (at the posterior bulb). At the anterior, it is connected to the buccal cavity and at the posterior, to the intestine. The pharynx is isolated from the rest of the animal by a specialized basal lamina that lines the basal surface of the pharyngeal cells and isolates the pharynx from the pseudocoelom. There may be hormonal signaling between this organ and the rest of the body by way of the pseudocoelomic fluid. The apical surface of the pharyngeal cells lies medially towards the lumen, which is lined with a cuticle secreted by the pharyngeal muscle and marginal cells. At several locations pharyngeal cuticle takes the form of specialized structures, such as the anterior \u0093flaps\u0094, the \u0093sieve\u0094 and the \u0093grinder\u0094 (PhaFIG 2; see Cuticle) (Avery and and Thomas, 1997)."
+                    },
+                    {
+                        "contents": "The pharynx has a distinctive shape; an extended anterior portion (procorpus) is connected to the buccal cavity via the pharyngeal epithelium (Albertson and Thomson, 1976; Franks et al., 2006). The metacorpus, also called the first bulb, lies posterior to the procorpus. The procorpus and metacorpus together make the corpus of the pharynx. Between the corpus and the second bulb (also called the terminal bulb) lies the isthmus (PhaFIG 2). The large somatic nerve ring surrounds the isthmus on the outside."
+                    },
+                    {
+                        "contents": "The pharynx has intrinsic myogenic activity that is regulated by its nervous system. When the entire pharyngeal nervous system is ablated, the pharynx continues to pump, albeit in a slow and uncoordinated manner (Avery and Horvitz, 1989). The nervous system, in turn, integrates internal signals such as the animal\u0092s nutritional status and external signals such as the presence or absence of food (Avery and Horvitz, 1989; Franks et al., 2006). In the absence of food, the pharynx pumps approximately once every second, whereas in the presence of food the rate increases to about four pumps per second. Starved and well-fed worms show initially different pumping rates upon transfer from solid to liquid media (Avery et al., 1993; McCloskey et al., 2017). The pumping rate of the pharynx is also modulated by the somatic sensory system; for example, pumping is briefly inhibited upon sensing a light touch to the body (Chalfie et al., 1985; Avery and Thomas., 1997)."
+                    }
+                ]
+            },
+            "2) Embryonic Development of the Pharynx": {
+                "paragraphs": [
+                    {
+                        "contents": "Unlike the intestinal cells, all of which arise from a single founder cell E, the pharynx is composed of cells that arise from both AB and MS founder cells (AlimFIG 1). In these lineages, no strict clonal and lineal derivation can be recognized, and there is a heterogeneity of ancestry with respect to the final cell fate (PhaMOVIE 1&2). In the anterior divisions, no lineal boundaries exist between hypodermal, arcade and pharyngeal daughters. The pharyngeal components derived from MS and AB do not possess any functional boundaries either, such that in pm3, pm4 and pm5 muscle groups identical cells arise from these two lineages and some MS descendants fuse with those coming from the AB blast cell (Sulston et al., 1983; Horner et al., 1998)."
+                    },
+                    {
+                        "contents": "During gastrulation, at approximately the 100-cell stage and after the movement of gut precursors to inside of the embryo, MS descendants start to move inward through the blastopore (AlimFIG 1 and PhaFIG 3A-D) (Bucher and Seydoux, 1994; Mango, 2007). Slightly later, AB-derived precursors of the pharynx move inside of the embryo. At 150-260 minutes, pharyngeal precursor cells arrange in a bilateral \u0093double plate\u0094 organization (Rasmussen et al., 2013). This is followed at 330-390 minutes by nuclear movement and constriction of cell\u0092s apical boundaries at the double plate midline leading to the formation of a compact \u0093cyst\u0094 pharyngeal primordium (Rasmussen et al., 2008; Rasmussen et al., 2013). These cells are attached to each other and to the midgut by adherens junctions. However, they are not yet attached to the buccal cavity (see Epithelial System - Hypodermis) (Portereiko and Mango, 2001). At this time, 78 of the 80 pharyngeal cells are already born. During the next hour, pharyngeal extension occurs such that the pharyngeal precursors reposition themselves to form a central cylinder and link to the buccal cavity, whereas the body myoblasts position themselves between this cylinder and the outer layer of cells. Pharyngeal extension is accomplished in roughly three steps: reorientation, epithelization and contraction (see Epithelial System - Hypodermis) (Portereiko and Mango, 2001). Later, the pharyngeal tube morphs into a bilobed structure and develops a lumen. Lumen formation is thought to be performed by retraction of the tips of the marginal cells from the midline of the pharyngeal primordium when the pharyngeal muscles differentiate and contract (PhaFIG 3E-G) (Leung et al., 1999). An exception to this is the pm8 and vpi1 cells at the posterior end of the pharynx, which form adjacent single cell tubes through detachment from the basal lamina, lamellar invasion, and self-fusion. vpi1 forms a toroidal tube during embryogenesis that connects with itself through self-fusion (Rasmussen et al., 2008). Cell fusions in the pharynx occur either before or soon after hatching (Sulston et al., 1983). C. elegans initiates pharyngeal pumping right before hatching."
+                    }
+                ]
+            },
+            "3) Pharyngeal (Buccal) Epithelium": {
+                "paragraphs": [
+                    {
+                        "contents": "A series of interfacial cells join the lips to the buccal cavity and the buccal cavity to the pharynx (See Epithelial System - Interfacial Epithelial Cells; PhaFIG 4A-D; PharynxAtlas) (Wright and Thomson, 1981). The buccal cavity is surrounded, from anterior to the posterior, by the anterior hypodermis and the arcade cells, which constitute the anterior limit of the pharyngeal lumen (PhaFIG 4E-I; InterFIG 1; InterFIG 3). Each of these cells contributes small territories along the buccal cavity and their cell bodies lie more posteriorly in the head. The arcade cells are contiguous with the pharyngeal epithelium, a thin tube made from nine cells, formed by two successive rings of nonsyncytial tissue with sixfold symmetry (PhaFIG 5) (Albertson and Thomson, 1976). Similar to the anterior hypodermal cells and the arcade cells, the cell bodies of the epithelial cells lie far posterior to the buccal cavity and extend thin processes anteriorly within the pharyngeal nerve cords to reach their territories surrounding the lumen (Albertson and Thomson, 1976). The most anterior epithelial cells, e1, are positioned as a single dorsal and two subventral cells, covering markedly thinner territories (as measured along the a/p axis) than the other six cells. The posteriormost cells, e3, are positioned in the same pattern, and their epithelial territories lie directly behind those of e1 cells. The intervening e2 cells lie at the three apices of the triangular lumen, and their epithelial territories span the width of both the e1 and e3 cells, yielding a sixfold symmetry. At their lateral borders, all of these epithelial cells are firmly connected to their immediate neighbors by large adherens junctions (running continuously at the apical border). Where the epithelial cells border the posterior arcade cells, there are again very prominent adherens junctions (PhaFIG5 D&E)."
+                    },
+                    {
+                        "contents": "The pharyngeal epithelium is a rather rigid narrow cylinder that restricts entry of food into the pharynx. Its cylindrical shape is heavily reinforced by short radial bundles of intermediate filaments anchored to the apical and basal membranes of the epithelial cells by large hemidesmosomes. These well-anchored filaments seem to limit the epithelial cylinder from stretching or collapsing, despite the vigorous movements of the nearby pharyngeal musculature. The pharyngeal epithelial cells also secrete the cuticle that lines the buccal cavity along the former mesostom portion."
+                    },
+                    {
+                        "contents": "The inside caliber of the buccal epithelial lumen increases markedly at each larval molt, and this increase in size of the buccal cavity is suggested to permit increased growth rate after each molt (Knight et al., 2002). The buccal cavity is much narrower in the dauer larva, which stops actively feeding (DCutFIG4)."
+                    }
+                ]
+            },
+            "4) Muscle Cells of the Pharynx": {
+                "paragraphs": [
+                    {
+                        "contents": "The pharyngeal muscles are grouped into eight separate segments (pm1-pm8), which are arranged as eight consecutive rings encircling the pharynx (PhaFIG 6A-C; PharynxAtlas) (Albertson and Thomson 1976; Avery and Thomas, 1997; Franks et al., 2006). Unlike the body wall muscles, no hypodermal layer separates the muscle anchorage from the cuticle lining the lumen of the pharynx. Indeed, most of the pharyngeal muscles appear to participate directly in secreting cuticle (e.g., the two anteriormost pharyngeal muscle cells, pm1 and pm2, secrete the cuticle that lines the metostom and telostom portions of the buccal cavity) and thus qualify as having myoepithelial properties (Albertson and Thomson 1976, D.H. Hall, unpublished). Consistent with this, the pm1 cells are required for secretion of the metastomal flaps (Sando et al., 2021). Most of the pharyngeal muscle segments are made up of three syncytial cells positioned in a three-fold symmetrical manner in any cross section (PhaFIG 6D). Each of these cells contains two nuclei as a result of fusion of two cells around the time of hatching (See Table 1 in Albertson and Thomson 1976; see also PhaTABLE 1). In pm2-pm5 of adult pharynx, there are still small remnant adherens junctions at the sites of former cell fusions between pairs of muscle cells, marking the exact apical border where the fusion has occurred (PhaFIG 3) (Hedgecock and Thomson, 1982). These remnant junctions express the AJM-1 protein and can be stained by immunocytochemistry (Koppen et al., 2001; D.H. Hall, unpublished). The three muscle cells of each segment are separated from each other by three marginal cells, whereas the muscle cells of the neighboring rings are linked by gap junctions and also connected via interlocking short fingers on the anterior and posterior margins. Each syncytial muscle cell contains a deep groove on the basal side where a longitudinal pharyngeal \"nerve cord\" is situated (PhaFIG 6 and PhaFIG 7A). These nerve cords enclose the cell bodies and processes of neurons, gland cells, and anterior epithelial cells. Many synapses, including neuromuscular junctions onto the pharyngeal muscles, occur along these cords."
+                    },
+                    {
+                        "contents": "Specialized zones mark the apical regions of several of the pharyngeal muscles where they secrete cuticle. Here, the cytoplasm contains electron dense tubules, and sometimes, dense core vesicles just under the plasma membrane. The cytoplasm of pm6 is particularly specialized in the region underlying the grinder, which is a very elaborate cuticular structure secreted by the pm6 muscle cells (PhaFIG 2). During the lethargus period preceding each larval molt, pm6 and pm7 produce secretory vesicles, which interrupt the sarcomeres. Vesicles with electron dense cores predominate during shedding of the L4 cuticle, while electron lucent core vesicles are dominant during the formation of the adult cuticle (Sparacio et al., 2020). Prominent networks of sarcoplasmic reticulum along the borders of each muscle sarcomere presumably sequester calcium needed for muscle contractility. Pharyngeal muscle cells also contain many mitochondria."
+                    },
+                    {
+                        "contents": "In most pharyngeal muscle segments, contractile filaments are oriented radially, and when the muscles contract, the pharyngeal lumen opens. However, in the terminal bulb, the pm7 muscle filaments are oriented obliquely with regard to the anterior-posterior axis and pull on the grinder region when the muscle contracts. pm1-pm4 function in sucking up and trapping bacteria. pm5 regulates flow of food from corpus to the terminal bulb, and pm6-pm8 operate the grinder."
+                    }
+                ]
+            },
+            "5) Marginal Cells": {
+                "paragraphs": [
+                    {
+                        "contents": "The pharynx is a mosaic of several non-equivalent cell types, each with threefold symmetry that assemble into a nonstratified, one-cell-deep epithelium along the lumen (PhaFIG 7A; PharynxAtlas). As described above, muscle cells are a major part of this epithelium. Cells of another type, the marginal cells (mc), are placed at the three corners of the pharyngeal lumen and separate the muscle cells from one another. There are three mc segments along the pharynx and a total of seven marginal cells; three mc1 cells comprise the anterior segment, three mc2 cells comprise the second segment, and a syncytial mc3 cell with three nuclei comprises the terminal bulb segment (PhaFIG 1 and PhaFIG 6). From segment to segment, the marginal cells lie in rows at the corners of the lumen. They vary markedly in size between segments, but the three cells within one segment are essentially equivalent."
+                    },
+                    {
+                        "contents": "Marginal cells supply reinforcing strength to this muscular organ. Their large size and block-like shape is fortified by the placement of large radial bundles of intermediate filaments running from apical to basal borders of each cell. These filaments are anchored to the plasma membrane by large hemidesmosomes. Within each segment, the marginal cells are linked to neighboring muscle cells on their lateral borders by large gap junctions as well as apical adherens junctions separating the membrane to apical and basal surfaces (PhaFIG 7B&C) (Avery and Thomas, 1997). Large interlocking finger-like extensions also connect marginal cells to muscles within each segment and may also add to the structural integrity of the whole organ. Because of this arrangement, marginal cells within a segment communicate with muscle cells of the same segment and not with other marginal cells. In contrast, between segments, these cells form interlocking fingers and gap junctions to neighboring marginal cells."
+                    },
+                    {
+                        "contents": "The marginal cells contain many mitochondria, which suggests that these cells may perform some active role beyond merely providing continuity and strength to the epithelium. Because marginal cells are coupled to pharyngeal muscles via gap junctions, they may have some motor function, i.e., they may be myoepithelial in nature. Alternatively, they may act as relay stations to synchronously transmit signals from motor neurons to surrounding pharyngeal muscles so that all pharyngeal muscles within a segment can contract and relax at the same time. It is noteworthy that when the pharyngeal muscles contract, the muscle cells become thinner to open the lumen. Because the marginal  cells are already relatively thin, this suggests that at full contraction, the pharyngeal lumen may open practically as wide as the inside corners of the marginal cells and form an open triangular lumen, whereas when the muscles relax, the lumen is practically closed except for the three channels at the apices of the anterior lumen."
+                    }
+                ]
+            },
+            "6) Gland Cells of the Pharynx": {
+                "paragraphs": [
+                    {
+                        "contents": "Two classes of gland cells, g1 (three cells) and g2 (two cells), are found in the second bulb of the pharynx (PhaFIG 8; PhaMOVIE 3; PharynxAtlas). Although previously dorsal g1 and right ventral g1 cells were reported to fuse, results with fluorescent markers suggest that these cells remain separate (Smit et al., 2008). Gland cell morphology is sculpted by surrounding muscle cells (PhaFIG 8H) (Raharjo et al., 2011). The g1 cells extend three cuticle-lined ducts anteriorly within the narrow pharyngeal nerve cords. Two of these ducts pass through the isthmus before emptying into the pharyngeal lumen near the first bulb. The dorsal g1 duct travels much farther and empties near the anterior limit of the pharynx. The g2 cells also extend ducts, which are much shorter and empty into the lumen of the second bulb. The g1 cells contain a lamellar cytoplasm and few vesicles, whereas the g2 cells have a rather clear cytoplasm and more vesicles. These contents may vary from animal to animal, and vesicle sizes are quite large and variable. Gland cells receive motor innervation from M4 and M5 motor neurons, which suggests that they may be stimulated to secrete digestive enzymes synchronously with pharyngeal pumping activity. Periodic episodes of secretion (vesicle motion) have been seen in g1 ducts by light microscopy and are apparently associated with molting (Singh and Sulston, 1978; Hall and Hedgecock, 1991). This suggests that gland secretion may participate in the digestion of the pharyngeal cuticle during molting."
+                    }
+                ]
+            },
+            "7) Pharyngeal Neurons": {
+                "paragraphs": [
+                    {
+                        "contents": "The pharynx has 20 intrinsic neurons of 14 types, all of which have cell bodies located in the anterior or posterior bulb (see also PharynxAtlas). Six types are bilaterally paired and eight are single neurons. These neurons extend processes anteriorly and/or posteriorly along the three longitudinal pharyngeal nerve cords (the dorsal and the right and left subventral) and form a small plexus (the pharyngeal nerve ring) within the anterior bulb where they decussate to the other side. A half-ring (the terminal bulb commissure) is made by neuronal processes more posteriorly within the anterior portion of the terminal bulb (PhaFIG 9 and PhaFIG 10). A few neurons (M1, M2 and M3) send out processes along unique routes. The M1 process runs anteriorly between the muscle and the right marginal cell until it reaches the pharyngeal nerve ring where it relocates to the dorsal nerve cord and continues traveling anteriorly in this location. Unlike other neuron processes, M2 and M3 processes do not make their dorsal turn within the pharyngeal nerve ring, but more anteriorly within the pm4 where they pierce through the pm4 as they travel towards the dorsal side to enter the dorsal nerve cord (PhaFIG 10E-J). M2 neurons make synapses to pm4 along the way."
+                    },
+                    {
+                        "contents": "Most of these processes interact synaptically with others within the pharyngeal nerve ring, formed between the narrow region where pm4 and pm5 appose each other (PhaFIG 9). These synapses are of the en passant type, similar to those seen in the somatic neurons. The pharyngeal motor neurons also form neuromuscular junctions (NMJs) onto pharyngeal muscles. Interestingly, all non-neuronal cells receive some synaptic input (Cook et al., 2019). Unlike NMJs between somatic neurons and body wall muscles, no basal lamina has been found separating the neurons from muscles in the pharynx. There are no direct contacts between pharyngeal neurons and the larger somatic nervous system except the gap junctions made between RIPL/R neurons and the pharyngeal I1s, and gap junctions between RIPL/R and the pharyngeal motor neuron, M1 (Albertson and Thomson, 1976; Avery and Thomas, 1997). Ablation of RIP cells results in only a minor effect on pharyngeal function such that the brief inhibition of pumping in response to light touch to body disappears (Avery and Thomas, 1997). It is possible that one or more pharyngeal neurons, such as NSM cells, could secrete hormonal factors into the pseudocoelom to influence the rest of the animal. Otherwise, pharyngeal and somatic nervous systems function more or less independently of each other. A dissected and isolated pharynx continues its normal pumping behavior (Avery et al., 1995)."
+                    },
+                    {
+                        "contents": "In fact, generation of electrical potential changes required for pharyngeal pumping is probably intrinsic to the pharyngeal muscle cells themselves since pumping behavior continues even when all the pharyngeal neurons are ablated (Avery and Horvitz, 1989). Although pumping can still occur after complete ablation of the pharyngeal nervous system, four of the pharyngeal neurons, MC and M3 motor neuron pairs, are important for the regulation of the pump motion."
+                    },
+                    {
+                        "contents": "Pharyngeal neurons fall into three categories: motorneurons, interneurons and other neurons. However, this distinction is somewhat arbitrary because most of these neurons have structures that suggest mixed functions."
+                    },
+                    {
+                        "contents": "7.1 Pharyngeal Motor Neurons"
+                    }
+                ]
+            },
+            "7.1) Pharyngeal Motor Neurons": {
+                "paragraphs": [
+                    {
+                        "contents": "7.2 Interneurons"
+                    }
+                ]
+            },
+            "7.2) Interneurons": {
+                "paragraphs": [
+                    {
+                        "contents": "I1, I2, I3 and I6 are unbranched bipolar cells. I1 cells make electrical synapses with the somatic neurons RIPL/R and synapse onto MC neurons. I5 is a fairly complex cell, the processes of which make a circle within the pharyngeal nerve ring. All of these neurons except for I4 have free subcuticular endings that may have proprioceptive function (Cook et al., 2019). See PharynxAtlas for more details."
+                    },
+                    {
+                        "contents": "7.3 Sensory Neurons"
+                    }
+                ]
+            },
+            "7.3) Sensory Neurons": {
+                "paragraphs": [
+                    {
+                        "contents": "Rudimentary sensory adaptions have been found in most pharyngeal neurons, although none form true cilia (Albertson and Thomson, 1976; Cook et al., 2020). These specializations mean that almost all neurons of the pharynx are truly polymodal. Most sensors are localized to prominent internal structures along the alimentary canal, probably helping to detect progress of food items (bacteria) as they proceed down the buccal channel towards the intestine (PhaFIG 11). Other sensors are embedded inside individual muscle cells and likely provide proprioceptive feedback by detecting muscle contractions during the feeding rhythm."
+                    },
+                    {
+                        "contents": "Three \u0093interneurons \u0093 I1, I2 and I3 form sensory structures in close association to the flaps, at the entry point to the buccal channel, and some are exposed to the channel contents. The MC cell forms an unexposed sensory structure close to the sieve, while the NSM neurons each have an exposed sensory structure there (PhaFIG 11). The NSM ending expresses an Acid-Sensing Ion Channel (ASIC), DEL-7, at this structure. This channel may allow contents of the buccal channel to directly influence physiological activity of NSM (Axang et al., 2008; Rhoades et al, 2019)."
+                    },
+                    {
+                        "contents": "M3 and M4 neurons form exposed structures along the buccal channel near the isthmus."
+                    },
+                    {
+                        "contents": "I6 and the M5 cell each have apparent sensory structures associated with the grinder."
+                    },
+                    {
+                        "contents": "The I5 neuron has a sensory ending buried deep inside a muscle cell in the second bulb, providing a proprioceptive cue during bulb contractions."
+                    },
+                    {
+                        "contents": "None of these pharyngeal sensors constitutes a true cilium, as they all lack features like an axoneme, Y-links or a microtubule-filled extension. Instead, these structures feature prominent adherens junctions that strongly link a short, block-like dendritic ending to the surrounding cells. Where the ending lies directly against the pharyngeal luminal cuticle it is referred to as an \u0093exposed\u0094 ending (exposed to the lumen of the pharynx). If the ending lies somewhat away from the phayrnx\u0092s internal cuticle, it is referred as an \u0093unexposed\u0094 ending (if still close to the lumen) or a \u0093buried\u0094 ending (if far from the lumen). These endings were originally listed in Table 1 in Albertson and Thomson (1976)."
+                    },
+                    {
+                        "contents": "7.4 Pharyngeal Connectome"
+                    }
+                ]
+            },
+            "7.4) Pharyngeal Connectome": {
+                "paragraphs": [
+                    {
+                        "contents": "The synaptic connectivity among the pharyngeal neurons and muscles is virtually independent of the somatic nervous system, except for a few contacts via the RIP neurons of the nerve ring. The complete set of synaptic connections (chemical and electrical) within the pharynx was substantially augmented by Cook et al., (2020). Many more synapses were added, and the previous wiring documented by Albertson and Thomson (1976) was verified. Virtually every cell in the pharynx of any type is now known to be included in this local circuitry. Re-analysis of the revised connectome has revealed how those circuits can be parsed into several distinct modules that match known stages in pharyngeal behavior: 1) pumping, 2) neuromodulation, 3) peristalsis, and 4) grinding (Cook et al., 2020) (PhaFIG 11)."
+                    },
+                    {
+                        "contents": "It is also interesting that the neuropeptides and receptors that interconnect the pharyngeal neurons appear to be somewhat separate from the peptidergic system of the somatic nervous system (see Figure 5 in Beets et al, 2023). There are exceptions: for instance the common FRPR-7 receptor proteins expressed in many pharyngeal neurons, are responsive  to the FLP-1 ligand released by the AVK neurons of the nerve ring. Several classes of pharyngeal neurons also produce neuropeptide ligands that principally target somatic neurons (Beets et al, 2023). These peptidergic connections tend to operate at a distance, and do not require close contact, nor do they shadow the chemical and electrical wiring of the nervous system."
+                    },
+                    {
+                        "contents": "7.5 Other Neurons"
+                    }
+                ]
+            },
+            "7.5) Other Neurons": {
+                "paragraphs": [
+                    {
+                        "contents": "MC neurons are a pair of bipolar cells situated within the anterior bulb that make chemical synapses exclusively onto marginal cells (Cook et al., 2019). The motor-interneuron, MI, is a single unipolar cell situated in the dorsal side of the anterior bulb and synapses onto both muscle and other neurons. The neurosecretory-motor neurons NSML and NSMR send out branches that form varicosities and contain mixed-sized vesicles (PhaFIG 9). The two main processes of the NSMs run in close apposition to the pseudocoelom over most of their length and form some release sites towards this space. NSMs are serotonergic. These cells may have both neurosecretory and motor functions and may communicate the presence of food to the rest of the animal's body. Exogenous application of serotonin stimulates pumping, decreases locomotion and stimulates egg-laying (Horvitz et al., 1982). The same responses are seen in the presence of bacteria in the environment. NSMs were thought to be potential candidates for mediating the effects of endogenous serotonin. However, ablation of NSMs has only subtle effects on pumping, suggesting that they may be redundant for this function (Avery et al., 1993, Avery and Thomas, 1997). The slowing of locomotion in the presence of bacteria becomes more enhanced in animals that were previously food-deprived, compared to well-fed animals. This phenomenon is described as \"the enhanced slowing response.\" When NSMs are ablated there is a small but significant decrease in this enhanced slowing of locomotion, which suggests NSMs contribute to this behavior (Sawin et al., 2000)."
+                    }
+                ]
+            },
+            "8) Pharyngeal-Intestinal Valve (VPI)": {
+                "paragraphs": [
+                    {
+                        "contents": "No apparent muscular elements operate within the valve cells, nor are there any muscles attaching to this valve from the outside. Thus, the valve is probably a passively open and patent channel at all times, but rather narrow in caliber. The pm8 muscle of the pharynx is in appropriate position to act alone as a sphincter just rostral to the valve cells, but pm8 shows no direct innervation (Albertson and Thomson, 1976; Cook et al., 2019). Contraction of the pm8 has been suggested to open the valve wider when the grinder is active (Avery and Thomas, 1997)."
+                    },
+                    {
+                        "contents": "Each valve cell has an electron-dense cytoplasm and occupies a thin wedge-shaped domain surrounding about one half of the lumen of the valve (PhaFIG 12). The nuclei of valve cells are flattened in shape, and the cytoplasm contains radial bands of intermediate filaments anchoring the apical cuticle to the basal lamina of the epithelium via hemidesmosomes, again in a very similar fashion to those seen in the buccal epithelium (D.H. Hall, unpublished)."
+                    }
+                ]
+            },
+            "9) Specific Structures Within the Pharynx": {
+                "paragraphs": [
+                    {
+                        "contents": "9.1 Channels of the Pharyngeal Lumen"
+                    }
+                ]
+            },
+            "9.1) Channels of the Pharyngeal Lumen": {
+                "paragraphs": [
+                    {
+                        "contents": "Radial channels, three narrow grooves in outer corners of the pharyngeal cuticle, are located in both the anterior procorpus and anterior isthmus (PhaFIG 2) (Albertson and Thomson, 1976). The channels allow an escape route for liquid to be regurgitated out of the pharynx via the buccal cavity. This results in food particles being trapped in the central lumen while fluid is expelled through the channels (Fang-Yen et al., 2009)."
+                    },
+                    {
+                        "contents": "9.2 Cuticle of the Pharynx"
+                    }
+                ]
+            },
+            "9.2) Cuticle of the Pharynx": {
+                "paragraphs": [
+                    {
+                        "contents": "A thin cuticle lining extends to cover the interior surface of the pharyngeal passageway from the lips to the back of the pharynx, ending at the rear of the pharyngeal-intestinal valve (PhaFIG 2). The pharyngeal cuticle is formed by the pharyngeal epithelium and the muscle cells to cover the apical surfaces of many cells acting in concert, much as the thickened pharyngeal basal lamina is formed jointly on basal surfaces of the pharyngeal cells. Unlike the body cuticle (see Hermaphordite Cuticle), this cuticle shows no layers; however, it shows some reinforcement at points of stress. For instance, it becomes keratinized to stain more densely by TEM at certain regions. Other specialized portions of the pharyngeal cuticle include the following."
+                    },
+                    {
+                        "contents": "9.2.1 Bridging Cuticle"
+                    },
+                    {
+                        "contents": "A small discrete region of cuticle connects the body wall cuticle covering the lips to the cuticle lining the buccal cavity. This bridging cuticle lies on the outer face of the anterior arcade and may also be touched briefly by the posterior arcade (see Epithelial System - Interfacial Cells; InterFIG 1)."
+                    },
+                    {
+                        "contents": "9.2.2 Flaps"
+                    },
+                    {
+                        "contents": "The metastomal flaps are cuticular projections at the base of the buccal cavity and may correspond to the onchia or buccal teeth described in other nematode species (Chitwood and Chitwood, 1950; Theska and Sommer, 2023; see also PhaFIG 2; PhaFIG 5; InterFIG 1). Three flaps extend inward from the level of from the pharyngeal muscle cells pm1 and pm2 to restrict the intake rate of bacteria at the rear of the buccal cavity (Fang-Yen et al., 2009). The flap cuticle is very electron dense, suggesting a sclerotic hardening to stiffen the flaps and the entryway to the true pharynx."
+                    },
+                    {
+                        "contents": "9.2.3 Grinder"
+                    },
+                    {
+                        "contents": "The grinder (PhaFIG 2) is a cuticle specialization with five distinct layers (Sparacio et al., 2020). Its three contact zones, made by the three pairs of muscle cells, rotate when the muscles contract (Avery and Thomas, 1997). The food caught and ground up between the teeth is passed back to the intestine through the pharyngeal-intestinal valve. Relaxation of the terminal bulb returns the grinder to its resting state. The grinder is made primarily by pm6 and pm7 muscles, which produce large quantities of secretory vesicles during periods of lethargus when the grinder is rebuilt (Sparacio et al., 2020). During the initial breakdown, pm6 and pm7 vesicles have an electron dense appearance, whereas later during the reformation of the new grinder most vesicles have an electronlucent appearance suggesting distinct enzymes for the absorption and building of the grinder structure. Its three contact zones, made by the three pairs of muscle cells, rotate when the muscles contract (Avery and Thomas, 1997). Although the pm6 muscle filaments are oriented in radial fashion to the grinder, some portions of the pm7 muscles are oriented obliquely to the anterior-posterior axis and are anchored on the basal pole to the rear of the terminal bulb. During lethargus, the muscle striations appear to be interrupted suggesting a temporary differentiation from a muscular to a secretory cell type. The pm6 and pm7 muscle fibers pull from the posterior side of the teeth, and coordinated action of these muscles may then rotate the grinder segments and force the teeth to scrape past and engage one another."
+                    },
+                    {
+                        "contents": "9.2.4 Pharyngeal Sieve"
+                    },
+                    {
+                        "contents": "These finger-like extensions from the pharyngeal cuticle probably act to trap bacteria, just posterior of the metacorpus (Fang-Yen et al., 2009; PhaFIG 2). They extend from the cell borders where pm4 muscles meet the neighboring mc1 cells. They project over a region of about 20 \u03bcm in length within the narrow lumen, ending near the transition of the metacorpus to the isthmus."
+                    },
+                    {
+                        "contents": "9.3 Gap Junctions (see also chapter on Gap Junctions)"
+                    }
+                ]
+            },
+            "9.3) Gap Junctions": {
+                "paragraphs": [
+                    {
+                        "contents": "The muscle cells and the marginal cells of the pharynx are linked to and communicate with each other via elaborate gap junctions (Phelan, 2005; Altun et al., 2009; Bhattacharya et al., 2019; see also PhaFIG 7; PhaTABLE 1). Gap junctions also exist between the pharyngeal neurons and also between the pharyngeal neuron I1 and the extrapharyngeal neuron RIP. Gap junctions within the pharynx are composed of innexins, invertebrate gap junction proteins. Innexins heteromerically assemble into hexameric hemichannels and form pores between cells. This gap junction network confers a high level of connectivity within the pharynx, which is essential in coordinating waves of muscle contractions and spreading the neuronal input."
+                    }
+                ]
+            },
+            "10) Feeding Behavior": {
+                "paragraphs": [
+                    {
+                        "contents": "C. elegans is a filter-feeder. Particles (bacteria) are taken in as suspended in liquid and then trapped in the pharynx while the liquid is expelled outside by the function of the corpus and anterior isthmus (Avery and Thomas, 1997; Avery and Shtonda, 2003). The particles are then transported to the terminal bulb, ground and passed into the lumen of the intestine. The feeding behavior consists of two motions; pumping, a contraction-relaxation cycle involving the corpus, anterior half of the isthmus and terminal bulb; and posterior isthmus peristalsis. Pumping involves near-simultaneous contraction of the muscles of the corpus, anterior isthmus and terminal bulb followed by near-simultaneous relaxation. When a feeding motion begins, contraction of the corpus and anterior isthmus opens their lumens, sucking particles and liquid in, whereas contraction of the terminal bulb muscles breaks up already-trapped bacteria and passes the debris posteriorly towards the intestine (Avery and Shtonda, 2003). At this stage corpus and anterior isthmus are separated hydrodynamically from the terminal bulb by a closed isthmus. During the relaxation period that follows, the lumens of the corpus and the anterior isthmus close, allowing for the liquid to be expelled through the radial channels while bacteria are retained and the grinder returns  to its resting position (Fang-Yen et al., 2009). Food particles are trapped at two locations: the anterior procorpus and anterior isthmus. At each location, early relaxation of the pharyngeal lumen just anterior to the trap location prevents particles from exiting the trap (Fang-Yen et al., 2009). When the muscles again contract, the bacteria are carried further posteriorly by the inflow of liquid. Roughly one out of four pumps is followed by a posterior isthmus peristalsis where the trapped bacteria are carried from the anterior isthmus backwards to the grinder. Although each pm5 muscle cell runs the entire length of the isthmus, peristalsis occurs as a wave that propagates from anterior to posterior instead of simultaneously along its length. This capacity of isthmus for asynchronous contraction is suggested to permit the terminal bulb and corpus lumen to be at different pressures (Avery and Thomas, 1997)."
+                    },
+                    {
+                        "contents": "Neural control of feeding has been elucidated through both neuronal ablation and optogenetic manipulation of neuron activity (Avery and Horvitz, 1989; Trojanowski et al., 2014). Interestingly, pumping continues even after ablation of all pharyngeal neurons, albeit at a highly reduced rate (Avery and Horvitz, 1989). However, elimination of cholinergic signaling leads to a complete loss of pumping (Avery and Horvitz, 1990; Alfonso et al., 1993)."
+                    },
+                    {
+                        "contents": "Isthmus peristalsis is controlled by M4. Ablation of M4, which innervates the isthmus and terminal bulb muscles, leads to faulty isthmus peristalsis and a \u0093stuffed\u0094 worm appearance where food remains stuck in the isthmus, eventually leading to starvation (Avery and Horvitz, 1989). M4 also plays a minor role in pumping with optogenetic excitation of M4 leading to an increase in the pumping rate. Conversely, optogenetic inhibition or ablation of M4 causes a decrease in the pumping rate (Raizen et al., 1995; Trojanowski et al., 2014)."
+                    },
+                    {
+                        "contents": "The rate of pumping is controlled by the MC, M2, and M4 motor neurons (Avery and Horvitz, 1989; Trojanowski et al., 2014). The I1 neurons, which make the only connection to the somatic nervous system, regulate pumping via the MC and M2 neurons. The MC, M2 and M4 neurons are cholinergic excitatory motor neurons (Raizen et al., 1995; Keane and Avery, 2003). Mutants in which acetylcholine synthesis (cha-1) or packaging (unc-17) is disrupted show a pumping defect similar to that seen after MC ablation. Functional studies suggest that MC neurons synapse onto pm4 and that synaptic transmission from MC neurons to pm4 requires the nicotinic acetyl-choline receptor (nAChR) subunit, EAT-2 to be expressed on pm4. MC neurons may also be mechanosensory, because they have free endings at the boundary between the procorpus and metacorpus and may sense the presence of bacteria in the pharynx."
+                    },
+                    {
+                        "contents": "Pumping is suppressed during dauer, lethargus, and in response to a touch stimulus in adults. As described above, the latter response depends on an RIP/I1 connection. This circuit may also be important for suppression of pumping in the dauer larva (Keane and Avery, 2003). Inhibition of pumping during the dauer stage may save energy and prevent ingestion of environmental toxins when no appropriate food is available."
+                    },
+                    {
+                        "contents": "Feeding behavior is also impacted by exposure to light (Bhatla and Horvitz, 2015; Bhatla et al., 2015). Following exposure to light, feeding is inhibited and a subsequent reversal of flow in the pharynx leads to expulsion of bubbles (\u0093spitting\u0094) from the mouth. Light-induced inhibition of feeding acts through both the I2 neurons and the RIP/I1 connection. The I2 neurons, which were originally classified as interneurons, also synapse directly onto pharyngeal muscle (Bhatla et al., 2015; Cook et al., 2019). Spitting behavior is controlled by M1, which may continuously contract the pm3 muscles allowing for pharyngeal contents to escape during the reduced pumping."
+                    }
+                ]
+            },
+            "11) List of Pharyngeal Cells": {
+                "paragraphs": [
+                    {
+                        "contents": "i. Buccal epithelium of the pharynx (e)"
+                    },
+                    {
+                        "contents": "ii. Pharyngeal muscles (pm). Note that in earlier publications these cells are labeled as \"m\"; m1, m2, m3 etc., but here they are labeled \"pm\" for \"haryngeal uscle\" (Avery and Thomas, 1997)."
+                    },
+                    {
+                        "contents": "1. First pharyngeal muscle ring; all fuse into one syncytium around hatching\n\npm1DL\n\npm1DR\n\npm1L\n\npm1R\n\npm1VL\n\npm1VR\n\n2. Second pharyngeal muscle ring\n\npm2DL; fuses with DR around hatching\n\npm2DR; fuses with DL around hatching\n\npm2L; fuses with VL around hatching\n\npm2R; fuses with VR around hatching\n\npm2VL; fuses with L around hatching\n\npm2VR; fuses with R around hatching\n\n3. Third pharyngeal muscle ring\n\npm3DL; fuses with DR around hatching\n\npm3DR; fuses with DL around hatching\n\npm3L; fuses with VL around hatching\n\npm3R; fuses with VR around hatching\n\npm3VL; fuses with L around hatching\n\npm3VR; fuses with R around hatching\n\n4. Fourth pharyngeal muscle ring; all fuse into one syncytium around hatching\n\npm4DL;\n\npm4DR;\n\npm4L;\n\npm4R;\n\npm4VL;\n\npm4VR;\n\n5.Fifth pharyngeal muscle ring; all fuse into one syncytium around hatching\n\npm5DL;\n\npm5DR;\n\npm5L;\n\npm5R;\n\npm5VL;\n\npm5VR;\n\n6. Sixth pharyngeal muscle ring\n\npm6D\n\npm6VL\n\npm6VR\n\n7. Seventh pharyngeal muscle ring\n\npm7D\n\npm7VL\n\npm7VR\n\n8. Eighth pharyngeal muscle ring\n\npm8"
+                    },
+                    {
+                        "contents": "iii. Marginal cells (mc)"
+                    },
+                    {
+                        "contents": "1. First marginal cell ring\n\nmc1DL\n\nmc1DR\n\nmc1V\n\n2. Second marginal cell ring\n\nmc2DL\n\nmc2DR\n\nmc2V\n\n3. Third marginal cell ring (syncytial, cells fuse around hatching)\n\nmc3DL\n\nmc3DR\n\nmc3V"
+                    },
+                    {
+                        "contents": "iv. Pharyngeal-intestinal valve (vpi)"
+                    },
+                    {
+                        "contents": "1. First pharyngeal valve ring\n\nvpi1\n\n2. Second pharyngeal valve ring \n\nvpi2DL\n\nvpi2DR\n\nvpi2V\n\n3. Third pharyngeal valve ring\n\nvpi3D \n\nvpi3V"
+                    },
+                    {
+                        "contents": "v. Pharyngeal neurons"
+                    },
+                    {
+                        "contents": "1. Motor neurons \n\nM1\n\nM2L/R\n\nM3L/R\n\nM4\n\nM5\n\n2. Interneurons\n\nI1L/R\n\nI2L/R\n\nI3\n\nI4\n\nI5\n\nI6\n\n2. Other neurons\n\nMI\n\nNSML/R\n\nMCL/R"
+                    },
+                    {
+                        "contents": "vi. Pharyngeal glands (g)"
+                    },
+                    {
+                        "contents": "1. First pharyngeal gland ring\n\ng1AL; ventral left g1 gland cell\n\ng1AR; ventral right g1 gland cell\n\ng1P; dorsal gland cell\n\n2. Second pharyngeal gland ring\n\ng2L\n\ng2R"
+                    },
+                    {
+                        "contents": "See also PharynxAtlas"
+                    }
+                ]
+            },
+            "12) References": {
+                "paragraphs": [
+                    {
+                        "contents": "\n\n This chapter should be cited as: Schroeder, N.E., Altun, Z.F. and Hall, D.H. 2024. Alimentary System, Pharynx. In WormAtlas. \u00a0doi:10.3908/wormatlas.1.3"
+                    },
+                    {
+                        "contents": "We would like to thank Christopher Fang-Yen for providing feedback on this chapter.\n\n Edited for the web by Nathan E. Schroeder and Laura A. Herndon. Last revision: November 7th, 2024."
+                    }
+                ]
+            }
+        }
+    }
+}

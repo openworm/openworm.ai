@@ -1,0 +1,145 @@
+{
+    "Introduction": {
+        "title": "Introduction",
+        "source": "https://www.wormatlas.org/hermaphrodite/introduction/Introframeset.html",
+        "sections": {
+            "1) Caenorhabditis elegans as a Genetic Organism": {
+                "paragraphs": [
+                    {
+                        "contents": "Caenorhabditis elegans is a small, free-living soil nematode (roundworm) that lives in many parts of the world and survives by feeding on microbes, primarily bacteria (IntroFIG 1). It is an important model system for biological research in many fields including genomics, cell biology, neuroscience and aging (http://www.wormbook.org/). Among its many advantages for study are its short life cycle, compact genome, stereotypical development, ease of propagation and small size. The adult body plan is anatomically simple with about 1000 somatic cells. C. elegans is amenable to genetic crosses and produces a large number of progeny per adult. It reproduces with a life cycle of about 3 days under optimal conditions. The animal can be maintained in the laboratory where it is grown on agar plates or liquid cultures with E. coli as the food source. It can be examined at the cellular level in living preparations by differential interference contrast (DIC) microscopy, because it is transparent throughout its life cycle. The anatomical description of the whole animal has been completed at the electron microscopy level and its complete cell lineage, which is invariant between animals, has been established (Brenner, 1973; Byerly et al., 1976; Sulston et al., 1983; Wood, 1988a; Lewis and Fleming, 1995)."
+                    },
+                    {
+                        "contents": "There are two C. elegans sexes: a self-fertilizing hermaphrodite (XX) and a male (XO). Males arise infrequently (0.1%) by spontaneous non-disjunction in the hermaphrodite germ line and at higher frequency (up to 50%) through mating. Self-fertilization of the hermaphrodite allows for homozygous worms to generate genetically identical progeny, and male mating facilitates the isolation and maintenance of mutant strains as well as moving mutations between strains."
+                    },
+                    {
+                        "contents": "Mutant animals are readily obtained by chemical mutagenesis or exposure to ionizing radiation (Anderson, 1995; Jorgensen and Mango, 2002). The strains can be kept as frozen stocks for long periods of time. C. elegans can also endure harsh environmental conditions by switching to a facultative diapause stage called the dauer larva which can survive four to eight times the normal 3-week life span (Cassada and Russell, 1975)."
+                    },
+                    {
+                        "contents": "Despite its simple anatomy, the animal displays a large repertoire of behavior including locomotion; foraging; feeding; defecation; egg laying; dauer larva formation; sensory responses to touch, smell, taste, and temperature; and some complex behaviors like male mating, social behavior, and learning and memory (Rankin, 2002; de Bono, 2003)."
+                    }
+                ]
+            },
+            "2) Adult Anatomy": {},
+            "2.1) Body Shape": {
+                "paragraphs": [
+                    {
+                        "contents": "Similar to other nematodes, C. elegans has an unsegmented, cylindrical body shape that is tapered at the ends (IntroFIG 1; IntroMOVIE 1). This is the typical nematode body plan, with an outer tube and an inner tube separated by the pseudocoelomic space (IntroFIG 2). The outer tube (body wall) consists of cuticle, hypodermis, excretory system, neurons, and muscles, and the inner tube comprises the pharynx, intestine, and, in the adult, gonad. All of these tissues are under an internal hydrostatic pressure, regulated by an osmoregulatory system (see Excretory System)."
+                    }
+                ]
+            },
+            "2.2) Adult Hermaphrodite Organs and Tissues": {
+                "paragraphs": [
+                    {
+                        "contents": "Cuticle . A collagenous cuticle, secreted by the underlying epithelium, surrounds the worm on the outside and also lines the pharynx and rectum (see Cuticle). Various tissues open to the outside through this cuticle (IntroFIG 3). The excretory pore is located at midline on the ventral side of the head (IntroFIG 3E). The vulva is another large opening on the ventral side at the midbody (IntroFIG 3D), and the anus forms another ventral opening, just before the tail whip (IntroFIG 3B). Two cuticular inpockets form narrow openings at the lateral lips for the amphid sensilla (IntroFIG 4A and IntroTABLE 1). The lips also contain papillae for 6 inner labial (IL) sensilla and small bumps for 6 outer labial (OL) sensilla, as well as 4 cephalic (CEP) sensilla (IntroFIG 4A and IntroTABLE 1). There are two papillae for anterior deirids at the posterior of the head. These are situated within the lateral alae at the level of the excretory pore (IntroFIG4C and ExcFIG2B). The two posterior deirid sensilla are situated dorsal to the cuticular alae (IntroFIG 4B&C). Two much narrower openings on the lateral sides of the tail whip exist for the phasmid sensilla at the junction of the seam cells and the tail hypodermis (IntroFIG 4C).\n\n"
+                    },
+                    {
+                        "contents": "The Epithelial System . The hypodermis, which secretes cuticle, is made up of the main body syncytium (hyp 7), a series of concentric rings of five smaller syncytial cells in the head, and three mononucleate and one syncytial cell in the tail (see Hypodermis). On the lateral sides, the hypodermis is interrupted by the syncytial row of seam cells which form alae on the cuticle surface during certain developmental stages (IntroFIG 3C) (see Seam Cells). The hypodermis and the inner tissues that open to the outside are connected to one another by specialized interfacial cells."
+                    },
+                    {
+                        "contents": "The Nervous System . The cells of the nervous system are organized into ganglia in the head and tail. The majority of C. elegans neurons are located in the head around the pharynx. In the body, a continuous row of neuron cell bodies lies at the midline, adjacent to the ventral hypodermis. In addition, there are two small posterior lateral ganglia on the sides, as well as some scattered neurons along the lateral body. The processes from most neurons travel in either the ventral or dorsal nerve cord and project to the nerve ring (NR) in the head which constitutes the major neuropil in the animal (IntroFIG 2C)(see Nervous System)."
+                    },
+                    {
+                        "contents": "The Muscle System .  Neurons and the hypodermis are separated from the musculature by a thin basal lamina. The muscles receive input from the neurons by sending muscle arms to motor neuron processes that run along the nerve cords or reside in the nerve ring. The obliquely striated body wall muscles are arranged into strips in four quadrants, two dorsal and two ventral, along the whole length of the animal ( IntroFIG 2A-F ) (see Somatic Muscle System ). Smaller, nonstriated muscles are found in the pharynx and around the vulva, intestine and rectum (see Nonstriated Muscle System )."
+                    },
+                    {
+                        "contents": "The Excretory System . Four cells situated on the ventral side of the posterior head make up the excretory system, which functions in osmoregulation and waste disposal. The excretory system opens to the outside through the excretory pore ( IntroFIG 3E ) (see Excretory System ).2.2.2 Pseudocoelomic Cavity Organs"
+                    },
+                    {
+                        "contents": "The Coelomocyte system. Three pairs of coelomocytes located in the pseudocoelomic cavity function as scavenger cells that endocytose fluid from the pseudocoelom and are suggested to comprise a primitive immune system in C. elegans (see Coelomocyte System).\n\n2.2.3 Internal Organs"
+                    },
+                    {
+                        "contents": "The Alimentary system .C. elegans feeds through a two lobed pharynx, which is nearly an autonomous organ with its own neuronal system, muscles, and epithelium (IntroFIG 1). The pharynx is separated from the outer tube of tissues and pseudocoelom by its own basal lamina (IntroFIG 2B-D). The lumen of the pharynx is continuous with the lumen of the intestine, and the pharynx passes ground food into the intestine via the intestinal pharyngeal valve. The intestine, which is the only somatic tissue derived from a single (E blast cell) lineage, is made of 20 cells arranged to form a tube with a central lumen. The apical surfaces of the intestinal cells carry numerous microvilli. The intestinal contents are excreted to the outside via a rectal valve that connects the gut to the rectum and anus. The four enteric muscles that contribute to defecation are located around the rectum and posterior intestine (see Alimentary System Sections: Pharynx, Intestine and Rectum and Anus)."
+                    },
+                    {
+                        "contents": "The Reproductive system . This system consists of somatic gonad, the germ line and the egg-laying apparatus. There are two bilaterally symmetric, U-shaped gonad arms that are connected to a central uterus through the spermatheca (IntroFIG 1). The germ line within the distal gonad arms (ovaries) is syncytial with germline nuclei surrounding a central cytoplasmic core. More proximally, germ cells pass sequentially through the mitotic, meiotic prophase and diakinesis stages. As they pass through the bend of the gonad arm (oviduct), oocytes enlarge, detach from the syncytium, and mature as they move more proximally. The oocytes are fertilized by the sperm in spermatheca. The resulting diploid zygotes are stored in the uterus and laid outside thorough the vulva, which protrudes at the ventral midline (see Reproductive System: Somatic Gonad, Germ Line and Egg-laying Apparatus)."
+                    }
+                ]
+            },
+            "2.3) Adult Male Anatomy": {
+                "paragraphs": [
+                    {
+                        "contents": "The male anatomy is the subject of a separate section (Male Handbook), but here we provide an overview of major differences between the male and the hermaphrodite sexes. Male C. elegans larvae initially display the same simple cylindrical body plan as hermaphrodites, but from the L2 stage onward, the shape of their posterior half changes as their sexual organs begin to develop (IntroFIG 5) (Sulston and Horvitz, 1977; Sulston et al., 1980; Nguyen et al., 1999). With the exception of perhaps the pharynx and the excretory system, virtually all tissue systems exhibit some degree of sexual dimorphism. The most profound differences are seen in tissues of the posterior, which bears the male copulatory apparatus. The muscle system of the male contains 41 additional sex-specific muscles (see Male-Specific Muscles). The reproductive system consists of a single-armed gonad (IntroFIG 5C; Male Somatic Gonad and Germline) that opens to the exterior at the cloaca (anus) via a modified rectal epithelial chamber called the proctodeum (IntroFIG 5D) (see Proctodeum). The proctodeum includes two sclerotic sensory spicules used by the male during mating to locate the hermaphrodite vulval slit and to hold the vulva open during sperm transfer (Liu and Sternberg, 1995; Garcia et al., 2001). The nervous system has 91 additional neurons that include several classes of tail sensilla: the rays, which extend from the tail and lie in a cuticular fan (see Rays); the hook (see Hook); and the post-cloacal sensilla, which are located on the ventral exterior of the tail (see PCS)."
+                    }
+                ]
+            },
+            "3) Life cycle": {
+                "paragraphs": [
+                    {
+                        "contents": "Similar to other nematodes, the life cycle of C. elegans is comprised of the embryonic stage, four larval stages (L1-L4) and adulthood. The end of each larval stage is marked with a molt, during which a new, stage-specific cuticle is synthesized and the old one is shed. During this period, pharyngeal pumping ceases and the animal enters a brief lethargus (IntroFIG 6; IntroMOVIE 2)."
+                    },
+                    {
+                        "contents": "3.1 Embryo"
+                    }
+                ]
+            },
+            "3.1) Embryo": {
+                "paragraphs": [
+                    {
+                        "contents": "Embryogenesis in C. elegans is roughly divided into two stages: (1) proliferation and (2) organogenesis/ morphogenesis (IntroFIG 7) (Sulston et al, 1983). Proliferation (0 to 330-350 min post-fertilization at 22'C) includes cell divisions from a single cell to about 550 essentially undifferentiated cells by the end of the '16 E stage' (von Ehrenstein and Schierenberg, 1980; Wood, 1988b). This stage is further subdivided into two phases: The first phase (0-150 min) spans the time between zygote formation to generation of embryonic founder cells, and the second phase (150-350 min) covers the bulk of cell divisions and gastrulation until the beginning of organogenesis (Bucher and Seydoux, 1994). The initial 150 min of proliferation takes place within the mother's uterus, and the embryo is laid outside when it reaches the approximate 30-cell stage (at gastrulation). There is considerable rearrangement of cells in the proliferation stage because of short-range shuffling, and once gastrulation begins, because of specific cell migrations (during gastrulation Ea and Ep sink in from the posterior and enter into the embryo at 100 min after first cell cleavage. P4 and MS progeny enter at 120-200 min, followed by C and D myoblasts entering from the posterior. AB-derived pharynx progenitors enter inside at 210-250 min. Once the cell migrations are completed, ventral cleft through which cells migrated in closes proceeding from the posterior (230 min) to anterior. Ventral cleft closure is completed at 290 min.) From this time onward, the embryonic substages can be defined by specific cell migrations, gain in cell number, and periods of synchronous stem-cell divisions."
+                    },
+                    {
+                        "contents": "At the end of the proliferation stage, the embryo is a spheroid of cells organized into three germ layers: ectoderm, which gives rise to hypodermis and neurons; mesoderm, which generates pharynx and muscle; and endoderm, which gives rise to germline and intestine. During the organogenesis/morphogenesis stage (5.5-6 hr to 12-14 hr), terminal differentiation of cells occurs without many additional cell divisions, and the embryo elongates threefold and takes form as an animal with fully differentiated tissues and organs. Morphogenesis starts with the 'lima bean' stage. The first muscle twitches are observed at 430 min after the first cell cleavage (between 1.5- and 2-fold stages) (IntroFIG 7). Sexual dimorphism becomes visible for the first time at 510 minutes when the cephalic companion neurons (CEMs) die in the hermaphrodite, and when the hermaphrodite-specific neurons (HSNs) die in the male. In the late three-fold stage, the worm can move inside the egg in a coordinated fashion (rolling around its longitudinal axis), indicating advanced motor system development. The embryo starts pharyngeal pumping at 760 min after the first cell cleavage and hatches at 800 min (von Ehrenstein and Schierenberg, 1980; Sulston et al, 1983; Bird and Bird, 1991)."
+                    },
+                    {
+                        "contents": "The main body plan of the animal is already established at the end of embryogenesis. This general body plan does not change during postembryonic development."
+                    },
+                    {
+                        "contents": "3.2 Post-embryonic Development"
+                    },
+                    {
+                        "contents": "Post-embryonic development is triggered by feeding after hatching. In the presence of food, cell divisions resume and the post-embryonic developmental program begins 3 hours after hatching (Ambros, 2000). The animal normally passes through four larval stages to reach adulthood (IntroFIG 8, IntroMOVIE 2). Numerous blast cells set aside at the end of embryogenesis divide in nearly invariant temporal and spatial patterns through the four larval stages and give rise to a fixed number of cells with determined fates (see Cell lineages; Sulston and Horvitz, 1977; Wood 1988b). Of the 671 nuclei generated in the embryo, 113 undergo programmed death in the course of development (Sulston et al, 1983; Bird, and Bird, 1991). About 10% of the remaining 558 cells in a newly hatched larva (51 in hermaphrodites, 55 in the male) are blast cells that will divide further (Sulston and Horvitz, 1977; von Ehrenstein and Schierenberg, 1980). If the embryos hatch in the absence of food, however, they arrest development until food becomes available. Such larvae can survive up to 6-10 days without feeding (IntroFIG 6) (Johnson et al., 1984). After food becomes available, these arrested L1 stage larvae progress through normal molting and development (Slack and Ruvkun, 1997).\n\n3.2.1 L1 Larva"
+                    },
+                    {
+                        "contents": "Nervous system . Of the eight classes of motor neurons (DAn, DBn, VAn, VBn, VCn, ASn, VDn, and DDn) in the adult hermaphrodite ventral cord, five (VAn, VBn, VCn, ASn and VDn) are generated at the end of the L1 stage from 13 precursors (W and P1-P12) (IntroFIG 8A) (Sulston, 1976; Sulston and Horvitz, 1977; Chalfie and White 1988). A few other neurons are generated from Q, G1, H2 and T blast cells. Also, during the L1 stage, one class of ventral cord motor neurons (DDn) go through complete synaptic reorganization without any cell-shape change. The initial pattern of synapses made by DD neurons is presynaptic and inhibitory to ventral body wall muscles, while being postsynaptic to neurons that activate dorsal body wall muscles. During late L1, after the birth of VD motor neurons, DD neurons change their synaptic pattern such that their dorsal branches become presynaptic and inhibitory to dorsal body wall muscles, whereas their ventral branches become postsynaptic to excitatory neurons that synapse on ventral body wall muscles (White et al., 1978; Walthall et al., 1993)."
+                    },
+                    {
+                        "contents": "Reproductive System. During the second half of L1, somatic gonad precursors Z1 and Z4 produce 12 cells in the hermaphrodite (IntroFIG 8C). The germ line precursors Z2 and Z3 also start to divide. These Z2-Z3 divisions occur continuously from L1 through adulthood (Kimble and Hirsh, 1979). Ventral Pn.p cells are born. A central subset will give rise to the vulva in L3 and L4."
+                    },
+                    {
+                        "contents": "Coelomocyte system. By the end of the L1 stage, the M mesoblast gives rise to two additional (dorsal) coelomocytes in the hermaphrodite (IntroFIG 8A)."
+                    },
+                    {
+                        "contents": "Male. At hatching, males are already distinguishable from hermaphrodites because of the more posterior location of one ventral coelomocyte, the larger size of the nuclei of two rectal cells (B and Y), the absence of hermaphrodite specific neurons (HSNs) that undergo programmed cell death during embryogenesis, and the presence of CEM neurons. As in the hermaphrodite, Z1 and Z4 divide, producing 10 somatic gonad precursor cells. Rectal blast cells B and Y, which will ultimately generate the proctodeum and posterior sensory structures, begin to divide towards the end of L1."
+                    },
+                    {
+                        "contents": "Few cell divisions occur during the L2 stage."
+                    },
+                    {
+                        "contents": "Nervous system. V5.pa generates the postdeirid sensilla and G2 produces two ventral ganglion neurons."
+                    },
+                    {
+                        "contents": "Reproductive system. In this stage, the germ cell (Z2 and Z3 daughters) divisions continue, approximately quadrupling in number (IntroFIG 8D). However, no divisions occur in Z1 and Z4 (somatic primordial gonad) lineages. Somatic and germ cells are intermingled until the L2/L3 molt whereupon they rearrange to establish the general organization of the future gonad: distal tip cells positioned at the anterior and posterior ends, an anterior and posterior arm germ-line population, and a somatic gonadal primordium at the center (Kimble and Hirsh, 1979). The gonad begins to elongate, led by the DTC cells."
+                    },
+                    {
+                        "contents": "Male. Cells of the male gonad also rearrange to resemble the adult form, with somatic gonad cells towards the posterior and germ cells displaced to the anterior. At about the L1/L2 molt, the gonad extends, but only at one end, and is led by the linker cell (Antebi et al., 1997). Approximately at the mid-L2 stage, the linker cell halts and reorients to move dorsally.\n\n3.2.3 Dauer Larva - see Dauer Handbook"
+                    },
+                    {
+                        "contents": "At the end of the L2 stage, the animal may enter an arrested state called the dauer larva if the environmental conditions are not favorable for further growth. Environmental factors, including the presence of a pheromone (an indicator of population density), absence of food, and high temperature act as signals that can trigger formation of a morphologically distinct L2-stage larva, designated L2d (see Regulation of Diapause). The critical period for this dauer signal begins after the middle of the first larval stage.\u00a0The L2d larva retains the potential to form either a dauer larva or an L3 larva, depending on the persistence of the dauer inducing environmental parameters (Riddle, 1988). If the environment continues to be disadvantageous, the L2d-stage larva molts into a dauer (IntroFIG 6). The dauer is a non-aging state because its duration does not affect postdauer life span. During the dauer state, feeding is arrested indefinitely and locomotion is markedly reduced. The dauer state ends when the animal experiences favorable conditions. Within 1 hour of accessing food, the animal exits the dauer stage; after 2-3 hours it starts to feed, and after about 10 hours, it molts to the L4 stage."
+                    },
+                    {
+                        "contents": "Morphologically, dauer larvae are very thin (with a length-width ratio of about 30:1) and have a thick, altered cuticle (DCutFIG 1 and DCutFIG 2) (see Cuticle System and Dauer Cuticle). The buccal cavity is sealed by a cuticular block (DCutFIG 4), the gut cells have a dark appearance and the pharyngeal and intestinal lumens are shrunken (DPhaFIG 4), with small and indistinct microvilli in the intestine (see Dauer Pharynx and Dauer Intestine). The excretory gland lacks secretory granules, although the excretory pore remains open (see Dauer Excretory). The gonad of the dauer is arrested at the L2 stage (IntroFIG 8E) (Cassada and Russell, 1975; Riddle, 1988; Sulston, 1988).\n\n3.2.4 L3 Larva"
+                    },
+                    {
+                        "contents": "Reproductive system . During L3, as well as the first part of L4, somatic gonad precursors yield a total of 143 cells that form the anterior and posterior gonadal sheaths, the spermathecae and the uterus (Kimble and Hirsh, 1979). The extension of gonad arms continues in opposite directions until mid-L3 when distal tip cells halt and then slowly start to reorient themselves in dorsal directions (Antebi et al., 1997) (IntroFIG 8F, also see Somatic Gonad). Vulval precursor fates are specified, and committed cells divide to generate vulval terminal cells by early L4. The two sex myoblasts, formed in L3, divide to generate16 sex muscle cells (see Egg-Laying Apparatus)."
+                    },
+                    {
+                        "contents": "Male. Somatic gonad blast cells divide to generate 53 somatic gonad cells that will form the vas deferens and the seminal vesicle. The male linker cell of the somatic gonad reorients and migrates posteriorly until mid-L3 extending the proximal gonad. After mid-L3, the male linker cell migrates obliquely towards the ventral midline (Antebi et al., 1997). Six male sex myoblasts are generated. As posterior blast cells divide, the tail become visibly swollen when viewed under the dissecting scope (IntroFIG 5E). Posterior Pn.p cells divide to add 16 cells to the preanal ganglion. More anterior Pn.p lineages contribute cells to the ventral nerve cord. Rectal lineages produce proctodeal cells and several tail sensilla (Sulston et al., 1980; Sulston, 1988). In the male germline, which produces only sperm, meiosis begins during L3 stage.\n\n3.2.5 L4 Larva"
+                    },
+                    {
+                        "contents": "Reproductive system. Gonadogenesis, which starts at approximately 7 hours after hatching, is completed in the L4 stage. The distal gonad arms continue their migration centripetally along the dorsal body wall muscles, and by the L4/adult molt, they complete their trajectory close to midline (Antebi et al, 1997). Meiosis in the germ line begins at L3/L4 molt in the proximal arms of the gonad, and the germ cells differentiate into mature sperm. At the L4/adult molt, sperm production stops and the remaining germline cells  continue to undergo meiosis and differentiation to generate exclusively oocytes instead. Vulval and uterine terminal cell generation is followed by tissue morphogenesis (IntroFIG 8G). Egg-laying neurons (VCs and HSNs) and sex muscles, generated from sex myoblasts, associate with these structures to form the egg-laying apparatus. (Greenwald, 1997)."
+                    },
+                    {
+                        "contents": "Male. 41 male sex muscles and a coelomocyte are formed from the M mesoblast lineage during the L4 stage in males (Sulston et al., 1980). The cells around the rectum form the proctodeum. This epithelium expands to surround the cloacal chamber, which contains the spicules. The gonad continues to grow posteriorly along the ventral midline, and the vas deferens and the seminal vesicle differentiate. The linker cell reaches the developing cloaca by mid-L4 where it dies and is then engulfed by two cells of the proctodeum, thereby opening the vas deferens to the outside (Sulston, 1988; Antebi et al., 1997). Tail tip hypodermal cells remodel, generating the rounded tail of the adult (IntroFIG 5E) (Nguyen et al., 1999). The tail seam (SET) is formed. Eventually, a general forward movement of posterior tissues and collapse of the cuticle reshape the male tail and generates the copulatory bursa with rays and fan, as well as the ventral hook and post-cloacal sensilla (Emmons and Sternberg, 1997).\n\n3.2.6 Adult"
+                    },
+                    {
+                        "contents": "At approximately at 45-50 hrs posthatch at 22'C-25'C, a newly matured hermaphrodite lays its first eggs, hence completing its 3-day reproductive life cycle (Byerly et al., 1976; Lewis and Fleming, 1995). The adult hermaphrodite produces oocytes for about 4 days, and after this fertile period of 3-4 days, the mature adult lives for an additional 10-15 days. A hermaphrodite that self-fertilizes can produce about 300 progeny because of the limited number of sperm, but if mating with a male occurs, the progeny number can increase to 1200-1400. Males can successfully mate with a hermaphrodite for 6 days after their last larval molt and can father approximately 3000 progeny (Hodgkin, 1988)."
+                    },
+                    {
+                        "contents": "Out of 1090 somatic cells generated during hermaphrodite development, 131 undergo programmed cell death at characteristic times (Driscoll, 1995). Hence, the adult C. elegans hermaphrodite has 959 somatic nuclei, 302 of which are neurons and 95 are body wall muscle cells (White, 1988). The adult male, on the other hand, has 1031 somatic nuclei and 381 of these are neurons (extra neurons are mostly dedicated to male mating behavior) (White, 1988). Although it has more cells, the adult C. elegans male is more slender and slightly shorter (approx. 0.8 mm) than the hermaphrodite (IntroFIG5). For detailed review of anatomic structures in male, refer to Male Handbook."
+                    }
+                ]
+            },
+            "4) References": {}
+        }
+    }
+}
