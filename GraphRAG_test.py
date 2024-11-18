@@ -10,17 +10,34 @@ from llama_index.core import load_index_from_storage
 
 import glob
 
-STORE_DIR = "store"
+from modelspec.utils import load_json
 
-txt_inputs = glob.glob('processed/plaintext/*/*.txt')
-print(txt_inputs)
+STORE_DIR = "store"
+SOURCE_DOCUMENT = "source document"
+
+json_inputs = glob.glob('processed/json/*/*.json')
+print(json_inputs)
 
 documents = []
-for tex_file in txt_inputs:
-    print('Adding %s'%tex_file)
-    with open(tex_file) as f:
-        doc = Document(text=f.read(), metadata={"file_name":tex_file})
-        documents.append(doc)
+for json_file in json_inputs:
+    print('Adding %s'%json_file)
+    doc_model = load_json(json_file)
+    for title in doc_model:
+        print('  Processing document: %s'%title)
+        doc_contents = doc_model[title]
+        src_page = doc_contents['source']
+        for section in doc_contents['sections']:
+            print('    Processing section: %s'%doc_contents['sections'][section])
+            all_text = ''
+            if 'paragraphs' in doc_contents['sections'][section]:
+                for p in doc_contents['sections'][section]['paragraphs']:
+                    all_text += p['contents']+'\n\n'
+            if len(all_text)==0:
+                all_text = ' '
+            #print(f'---------------------\n{all_text}\n---------------------')
+            src_info = f'WormAtlas Handbook: {title}, Section {section} ({src_page})'
+            doc = Document(text=all_text, metadata={SOURCE_DOCUMENT:src_info})
+            documents.append(doc)
 
 
 from llama_index.llms.openai import OpenAI
@@ -52,16 +69,17 @@ def process_query(response):
     files_used = []
     for k in response.metadata:
         v = response.metadata[k]
-        if 'file_name' in v:
-            if not v['file_name'] in files_used:
-                files_used.append(v['file_name'])
+        if SOURCE_DOCUMENT in v:
+            if not v[SOURCE_DOCUMENT] in files_used:
+                files_used.append(v[SOURCE_DOCUMENT])
 
     print(f'''
 ===============================================================================
 QUERY: {query}
 -------------------------------------------------------------------------------
 RESPONSE: {response}
-SOURCES: {', '.join(files_used)}
+SOURCES: 
+{',\n'.join(files_used)}
 ===============================================================================
 ''')
 
