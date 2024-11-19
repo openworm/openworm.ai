@@ -9,5 +9,9 @@ The following handbooks from [WormAtlas](https://www.wormatlas.org/handbookhome.
 
 **[Pharynx](Pharynx.md)**
 
+**[Intestine](Intestine.md)**
+
+**[Rectum and Anus](Rectum_and_Anus.md)**
+
 **[Gap Junctions](Gap_Junctions.md)**
 

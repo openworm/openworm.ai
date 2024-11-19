@@ -1,0 +1,65 @@
+{
+    "Rectum and Anus": {
+        "title": "Rectum and Anus",
+        "source": "https://www.wormatlas.org/hermaphrodite/rectum/Rectframeset.html",
+        "sections": {
+            "1) Overview": {
+                "paragraphs": [
+                    {
+                        "contents": "The hindgut includes the posterior intestine and the passageway between the intestine and the exterior. This passageway contains a valve (vir) between the intestine and the rectum (vir), the rectal gland, the rectum itself and a wide cuticle-lined passage to outside called the anus (RectFIG 1). A total of 11 cells of three distinct types sequentially arrange into these structures creating the passage (IntFIG 2) (Sulston et al., 1983; Sewell et al., 2003). Contrary to the monoclonal origin of the intestinal cells, the cells of the hindgut originate from assorted AB and P1 lineages during development. Several specialized muscles are also associated with the hindgut (RectFIG 1)."
+                    }
+                ]
+            },
+            "2) Rectal Valve": {
+                "paragraphs": [
+                    {
+                        "contents": "The intestinal-rectal valve is formed by two small darkly staining epithelial cells, virL and virR, that occlude the lumen of the posterior intestine (IntFIG 2 and RectFIG 2). Very narrow channels perforate this occlusion to allow digested material to leak into the rectum and then to the anus. It is not apparent whether these small openings are flexible enough to constitute a true valve, because rectal valve cells themselves do not possess any contractile elements or any movable parts.\n\n"
+                    },
+                    {
+                        "contents": "The valve cells are sister cells derived from the ABprpapppp cell. Through ablation studies it has been shown that ABplpapppp also has the potential to produce valve cells during development. However, in the wild type animal, ABprpapppp is specified for this function. Normally, ABplpapppp gives rise to the rectal epithelial D cell and PVT neuron when the descendants of ABprpa and ABplpa contact each other at the midline after gastrulation. If this cell-cell interaction is blocked, such as in animals with gastrulation defects, both cells then give rise to valve cells (Bowerman et al., 1992; Bucher and Seydoux, 1994)."
+                    }
+                ]
+            },
+            "3) Rectal Gland": {
+                "paragraphs": [
+                    {
+                        "contents": "A ring of three large rectal gland cells - rect_D, rect_VL, rect_VR (in some older literature, these cells are also referred to as \u0093rep\u0094) - connect to the intestinal lumen just posterior to the rectal valve (RectFIG 2). It is possible that these cells secrete digestive enzymes into the caudal lumen of the intestine, which is slightly inflated compared to lumen in the midbody. The cells lie at the same level or just behind the rectal valve, and their apical specialization facing the lumen produces both microvilli (similar to intestinal cells) and cuticle (similar to transitional epithelia) in discrete patches (D.H. Hall, unpubl.)."
+                    }
+                ]
+            },
+            "4) Rectal Epithelium": {
+                "paragraphs": [
+                    {
+                        "contents": "The Pax transcription factor EGL-38 has been found to be important for the development of hindgut cell types. Downstream of EGL-38, a combination of transcription factors contribute to each cell\u0092s fate (Chamberlin et al., 1997; Sewell et al., 2003)"
+                    }
+                ]
+            },
+            "5) Muscle Cells of the Hindgut (Enteric Muscles)": {
+                "paragraphs": [
+                    {
+                        "contents": "The four specialized muscle cells of the hindgut (the two stomatointestinal muscles [also called the intestinal muscles], the anal sphincter muscle [also known as the anal dilator or rectal muscle], and the anal depressor muscle [also called the depressor ani muscle]), are reviewed in detail in the Muscle System - Nonstriated. These enteric muscles operate jointly in the defecation cycle. The sphincter and anal depressor muscles are anchored to the body wall and to the rectal epithelium (RectFIG 3). All four muscles send arms to the DVB neuron along dorsal surface of the preanal ganglion. The DVB neuron makes synapses onto the arms of stomatointestinal muscle and the anal depressor muscle. All three sets of muscles are coupled to each other via gap junctions (White et al., 1986) (see also Gap Junctions). Their coupled contractions control the enteric muscle contraction (EMC) step of defecation."
+                    }
+                ]
+            },
+            "6) Motor Neurons of Defecation": {
+                "paragraphs": [
+                    {
+                        "contents": "In C. elegans, defecation is achieved through rhythmic activation of a stereotyped cycle of muscle contractions (Liu and Thomas, 1994). Laser ablation of the AVL and DVB neurons together eliminate enteric muscle contractions. AVL is an excitatory \u03b3-aminobutyric acid (GABA)ergic interneuron/motorneuron that is located in the head and sends a process  to the tail. It influences the enteric muscles indirectly via gap junctions with DVB (see also Gap Junctions). Killing AVL alone causes a strong anterior body muscle contraction (aBoc)-defective defecation phenotype. Because this defect is not seen in mutants that lack GABA, AVL may also use a non-GABAergic signal to activate other motor neurons that control anterior body wall muscle contraction. DVB is a GABAergic motor neuron located in the dorsorectal ganglion in tail (NeuroFIG 18). It is born post-embryonically at late L1 stage and is the daughter of the K rectal epithelial cell. DVB extends a prominent process anteriorly that passes through a commissure beneath the depressor muscle and extends forward along the top of the ventral hypodermal ridge. In this region, its large axon is filled with synaptic vesicles and makes periodic synapses to muscle arms from enteric muscles. The excitatory GABAergic signal from AVL and DVB is thought to be mediated by the nonselective cation-channel-type GABA receptor EXP-1 because exp-1 mutants lack enteric muscle contractions and are phenotypically constipated (Thomas, 1990; Beg and Jorgensen, 2003)."
+                    }
+                ]
+            },
+            "7) Defecation Motor Program": {
+                "paragraphs": [
+                    {
+                        "contents": "In C. elegans, defecation consistently occurs approximately every 50 seconds and has five cycle components: an intercycle period, pBoc (posterior body muscle contraction), pBoc relaxation, aBoc and EMC (enteric muscle contraction) which is also called the expulsion (exp) step (Avery and Thomas, 1997). In the hermaphrodite, each defecation starts with pBoc, which squeezes intestinal contents anteriorly. Approximately 1 second later, relaxation occurs and intestinal contents flow posteriorly. Next, aBoc is initiated by contraction of the body muscles near the head, and gut contents are concentrated near the anus. Finally, contraction of the enteric muscles expels the gut contents out of the animal and the intercycle period starts. The motor components of defecation behavior (pBoc, aBoc and EMC) constitute the defecation motor program (DMP). Defects in any of the motor components of DMP lead to constipation. During larval stages the hindgut structures of the male are virtually identical to those of the hermaphrodite. In the adult male although DMP is similar to the hermaphrodite, the anatomy and control of the hindgut changes drastically (see Male - Defecation Muscles, Male Muscles - Overview)."
+                    },
+                    {
+                        "contents": "The steps of the DMP are coordinated in precise temporal and spatial sequences. The ultradian defecation rhythm can be reset by light touch stimulus to the body and is thought to be controlled by an intestinal pacemaker that keeps time and activates the posterior body contraction at the start of each cycle (Dal Santo et al., 1999; Siklos et al., 2000). An essential element of this pattern generator and time keeper is the periodic, autonomous calcium release mediated by the inositol trisphosphate (IP3) receptor ITR-1 in the posterior intestine (Dal Santo et al., 1999). Intestinal calcium levels oscillate with the same periodicity as the defecation cycle and reach their peak levels just prior to the first muscle contraction (pBoc) step. Transient increases in calcium ions then propagate from the posterior to the anterior intestine (Espelt et al., 2005; Teramoto and Iwasaki, 2006). Blocking propagation of this calcium wave stops the later phases of the defecation motor program.\u00a0 In addition, mutations in itr-1 slow down or eliminate the cycle, further supporting the idea that IP3 receptor activity and calcium release rather than neuronal control sets the defecation cycle frequency. Nevertheless, the GABAergic motor neurons, AVL and DVB are required for the execution of the anterior body contraction and the enteric muscle contractions for expulsion (McIntire et al., 1993; Avery and Thomas, 1997). An intercellular signal originating from the calcium oscillations in the posterior intestine may activate these two neurons for later muscle contractions."
+                    }
+                ]
+            },
+            "8) List of Cells of the Rectum and Anus": {},
+            "9) References": {}
+        }
+    }
+}

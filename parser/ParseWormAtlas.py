@@ -234,6 +234,14 @@ if __name__ == "__main__":
         "../corpus/wormatlas/Handbook - Alimentary System Pharynx.html",
         "/hermaphrodite/pharynx/Phaframeset.html",
     ]
+    guides["Intestine"] = [
+        "../corpus/wormatlas/Handbook - Alimentary System Intestine.html",
+        "/hermaphrodite/intestine/Intframeset.html",
+    ]
+    guides["Rectum and Anus"] = [
+        "../corpus/wormatlas/Handbook - Alimentary System Rectum and Anus.html",
+        "/hermaphrodite/rectum/Rectframeset.html",
+    ]
     guides["Gap Junctions"] = [
         "../corpus/wormatlas/Handbook - Gap Junctions.html",
         "/hermaphrodite/gapjunctions/Gapjunctframeset.html",
