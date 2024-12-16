@@ -73,13 +73,14 @@ def process_query(response):
             if not v[SOURCE_DOCUMENT] in files_used:
                 files_used.append(v[SOURCE_DOCUMENT])
 
+    file_info = ',\n  '.join(files_used)
     print(f'''
 ===============================================================================
 QUERY: {query}
 -------------------------------------------------------------------------------
 RESPONSE: {response}
 SOURCES: 
-{',\n'.join(files_used)}
+  {file_info}
 ===============================================================================
 ''')
 
