@@ -234,6 +234,9 @@ def read_all_cell_info_file():
         source="https://wormatlas.org/neurons/Individual%20Neurons/Neuronframeset.html",
     )
 
+    current_section = Section("Summary information")
+    doc_model.sections.append(current_section)
+
     with open(
         "../corpus/wormatlas/%s/all_cell_info.csv" % ref, newline="\n"
     ) as csvfile:
@@ -258,8 +261,6 @@ def read_all_cell_info_file():
                 plaintext.write("%s\n\n" % info)
                 markdown.write("## %s\n\n%s\n\n" % (cell_name, info))
 
-                current_section = Section("%s" % (cell_name))
-                doc_model.sections.append(current_section)
                 current_section.paragraphs.append(Paragraph(info))
 
     plaintext.close()
