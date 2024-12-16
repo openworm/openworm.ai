@@ -27,12 +27,20 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install bs4
+        pip install bs4 pandas
         pip install modelspec
+        pip install llama_index
 
 
     - name: Test all
       run: |
         cd parser
         python ParseWormAtlas.py
-        find ..
+        cd ..
+        python GraphRAG_test.py
+
+    - name: Final version info
+      run: |
+        pip list
+        env
+
