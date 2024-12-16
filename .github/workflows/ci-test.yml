@@ -37,7 +37,7 @@ jobs:
         cd parser
         python ParseWormAtlas.py
         cd ..
-        python GraphRAG_test.py
+        python GraphRAG_test.py -test
 
     - name: Final version info
       run: |
