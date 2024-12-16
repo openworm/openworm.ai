@@ -27,7 +27,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install bs4 pandas csv
+        pip install bs4 pandas
         pip install modelspec
         pip install llama_index
 
