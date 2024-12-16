@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup, NavigableString, Comment
-
+import csv
 
 from Models import Document, Section, Paragraph
 
@@ -218,6 +218,58 @@ class WormAtlasParser:
         )
 
 
+def read_all_cell_info_file():
+    ref = "BasicCellInfo"
+    title = "Basic information on C. elegans neurons from WormAtlas"
+
+    markdown = open("%s/%s.md" % (MARKDOWN_DIR, ref), "w")
+    markdown.write("# %s\n\n" % title)
+
+    plaintext = open("%s/%s.txt" % (PLAINTEXT_DIR, ref), "w")
+    plaintext.write("%s\n\n" % title)
+
+    doc_model = Document(
+        id=ref,
+        title=title,
+        source="https://wormatlas.org/neurons/Individual%20Neurons/Neuronframeset.html",
+    )
+
+    with open(
+        "../corpus/wormatlas/%s/all_cell_info.csv" % ref, newline="\n"
+    ) as csvfile:
+        reader = csv.reader(csvfile, delimiter=",", quotechar='"')
+
+        for row in reader:
+            cell_name = row[0]
+            cell_type = row[1]
+            cell_name_details = row[2]
+            cell_lineage = row[3]
+            classification = row[4]
+            if cell_name != "Cell name":
+                info = f"{cell_name} is a neuron in the worm C. elegans, of type {cell_type}."
+                if "To be added" not in cell_name_details:
+                    info += f" The name stands for {cell_name_details}."
+                if "To be added" not in classification:
+                    info += f" {cell_name} is a {classification}."
+                if "uscle" not in cell_lineage:
+                    info += f" The cell lineage of {cell_name} is {cell_lineage}."
+
+                print(info)
+                plaintext.write("%s\n\n" % info)
+                markdown.write("## %s\n\n%s\n\n" % (cell_name, info))
+
+                current_section = Section("%s" % (cell_name))
+                doc_model.sections.append(current_section)
+                current_section.paragraphs.append(Paragraph(info))
+
+    plaintext.close()
+    markdown.close()
+
+    json_file = doc_model.to_json_file("%s/%s.json" % (JSON_DIR, ref.replace(" ", "_")))
+
+    print("Written to: %s" % json_file)
+
+
 if __name__ == "__main__":
     guides = {}
 
@@ -250,10 +302,16 @@ if __name__ == "__main__":
     with open("../processed/markdown/wormatlas/README.md", "w") as readme:
         readme.write("""
 ## WormAtlas Handbooks
+
+**[Basic Info on _C. elegans_ neurons](BasicCellInfo.md)**
  
 The following handbooks from [WormAtlas](https://www.wormatlas.org/handbookhome.htm) have been translated to Markdown format
 
 """)
+
+        # guides = {}
         for g in guides:
             wbp = WormAtlasParser(g, guides[g])
             readme.write(f"**[{g}]({ g.replace(' ', '_') }.md)**\n\n")
+
+        read_all_cell_info_file()

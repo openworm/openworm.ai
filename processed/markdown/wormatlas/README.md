@@ -1,5 +1,7 @@
 
 ## WormAtlas Handbooks
+
+**[Basic Info on _C. elegans_ neurons](BasicCellInfo.md)**
  
 The following handbooks from [WormAtlas](https://www.wormatlas.org/handbookhome.htm) have been translated to Markdown format
 
