@@ -27,12 +27,12 @@ jobs:
 
     - name: Install package
       run: |
-          pip install .
+          pip install .[test]
 
 
     - name: Test all
       run: | 
-        ./regenerateAndTest.sh 
+        ./regenerateAndTest.sh -free  # Only test the parts not requiring any API keys...
 
     - name: Final version info
       run: |
