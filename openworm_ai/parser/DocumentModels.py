@@ -3,7 +3,7 @@ from modelspec import field, instance_of, optional
 from modelspec.base_types import Base
 from typing import List
 
-# Models of entities required in this pipeline (documents, quizzes, etc.) defined in modelspec,
+# Models of entities required in this pipeline (documents, etc.) defined in modelspec,
 # to ease saving to/from json/yaml
 
 

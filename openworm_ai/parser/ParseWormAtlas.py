@@ -1,11 +1,13 @@
 from bs4 import BeautifulSoup, NavigableString, Comment
 import csv
 
-from Models import Document, Section, Paragraph
+from openworm_ai.parser.DocumentModels import Document, Section, Paragraph
 
-MARKDOWN_DIR = "../processed/markdown/wormatlas"
-PLAINTEXT_DIR = "../processed/plaintext/wormatlas"
-JSON_DIR = "../processed/json/wormatlas"
+MARKDOWN_DIR = "processed/markdown/wormatlas"
+PLAINTEXT_DIR = "processed/plaintext/wormatlas"
+JSON_DIR = "processed/json/wormatlas"
+
+CORPUS_LOCATION = "openworm_ai/corpus"
 
 
 class WormAtlasParser:
@@ -238,7 +240,7 @@ def read_all_cell_info_file():
     doc_model.sections.append(current_section)
 
     with open(
-        "../corpus/wormatlas/%s/all_cell_info.csv" % ref, newline="\n"
+        CORPUS_LOCATION + "/wormatlas/%s/all_cell_info.csv" % ref, newline="\n"
     ) as csvfile:
         reader = csv.reader(csvfile, delimiter=",", quotechar='"')
 
@@ -275,32 +277,37 @@ if __name__ == "__main__":
     guides = {}
 
     guides["Introduction"] = [
-        "../corpus/wormatlas/Handbook - Introduction.html",
+        CORPUS_LOCATION + "/wormatlas/Handbook - Introduction.html",
         "/hermaphrodite/introduction/Introframeset.html",
     ]
     guides["Alimentary System"] = [
-        "../corpus/wormatlas/Handbook - Alimentary System Overview.html",
+        CORPUS_LOCATION + "/wormatlas/Handbook - Alimentary System Overview.html",
         "/hermaphrodite/alimentary/Alimframeset.html",
     ]
 
     guides["Pharynx"] = [
-        "../corpus/wormatlas/Handbook - Alimentary System Pharynx.html",
+        CORPUS_LOCATION + "/wormatlas/Handbook - Alimentary System Pharynx.html",
         "/hermaphrodite/pharynx/Phaframeset.html",
     ]
     guides["Intestine"] = [
-        "../corpus/wormatlas/Handbook - Alimentary System Intestine.html",
+        CORPUS_LOCATION + "/wormatlas/Handbook - Alimentary System Intestine.html",
         "/hermaphrodite/intestine/Intframeset.html",
     ]
     guides["Rectum and Anus"] = [
-        "../corpus/wormatlas/Handbook - Alimentary System Rectum and Anus.html",
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Alimentary System Rectum and Anus.html",
         "/hermaphrodite/rectum/Rectframeset.html",
     ]
     guides["Gap Junctions"] = [
-        "../corpus/wormatlas/Handbook - Gap Junctions.html",
+        CORPUS_LOCATION + "/wormatlas/Handbook - Gap Junctions.html",
         "/hermaphrodite/gapjunctions/Gapjunctframeset.html",
     ]
 
-    with open("../processed/markdown/wormatlas/README.md", "w") as readme:
+    import os
+
+    # rint(openworm_ai.__file__)
+    print(os.getcwd())
+    with open("processed/markdown/wormatlas/README.md", "w") as readme:
         readme.write("""
 ## WormAtlas Handbooks
 

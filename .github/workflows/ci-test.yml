@@ -25,19 +25,14 @@ jobs:
       with:
         python-version:  ${{ matrix.python-version }}
 
-    - name: Install dependencies
+    - name: Install package
       run: |
-        pip install bs4 pandas
-        pip install modelspec
-        pip install llama_index
+          pip install .
 
 
     - name: Test all
-      run: |
-        cd parser
-        python ParseWormAtlas.py
-        cd ..
-        python GraphRAG_test.py -test
+      run: | 
+        ./regenerateAndTest.sh 
 
     - name: Final version info
       run: |
