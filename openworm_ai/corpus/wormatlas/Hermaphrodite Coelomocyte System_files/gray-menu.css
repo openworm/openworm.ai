@@ -1,0 +1,226 @@
+/* START THE CODE FOR THE MENUS */
+
+/* IF YOU EDIT THE SUB MENU WIDTH - EDIT 160 IN 4 PLACES TOTAL */
+
+/* menu ver 3.0 2007 */
+
+
+
+
+
+/* MENU OUTER TABLE - BACKGROUND & TOP & BOTTOM MENU BORDERS */
+
+.menutable 		{
+			background-image: url("../picts/gray/menu.gif");
+			background-color: #A4A6AC;
+			white-space: nowrap;
+			width:100%;
+			border-top: #888888 1px solid;
+			border-bottom: #888888 1px solid;
+			padding: 0px;
+			margin: 0px;
+			}
+
+
+/* CODE FOR MENU 2ND OUTER TABLE */
+
+#menunav, #menunav ul 	{
+			float: left;
+			white-space: nowrap;
+			width: 100%;
+			list-style: none;
+			padding: 0px;
+			border: solid #FFFFFF;
+			border-width: 0px 0px 0px 0px;
+			/* NOTE: BORDERs ABOVE ARE | top | right | bottom | left */
+			margin: 0px 0px 0px 0px;
+			}
+
+
+/* Search button */
+#searchbox {
+  font-family: inherit;
+  color: #000000;
+  text-shadow: 0 1px 2px #FFFFFF;
+  background-color: #CECECE;
+  border: 1px outset;
+  border-color: #666666;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+
+
+
+
+/* TOP LEVEL MARGINS, FONT FACE & FONT COLORS & PADDING */
+
+#menunav a 		{
+			color: #FFFFFF;
+			font: 12px arial, sans-serif;
+			font-weight: bold;
+			text-decoration: none;
+			text-align: center;
+			padding: 3px 5px 4px 5px;
+			width: auto;
+			display: block;
+			cursor: pointer;
+			}
+
+
+
+/* TOP LEVEL BACKROUND COLOR AND BORDERS - EDIT MENU IMAGES ALSO */
+
+#menunav li 		{
+			background-image: url("../picts/gray/menu.gif");
+			background-color: #A4A6AC;
+			border: solid #888888;
+			border-width: 0px 1px 0px 0px;	/* THIS IS A RIGHT BORDER */
+			/* NOTE: BORDERs ABOVE ARE | top | right | bottom | left */
+			float: left;
+			padding: 0;
+			}
+
+
+
+/* TOP LEVEL HOVER FONT COLOR */
+
+#menunav li a:hover	{
+			background-image: url("../picts/gray/menuon.gif");
+			color: #000000;
+			text-decoration: none;
+			cursor: pointer;
+			}
+
+
+
+
+/* TOP LEVEL HOVER BACKGROUND COLOR AND BORDERS - EDIT MENU IMAGES ALSO */
+
+#menunav li:hover, #menunav li.IEMhover
+			{
+
+			background-color: #B8B9BD;
+			border: solid #888888;
+			border-width: 0px 1px 0px 0px;	/* THIS IS A RIGHT BORDER */
+			/* NOTE: BORDERs ABOVE ARE | top | right | bottom | left */
+			}
+
+
+
+
+
+
+
+
+
+
+/* SUB LEVEL FONT & FONT COLOR & PADDING */
+
+#menunav li ul a 	{
+			font: 11px verdana, arial, sans-serif;
+			color: #666666;
+			font-weight: normal;
+			text-decoration: none;
+			text-align: left;
+			padding: 4px 0px 4px 0px;
+			text-indent: 8px;
+			cursor: pointer;
+			}
+
+
+
+/* SUB LEVEL FONT HOVER COLOR */
+
+#menunav li ul a:hover 	{
+			background-image: none;
+			color: #000000;
+			text-decoration: none;
+			cursor: pointer;
+			}
+
+
+/* SUB LEVEL OUTER BORDER */
+
+#menunav li ul 		{
+			position: absolute;
+			left: -999em;
+			height: auto;
+			width: 230px;
+			border: solid #000000;
+			border-width: 1px 1px 1px 1px;
+			/* NOTE: BORDERs ABOVE ARE | top | right | bottom | left */
+			margin: 0;
+			}
+
+
+/* SUB LEVEL BACKGROUND COLOR & BORDER OPTION FOR EACH LINK */
+
+#menunav li ul li 	{
+			background-image: none;
+			background-color: #FFFFFF;
+			border: solid #C0C0C0;
+			border-width: 1px 0px 0px 0px;
+			/* NOTE: BORDERs ABOVE ARE | top | right | bottom | left */
+			}
+
+
+/* SUB LEVEL HOVER BACKGROUND AND BORDERS */
+
+#menunav li ul li:hover, #menunav li ul li.IEMhover
+			{
+			background-image: none;
+			background-color: #F0F0F0;
+			border: solid #C0C0C0;
+			border-width: 1px 0px 0px 0px;
+			/* NOTE: BORDERs ABOVE ARE | top | right | bottom | left */
+			}
+
+
+
+
+/* SUB MENU WIDTH - ALSO EDIT TWO BELOW AND ONE ABOVE TO MATCH */
+
+#menunav li li {
+	padding-right: 0px;
+	width: 230px;
+}
+
+
+
+/* SUB MENU LINK WIDTH */
+
+#menunav li ul a {
+	width: 230px;
+}
+
+
+
+/* FOR 3rd LEVEL MENU LOCATION */
+
+#menunav li ul ul {
+	margin: -21px 0px 0px 200px;
+}
+
+
+
+
+
+#menunav li:hover ul ul, #menunav li:hover ul ul ul, #menunav li.IEMhover ul ul, #menunav li.IEMhover ul ul ul
+{ left: -999em; }
+
+#menunav li:hover ul, #menunav li li:hover ul, #menunav li li li:hover ul, #menunav li.IEMhover ul, #menunav li li.IEMhover ul, #menunav li li li.IEMhover ul
+{ left: auto; }
+
+
+
+
+
+
+
+/* FOR 3rd LEVEL ARROW */
+
+#menunav a.parent {
+	background: url(../picts/menu-arrow.gif) center right no-repeat;
+}

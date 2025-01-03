@@ -1,0 +1,46 @@
+{
+    "Coelomocyte System": {
+        "title": "Coelomocyte System",
+        "source": "https://www.wormatlas.org/hermaphrodite/coelomocyte/Coelomoframeset.html",
+        "sections": {
+            "1) General Information": {
+                "paragraphs": [
+                    {
+                        "contents": "The adult C. elegans hermaphrodite has six coelomocytes: large, ovoid, mesodermal cells situated as three pairs (right, left and dorsal) in the pseudocoelomic cavity adjacent to the somatic musculature (CcFIG 1). Four coelomocytes are present at hatching and two are generated in the first larval stage. Because there is evidence for absorption and concentration of soluble materials by coelomocytes of various nematode species, these cells were suggested to be phagocytic and similar in function to the macrophages of vertebrates (Chitwood and Chitwood, 1950). In larger nematode species, such as Ascaris suum, the coelomocytes can indeed phagocytose invading organisms (Bolla et al., 1972). Their inclusions and vesicles stain easily with dyes such as Methylene blue, Neutral red and Neutral violet, and these dyes sometimes appear to collect in high concentrations. Similarly, because of their ability to continuously endocytose and accumulate a variety of macromolecules from the body cavity fluid, coelomocytes of C. elegans have been suggested to serve immune, scavenging and hepatic functions (Fares and Grant, 2002; Yanowitz and Fire, 2005). Unlike macrophages of higher organisms, however, coelomocytes of C. elegans do not seem to be capable of phagocytosis (Ewbank, 2002). Also, they are not actively migratory and their position in the body cavity is relatively fixed, possibly by attachments to the body wall. As a result, coelomocytes rely on both the movements of the animal and the body cavity fluid for accessing foreign material."
+                    },
+                    {
+                        "contents": "Like the intestine and gonad, coelomocyte positioning reveals dextral handedness of the animal grown at 20\u00b0C; the ventral anterior pair is located on the right side and close to the pharynx, and the ventral posterior pair is on the left side and anterior to the vulva. When animals are cultivated at 10\u00b0C, this handedness may become reversed such that 0.5% of animals shows sinistral handedness instead of dextral (Wood et al., 1996). Of the dorsal pair of coelomocytes, one cell is located on the right side and one is located on the left."
+                    }
+                ]
+            },
+            "2) Embryonic Development": {
+                "paragraphs": [
+                    {
+                        "contents": "The coelomocytes arise from embryonic MS (mesodermal blast) and postembryonic M lineages (CcFIG 2). The right ventral (ventral anterior; ccAR and ccPR) and the left ventral (ventral posterior; ccAL and ccPL) pairs are derived from MS granddaughters MSpp and MSap, respectively (CcFIG 2 and CcFIG 3). They are generated from symmetrical divisions late in embryogenesis, when most of the other embryonic cell divisions have been completed (Sulston et al., 1983). Although the mother cell for each pair is born during the large burst of embryonic cell divisions, they remain arrested for a couple of hours before final cell division and differentiation. During this arrest in cell division before the elongation of the embryo, the two mother cells migrate posteriorly from the head where there are born, giving rise to the specific localizations of their daughter pairs of coelomocytes (CcFIG 2) (Hedgecock et al., 1987). \n\n"
+                    },
+                    {
+                        "contents": "The MS lineage also gives rise to the M mesoblast, which is responsible for all nongonadal mesoderm formation during post-embryonic development, including the two dorsal coelomocytes (ccDR and ccDL). The M mesoblast is born on the left side of the embryo next to the pharynx and then migrates to the posterior of the animal, following a ventral path between the two germ-line progenitors Z2 and Z3. It lingers on the midline for some time, but eventually moves to the right-hand side of the intestine and attaches to the body wall over QV5 (CcFIG 2 and CcFIG 4) (Sulston et al., 1983). Here, several consecutive divisions give rise to 18 cells by the L1 molt. Of these cells, 14 become body wall (striated) muscles, 2 become sex (nonstriated) muscle progenitor cells, and 2 dorsal cells (Mdlpa and Mdrpa) differentiate into coelomocytes during the L2 stage. In males, the M lineage gives rise to a single dorsal coelomocyte so that the total number of coelomocytes in males is five instead of six. Also in L1 males, one of the ventral left-side coelomocytes is located posterior to the gonad primordium rather than anteriorly, as in L1 hermaphrodite (see Introduction to Male Anatomy - Anatomical differences between sexes; Sulston and Horvitz, 1977)."
+                    }
+                ]
+            },
+            "3) Structure and Function": {
+                "paragraphs": [
+                    {
+                        "contents": "While coelomocytes in C. elegans  are ovoid in shape, they can adopt stellate shapes in some other species. Each coelomocyte is about 10-15 \u03bcm in diameter and its cytoplasm contains a distended rough endoplasmic reticulum and many membrane-bound vesicles of various sizes ( CcFIG 5 ) ( Fares and Greenwald, 2001 ). When viewed by DIC optics, the cells are distinctive in that they contain both pale vacuoles and highly refractile inclusions ( Sulston and Horvitz, 1977 ). Each cell is covered by its own basal lamina. Some portions of the plasma membrane show active endocytosis, with multiple, approximately 0.1 \u03bcm endocytic invaginations lying in close proximity to one another ( CcFIG 5 ). Foreign substances such as India ink, rhodamine-dextran, GFP, fluorescein isothiocyanate (FITC)-BSA and FITC-lipopolysaccharide of S. typhimurium, that are injected into the body cavity of C. elegans are rapidly taken up by coelomocytes ( Fares and Greenwald, 2001 , Zhang, et al., 2001 ). Although they do not normally take up yolk particles from the pseudocoelom, coelomocytes can be induced to take up GFP-tagged yolk particles, apparently due to the presence of the GFP moiety ( Paupard et al., 2001 ). \n\n"
+                    },
+                    {
+                        "contents": "Consistent with their role in uptake, several proteins known to function in endocytosis in other organisms are active in C. elegans coelomocytes (Fares and Greenwald, 2001). The fluid-phase markers that are taken up by coelomocytes travel through the endocytic (early and late) compartments and eventually reach lysosomes where they are degraded or stored if they are not amenable to digestion (Fares and Grant, 2002; Treusch et al., 2004). This active endocytosis by coelomocytes may function for scavenging as a primitive immune surveillance function. This function does not seem to be significant or essential for the animal's survival or fertility, however, because animals tolerate changes in the number of coelomocytes. Also, when coelomocytes are toxin-ablated, the treated animals continue to grow and bear progeny (Harfe et al., 1998; Fares and Greenwald, 2001; Yanowitz and Fire, 2005). Additionally, C. elegans seems to be susceptible to the intrapseudocoelomic injection of even small amounts of bacteria, which normally do not gain access to pseudocoelom due to three barriers: The grinder of the pharynx breaks down bacteria entering from the mouth; the multilayered cuticle envelops the body, acting a physical barrier; and a complex innate immune system that, at least in part, resembles that of higher organisms may function as a defense against bacterial infection (Millet and Ewbank 2004; Nicholas and Hodgkin 2004)."
+                    }
+                ]
+            },
+            "4) List of Coelomocytes": {},
+            "5) References": {
+                "paragraphs": [
+                    {
+                        "contents": "Zhang, Y., Grant, B. and Hirsh, D. 2001. RME-8, a conserved J-domain protein, is required for endocytosis in Caenorhabditis elegans. Mol. Biol. Cell 12: 2011-2021. Article"
+                    }
+                ]
+            }
+        }
+    }
+}

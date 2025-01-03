@@ -93,6 +93,7 @@ SOURCES:
         "What are the dimensions of the C. elegans pharynx?",
         "What color is C. elegans?",
         "What is the main function of cell AVBR?",
+        "Give me 3 facts about the coelomocyte system in C. elegens",
     ]
 
     for query in queries:

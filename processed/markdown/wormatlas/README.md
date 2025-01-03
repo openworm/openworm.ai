@@ -15,5 +15,7 @@ The following handbooks from [WormAtlas](https://www.wormatlas.org/handbookhome.
 
 **[Rectum and Anus](Rectum_and_Anus.md)**
 
+**[Coelomocyte System](Coelomocyte_System.md)**
+
 **[Gap Junctions](Gap_Junctions.md)**
 

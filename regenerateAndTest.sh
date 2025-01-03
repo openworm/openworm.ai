@@ -21,8 +21,6 @@ python -m openworm_ai.graphrag.GraphRAG_test
 
 fi
 
-
-
 echo
 echo "  Success!"
 echo

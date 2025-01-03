@@ -298,6 +298,11 @@ if __name__ == "__main__":
         + "/wormatlas/Handbook - Alimentary System Rectum and Anus.html",
         "/hermaphrodite/rectum/Rectframeset.html",
     ]
+    guides["Coelomocyte System"] = [
+        CORPUS_LOCATION + "/wormatlas/Hermaphrodite Coelomocyte System.html",
+        "/hermaphrodite/coelomocyte/Coelomoframeset.html",
+    ]
+
     guides["Gap Junctions"] = [
         CORPUS_LOCATION + "/wormatlas/Handbook - Gap Junctions.html",
         "/hermaphrodite/gapjunctions/Gapjunctframeset.html",
