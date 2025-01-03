@@ -302,6 +302,10 @@ if __name__ == "__main__":
         CORPUS_LOCATION + "/wormatlas/Hermaphrodite Coelomocyte System.html",
         "/hermaphrodite/coelomocyte/Coelomoframeset.html",
     ]
+    guides["The Cuticle"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - The Cuticle.html",
+        "/hermaphrodite/cuticle/Cutframeset.html",
+    ]
 
     guides["Gap Junctions"] = [
         CORPUS_LOCATION + "/wormatlas/Handbook - Gap Junctions.html",

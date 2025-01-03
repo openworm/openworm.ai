@@ -17,5 +17,7 @@ The following handbooks from [WormAtlas](https://www.wormatlas.org/handbookhome.
 
 **[Coelomocyte System](Coelomocyte_System.md)**
 
+**[The Cuticle](The_Cuticle.md)**
+
 **[Gap Junctions](Gap_Junctions.md)**
 
