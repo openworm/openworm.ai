@@ -3,6 +3,10 @@ from openworm_ai.quiz.Templates import GENERATE_Q, TEXT_ANSWER_EXAMPLE
 
 from openworm_ai.utils.llms import get_llm_from_argv, ask_question_get_response
 
+import random
+
+indexing = ["A", "B", "C", "D"]
+
 
 def save_quiz(num_questions, num_answers, llm_ver):
     question = (
@@ -20,8 +24,8 @@ def save_quiz(num_questions, num_answers, llm_ver):
     )
 
     last_question = None
-    indexing = ["A", "B", "C", "D"]
 
+    indexing = ["1", "2", "3", "4"]
     for line in response.split("\n"):
         if "QUESTION" in line:
             question = line.split(":")[-1].strip()
@@ -53,4 +57,50 @@ if __name__ == "__main__":
 
     llm_ver = get_llm_from_argv(sys.argv)
 
-    save_quiz(50, 4, llm_ver)
+    if "-ask" in sys.argv:
+        quiz_json = "openworm_ai/quiz/samples/GPT4o_5questions.json"
+        quiz_json = "openworm_ai/quiz/samples/GPT4o_50questions.json"
+        quiz = MultipleChoiceQuiz.from_file(quiz_json)
+
+        total_qs = 0
+        total_correct = 0
+        for question in quiz.questions:
+            q = question["question"]
+
+            from openworm_ai.quiz.Templates import ASK_Q
+
+            answers = ""
+
+            random.shuffle(question["answers"])
+
+            for index, answer in enumerate(question["answers"]):
+                ref = indexing[index]
+                if answer["correct"]:
+                    correct_answer = ref
+                    correct_text = f'{ref}: {answer['ans']}'
+                answers += f"{ref}: {answer['ans']}\n"
+
+            full_question = ASK_Q.replace("<QUESTION>", q).replace("<ANSWERS>", answers)
+
+            from openworm_ai.utils.llms import ask_question_get_response
+
+            resp = ask_question_get_response(
+                full_question, llm_ver, print_question=False
+            ).strip()
+            total_qs += 1
+            guess = resp.split(":")[0].strip()
+
+            correct_guess = guess == correct_answer
+            print(
+                f" >> Is their guess of ({resp}) for ({q}) correct (right answer: {correct_text})? {correct_guess}"
+            )
+
+            if correct_guess:
+                total_correct += 1
+
+        print(
+            f"\n  The LLM {llm_ver} got {total_correct} out of {total_qs} questions correct ({'%.2f %%'%(100 * total_correct/total_qs)})!\n"
+        )
+
+    else:
+        save_quiz(5, 4, llm_ver)

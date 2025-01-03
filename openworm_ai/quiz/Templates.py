@@ -19,6 +19,32 @@ WRONG ANSWER: Dublin
 
 """
 
+ASK_Q = """You are to select the correct answer for a multiple choice question. 
+A number of answers will be presented and you should respond with only the letter corresponding to the correct answer.
+For example if the question is: 
+
+What is the capital of France?
+
+and the potential answers are:
+
+E: Madrid
+F: Paris
+G: Rome
+H: Dublin
+
+you should only answer: 
+
+F
+
+This is your question:
+
+<QUESTION>
+
+These are the potential answers:
+
+<ANSWERS>
+
+"""
 
 if __name__ == "__main__":
     import sys

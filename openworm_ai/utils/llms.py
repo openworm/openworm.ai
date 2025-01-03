@@ -271,10 +271,13 @@ def get_llm_from_argv(argv):
     return llm_ver
 
 
-def ask_question_get_response(question, llm_ver, temperature=0, only_celegans=False):
+def ask_question_get_response(
+    question, llm_ver, temperature=0, only_celegans=False, print_question=True
+):
     print("--------------------------------------------------------")
-    print("Asking question:\n   %s" % question)
-    print("--------------------------------------------------------")
+    if print_question:
+        print("Asking question:\n   %s" % question)
+        print("--------------------------------------------------------")
 
     print(" ... Connecting to LLM: %s" % llm_ver)
 
