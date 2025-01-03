@@ -23,7 +23,10 @@ WRONG ANSWER: Dublin
 if __name__ == "__main__":
     import sys
 
-    question = GENERATE_Q.replace('<QUESTION_NUMBER>','5').replace('<ANSWER_NUMBER>','4') + TEXT_ANSWER_EXAMPLE
+    question = (
+        GENERATE_Q.replace("<QUESTION_NUMBER>", "5").replace("<ANSWER_NUMBER>", "4")
+        + TEXT_ANSWER_EXAMPLE
+    )
 
     llm_ver = get_llm_from_argv(sys.argv)
 

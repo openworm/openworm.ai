@@ -1,4 +1,6 @@
 .DS_Store
 __pycache__
 /build
-/openworm_ai.egg-info 
+/openworm_ai.egg-info
+/openworm_ai/quiz/samples/GPT4o_5questions.json
+/openworm_ai/quiz/samples/Ollama_mistral_5questions.json
