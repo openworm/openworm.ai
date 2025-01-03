@@ -12,6 +12,7 @@ LLM_AI21 = "AI21"
 LLM_CLAUDE2 = "Claude2.1"
 LLM_COHERE = "Cohere"
 LLM_OLLAMA_LLAMA32 = "Ollama:Llama3.2"
+LLM_OLLAMA_MISTRAL = "Ollama:mistral"
 
 OPENAI_LLMS = [LLM_GPT35, LLM_GPT4, LLM_GPT4o]
 
@@ -25,6 +26,7 @@ PREF_ORDER_LLMS = (
     LLM_CLAUDE2,
     LLM_COHERE,
     LLM_OLLAMA_LLAMA32,
+    LLM_OLLAMA_MISTRAL
 )
 
 
@@ -138,6 +140,11 @@ def get_llm(llm_ver, temperature):
         from langchain_ollama.llms import OllamaLLM
 
         llm = OllamaLLM(model="llama3.2:1b")
+
+    elif llm_ver == LLM_OLLAMA_MISTRAL:
+        from langchain_ollama.llms import OllamaLLM
+
+        llm = OllamaLLM(model="mistral")
 
     return llm
 
@@ -256,6 +263,9 @@ def get_llm_from_argv(argv):
 
     if "-o-l32" in argv:
         llm_ver = LLM_OLLAMA_LLAMA32
+
+    if "-o-m" in argv:
+        llm_ver = LLM_OLLAMA_MISTRAL
 
     return llm_ver
 

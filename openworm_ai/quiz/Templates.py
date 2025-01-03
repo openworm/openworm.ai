@@ -1,12 +1,16 @@
 from openworm_ai.utils.llms import get_llm_from_argv
 from openworm_ai.utils.llms import generate_response
 
-GENERATE = """
-Generate a list of 5 multiple choice questions to test someone's general knowledge.
-The questions should be answerable by a reasonably intelligent school child.
-There should be 4 possible answers, only one of which is correct, and all of the answers should be kept brief.
-Each of the 5 questions should be presented in the following format:
 
+GENERATE_Q = """
+Generate a list of <QUESTION_NUMBER> multiple choice questions to test someone's general knowledge.
+The questions should be answerable by a reasonably intelligent school child.
+There should be <ANSWER_NUMBER> possible answers, only one of which is correct, and all of the answers should be kept brief.
+Each of the <QUESTION_NUMBER> question/answer sets should be presented in the following format:
+
+"""
+
+TEXT_ANSWER_EXAMPLE = """
 QUESTION: What is the capital of France?
 CORRECT ANSWER: Paris
 WRONG ANSWER: Madrid
@@ -19,7 +23,7 @@ WRONG ANSWER: Dublin
 if __name__ == "__main__":
     import sys
 
-    question = GENERATE
+    question = GENERATE_Q.replace('<QUESTION_NUMBER>','5').replace('<ANSWER_NUMBER>','4') + TEXT_ANSWER_EXAMPLE
 
     llm_ver = get_llm_from_argv(sys.argv)
 
