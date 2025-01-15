@@ -16,7 +16,7 @@ def convert_to_model(paper_ref, paper_location):
 
     print("Converting: %s" % loc)
 
-    with open(loc, "r") as JSON:
+    with open(loc, "r", encoding="utf-8") as JSON:
         json_dict = json.load(JSON)
 
     for page in json_dict["pages"]:
