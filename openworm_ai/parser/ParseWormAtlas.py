@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup, NavigableString, Comment
 import csv
 
+from pathlib import Path
+
 from openworm_ai.parser.DocumentModels import Document, Section, Paragraph
 
 MARKDOWN_DIR = "processed/markdown/wormatlas"
@@ -23,11 +25,11 @@ class WormAtlasParser:
         self.title = title
         ref = title.replace(" ", "_")
 
-        self.markdown = open("%s/%s.md" % (MARKDOWN_DIR, ref), "w")
+        self.markdown = open(Path("%s/%s.md" % (MARKDOWN_DIR, ref)), "w")
 
         self.markdown.write("# %s\n\n" % title)
 
-        self.plaintext = open("%s/%s.txt" % (PLAINTEXT_DIR, ref), "w")
+        self.plaintext = open(Path("%s/%s.txt" % (PLAINTEXT_DIR, ref)), "w")
 
         self.plaintext.write("%s\n\n" % title)
 
@@ -37,7 +39,7 @@ class WormAtlasParser:
 
         verbose = False
 
-        with open(filename, encoding="ISO-8859-1") as f:
+        with open(Path(filename), encoding="ISO-8859-1") as f:
             self.html = f.read()
 
             soup = BeautifulSoup(self.html, "html.parser")
@@ -224,10 +226,10 @@ def read_all_cell_info_file():
     ref = "BasicCellInfo"
     title = "Basic information on C. elegans neurons from WormAtlas"
 
-    markdown = open("%s/%s.md" % (MARKDOWN_DIR, ref), "w")
+    markdown = open(Path("%s/%s.md" % (MARKDOWN_DIR, ref)), "w")
     markdown.write("# %s\n\n" % title)
 
-    plaintext = open("%s/%s.txt" % (PLAINTEXT_DIR, ref), "w")
+    plaintext = open(Path("%s/%s.txt" % (PLAINTEXT_DIR, ref)), "w")
     plaintext.write("%s\n\n" % title)
 
     doc_model = Document(
@@ -240,7 +242,7 @@ def read_all_cell_info_file():
     doc_model.sections.append(current_section)
 
     with open(
-        CORPUS_LOCATION + "/wormatlas/%s/all_cell_info.csv" % ref, newline="\n"
+        Path(CORPUS_LOCATION + "/wormatlas/%s/all_cell_info.csv" % ref), newline="\n"
     ) as csvfile:
         reader = csv.reader(csvfile, delimiter=",", quotechar='"')
 
@@ -316,7 +318,7 @@ if __name__ == "__main__":
 
     # rint(openworm_ai.__file__)
     print(os.getcwd())
-    with open("processed/markdown/wormatlas/README.md", "w") as readme:
+    with open(Path("processed/markdown/wormatlas/README.md"), "w") as readme:
         readme.write("""
 ## WormAtlas Handbooks
 
