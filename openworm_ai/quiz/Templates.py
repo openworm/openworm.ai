@@ -4,8 +4,8 @@ from openworm_ai.utils.llms import generate_response
 
 GENERATE_Q = """
 Generate a list of <QUESTION_NUMBER> multiple choice questions to test someone's general knowledge.
-The questions should be answerable by a reasonably intelligent school child.
-There should be <ANSWER_NUMBER> possible answers, only one of which is correct, and all of the answers should be kept brief.
+The questions should be answerable by a reasonably intelligent adult, and should be on a wide range of subjects.
+There should be <ANSWER_NUMBER> possible answers, only one of which is unambiguously correct, and all of the answers should be kept brief.
 Each of the <QUESTION_NUMBER> question/answer sets should be presented in the following format:
 
 """
