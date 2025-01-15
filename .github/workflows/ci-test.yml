@@ -32,10 +32,10 @@ jobs:
     - name: Install ollama and small LLM
       run: |
           # https://stackoverflow.com/questions/78486506/ollama-running-with-github-actions
-          curl -fsSL https://ollama.com/install.sh | sh
+          ##curl -fsSL https://ollama.com/install.sh | sh
  
-          ollama serve
-          ollama pull llama3.2:1b
+          ##ollama serve
+          ##ollama pull llama3.2:1b
 
 
     - name: Test all
