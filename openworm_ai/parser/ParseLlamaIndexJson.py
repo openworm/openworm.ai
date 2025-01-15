@@ -20,7 +20,7 @@ def convert_to_model(paper_ref, paper_location):
         json_dict = json.load(JSON)
 
     for page in json_dict["pages"]:
-        print(f'Page {page['page']} has {len(page['items'])} items')
+        print(f"Page {page['page']} has {len(page['items'])} items")
 
 
 if __name__ == "__main__":
