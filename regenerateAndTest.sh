@@ -10,6 +10,8 @@ python -m openworm_ai.quiz.QuizModel
 
 python -m openworm_ai.parser.ParseWormAtlas
 
+python -m openworm_ai.parser.ParseLlamaIndexJson
+
 
 if [ $# -eq 1 ] ; then
     if [ $1 == "-free" ]; then
