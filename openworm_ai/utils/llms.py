@@ -1,4 +1,5 @@
 import os
+import time
 
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -13,6 +14,7 @@ LLM_CLAUDE2 = "Claude2.1"
 LLM_COHERE = "Cohere"
 LLM_OLLAMA_LLAMA32 = "Ollama:Llama3.2"
 LLM_OLLAMA_MISTRAL = "Ollama:mistral"
+LLM_OLLAMA_TINYLLAMA = "Ollama:tinyllama"
 
 OPENAI_LLMS = [LLM_GPT35, LLM_GPT4, LLM_GPT4o]
 
@@ -26,7 +28,8 @@ PREF_ORDER_LLMS = (
     LLM_CLAUDE2,
     LLM_COHERE,
     LLM_OLLAMA_LLAMA32,
-    LLM_OLLAMA_MISTRAL
+    LLM_OLLAMA_MISTRAL,
+    LLM_OLLAMA_TINYLLAMA,
 )
 
 
@@ -145,6 +148,11 @@ def get_llm(llm_ver, temperature):
         from langchain_ollama.llms import OllamaLLM
 
         llm = OllamaLLM(model="mistral")
+
+    elif llm_ver == LLM_OLLAMA_TINYLLAMA:
+        from langchain_ollama.llms import OllamaLLM
+
+        llm = OllamaLLM(model="tinyllama")
 
     return llm
 
@@ -267,7 +275,34 @@ def get_llm_from_argv(argv):
     if "-o-m" in argv:
         llm_ver = LLM_OLLAMA_MISTRAL
 
+    if "-o-t" in argv:
+        llm_ver = LLM_OLLAMA_TINYLLAMA
+
     return llm_ver
+
+
+def ask_question_get_response(
+    question, llm_ver, temperature=0, only_celegans=False, print_question=True
+):
+    print("--------------------------------------------------------")
+    if print_question:
+        print("Asking question:\n   %s" % question)
+        print("--------------------------------------------------------")
+
+    print(" ... Connecting to LLM: %s" % llm_ver)
+
+    start = time.time()
+    response = generate_response(
+        question, llm_ver=llm_ver, temperature=temperature, only_celegans=only_celegans
+    )
+    print(" ... Processed in %.3f sec" % (time.time() - start))
+
+    print("--------------------------------------------------------")
+    print("Answer:\n   %s" % response)
+    print("--------------------------------------------------------")
+    print()
+
+    return response
 
 
 if __name__ == "__main__":
@@ -277,15 +312,4 @@ if __name__ == "__main__":
 
     llm_ver = get_llm_from_argv(sys.argv)
 
-    print("--------------------------------------------------------")
-    print("Asking question:\n   %s" % question)
-    print("--------------------------------------------------------")
-
-    print(" ... Connecting to: %s" % llm_ver)
-
-    response = generate_response(question, llm_ver, temperature=0, only_celegans=False)
-
-    print("--------------------------------------------------------")
-    print("Answer:\n   %s" % response)
-    print("--------------------------------------------------------")
-    print()
+    ask_question_get_response(question, llm_ver)
