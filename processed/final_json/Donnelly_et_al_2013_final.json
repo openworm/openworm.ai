@@ -1,9 +1,9 @@
 {
     "Donnelly_et_al_2013_page": {
         "title": "Donnelly_et_al_2013_page",
-        "source": "corpus\\papers\\test\\Donnelly2013_Llamaparse_Accurate.pdf.json",
+        "source": "corpus/papers/test/Donnelly2013_Llamaparse_Accurate.pdf.json",
         "sections": {
-            "Donnelly_et_al_2013_page_1": {
+            "Page 1": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of Motor Programs in a Complex C. elegans Behavior"
@@ -73,7 +73,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_2": {
+            "Page 2": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -101,7 +101,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_3": {
+            "Page 3": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -114,7 +114,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_4": {
+            "Page 4": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -136,7 +136,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_5": {
+            "Page 5": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -149,7 +149,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_6": {
+            "Page 6": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -168,7 +168,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_7": {
+            "Page 7": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -190,7 +190,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_8": {
+            "Page 8": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -218,7 +218,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_9": {
+            "Page 9": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -240,7 +240,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_10": {
+            "Page 10": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -253,7 +253,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_11": {
+            "Page 11": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -269,7 +269,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_12": {
+            "Page 12": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -297,7 +297,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_13": {
+            "Page 13": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -319,7 +319,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_14": {
+            "Page 14": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -347,7 +347,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_15": {
+            "Page 15": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -402,7 +402,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_16": {
+            "Page 16": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"
@@ -430,7 +430,7 @@
                     }
                 ]
             },
-            "Donnelly_et_al_2013_page_17": {
+            "Page 17": {
                 "paragraphs": [
                     {
                         "contents": "# Monoaminergic Orchestration of a Complex Behavior"

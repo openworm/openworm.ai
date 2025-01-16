@@ -1,21 +1,23 @@
 import json
 from pathlib import Path
 
-# This has to be altered accordingly 
-output_dir = r"openworm.ai\processed\final_json"
+# This has to be altered accordingly
+output_dir = "processed/final_json"
+
 
 # Function to save JSON content
 def save_json(content, file_name, output_dir):
     # Full path to the file
-    file_path = f"{output_dir}/{file_name}"
+    file_path = Path(f"{output_dir}/{file_name}")
 
-    # Write content to the the final json file 
+    # Write content to the the final json file
     with open(file_path, "w", encoding="utf-8") as json_file:
         json.dump(content, json_file, indent=4, ensure_ascii=False)
 
-    print(f"JSON file saved at: {file_path}")
+    print(f"  JSON file saved at: {file_path}")
 
-# Function to process JSON and extract markdown content 
+
+# Function to process JSON and extract markdown content
 def convert_to_json(paper_ref, paper_location, output_dir):
     loc = Path(paper_location)
 
@@ -30,7 +32,7 @@ def convert_to_json(paper_ref, paper_location, output_dir):
         f"{paper_ref}_page": {
             "title": f"{paper_ref}_page",
             "source": str(loc),
-            "sections": {}
+            "sections": {},
         }
     }
 
@@ -44,12 +46,13 @@ def convert_to_json(paper_ref, paper_location, output_dir):
 
         # Save sections by page (if there are any markdown sections)
         if page_sections:
-            final_json[f"{paper_ref}_page"]["sections"][f"{paper_ref}_page_{page['page']}"] = {
+            final_json[f"{paper_ref}_page"]["sections"][f"Page {page['page']}"] = {
                 "paragraphs": page_sections
             }
 
     # Save the final JSON output
     save_json(final_json, f"{paper_ref}_final.json", output_dir)
+
 
 # Main execution block
 if __name__ == "__main__":
@@ -65,10 +68,10 @@ if __name__ == "__main__":
 # Found a glob.glob technique but I remember you using something else.
 
 # if __name__ == "__main__":
-    # Dynamically load all JSON files from the folder
-    # input_dir = "openworm.ai/processed/markdown/wormatlas"
-    # papers = {Path(file).stem: file for file in glob.glob(f"{input_dir}/*.json")}
+# Dynamically load all JSON files from the folder
+# input_dir = "openworm.ai/processed/markdown/wormatlas"
+# papers = {Path(file).stem: file for file in glob.glob(f"{input_dir}/*.json")}
 
-    # Loop through papers and process markdown sections
-    # for paper_ref, paper_location in papers.items():
-        # convert_to_json(paper_ref, paper_location, output_dir)
+# Loop through papers and process markdown sections
+# for paper_ref, paper_location in papers.items():
+# convert_to_json(paper_ref, paper_location, output_dir)
