@@ -1,7 +1,7 @@
 {
-    "Donnelly_et_al_2013_page": {
-        "title": "Donnelly_et_al_2013_page",
-        "source": "corpus/papers/test/Donnelly2013_Llamaparse_Accurate.pdf.json",
+    "Donnelly_et_al_2013": {
+        "title": "Donnelly_et_al_2013",
+        "source": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001529",
         "sections": {
             "Page 1": {
                 "paragraphs": [

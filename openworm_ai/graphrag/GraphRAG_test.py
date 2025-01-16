@@ -30,9 +30,12 @@ for json_file in json_inputs:
         doc_contents = doc_model[title]
         src_page = doc_contents["source"]
         for section in doc_contents["sections"]:
-            print("    Processing section: %s" % doc_contents["sections"][section])
             all_text = ""
             if "paragraphs" in doc_contents["sections"][section]:
+                print(
+                    "    Processing section: %s/t(%i paragraphs)"
+                    % (section, len(doc_contents["sections"][section]["paragraphs"]))
+                )
                 for p in doc_contents["sections"][section]["paragraphs"]:
                     all_text += p["contents"] + "\n\n"
             if len(all_text) == 0:
@@ -94,6 +97,7 @@ SOURCES:
         "What color is C. elegans?",
         "What is the main function of cell AVBR?",
         "Give me 3 facts about the coelomocyte system in C. elegens",
+        "Give me 3 facts about the control of motor programs in c. elegans by monoamines",
     ]
 
     for query in queries:

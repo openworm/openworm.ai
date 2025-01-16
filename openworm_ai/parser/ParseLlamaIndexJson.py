@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 # This has to be altered accordingly
-output_dir = "processed/final_json"
+output_dir = "processed/json/papers"
 
 
 # Function to save JSON content
@@ -18,8 +18,8 @@ def save_json(content, file_name, output_dir):
 
 
 # Function to process JSON and extract markdown content
-def convert_to_json(paper_ref, paper_location, output_dir):
-    loc = Path(paper_location)
+def convert_to_json(paper_ref, paper_info, output_dir):
+    loc = Path(paper_info[0])
 
     print(f"Converting: {loc}")
 
@@ -29,9 +29,9 @@ def convert_to_json(paper_ref, paper_location, output_dir):
 
     # Final JSON structure
     final_json = {
-        f"{paper_ref}_page": {
-            "title": f"{paper_ref}_page",
-            "source": str(loc),
+        f"{paper_ref}": {
+            "title": f"{paper_ref}",
+            "source": str(paper_info[1]),
             "sections": {},
         }
     }
@@ -46,7 +46,7 @@ def convert_to_json(paper_ref, paper_location, output_dir):
 
         # Save sections by page (if there are any markdown sections)
         if page_sections:
-            final_json[f"{paper_ref}_page"]["sections"][f"Page {page['page']}"] = {
+            final_json[f"{paper_ref}"]["sections"][f"Page {page['page']}"] = {
                 "paragraphs": page_sections
             }
 
@@ -57,7 +57,10 @@ def convert_to_json(paper_ref, paper_location, output_dir):
 # Main execution block
 if __name__ == "__main__":
     papers = {
-        "Donnelly_et_al_2013": "corpus/papers/test/Donnelly2013_Llamaparse_Accurate.pdf.json"
+        "Donnelly_et_al_2013": [
+            "corpus/papers/test/Donnelly2013_Llamaparse_Accurate.pdf.json",
+            "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001529",
+        ]
     }
 
     # Loop through papers and process markdown sections
