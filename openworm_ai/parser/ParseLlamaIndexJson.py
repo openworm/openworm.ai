@@ -1,53 +1,55 @@
 import json
 from pathlib import Path
-import os
 
-# Define the output directory for saving markdown files
-output_dir = r"C:\Users\janku\OneDrive\Documentos\GitHub\openworm.ai\processed\final_md"
+# This has to be altered accordingly 
+output_dir = r"openworm.ai\processed\final_json"
 
-# Function to save markdown content
-def save_markdown(content, file_name, output_dir):
-    # Ensure the output directory exists
-    os.makedirs(output_dir, exist_ok=True)
-    
-    # Define the full path for the file
-    file_path = os.path.join(output_dir, file_name)
-    
-    # Write content to the file
-    with open(file_path, "w", encoding="utf-8") as md_file:
-        md_file.write(content)
-    
-    print(f"Markdown file saved at: {file_path}")
+# Function to save JSON content
+def save_json(content, file_name, output_dir):
+    # Full path to the file
+    file_path = f"{output_dir}/{file_name}"
 
-# Function to process JSON and extract markdown content
-def convert_to_model(paper_ref, paper_location):
+    # Write content to the the final json file 
+    with open(file_path, "w", encoding="utf-8") as json_file:
+        json.dump(content, json_file, indent=4, ensure_ascii=False)
+
+    print(f"JSON file saved at: {file_path}")
+
+# Function to process JSON and extract markdown content 
+def convert_to_json(paper_ref, paper_location, output_dir):
     loc = Path(paper_location)
 
     print(f"Converting: {loc}")
 
-    # Load the JSON file
+    # Load the input JSON file
     with open(loc, "r", encoding="utf-8") as JSON:
         json_dict = json.load(JSON)
 
-    # Initialize a counter for markdown sections
-    md_count = 0
+    # Final JSON structure
+    final_json = {
+        f"{paper_ref}_page": {
+            "title": f"{paper_ref}_page",
+            "source": str(loc),
+            "sections": {}
+        }
+    }
 
-    # Check for 'md' sections both at the page level and within 'items'
+    # Process each page and its items
     for page in json_dict["pages"]:
-        # Save 'md' content at the page level
-        if "md" in page and page["md"].strip():
-            md_count += 1
-            save_markdown(page["md"], f"{paper_ref}_page_{page['page']}_level.md", output_dir)
+        page_sections = []
+        for item in page.get("items", []):
+            # Only extract 'md' sections (this can be altered depending on the desired section we want to include)
+            if "md" in item and item["md"].strip():
+                page_sections.append({"contents": item["md"]})
 
-        # Save 'md' content within the 'items' list
-        md_items = [item for item in page.get('items', []) if 'md' in item and item['md'].strip()]
-        
-        # Save each item individually
-        for idx, item in enumerate(md_items):
-            md_count += 1
-            save_markdown(item['md'], f"{paper_ref}_page_{page['page']}_item_{idx+1}.md", output_dir)
+        # Save sections by page (if there are any markdown sections)
+        if page_sections:
+            final_json[f"{paper_ref}_page"]["sections"][f"{paper_ref}_page_{page['page']}"] = {
+                "paragraphs": page_sections
+            }
 
-    print(f"Total markdown sections saved: {md_count}")
+    # Save the final JSON output
+    save_json(final_json, f"{paper_ref}_final.json", output_dir)
 
 # Main execution block
 if __name__ == "__main__":
@@ -57,4 +59,16 @@ if __name__ == "__main__":
 
     # Loop through papers and process markdown sections
     for paper in papers:
-        convert_to_model(paper, papers[paper])
+        convert_to_json(paper, papers[paper], output_dir)
+
+# If we dont want to write out the papers individually.
+# Found a glob.glob technique but I remember you using something else.
+
+# if __name__ == "__main__":
+    # Dynamically load all JSON files from the folder
+    # input_dir = "openworm.ai/processed/markdown/wormatlas"
+    # papers = {Path(file).stem: file for file in glob.glob(f"{input_dir}/*.json")}
+
+    # Loop through papers and process markdown sections
+    # for paper_ref, paper_location in papers.items():
+        # convert_to_json(paper_ref, paper_location, output_dir)
