@@ -1,8 +1,8 @@
-Donnelly_et_al_2013
+# Donnelly et al 2013
 
-Generated from: https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001529
+_Generated from: https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001529_
 
-    Page 1
+## Page 1
 
 # Monoaminergic Orchestration of Motor Programs in a Complex C. elegans Behavior
 
@@ -62,7 +62,7 @@ Pioneering studies in the locust, mollusks, and crustaceans have supported an "o
 
 The C. elegans escape response consists of a behavioral sequence used by the animal to navigate away from a threatening stimulus. C. elegans moves on its side by propagating a sinusoidal wave of ventral-dorsal muscle contractions along the length of its body. Locomotion is normally accompanied by exploratory head movements in which the tip of the nose moves rapidly from side to side. Gentle touch to the head elicits a backing response and the suppression of exploratory head movements.
 
-    Page 2
+## Page 2
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -88,7 +88,7 @@ Head movements and body movements are controlled by distinct groups of muscles a
 
 To identify genes involved in tyramine signaling, we performed a genetic screen for mutants that are resistant to the immobilizing effects of exogenous tyramine on body movements. Four isolates from this screen, zf47, zf97, zf98, and zf133, sustained movement on plates containing 30 mM tyramine. Genetic mapping, complementation tests, and sequence analysis showed that zf47 was an allele of goa-1. goa-1 encodes the *C. elegans ortholog of the neural G protein-alpha subunit of the Gao class. GOA-1/Gao is expressed throughout the nervous system and is thought to negatively regulate synaptic transmission through the inhibition of EGL-30, the C. elegans Gaq ortholog [30–32]. We found that zf97, zf98, and zf133 were alleles of dgk-1, which encodes the C. elegans* ortholog of the vertebrate brain diacylglycerol kinase theta (DAGh) [32,33].
 
-    Page 3
+## Page 3
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -118,7 +118,7 @@ PLOS Biology | www.plosbiology.org
 
 April 2013 | Volume 11 | Issue 4 | e1001529
 
-    Page 4
+## Page 4
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -138,7 +138,7 @@ To test the hypothesis that SER-2 modulates neurotransmitter release from ventra
 
 The GABAergic VD motor neurons that express ser-2 make synaptic contacts onto the ventral musculature (Figure 4A). Therefore, to directly evaluate whether tyramine modulates synaptic release of GABA from motor neurons, we measured the frequency of endogenous inhibitory post-synaptic currents (IPSCs) in whole-cell recordings from ventral body wall muscle cells (Figure 3C–H). To isolate GABA currents, recordings were made from unc-29; acr-16 double mutants (+/+) that lack excitatory neurotransmission at the NMJ [43,44]. In unc-29; acr-16 double mutants, the only remaining currents are mediated through chloride permeation of the GABA A-like receptor UNC-49 [43,45]. In these animals, we observed high levels of endogenous IPSC activity (,13 events/s) that gradually declined over the time course of the recording period (,10 min). This basal level of inhibitory activity is consistent with previous reports that have used other, nongenetic approaches to isolate IPSCs. After recording an initial 60 s period of basal activity, we switched to a bath solution containing tyramine. Within 30 s of tyramine exposure we noted a clear decrease in IPSC frequency (Figure 3E,G). The magnitude of this decrease was significantly greater than the slight decrease in IPSC frequency we observed.
 
-    Page 5
+## Page 5
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -156,7 +156,7 @@ doi:10.1371/journal.pbio.1001529.g002
 
 PLOS Biology | www.plosbiology.org | April 2013 | Volume 11 | Issue 4 | e1001529
 
-    Page 6
+## Page 6
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -196,7 +196,7 @@ Figure 3. Tyramine-mediated reduction in GABA synaptic release requires SER-2. (
 
 PLOS Biology | www.plosbiology.org | April 2013 | Volume 11 | Issue 4 | e1001529
 
-    Page 7
+## Page 7
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -245,7 +245,7 @@ time (s)
 
 PLOS Biology | www.plosbiology.org 7 April 2013 | Volume 11 | Issue 4 | e1001529
 
-    Page 8
+## Page 8
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -263,7 +263,7 @@ Our data suggest that the modulation of the activity of either the VD or DD moto
 
 The expression of ser-2 in the GABAergic VD neurons suggested a possible role in C. elegans navigation. However, ser-2 mutants moved normally and did not display a ventral or dorsal directional bias (Figure 4B) possibly through a lack of basal tyramine to activate SER-2 during regular locomotion. We have previously shown that tyramine coordinates the timing of backing locomotion and the suppression of head movements in the escape response [13]. Gentle anterior touch triggers tyramine release from the RIM neurons and the synaptic activation of the tyramine-gated chloride channel, LGC-55 [22]. Is SER-2 also required in the execution of the escape response? Touch-induced reversals are often coupled to a sharp omega turn, which allows the animal to change locomotion in a direction opposite to its original course (Figures 6E and 7A) [18]. The omega turn is initiated by a steep ventral bend of the head when the animal reinitiates forward locomotion. While the sharp bend is propagated posteriorly along the body, the head usually slides along the ventral side of the body. We analyzed turning behavior in response to gentle anterior touch. We found that the likelihood of engaging in an omega turn (.90u turn initiated by the first forward head
 
-    Page 9
+## Page 9
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -281,7 +281,7 @@ doi:10.1371/journal.pbio.1001529.g005
 
 PLOS Biology | www.plosbiology.org | April 2013 | Volume 11 | Issue 4 | e1001529
 
-    Page 10
+## Page 10
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -320,7 +320,7 @@ Figure 6. ser-2 mutants make shallow omega bends. (A) Distribution of touch-indu
 
 PLOS Biology | www.plosbiology.org | April 2013 | Volume 11 | Issue 4 | e1001529
 
-    Page 11
+## Page 11
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -346,7 +346,7 @@ doi:10.1371/journal.pbio.1001529.g007
 
 PLOS Biology | www.plosbiology.org 11 April 2013 | Volume 11 | Issue 4 | e1001529
 
-    Page 12
+## Page 12
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -366,7 +366,7 @@ Our genetic data suggest that the tyramine receptor SER-2 acts in a Gao neurons 
 
 Tyramine can act as a classical neurotransmitter in C. elegans through the synaptic activation of the tyramine-gated chloride channel, LGC-55 [22,60]. While LGC-55 is predominantly expressed in cells that are directly synaptic to tyraminergic RIM neurons, SER-2-expressing cells do not receive direct RIM innervation, indicating that SER-2 activation occurs extrasynaptically [28,36]. In addition, ionotropic and metabotropic receptors have distinct ligand affinity and signaling kinetics. Ligand-gated ion channels like LGC-55 have a relatively low affinity for their ligand (Kd 0.1 to 1 mM) and affect postsynaptic potentials within milliseconds. This allows for fast localized signaling between neurons and their postsynaptic partners. In contrast, G-protein coupled receptors have a high affinity for their ligand (Kd 0.1–1 mM) and operate on timescales from seconds to minutes [61]. Synaptic spillover from the synaptic cleft and diffusion can activate these high affinity receptors that are distant from the release site. As tyramine is released from a single pair of head neurons that extend processes into the nerve ring, the activation of SER-2 in the GABAergic VD neurons depends upon the diffusion of tyramine through the pseudocoelomic space to reach the VD processes along the length of the body. C. elegans has two other G-protein coupled receptors, TYRA-2 and TYRA-3, in addition to SER-2 that bind tyramine with high affinity [26,27].
 
-    Page 13
+## Page 13
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -388,7 +388,7 @@ Our results provide molecular and neural insights on how monoamines reconfigure 
 
 All *C. elegans strains were grown at room temperature (22°C) on nematode growth media (NGM) agar plates with OP50 E. coli* as a food source [71]. The wild-type strain used in this study was Bristol N2. G-protein coupled receptor and signaling component mutants used in this study were OH313: ser-2(pk1357), QW329: ser-2(ok2103), QW245: lgc-55(tm2913), QW42: tyra-2(tm1815), VC125: tyra-3(ok325), JT734: goa-1(sa734), JT748: dgk-1(sa748), JT609: eat-16(sa609), EG4532: egl-30(tg26), CB156: unc-25(e156), CB151: unc-3(e151), QW284: tdc-1(n3420), MT9455: tbh-1(n3247), QW542: unc-25(e156); ser-2(pk1357), QW40: lgc-55(n4331); unc-3(e151), QW41: ser-2(pk1357) unc-3(e151), QW837: lgc-55(tm2913); ser-2(pk1357), and QW838: lgc-55(tm2913); ser-2(pk1357) unc-3(e151). The rescue strains used were QW198: Pser-2::SER-2::GFP, lin-15(+); ser-2(pk1357) lin-15(n765ts), QW411: Pser-2::SER-2::GFP, lin-15(+); ser-2(pk1357) lin-15(n765ts), QW412: Pser-2::SER-2::GFP, lin-15(+); ser-2(pk1357) lin-15(n765ts), QW196:
 
-    Page 14
+## Page 14
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -414,7 +414,7 @@ Animals were mounted on agar pads and anesthetized with 20 mM sodium azide. Lase
 
 Endogenous postsynaptic currents were recorded from body wall muscles as previously described [43]. All electrophysiology experiments were carried out at room temperature. Adult animals
 
-    Page 15
+## Page 15
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -454,7 +454,7 @@ Laser ablation of the DD GABAergic motor neurons results in a dorsal bias during
 
 PLOS Biology | www.plosbiology.org | April 2013 | Volume 11 | Issue 4 | e1001529
 
-    Page 16
+## Page 16
 
 # Monoaminergic Orchestration of a Complex Behavior
 
@@ -502,7 +502,7 @@ The author(s) have made the following declarations about their contributions: Co
 
 PLOS Biology | www.plosbiology.org 16 April 2013 | Volume 11 | Issue 4 | e1001529
 
-    Page 17
+## Page 17
 
 # Monoaminergic Orchestration of a Complex Behavior
 

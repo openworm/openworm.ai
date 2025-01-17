@@ -39,7 +39,9 @@ def convert_to_json(paper_ref, paper_info, output_dir):
     with open(loc, "r", encoding="utf-8") as JSON:
         json_dict = json.load(JSON)
 
-    doc_model = Document(id=paper_ref, title=paper_ref, source=paper_info[1])
+    doc_model = Document(
+        id=paper_ref, title=paper_ref.replace("_", " "), source=paper_info[1]
+    )
 
     # Process each page and its items
     for page in json_dict["pages"]:
@@ -56,7 +58,7 @@ def convert_to_json(paper_ref, paper_info, output_dir):
             doc_model.sections.append(current_section)
 
     # Save the final JSON output
-    save_json(doc_model, f"{paper_ref}_final.json", output_dir)
+    save_json(doc_model, f"{paper_ref}.json", output_dir)
 
 
 # Main execution block
