@@ -5,3 +5,7 @@ __pycache__
 /openworm_ai/quiz/samples/GPT4o_5questions.json
 /openworm_ai/quiz/samples/Ollama_mistral_5questions.json
 /openworm_ai/quiz/samples/Ollama_Llama3.2_5questions.json
+/document.json
+/document.md
+/document.txt
+/document.yaml

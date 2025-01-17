@@ -1,20 +1,32 @@
+from openworm_ai.parser.DocumentModels import Document, Section, Paragraph
+
 import json
 from pathlib import Path
 
 # This has to be altered accordingly
-output_dir = "processed/json/papers"
+json_output_dir = "processed/json/papers"
+markdown_output_dir = "processed/markdown/papers"
+plaintext_output_dir = "processed/plaintext/papers"
 
 
 # Function to save JSON content
-def save_json(content, file_name, output_dir):
+def save_json(doc_model, file_name, json_output_dir):
     # Full path to the file
-    file_path = Path(f"{output_dir}/{file_name}")
+    file_path = Path(f"{json_output_dir}/{file_name}")
 
     # Write content to the the final json file
-    with open(file_path, "w", encoding="utf-8") as json_file:
-        json.dump(content, json_file, indent=4, ensure_ascii=False)
+    # with open(file_path, "w", encoding="utf-8") as json_file:
+    #    json.dump(content, json_file, indent=4, ensure_ascii=False)
+    doc_model.to_json_file(file_path)
 
     print(f"  JSON file saved at: {file_path}")
+    md_file_path = Path(f"{markdown_output_dir}/{file_name.replace('.json','.md')}")
+    doc_model.to_markdown(md_file_path)
+    print(f"  Markdown file saved at: {md_file_path}")
+
+    text_file_path = Path(f"{plaintext_output_dir}/{file_name.replace('.json','.txt')}")
+    doc_model.to_plaintext(text_file_path)
+    print(f"  Plaintext file saved at: {text_file_path}")
 
 
 # Function to process JSON and extract markdown content
@@ -27,31 +39,24 @@ def convert_to_json(paper_ref, paper_info, output_dir):
     with open(loc, "r", encoding="utf-8") as JSON:
         json_dict = json.load(JSON)
 
-    # Final JSON structure
-    final_json = {
-        f"{paper_ref}": {
-            "title": f"{paper_ref}",
-            "source": str(paper_info[1]),
-            "sections": {},
-        }
-    }
+    doc_model = Document(id=paper_ref, title=paper_ref, source=paper_info[1])
 
     # Process each page and its items
     for page in json_dict["pages"]:
         page_sections = []
+        current_section = Section(f"Page {page['page']}")
         for item in page.get("items", []):
             # Only extract 'md' sections (this can be altered depending on the desired section we want to include)
             if "md" in item and item["md"].strip():
                 page_sections.append({"contents": item["md"]})
+                current_section.paragraphs.append(Paragraph(item["md"]))
 
         # Save sections by page (if there are any markdown sections)
         if page_sections:
-            final_json[f"{paper_ref}"]["sections"][f"Page {page['page']}"] = {
-                "paragraphs": page_sections
-            }
+            doc_model.sections.append(current_section)
 
     # Save the final JSON output
-    save_json(final_json, f"{paper_ref}_final.json", output_dir)
+    save_json(doc_model, f"{paper_ref}_final.json", output_dir)
 
 
 # Main execution block
@@ -65,7 +70,7 @@ if __name__ == "__main__":
 
     # Loop through papers and process markdown sections
     for paper in papers:
-        convert_to_json(paper, papers[paper], output_dir)
+        convert_to_json(paper, papers[paper], json_output_dir)
 
 # If we dont want to write out the papers individually.
 # Found a glob.glob technique but I remember you using something else.
