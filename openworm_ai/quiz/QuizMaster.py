@@ -27,21 +27,22 @@ def save_quiz(num_questions, num_answers, llm_ver, temperature=0):
 
     indexing = ["1", "2", "3", "4"]
     for line in response.split("\n"):
-        if "QUESTION" in line:
-            question = line.split(":")[-1].strip()
-            print("Question: <%s>" % question)
-            last_question = Question(question=question)
-            quiz.questions.append(last_question)
-        elif "CORRECT ANSWER" in line:
-            ans = line.split(":")[-1].strip()
-            print("CORRECT ANSWER: <%s>" % ans)
-            i = len(last_question.answers)
-            last_question.answers.append(Answer(indexing[i], ans, True))
-        elif "WRONG ANSWER" in line:
-            ans = line.split(":")[-1].strip()
-            print("WRONG ANSWER: <%s>" % ans)
-            i = len(last_question.answers)
-            last_question.answers.append(Answer(indexing[i], ans, False))
+        if len(line.strip()) > 0:
+            if "QUESTION" in line or line[-1] == "?":
+                question = line.split(":")[-1].strip()
+                print("Question: <%s>" % question)
+                last_question = Question(question=question)
+                quiz.questions.append(last_question)
+            elif "CORRECT ANSWER" in line:
+                ans = line.split(":")[-1].strip()
+                print("CORRECT ANSWER: <%s>" % ans)
+                i = len(last_question.answers)
+                last_question.answers.append(Answer(indexing[i], ans, True))
+            elif "WRONG ANSWER" in line:
+                ans = line.split(":")[-1].strip()
+                print("WRONG ANSWER: <%s>" % ans)
+                i = len(last_question.answers)
+                last_question.answers.append(Answer(indexing[i], ans, False))
 
     print("===============================\n  Generated quiz:\n")
     print(quiz.to_yaml())
@@ -59,8 +60,8 @@ if __name__ == "__main__":
 
     if "-ask" in sys.argv:
         quiz_json = "openworm_ai/quiz/samples/GPT4o_50questions.json"
-        #quiz_json = "openworm_ai/quiz/samples/GPT4o_5questions.json"
-        #quiz_json = "openworm_ai/quiz/samples/GPT4o_100questions.json"
+        # quiz_json = "openworm_ai/quiz/samples/GPT4o_5questions.json"
+        # quiz_json = "openworm_ai/quiz/samples/GPT4o_100questions.json"
         quiz = MultipleChoiceQuiz.from_file(quiz_json)
 
         total_qs = 0
@@ -123,4 +124,4 @@ if __name__ == "__main__":
         )
 
     else:
-        save_quiz(100, 4, llm_ver, temperature=0.2)
+        save_quiz(10, 4, llm_ver, temperature=0.2)

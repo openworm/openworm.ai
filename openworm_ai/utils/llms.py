@@ -15,6 +15,7 @@ LLM_COHERE = "Cohere"
 LLM_OLLAMA_LLAMA32 = "Ollama:Llama3.2"
 LLM_OLLAMA_MISTRAL = "Ollama:mistral"
 LLM_OLLAMA_TINYLLAMA = "Ollama:tinyllama"
+LLM_OLLAMA_DEEPSEEKR17 = "Ollama:deepseek-r1:7b"
 
 OPENAI_LLMS = [LLM_GPT35, LLM_GPT4, LLM_GPT4o]
 
@@ -30,6 +31,7 @@ PREF_ORDER_LLMS = (
     LLM_OLLAMA_LLAMA32,
     LLM_OLLAMA_MISTRAL,
     LLM_OLLAMA_TINYLLAMA,
+    LLM_OLLAMA_DEEPSEEKR17,
 )
 
 
@@ -154,6 +156,11 @@ def get_llm(llm_ver, temperature):
 
         llm = OllamaLLM(model="tinyllama")
 
+    elif llm_ver == LLM_OLLAMA_DEEPSEEKR17:
+        from langchain_ollama.llms import OllamaLLM
+
+        llm = OllamaLLM(model="deepseek-r1:7b")
+
     return llm
 
 
@@ -277,6 +284,9 @@ def get_llm_from_argv(argv):
 
     if "-o-t" in argv:
         llm_ver = LLM_OLLAMA_TINYLLAMA
+
+    if "-o-ds" in argv:
+        llm_ver = LLM_OLLAMA_DEEPSEEKR17
 
     return llm_ver
 
