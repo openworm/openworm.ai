@@ -80,7 +80,7 @@ if __name__ == "__main__":
             presented_answers = {}
             for index, answer in enumerate(question["answers"]):
                 ref = indexing[index]
-                present = f'{ref}: {answer['ans']}'
+                present = f"{ref}: {answer['ans']}"
                 if answer["correct"]:
                     correct_answer = ref
                     correct_text = present
@@ -119,7 +119,7 @@ if __name__ == "__main__":
 
         print(wrong_answers)
         print(
-            f"\n  The LLM {llm_ver} got {total_correct} out of {total_qs} questions correct ({'%.2f %%'%(100 * total_correct/total_qs)})!\n"
+            f"\n  The LLM {llm_ver} got {total_correct} out of {total_qs} questions correct ({'%.2f %%' % (100 * total_correct / total_qs)})!\n"
         )
 
     else:

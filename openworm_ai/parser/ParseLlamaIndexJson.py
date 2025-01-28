@@ -51,7 +51,7 @@ def convert_to_json(paper_ref, paper_info, output_dir):
             }
 
     # Save the final JSON output
-    save_json(final_json, f"{paper_ref}_final.json", output_dir)
+    save_json(final_json, f"{paper_ref}.json", output_dir)
 
 
 # Main execution block
