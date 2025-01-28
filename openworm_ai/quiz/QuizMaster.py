@@ -59,8 +59,8 @@ if __name__ == "__main__":
 
     if "-ask" in sys.argv:
         quiz_json = "openworm_ai/quiz/samples/GPT4o_50questions.json"
-        quiz_json = "openworm_ai/quiz/samples/GPT4o_5questions.json"
-        quiz_json = "openworm_ai/quiz/samples/GPT4o_100questions.json"
+        #quiz_json = "openworm_ai/quiz/samples/GPT4o_5questions.json"
+        #quiz_json = "openworm_ai/quiz/samples/GPT4o_100questions.json"
         quiz = MultipleChoiceQuiz.from_file(quiz_json)
 
         total_qs = 0
