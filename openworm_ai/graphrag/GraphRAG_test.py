@@ -98,6 +98,7 @@ SOURCES:
         "What is the main function of cell AVBR?",
         "Give me 3 facts about the coelomocyte system in C. elegens",
         "Give me 3 facts about the control of motor programs in c. elegans by monoamines",
+        "The NeuroPAL transgene is cool. Give me some examples of fluorophores in it.",
     ]
 
     for query in queries:
