@@ -59,7 +59,7 @@ if __name__ == "__main__":
     llm_ver = get_llm_from_argv(sys.argv)
 
     if "-ask" in sys.argv:
-        quiz_json = "openworm_ai/quiz/samples/GPT4o_50questions.json"
+        quiz_json = "openworm_ai/quiz/samples/GPT4o_10questions.json"
         # quiz_json = "openworm_ai/quiz/samples/GPT4o_5questions.json"
         # quiz_json = "openworm_ai/quiz/samples/GPT4o_100questions.json"
         quiz = MultipleChoiceQuiz.from_file(quiz_json)
@@ -95,12 +95,19 @@ if __name__ == "__main__":
             resp = ask_question_get_response(
                 full_question, llm_ver, print_question=False
             ).strip()
+
+            if "<think>" in resp:  # Give deepseek a fighting chance...
+                resp = (
+                    resp[0 : resp.index("<think>")] + resp[resp.index("</think>") + 8 :]
+                )
+                resp = resp.replace("\n", " ").strip()
+                guess = resp[-1]
+            else:
+                guess = resp.split(":")[0].strip()
+                if " " in guess:
+                    guess = guess[0]
+
             total_qs += 1
-
-            guess = resp.split(":")[0].strip()
-            if " " in guess:
-                guess = guess[0]
-
             correct_guess = guess == correct_answer
 
             if guess in presented_answers:
