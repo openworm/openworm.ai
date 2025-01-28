@@ -67,7 +67,11 @@ if __name__ == "__main__":
         "Donnelly_et_al_2013": [
             "corpus/papers/test/Donnelly2013_Llamaparse_Accurate.pdf.json",
             "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001529",
-        ]
+        ],
+        "Randi_et_al_2023": [
+            "corpus/papers/test/Randi2023_Llamaparse_Accurate.pdf.json",
+            "https://www.nature.com/articles/s41586-023-06683-4",
+        ],
     }
 
     # Loop through papers and process markdown sections
