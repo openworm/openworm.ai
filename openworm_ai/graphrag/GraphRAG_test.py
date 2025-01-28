@@ -33,7 +33,7 @@ for json_file in json_inputs:
             all_text = ""
             if "paragraphs" in doc_contents["sections"][section]:
                 print(
-                    "    Processing section: %s/t(%i paragraphs)"
+                    "    Processing section: %s\t(%i paragraphs)"
                     % (section, len(doc_contents["sections"][section]["paragraphs"]))
                 )
                 for p in doc_contents["sections"][section]["paragraphs"]:
