@@ -1,7 +1,9 @@
 import modelspec
 from modelspec import field, instance_of, optional
 from modelspec.base_types import Base
+
 from typing import List
+from pathlib import Path
 
 # Models of entities required in this pipeline (documents, etc.) defined in modelspec,
 # to ease saving to/from json/yaml
@@ -65,6 +67,30 @@ class Document(Base):
     sections: List[Section] = field(factory=list)
     references: List[Reference] = field(factory=list)
 
+    def to_markdown(self, file_name):
+        fn = Path(file_name)
+        with open(fn, "w") as f:
+            f.write(f"# {self.title}\n")
+            f.write(f"\n_Generated from: {self.source}_\n")
+            for section in self.sections:
+                f.write(f"\n## {section.id}\n")
+                for p in section.paragraphs:
+                    f.write(f"\n{p.contents}\n")
+
+        print(f"Written contents of model {self.id} to {fn}")
+
+    def to_plaintext(self, file_name):
+        fn = Path(file_name)
+        with open(fn, "w") as f:
+            f.write(f"{self.title}\n")
+            f.write(f"\nGenerated from: {self.source}\n")
+            for section in self.sections:
+                f.write(f"\n    {section.id}\n")
+                for p in section.paragraphs:
+                    f.write(f"\n{p.contents}\n")
+
+        print(f"Written contents of model {self.id} to {fn}")
+
 
 if __name__ == "__main__":
     print("Running tests")
@@ -89,3 +115,6 @@ if __name__ == "__main__":
     doc.to_yaml_file("document.yaml")
     print(" >> Full document details in YAML format:\n")
     print(doc.to_yaml())
+
+    doc.to_markdown("document.md")
+    doc.to_plaintext("document.txt")

@@ -6,6 +6,8 @@ ruff check openworm_ai/*/*.py openworm_ai/*.py
 
 pip install .
 
+python -m openworm_ai.parser.DocumentModels
+
 python -m openworm_ai.quiz.QuizModel
 
 python -m openworm_ai.parser.ParseWormAtlas
