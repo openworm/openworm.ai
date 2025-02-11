@@ -43,8 +43,7 @@ def get_openai_api_key():
     if openai_api_key is None:
         openai_api_key = str(open("../oaik", "r").readline())
     # else:
-    #    openai_api_key = openai_api_key_sb
-
+    #   openai_api_key = openai_api_key_sb
     return openai_api_key
 
 
@@ -252,7 +251,7 @@ _**%s**:_ _%s_
 
 
 def get_llm_from_argv(argv):
-    llm_ver = LLM_GPT4o
+    llm_ver = LLM_GPT35
 
     if "-g" in argv:
         llm_ver = LLM_GEMINI

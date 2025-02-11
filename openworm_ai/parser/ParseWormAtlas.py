@@ -331,6 +331,6 @@ The following handbooks from [WormAtlas](https://www.wormatlas.org/handbookhome.
         # guides = {}
         for g in guides:
             wbp = WormAtlasParser(g, guides[g])
-            readme.write(f"**[{g}]({ g.replace(' ', '_') }.md)**\n\n")
+            readme.write(f"**[{g}]({g.replace(' ', '_')}.md)**\n\n")
 
         read_all_cell_info_file()
