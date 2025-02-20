@@ -1,17 +1,16 @@
 from openworm_ai.utils.llms import get_llm_from_argv
 from openworm_ai.utils.llms import generate_response
 
-# Modify the prompt to focus on C. elegans
-GENERATE_Q_C = """
-Generate a list of 50 multiple-choice questions specifically about general knowledge of *Caenorhabditis elegans* (C. elegans). 
-The questions should cover topics such as genetics, neurobiology, behavior, development, physiology, and research significance. 
-Each question should have 4 possible answers (A, B, C, D), with only one correct answer.
-Format the questions as follows:
+GENERATE_Q = """
+
+Generate a list of <QUESTION_NUMBER> unique, non-repeated multiple choice questions to test someone's general knowledge about C. elegans.
+The questions should be answerable by an intelligent adult knowledgable about anatomy and functioning, and should be on a wide range of C. elegans related subjects.
+There should be <ANSWER_NUMBER> possible answers, only one of which is unambiguously correct, and all of the answers should be kept brief.
+Each of the <QUESTION_NUMBER> question/answer sets should be presented in the following format:
 
 """
-# alter it so it the num of questions can be changed
 
-TEXT_ANSWER_EXAMPLE_C = """
+TEXT_ANSWER_EXAMPLE = """
 QUESTION: What is the primary food source for C. elegans in lab conditions?
 CORRECT ANSWER: E. coli
 WRONG ANSWER: Algae
@@ -20,7 +19,7 @@ WRONG ANSWER: Bacteria mix
 
 """
 
-ASK_Q_C = """You are to select the correct answer for a multiple-choice question. 
+ASK_Q = """You are to select the correct answer for a multiple-choice question. 
 A number of answers will be presented, and you should respond with only the letter corresponding to the correct answer.
 For example, if the question is: 
 
@@ -50,8 +49,10 @@ These are the potential answers:
 if __name__ == "__main__":
     import sys
 
-    # Ensure the question request is for C. elegans and 50 questions
-    question = GENERATE_Q_C + TEXT_ANSWER_EXAMPLE_C
+    question = (
+        GENERATE_Q.replace("<QUESTION_NUMBER>", "100").replace("<ANSWER_NUMBER>", "4")
+        + TEXT_ANSWER_EXAMPLE
+    )
 
     llm_ver = get_llm_from_argv(sys.argv)
 
@@ -61,8 +62,7 @@ if __name__ == "__main__":
 
     print(" ... Connecting to: %s" % llm_ver)
 
-    # Set `only_celegans=True` to make sure it focuses on C. elegans topics
-    response = generate_response(question, llm_ver, temperature=0, only_celegans=True)
+    response = generate_response(question, llm_ver, temperature=0, only_celegans=False)
 
     print("--------------------------------------------------------")
     print("Answer:\n   %s" % response)
