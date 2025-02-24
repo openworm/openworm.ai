@@ -1,66 +1,59 @@
 import json
 import time
-import random  # Used for dummy scoring function
-from openworm_ai.utils.llms import PREF_ORDER_LLMS, ask_question_get_response
+import random
+import datetime
+from openworm_ai.utils.llms import LLM_OLLAMA_LLAMA32, LLM_GPT4o, LLM_GEMINI, LLM_CLAUDE35,LLM_GPT35,LLM_OLLAMA_PHI4,LLM_OLLAMA_GEMMA2,LLM_OLLAMA_DEEPSEEK,LLM_OLLAMA_GEMMA, LLM_OLLAMA_QWEN,LLM_OLLAMA_FALCON2,LLM_OLLAMA_CODELLAMA, ask_question_get_response
+from openworm_ai.quiz.QuizModel import MultipleChoiceQuiz  # Ensure this matches the correct import path
+from openworm_ai.quiz.Templates import ASK_Q  # Ensure this matches the correct import path
+
+field = "general"
+current_date = datetime.datetime.now().strftime("%d-%m-%y")  
+SOURCE_QUESTIONS_FILE = f'openworm_ai/quiz/samples/GPT4o_100questions_{field}.json'
+OUTPUT_FILENAME = f'llm_scores_{field}_{current_date}.json'
+SAVE_DIRECTORY = f'openworm_ai/quiz/scores/{field}'  
+TITLE = f'Performance of LLMs in {field} knowledge Quiz'
+
+
+
+indexing = ["A", "B", "C", "D"]  # Answer labels
 
 def load_llms():
-    """Loads the list of available LLMs from llms.py."""
-    return list(PREF_ORDER_LLMS)
-
-def score_response(response):
-    """Evaluates an LLM response and returns a score.
-    
-    Replace this function with a real evaluation method.
-    """
-    # Dummy scoring: Assigns a random score between 0 and 100
-    return random.randint(0, 100)
-
-def ask_llm(llm, question, temperature=0):
-    """Calls the ask function from llms.py for a given LLM and question,
-    then evaluates and stores the score instead of the raw response.
-    """
-    start_time = time.time()
-    response = ask_question_get_response(question, llm, temperature, print_question=False)
-    response_time = time.time() - start_time
-
-    # Score the response
-    score = score_response(response)
-
-    return {"llm": llm, "score": score, "time": response_time}
-
-def iterate_over_llms(questions, temperature=0):
-    """Iterates over all LLMs, collecting scores for each question."""
-    llms = load_llms()
-    results = {}
-    for question in questions:
-        results[question] = []
-        for llm in llms:
-            result = ask_llm(llm, question, temperature)
-            results[question].append(result)
-    return results
-
-def save_results_to_json(results, filename="llm_scores.json"):
-    """Saves the collected scores as a JSON file."""
-    with open(filename, "w") as f:
-        json.dump(results, f, indent=4)
-
-def load_results_from_json(filename="llm_scores.json"):
-    """Reads the JSON file to prepare for figure generation."""
-    with open(filename, "r") as f:
-        return json.load(f)
+    """Loads only the selected LLMs: Ollama Llama3 and GPT-3.5."""
+    llms = [LLM_OLLAMA_LLAMA32, 
+            LLM_GPT4o, 
+            LLM_GEMINI, 
+            LLM_CLAUDE35,
+            LLM_GPT35,
+            LLM_OLLAMA_PHI4,
+            LLM_OLLAMA_GEMMA2,
+            #LLM_OLLAMA_DEEPSEEK,
+            LLM_OLLAMA_GEMMA,
+            LLM_OLLAMA_QWEN,
+            LLM_OLLAMA_FALCON2,
+            LLM_OLLAMA_CODELLAMA
+            ]  # Defined constants
+    print(f"Debug: Loaded LLMs -> {llms}")
+    return llms
 
 def load_questions_from_json(filename):
-    """Loads and extracts questions from a structured quiz JSON file."""
+    """Loads a structured quiz JSON file and extracts questions and answers."""
     try:
         with open(filename, "r") as f:
             data = json.load(f)
 
-        # Ensure the JSON structure contains a "questions" key
         if "questions" not in data or not isinstance(data["questions"], list):
             raise ValueError("Invalid JSON format: Missing or malformed 'questions' list.")
 
-        # Extract the 'question' field from each question object
-        questions = [q["question"] for q in data["questions"] if "question" in q and isinstance(q["question"], str)]
+        questions = []
+        for q in data["questions"]:
+            if "question" in q and isinstance(q["question"], str) and "answers" in q:
+                formatted_answers = [
+                    {"ans": ans["ans"], "correct": ans["correct"]}
+                    for ans in q["answers"]
+                    if "ans" in ans and "correct" in ans
+                ]
+                if formatted_answers:
+                    questions.append({"question": q["question"], "answers": formatted_answers})
 
         if len(questions) == 0:
             raise ValueError("Error: No valid questions found in the JSON file.")
@@ -77,20 +70,119 @@ def load_questions_from_json(filename):
         print(f"Error: {e}")
         return []
 
+def evaluate_llm(llm, questions, temperature=0):
+    """Iterates over all questions, asks the LLM, and evaluates the answers."""
+    results = {"LLM": llm, "Total Questions": len(questions), "Correct Answers": 0, "Response Times": []}
+
+    for question_data in questions:
+        question_text = question_data["question"]
+        answers = question_data["answers"]
+
+        # Shuffle answers for randomness
+        random.shuffle(answers)
+
+        # Assign answer labels (A, B, C, D)
+        presented_answers = {}
+        correct_answer = None
+        correct_text = None
+
+        for index, answer in enumerate(answers):
+            ref = indexing[index]
+            formatted_answer = f"{ref}: {answer['ans']}"
+            presented_answers[ref] = formatted_answer
+            if answer["correct"]:
+                correct_answer = ref
+                correct_text = formatted_answer
+
+        # Format the question
+        full_question = ASK_Q.replace("<QUESTION>", question_text).replace(
+            "<ANSWERS>", "\n".join(presented_answers.values())
+        )
+
+        # Ask the LLM
+        start_time = time.time()
+        response = ask_question_get_response(full_question, llm, temperature, print_question=False).strip()
+        response_time = time.time() - start_time
+
+        # Process the LLM's response
+        guess = response.split(":")[0].strip()
+        if " " in guess:
+            guess = guess[0]  # Ensure we get only the letter
+
+        correct_guess = guess == correct_answer
+        if correct_guess:
+            results["Correct Answers"] += 1
+        
+        results["Response Times"].append(response_time)
+
+        print(
+            f" >> LLM ({llm}) - Question: {question_text} | Guess: {guess} | Correct: {correct_answer} | Correct? {correct_guess}"
+        )
+
+    # Compute final stats
+    results["Accuracy (%)"] = round(100 * results["Correct Answers"] / results["Total Questions"], 2)
+    results["Avg Response Time (s)"] = round(sum(results["Response Times"]) / results["Total Questions"], 3)
+    del results["Response Times"]  # Remove detailed response times before saving
+
+    return results
+
+def iterate_over_llms(questions, temperature=0):
+    """Iterates over all selected LLMs and collects results."""
+    llms = load_llms()
+    evaluation_results = []
+
+    for llm in llms:
+        llm_results = evaluate_llm(llm, questions, temperature)
+        evaluation_results.append(llm_results)
+
+    return evaluation_results
+
+def save_results_to_json(results, filename=OUTPUT_FILENAME, save_path=SAVE_DIRECTORY, title=TITLE):
+    """Saves the collected scores as a structured JSON file without using os.
+    
+    Args:
+        results (list): The results data to save.
+        filename (str): The name of the JSON file (default: "llm_scores_celegans.json").
+        save_path (str, optional): The directory to save the file in. If None, saves in the default folder.
+        title (str, optional): The title to be included in the JSON file.
+    """
+    
+    if save_path:
+        file_path = f"{save_path}/{filename}"  # Manually construct path
+    else:
+        file_path = f"openworm_ai/quiz/scores/{filename}"  # Default path
+
+    # Get the current date and time
+    current_datetime = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+
+    # Wrap results with a title and date in a dictionary
+    output_data = {
+        "Title": title,
+        "Date of Testing": current_datetime,  # Add the date of testing
+        "Results": results
+    }
+
+    try:
+        with open(file_path, "w") as f:
+            json.dump(output_data, f, indent=4)
+        print(f"Results saved to: {file_path}")
+    except FileNotFoundError:
+        print(f"Error: Directory '{save_path or 'openworm_ai/quiz/scores'}' does not exist.")
+    except Exception as e:
+        print(f"Error saving JSON file: {e}")
+
 
 def main():
     """Main execution function."""
-    questions_file = "openworm_ai/quiz/samples/quiz_questions.json"
-    questions = load_questions_from_json(questions_file)  
+    questions = load_questions_from_json(SOURCE_QUESTIONS_FILE)  
 
-    if not questions:  # Stop execution if no valid questions are loaded
+    if not questions:
         print("No valid questions to process. Exiting...")
         return
 
     results = iterate_over_llms(questions)
-    save_results_to_json(results)
-    print("Scores saved to llm_scores.json")
-
+    save_results_to_json(results, OUTPUT_FILENAME, SAVE_DIRECTORY, TITLE)
+    print(f"Results saved to llm_scores_celegans.json: {results}")
 
 if __name__ == "__main__":
     main()

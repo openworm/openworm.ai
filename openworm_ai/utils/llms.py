@@ -20,6 +20,8 @@ LLM_OLLAMA_GEMMA2 = "Ollama:gemma2:latest"
 LLM_OLLAMA_DEEPSEEK = "Ollama:deepseek-r1:7b"
 LLM_OLLAMA_GEMMA = "Ollama:gemma:7b"
 LLM_OLLAMA_QWEN = "Ollama:qwen:4b"
+LLM_OLLAMA_CODELLAMA = "Ollama:codellama:latest"
+LLM_OLLAMA_FALCON2 = "Ollama:falcon2:latest"
 
 OPENAI_LLMS = [LLM_GPT35, LLM_GPT4, LLM_GPT4o]
 
@@ -39,7 +41,9 @@ PREF_ORDER_LLMS = (
     LLM_OLLAMA_GEMMA2,     
     LLM_OLLAMA_DEEPSEEK,   
     LLM_OLLAMA_GEMMA,      
-    LLM_OLLAMA_QWEN,       
+    LLM_OLLAMA_QWEN,
+    LLM_OLLAMA_CODELLAMA,
+    LLM_OLLAMA_FALCON2       
 )
 
 
@@ -196,6 +200,16 @@ def get_llm(llm_ver, temperature):
         print("Debug: Using Qwen")
         return OllamaLLM(model="qwen:4b", temperature=temperature)
 
+    elif llm_ver == LLM_OLLAMA_CODELLAMA:
+        from langchain_ollama.llms import OllamaLLM
+        print("Debug: Using CodeLlama")
+        return OllamaLLM(model="codellama:latest", temperature=temperature)
+    
+    elif llm_ver == LLM_OLLAMA_FALCON2:
+        from langchain_ollama.llms import OllamaLLM
+        print("Debug: Using Falcon2")
+        return OllamaLLM(model="falcon2:latest", temperature=temperature)
+    
     return llm
 
 
