@@ -6,10 +6,11 @@ from openworm_ai.utils.llms import LLM_OLLAMA_LLAMA32, LLM_GPT4o, LLM_GEMINI, LL
 from openworm_ai.quiz.QuizModel import MultipleChoiceQuiz  # Ensure this matches the correct import path
 from openworm_ai.quiz.Templates import ASK_Q  # Ensure this matches the correct import path
 
-field = "general"
+iteration_per_day = 2
+field = "celegans" # general/science/celegans
 current_date = datetime.datetime.now().strftime("%d-%m-%y")  
 SOURCE_QUESTIONS_FILE = f'openworm_ai/quiz/samples/GPT4o_100questions_{field}.json'
-OUTPUT_FILENAME = f'llm_scores_{field}_{current_date}.json'
+OUTPUT_FILENAME = f'llm_scores_{field}_{current_date}_{iteration_per_day}.json'
 SAVE_DIRECTORY = f'openworm_ai/quiz/scores/{field}'  
 TITLE = f'Performance of LLMs in {field} knowledge Quiz'
 
@@ -26,11 +27,11 @@ def load_llms():
             LLM_GPT35,
             LLM_OLLAMA_PHI4,
             LLM_OLLAMA_GEMMA2,
-            #LLM_OLLAMA_DEEPSEEK,
+            #LLM_OLLAMA_DEEPSEEK - unable to answer A-D(too few params?),
             LLM_OLLAMA_GEMMA,
             LLM_OLLAMA_QWEN,
-            LLM_OLLAMA_FALCON2,
-            LLM_OLLAMA_CODELLAMA
+            #LLM_OLLAMA_FALCON2 - 'only an assistant with no acess to external resources',
+            #LLM_OLLAMA_CODELLAMA - understands only a fraction of questions, doesnt understand prompts
             ]  # Defined constants
     print(f"Debug: Loaded LLMs -> {llms}")
     return llms
