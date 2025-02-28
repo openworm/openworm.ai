@@ -26,7 +26,7 @@ LLM_OLLAMA_FALCON2 = "Ollama:falcon2:latest"
 OPENAI_LLMS = [LLM_GPT35, LLM_GPT4, LLM_GPT4o]
 
 PREF_ORDER_LLMS = (
-    LLM_GEMINI,  
+    LLM_GEMINI,
     LLM_LLAMA2,
     LLM_GPT35,
     LLM_GPT4,
@@ -37,15 +37,14 @@ PREF_ORDER_LLMS = (
     LLM_OLLAMA_LLAMA32,
     LLM_OLLAMA_MISTRAL,
     LLM_OLLAMA_TINYLLAMA,
-    LLM_OLLAMA_PHI4,       
-    LLM_OLLAMA_GEMMA2,     
-    LLM_OLLAMA_DEEPSEEK,   
-    LLM_OLLAMA_GEMMA,      
+    LLM_OLLAMA_PHI4,
+    LLM_OLLAMA_GEMMA2,
+    LLM_OLLAMA_DEEPSEEK,
+    LLM_OLLAMA_GEMMA,
     LLM_OLLAMA_QWEN,
     LLM_OLLAMA_CODELLAMA,
-    LLM_OLLAMA_FALCON2       
+    LLM_OLLAMA_FALCON2,
 )
-
 
 
 def requires_openai_key(llm_ver):
@@ -97,11 +96,13 @@ def get_llm(llm_ver, temperature):
     if llm_ver == LLM_GPT35:
         print("Debug: Using GPT-3.5")
         from langchain_openai import OpenAI
+
         return OpenAI(temperature=temperature, openai_api_key=get_openai_api_key())
 
     elif llm_ver == LLM_GPT4:
         from langchain_openai import ChatOpenAI
-        print("Debug: Using GPT-4") 
+
+        print("Debug: Using GPT-4")
         return ChatOpenAI(
             model_name="gpt-4",
             openai_api_key=get_openai_api_key(),
@@ -109,6 +110,7 @@ def get_llm(llm_ver, temperature):
         )
     elif llm_ver == LLM_GPT4o:
         from langchain_openai import ChatOpenAI
+
         print("Debug: Using GPT-4o")
         return ChatOpenAI(
             model_name="gpt-4o",
@@ -134,6 +136,7 @@ def get_llm(llm_ver, temperature):
 
     elif llm_ver == LLM_GEMINI:
         from langchain_google_genai import ChatGoogleGenerativeAI
+
         print("Debug: Using Gemini-Pro")
         return ChatGoogleGenerativeAI(
             model="gemini-pro",
@@ -148,6 +151,7 @@ def get_llm(llm_ver, temperature):
 
     elif llm_ver == LLM_CLAUDE35:
         from langchain_anthropic import ChatAnthropic
+
         print("Debug: Using Claude 3.5 Sonnet")
         return ChatAnthropic(
             model_name="claude-3-5-sonnet-20241022",
@@ -177,39 +181,46 @@ def get_llm(llm_ver, temperature):
 
     elif llm_ver == LLM_OLLAMA_PHI4:
         from langchain_ollama.llms import OllamaLLM
+
         print("Debug: Using Phi-4")
         llm = OllamaLLM(model="phi4:latest", temperature=temperature)
 
     elif llm_ver == LLM_OLLAMA_GEMMA2:
         from langchain_ollama.llms import OllamaLLM
+
         print("Debug: Using Gemma-2")
         llm = OllamaLLM(model="gemma2:latest", temperature=temperature)
 
     elif llm_ver == LLM_OLLAMA_DEEPSEEK:
         from langchain_ollama.llms import OllamaLLM
+
         print("Debug: Using DeepSeek")
         return OllamaLLM(model="deepseek-r1:7b", temperature=temperature)
 
     elif llm_ver == LLM_OLLAMA_GEMMA:
         from langchain_ollama.llms import OllamaLLM
+
         print("Debug: Using Gemma")
         return OllamaLLM(model="gemma:7b", temperature=temperature)
 
     elif llm_ver == LLM_OLLAMA_QWEN:
         from langchain_ollama.llms import OllamaLLM
+
         print("Debug: Using Qwen")
         return OllamaLLM(model="qwen:4b", temperature=temperature)
 
     elif llm_ver == LLM_OLLAMA_CODELLAMA:
         from langchain_ollama.llms import OllamaLLM
+
         print("Debug: Using CodeLlama")
         return OllamaLLM(model="codellama:latest", temperature=temperature)
-    
+
     elif llm_ver == LLM_OLLAMA_FALCON2:
         from langchain_ollama.llms import OllamaLLM
+
         print("Debug: Using Falcon2")
         return OllamaLLM(model="falcon2:latest", temperature=temperature)
-    
+
     return llm
 
 

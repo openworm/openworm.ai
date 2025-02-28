@@ -1,7 +1,7 @@
 from openworm_ai.quiz.QuizModel import MultipleChoiceQuiz, Question, Answer
 from openworm_ai.quiz.TemplatesCelegans import GENERATE_Q, TEXT_ANSWER_EXAMPLE
 
-from openworm_ai.utils.llms import get_llm_from_argv, ask_question_get_response
+from openworm_ai.utils.llms import ask_question_get_response
 
 import random
 
@@ -122,8 +122,8 @@ if __name__ == "__main__":
         print(
             f"\n  The LLM {llm_ver} got {total_correct} out of {total_qs} questions correct ({'%.2f %%' % (100 * total_correct / total_qs)})!\n"
         )
-# make this into a method which returns a dictionary of all the "stats" that lists the llm, correct/incorrect answers
-# this can be used to plot comparison of variety of llms on general knowledge
+    # make this into a method which returns a dictionary of all the "stats" that lists the llm, correct/incorrect answers
+    # this can be used to plot comparison of variety of llms on general knowledge
     else:
-        print(f"Debug: Using LLM {llm_ver} for saving quiz") 
+        print(f"Debug: Using LLM {llm_ver} for saving quiz")
         save_quiz(100, 4, llm_ver, temperature=0.2)
