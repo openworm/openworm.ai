@@ -10,12 +10,19 @@ LLM_GPT4o = "GPT4o"
 LLM_LLAMA2 = "LLAMA2"
 LLM_GEMINI = "Gemini"
 LLM_AI21 = "AI21"
-LLM_CLAUDE2 = "Claude2.1"
+LLM_CLAUDE35 = "claude-3-5-sonnet-20241022"
 LLM_COHERE = "Cohere"
 LLM_OLLAMA_LLAMA32 = "Ollama:Llama3.2"
 LLM_OLLAMA_MISTRAL = "Ollama:mistral"
 LLM_OLLAMA_TINYLLAMA = "Ollama:tinyllama"
-LLM_OLLAMA_DEEPSEEKR17 = "Ollama:deepseek-r1:7b"
+
+LLM_OLLAMA_PHI4 = "Ollama:phi4:latest"
+LLM_OLLAMA_GEMMA2 = "Ollama:gemma2:latest"
+LLM_OLLAMA_DEEPSEEK = "Ollama:deepseek-r1:7b"
+LLM_OLLAMA_GEMMA = "Ollama:gemma:7b"
+LLM_OLLAMA_QWEN = "Ollama:qwen:4b"
+LLM_OLLAMA_CODELLAMA = "Ollama:codellama:latest"
+LLM_OLLAMA_FALCON2 = "Ollama:falcon2:latest"
 
 OPENAI_LLMS = [LLM_GPT35, LLM_GPT4, LLM_GPT4o]
 
@@ -26,12 +33,19 @@ PREF_ORDER_LLMS = (
     LLM_GPT4,
     LLM_GPT4o,
     LLM_AI21,
-    LLM_CLAUDE2,
+    LLM_CLAUDE35,
     LLM_COHERE,
     LLM_OLLAMA_LLAMA32,
     LLM_OLLAMA_MISTRAL,
     LLM_OLLAMA_TINYLLAMA,
-    LLM_OLLAMA_DEEPSEEKR17,
+
+    LLM_OLLAMA_PHI4,
+    LLM_OLLAMA_GEMMA2,
+    LLM_OLLAMA_DEEPSEEK,
+    LLM_OLLAMA_GEMMA,
+    LLM_OLLAMA_QWEN,
+    LLM_OLLAMA_CODELLAMA,
+    LLM_OLLAMA_FALCON2,
 )
 
 
@@ -56,7 +70,7 @@ def get_llamaapi_key():
 
 
 def get_gemini_api_key():
-    gemini_api_key = os.environ.get("GEMINIAPI_KEY")
+    gemini_api_key = os.environ.get("GEMINI_API_KEY")
 
     return gemini_api_key
 
@@ -68,7 +82,7 @@ def get_ai21_api_key():
 
 
 def get_anthropic_key():
-    anthropic_api_key = os.environ.get["ANTHROPIC_API_KEY"]
+    anthropic_api_key = os.environ.get("CLAUDE_API_KEY")
 
     return anthropic_api_key
 
@@ -80,15 +94,18 @@ def get_cohere_key():
 
 
 def get_llm(llm_ver, temperature):
+    print(f"Debug: get_llm received {llm_ver}")
     if llm_ver == LLM_GPT35:
+        print("Debug: Using GPT-3.5")
         from langchain_openai import OpenAI
 
-        llm = OpenAI(temperature=temperature, openai_api_key=get_openai_api_key())
+        return OpenAI(temperature=temperature, openai_api_key=get_openai_api_key())
 
     elif llm_ver == LLM_GPT4:
         from langchain_openai import ChatOpenAI
 
-        llm = ChatOpenAI(
+        print("Debug: Using GPT-4")
+        return ChatOpenAI(
             model_name="gpt-4",
             openai_api_key=get_openai_api_key(),
             temperature=temperature,
@@ -96,7 +113,8 @@ def get_llm(llm_ver, temperature):
     elif llm_ver == LLM_GPT4o:
         from langchain_openai import ChatOpenAI
 
-        llm = ChatOpenAI(
+        print("Debug: Using GPT-4o")
+        return ChatOpenAI(
             model_name="gpt-4o",
             openai_api_key=get_openai_api_key(),
             temperature=temperature,
@@ -121,8 +139,11 @@ def get_llm(llm_ver, temperature):
     elif llm_ver == LLM_GEMINI:
         from langchain_google_genai import ChatGoogleGenerativeAI
 
-        llm = ChatGoogleGenerativeAI(
-            model="gemini-pro", google_api_key=get_gemini_api_key()
+        print("Debug: Using Gemini-Pro")
+        return ChatGoogleGenerativeAI(
+            model="gemini-pro",
+            google_api_key=get_gemini_api_key(),  # Retrieve API key
+            temperature=temperature,
         )
 
     elif llm_ver == LLM_AI21:
@@ -130,10 +151,15 @@ def get_llm(llm_ver, temperature):
 
         llm = AI21LLM(model="j2-ultra")
 
-    elif llm_ver == LLM_CLAUDE2:
-        from langchain_anthropic import AnthropicLLM
+    elif llm_ver == LLM_CLAUDE35:
+        from langchain_anthropic import ChatAnthropic
 
-        llm = AnthropicLLM(model="claude-2.1")
+        print("Debug: Using Claude 3.5 Sonnet")
+        return ChatAnthropic(
+            model_name="claude-3-5-sonnet-20241022",
+            anthropic_api_key=get_anthropic_key(),  # Retrieve API key
+            temperature=temperature,
+        )
 
     elif llm_ver == LLM_COHERE:
         from langchain_cohere import ChatCohere
@@ -155,10 +181,49 @@ def get_llm(llm_ver, temperature):
 
         llm = OllamaLLM(model="tinyllama")
 
-    elif llm_ver == LLM_OLLAMA_DEEPSEEKR17:
+
+    elif llm_ver == LLM_OLLAMA_PHI4:
         from langchain_ollama.llms import OllamaLLM
 
-        llm = OllamaLLM(model="deepseek-r1:7b")
+        print("Debug: Using Phi-4")
+        llm = OllamaLLM(model="phi4:latest", temperature=temperature)
+
+    elif llm_ver == LLM_OLLAMA_GEMMA2:
+        from langchain_ollama.llms import OllamaLLM
+
+        print("Debug: Using Gemma-2")
+        llm = OllamaLLM(model="gemma2:latest", temperature=temperature)
+
+    elif llm_ver == LLM_OLLAMA_DEEPSEEK:
+        from langchain_ollama.llms import OllamaLLM
+
+        print("Debug: Using DeepSeek")
+        return OllamaLLM(model="deepseek-r1:7b", temperature=temperature)
+
+    elif llm_ver == LLM_OLLAMA_GEMMA:
+        from langchain_ollama.llms import OllamaLLM
+
+        print("Debug: Using Gemma")
+        return OllamaLLM(model="gemma:7b", temperature=temperature)
+
+    elif llm_ver == LLM_OLLAMA_QWEN:
+        from langchain_ollama.llms import OllamaLLM
+
+        print("Debug: Using Qwen")
+        return OllamaLLM(model="qwen:4b", temperature=temperature)
+
+    elif llm_ver == LLM_OLLAMA_CODELLAMA:
+        from langchain_ollama.llms import OllamaLLM
+
+        print("Debug: Using CodeLlama")
+        return OllamaLLM(model="codellama:latest", temperature=temperature)
+
+    elif llm_ver == LLM_OLLAMA_FALCON2:
+        from langchain_ollama.llms import OllamaLLM
+
+        print("Debug: Using Falcon2")
+        return OllamaLLM(model="falcon2:latest", temperature=temperature)
+
 
     return llm
 
@@ -258,7 +323,7 @@ _**%s**:_ _%s_
 
 
 def get_llm_from_argv(argv):
-    llm_ver = LLM_GPT35
+    llm_ver = LLM_GPT4o
 
     if "-g" in argv:
         llm_ver = LLM_GEMINI
@@ -270,7 +335,7 @@ def get_llm_from_argv(argv):
         llm_ver = LLM_AI21
 
     if "-cl" in argv:
-        llm_ver = LLM_CLAUDE2
+        llm_ver = LLM_CLAUDE35
 
     if "-co" in argv:
         llm_ver = LLM_COHERE
@@ -284,8 +349,8 @@ def get_llm_from_argv(argv):
     if "-o-t" in argv:
         llm_ver = LLM_OLLAMA_TINYLLAMA
 
-    if "-o-ds" in argv:
-        llm_ver = LLM_OLLAMA_DEEPSEEKR17
+
+    print(f"Debug: get_llm_from_argv selected {llm_ver}")
 
     return llm_ver
 
@@ -293,6 +358,7 @@ def get_llm_from_argv(argv):
 def ask_question_get_response(
     question, llm_ver, temperature=0, only_celegans=False, print_question=True
 ):
+    print(f"Debug: ask_question_get_response received llm_ver={llm_ver}")
     print("--------------------------------------------------------")
     if print_question:
         print("Asking question:\n   %s" % question)
