@@ -12,8 +12,9 @@ from llama_index.core import VectorStoreIndex
 
 import glob
 import sys
+import json
 
-from modelspec.utils import load_json
+# from modelspec.utils import load_json
 
 STORE_DIR = "store"
 SOURCE_DOCUMENT = "source document"
@@ -24,7 +25,10 @@ print(json_inputs)
 documents = []
 for json_file in json_inputs:
     print("Adding %s" % json_file)
-    doc_model = load_json(json_file)
+
+    with open(json_file, encoding="utf-8") as f:
+        doc_model = json.load(f)
+
     for title in doc_model:
         print("  Processing document: %s" % title)
         doc_contents = doc_model[title]
