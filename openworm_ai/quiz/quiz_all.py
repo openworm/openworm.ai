@@ -48,20 +48,20 @@ def iterate_over_llms(questions, temperature=0):
 
 def save_results_to_json(results, filename="llm_scores.json"):
     """Saves the collected scores as a JSON file."""
-    with open(filename, "w") as f:
+    with open(filename, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=4)
 
 
 def load_results_from_json(filename="llm_scores.json"):
     """Reads the JSON file to prepare for figure generation."""
-    with open(filename, "r") as f:
+    with open(filename, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 def load_questions_from_json(filename):
     """Loads and extracts questions from a structured quiz JSON file."""
     try:
-        with open(filename, "r") as f:
+        with open(filename, "r", encoding="utf-8") as f:
             data = json.load(f)
 
         # Ensure the JSON structure contains a "questions" key

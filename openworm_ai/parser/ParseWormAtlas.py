@@ -25,11 +25,15 @@ class WormAtlasParser:
         self.title = title
         ref = title.replace(" ", "_")
 
-        self.markdown = open(Path("%s/%s.md" % (MARKDOWN_DIR, ref)), "w")
+        self.markdown = open(
+            Path("%s/%s.md" % (MARKDOWN_DIR, ref)), "w", encoding="utf-8"
+        )
 
         self.markdown.write("# %s\n\n" % title)
 
-        self.plaintext = open(Path("%s/%s.txt" % (PLAINTEXT_DIR, ref)), "w")
+        self.plaintext = open(
+            Path("%s/%s.txt" % (PLAINTEXT_DIR, ref)), "w", encoding="utf-8"
+        )
 
         self.plaintext.write("%s\n\n" % title)
 
@@ -226,10 +230,10 @@ def read_all_cell_info_file():
     ref = "BasicCellInfo"
     title = "Basic information on C. elegans neurons from WormAtlas"
 
-    markdown = open(Path("%s/%s.md" % (MARKDOWN_DIR, ref)), "w")
+    markdown = open(Path("%s/%s.md" % (MARKDOWN_DIR, ref)), "w", encoding="utf-8")
     markdown.write("# %s\n\n" % title)
 
-    plaintext = open(Path("%s/%s.txt" % (PLAINTEXT_DIR, ref)), "w")
+    plaintext = open(Path("%s/%s.txt" % (PLAINTEXT_DIR, ref)), "w", encoding="utf-8")
     plaintext.write("%s\n\n" % title)
 
     doc_model = Document(
@@ -242,7 +246,9 @@ def read_all_cell_info_file():
     doc_model.sections.append(current_section)
 
     with open(
-        Path(CORPUS_LOCATION + "/wormatlas/%s/all_cell_info.csv" % ref), newline="\n"
+        Path(CORPUS_LOCATION + "/wormatlas/%s/all_cell_info.csv" % ref),
+        newline="\n",
+        encoding="utf-8",
     ) as csvfile:
         reader = csv.reader(csvfile, delimiter=",", quotechar='"')
 
@@ -318,7 +324,9 @@ if __name__ == "__main__":
 
     # rint(openworm_ai.__file__)
     print(os.getcwd())
-    with open(Path("processed/markdown/wormatlas/README.md"), "w") as readme:
+    with open(
+        Path("processed/markdown/wormatlas/README.md"), "w", encoding="utf-8"
+    ) as readme:
         readme.write("""
 ## WormAtlas Handbooks
 

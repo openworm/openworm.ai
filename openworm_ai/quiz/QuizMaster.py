@@ -59,7 +59,6 @@ if __name__ == "__main__":
     llm_ver = get_llm_from_argv(sys.argv)
 
     if "-ask" in sys.argv:
-
         # quiz_json = "openworm_ai/quiz/samples/GPT4o_50questions.json"
         # quiz_json = "openworm_ai/quiz/samples/GPT4o_10questions.json"
         quiz_json = "openworm_ai/quiz/samples/quiz_questions.json"
@@ -132,7 +131,7 @@ if __name__ == "__main__":
         print(
             f"\n  The LLM {llm_ver} got {total_correct} out of {total_qs} questions correct ({'%.2f %%' % (100 * total_correct / total_qs)})!\n"
         )
-# make this into a method which returns a dictionary of all the "stats" that lists the llm, correct/incorrect answers
-# this can be used to plot comparison of variety of llms on general knowledge
+    # make this into a method which returns a dictionary of all the "stats" that lists the llm, correct/incorrect answers
+    # this can be used to plot comparison of variety of llms on general knowledge
     else:
         save_quiz(10, 4, llm_ver, temperature=0.2)
