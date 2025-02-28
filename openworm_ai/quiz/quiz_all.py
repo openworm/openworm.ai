@@ -30,7 +30,6 @@ TITLE = f"Performance of LLMs in {field} knowledge Quiz"
 indexing = ["A", "B", "C", "D"]  # Answer labels
 
 
-
 def load_llms():
     """Loads only the selected LLMs: Ollama Llama3 and GPT-3.5."""
     llms = [
@@ -51,7 +50,6 @@ def load_llms():
     return llms
 
 
-
 def load_questions_from_json(filename):
     """Loads a structured quiz JSON file and extracts questions and answers."""
     try:
@@ -62,7 +60,6 @@ def load_questions_from_json(filename):
             raise ValueError(
                 "Invalid JSON format: Missing or malformed 'questions' list."
             )
-
 
         questions = []
         for q in data["questions"]:
