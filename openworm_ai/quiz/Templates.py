@@ -44,6 +44,7 @@ These are the potential answers:
 
 <ANSWERS>
 
+Remember: only respond with the letter of the correct answer!
 """
 
 if __name__ == "__main__":

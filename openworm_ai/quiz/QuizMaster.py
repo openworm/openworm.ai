@@ -1,7 +1,7 @@
 from openworm_ai.quiz.QuizModel import MultipleChoiceQuiz, Question, Answer
 from openworm_ai.quiz.TemplatesCelegans import GENERATE_Q, TEXT_ANSWER_EXAMPLE
 
-from openworm_ai.utils.llms import get_llm_from_argv, ask_question_get_response
+from openworm_ai.utils.llms import ask_question_get_response
 
 import random
 
@@ -27,21 +27,22 @@ def save_quiz(num_questions, num_answers, llm_ver, temperature=0):
 
     indexing = ["1", "2", "3", "4"]
     for line in response.split("\n"):
-        if "QUESTION" in line:
-            question = line.split(":")[-1].strip()
-            print("Question: <%s>" % question)
-            last_question = Question(question=question)
-            quiz.questions.append(last_question)
-        elif "CORRECT ANSWER" in line:
-            ans = line.split(":")[-1].strip()
-            print("CORRECT ANSWER: <%s>" % ans)
-            i = len(last_question.answers)
-            last_question.answers.append(Answer(indexing[i], ans, True))
-        elif "WRONG ANSWER" in line:
-            ans = line.split(":")[-1].strip()
-            print("WRONG ANSWER: <%s>" % ans)
-            i = len(last_question.answers)
-            last_question.answers.append(Answer(indexing[i], ans, False))
+        if len(line.strip()) > 0:
+            if "QUESTION" in line or line[-1] == "?":
+                question = line.split(":")[-1].strip()
+                print("Question: <%s>" % question)
+                last_question = Question(question=question)
+                quiz.questions.append(last_question)
+            elif "CORRECT ANSWER" in line:
+                ans = line.split(":")[-1].strip()
+                print("CORRECT ANSWER: <%s>" % ans)
+                i = len(last_question.answers)
+                last_question.answers.append(Answer(indexing[i], ans, True))
+            elif "WRONG ANSWER" in line:
+                ans = line.split(":")[-1].strip()
+                print("WRONG ANSWER: <%s>" % ans)
+                i = len(last_question.answers)
+                last_question.answers.append(Answer(indexing[i], ans, False))
 
     print("===============================\n  Generated quiz:\n")
     print(quiz.to_yaml())
@@ -59,9 +60,12 @@ if __name__ == "__main__":
     print(f"Selected LLM: {llm_ver}")
 
     if "-ask" in sys.argv:
+
         # quiz_json = "openworm_ai/quiz/samples/GPT4o_50questions.json"
         # quiz_json = "openworm_ai/quiz/samples/GPT4o_10questions.json"
+
         quiz_json = "openworm_ai/quiz/samples/GPT4o_100questions.json"
+
         quiz = MultipleChoiceQuiz.from_file(quiz_json)
 
         total_qs = 0
@@ -95,12 +99,19 @@ if __name__ == "__main__":
             resp = ask_question_get_response(
                 full_question, llm_ver, print_question=False
             ).strip()
+
+            if "<think>" in resp:  # Give deepseek a fighting chance...
+                resp = (
+                    resp[0 : resp.index("<think>")] + resp[resp.index("</think>") + 8 :]
+                )
+                resp = resp.replace("\n", " ").strip()
+                guess = resp[-1]
+            else:
+                guess = resp.split(":")[0].strip()
+                if " " in guess:
+                    guess = guess[0]
+
             total_qs += 1
-
-            guess = resp.split(":")[0].strip()
-            if " " in guess:
-                guess = guess[0]
-
             correct_guess = guess == correct_answer
 
             if guess in presented_answers:
@@ -122,8 +133,10 @@ if __name__ == "__main__":
         print(
             f"\n  The LLM {llm_ver} got {total_correct} out of {total_qs} questions correct ({'%.2f %%' % (100 * total_correct / total_qs)})!\n"
         )
-# make this into a method which returns a dictionary of all the "stats" that lists the llm, correct/incorrect answers
-# this can be used to plot comparison of variety of llms on general knowledge
+    # make this into a method which returns a dictionary of all the "stats" that lists the llm, correct/incorrect answers
+    # this can be used to plot comparison of variety of llms on general knowledge
     else:
-        print(f"Debug: Using LLM {llm_ver} for saving quiz") 
+
+        print(f"Debug: Using LLM {llm_ver} for saving quiz")
         save_quiz(100, 4, llm_ver, temperature=0.2)
+
