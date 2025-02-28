@@ -74,6 +74,10 @@ if __name__ == "__main__":
             "corpus/papers/test/Randi2023_Llamaparse_Accurate.pdf.json",
             "https://www.nature.com/articles/s41586-023-06683-4",
         ],
+        "Corsi_et_al_2015": [
+            "corpus/papers/test/PrimerOnCElegans.pdf.json",
+            "https://academic.oup.com/genetics/article/200/2/387/5936175",
+        ],
     }
 
     # Loop through papers and process markdown sections

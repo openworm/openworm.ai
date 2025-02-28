@@ -60,7 +60,6 @@ if __name__ == "__main__":
     print(f"Selected LLM: {llm_ver}")
 
     if "-ask" in sys.argv:
-
         # quiz_json = "openworm_ai/quiz/samples/GPT4o_50questions.json"
         # quiz_json = "openworm_ai/quiz/samples/GPT4o_10questions.json"
 
@@ -136,7 +135,5 @@ if __name__ == "__main__":
     # make this into a method which returns a dictionary of all the "stats" that lists the llm, correct/incorrect answers
     # this can be used to plot comparison of variety of llms on general knowledge
     else:
-
         print(f"Debug: Using LLM {llm_ver} for saving quiz")
         save_quiz(100, 4, llm_ver, temperature=0.2)
-

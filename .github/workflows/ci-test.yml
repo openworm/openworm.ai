@@ -40,6 +40,7 @@ jobs:
 
 
     - name: Test all
+      shell: bash
       run: | 
         ./regenerateAndTest.sh -free  # Only test the parts not requiring any API keys...
 

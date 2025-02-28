@@ -53,7 +53,7 @@ def load_llms():
 def load_questions_from_json(filename):
     """Loads a structured quiz JSON file and extracts questions and answers."""
     try:
-        with open(filename, "r") as f:
+        with open(filename, "r", encoding="utf-8") as f:
             data = json.load(f)
 
         if "questions" not in data or not isinstance(data["questions"], list):
@@ -73,7 +73,6 @@ def load_questions_from_json(filename):
                     questions.append(
                         {"question": q["question"], "answers": formatted_answers}
                     )
-
         if len(questions) == 0:
             raise ValueError("Error: No valid questions found in the JSON file.")
 
@@ -213,6 +212,7 @@ def save_results_to_json(
 
 def main():
     """Main execution function."""
+
     questions = load_questions_from_json(SOURCE_QUESTIONS_FILE)
 
     if not questions:
