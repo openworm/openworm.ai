@@ -69,7 +69,7 @@ class Document(Base):
 
     def to_markdown(self, file_name):
         fn = Path(file_name)
-        with open(fn, "w") as f:
+        with open(fn, "w", encoding="utf-8") as f:
             f.write(f"# {self.title}\n")
             f.write(f"\n_Generated from: {self.source}_\n")
             for section in self.sections:
@@ -81,7 +81,7 @@ class Document(Base):
 
     def to_plaintext(self, file_name):
         fn = Path(file_name)
-        with open(fn, "w") as f:
+        with open(fn, "w", encoding="utf-8") as f:
             f.write(f"{self.title}\n")
             f.write(f"\nGenerated from: {self.source}\n")
             for section in self.sections:
