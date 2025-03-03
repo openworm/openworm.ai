@@ -9,7 +9,7 @@ from llama_index.core import load_index_from_storage
 
 # one extra dep
 from llama_index.core import VectorStoreIndex
-
+from llama_index.llms.ollama import Ollama
 import glob
 import sys
 import json
@@ -68,7 +68,8 @@ else:
     index_reloaded = load_index_from_storage(storage_context)
 
     # create a query engine for the index
-    query_engine = index_reloaded.as_query_engine()
+    llm = Ollama(model="llama3.2:1b")
+    query_engine = index_reloaded.as_query_engine(llm=llm)
 
     def process_query(response):
         response = query_engine.query(query)

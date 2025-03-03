@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/bash
 set -ex
-
+pip install ruff
 ruff format openworm_ai/*/*.py openworm_ai/*.py
 ruff check openworm_ai/*/*.py openworm_ai/*.py
 
@@ -20,7 +20,8 @@ if [ $# -eq 1 ] ; then
         python -m openworm_ai.graphrag.GraphRAG_test -test
     fi
     if [ $1 == "-llm" ]; then
-        python -m openworm_ai.utils.llms -o-l32
+        python -m openworm_ai.utils.llms -
+        o-l32
         python -m openworm_ai.quiz.Templates -o-m
     fi
 else 
