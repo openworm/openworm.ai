@@ -16,6 +16,7 @@ LLM_OLLAMA_LLAMA32 = "Ollama:Llama3.2"
 LLM_OLLAMA_MISTRAL = "Ollama:mistral"
 LLM_OLLAMA_TINYLLAMA = "Ollama:tinyllama"
 
+LLM_OLLAMA_PHI3 = "Ollama:phi3:latest"
 LLM_OLLAMA_PHI4 = "Ollama:phi4:latest"
 LLM_OLLAMA_GEMMA2 = "Ollama:gemma2:latest"
 LLM_OLLAMA_DEEPSEEK = "Ollama:deepseek-r1:7b"
@@ -38,6 +39,7 @@ PREF_ORDER_LLMS = (
     LLM_OLLAMA_LLAMA32,
     LLM_OLLAMA_MISTRAL,
     LLM_OLLAMA_TINYLLAMA,
+    LLM_OLLAMA_PHI3,
     LLM_OLLAMA_PHI4,
     LLM_OLLAMA_GEMMA2,
     LLM_OLLAMA_DEEPSEEK,
@@ -179,6 +181,12 @@ def get_llm(llm_ver, temperature):
         from langchain_ollama.llms import OllamaLLM
 
         llm = OllamaLLM(model="tinyllama")
+
+    elif llm_ver == LLM_OLLAMA_PHI3:
+        from langchain_ollama.llms import OllamaLLM
+
+        print("Debug: Using Phi-3")
+        llm = OllamaLLM(model="phi3:latest", temperature=temperature)
 
     elif llm_ver == LLM_OLLAMA_PHI4:
         from langchain_ollama.llms import OllamaLLM
@@ -345,6 +353,9 @@ def get_llm_from_argv(argv):
 
     if "-o-t" in argv:
         llm_ver = LLM_OLLAMA_TINYLLAMA
+
+    if "-o-phi3" in argv:
+        llm_ver = LLM_OLLAMA_PHI3
 
     print(f"Debug: get_llm_from_argv selected {llm_ver}")
 
