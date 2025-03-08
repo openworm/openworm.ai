@@ -12,7 +12,8 @@ LLM_GEMINI = "Gemini"
 LLM_AI21 = "AI21"
 LLM_CLAUDE35 = "claude-3-5-sonnet-20241022"
 LLM_COHERE = "Cohere"
-LLM_OLLAMA_LLAMA32 = "Ollama:Llama3.2"
+LLM_OLLAMA_LLAMA32 = "Ollama:llama3.2"
+LLM_OLLAMA_LLAMA32_1B = "Ollama:llama3.2:1b"
 LLM_OLLAMA_MISTRAL = "Ollama:mistral"
 LLM_OLLAMA_TINYLLAMA = "Ollama:tinyllama"
 
@@ -348,6 +349,9 @@ def get_llm_from_argv(argv):
     if "-o-l32" in argv:
         llm_ver = LLM_OLLAMA_LLAMA32
 
+    if "-o-l321b" in argv:
+        llm_ver = LLM_OLLAMA_LLAMA32_1B
+
     if "-o-m" in argv:
         llm_ver = LLM_OLLAMA_MISTRAL
 
@@ -356,6 +360,9 @@ def get_llm_from_argv(argv):
 
     if "-o-phi3" in argv:
         llm_ver = LLM_OLLAMA_PHI3
+
+    if "-o-dsr1" in argv:
+        llm_ver = LLM_OLLAMA_DEEPSEEK
 
     print(f"Debug: get_llm_from_argv selected {llm_ver}")
 

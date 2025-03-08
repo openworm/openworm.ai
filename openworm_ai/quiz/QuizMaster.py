@@ -1,6 +1,7 @@
 from openworm_ai.quiz.QuizModel import MultipleChoiceQuiz, Question, Answer
-#from openworm_ai.quiz.TemplatesCelegans import GENERATE_Q, TEXT_ANSWER_EXAMPLE
-from openworm_ai.quiz.Templates import GENERATE_Q, TEXT_ANSWER_EXAMPLE
+
+from openworm_ai.quiz.TemplatesCelegans import GENERATE_Q, TEXT_ANSWER_EXAMPLE
+# from openworm_ai.quiz.Templates import GENERATE_Q, TEXT_ANSWER_EXAMPLE
 
 from openworm_ai.utils.llms import ask_question_get_response
 from openworm_ai.utils.llms import get_llm_from_argv
@@ -68,10 +69,11 @@ if __name__ == "__main__":
 
         quiz_json = "openworm_ai/quiz/samples/GPT4o_100questions.json"
 
-
         quiz = MultipleChoiceQuiz.from_file(quiz_json)
 
-        print(f"Asking LLM {llm_ver} {len(quiz.questions)} questions from file: {quiz_json}")
+        print(
+            f"Asking LLM {llm_ver} {len(quiz.questions)} questions from file: {quiz_json}"
+        )
 
         total_qs = 0
         total_correct = 0
@@ -147,4 +149,3 @@ if __name__ == "__main__":
                 num = int(a)
         print(f"Using LLM {llm_ver} for saving quiz with {num} questions")
         save_quiz(num, 4, llm_ver, temperature=0.2)
-
