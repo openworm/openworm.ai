@@ -57,7 +57,7 @@ def create_store(model):
                         all_text += p["contents"] + "\n\n"
                 if len(all_text) == 0:
                     all_text = " "
-                # print(f'---------------------\n{all_text}\n---------------------')
+                # print_(f'---------------------\n{all_text}\n---------------------')
                 src_info = (
                     f"WormAtlas Handbook: [{title}, Section {section}]({src_page})"
                 )
@@ -89,53 +89,92 @@ def create_store(model):
 
         index.storage_context.persist(persist_dir=STORE_DIR + STORE_SUBFOLDER)
 
-        print_("Creating a storage context")
 
-        # index_reloaded =SimpleIndexStore.from_persist_dir(persist_dir=INDEX_STORE_DIR)
-        storage_context = StorageContext.from_defaults(
-            docstore=SimpleDocumentStore.from_persist_dir(
-                persist_dir=STORE_DIR + STORE_SUBFOLDER
-            ),
-            vector_store=SimpleVectorStore.from_persist_dir(
-                persist_dir=STORE_DIR + STORE_SUBFOLDER
-            ),
-            index_store=SimpleIndexStore.from_persist_dir(
-                persist_dir=STORE_DIR + STORE_SUBFOLDER
-            ),
+def load_index(model):
+    OLLAMA_MODEL = model.replace("Ollama:", "") if model is not LLM_GPT4o else None
+
+    print_("Creating a storage context for %s" % model)
+
+    STORE_SUBFOLDER = (
+        "" if OLLAMA_MODEL is None else "/%s" % OLLAMA_MODEL.replace(":", "_")
+    )
+
+    # index_reloaded =SimpleIndexStore.from_persist_dir(persist_dir=INDEX_STORE_DIR)
+    storage_context = StorageContext.from_defaults(
+        docstore=SimpleDocumentStore.from_persist_dir(
+            persist_dir=STORE_DIR + STORE_SUBFOLDER
+        ),
+        vector_store=SimpleVectorStore.from_persist_dir(
+            persist_dir=STORE_DIR + STORE_SUBFOLDER
+        ),
+        index_store=SimpleIndexStore.from_persist_dir(
+            persist_dir=STORE_DIR + STORE_SUBFOLDER
+        ),
+    )
+    print_("Reloading index for %s" % model)
+
+    index_reloaded = load_index_from_storage(storage_context)
+
+    return index_reloaded
+
+
+def get_query_engine(index_reloaded, model):
+    OLLAMA_MODEL = model.replace("Ollama:", "") if model is not LLM_GPT4o else None
+
+    print_("Creating query engine for %s" % model)
+
+    # create a query engine for the index
+    if OLLAMA_MODEL is not None:
+        llm = Ollama(model=OLLAMA_MODEL)
+        ollama_embedding = OllamaEmbedding(
+            model_name=OLLAMA_MODEL,
         )
-        index_reloaded = load_index_from_storage(storage_context)
+        query_engine = index_reloaded.as_query_engine(
+            llm=llm, embed_model=ollama_embedding
+        )
+    else:
+        query_engine = index_reloaded.as_query_engine()
 
-        print_("Creating query engine")
+    return query_engine
 
-        # create a query engine for the index
-        if OLLAMA_MODEL is not None:
-            llm = Ollama(model=OLLAMA_MODEL)
-            query_engine = index_reloaded.as_query_engine(
-                llm=llm, embed_model=ollama_embedding
-            )
-        else:
-            query_engine = index_reloaded.as_query_engine()
 
-        def process_query(response):
-            response = query_engine.query(query)
-            files_used = []
-            for k in response.metadata:
-                v = response.metadata[k]
-                if SOURCE_DOCUMENT in v:
-                    if v[SOURCE_DOCUMENT] not in files_used:
-                        files_used.append(v[SOURCE_DOCUMENT])
+def process_query(response, model):
+    response = query_engine.query(query)
+    response_text = str(response)
+    metadata = response.metadata
+    files_used = []
+    for k in metadata:
+        v = metadata[k]
+        if SOURCE_DOCUMENT in v:
+            if v[SOURCE_DOCUMENT] not in files_used:
+                files_used.append(v[SOURCE_DOCUMENT])
 
-            file_info = ",\n   ".join(files_used)
-            print_(f"""
-    ===============================================================================
-    QUERY: {query}
-    MODEL: {model}
-    -------------------------------------------------------------------------------
-    RESPONSE: {response}
-    SOURCES: 
-    {file_info}
-    ===============================================================================
-    """)
+    file_info = ",\n   ".join(files_used)
+    print_(f"""
+===============================================================================
+QUERY: {query}
+MODEL: {model}
+-------------------------------------------------------------------------------
+RESPONSE: {response_text}
+SOURCES: 
+{file_info}
+===============================================================================
+""")
+
+    return response_text, metadata
+
+
+if __name__ == "__main__":
+    import sys
+
+    llm_ver = get_llm_from_argv(sys.argv)
+
+    if "-q" not in sys.argv:
+        create_store(llm_ver)
+
+    if "-test" not in sys.argv:
+        index_reloaded = load_index(llm_ver)
+        query_engine = get_query_engine(index_reloaded, llm_ver)
 
         # query the engine
         query = "What can you tell me about the neurons of the pharynx of C. elegans?"
@@ -154,15 +193,4 @@ def create_store(model):
         ]
 
         for query in queries:
-            process_query(query)
-
-
-if __name__ == "__main__":
-    import sys
-
-    llm_ver = get_llm_from_argv(sys.argv)
-
-    # OLLAMA_MODEL = 'phi3'#"deepseek-r1:7b"  #'tinyllama:latest' # "llama3.2:1b"
-    # OLLAMA_MODEL = None  # "llama3.2:1b"
-
-    create_store(llm_ver)
+            process_query(query, llm_ver)
