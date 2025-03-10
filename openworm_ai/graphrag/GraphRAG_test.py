@@ -71,41 +71,89 @@ else:
     llm = Ollama(model="llama3.2:1b")
     query_engine = index_reloaded.as_query_engine(llm=llm)
 
-    def process_query(response):
+    def is_response_relevant(query, response_text):
+        """
+        Basic check: If the response does not mention anything related to the query,
+        assume irrelevance.
+        """
+        query_keywords = set(query.lower().split())
+        response_keywords = set(response_text.lower().split())
+
+        common_words = query_keywords.intersection(response_keywords)
+
+        # If too few words overlap, assume irrelevance (adjust threshold if needed)
+        return len(common_words) > 2
+
+    def process_query(query):
+        """
+        Process the query with the RAG pipeline. If no relevant sources are found,
+        fallback to the LLM's pre-trained knowledge.
+        """
+
+        print(f"\nProcessing query: {query}\n")
+
         response = query_engine.query(query)
         files_used = []
-        for k in response.metadata:
-            v = response.metadata[k]
-            if SOURCE_DOCUMENT in v:
-                if v[SOURCE_DOCUMENT] not in files_used:
-                    files_used.append(v[SOURCE_DOCUMENT])
 
-        file_info = ",\n  ".join(files_used)
+        # Extract metadata from response
+        if hasattr(response, "metadata") and isinstance(response.metadata, dict):
+            for k, v in response.metadata.items():
+                if isinstance(v, dict) and SOURCE_DOCUMENT in v:
+                    if v[SOURCE_DOCUMENT] not in files_used:
+                        files_used.append(v[SOURCE_DOCUMENT])
+
+        response_text = str(response)  # Ensure response is a string
+        is_relevant = is_response_relevant(query, response_text)
+
+        # If no relevant documents OR response is not relevant, use fallback
+        if not files_used or not is_relevant:
+            fallback_prompt = f"""
+            The query could not be answered based on the available documents.
+            Instead, use your own knowledge to provide the best possible answer.
+            Do not falsely attribute information to the documents.
+            If the documents do not contain the answer, rely on your own knowledge without citing sources.
+            If you used your own pre-trained knowledge, do not cite any sources.
+
+            Query: {query}
+            """
+            response = llm.complete(fallback_prompt)
+            source_message = (
+                "No relevant documents were found. Answering from general knowledge."
+            )
+            files_used = []
+        else:
+            source_message = ",\n  ".join(files_used)
+
+        # Print response properly formatted
         print(f"""
-===============================================================================
-QUERY: {query}
--------------------------------------------------------------------------------
-RESPONSE: {response}
-SOURCES: 
-  {file_info}
-===============================================================================
-""")
+    ===============================================================================
+    QUERY: {query}
+    -------------------------------------------------------------------------------
+    RESPONSE: {response}
+    """)
 
-    # query the engine
-    query = "What can you tell me about the neurons of the pharynx of C. elegans?"
-    query = "Write 100 words on how C. elegans eats"
-    query = "How does the pharyngeal epithelium of C. elegans maintain its shape?"
+        # Only print sources if they exist
+        if files_used:
+            print(f"SOURCES:\n  {source_message}")
+        else:
+            print("No sources were found.")
+        print(
+            "===============================================================================\n"
+        )
 
+    # Query list
     queries = [
+        "When did World War 2 start?",
         "What can you tell me about the properties of electrical connectivity between the muscles of C. elegans?",
         "What are the dimensions of the C. elegans pharynx?",
         "What color is C. elegans?",
         "What is the main function of cell AVBR?",
-        "Give me 3 facts about the coelomocyte system in C. elegens",
-        "Give me 3 facts about the control of motor programs in c. elegans by monoamines",
+        "Give me 3 facts about the coelomocyte system in C. elegans",
+        "Give me 3 facts about the control of motor programs in C. elegans by monoamines",
         "The NeuroPAL transgene is amazing. Give me some examples of fluorophores in it.",
         "When was the first metazoan genome sequenced? Answer only with the year.",
     ]
 
+    # Run queries
     for query in queries:
         process_query(query)

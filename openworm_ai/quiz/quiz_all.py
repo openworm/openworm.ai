@@ -14,9 +14,8 @@ from openworm_ai.utils.llms import (
     LLM_OLLAMA_QWEN,
     ask_question_get_response,
 )
-from openworm_ai.quiz.Templates import (
-    ASK_Q,
-)  # Ensure this matches the correct import path
+from openworm_ai.quiz.Templates import ASK_Q
+
 
 iteration_per_day = 2
 field = "celegans"  # general/science/celegans
