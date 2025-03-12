@@ -39,5 +39,19 @@ The following handbooks from [WormAtlas](https://www.wormatlas.org/handbookhome.
 
 **[Head Mesodermal Cell](Head_Mesodermal_Cell.md)**
 
+**[Nervous System](Nervous_System.md)**
+
+**[Neuronal Support Cells](Neuronal_Support_Cells.md)**
+
+**[Reproductive System](Reproductive_System.md)**
+
+**[Somatic Gonad](Somatic_Gonad.md)**
+
+**[Germ Line](Germ_Line.md)**
+
+**[Egg-laying Apparatus](Egg-laying_Apparatus.md)**
+
 **[Gap Junctions](Gap_Junctions.md)**
+
+**[Pericellular Structures](Pericellular_Structures.md)**
 

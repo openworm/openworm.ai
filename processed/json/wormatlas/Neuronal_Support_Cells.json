@@ -1,0 +1,149 @@
+{
+    "Neuronal Support Cells": {
+        "title": "Neuronal Support Cells",
+        "source": "https://www.wormatlas.org/hermaphrodite/neuronalsupport/Neurosupportframeset.html",
+        "sections": {
+            "1) Overview": {
+                "paragraphs": [
+                    {
+                        "contents": "The adult C. elegans hermaphrodite nervous system has 56 support cells that fall into three categories: 24 sheath cells, 26 socket cells, and 6 GLR cells (NeuroTABLE 2). The six GLR cells are located on the inner surface of the NR and are closely associated with the development of the arms of the head muscles. Additionally, unlike neurons and sheath and socket cells, GLRs are mesodermally derived (see Muscle system - GLR cells). The remaining support cells and their related sensory neurons form the sensory organs called sensilla mainly located in the head and tail of the worm."
+                    }
+                ]
+            },
+            "2) Sensillum Structure": {
+                "paragraphs": [
+                    {
+                        "contents": "A sensillum is a simple epithelial sense organ composed of dendrites of one or more bipolar sensory neurons surrounded by a channel formed by a single sheath cell and one or more socket cells (NeuroFIG 22) (Bird and Bird, 1991; Doroquez et al., 2014). At the extreme end of its process, the socket cell forms a small, ring-like tissue that surrounds the distal ends of the cilia of the sensory dendrites, whereas the extreme distal portion of the sheath cell envelops the lumen of the sensillar pouch immediately posterior to  the socket cell. The socket and sheath-cell processes are sealed to each other by electron-dense adherens junctions. Less robust adherens junctions also connect the socket cell to the hypodermis. Virtually all of the sensilla are concentrated in the head and the tail in C. elegans."
+                    }
+                ]
+            },
+            "2.1) Cilium": {
+                "paragraphs": [
+                    {
+                        "contents": "Some sensory neuron dendrites form sensory cilia (nonmotile, microtubule-rich extensions specialized as receptors for diverse sensory modalities) at their termini. Generally, the cilia contain receptor molecules and various signal transduction components. Therefore, it is assumed that they are the primary sites of transduction at which environmental stimuli are converted into receptor potentials."
+                    },
+                    {
+                        "contents": "The common structure of a cilium in C. elegans is a finger-like process containing nine outer doublet MTs arranged in a circle (9 + 0 axoneme arrangement) around two to six inner, singlet MTs (NeuroFIG 23; NeuroTABLE 3) (Lewis and Hodgkin, 1977; Albert et al., 1981; Perkins et al., 1986). The nine doublet MTs originate from the basal body, which is a modified centriole found at the base of the cilium. The assembly, maintenance, and function of cilia are managed through MT-based intraflagellar transport (IFT), which moves cargo including IFT particles to and from the distal tip. IFT uses canonical, anterograde, heterotrimeric kinesin II and retrograde, cytoplasmic dynein (CHE-3) motors (Barr, 2005; Blacque et al., 2005; Inglis et al., 2007)."
+                    },
+                    {
+                        "contents": "In C. elegans, normal cilia development takes place at around the midpoint of the threefold stage of embryogenesis. During ciliogenesis, one of the centrioles converts to a basal body by assembling a transition zone that serves as a docking site for IFT proteins and motors (Li et al., 2004). The basal body serves as a template for the formation of the axoneme, which projects out from the basal body in a bud-like structure covered by the cell membrane. The A and B tubules of the basal body microtubules grow  into the axonemal shaft, generating the nine doublets. Within the transition zone, microtubules are anchored to the cell membrane by transitional fibers that are also believed to be involved in loading IFT motor cargo complexes onto the ciliary axoneme (Blacque et al., 2004; Bossinger and Bachmann, 2004). Precursors are incorporated into the ciliary structures at the distal tip after being carried by IFT motors and IFT particles. Two IFT kinesins, heterotrimeric kinesin-II and OSM-3, work redundantly to build the proximal and middle segments of the axonemes, whereas more distally, OSM-3 alone is required to extend the distal singlets (Ou et al., 2005; Evans et al., 2006). Between 650 and 770 minutes after the first cleavage, the average length of the cilia is 3\u00e2\u0080\u00935 \u00ce\u00bcm (Fujiwara et al., 1999). By 770\u00e2\u0080\u0093800 minutes, cilia have reached an average length of 5\u00e2\u0080\u00937 \u00ce\u00bcm and, by the time of hatching, some of the cilia have grown even longer. Even if normal cilia formation does not take place during embryogenesis, some C. elegans neurons retain the ability to extend cilia in later stages, including the adult stage (Fujiwara et al., 1999)."
+                    },
+                    {
+                        "contents": "Hermaphrodites have 61 ciliated neurons, and all except three (AQR, PQR, and PVR) are members of bilateral pairs (Ward et al., 1975; White et al., 1986; Hall and Russell, 1991). Twenty six of these 61 neurons have endings that are exposed to the environment and are located in the head amphid and inner labial sensilla and the tail phasmid sensilla. The male possesses an additional 52 ciliated neurons; all except two (HOA and HOB) are also arranged as left\u00e2\u0080\u0093right pairs. In wild-type animals, hydrophobic fluorescent dyes such as fluorescein isothiocyanate (FITC) and the carbocyanine dyes DiO and DiI penetrate into eight classes of ciliated neurons of the amphid and phasmid (Hedgecock et al., 1985; Starich et al., 1995). Mutations that affect cilium structure and hence prevent dye uptake (dye-filling mutant; dyf) have been identified. Tendyf genes were found to affect structure of all neuronal cilia and encode for IFT particle proteins or transcription factors (Perkins et al., 1986; Swoboda et al., 2000; Qin et al., 2001; Sloboda, 2002). Additional dyf mutations are specific to subsets of ciliated neurons and may involve proteins that have a role in refining the structure of specific cilia for certain functions after the general cilium structure has been built (Barr, 2005).\n\n2.2 Socket and Sheath Cells"
+                    }
+                ]
+            },
+            "2.2) Socket and Sheath Cells": {
+                "paragraphs": [
+                    {
+                        "contents": "Sensillar endings are enclosed within a protected environment by sheath and socket cells, which are specialized interfacial epithelial cells derived from the AB lineage (NeuroFIG 24; NeuroTABLE 2). These are considered to be glial cells, because they are closely associated with the ciliated endings of the sensory receptors of specific sensilla in C. elegans (Ward et al., 1975.) Sheath and socket cells lack synaptic connections or GJs to neighboring neurons, but they are closely related to neurons by lineage  (Sulston et al., 1983). In early development, a hypodermal or seam stem cell such as T and its daughters may have the role of socket in forming a sensory opening before the birth of the true socket cell (Sulston and Horvitz, 1977; Sulston et al., 1983)."
+                    },
+                    {
+                        "contents": "Unlike higher organisms, glia do not form myelin and are not required for neuronal survival in C. elegans. However, they have a role in neuronal development and function, as has been shown through ablation studies (Sulston et al., 1983; Shaham, 2006). Sheath cells regulate dendrite extension, and socket cells are involved in navigating sensory dendrites to specific sensory organs. In the absence of sheath cells, associated sensory dendrites fail to complete their extension, whereas when socket cells are missing, sensory dendrites of that sensillum infiltrate a different sensory organ (Sulston et al., 1983). In addition to regulating dendrite extension and organizing groups of dendrites, glia might also have roles in general axon guidance. During NR development in embryogenesis, inner labial sheaths are suggested to guide axons entering the NR neuropil from the anterior, whereas cephalic sheaths may guide axons entering the ring from the posterior (Wadsworth et al., 1996)."
+                    },
+                    {
+                        "contents": "In general, socket cell bodies tend to be smaller and lie closer to the sensilla than the sheath cells (NeuroFIG 22). Each cell extends one long, thin process along the terminal portions of the sheath and neuron processes that wraps around the dendritic tips, distal to the sheath endings. Socket cells are also more epithelial in nature; they connect to the hypodermis via adherens junctions and secrete cuticle that lines the external opening of some of the sensilla. Socket cells make a pore through which sensory dendrites may extend into the cuticle and, in some cases, to the animal\u00e2\u0080\u0099s exterior."
+                    },
+                    {
+                        "contents": "Sheath-cell processes ensheath the ciliary endings of the dendrites proximally to the sockets. Cilia often traverse the sheath-cell cytoplasm in narrow membranous tubes to enter the sensillar channel within the sheath cell. The tubular lumen of the sheath cell comprises the proximal portion of the bipartite sensillar channel, and the hole of the socket ending comprises the distal part. Some sheath cells can be very large, particularly those for the amphids, each of which enclose 12 cilia. Some sheath cells, including the labial and cephalic sheaths, have lamella that project into the lumen of the sensillar channel. Amphid sheaths secrete a granular electron-dense material into the channel that surrounds the cilia (Ward et al., 1975; Bird and Bird, 1991). The sheath cells for smaller sensilla are less complex, but contain some of these features in less dramatic form, often including several small membrane lamellae and a few vesicles near the channel.\n\n 2.3 Accessory Neurons of Head Sensilla"
+                    }
+                ]
+            },
+            "2.3) Accessory Neurons of Head Sensilla": {
+                "paragraphs": [
+                    {
+                        "contents": "Some neurons are closely associated with head sensilla, although they are not truly part of them. All of these are either sensory neurons or suggested to have yet unknown sensory functions. Six of these, two URX and four URY neurons, travel within the labial nerves to the lips, although they do not end within the labial sensilla. URXL/R neurons have unciliated, small bulb-like endings between CEPshDL/R and AmshL/R. URYDL/R neurons terminate in a thin sheet-like structure close to the ILshDL/R and OLQshDL/R, whereas URYVL/R neurons terminate close to ILshVL/R and OLQshVL/R. Similarly, FLP and BAG neurons do not have specific socket and sheath cells assigned to them, although their processes travel within the lateral labial process bundles (see NeuroFIG 19). These ciliated neurons terminate close to the lip cuticle on each side. BAG endings make bag-shaped, swollen structures that wrap short projections from the hypodermis close to IL sensilla at each subventral side (NeuroFIG 25) (Ward et al., 1975; Perkins et al., 1986; White et al., 1986). FLP neurons terminate close to ILsoL/R, but they also send branches to the dorsal and ventral sides (NeuroFIG 10 and NeuroFIG 25) (Ward et al., 1975).\n\n"
+                    }
+                ]
+            },
+            "3) Specific Sensilla": {},
+            "3.1) Amphid Sensilla": {
+                "paragraphs": [
+                    {
+                        "contents": "The amphids are a pair of laterally located sensilla in the head that are open to the outside at the sides of the lips. They are the largest chemosensory organs of nematodes. Each amphid includes 12 sensory neurons (ADF, ADL, AFD, ASE, ASG, ASH, ASI, ASJ, ASK, AWA, AWB, AWC) with ciliated dendrites as well as one sheath (Amsh) and one socket (Amso) cell (NeuroFIG 23, NeuroFIG 24, NeuroFIG 25 and NeuroFIG 26, NeuroMOVIE 1). The sensory dendrites of 11 neurons, except those of AFD, completely penetrate the sheath-cell ending through 11 membrane-lined holes in a sieve-like fashion and then enter the sheath pouch (NeuroFIG 24). The cilia of eight of these neurons, except those of AWA, AWB and AWC, extend into the doughnut-like pore created by the socket cell and are exposed to the external medium (NeuroFIG 27). These neurons have roles in chemotaxis, mechanosensation, osmotaxis, and dauer pheromone sensation (NeuroTABLE 1) (Bargmann and Mori, 1997; Driscoll and Kaplan, 1997; Riddle and Albert, 1997; Bargmann, 2006). The cilia of odor-sensing AWA, AWB and AWC neurons invaginate back into the sheath cell and become embedded therein (NeuroFIG 24). The dendrite of the thermosensory AFD is embedded within the sheath cell throughout and terminates in a rudimentary cilium with many villi. The ending of the amphid socket cell does not form a true tube like the sheath cell, but rather, wraps around the distal portion of the cilia-filled channel and seals onto itself with an adherens junction (NeuroFIG 28). The sheath cell is connected to the amphid sensory cilia and the socket cell by adherens junctions, and the socket cell, in turn, is connected to the hypodermis by adherens junctions (NeuroFIG 24)."
+                    },
+                    {
+                        "contents": "Ablation of amphid sheath cells results in behavioral and developmental deficits, including an inability to form dauers in the presence of the pheromone (Bargmann et al., 1990; Vowels and Thomas, 1994). The amphid neurons are then unable to take up FITC in these animals. Sensory function becomes impaired following amphid sheath ablation, even after the sensory organ has formed. Although amphid neurons continue to survive in these animals, their dendritic tips show morphological abnormalities, suggesting a function for the sheath cells in maintenance of amphid ciliary properties (Perens and Shaham, 2005; Shaham, 2005)."
+                    },
+                    {
+                        "contents": "Amphid sheath cells contain large vesicles filled with matrix material that is secreted into the amphid channel (NeuroFIG 24) (Perkins et al., 1986). This electron-dense material, which fills the channel and surrounds the dendritic tips, seems to be important for dendritic structure and function. Defects in matrix production and secretion, as seen in animals with mutations in che-12 (abnormal ), lead to impaired sensory function, poor FITC uptake into the amphid neurons, and shorter channel cilia (Perkins et al., 1986; Starich et al., 1995). Conversely, neurons modulate amphid sheath structure and function. In IFT and cilia formation mutants, matrix secretion from the sheath cells is impaired and a large number of vesicles accumulate within the sheath cells, suggesting that cilia stimulate matrix secretion (Perkins et al., 1986; Collet et al., 1998). In some of these mutants, for example daf-19, amphid channel formation by the sheath cells is also defective and the sheath cells look misshapen."
+                    },
+                    {
+                        "contents": "Two proteins, DAF-6 and CHE-14, which are involved in the formation of tubular structures, cooperate in building the amphid channel during development (Michaux, 2000; Perens and Shaham, 2005; Shaham, 2006). Amphid channel formation occurs between the comma and 1.5-fold stages (between 330 and 430 min post-fertilization) of embryogenesis (Sulston et al., 1983). As in other epithelial cells, CHE-14 functions in apical sorting and exocytosis within sheath cells, whereas DAF-6 participates in endocytosis. Therefore, these two proteins may regulate sculpting of the apical membrane as the lumen of the sheath channel forms (Shaham, 2006)."
+                    },
+                    {
+                        "contents": "3.2 Cephalic Sensilla"
+                    }
+                ]
+            },
+            "3.2) Cephalic Sensilla": {
+                "paragraphs": [
+                    {
+                        "contents": "The CEP sheath cells are the only bipolar glial cells serving two distinct glial functions. Each cell has both an anteriorly directed, dendrite-associated process and a posteriorly directed, lamellar process. The anterior processes travel with those of CEP neurons and CEPso cells to form a channel around the CEP neuron dendrites in the lips (NeuroFIG 30 and NeuroFIG 31). The thin, posterior processes, on the other hand, wrap the outside of the nerve ring and ventral ganglion neuropil, separating these structures from adjacent hypodermis and muscle as well as from some neuron cell bodies (NeuroFIG 32) (Ware et al., 1975; White et al., 1986). Narrow, radial extensions from the sheath cells are also found juxtaposed to a small number of synapses within the NR. It has been suggested that CEPsh cells function in assembly and morphogenesis of the NR during development by providing important substrates for early axon guidance of processes entering the NR from the posterior (Wadsworth et al., 1996). \n\n"
+                    }
+                ]
+            },
+            "3.3) Inner Labial Sensilla": {
+                "paragraphs": [
+                    {
+                        "contents": "Inner labial sensilla are found in a sixfold, symmetrically arranged manner at the apex of each lip (ILDL/R, ILLL/R, ILVL/R) (NeuroFIG 33). Each of these sensilla contains two dendrites (IL1 and IL2) as well as one sheath (ILsh) and one socket (ILso) cell (NeuroFIG 34). The IL2 cilia penetrate the cuticle and are exposed to the outside, whereas each IL1 cilium terminates in an electron-dense, membrane-attached disc embedded in the cuticle approximately 0.5 \u00ce\u00bcm below this opening (NeuroFIG 35) (Ward et al., 1975; Perkins et al., 1986). Unlike the amphids, inner labial socket channels are not lined with cuticle; however, an extracellular material surrounds the cilia within the socket and subcuticular channels (Ward et al., 1975). IL and OLQ socket cells express DEG/ENaC sodium channels DELM-1 and DELM-2 which are required cell-autonomously in the socket cells for mechanosensation by IL1 and OLQ, possibly by setting basal neuronal excitability (Han et al., 2013). During development, ILsh cells are suggested to guide axons entering the NR neuropil from the anterior via the six labial nerves (Wadsworth et al., 1996; Antebi et al., 1997). IL1 neurons are mechanosensory and perform head withdrawal in response to dorsal or ventral nose touch (Hart et al., 1995; Kaplan and Driscoll, 1997). From their synaptic interactions, they are also suggested to function as motor neurons and interneurons (White et al., 1986). IL2 neurons are postulated to be chemosensory (Perkins et al., 1986). Only the inner labial sensilla form distinct bumps in the lip cuticle when viewed by scanning electron micrography from the outside (see IntroFIG 4)."
+                    }
+                ]
+            },
+            "3.4) Outer Labial Sensilla": {
+                "paragraphs": [
+                    {
+                        "contents": "There are six outer labial sensilla, one on each lip just posterior to the inner labial sensilla (NeuroFIG 36). Each of the outer labial sensilla has only one outer labial sensory neuron dendrite (OLQ or OLL), one sheath (OLsh) cell, and one socket (OLso) cell (NeuroFIG 30) (Ward et al., 1975; Ware et al., 1975; Perkins et al., 1986). Although the fine structures of the OLQ and OLL sensilla differ (NeuroFIG 31), these neurons are placed in the same class on the basis of similarities of positions of their cell bodies, the similarity of their arrangement in the nerve cords, and the location and structure of their sheath cells (Ward et al., 1975). Similar to inner labial sensilla, outer labial sensillar socket channels are not lined with cuticle. The four OLQ neurons are mechanosensory, but they may also function as interneurons (Hart et al., 1995; Kaplan and Driscoll, 1997). Along with IL1 neurons, they transduce signals for head withdrawal response to dorsal and ventral nose touch. Together with ASH and FLP neurons, they also mediate reversal of movement in response to head-on collision. The two OLL neurons are suggested to be mechanosensory (Perkins et al., 1986). IL and OLQ socket cells are involved in mechanosensation by these neurons as noted above."
+                    }
+                ]
+            },
+            "3.5) Anterior and Posterior Deirid Sensilla": {
+                "paragraphs": [
+                    {
+                        "contents": "The ADE and PDE neurons are each bilaterally paired, dopaminergic cells. Along with the CEP neurons, they are involved in mechanical texture sensation (NeuroTABLE 1) (Sawin et al., 2000; Hills et al., 2004). Both classes have ciliated sensory endings embedded in the cuticle (Ward et al., 1975; Perkins et al., 1986)."
+                    },
+                    {
+                        "contents": "Anterior deirid sensilla are located bilaterally at the posterior of the head, positioned within the alae (NeuroFIG 37). An ADE neuron, one sheath cell (ADEsh), and one socket cell (ADEso) comprise the sensillum on each side. ADE neurons lie posteriorly and ventrally to the terminal bulb. The dorsal ADE process sends off a short branch on the side, which extends to the lateral wall and terminates as a cilium (NeuroFIG 38). The dorsal process extends into the ring neuropil and makes synapses with OLL, CEP, and FLP (White et al., 1986). Through the deirid commissures, each ADE ventral process reaches the ventral ganglion neuropil, where it synapses onto RIG and AVA neurons."
+                    },
+                    {
+                        "contents": "Unlike anterior deirid sensilla, posterior deirid sensilla are dorsal to the alae and are located halfway between the vulva and tail, next to dorsal body wall muscle quadrants on each side (NeuroFIG 39). Each posterior deirid sensillum consists of one PDE neuron, one sheath cell (PDEsh), and one socket cell (PDEso) that are born post-embryonically in the L2 stage from the V5 lineage (see Epithelial system). The ventral processes of the PDE neurons extend in a single fascicle with the processes of PVD neurons on each side. They cross the lateral nerves and subventral cords and pass between the hypodermis and ventral body muscles before reaching the VNC (Hedgecock et al., 1990). They bifurcate in the VNC, and both the anterior and posterior branches run in close apposition to their contralateral homologs within the VNC and make GJs to one another. They receive synapses from PVM and PLM and send output onto DVA and AVK neurons (White et al., 1986)."
+                    }
+                ]
+            },
+            "3.6) Phasmid Sensilla": {
+                "paragraphs": [
+                    {
+                        "contents": "The phasmids are located at the lateral sides of the tail, behind the rectum. They are composed of one sheath cell, two socket cells, and  the ciliated dendrites of PHA, PHB, and PQR neurons (only on the left side) (NeuroFIG 40). The phasmids are similar in structure to amphid sensilla, but smaller. The cilia of PHA and PHB neurons extend into the external medium through the hole created by socket cells on both sides, whereas the tip of the PQR dendrite is wrapped within PHso2L (NeuroFIG 41) (Hall, 1977). Cell bodies of the phasmid neurons are located in the lumbar ganglia. Growth of the phasmid neuron axons occurs in two separable stages during embryogenesis; the first stage involves growth into the PAG neuropil through the lumbar commissures pioneered and organized by PVQs and PVT, respectively (Hedgecock et al., 1985). In the second stage, the phasmid axons grow along the posterior VNC and make synapses. No synapses are made within the commissures, and synapses formed in PAG neuropil by lumbar processes, including the phasmid axons, are nearly all dyadic. The PHAs and PHBs form chemical synapses and GJs with their contralateral homologs. Additionally, thePHBs form dyadic synapses onto AVA and PVC interneurons, and PHAs form chemical synapses onto PHB and PVQ neurons (Hall and Russell, 1991). PHA and PHB neurons function in modulation of chemorepulsion behavior in worms, whereas PQR is suggested to be a mechanosensor (Hilliard et al., 2002; Sengupta, 2002)."
+                    },
+                    {
+                        "contents": "At the L1 stage, a seam cell, T, performs phasmid socket cell function and is attached to the sheath cell and syncytial hypodermis by adherens junctions in both sexes. At the L2 stage, when phasmid structure is still indistinguishable between sexes, the T-cell daughters PHso1 and PHso2 perform the socket cell function. PHso1 wraps around the tip of the neuronal dendrites and is connected to PHsh and PHso2, but not to the hypodermis, by adherens junctions. PHso2, on the other hand, is connected to the hypodermis and PHso1, but not to PHsh. Later, male and hermaphrodite phasmids differ in their composition. In the adult male, PHso2 functions as a true socket cell, whereas PHso1 protrudes into the sheath and may contain up to two basal bodies, although it does not display any other characteristics of neurons. In the adult hermaphrodite, on the other hand, PHso1 is the main socket cell and PHso2 has a thin wrapping around it. Phasmid sheath cells extend short processes posteriorly into the tail tip to form a protective channel for PHA and PHB cilia near the phasmid openings."
+                    }
+                ]
+            },
+            "4) Other Sensory Neurons of the Tail": {
+                "paragraphs": [
+                    {
+                        "contents": "The tail tip of the hermaphrodite contains other sensory neurons that are not associated with any sheath or socket cells. These neurons are suggested to transduce mechanical signals, for example, during bending of the tail tip (Hall, 1977; Hall and Russell, 1991). Only one of these neurons, PVR, is ciliated. The PVR cilium is buried in the tail tip hypodermis along the postanal ridge. PHCs are bilateral post-embryonic neurons, processes of which do not enter the phasmid sensilla. Long dendritic extensions of the PHC neurons also traverse the tail tip hypodermis, ending finally within a narrow tube of cuticle in the posterior tail whip (NeuroFIG 41). PLN, ALN, and PDB neurons also extend processes into the tail tip that may function as stretch receptors."
+                    }
+                ]
+            },
+            "5) List of Neuronal Support Cells": {
+                "paragraphs": [
+                    {
+                        "contents": "1. Sheath Cells ADEshL\n\nADEshR\n\nAMshL\n\nAMshR\n\nCEPshDL\n\nCEPshDR\n\nCEPshVL\n\nCEPshVR\n\nILshDL\n\nILshDR\n\nILshL\n\nILshR\n\nILshVL\n\nILshVR\n\nOLLshL\n\nOLLshR\n\nOLQshDL\n\nOLQshDR\n\nOLQshVL\n\nOLQshVR\n\nPDEshL\n\nPDEshR\n\nPHshL\n\nPHshR"
+                    },
+                    {
+                        "contents": "2.Socket cells\n\nADEsoL\n\nADEsoR\n\nAMsoL\n\nAMsoR\n\nCEPsoDL\n\nCEPsoDR\n\nCEPsoVL\n\nCEPsoVR\n\nILsoDL\n\nILsoDR\n\nILsoL\n\nILsoR\n\nILsoVL\n\nILsoVR\n\nOLLsoL\n\nOLLsoR\n\nOLQsoDL\n\nOLQsoDR OLQsoVL\n\nOLQsoVR\n\nPDEsoL\n\nPDEsoR\n\nPHso1L\n\nPHso2L\n\nPHso1R\n\nPHso2R\n\nTL (postembryonic blast cell; functions as phasmid socket in L1)- see Epithelial System-Seam Cells\n\nTR (postembryonic blast cell; functions as phasmid socket in L1)- see Epithelial System-Seam Cells"
+                    }
+                ]
+            },
+            "6) References": {
+                "paragraphs": [
+                    {
+                        "contents": "Sulston, J., Dew, M. and Brenner, S. 1975. Dopaminergic neurons in the nematode Caenorhabditis elegans. J. Comp. Neurol. 163: 215\u00e2\u0080\u0093226. Abstract"
+                    }
+                ]
+            }
+        }
+    }
+}

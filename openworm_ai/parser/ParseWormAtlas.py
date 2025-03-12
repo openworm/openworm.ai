@@ -360,16 +360,50 @@ if __name__ == "__main__":
         "/hermaphrodite/muscleheadcell/Mushmcframeset.html",
     ]
 
+    guides["Nervous System"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Nervous System General Description.html",
+        "/hermaphrodite/nervous/Neuroframeset.html",
+    ]
+    guides["Neuronal Support Cells"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Nervous System Neuronal Support Cells.html",
+        "/hermaphrodite/neuronalsupport/Neurosupportframeset.html",
+    ]
+    guides["Reproductive System"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Reproductive System Overview.html",
+        "/hermaphrodite/reproductive/Reproframeset.html",
+    ]
+    guides["Somatic Gonad"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Reproductive System Somatic Gonad.html",
+        "/hermaphrodite/somatic gonad/Somframeset.html",
+    ]
+    guides["Germ Line"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Reproductive System Part III Germ Line.html",
+        "/hermaphrodite/germ line/Germframeset.html",
+    ]
+    guides["Egg-laying Apparatus"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Reproductive System Part VI Egg-laying Apparatus.html",
+        "/hermaphrodite/egglaying apparatus/Eggframeset.html",
+    ]
+    guides["Gap Junctions"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Gap Junctions.html",
+        "/hermaphrodite/gapjunctions/Gapjunctframeset.html",
+    ]
+
+    guides["Pericellular Structures"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Pericellular Structures.html",
+        "/hermaphrodite/pericellular/Periframeset.html",
+    ]
+
     """
     guides["XXX"] = [
         CORPUS_LOCATION + "xxx",
         "xxx",
     ]"""
-
-    guides["Gap Junctions"] = [
-        CORPUS_LOCATION + "/wormatlas/Handbook - Gap Junctions.html",
-        "/hermaphrodite/gapjunctions/Gapjunctframeset.html",
-    ]
 
     import os
 
