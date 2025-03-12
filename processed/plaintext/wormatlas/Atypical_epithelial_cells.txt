@@ -1,0 +1,52 @@
+Atypical epithelial cells
+
+  1) XXX Cells
+
+The two XXX cells, XXXL/R, derive from the AB lineage as sisters of the anterior hypodermal (hyp 5) cells. They are born around 260 minutes after first cell cleavage on the dorsal side of the embryo and adjacent to the nascent hyp 5 and hyp 6 cells (Sulston et al., 1983). Similar to anterior hypodermal cells, they later translocate to the ventral anterior side of the embryo and are positioned close to the ventral hyp 4 cells in tadpole stage (AtypFIG 1).
+
+XXX cells function as part of the anterior hypodermis in the embryo, but they eventually detach from it and translocate near the anterior bulb of the pharynx on the ventral side of the head and lose their hypodermal character (AtypFIG 2) (White, 1988). They become free-standing cells adjacent to the pseudocoelom. Although they are generally found anterior to the nerve ring, their positions can be variable, and occasionally they reside anterior to the metacorpus of the pharynx (Sulston et al., 1983). After losing their hypodermal features, structurally they become neuron-like with compact cell bodies; small, granulated nuclei; and with several, short, axon-like processes. The thin, flattened, posterior process faces the pseudocoelom outside the pharynx rather similar to the processes of GLR cells (AtypFIG 3). The tubular anterior process travels a short distance with the ventral labial process bundles. In some animals, this process can extend as far anteriorly as the tip of the head (Ohkura et al., 2003). In dauer larvae, XXX cells may grow a long posterior process that does  not enter the nerve ring. These cells have no intercellular junctions and make no obvious synapses, but they remain in close contact with labial neurons, hypodermis and the pseudocoelom. They have abundant ribosomes, some smooth ER and a few vesicles.
+
+XXX cells likely perform a neuroendocrine secretory function in larvae; they have been implicated in regulation of dauer arrest, but not longevity, by the insulin signaling pathway (Kimura et al., 2011.) XXX cells express NCR-1 and NCR-2, homologs of a membrane glycoprotein (Niemann-Pick type C disease gene product) suggested to function in intracellular sterol trafficking (Sym et al., 2000; Li et al., 2004). They also express DAF-9, a cytochrome P450 of the CYP2 family, that is suggested to mediate synthesis of steroid hormones, and DAF-2, insulin/IGF-1 receptor that functions upstream of DAF-9 (Jia et al., 2002; Ohkura et al., 2003; Tatar et al., 2003; Gerisch and Antebi, 2004; Kimura et al., 2011). DAF-9 functions in the same pathway as DAF-12, a nuclear hormone receptor that is thought to bind sterol derivatives and mediate the choice of dauer stage versus reproductive growth (Antebi et al., 2000; Gerisch et al., 2001; Mak and Ruvkun, 2004). SDF-9, a protein tyrosine phosphatase, is thought to help the function of DAF-9 and is also expressed in XXX cells (Ohkura et al., 2003).
+
+  2) Tail Spike Scaffold Cells
+
+Two short-lived hypodermal cells, ABplppppppa and ABprppppppa, in the tail tip of the early embryo fuse to form a syncytium by the tadpole stage embryo, but undergo programmed cell death during late embryogenesis and leave behind a narrow spike of cuticle (Sulston et al., 1983). Their nuclei lie in the anal ridge, near hyp 10 and hyp 9 (AtypFIG 1 and AtypFIG 4). The syncytial cell is small, has somewhat darker cytoplasm than nearby hypodermis, and extends a single posterior process to the extreme tail tip. This process is filled with microtubules, called filaments by Sulston et al. (1983). These filaments give this process the appearance of a primitive cilium AtypFIG 4C). The process is wrapped by hyp10 over most of its length, whereas only the very tip of the process is exposed to the cuticle. Specialized junctions (probably gap junctions, but also possibly some adherens junctions) are seen between the tail spike cell and hyp 10 when the embryo reaches the twofold stage. The posterior cilium may provide a scaffold over which hyp 10 forms a broader, more stable posterior extension to give shape to the tail tip. When the spike cells die, hyp 10 still has a posterior process in place to maintain and support the cuticular spike directly.
+
+  3) List of Atypical Epithelial Cells
+
+1. XXX cells 
+
+XXXL
+
+XXXR
+
+2. Tail spike scaffold cells
+
+ABplppppppa
+
+ABprppppppa
+
+  4) References
+
+Antebi, A., Yeh, W.H., Tait, D., Hedgecock, E.M. and Riddle, D.L. 2000. daf-12 encodes a nuclear receptor that regulates the dauer diapause and developmental age in C. elegans. Genes Dev. 14: 1512-1527. (http://genesdev.cshlp.org/content/14/12/1512.long)
+
+Gerisch, B. and Antebi, A. 2004. Hormonal signals produced by DAF-9cytochrome P450 regulate C. elegans dauer diapause in response to environmental cues. Development 131: 1765-1776. (http://dev.biologists.org/content/131/8/1765.long)
+
+Gerisch, B., Weitzel, C., Kober-Eisermann, C., Rottiers, V. and Antebi, A. 2001. A hormonal signaling pathway influencing C. elegans metabolism, reproductive development, and life span. Dev. Cell 1: 841-851. (http://dx.doi.org/10.1016/S1534-5807(01)00085-5)
+
+Jia, K., Albert, P.S. and Riddle, D.L. 2002. DAF-9, a cytochrome P450 regulating C. elegans larval development and adult longevity. Development 129: 221-23.(http://dev.biologists.org/content/129/1/221.long)
+
+Li, J., Brown, G., Ailion, M., Lee, S. and Thomas, J.T. 2004. NCR-1 and NCR-2, the C. elegans homologs of the human Niemann-Pick type C1 disease protein, function upstream of DAF-9 in the dauer formation pathways. Development 131: 5741-5752. (http://dev.biologists.org/content/131/22/5741.long)
+
+Mak, H.Y. and Ruvkun, G. 2004. Intercellular signaling of reproductive development by the C. elegans DAF-9 cytochrome P450. Development 131: 1777-1786. (http://dev.biologists.org/content/131/8/1777.long)
+
+Ohkura, K., Suzuki, N., Ishihara, T. and Katsura, I. 2003. SDF-9, a protein tyrosine phosphatase-like molecule, regulates the L3/dauer developmental decision through hormonal signaling in C. elegans. Development 130: 3237-3248. (http://dev.biologists.org/content/130/14/3237.long)
+
+Sulston, J.E., Schierenberg, E., White, J.G. and Thomson, J.N. 1983. The embryonic cell lineage of the nematode Caenorhabditis elegans. Dev. Biol. 100: 64-119. (https://www.wormatlas.org/ver1/Sulstonemblin_1983/toc.html)
+
+Sym, M., Basson, M. and Johnson, C. 2000. A model for Niemann-Pick type C disease in the nematode Caenorhabditis elegans. Curr. Biol. 10: 527-530. (http://dx.doi.org/10.1016/S0960-9822(00)00468-1)
+
+White J. 1988. The Anatomy. In The nematode C. elegans (ed. W. B. Wood). Chapter 4. pp 81-122. Cold Spring Harbor Laboratory Press, New York. Abstract
+
+White J.G., Southgate, E., Thomson, J.N., and Brenner, S. 1986. The structure of the nervous system of the nematode C. elegans. Philos. Trans. R. Soc.  Lond. Ser. B. Biol.  Sci. 314: 1-340. (https://www.wormatlas.org/ver1/MoW_built0.92/toc.html)
+

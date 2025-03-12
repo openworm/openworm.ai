@@ -21,5 +21,11 @@ The following handbooks from [WormAtlas](https://www.wormatlas.org/handbookhome.
 
 **[Hypodermis](Hypodermis.md)**
 
+**[Seam cells](Seam_cells.md)**
+
+**[Interfacial epithelial cells](Interfacial_epithelial_cells.md)**
+
+**[Atypical epithelial cells](Atypical_epithelial_cells.md)**
+
 **[Gap Junctions](Gap_Junctions.md)**
 

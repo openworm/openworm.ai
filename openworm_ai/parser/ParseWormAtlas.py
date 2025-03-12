@@ -321,6 +321,25 @@ if __name__ == "__main__":
         CORPUS_LOCATION + "/wormatlas/Handbook - Epithelial System Hypodermis.html",
         "/hermaphrodite/hypodermis/Hypframeset.html",
     ]
+    guides["Seam cells"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Epithelial System Seam Cells.html",
+        "/hermaphrodite/seam cells/Seamframeset.html",
+    ]
+    guides["Interfacial epithelial cells"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Epithelial System Interfacial Cells.html",
+        "hermaphrodite/interfacial/Interframeset.html",
+    ]
+    guides["Atypical epithelial cells"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Epithelial System Atypical Cells.html",
+        "/hermaphrodite/atypical/Atypframeset.html",
+    ]
+
+    """
+    guides["XXX"] = [
+        CORPUS_LOCATION + "xxx",
+        "xxx",
+    ]"""
 
     guides["Gap Junctions"] = [
         CORPUS_LOCATION + "/wormatlas/Handbook - Gap Junctions.html",
