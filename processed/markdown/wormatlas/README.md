@@ -19,5 +19,7 @@ The following handbooks from [WormAtlas](https://www.wormatlas.org/handbookhome.
 
 **[The Cuticle](The_Cuticle.md)**
 
+**[Hypodermis](Hypodermis.md)**
+
 **[Gap Junctions](Gap_Junctions.md)**
 
