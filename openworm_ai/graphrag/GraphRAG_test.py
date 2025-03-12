@@ -190,6 +190,7 @@ if __name__ == "__main__":
             "Give me 3 facts about the control of motor programs in c. elegans by monoamines",
             "The NeuroPAL transgene is amazing. Give me some examples of fluorophores in it.",
             "When was the first metazoan genome sequenced? Answer only with the year.",
+            "In what year was William Shakespeare born? If the answer is not in the provided context information, please answer using your own knowledge.",
         ]
 
         for query in queries:
