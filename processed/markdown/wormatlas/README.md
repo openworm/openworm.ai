@@ -27,5 +27,17 @@ The following handbooks from [WormAtlas](https://www.wormatlas.org/handbookhome.
 
 **[Atypical epithelial cells](Atypical_epithelial_cells.md)**
 
+**[Excretory System](Excretory_System.md)**
+
+**[Muscle System Introduction](Muscle_System_Introduction.md)**
+
+**[Somatic Muscles](Somatic_Muscles.md)**
+
+**[Nonstriated Muscle](Nonstriated_Muscle.md)**
+
+**[GLR Cells](GLR_Cells.md)**
+
+**[Head Mesodermal Cell](Head_Mesodermal_Cell.md)**
+
 **[Gap Junctions](Gap_Junctions.md)**
 

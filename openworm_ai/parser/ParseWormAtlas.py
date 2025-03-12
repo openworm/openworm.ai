@@ -334,6 +334,31 @@ if __name__ == "__main__":
         CORPUS_LOCATION + "/wormatlas/Handbook - Epithelial System Atypical Cells.html",
         "/hermaphrodite/atypical/Atypframeset.html",
     ]
+    guides["Excretory System"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Excretory System.html",
+        "/hermaphrodite/excretory/Excframeset.html",
+    ]
+    guides["Muscle System Introduction"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Muscle System Introduction.html",
+        "/hermaphrodite/muscleintro/MusIntroframeset.html",
+    ]
+    guides["Somatic Muscles"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Muscle System Somatic Muscle.html",
+        "/hermaphrodite/musclesomatic/MusSomaticframeset.html",
+    ]
+    guides["Nonstriated Muscle"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Muscle System Nonstriated Muscle.html",
+        "/hermaphrodite/musclenonstriated/MusNonstriframeset.html",
+    ]
+    guides["GLR Cells"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Muscle System GLR Cells.html",
+        "/hermaphrodite/muscleGLR/MusGLRframeset.html",
+    ]
+    guides["Head Mesodermal Cell"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Muscle System Head Mesodermal Cell.html",
+        "/hermaphrodite/muscleheadcell/Mushmcframeset.html",
+    ]
 
     """
     guides["XXX"] = [
