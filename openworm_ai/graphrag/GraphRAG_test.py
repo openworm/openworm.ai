@@ -11,6 +11,7 @@ from llama_index.core.storage.index_store import SimpleIndexStore
 from llama_index.core.storage.docstore import SimpleDocumentStore
 from llama_index.core import load_index_from_storage
 from llama_index.embeddings.ollama import OllamaEmbedding
+from llama_index.core import PromptTemplate
 
 
 # one extra dep
@@ -20,7 +21,6 @@ import glob
 import sys
 import json
 
-# from modelspec.utils import load_json
 
 STORE_DIR = "store"
 SOURCE_DOCUMENT = "source document"
@@ -123,6 +123,26 @@ def get_query_engine(index_reloaded, model):
 
     print_("Creating query engine for %s" % model)
 
+    # Based on: https://docs.llamaindex.ai/en/stable/examples/customization/prompts/completion_prompts/
+
+    text_qa_template_str = (
+        "Context information is"
+        " below.\n---------------------\n{context_str}\n---------------------\nUsing"
+        " both the context information and also using your own knowledge, answer"
+        " the question: {query_str}\nIf the context isn't helpful, you can also"
+        " answer the question on your own.\n"
+    )
+    text_qa_template = PromptTemplate(text_qa_template_str)
+
+    refine_template_str = (
+        "The original question is as follows: {query_str}\nWe have provided an"
+        " existing answer: {existing_answer}\nWe have the opportunity to refine"
+        " the existing answer (only if needed) with some more context"
+        " below.\n------------\n{context_msg}\n------------\nUsing both the new"
+        " context and your own knowledge, update or repeat the existing answer.\n"
+    )
+    refine_template = PromptTemplate(refine_template_str)
+
     # create a query engine for the index
     if OLLAMA_MODEL is not None:
         llm = Ollama(model=OLLAMA_MODEL)
@@ -130,16 +150,40 @@ def get_query_engine(index_reloaded, model):
             model_name=OLLAMA_MODEL,
         )
         query_engine = index_reloaded.as_query_engine(
-            llm=llm, embed_model=ollama_embedding
+            llm=llm,
+            text_qa_template=text_qa_template,
+            refine_template=refine_template,
+            embed_model=ollama_embedding,
         )
     else:
-        query_engine = index_reloaded.as_query_engine()
+        query_engine = index_reloaded.as_query_engine(
+            text_qa_template=text_qa_template,
+            refine_template=refine_template,
+        )
 
     return query_engine
 
 
 def process_query(response, model):
     response = query_engine.query(query)
+
+    """
+
+    import pprint as pp
+    print(type(response))
+    print(dir(response))
+
+    print('------')
+    pp.pprint(response.metadata)
+    print('------')
+
+    for sn in response.source_nodes:
+        print('  -- ')
+        pp.pprint(sn)
+    print('------')
+    pp.pprint(response.response)
+    print('------')"""
+
     response_text = str(response)
     metadata = response.metadata
     files_used = []
@@ -182,15 +226,8 @@ if __name__ == "__main__":
         query = "How does the pharyngeal epithelium of C. elegans maintain its shape?"
 
         queries = [
-            "What can you tell me about the properties of electrical connectivity between the muscles of C. elegans?",
-            "What are the dimensions of the C. elegans pharynx?",
-            "What color is C. elegans?",
-            "What is the main function of cell AVBR?",
-            "Give me 3 facts about the coelomocyte system in C. elegens",
-            "Give me 3 facts about the control of motor programs in c. elegans by monoamines",
-            "The NeuroPAL transgene is amazing. Give me some examples of fluorophores in it.",
-            "When was the first metazoan genome sequenced? Answer only with the year.",
-            "In what year was William Shakespeare born? If the answer is not in the provided context information, please answer using your own knowledge.",
+            "What is the main function of cell pair AVB?",
+            "In what year was William Shakespeare born? ",
         ]
 
         for query in queries:
