@@ -8,9 +8,9 @@ LLM_GPT35 = "GPT3.5"
 LLM_GPT4 = "GPT4"
 LLM_GPT4o = "GPT4o"
 LLM_LLAMA2 = "LLAMA2"
-LLM_GEMINI = "Gemini"
+LLM_GEMINI = "gemini-2.0-flash"
 LLM_AI21 = "AI21"
-LLM_CLAUDE35 = "claude-3-5-sonnet-20241022"
+LLM_CLAUDE37 = "claude-3-7-sonnet-20250219"
 LLM_COHERE = "Cohere"
 LLM_OLLAMA_LLAMA32 = "Ollama:llama3.2"
 LLM_OLLAMA_LLAMA32_1B = "Ollama:llama3.2:1b"
@@ -35,9 +35,10 @@ PREF_ORDER_LLMS = (
     LLM_GPT4,
     LLM_GPT4o,
     LLM_AI21,
-    LLM_CLAUDE35,
+    LLM_CLAUDE37,
     LLM_COHERE,
     LLM_OLLAMA_LLAMA32,
+    LLM_OLLAMA_LLAMA32_1B,
     LLM_OLLAMA_MISTRAL,
     LLM_OLLAMA_TINYLLAMA,
     LLM_OLLAMA_PHI3,
@@ -141,9 +142,9 @@ def get_llm(llm_ver, temperature):
     elif llm_ver == LLM_GEMINI:
         from langchain_google_genai import ChatGoogleGenerativeAI
 
-        print("Debug: Using Gemini-Pro")
+        print("Debug: Using Gemini Flash")
         return ChatGoogleGenerativeAI(
-            model="gemini-pro",
+            model="gemini-2.0-flash",
             google_api_key=get_gemini_api_key(),  # Retrieve API key
             temperature=temperature,
         )
@@ -153,12 +154,12 @@ def get_llm(llm_ver, temperature):
 
         llm = AI21LLM(model="j2-ultra")
 
-    elif llm_ver == LLM_CLAUDE35:
+    elif llm_ver == LLM_CLAUDE37:
         from langchain_anthropic import ChatAnthropic
 
-        print("Debug: Using Claude 3.5 Sonnet")
+        print("Debug: Using Claude 3.7 Sonnet")
         return ChatAnthropic(
-            model_name="claude-3-5-sonnet-20241022",
+            model_name="claude-3-7-sonnet-20250219",
             anthropic_api_key=get_anthropic_key(),  # Retrieve API key
             temperature=temperature,
         )
@@ -168,7 +169,7 @@ def get_llm(llm_ver, temperature):
 
         llm = ChatCohere()
 
-    elif llm_ver == LLM_OLLAMA_LLAMA32:
+    elif llm_ver == LLM_OLLAMA_LLAMA32_1B:
         from langchain_ollama.llms import OllamaLLM
 
         llm = OllamaLLM(model="llama3.2:1b")
@@ -334,6 +335,15 @@ def get_llm_from_argv(argv):
     if "-g" in argv:
         llm_ver = LLM_GEMINI
 
+    if "-ge" in argv:
+        llm_ver = LLM_OLLAMA_GEMMA
+
+    if "-ge2" in argv:
+        llm_ver = LLM_OLLAMA_GEMMA2
+
+    if "-qw" in argv:
+        llm_ver = LLM_OLLAMA_QWEN
+
     if "-l" in argv:
         llm_ver = LLM_LLAMA2
 
@@ -341,7 +351,7 @@ def get_llm_from_argv(argv):
         llm_ver = LLM_AI21
 
     if "-cl" in argv:
-        llm_ver = LLM_CLAUDE35
+        llm_ver = LLM_CLAUDE37
 
     if "-co" in argv:
         llm_ver = LLM_COHERE
@@ -351,6 +361,8 @@ def get_llm_from_argv(argv):
 
     if "-o-l321b" in argv:
         llm_ver = LLM_OLLAMA_LLAMA32_1B
+        print(f"DEBUG: Selected LLM Version = {llm_ver}")
+        return llm_ver
 
     if "-o-m" in argv:
         llm_ver = LLM_OLLAMA_MISTRAL
@@ -358,8 +370,12 @@ def get_llm_from_argv(argv):
     if "-o-t" in argv:
         llm_ver = LLM_OLLAMA_TINYLLAMA
 
-    if "-o-phi3" in argv:
+    if "o-phi3" in argv:
         llm_ver = LLM_OLLAMA_PHI3
+        print(f"DEBUG: Selected LLM Version = {llm_ver}")
+
+    if "-o-phi4" in argv:
+        llm_ver = LLM_OLLAMA_PHI4
 
     if "-o-dsr1" in argv:
         llm_ver = LLM_OLLAMA_DEEPSEEK
