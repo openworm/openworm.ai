@@ -320,6 +320,12 @@ if __name__ == "__main__":
         "/hermaphrodite/gapjunctions/Gapjunctframeset.html",
     ]
 
+    guides["Nervous System"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Nervous System General Description.html",
+        "hermaphrodite/nervous/Neuroframeset.html",
+    ]
+
     import os
 
     # rint(openworm_ai.__file__)

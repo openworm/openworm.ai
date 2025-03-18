@@ -19,6 +19,8 @@ from llama_index.llms.ollama import Ollama
 import glob
 import sys
 import json
+import os
+import time
 
 # from modelspec.utils import load_json
 
@@ -29,8 +31,12 @@ SOURCE_DOCUMENT = "source document"
 def create_store(model):
     OLLAMA_MODEL = model.replace("Ollama:", "") if model is not LLM_GPT4o else None
 
-    json_inputs = glob.glob("processed/json/*/*.json")
-    # print_(json_inputs)
+    json_inputs = [
+        file
+        for file in glob.glob("processed/json/*/*.json")
+        if os.path.normpath(file)
+        != os.path.normpath("processed/json/papers/Corsi_et_al_2015.json")
+    ]
 
     documents = []
     for json_file in json_inputs:
@@ -138,30 +144,59 @@ def get_query_engine(index_reloaded, model):
     return query_engine
 
 
-def process_query(response, model):
-    response = query_engine.query(query)
+def process_query(query, model):
+    """Processes a single query, logs the exact prompt used, and prints the retrieved context."""
+
+    print_(f"\n🔹 TESTING QUERY: {query}")
+    print_("-----------------------------------------------------------")
+
+    # Measure retrieval performance
+    start_time = time.time()
+
+    # Run retrieval
+    retrieval_results = query_engine.query(query)
+    retrieval_texts = [str(doc) for doc in retrieval_results[:5]]  # Limit to top 2 docs
+
+    retrieval_time = time.time() - start_time
+    print_(f"\n🔹 Retrieval Time: {retrieval_time:.2f}s")
+
+    # Log retrieved context
+    if retrieval_texts:
+        print_("\n🔹 Retrieved Context:")
+        for idx, text in enumerate(retrieval_texts, start=1):
+            print_(f"  [{idx}] {text[:1000]}...")  # Print first 500 characters
+    else:
+        print_(
+            "⚠ No relevant documents retrieved. The model may rely on pre-trained knowledge."
+        )
+
+    # Prepare formatted query with retrieval results
+    formatted_query = (
+        "Use the retrieved context below to generate the best answer.\n\n"
+        + f" Query: {query}\n\n"
+        + " **Retrieved Context:**\n"
+        + "\n\n".join(retrieval_texts)
+    )
+
+    # Log the exact query being sent to the model
+    print_("\n Final Prompt Sent to LLM:")
+    print_(formatted_query)
+
+    # Run LLM query
+    start_time = time.time()
+    response = query_engine.query(formatted_query)
+    response_time = time.time() - start_time
+
+    # Capture response
     response_text = str(response)
-    metadata = response.metadata
-    files_used = []
-    for k in metadata:
-        v = metadata[k]
-        if SOURCE_DOCUMENT in v:
-            if v[SOURCE_DOCUMENT] not in files_used:
-                files_used.append(v[SOURCE_DOCUMENT])
 
-    file_info = ",\n   ".join(files_used)
-    print_(f"""
-===============================================================================
-QUERY: {query}
-MODEL: {model}
--------------------------------------------------------------------------------
-RESPONSE: {response_text}
-SOURCES: 
-{file_info}
-===============================================================================
-""")
+    print_(" Model Response:")
+    print_(response_text)
 
-    return response_text, metadata
+    print_(f" Response Time: {response_time:.2f}s")
+    print_("-----------------------------------------------------------")
+
+    return response_text
 
 
 if __name__ == "__main__":
@@ -182,14 +217,7 @@ if __name__ == "__main__":
         query = "How does the pharyngeal epithelium of C. elegans maintain its shape?"
 
         queries = [
-            "What can you tell me about the properties of electrical connectivity between the muscles of C. elegans?",
-            "What are the dimensions of the C. elegans pharynx?",
-            "What color is C. elegans?",
-            "What is the main function of cell AVBR?",
-            "Give me 3 facts about the coelomocyte system in C. elegens",
-            "Give me 3 facts about the control of motor programs in c. elegans by monoamines",
-            "The NeuroPAL transgene is amazing. Give me some examples of fluorophores in it.",
-            "When was the first metazoan genome sequenced? Answer only with the year.",
+            "How many neurons are present in the adult hermaphrodite C. elegans?"
         ]
 
         for query in queries:
