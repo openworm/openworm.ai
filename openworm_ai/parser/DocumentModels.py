@@ -1,3 +1,4 @@
+from openworm_ai import print_
 import modelspec
 from modelspec import field, instance_of, optional
 from modelspec.base_types import Base
@@ -77,7 +78,7 @@ class Document(Base):
                 for p in section.paragraphs:
                     f.write(f"\n{p.contents}\n")
 
-        print(f"Written contents of model {self.id} to {fn}")
+        print_(f"Written contents of model {self.id} to {fn}")
 
     def to_plaintext(self, file_name):
         fn = Path(file_name)
@@ -89,11 +90,11 @@ class Document(Base):
                 for p in section.paragraphs:
                     f.write(f"\n{p.contents}\n")
 
-        print(f"Written contents of model {self.id} to {fn}")
+        print_(f"Written contents of model {self.id} to {fn}")
 
 
 if __name__ == "__main__":
-    print("Running tests")
+    print_("Running tests")
 
     doc = Document(id="MyTestDoc", source="openworm.org")
     doc.title = "My test document"
@@ -107,14 +108,14 @@ if __name__ == "__main__":
     doc.sections.append(c1)
     c1.paragraphs.append(Paragraph(contents="More..."))
 
-    print(doc)
-    print(doc.sections[0].paragraphs[0].contents)
-    print(doc.sections[0].paragraphs[1].__getattribute__("contents"))
+    print_(doc)
+    print_(doc.sections[0].paragraphs[0].contents)
+    print_(doc.sections[0].paragraphs[1].__getattribute__("contents"))
 
     doc.to_json_file("document.json")
     doc.to_yaml_file("document.yaml")
-    print(" >> Full document details in YAML format:\n")
-    print(doc.to_yaml())
+    print_(" >> Full document details in YAML format:\n")
+    print_(doc.to_yaml())
 
     doc.to_markdown("document.md")
     doc.to_plaintext("document.txt")

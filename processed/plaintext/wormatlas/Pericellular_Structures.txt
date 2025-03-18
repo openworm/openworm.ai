@@ -1,0 +1,262 @@
+Pericellular Structures
+
+  1) Introduction
+
+Some structures with less well-demarcated anatomical features exist outside and around nematode tissues. They have important roles as connective tissues, provide structural support and barriers, have roles in development, and mediate intercellular communication. These structures include the cuticle (see also Cuticle Section and Dauer Cuticle), the pseudocoelom, extracellular matrices, basal laminae, as well as the eggshell and the embryonic sheath of the embryo.
+
+  2) Pseudocoelom
+
+The pseudocoelom is a fluid-filled body cavity lying inside the external body wall of the nematode that bathes the internal organs, including the alimentary system and the reproductive system (PeriFIG 1). This body cavity is called a âpseudocoelomâ because it is not fully lined by mesodermal cells as in the true âcoelomic cavityâ of vertebrates. The C. elegans pseudocoelom is bounded by basal laminae (BL) that cover the hypodermis, the nervous tissues, the gonad and the intestine (PeriFIG 2) (Bird and Bird, 1991). The pseudocoelom contains the coelomocytes (see Coelomocyte Section), provides the turgor-hydrostatic pressure for the animal as a whole, functions as a lubricant between tissues, and provides a medium for intercellular signaling and nutrient transport.
+
+The pseudocoelomic fluid is restricted from reaching the cuticle by a series of barrier junctions that link every cell type in the bodywallâs epithelial system, particularly the belt junctions (adherens  junctions) of the hypodermis. Similarly, the pseudocoelomic fluid cannot mix with the luminal contents of the digestive tract nor the reproductive tract due to the presence of another permeability barrier: the belt junctions connecting all epithelial cells in those tissues. The permeability barrier between the gut lumen and the pseudocoelom is particularly important since it prevents leakage of digestive enzymes, stray bacteria, or viruses into the body cavity. Thus, the pseudocoelom is effectively isolated from other body fluids, while bathing all tissues on their basal pole with similar contents. As a result, the pseudocoelom is positioned to carry out many of the functions normally performed by the circulatory system (bloodstream) or the respiratory system (airways) in higher animals. Motions of the nematodeâs body may effectively stir the contents, but otherwise there is no active circulation per se. The permeability barriers on both sides of the pseudocoelom also allow the pseudocoelomic fluid to be pressurized beneath the elastic cuticle; thus, the fluid acts as a hydrostatic skeleton that contributes to maintain the nematodeâs overall rigidity (Crofton, 1966). In aging worms, this hydrostatic pressure is often decreased.
+
+The pseudocoelomic space forms later in embryonic morphogenesis, and its fluid contents first derive from the fluid bathing the early blastomeres, the blastocoel.  It is present in the adult and in all larval stages. The cross-sectional volume of the pseudocoelom is larger along the midbody regions, but becomes much tighter and less voluminous in the head and in the tail tip. Because this fluid is in contact with all major tissues, it helps to establish an ionic equilibrium for the whole animal, balancing the osmotic contents of the various tissues. The chemical composition of the pseudocoelomic fluid has been analyzed in larger nematode species and was found to have a neutral pH and to contain proteins, fat, glucose, sodium, chloride, magnesium, phosphorus, and small quantities of copper, zinc, iron, hematin and ascorbic acid. The main buffering system in the pseudocoelomic fluid of larger nematodes was found to be bicarbonate:phosphate (Bird and Bird 1991).
+
+Laser ablation experiments and mutant analysis have implicated the excretory system, the canal-associated (CAN) neurons and the hypodermis as important regulators of ionic and fluid homeostasis in C. elegans (Nelson and Riddle, 1984; Forrester et al., 1998; Huang and Stern, 2004). The pseudocoelom is in close physical contact with the excretory canals along the length of the midbody and in the head, and the CANs have close association with the canals (ExcFIG 4 and ExcFIG 7). The excretory canals also form extensive gap junctions to the hypodermis that may play a role in coupling their influences on fluid balance. Ablation of the excretory system cells or the CAN neurons, or hyperactivating EGL-15 (an FGF-like receptor tyrosine kinase) or CLR-1 (a receptor tyrosine phosphatase) in hypodermis results in a Clr (clear) phenotype, characterized by the accumulation of clear fluid within the pseudocoelomic space (Huang and Stern, 2004). The excretory system and hypodermis are thought to regulate fluid homeostasis by regulating fluid outflow and inflow, respectively. The hypodermis functions to either promote fluid intake or inhibit fluid excretion, whereas the excretory system functions in disposing solutes and water that pass into the canal cell from the pseudocoelom (see Excretory System).
+
+The coelomocytes continuously and nonspecifically endocytose fluid from the pseudocoelomic fluid (CcFIG 5). These cells perform a primitive immune surveillance function for the animal, while floating within this fluid (see Coelomocyte System). The coelomocytes can recognize substances, viruses, or invading bacteria that do not belong inside the animal and degrade them. Thus, solid waste materials can be disposed by the coelomocytes, whereas liquid waste is excreted from this cavity via the excretory system.
+
+Previously, it was noted that GLR processes seal off the pseudocoelomic space at the anterior edge of the nerve ring, suggesting that this space may not extend further than the posterior isthmus (White et al., 1986) (see Muscle System - GLR cells). However, a narrow space between the pharynx and the surrounding tissues is observed even anterior to that locale, and may be considered an âaccessory pseudocoelomâ (Altun and Hall, unpublished; J. White, pers. comm.). This narrowed accessory pseudocoelom may share the same functions as the main pseudocoelom, and it is likely that extracellular signals can pass between them. For instance, some signals that seem to affect the entire animal could be released into this narrow space, including the lipophilic hormones secreted by the XXX cells (see Epithelial System - Atypical Cells; AtypFIG 3) (Jia et al 2002; Gerisch and Antebi, 2004). Similarly, the NSM neurons have neurohumoral release zones extending to both sides of the GLR constrictions, suggesting that it is important to release their product into the accessory space as well as into the main portion of the pseudocoelom. Additionally, fluorescently labeled antibodies injected into the body pseudocoelom can diffuse and label extracellular peripheral membrane ligands in the anterior head (Gottschalk and Schafer, 2006). The accessory pseudocoelomic space ends near the anterior limit of the pharyngeal muscles after narrowing further in a graded fashion.
+
+The pseudocoelomic fluid may reduce friction between adjacent tissues (during feeding) since vigorous motions of the pharynx occur, with no apparent drag on the nearby bodywall. Similarly, the extension of the gonad during larval stages and contraction of the body wall muscles during locomotion do not lead to major observable changes in the body form, highlighting the flexibility afforded by this cavity.
+
+There are relatively few structures spanning the width of the pseudocoelomic cavity in any locale. Two minor axons span the gap to connect the pharyngeal nervous system to the rest of the nervous system. Also in the head, long flexible tendons cross the pseudocoelom to link the basal lamina of the outer bodywall in the head to the pharynx (Muriel et al., 2005; AxÃ¤ng et al., 2007).
+
+Given the exposure of all tissues to this body cavity, many cell types can use the pseudocoelomic fluid as a route for signaling between  tissues, as well as to transfer useful (nutritive) materials, including yolk protein and oxygen. The exact balancing of oxygen levels within the animal is not well understood, but it is clear that neuronal oxygen-sensing cells have their cell body and/or cilium located within this cavity to monitor the animalâs net oxygen levels (see Nervous System; de Bono and Bargmann, 1998; Cheung et al., 2005).  Several proteins with homologies to myoglobin or hemoglobin are present in high titer within the nematode pseudocoelom and potentially can act as carriers (or sensors) for oxygen, nitric oxide, or other gases (De Baere et al., 1992; Minning et al., 1999; Hoogewijs et al., 2004).  Alternately, it might be more important for these proteins to act as carriers for hemin, an essential enzyme cofactor that can be toxic if unbound (Rao et al., 2005; I. Hamza, pers. comm.).
+
+In C. elegans, yolk is secreted from the intestine, its primary site of synthesis, into the pseudocoelomic space as free-floating granules and is ultimately shuttled to the reproductive tract. Yolk granules then go through sheath pores to the surface of the oocyte, where they are taken up into vesicles within the growing oocytes (PeriFIG 2C) (Kimble and Sharrock, 1983; Sharrock, 1983; Hall et al., 1999). Yolk synthesis starts during L4 lethargus and continues through the adult life. The net direction of yolk transport is reversed during embryonic development; during  midembryogenesis, nonintestinal cells resecrete the yolk they inherited from the oocyte into the perivitelline space, which is then taken up by the intestinal cells. At  hatching most of the yolk is therefore stored in the intestine (Bossinger and Schierenberg 1996; Grant and Hirsh, 1999). When reproductive life has ended, excess yolk begins to collect within the body cavity to form huge islands of material (Herndon et al., 2002).
+
+  3) Extracellular Matrix
+
+The local environment on the outside of each cell or tissue can be complex because a variety of nearby cells may contribute components to it. Some of these components, such as glycoproteins and carbohydrates, quickly become deposited into distinct extracellular layers near their origin of synthesis generating extracellular matrices (ECM), but others may diffuse more widely as intercellular signals. The major ECM are the basement membrane, which covers the basal surfaces of the tissues, and the cuticle on the outside of the animal (PeriFIG 2 and PeriFIG 3A) (see Cuticle). There are other, smaller matrices that are specific to certain tissues, such as the mantle, rachis coat, tendons and zona pellucida. A number of very long fibrous proteins and glycosaminoglycans (proteoglycans) are secreted into the extracellular space that may then  condense to form the basement membranes or may attach to the ECM in a less orderly fashion and extend into the pseudocoelomic fluid (Kramer, 2005). For instance, the very long DIG-1 protein is probably attached to the basement membrane, but has been hypothesized to extend far into the cavity (BÃ©nard et al., 2006). Depending on how one prepares the adult animal for microscopy, the ECM has a variable appearance.
+
+Not much is known about the conformation of any of the large proteins and proteoglycans of the ECM, particularly in their native state within the animal.  Intramolecular binding sites and post-secretion modifications of these proteins help to bind them into larger mesh-like structures in the basement membrane.  This meshwork can serve to bind smaller signaling molecules into place within the cavity. As a result, important signals for cell fate and cell polarity decisions, cell migration, process extension and synaptogenesis are presented to each tissue from the ECM.
+
+Beginning in mid to late morphogenesis in the embryo, the ECM begins forming and from this time forward it may present a physical barrier to cell movements as cells try to shuffle past each other to form proper groupings. Migrating cells or cell processes may use instructive signals within the matrix to direct their progress (Hedgecock et al., 1987; Merz et al., 2003; Hilliard and Bargmann, 2006; Prasad and Clark, 2006). Some migrating cells secrete degradative enzymes (matrix metalloproteinases) to open holes in the matrix locally to make progress in certain directions (Wada et al., 1998; Blelloch and Kimble, 1999; Meighan et al., 2004; Sherwood et al, 2005). Late larval changes in the male tail also involve dramatic reformation of the ECM (Kuno et al., 2002).
+
+Certain molecules appear to be able to pass across the ECM at will, even where a robust basement membrane is evident. At neuromuscular junctions in the adult, neurotransmitters (e.g. acetylcholine or Î³-aminobutyric acid) must pass through the matrix lying between neurons and muscle arms. Yolk protein granules floating in the pseudocoelomic fluid are able to cross the basement membrane covering the gonad (Hall et al., 1999).
+
+3.1 Basement Membrane (Basal Lamina)
+
+   3.1) Basement Membrane (Basal Lamina)
+
+Besides cuticle, the most prominent extracellular structure associated with most cells is the basement membrane, which formally includes the basal lamina (BL) and an external layer, the reticula lamina (see Basement Membranes chapter in WormBook for more detail - Kramer, 2005). In the nematode, it is generally impossible to distinguish these separate features, and thus the two terms basement membrane and basal lamina are often used interchangeably. In higher animals, the BL itself can be viewed by electron microscopy to constitute a multi-layered structure, but this is not true in C. elegans. Instead the BL appears as a unitary thin layer covering the basal surface (pseudocoelomic side) of tissues in the nematode (Huang et al., 2003). Each tissue lying across the pseudocoelom is covered separately by its own lamina.
+
+The width of the basal lamina tends to be almost unitary for any one tissue, but varies widely (between 20-100 nm) between tissues (Huang et al., 2003). In a few tissues (e.g., bodywall muscle), periodic rod-like structures are seen lying on the outside of basal lamina that might represent either a 2nd layer or a reticula lamina. The BL of the pharynx is particularly thick and robust (PhaFIG 5D). In certain regions, the BL shows specializations that may strengthen it or permit stronger binding between adjacent tissues. For example, the uterine epithelium is firmly attached to the lateral bodywall via a local thickening of the BL at the seam cell (EggFIG 3).
+
+In certain locales, two separate basal laminae may merge  into a wider unitary structure to link different tissues firmly together. In particular, the outer face of the bodywall muscles links tightly to a thin outer layer of hypodermis via the merger of their respective basal laminae. Fibrous organelles that traverse these tissues anchor each muscle to the cuticle (see Somatic Muscle; MusFIG 11).
+
+The principal molecular components of the nematode BL typically include an inner meshwork of laminins and collagen IV and, rarely, an outer layer of rod-like collagen fibrils (Kramer, 2005). Expression and genetic data suggest that laminins are essential for early embryonic basement membrane assembly and, in the absence of laminin deposition, no other basement membrane component can initiate the assembly of the basement membranes (Yurchenco and Wadsworth, 2004). After laminin deposition, other basement membrane components are integrated into the nascent laminin scaffold. One of these, collagen IV, which is synthesized by the gonad and the muscle, is absent from the BL of the hypodermis and the muscle in regions that face the pseudocoelomic space  (PeriFIG 2) (Graham et al., 1997). Similar to the basement membranes in higher animals, the basement membranes of C. elegans are decorated by a variety of linking molecules including nidogen (entactin), collagen XVIII, and heparan sulfate proteoglycan (perlecan) (Hutter et al., 2000; Yurchenco et al., 2004). Also attached to this matrix are a wide variety of signaling molecules and growth factors, including netrin, slit, wnt, SPARC and others (Schwarzbauer and Spencer, 1993; Wadsworth et al., 1996; Kang and Kramer, 2000; Pan et al., 2006; Quinn et al., 2006). The BL is often physically linked to the underlying plasma membrane by cell adhesion molecules (CAMs), including integrins and dystroglycan, and perhaps via sulfated glycolipids and proteoglycans (syndecan) (Yurchenco et al., 2004; Kramer, 2005). Hemicentin, which is synthesized by the gonadal leaders and bodywall muscles, is integrated into specialized matrices, including the mantle of the touch  dendrites, the BL associated with the longitudinal nerve cords and nerve ring, the uterine-seam attachment, apical surfaces that surround the rachis of the germline, and the tendons around the pharynx (PeriFIG 3 and PeriFIG 4) (Vogel and Hedgecock, 2001). It is also secreted by the anchor cell in early L3 stage securing the anchor cell to the BL prior to cell invasion during vulva morphogenesis (Sherwood et al., 2005). 
+
+
+
+   3.2) Specialized Extracellular Matrices
+
+The main processes of four mechanosensory (ALM, PLM) neurons are bounded by a specialized extracellular matrix, called the mantle, which helps to maintain the processes in close association with the cuticle and is part of the mechanical coupling between the cuticle and the nerve membrane (NeuroFIG 9D) (Hekimi and Kershaw, 1993). Fibrous organelle-like structures, formed by the neighboring hypodermis, are positioned periodically along the length of the touch receptor process, in close contact with the mantle on the cuticle side (NeuroFIG 9E-G). These are thought to be the sites at which the touch receptor process is anchored to the cuticle via the ECM (Tavernarakis and Driscoll, 1997). Mantle proteins are synthesized by the touch receptor neurons, hypodermis and muscle, and they include a mantle-specific collagen (MEC-5), hemicentin (HIM-4), and other matrix proteins such as MEC-9 and MEC-1 (Du et al., 1996; Vogel and Hedgecock, 2001). Mantle proteins organize the placement of the receptor (degenerin) channel complex in the nerve process and are believed to be important for mechanotransduction, although the attachment of the nerve process to the body wall per se is not essential for touch sensitivity (see Nervous System; Vogel and Hedgecock, 2001; Emtage et al., 2004; OâHagan and Chalfie, 2006).
+
+3.2.2 Rachis Coat
+
+The apical surface of the plasma membrane that surrounds the central rachis of each gonad arm is covered by a uniform layer of ECM called the rachis coat, which is mainly composed of hemicentin (HIM-4) (PeriFIG 3) (Vogel and Hedgecock, 2001; Hall, unpublished). At hatching, hemicentin is seen in the lateral extracellular space between the germline cells. Later, as the germ cells proliferate, hemicentin accumulates as a 0.2- to 0.3-Î¼m-thick layer on the apical surfaces of the distal gonad in a quasihexagonal distribution. More proximally, a diffuse sheet of hemicentin surrounds the rachis along the meiotic germ cells. The hemicentin layer may help to reinforce the isolation of adjacent spindles in the cortical layer of the mitotic germline syncytium and prevent abortive cytokinesis and sporadic cell refusion, because frequent mitotic chromosome loss and binucleate germline cells are found in hemicentin mutants (Vogel and Hedgecock, 2001). The rachis coat may also function in oocyte maturation (see Reproductive System - Germline).
+
+3.2.3 Fibrous Connective Tissue: Tendonous Structures
+
+Four rows of radially extending, elongated tendonous structures (also called âflexible tracksâ) link the BL of the pharynx to the merged BL of the body wall muscles and hypodermis (PeriFIG 4) (Muriel et al., 2005; Bumbarger et al., 2006; AxÃ¤ng et al., 2007). These tendonous tracks run radially outward from the pharynx and pass directly between muscle pairs in each muscle quadrant in the head to reach the muscle-hypodermis BL. Besides the RIP neuron processes, they are the only documented structures to span the width of the pseudocoelom. Each tendon row contains at least six to eight tendons as judged by electron microscopy (TEM). The principal known components of these tendons are hemicentin and fibulin (Vogel and Hedgecock, 2001; Muriel et al., 2005). As the animal moves, tendons anchored at each end by merging with BL can change dramatically in length. They flex during pharyngeal pumping and shift in orientation as the pharynx changes in length to tilt obliquely forwards or backwards. These motions suggest the tendons may help to hold the pharynx in position within the bodywall. In certain mutations that cause twisting of the overall pharynx structure, these tendons can stretch even more dramatically without rupture, retaining their anchorage points and becoming twisted around the outside of the distorted pharynx (AxÃ¤ng et al., 2007). Other hemicentin tracks run along the anterior-posterior axis between the intestine and bodywall, but are not clearly anchored on either end (Vogel and Hedgecock, 2001; Hall, unpublished).
+
+3.2.4 Oocyte Covering (Zona Pellucida)
+
+Each unfertilized primary oocyte briefly forms a visible basal lamina while lying within the somatic gonad, just before entering the spermatheca (PeriFIG 2). This layer appears to include laminin (Huang et al., 2003), and probably includes other extracellular matrix components that may be equivalent to ZP glycoproteins of the zona pellucida. This layer is not known to hinder fusion of the oocyte and spermatocyte, and some components may contribute afterwards to the fertilization membrane.
+
+  4) Specialized Glycoprotein Matrices
+
+   4.1) Cuticle
+
+   4.2) Intestine
+
+   4.3) Excretory Canal
+
+   4.4) Sheath Cell
+
+The lumen of the amphid sheath cell encloses the dendrites of the amphid neuron cilia, and is also open to the exterior of the animal.  Surrounding the dendrites, the luminal volume is completely filled with an electron-dense material that is secreted from the sheath cell via large membranous organelles (see Nervous System - Support Cells; NeuroFIG 24D) (Perkins et al., 1986). This material contains glycoproteins that can leak out of the amphid opening to coat the head of the animal in a thin glycocalyx.
+
+ 4.5 Uterine Wall
+
+   4.5) Uterine Wall
+
+A distinctive thick layer coats the inner surface of the uterus, facing the lumen. The luminal uterine membrane is characterized by highly irregular bends that may help create separate microenvironments around developing embryos. The glycocalyx may help to support these irregularities or act to repel bacterial invasion entering through the vulva. Some mutants affecting glycosylation have been shown to block normal egg-laying (Minniti et al., 2004).
+
+ 4.6 Fertilization Membrane
+
+   4.6) Fertilization Membrane
+
+Immediately after fusion of an oocyte and a spermatozoon within the spermatheca, the diploid cell displays a new covering, perhaps combining elements from the zona pellucida with exocytosis from intracellular stores of glycoprotein from the oocyte (PeriFIG 5) (Weidman et al., 1985). Although the presence of cortical granules within the oocyte have still not been shown in C. elegans (a possible source for this material), TEM evidence for an intact fertilization membrane has been obtained by high pressure freeze fixations of normal hermaphrodite adults (Hall and Greenstein, unpublished). This glycocalyx is also quickly removed, probably within a few minutes, as the new embryo begins to produce an eggshell underneath it. The glycocalyx breaks away into the uterine lumen and is probably dissolved or expelled from the lumen during egg-laying. Rapid production of a fertilization membrane can offer a physical block  to fertilization by more than one sperm until the eggshell is in place. 
+
+
+
+  5) Eggshell and Perivitelline Space
+
+Shortly after oocyte maturation and fertilization, a chitinous eggshell is assembled around the embryo and persists until hatching. The eggshell provides an osmotic barrier and a mechanical support that helps the embryo to resist desiccation or predation until the worm is ready to hatch, while still allowing gas exchange for respiration (Schierenberg and Junkersdorf, 1992). Before the two-cell stage, presence of an eggshell is essential for proper development (Zhang et al, 2005). The eggshell has three layers in C. elegans: an outer vitelline layer, a middle chitin-containing layer, and an inner lipid-rich layer (PeriFIG5) (Bird and Bird, 1991; Rappleye et al., 1999; Johnston et al., 2006). Other nematode species can have eggshells with up to five layers.
+
+Activation of eggshell deposition is triggered in the oocyte even if the spermatocyte lacks a nucleus (Sadler and Shakes, 2000). After sperm penetration and after the fertilization membrane is shed, the eggâs plasma membrane is thought to separate from the cytoplasm to become the thickened vitelline layer (Johnston et al., 2006). The space underlying the vitelline layer becomes filled with chitin (an N-acetyl-D-glucoseamine homopolymer) and chitin-binding proteins, forming the middle layer of the eggshell (Veronico et al 2001; Berninsone, 2006). Concomitant with middle-layer formation, embryonic cytoplasmic refringent granules are extruded to form the inner proteolipid permeability barrier layer, commonly called the lipid layer. Shortly after forming, the eggshell itself separates from the newly formed plasma membrane of the embryo to form a clear zone called the perivitelline space. This space contains the perivitelline fluid in later-stage embryos. Depending on the fixation technique, the lipid layer may appear to remain as part of the eggshell proper (high-pressure freeze fixation) or may form a deposit held against the embryonic plasma membrane, beneath the perivitelline space (laser-hole chemical fixation). In some mutants (as in pod-1), the lipid layer seems to split to occupy both locales (Rappleye et al., 1999).
+
+  6) Embryonic Sheath
+
+The embryonic sheath is secreted over the surface of the embryo by the hypodermis prior to elongation and is connected to the hypodermis directly above the circumferential actin bundles (Priess and Hirsh, 1986; Gatewood and Bucher, 1997). This extracellular layer is suggested to function in transmitting the stress of elongation longitudinally and/or sustaining the internal pressure during elongation. Trypsin treatment and digestion of embryonic sheath results in embryos with improper or arrested elongation. At the three-fold stage, the cuticle assumes the function of maintaining the animalâs morphology.
+
+  7) References
+
+Ackley, B.D., Crew, J.R., Elamaa, H., Pihlajaniemi, T., Kuo, C.J. and Kramer, J.M. 2001. The NC1/endostatin domain of Caenorhabditis elegans type XVIII collagen affects cell migration and axon guidance. J. Cell Biol. 152: 1219-1232. (http://dx.doi.org/10.1083/jcb.152.6.1219)
+
+AxÃ¤ng, C., Hall, D.H. and Pilon, M. 2007. The twisted pharynx phenotype in C. elegans. BMC Dev. Biol. 7: 61. (http://dx.doi.org/10.1186/1471-213X-7-61)
+
+BÃ©nard, C.Y., Boyanov, A., Hall, D.H. and Hobert, O. 2006. DIG-1, a novel giant protein non-autonomously mediates  maintenance of nervous system architecture. Development 133: 3329-40. (http://dx.doi.org/10.1242/dev.02507)
+
+Berninsone, PM 2006. Carbohydrates and glycosylation. In WormBook. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.125.1. (http://dx.doi.org/10.1895/wormbook.1.125.1)
+
+Bird A.F. and Bird J. 1991. The structure of nematodes. Academic Press, California.
+
+Blelloch, R.H. and Kimble, J.E. 1999. Control of organ shape by a secreted metalloprotease in the nematode Caenorhabditis elegans. Nature 399: 586-590. (http://dx.doi.org/10.1038/21196)
+
+Bossinger, O. and Schierenberg, E. 1996. The use of fluorescent marker dyes for studying intercellular communication in nematode embryos. Int. J. Dev. Biol. 40: 431-439. (http://www.ijdb.ehu.es/web/paper.php?doi=8735958)
+
+Buechner,  M. 2002. Tubes and the single C.  elegans excretory cell. Trends Cell Biol. 12: 479-484.(http://dx.doi.org/10.1016/S0962-8924(02)02364-4)
+
+Bulik, D.A. and Robbins, P.W. 2002. The Caenorhabditis elegans sqv genes and functions of proteoglycans in development. Biochim. Biophys. Acta 1573: 247-257.(http://dx.doi.org/10.1016/S0304-4165(02)00391-4)
+
+Bumbarger, D.J., Crum J., Ellisman, M.H. and Baldwin, J.G. 2006. Three-dimensional reconstruction of the nose epidermal cells in the microbial feeding nematode, Acrobeles complexus (Nematoda: Rhabditida). J. Morphol. 267: 1257-72. (http://dx.doi.org/10.1002/jmor.10456)
+
+Cheung, B.H.H., Cohen, M., Rogers, C., Albayram, O. and DeBono, M. 2005. Experience-dependent modulation of C.  elegans behavior by ambient oxygen. Curr. Biol. 15: 905-917. (http://dx.doi.org/10.1016/j.cub.2005.04.017)
+
+Cipollo, J.F., Awad,  A., Costello, C.E., Robbins, P.W. and Hirschberg, C.B. 2004. Biosynthesis in vitro of Caenorhabditis  elegans phosphorylcholine oligosaccharides. Proc. Natl. Acad. Sci. 101: 3404-3408. (http://dx.doi.org/10.1073/pnas.0400384101)
+
+Crofton, H.D. 1966. Nematodes. Hutchinson, London.
+
+De Baere, I., Liu, L., Moens, L., Van Beeumen, J., Gielens, V., Richelle, J., Trotman, C., Finch, J., Gerstein, M. and Perutz, M. 1992. Polar zipper sequence in the high affinity hemoglobin of Ascaris suum: amino acid sequence and structural interpretation. Proc.  Natl. Acad.  Sci. 89: 4638-4642. (http://www.pnas.org/content/89/10/4638.full.pdf+html)
+
+de Bono, M. and Bargmann, C.I. 1998. Natural variation in a neuropeptide Y receptor homolog modifies social behavior and food response in C. elegans. Cell 94: 679-689. (http://dx.doi.org/10.1016/S0092-8674(00)81609-8)
+
+Du, H.-P., Gu, G.Q., William, C.M. and Chalfie,  M. 1996. Extracellular proteins needed for C. elegans mechanosensation. Neuron 16: 183-194. (http://dx.doi.org/10.1016/S0896-6273(00)80035-5)
+
+Emtage, L., Gu, G, Hartwieg, E. and Chalfie, M. 2004. Extracellular proteins organize the mechanosensory channel complex in C.  elegans touch receptor neurons. Neuron 44: 795-807. (http://dx.doi.org/10.1016/j.neuron.2004.11.010)
+
+Forrester, W. C., Perens, E., Zallen, J. A. and Garriga, G. 1998. Identification of Caenorhabditis  elegans genes required for neuronal differentiation and migration. Genetics 148: 151-165. (http://www.genetics.org/cgi/content/full/148/1/151)
+
+Gatewood, B.K. and Bucher, E.A. 1997. The mup-4 locus in Caenorhabditis elegans is essential for hypodermal integrity, organismal morphogenesis and embryonic body wall muscle position. Genetics 146: 165-83. (http://www.genetics.org/cgi/reprint/146/1/165)
+
+Gems, D.H. and Maizels, R.M. 1996. An abundantly expressed mucin-like protein from Toxocara canis infective larvae: the precursor of the larval surface coat glycoproteins. Proc.  Natl. Acad.  Sci. 93: 1665-1670. (http://www.pnas.org/content/93/4/1665.full.pdf+html?sid=4be63e17-3c27-4b4d-b758-0dbcf72ad8a5)
+
+Gerisch, B. and Antebi,  A. 2004. Hormonal signals produced by DAF-9/cytochrome P450 regulate C.  elegans dauer diapause in response to environmental cues. Development 131: 1765-1776. (http://dx.doi.org/10.1242/dev.01068)
+
+Gottschalk, A. and Schafer, W.R. 2006. Visualization of integral and peripheral cell surface proteins in live Caenorhabditis elegans oocyte. J. Neurosci. Methods 154: 68-79. (http://dx.doi.org/10.1016/j.jneumeth.2005.11.016)
+
+Graham, P.L., Johnson, J.J., Wang, S.R., Sibley, M.H., Gupta, M.C. and Kramer, J.M. 1997. Type IV collagen is detectable in most, but not all, basement membranes of Caenorhabditis elegans and assembles on it issues that do not suppress it. J. Cell Biol. 137: 1171-1183. (http://dx.doi.org/10.1083/jcb.137.5.1171)
+
+Grant, B. and Hirsh, D. 1999. Receptor-mediated endocytosis in the Caenorhabditis elegans oocyte. Mol. Biol. Cell 10: 4311-4326. (http://www.molbiolcell.org/cgi/content/full/10/12/4311)
+
+Guerardel, Y., Balanzino, L., Maes, E., Leroy, Y., Coddeville, B., Oriol, R. and Strecker, G. 2001. The nematode Caenorhabditis elegans synthesizes unusual O-linked glycans: identification of glucose-substituted mucin-type O-glycans and short chondroitin-like oligosaccharides. Biochem. J. 357: 167-182. (http://www.biochemj.org/bj/357/0167/bj3570167.htm)
+
+Hall, D.H., Winfrey, V.P., Blauer, G., Hoffman, L., Furuta, T., Rose, K.L., Hobert, O. and Greenstein, D. 1999. Ultrastructural features of the adult hermaphrodite gonad of C. elegans: Relations between the germ line and soma. Dev. Biol. 212: 101-123. (http://dx.doi.org/10.1006/dbio.1999.9356)
+
+Hedgecock, E.M., Culotti, J.G., Hall, D.H. and Stern, B.G. 1987. Genetics of cell and axon migrations in Caenorhabditis  elegans. Development 100: 365â382. (http://dev.biologists.org/content/100/3/365.long)
+
+Hekimi, S. and Kershaw, D. 1993. Axonal guidance defects in a Caenorhabditis elegans mutant reveal cell-extrinsic determinants of neuronal morphology. J. Neurosci.13: 4254-427. (http://www.jneurosci.org/cgi/reprint/13/10/4254)
+
+Hemmer, R.M., Donkin, S.G., Chin, K.J., Grenache, D.G., Bhatt, H. and Politz, S.M. 1991. Altered expression of an L1-specific, O-linked cuticle surface glycoprotein in mutants of the nematode Caenorhabditis elegans. J. Cell Biol. 115: 1237-1247. (http://jcb.rupress.org/content/115/5/1237.long)
+
+Herndon, L.A., Schmeissner, P.J., Dudaroneck, J.M., Brown, P.A., Listner, K.M., Paupard, M.C., Hall, D.H. and Driscoll, M. 2002. Stochastic and genetic factors influence tissue-specific decline in ageing C. elegans. Nature 419: 788-794. (http://dx.doi.org/10.1038/nature01135)
+
+Hilliard, M.A. and Bargmann, C.I. 2006. Wnt signals and frizzled activity orient anterior-posterior axon outgrowth in C. elegans. Dev. Cell 10: 379-390. (http://dx.doi.org/10.1016/j.devcel.2006.01.013)
+
+Hodgkin, J.A., Kuwabara, P.E. and Corneliussen, B. 2001. A novel bacterial pathogen, Microbacterium nematophilum, induces morphological change in the nematode Caenorhabditis elegans. Curr. Biol. 10: 1615-1618. (http://dx.doi.org/10.1016/S0960-9822(00)00867-8)
+
+Hoflich, J., Berninsome, P., Gobel, C., Gravato-Nobre, M.J., Libby, B.J., Darby, C., Politz, S.M., Hodgkin, J., Hirschberg, C.B. and Baumeister, R. 2004. Loss of srf-3-encoded nucleotide sugar transporter activity in Caenorhabditis elegans alters surface antigenicity and prevents bacterial adherence. J. Biol. Chem. 279: 30440-30448. (http://dx.doi.org/10.1074/jbc.M402429200)
+
+Hoogewijs, D., Geuens, E., Dewilde, S., Moens, L., Vierstraete, A., Vinogradov, S. and Vanfleteren, J.R. 2004 Genome-wide analysis of the globin gene family of C.  elegans. IUBMB Life 56: 697-702. (http://dx.doi.org/10.1080/15216540500037562)
+
+Huang, C-C., Hall, D.H., Hedgecock, E.M., Kao, G., Karantza, V., Vogel, B., Hutter, H., Chisholm, A.D.,Yurchenco, P.D. and Wadsworth, W.G. 2003. Laminin a subunits and their role in C. elegans development. Development 130: 3343-3358. (http://dx.doi.org/10.1242/dev.00481)
+
+Huang, P. and Stern, M.J. 2004. FGF signaling functions in the hypodermis to regulate fluid balance in C. elegans. Development 131: 2595-2604. (http://dx.doi.org/10.1242/dev.01135)
+
+Hutter. H., Vogel, B.E., Plenefisch, J.D., Norris, C.R., Proenca, R.B., Spieth, J., Guo, C-B., Mastwal, S.S., Zhu, X., Scheel, J.K. and Hedgecock, E.M. 2000. Conservation and novelty in the evolution of cell adhesion and extracellular matrix. Science 287: 989-994. (http://dx.doi.org/10.1126/science.287.5455.989)
+
+Hwang, H.Y. and Horvitz,  H.R. 2002. The Caenorhabditis  elegans vulval morphogenesis gene sqv-4 encodes a UDP-glucose dehydrogenase that is temporally and spatially regulated. Proc. Natl. Acad. Sci. 99: 14224-14229.(http://dx.doi.org/10.1073/pnas.172522499)
+
+Jia, K., Albert, P.S. and Riddle, D.L. 2002. DAF-9, a cytochrome P450 regulating C. elegans larval development and adult longevity. Development 129: 221-231. (http://dev.biologists.org/content/129/1/221.long)
+
+Johnston, W.  L., Krizus, A., Dennis, J.W. 2006. The eggshell is required for meiotic fidelity, polar-body extrusion and polarization of the C. elegans embryo. BMC Biology 4: 35. (http://dx.doi.org/10.1186/1741-7007-4-35)
+
+Jones, S.J.M. and Baillie, D.L. 1995. Characterization of the let-653 gene in Caenorhabditis elegans. Mol. Gen. Genet. 248: 719-726.(http://dx.doi.org/10.1007/BF02191712)
+
+Joshua, G.W.P., Karlyshev, A.V., Smith, M.P., Isherwood, K.E., Titball, R.W. and Wren, B.W. 2003. A Caenorhabditis elegans model of Yersinia infection: biofilm formation on a biotic surface. Microbiology 149: 3221-3229. (http://mic.sgmjournals.org/cgi/content/full/149/11/3221?view=long&pmid=14600234)
+
+Kang, S.H. and Kramer, J.M. 2000. Nidogen is nonessential and not required for normal type IV collagen localization in Caenorhabditis elegans. Mol. Biol. Cell 11: 3911-3923. (http://www.molbiolcell.org/cgi/content/full/11/11/3911)
+
+Kao, G., Huang, C-c., Hedgecock, E.M., Hall, D.H. and Wadsworth, W. 2005. The role of the laminin Î² subunit in laminin heterotrimer assembly and basement membrane function and development in C.  elegans. Dev.  Biol. 290: 211-219. (http://dx.doi.org/10.1016/j.ydbio.2005.11.026)
+
+Kim, S.K. and Wadsworth, W.G. 2000. Positioning of longitudinal nerves in C.  elegans by nidogen. Science 288: 150-154. (http://dx.doi.org/10.1126/science.288.5463.150)
+
+Kimble, J.E. and Sharrock,  W.J. 1983. Tissue-specific synthesis of yolk proteins in C. elegans. Dev. Biol. 96: 189-196. (http://dx.doi.org/10.1016/0012-1606(83)90322-6)
+
+Kramer, J.M. 2005. Basement membranes. In WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.16.1. (http://dx.doi.org/10.1895/wormbook.1.16.1)
+
+Kuno, K., Baba, C., Asaka, A., Matsushima,  C., Matsushima, K., and Hosono, R. 2002. The Caenorhabditis elegans ADAMTS family gene adt-1 is necessary for morphogenesis of the male copulatory organs. J. Biol. Chem. 277: 12228-12236. (http://dx.doi.org/10.1074/jbc.M200144200)
+
+Meighan, C.M., Cram, E.J. and Schwarzbauer, J.E. 2004. Organogenesis: cutting to the chase. Curr. Biol. 14: R948-R950. (http://dx.doi.org/10.1016/j.cub.2004.10.038)
+
+Merz, D.C., Alves, G., Kawano, T., Zheng, H. and Culotti, J.G. 2003. UNC-52/perlecan affects gonadal leader cell migrations in C. elegans hermaphrodites through alterations in growth factor signaling. Dev. Biol. 256: 173-186. (http://dx.doi.org/10.1016/S0012-1606(03)00014-9)
+
+Minning, D.M., Gow, A.J., Bonaventura, J., Braun, R., Dewhirst, M., Goldberg,  D.E. and Stamler, J.S. 1999. Ascaris haemoglobin is a nitric oxide-activated 'deoxygenase'. Nature 401: 497-502.(http://dx.doi.org/10.1038/46822)
+
+Minniti, A.N., Labarca, M., Hurtado, C. and Brandan, E. 2004. Caenorhabditis elegans syndecan (SDN-1) is required for normal egg laying and associates with the nervous system and the vulva. J. Cell Sci. 117: 5179-90. (http://dx.doi.org/10.1242/jcs.01394)
+
+Muriel, J.M., Dong, C., Hutter, H. and Vogel, B.E. 2005. Fibulin-1C and Fibulin-1D splice variants have distinct functions and assemble in a hemicentin-dependent manner. Development 132: 4223-4234. (http://dx.doi.org/10.1242/dev.02007)
+
+Nelson, F.K. and Riddle, D.L. 1984. Functional study of the Caenorhabditis elegans secretory-excretory system using laser microsurgery. J. Exp. Zool. 231: 45-56. (http://dx.doi.org/10.1002/jez.1402310107)
+
+O'Hagan, R. and Chalfie, M. 2005. Mechanosensation in Caenorhabditis  elegans. Int. Rev. Neurobiol. 69: 169-203. (http://dx.doi.org/10.1016/S0074-7742(05)69006-X)
+
+Pan, C.L., Howell, J.E., Clark, S.G., Hilliard, M., Cordes, S., Bargmann, C.I. and Garriga, G. 2006. Multiple Wnts and frizzled receptors regulate anteriorly directed cell and growth cone migrations in Caenorhabditis elegans. Dev. Cell 10: 367-377. (http://dx.doi.org/10.1016/j.devcel.2006.02.010)
+
+Perkins, L.A., Hedgecock, E.M., Thomson, J.N. and Culotti, J.G. 1986. Mutant sensory cilia in the nematode Caenorhabditis elegans. Dev. Biol. 117: 456-87. (https://www.wormatlas.org/Perkins_1986/Perkins_1986.html)
+
+Prasad,  B.C. and Clark, S.G. 2006. Wnt signaling establishes anteroposterior neuronal polarity and requires retromer in C. elegans. Development 133: 1757-1766. (http://dx.doi.org/10.1242/dev.02357)
+
+Priess, J.R. and Hirsh, D.I. 1986. Caenorhabditis elegans morphogenesis: The role of the cytoskeleton in elongation of the embryo. Dev. Biol. 117: 156-173. (http://dx.doi.org/10.1016/0012-1606(86)90358-1)
+
+Quinn, C.C., Pfeil, D.S., Chen, E., Stovall, E.L., Harden, M.V., Gavin, M.K., Forrester, W.C., Ryder, E.F., Soto, M.C. and Wadsworth, W.G. 2006. UNC-6/netrin and SLT-1/slit guidance cues orient axon outgrowth mediated by MIG-10/RIAM/lamellipodin. Curr. Biol. 16: 845-53.(http://dx.doi.org/10.1016/j.cub.2006.03.025)
+
+Rao, A.U., Carta, L.K., Lesuisse, E. and Hamza, I. 2005. Lack of heme synthesis in a free-living eukaryote. Proc. Natl. Acad.  Sci. 102: 4270-4275. (http://dx.doi.org/10.1073/pnas.0500877102)
+
+Rappleye, C.A., Paredez, A.R., Smith, C.W., McDonald, K.L. and Aroian, R.V. 1999. The coronin-like protein POD-1 is required for anterior-posterior axis formation and cellular architecture in the nematode Caenorhabditis  elegans. Genes Dev. 13: 2838-2851. (http://genesdev.cshlp.org/content/13/21/2838.long)
+
+Sadler, P.L. and Shakes, D.C. 2000. Anucleate Caenorhabditis elegans sperm can crawl, fertilize oocytes and direct anterior-posterior polarization of the 1-cell embryo. Development 127: 355-366. (http://dev.biologists.org/content/127/2/355.long)
+
+Schierenberg, E. and Junkersdorf, B. 1992. The role of eggshell and underlying vitelline membrane for normal pattern formation in the early C. elegans embryo. Roux's Arch. Dev. Biol. 202: 10-16. (http://dx.doi.org/10.1007/BF00364592)
+
+Schwarzbauer, J.E. and Spencer,  C.S. 1993. The Caenorhabditis elegans homolog of the extracellular calcium-binding protein sparc/osteonectin affects nematode body morphology and mobility. Mol. Biol. Cell 49: 41-952. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC275724/?tool=pubmed)
+
+Sharrock, WJ. 1983. Yolk proteins of C. elegans. Dev. Biol. 96: 182-188. (http://dx.doi.org/10.1016/0012-1606(83)90321-4)
+
+Sherwood, D.R., Butler, J.A., Kramer, J.M. and Sternberg, P.W. 2005. FOS-1 promotes basement-membrane removal during anchor-cell invasion in C. elegans. Cell 121: 951-62. (http://dx.doi.org/10.1016/j.cell.2005.03.031)
+
+Tavernarakis, N.N. and Driscoll, M.A. 1997. Molecular modeling of mechanotransduction in the nematode Caenorhabditis  elegans. Ann. Rev. Physiol. 59: 659-689. (http://dx.doi.org/10.1146/annurev.physiol.59.1.659)
+
+Veronico, P., Gray, L.J., Jones, J.T., Bazzicalupo, P., Arbucci, S., Cortese, M.R., Di Vito, M. and De Giorgi, C. 2001. Nematode chitin synthases: gene structure, expression and function in Caenorhabditis elegans and the plant parasitic nematode Meloidogyne  artiellia. Mol. Genet. Genomics 266: 28-34. (http://dx.doi.org/10.1007/s004380100513)
+
+Vogel, B.E. and Hedgecock, E.M. 2001. Hemicentin, a conserved extracellular member of the immunoglobulin superfamily, organizes epithelial and other cell attachments into oriented line-shaped junctions. Development 128: 883-894. (http://dev.biologists.org/content/128/6/883.long)
+
+Wada, K., Sato, H., Kinoh, H., Kajita, M., Yamamoto, H. and Seiki, M. 1998. Cloning of three Caenorhabditis elegans genes potentially encoding novel matrix metalloproteinases. Gene 211: 57-62. (http://dx.doi.org/10.1016/S0378-1119(98)00076-6)
+
+Wadsworth, W.G., Bhatt, H. and Hedgecock, E.M. 1996. Neuroglia and pioneer neurons express UNC-6 to provide global and local netrin cues for guiding migrations in C. elegans. Neuron. 16: 35-46. (http://dx.doi.org/10.1016/S0896-6273(00)80021-5)
+
+Weidman, P.J., Kay, E.S. and Shapiro, B.M. 1985. Assembly of the sea urchin fertilization membrane: Isolation of proteoliaisin, a calcium-dependent binding protein. J. Cell Biol. 100: 938-946. (http://jcb.rupress.org/content/100/3/938.long)
+
+White, J.G., Southgate, E., Thomson, J.N. and Brenner,  S. 1986. The structure of the nervous system of the nematode Caenorhabditis  elegans. Phil.  Trans. Roy.  Soc. Lond. 314B: 1-340. (https://www.wormatlas.org/ver1/MoW_built0.92/toc.html)
+
+White, J. 1988. The Anatomy. In The nematode C. elegans (ed. W. B. Wood). Chapter 4. pp 81-122. Cold Spring Harbor Laboratory Press, New York.(http://cshmonographs.org/index.php/monographs/article/view/5016)
+
+Yurchenco, P.D. and Wadsworth, W.G. 2004. Assembly and tissue functions of early embryonic laminins and netrins. Curr. Opin. Cell Biol. 16: 572-9.(http://dx.doi.org/10.1016/j.ceb.2004.07.013)
+
+Yurchenco, P.D., Amenta, P.S. and Patton, B.L. 2004. Basement membrane assembly, stability and activities observed through a developmental lens. Matrix Biol. 22: 521-38. (http://dx.doi.org/10.1016/j.matbio.2003.10.006)
+
+Zhang, Y., Foster, J.M., Nelson, L.S., Dong, M. and Carlow, C.K.S. 2005.The chitin synthase genes chs-1 and chs-2 are essential for C. elegans development and responsible for chitin deposition in the eggshell and pharynx, respectively. Dev. Biol. 285: 330-339. (http://dx.doi.org/10.1016/j.ydbio.2005.06.037)
+

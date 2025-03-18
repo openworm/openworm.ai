@@ -1,3 +1,4 @@
+from openworm_ai import print_
 from bs4 import BeautifulSoup, NavigableString, Comment
 import csv
 
@@ -44,25 +45,26 @@ class WormAtlasParser:
         verbose = False
 
         with open(Path(filename), encoding="ISO-8859-1") as f:
+            print_("-- Opened: %s" % filename)
             self.html = f.read()
 
             soup = BeautifulSoup(self.html, "html.parser")
 
             count = 0
             for element in soup.body.find_all("table")[5].find_all(["p", "span"]):
-                print("%s ==================================" % count)
+                print_("%s ==================================" % count)
                 element_str = str(element)
 
                 if element is not None:
-                    # print(table.replace('\n', '%s\n'%count))
+                    # print_(table.replace('\n', '%s\n'%count))
 
                     if verbose:
-                        print(
+                        print_(
                             "%s -- |%s...|\n"
                             % (count, element_str.replace("\n", "")[:200])
                         )
                     if element.name == "p":
-                        # print(element.contents)
+                        # print_(element.contents)
                         anchor = (
                             element.contents[0]["name"]
                             if (
@@ -95,7 +97,7 @@ class WormAtlasParser:
     def _get_plain_string(self, element):
         plain = ""
         for s in element.contents:
-            # print(" >>> %s" % s)
+            # print_(" >>> %s" % s)
             if type(s) is Comment:
                 pass
             elif type(s) is NavigableString:
@@ -117,11 +119,11 @@ class WormAtlasParser:
         return text
 
     def process_header(self, element, depth):
-        print("  - HEADER: %s" % str(element).replace("\n", ""))
+        print_("  - HEADER: %s" % str(element).replace("\n", ""))
         heading = self._get_plain_string(element)
 
         if len(heading) > 0 and "style13" not in heading:
-            print("  - HEADING: [%s]" % (heading))
+            print_("  - HEADING: [%s]" % (heading))
             h_number = heading.split(" ", 1)[0]
             h_name = heading.split(" ", 1)[1]
 
@@ -138,7 +140,7 @@ class WormAtlasParser:
         r_md = str(reference)
 
         if verbose:
-            print("  - REF: %s...\n" % (r_md[:80]))
+            print_("  - REF: %s...\n" % (r_md[:80]))
 
         r_md = r_md.replace("\t", "  ")
         while "  " in r_md:
@@ -180,7 +182,7 @@ class WormAtlasParser:
         for tag in tags_to_plaintext:
             for ee in paragraph.find_all(tag):
                 cc = " ".join([str(c) for c in ee.strings])
-                # print("[%s]" % cc)
+                # print_("[%s]" % cc)
                 ee = ee.replace_with(cc)
 
         for tag in tags_to_remove:
@@ -193,7 +195,7 @@ class WormAtlasParser:
 
         for ss in paragraph.find_all("span"):
             cc = " ".join([str(c) for c in ss.strings])
-            # print("[%s]" % cc)
+            # print_("[%s]" % cc)
             ss = ss.replace_with(cc)
 
         p = self._get_plain_string(paragraph)
@@ -211,7 +213,7 @@ class WormAtlasParser:
         p = p.replace(RETURN, "\n\n")
 
         if verbose:
-            print(p)
+            print_(p)
 
         if len(p) > 0:
             self.plaintext.write("%s\n\n" % p)
@@ -267,7 +269,7 @@ def read_all_cell_info_file():
                 if "uscle" not in cell_lineage:
                     info += f" The cell lineage of {cell_name} is {cell_lineage}."
 
-                print(info)
+                print_(info)
                 plaintext.write("%s\n\n" % info)
                 markdown.write("## %s\n\n%s\n\n" % (cell_name, info))
 
@@ -278,7 +280,7 @@ def read_all_cell_info_file():
 
     json_file = doc_model.to_json_file("%s/%s.json" % (JSON_DIR, ref.replace(" ", "_")))
 
-    print("Written to: %s" % json_file)
+    print_("Written to: %s" % json_file)
 
 
 if __name__ == "__main__":
@@ -315,21 +317,98 @@ if __name__ == "__main__":
         "/hermaphrodite/cuticle/Cutframeset.html",
     ]
 
-    guides["Gap Junctions"] = [
-        CORPUS_LOCATION + "/wormatlas/Handbook - Gap Junctions.html",
-        "/hermaphrodite/gapjunctions/Gapjunctframeset.html",
+    guides["Hypodermis"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Epithelial System Hypodermis.html",
+        "/hermaphrodite/hypodermis/Hypframeset.html",
+    ]
+    guides["Seam cells"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Epithelial System Seam Cells.html",
+        "/hermaphrodite/seam cells/Seamframeset.html",
+    ]
+    guides["Interfacial epithelial cells"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Epithelial System Interfacial Cells.html",
+        "hermaphrodite/interfacial/Interframeset.html",
+    ]
+    guides["Atypical epithelial cells"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Epithelial System Atypical Cells.html",
+        "/hermaphrodite/atypical/Atypframeset.html",
+    ]
+    guides["Excretory System"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Excretory System.html",
+        "/hermaphrodite/excretory/Excframeset.html",
+    ]
+    guides["Muscle System Introduction"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Muscle System Introduction.html",
+        "/hermaphrodite/muscleintro/MusIntroframeset.html",
+    ]
+    guides["Somatic Muscles"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Muscle System Somatic Muscle.html",
+        "/hermaphrodite/musclesomatic/MusSomaticframeset.html",
+    ]
+    guides["Nonstriated Muscle"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Muscle System Nonstriated Muscle.html",
+        "/hermaphrodite/musclenonstriated/MusNonstriframeset.html",
+    ]
+    guides["GLR Cells"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Muscle System GLR Cells.html",
+        "/hermaphrodite/muscleGLR/MusGLRframeset.html",
+    ]
+    guides["Head Mesodermal Cell"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Muscle System Head Mesodermal Cell.html",
+        "/hermaphrodite/muscleheadcell/Mushmcframeset.html",
     ]
 
     guides["Nervous System"] = [
         CORPUS_LOCATION
         + "/wormatlas/Handbook - Nervous System General Description.html",
-        "hermaphrodite/nervous/Neuroframeset.html",
+        "/hermaphrodite/nervous/Neuroframeset.html",
     ]
+    guides["Neuronal Support Cells"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Nervous System Neuronal Support Cells.html",
+        "/hermaphrodite/neuronalsupport/Neurosupportframeset.html",
+    ]
+    guides["Reproductive System"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Reproductive System Overview.html",
+        "/hermaphrodite/reproductive/Reproframeset.html",
+    ]
+    guides["Somatic Gonad"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Reproductive System Somatic Gonad.html",
+        "/hermaphrodite/somatic gonad/Somframeset.html",
+    ]
+    guides["Germ Line"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Reproductive System Part III Germ Line.html",
+        "/hermaphrodite/germ line/Germframeset.html",
+    ]
+    guides["Egg-laying Apparatus"] = [
+        CORPUS_LOCATION
+        + "/wormatlas/Handbook - Reproductive System Part VI Egg-laying Apparatus.html",
+        "/hermaphrodite/egglaying apparatus/Eggframeset.html",
+    ]
+    guides["Gap Junctions"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Gap Junctions.html",
+        "/hermaphrodite/gapjunctions/Gapjunctframeset.html",
+    ]
+
+    guides["Pericellular Structures"] = [
+        CORPUS_LOCATION + "/wormatlas/Handbook - Pericellular Structures.html",
+        "/hermaphrodite/pericellular/Periframeset.html",
+    ]
+
+    """
+    guides["XXX"] = [
+        CORPUS_LOCATION + "xxx",
+        "xxx",
+    ]"""
 
     import os
 
     # rint(openworm_ai.__file__)
-    print(os.getcwd())
+    print_(os.getcwd())
     with open(
         Path("processed/markdown/wormatlas/README.md"), "w", encoding="utf-8"
     ) as readme:

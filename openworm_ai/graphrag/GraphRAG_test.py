@@ -11,6 +11,7 @@ from llama_index.core.storage.index_store import SimpleIndexStore
 from llama_index.core.storage.docstore import SimpleDocumentStore
 from llama_index.core import load_index_from_storage
 from llama_index.embeddings.ollama import OllamaEmbedding
+from llama_index.core import PromptTemplate
 
 
 # one extra dep
@@ -19,10 +20,7 @@ from llama_index.llms.ollama import Ollama
 import glob
 import sys
 import json
-import os
-import time
 
-# from modelspec.utils import load_json
 
 STORE_DIR = "store"
 SOURCE_DOCUMENT = "source document"
@@ -31,12 +29,8 @@ SOURCE_DOCUMENT = "source document"
 def create_store(model):
     OLLAMA_MODEL = model.replace("Ollama:", "") if model is not LLM_GPT4o else None
 
-    json_inputs = [
-        file
-        for file in glob.glob("processed/json/*/*.json")
-        if os.path.normpath(file)
-        != os.path.normpath("processed/json/papers/Corsi_et_al_2015.json")
-    ]
+    json_inputs = glob.glob("processed/json/*/*.json")
+    # print_(json_inputs)
 
     documents = []
     for json_file in json_inputs:
@@ -129,6 +123,26 @@ def get_query_engine(index_reloaded, model):
 
     print_("Creating query engine for %s" % model)
 
+    # Based on: https://docs.llamaindex.ai/en/stable/examples/customization/prompts/completion_prompts/
+
+    text_qa_template_str = (
+        "Context information is"
+        " below.\n---------------------\n{context_str}\n---------------------\nUsing"
+        " both the context information and also using your own knowledge, answer"
+        " the question: {query_str}\nIf the context isn't helpful, you can also"
+        " answer the question on your own.\n"
+    )
+    text_qa_template = PromptTemplate(text_qa_template_str)
+
+    refine_template_str = (
+        "The original question is as follows: {query_str}\nWe have provided an"
+        " existing answer: {existing_answer}\nWe have the opportunity to refine"
+        " the existing answer (only if needed) with some more context"
+        " below.\n------------\n{context_msg}\n------------\nUsing both the new"
+        " context and your own knowledge, update or repeat the existing answer.\n"
+    )
+    refine_template = PromptTemplate(refine_template_str)
+
     # create a query engine for the index
     if OLLAMA_MODEL is not None:
         llm = Ollama(model=OLLAMA_MODEL)
@@ -136,67 +150,62 @@ def get_query_engine(index_reloaded, model):
             model_name=OLLAMA_MODEL,
         )
         query_engine = index_reloaded.as_query_engine(
-            llm=llm, embed_model=ollama_embedding
+            llm=llm,
+            text_qa_template=text_qa_template,
+            refine_template=refine_template,
+            embed_model=ollama_embedding,
         )
     else:
-        query_engine = index_reloaded.as_query_engine()
+        query_engine = index_reloaded.as_query_engine(
+            text_qa_template=text_qa_template,
+            refine_template=refine_template,
+        )
 
     return query_engine
 
 
-def process_query(query, model):
-    """Processes a single query, logs the exact prompt used, and prints the retrieved context."""
+def process_query(response, model):
+    response = query_engine.query(query)
 
-    print_(f"\n🔹 TESTING QUERY: {query}")
-    print_("-----------------------------------------------------------")
+    """
 
-    # Measure retrieval performance
-    start_time = time.time()
+    import pprint as pp
+    print(type(response))
+    print(dir(response))
 
-    # Run retrieval
-    retrieval_results = query_engine.query(query)
-    retrieval_texts = [str(doc) for doc in retrieval_results[:5]]  # Limit to top 2 docs
+    print('------')
+    pp.pprint(response.metadata)
+    print('------')
 
-    retrieval_time = time.time() - start_time
-    print_(f"\n🔹 Retrieval Time: {retrieval_time:.2f}s")
+    for sn in response.source_nodes:
+        print('  -- ')
+        pp.pprint(sn)
+    print('------')
+    pp.pprint(response.response)
+    print('------')"""
 
-    # Log retrieved context
-    if retrieval_texts:
-        print_("\n🔹 Retrieved Context:")
-        for idx, text in enumerate(retrieval_texts, start=1):
-            print_(f"  [{idx}] {text[:1000]}...")  # Print first 500 characters
-    else:
-        print_(
-            "⚠ No relevant documents retrieved. The model may rely on pre-trained knowledge."
-        )
-
-    # Prepare formatted query with retrieval results
-    formatted_query = (
-        "Use the retrieved context below to generate the best answer.\n\n"
-        + f" Query: {query}\n\n"
-        + " **Retrieved Context:**\n"
-        + "\n\n".join(retrieval_texts)
-    )
-
-    # Log the exact query being sent to the model
-    print_("\n Final Prompt Sent to LLM:")
-    print_(formatted_query)
-
-    # Run LLM query
-    start_time = time.time()
-    response = query_engine.query(formatted_query)
-    response_time = time.time() - start_time
-
-    # Capture response
     response_text = str(response)
+    metadata = response.metadata
+    files_used = []
+    for k in metadata:
+        v = metadata[k]
+        if SOURCE_DOCUMENT in v:
+            if v[SOURCE_DOCUMENT] not in files_used:
+                files_used.append(v[SOURCE_DOCUMENT])
 
-    print_(" Model Response:")
-    print_(response_text)
+    file_info = ",\n   ".join(files_used)
+    print_(f"""
+===============================================================================
+QUERY: {query}
+MODEL: {model}
+-------------------------------------------------------------------------------
+RESPONSE: {response_text}
+SOURCES: 
+{file_info}
+===============================================================================
+""")
 
-    print_(f" Response Time: {response_time:.2f}s")
-    print_("-----------------------------------------------------------")
-
-    return response_text
+    return response_text, metadata
 
 
 if __name__ == "__main__":
@@ -217,7 +226,8 @@ if __name__ == "__main__":
         query = "How does the pharyngeal epithelium of C. elegans maintain its shape?"
 
         queries = [
-            "How many neurons are present in the adult hermaphrodite C. elegans?"
+            "What is the main function of cell pair AVB?",
+            "In what year was William Shakespeare born? ",
         ]
 
         for query in queries:
