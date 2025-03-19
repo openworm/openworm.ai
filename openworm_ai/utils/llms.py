@@ -20,6 +20,7 @@ LLM_OLLAMA_TINYLLAMA = "Ollama:tinyllama"
 LLM_OLLAMA_PHI3 = "Ollama:phi3:latest"
 LLM_OLLAMA_PHI4 = "Ollama:phi4:latest"
 LLM_OLLAMA_GEMMA2 = "Ollama:gemma2:latest"
+LLM_OLLAMA_GEMMA3 = "Ollama:gemma3:4b"
 LLM_OLLAMA_DEEPSEEK = "Ollama:deepseek-r1:7b"
 LLM_OLLAMA_GEMMA = "Ollama:gemma:7b"
 LLM_OLLAMA_QWEN = "Ollama:qwen:4b"
@@ -44,6 +45,7 @@ PREF_ORDER_LLMS = (
     LLM_OLLAMA_PHI3,
     LLM_OLLAMA_PHI4,
     LLM_OLLAMA_GEMMA2,
+    LLM_OLLAMA_GEMMA3,
     LLM_OLLAMA_DEEPSEEK,
     LLM_OLLAMA_GEMMA,
     LLM_OLLAMA_QWEN,
@@ -202,6 +204,12 @@ def get_llm(llm_ver, temperature):
         print("Debug: Using Gemma-2")
         llm = OllamaLLM(model="gemma2:latest", temperature=temperature)
 
+    elif llm_ver == LLM_OLLAMA_GEMMA3:
+        from langchain_ollama.llms import OllamaLLM
+
+        print("Debug: Using Gemma-3")
+        llm = OllamaLLM(model="gemma3:4b", temperature=temperature)
+
     elif llm_ver == LLM_OLLAMA_DEEPSEEK:
         from langchain_ollama.llms import OllamaLLM
 
@@ -341,6 +349,9 @@ def get_llm_from_argv(argv):
     if "-ge2" in argv:
         llm_ver = LLM_OLLAMA_GEMMA2
 
+    if "-ge3" in argv:
+        llm_ver = LLM_OLLAMA_GEMMA3
+
     if "-qw" in argv:
         llm_ver = LLM_OLLAMA_QWEN
 
@@ -370,7 +381,7 @@ def get_llm_from_argv(argv):
     if "-o-t" in argv:
         llm_ver = LLM_OLLAMA_TINYLLAMA
 
-    if "o-phi3" in argv:
+    if "-o-phi3" in argv:
         llm_ver = LLM_OLLAMA_PHI3
         print(f"DEBUG: Selected LLM Version = {llm_ver}")
 

@@ -12,10 +12,12 @@ from llama_index.core.storage.docstore import SimpleDocumentStore
 from llama_index.core import load_index_from_storage
 from llama_index.embeddings.ollama import OllamaEmbedding
 from llama_index.core import PromptTemplate
+from llama_index.core import VectorStoreIndex, get_response_synthesizer
+from llama_index.core.retrievers import VectorIndexRetriever
+from llama_index.core.query_engine import RetrieverQueryEngine
 
 
 # one extra dep
-from llama_index.core import VectorStoreIndex
 from llama_index.llms.ollama import Ollama
 import glob
 import sys
@@ -80,7 +82,7 @@ def create_store(model):
 
             # create an index from the parsed markdown
             index = VectorStoreIndex.from_documents(
-                documents, embed_model=ollama_embedding
+                documents, embed_model=ollama_embedding, show_progress=True
             )
         else:
             index = VectorStoreIndex.from_documents(documents)
@@ -118,7 +120,7 @@ def load_index(model):
     return index_reloaded
 
 
-def get_query_engine(index_reloaded, model):
+def get_query_engine(index_reloaded, model, similarity_top_k=4):
     OLLAMA_MODEL = model.replace("Ollama:", "") if model is not LLM_GPT4o else None
 
     print_("Creating query engine for %s" % model)
@@ -146,19 +148,37 @@ def get_query_engine(index_reloaded, model):
     # create a query engine for the index
     if OLLAMA_MODEL is not None:
         llm = Ollama(model=OLLAMA_MODEL)
+
         ollama_embedding = OllamaEmbedding(
             model_name=OLLAMA_MODEL,
         )
+
         query_engine = index_reloaded.as_query_engine(
             llm=llm,
             text_qa_template=text_qa_template,
             refine_template=refine_template,
             embed_model=ollama_embedding,
         )
-    else:
-        query_engine = index_reloaded.as_query_engine(
+
+        query_engine.retriever.similarity_top_k = similarity_top_k
+
+    else:  # use OpenAI...
+        # configure retriever
+        retriever = VectorIndexRetriever(
+            index=index_reloaded,
+            similarity_top_k=similarity_top_k,
+        )
+
+        # configure response synthesizer
+        response_synthesizer = get_response_synthesizer(
+            response_mode="refine",
             text_qa_template=text_qa_template,
             refine_template=refine_template,
+        )
+
+        query_engine = RetrieverQueryEngine(
+            retriever=retriever,
+            response_synthesizer=response_synthesizer,
         )
 
     return query_engine
@@ -168,30 +188,41 @@ def process_query(response, model):
     response = query_engine.query(query)
 
     """
-
     import pprint as pp
+
     print(type(response))
     print(dir(response))
 
-    print('------')
+    print("------")
     pp.pprint(response.metadata)
-    print('------')
+    print("------")
 
     for sn in response.source_nodes:
-        print('  -- ')
+        print("  -- ")
+        print(f' - {sn.score}: {sn.metadata['source document']}')
         pp.pprint(sn)
-    print('------')
+    print("------")
     pp.pprint(response.response)
-    print('------')"""
+    print("------")"""
 
     response_text = str(response)
+
+    if "<think>" in response_text:  # Give deepseek a fighting chance...
+        response_text = (
+            response_text[0 : response_text.index("<think>")]
+            + response_text[response_text.index("</think>") + 8 :]
+        )
+
     metadata = response.metadata
+    cutoff = 0.2
     files_used = []
-    for k in metadata:
-        v = metadata[k]
-        if SOURCE_DOCUMENT in v:
-            if v[SOURCE_DOCUMENT] not in files_used:
-                files_used.append(v[SOURCE_DOCUMENT])
+    for sn in response.source_nodes:
+        # print(sn)
+        sd = sn.metadata["source document"]
+
+        if sd not in files_used:
+            if len(files_used) == 0 or sn.score >= cutoff:
+                files_used.append(f"{sd} (score: {sn.score})")
 
     file_info = ",\n   ".join(files_used)
     print_(f"""
@@ -201,7 +232,7 @@ MODEL: {model}
 -------------------------------------------------------------------------------
 RESPONSE: {response_text}
 SOURCES: 
-{file_info}
+   {file_info}
 ===============================================================================
 """)
 
@@ -225,8 +256,18 @@ if __name__ == "__main__":
         query = "Write 100 words on how C. elegans eats"
         query = "How does the pharyngeal epithelium of C. elegans maintain its shape?"
 
+        """
+            "What can you tell me about the properties of electrical connectivity between the muscles of C. elegans?",
+            "What are the dimensions of the C. elegans pharynx?",
+            "What color is C. elegans?",
+            "Give me 3 facts about the coelomocyte system in C. elegans",
+            "Give me 3 facts about the control of motor programs in c. elegans by monoamines",
+            "When was the first metazoan genome sequenced? Answer only with the year.","""
+
         queries = [
+            "The NeuroPAL transgene is amazing. Give me some examples of fluorophores in it.",
             "What is the main function of cell pair AVB?",
+            "What can you tell me about Alan Coulson?",
             "In what year was William Shakespeare born? ",
         ]
 

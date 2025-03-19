@@ -12,6 +12,7 @@ if [ $1 == "-quiz" ]; then
 
 elif [ $1 == "-llm" ]; then
     python -m openworm_ai.utils.llms -o-l32
+    python -m openworm_ai.utils.llms -ge3
     python -m openworm_ai.quiz.Templates -o-m
 
 else
