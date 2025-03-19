@@ -1,0 +1,36 @@
+{
+    "GLR Cells": {
+        "title": "GLR Cells",
+        "source": "https://www.wormatlas.org/hermaphrodite/muscleGLR/MusGLRframeset.html",
+        "sections": {
+            "1) Overview": {
+                "paragraphs": [
+                    {
+                        "contents": "Three pairs of GLR cells (GLRDL/R, GLRL/R, GLRVL/R) lie within the pseudocoelom at the level of the pharyngeal isthmus, slightly posterior to the nerve ring (GlrFIG 1). They are arranged in a sixfold symmetrical manner (GlrFIG 2). The cell bodies of the GLRs lie near the dorsal and ventral insertions of the muscle arms of the head, where the muscle arms enlarge to dive toward the isthmus of the pharynx. This close physical proximity may reflect the common lineage of the GLRs and the body wall muscles because both derive from the MS lineage. Their sister cells also include the head mesodermal cell, the pharyngeal musculature, and the coelomocytes (For more information see sections for: Head Mesomdermal Cell, Nonstriated Muscle, Coelomocytes)."
+                    },
+                    {
+                        "contents": "All six GLR cell somata lie posteriorly to the nerve ring, and their positioning reflects the tilt of the nerve ring. The pronounced medial turn of each head muscle arm occurs in close apposition to GLR cell bodies. Anteriorly, each GLR cell extends a thin, sheet-like process (GlrFIG 2B). On the outside, these processes are surrounded by the muscle plate that lies inside the motor end plate layer of the nerve ring, where muscles receive synaptic input from the nerve ring motor neurons (GlrFIG 2 and GlrFIG 3). Each of these processes wraps around roughly one third of the circumference of the isthmus, touching its neighbor on each side (GlrFIG 4, GlrFIG 5 and GlrFIG 3H). There is no direct connection of the GLRs to the pharyngeal basement membrane, which lies between the GLR cells and the pharynx, and there is no basement membrane separating the muscle arms from the GLR processes (White et al., 1986). Arms from each of the eight longitudinal rows of the head muscles run along specific GLR cells such that each GLRDL/R and GLRVL/R is associated with muscle arms from a single row and each GLRL and GLRR is associated with muscle arms from two rows. Gap junctions exist between GLR cells and the muscle arms and between GLRs and RME motor neurons (see Gap Junctions). However, GLR cells do not make gap junctions to one another nor are they involved in any chemical synapses."
+                    },
+                    {
+                        "contents": "Anterior to the nerve ring, GLR processes narrow down into thin processes and continue anteriorly to peter out at the level of the junction of the pharynx and the buccal cavity without any terminal specializations (GlrFIG 2 and GlrFIG 3). Throughout their length, the anterior GLR processes run in the inner labial bundles, closely apposed to the IL1 dendrites."
+                    },
+                    {
+                        "contents": "The cytoplasm of the GLR cell body is electron dense and contains a distinctive collection of membrane-bound vacuoles. With TEM, these vacuoles formally look very similar to inclusions in the distal tip cells and the coelomocytes. This suggests an active endocytic or secretory function for GLRs."
+                    }
+                ]
+            },
+            "2) Function of GLR Cells": {
+                "paragraphs": [
+                    {
+                        "contents": "Because of their location, connectivity pattern, and lineage, GLR cells are suggested to be mesodermal scaffolding cells that guide muscle arms to appropriate territories during development (White et al., 1986). The C. elegans myoD homolog hlh-1, which is expressed by lineal precursors of body wall muscle and is required for normal muscle function, is also expressed in GLR cells in late embryogenesis and larval stages. It has been suggested that hlh-1 might drive expression of cell-surface proteins that mediate recognition and contact between GLRs and head muscles (Krause et al., 1994). Similar to body wall muscle cells, GLR cells secrete type IV collagen, which is integrated into the basement membrane underlying the muscle (Graham et al., 1997; Norman and Moerman, 2000)."
+                    },
+                    {
+                        "contents": "At the anterior end of the nerve ring, the sheet-like anterior processes of GLRs briefly seal the space between the end of the somatic basement membrane of the muscle and the basement membrane of the pharynx and the pseudocoelom. Hence, anterior to this region, the narrow space between the pharynx and outer tissues is designated as an accessory pseudocoelom (see Pericellular Structures) (Z. Altun and D.H. Hall, unpubl.). It is not yet clear if there is material exchange between these two spaces. When any one of the parental cells of the GLRs (MSaaaaaa for GLRDL/R; MSapaaaa for GRLL/VL;  MSppaaaa for GLRR/VR) is killed in the embryo, the worms hatch late and arrest as starved L1-stage animals. In these animals, nerve rings are displaced anteriorly and there is widespread degeneration and vacuolation in neurons and hypodermis, which may result from disruption of the GLR seal (A. Chisholm, pers. comm.)."
+                    }
+                ]
+            },
+            "3) List of GLR Cells": {},
+            "4) References": {}
+        }
+    }
+}

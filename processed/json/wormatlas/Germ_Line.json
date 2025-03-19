@@ -1,0 +1,73 @@
+{
+    "Germ Line": {
+        "title": "Germ Line",
+        "source": "https://www.wormatlas.org/hermaphrodite/germ line/Germframeset.html",
+        "sections": {
+            "1) General Description": {
+                "paragraphs": [
+                    {
+                        "contents": "The hermaphrodite germ line produces both male and female gametes\u00e2\u0080\u0094sperm and oocytes, respectively (see Germline Section in WormBook, Sperm Gallery). Oocytes are produced throughout adult life; sperm (spermatozoa) are generated during L4 and then used in adulthood to fertilize oocytes. The adult germ line exhibits distal\u00e2\u0080\u0093proximal polarity, with a mitotic cell population located at the distalmost end of the gonad and meiotic cells, extending proximally. Among the meiotic cells is also a gradient of meiotic progression with successive stages of meiosis I prophase extending from the distal arm, around the loop into the proximal arm of the gonad. Gametogenesis occurs in the proximal part of the gonad arm (GermFIG 1)."
+                    },
+                    {
+                        "contents": "The distal germ line is a syncytium. Germ cells have incomplete borders and are connected to one another via a central canal called the rachis (GermFIG 1 and GermFIG 2) (Hirsh et al., 1976). Part of the distal gonad is not covered by the somatic tissues (the \u00e2\u0080\u009cbare region\u00e2\u0080\u009d) and is instead ensheathed only by the gonadal basal lamina (GBL) that covers the rest of the gonad (SomaticFIG 2C) (see Reproductive System - Somatic Gonad; Hall et al., 1999). At the base of each germ cell, and covering the rachis, is a thickened extracellular matrix. This matrix contains hemicentin and is thought to reinforce and stabilize the opening of the germ cells to the rachis (GermFIG 2B; Pericellular Structures) (Vogel and Hedgecock, 2001). The end point of the rachis may differ as the animal ages. For example, in young adults, the rachis terminates within the proximal gonad, just past the loop; in older adults, the rachis terminates in the distal gonad, although still near the loop (McCarter et al., 1997). Oocytes may retain a vestigial connection to the rachis even after moving well past its apparent end point (J. White, pers. comm.), so that a maturing oocyte in the proximal arm might retain a thin, cryptic arm reaching through the loop to the distal rachis."
+                    }
+                ]
+            },
+            "2) Mitosis and Meiosis in the Germ Line": {
+                "paragraphs": [
+                    {
+                        "contents": "The distalmost end of the adult gonad, referred to as the mitotic zone, contains a stem-cell population. As germ cells move away from the influence of the DTC (see Reprodutive System - Somatic Gonad), they enter meiosis I and then proceed through prophase I to diakinesis (GermFIG 3A\u00e2\u0080\u0093E) (Hirsh et al., 1976; reviewed in Hubbard and Greenstein, 2000; Hansen et al., 2004)."
+                    },
+                    {
+                        "contents": "The mitotic zone of the adult is approximately 20 cell diameters in length, extending from the DTC to the transition zone (GermFIG 3A) (described below; Crittenden et al., 1994). With DAPI staining at the level of light microscopy, M-phase nuclei can be distinguished from the rest of the cell cycle: Nuclei are relatively uniform and, at any given time, have a hazy fluorescence in the center and brighter circumferential staining. Condensed chromatin appears as nuclei enter prometaphase. The average number of M-phase nuclei visible in any given mitotic zone in the adult is low, about two nuclei per arm (J. Maciejowski and E.J. Hubbard, pers. comm.). At the level of electron microscopy, mitotic germ cells are uniform in size and appearance (GermFIG 2). Each cell is roughly cuboidal, with a large nucleus. The cytoplasm contains a few mitochondria, limited rough endoplasmic reticulum (RER), and few free ribosomes. The rachis itself is also filled with RER and ribosomes, but  contains more mitochondria. The transition zone is characterized by germ cells entering the early phases of meiotic prophase (leptotene and zygotene) and is defined as the area between the distalmost transition nucleus and the proximalmost transition nucleus (Hansen et al., 2004). A change in the nuclear morphology can be shown with DAPI: Nuclei are condensed and crescent-shaped (GermFIG 3D)."
+                    },
+                    {
+                        "contents": "After moving through the transition zone, germ cells progress into pachytene and gradually grow. Pachytene nuclei are characterized by a distinctive \u00e2\u0080\u009cbowl of spaghetti\u00e2\u0080\u009d morphology as homologous chromosomes start to align side by side (GermFIG 3C). Exit from pachytene requires activation of a MAPK (MAP kinase) pathway, thought to be triggered by a signal from the overlying gonadal sheath (Church et al., 1995; McCarter et al., 1997). Progression of nuclei into diplotene occurs in the loop and cells become organized in single file as they enter the proximal arm (GermFIG 3)."
+                    }
+                ]
+            },
+            "3) Germ-line Programmed Cell Deaths": {
+                "paragraphs": [
+                    {
+                        "contents": "In addition to oocyte and sperm fate, programmed cell death (PCD) represents a major cell fate among adult germ cells. It is estimated that approximately one half of all potential oocytes are eliminated in the adult hermaphrodite during progression through prophase of meiosis I. Most cell deaths occur near the loop region of the gonad arm, the region containing pachytene-stage germ cells (see GermFIG 3A,C). It has been proposed that these excess germ cells may serve as a nurse cell population, providing proteins and other cytoplasmic components to surviving germ cells (Hengartner, 1997). Electron and light microscopy analyses of dying cells reveal that cell deaths occur by apoptosis (GermFIG 4A\u00e2\u0080\u0093C) (Gumienny et al., 1999). As in somatic tissues, cell death execution depends on ced-3, ced-4, and ced-9 function. However, genetic evidence also suggests that somatic and germ cell death mechanisms may not be entirely identical (Hengartner et al., 1992; Gumienny et al., 1999). Overlying gonadal sheath cells (likely sheath-cell pair 2) engulf cell death corpses (Gumienny et al., 1999)."
+                    }
+                ]
+            },
+            "4) Oocyte Maturation, Ovulation and Fertilization": {
+                "paragraphs": [
+                    {
+                        "contents": "Oocyte maturation takes place in the oocyte closest to the spermatheca, just before ovulation, and is stimulated by sperm-derived major sperm protein (MSP) (GermFIG 5) (Miller et al., 2001). During maturation, nuclear envelope breakdown (NEBD; also known as germinal vesicle breakdown) occurs, the nucleus becomes less obvious, and cortical rearrangements cause the oocyte to become more spherical. Chromosome arrangement changes as bivalent chromosomes leave diakinesis and begin to align onto the metaphase plate (Ward and Carrel, 1979; McCarter et al., 1999)."
+                    },
+                    {
+                        "contents": "Ovulation follows oocyte maturation. Signals from the maturing oocyte and MSP stimulate the rate and intensity of sheath contraction from a basal rate of 10\u00e2\u0080\u009313 contractions/minute to approximately 19 contractions/minute (McCarter et al., 1999; Miller et al., 2001, 2003). Oocyte maturation also stimulates distal spermathecal dilation through LIN-3/LET-23 RTK pathway activation and IP3 signaling (Clandinin et al., 1998; McCarter et al., 1999; Bui and Sternberg, 2002). The dilated spermatheca is pulled over the oocyte by the contracting sheath, and the spermatheca then closes. The oocyte is immediately penetrated by a sperm and fertilized. Cell\u00e2\u0080\u0093cell recognition between gametes during this process is mediated by SPE-9, a sperm-specific, epidermal growth factor (EGF)-repeat-containing transmembrane protein (Singson et al., 1998). Cytoplasmic streaming in the oocyte accompanies fertilization, meiosis is completed, and eggshell secretion commences (Ward and Carrel, 1979; Singson, 2001). The newly formed embryo then passes from the spermatheca to the uterus via the spermathecal-uterine valve."
+                    }
+                ]
+            },
+            "5) Germ-line Development": {
+                "paragraphs": [
+                    {
+                        "contents": "Germ-line development spans L1 to early adulthood (GermFIG 6; GermMOVIE 1). All germ cells are descended from either Z2 or Z3 (Schedl, 1997; Hubbard and Greenstein, 2000). In contrast to somatic lineage development, germ-line cell divisions appear to be variable with respect to their timing and planes of division, and hence the precise lineal relationships between these cells are not known (Kimble and Hirsh, 1979). In L4, approximately 37 meiotic cells per arm at the most proximal end of the germ line commit to sperm development. Subsequently, the germ line switches from making sperm to making oocytes for the remainder of development and throughout adulthood. This switch between male and female cell fate results from germ-line modulation of sex determination pathway activity (Kuwabara and Perry, 2001). Germ-line development depends on interactions with the overlying somatic gonad. Somatic gonad cells, or their precursors, affect the timing and position of the germ-line mitosis/meiosis decision, and they exit from pachytene, gametogenesis, and male gamete fate during germ-line sex determination (Kimble and White, 1981; Seydoux et al., 1990; McCarter et al., 1997; Rose et al., 1997; Pepper et al., 2003; Killian and Hubbard, 2004)."
+                    }
+                ]
+            },
+            "6) Spermatogenesis and Spermiogenesis": {},
+            "See) <a href=\"https://www.wormatlas.org/Wardsperm/sperm.htm\" target=\"_blank\">Sperm Gallery</a> for detailed pictures and videos": {
+                "paragraphs": [
+                    {
+                        "contents": "The germ line of each gonad arm produces about 150 sperm during L4 (GermFIG 6 and GermFIG 7A) (L\u00e2\u0080\u0099Hernault, 1997). Approximately 37 diploid germ cells per gonad arm form primary spermatocytes while still attached to the rachis. After pachytene, spermatocytes detach from the rachis and complete meiosis, generating haploid spermatids. This process of spermatid formation is called spermatogenesis (GermFIG 7B, C&D) (Ward et al., 1981)."
+                    },
+                    {
+                        "contents": "Developing spermatocytes contain a large number of specialized vesicles called fibrous body-membranous organelles (FB-MOs) (GermFIG8 A&B and GermFIG 9A). These organelles contain proteins required in the future spermatids and spermatozoa, including MSP (Ward and Klass, 1982). During development, the FB-MOs partition with the portion of the spermatocyte destined to become the future spermatid (Ward, 1986). The residual body (GermFIG 7B&7D, Budding Spermatids Figure) acts as a deposit area for proteins and organelles no longer required by the developing spermatid (L\u00e2\u0080\u0099Hernault, 1997; Arduengo et al., 1998; Kelleher et al., 2000).\n\n"
+                    },
+                    {
+                        "contents": "Spermatogenesis takes place within the proximal gonad (GermFIG 7B). The formed spermatids are pushed into the spermatheca by the first oocyte during the first ovulation. In the spermatheca, an unknown signal induces these sessile spermatids to undergo morphogenesis into mature, amoeboid spermatozoa (sperm) (cf. GermFIG 9B&C, Spermatozoon SEM and TEM) (Nelson and Ward, 1980; Ward et al., 1983). This process of activation is known as spermiogenesis (See Spermiogenesis Figure and Video in Sperm Gallery)."
+                    },
+                    {
+                        "contents": "Maturing spermatids and spermatozoa have highly condensed nuclei and tightly packed mitochondria (GermFIG 9B&C, Spermatozoon TEM Figure). In spermatids, MOs (now lacking the FB) locate near the cell periphery (GermFIG 9B). During spermatid activation, MOs fuse with the plasma membrane, releasing their contents (primarily glycoproteins) onto the cell surface. A fusion pore is generated on the cell surface by the MO collar (GermFIG 9C). Mutants affected in MO fusion produce sperm with defective motility, suggesting that MO content enhances sperm mobility (Ward et al., 1981; Roberts et al., 1986; Achanzar and Ward, 1997). Unlike sperm in many other animal phyla, C. elegans sperm are not flagellated. Rather, spermatid activation involves the formation of a foot or pseudopodium that allows the spermatozoon to attach to the walls of the spermathecal lumen and to crawl by projecting from and dragging the cell body (see Sperm Crawling and Treadmilling Videos). This motility is driven by dynamic polymerization of MSP, which, in addition to containing sequences that mediate extracellular signaling (described above; Miller et al., 2001), has an intracellular cytoskeletal function (Italiano et al., 1996; Roberts and Stewart, 2000)."
+                    }
+                ]
+            },
+            "7) References": {}
+        }
+    }
+}

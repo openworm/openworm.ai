@@ -1,0 +1,26 @@
+Head Mesodermal Cell
+
+  1) Head Mesodermal Cell
+
+The head mesodermal cell (hmc) and its homolog originate from the embryonic MS lineage and are sisters of gonadal cells Z4 and Z1, respectively (HmcFIG 1; Sulston et al., 1983). This single cell in the head lies in the pseudocoelom on the dorsal posterior side of the pharynx (HmcFIG 2). In the embryo, the hmc and hmc homolog migrate circumferentially to the dorsal midline where they meet and align anteriorâposteriorly. The more anteriorly located cell (hmc homolog) dies late in embryogenesis (HmcFIG 2).
+
+Post-embryonically, the hmc cell body lies dorsomedially to the terminal bulb of the pharynx in the head. It has anteriorly and posteriorly extended processes on both the dorsal and ventral margins of the body wall. A circumferential process from the soma splits at the  pharynx, and these two branches grow along the sides of the terminal bulb of the pharynx, making a loop around the bulb. Ventral to the bulb, these processes first merge and then split to form a ventral anterior arm and a posterior arm. The ventral anterior process runs inside the anterior loop of the right excretory gland process and adjacent to the ventral hypodermal ridge. The ventral posterior arm runs in conjunction with ventral body wall muscle arms and the hypodermal ridge and makes gap junctions with ventral body wall muscle arms (HmcFIG 3) (see also Gap Junctions). The dorsal posterior process runs some distance adjacent to the dorsal hypodermal ridge and makes gap junctions with arms from dorsal muscles. The hmc cell body is flattened and contains a nucleus much like that of body wall muscles except for a smaller nucleolus. In the adult, this cell has very few contractile fibrils, all of which seem to lie within the circular loop of the two ventral processes that wrap around the bulb. These fibrils appear to number too few to perform any significant motor function. Unlike body wall muscles, there are no places at which this cell maintains any obvious anchorage to the cuticle. The extensive gap junctions that the hmc forms with adjacent body wall muscle arms on both the dorsal and ventral sides (White et al., 1976; J.E. Sulston, unpubl.) suggest that this might be useful in synchronizing simultaneous contractions of the dorsal and ventral head and neck muscles. Such a function has been postulated to be important in initiating and coordinating the âflippingâ motions of the late embryo, before onset of the larval motor pattern (Hall and Hedgecock, 1991; E. Hedgecock and D.H. Hall, unpubl.).
+
+Similar âstomatalâ muscles in other nematodes have been postulated to help the digestive function of the grinder, because hmc surrounds the pharynx where the âteethâ are located (Chitwood and Chitwood, 1950). This function seems unlikely in C. elegans due to the inconsequential nature of its contractile motor elements.
+
+It is also conceivable that this cell could facilitate the function of the excretory system. The right excretory gland process remains in intimate contact with the hmc for more than 5â10 Î¼m and may be a site for electrical coupling, although ultrastructural evidence for gap junctions between the two cells remains ambiguous to date. Because the muscle elements of the hmc are too wispy and the hmc process lies inside the gland process loop, it cannot accomplish any squeezing activity directly on the gland. Nonetheless, perhaps by synchronizing local contraction of all head muscles, this cell could facilitate excretion of granules from the excretory gland or excretion of the liquid contents of the excretory canal sinus.
+
+  2) List of Cells
+
+  3) References
+
+Chitwood, B.G. and Chitwood, M.B. 1950. An introduction to nematology. Baltimore, University Park Press.
+
+Hall, D.H. and Hedgecock, E.M. 1991. Kinesin-related gene unc-104 is required for axonal transport of synaptic vesicles in C. elegans. Cell 65: 837-847.(http://dx.doi.org/10.1016/0092-8674(91)90391-B)
+
+Sulston, J.E., Schierenberg, E., White, J.G. and Thomson, J.N. 1983. The embryonic cell lineage of the nematode Caenorhabditis elegans. Dev. Biol. 100: 64-119. (https://www.wormatlas.org/ver1/Sulstonemblin_1983/toc.html)
+
+White, J.G., Southgate, E., Thomson, J.N. and Brenner,  S. 1976. The structure of the ventral nerve cord of Caenorhabditis  elegans. Phil.  Trans. Roy.  Soc. Lond. 275B: 327-348. (https://www.wormatlas.org/ver1/WhitestructureVNC_1976/toc1.html)
+
+White, J.G., Southgate, E., Thomson, J.N. and Brenner,  S. 1986. The structure of the nervous system of the nematode Caenorhabditis  elegans. Phil.  Trans. Roy.  Soc. Lond. 314B: 1-340. (https://www.wormatlas.org/ver1/MoW_built0.92/toc.html)
+

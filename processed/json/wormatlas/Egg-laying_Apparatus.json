@@ -1,0 +1,143 @@
+{
+    "Egg-laying Apparatus": {
+        "title": "Egg-laying Apparatus",
+        "source": "https://www.wormatlas.org/hermaphrodite/egglaying apparatus/Eggframeset.html",
+        "sections": {
+            "1) General Description": {
+                "paragraphs": [
+                    {
+                        "contents": "The egg-laying apparatus consists of the uterus, the uterine muscles, the vulva, the vulval muscles, and a local neuropil formed by the egg-laying neurons (EggFIG 1). After fertilization, embryos pass from the spermatheca to the uterus, an epithelial egg chamber that links the two arms of the gonad. There, eggs develop to the approximately 30-cell stage (roughly 2.5 hr post-fertilization at 20\u00c2\u00b0C) before being expelled into the environment via the vulva, a passageway from the uterus to the ventral exterior. Under optimal conditions, an adult hermaphrodite will lay 4-10 eggs/hour. Egg-laying is facilitated by contraction of the sex muscles: the vulval muscles, which attach to the lips of the vulva, and the uterine muscles, which encircle the uterus. Muscle activity is regulated by motor neurons, in particular motor neurons VCn (VC1-6) and HSNL/R, which synapse onto each other and onto vulval muscle arms, forming a neuropil near the vulva. Tissues comprising the egg-laying apparatus arise from several different lineages (see ReproTABLE 1). As described below, the developing gonad and vulva act as organizing centers, recruiting cells from other regions to the midbody, coordinating cell patterning between different tissues, and directing axon guidance and synaptic patterning of the neurons."
+                    }
+                ]
+            },
+            "2) The Uterus": {
+                "paragraphs": [
+                    {
+                        "contents": "The uterus consists of an anterior and posterior lobe joined to a  central chamber. The central chamber is joined ventrally to the vulval  epithelial tube (EggFIG 2A,B and EggFIG 3A). The entire outer (basal) surface of the uterus is covered by a thin basal lamina called the uterine basal lamina (UBL) (EggFIG 3B; see also EggFIG 11C). The organization of cells that comprise the uterus is most readily apparent during the late-L4 stage, after uterine and vulval morphogenesis have taken place but before the onset of ovulation, after which the uterus becomes distorted and crowded with embryos. The anterior and posterior uterus lobes are each composed of four uterine toroid epithelial syncytia: ut1, ut2, ut3 and ut4 (EggFIG 2A,B; EggTABLE 1). ut1\u00e2\u0080\u0093ut4 are joined to one another and to their neighbors both by adherens junctions (EggFIG 2C) and by pleated septate junctions, most robust between ut4 and ut3 and less obvious at the other borders. Cytoskeletal elements are sometimes evident in ut toroids, running circumferentially, suggesting that the toroids may have myoepithelial properties (Newman et al., 1996)."
+                    },
+                    {
+                        "contents": "The central chamber of the uterus is capped dorsally by the dorsal uterine (du) syncytium and ventrally by the uterine seam (utse) syncytium and uterine ventral (uv) cells uv1\u00e2\u0080\u00933 (EggFIG 2A,B and EggFIG 3A,B; EggTABLE 1). uv1\u00e2\u0080\u0093uv3 form a multilayered set of flaps, binding the ventral uterus to the dorsalmost ring of the vulva, vulF. The utse has a distinctive H-shaped structure. The two sides of the H attach to the lateral seam of the animal and hold the uterus in place. At the join, the basal lamina is thickened and contains hemicentin (EggFIG 3B) (Vogel and Hedgecock, 2001). The central portion of the utse (the crossbar of the H) initially forms a hymen membrane between uterine and vulval lumens. Passage of the first egg breaks this membrane and the two lumens become continuous."
+                    },
+                    {
+                        "contents": "Before the first fertilization event, the lumen of the uterus is narrow and blocked by a series of inwardly projecting fingers that extend from the uterine lumen wall (see EggFIG 5B and EggFIG 11B below). After passage of the first egg, the mature uterus retains a few inward septa that may derive from these earlier fingers. Both the developing and the mature uterine lumen have a continuous thickening or electron-dense layer (possibly a glycocalyx or surface coat; see EggFIG 11C). This is also apparent on the lumenal (apical) membrane, lining projecting fingers, and septa."
+                    },
+                    {
+                        "contents": "Cells of the uterus arise from dorsal uterine (DU) and ventral uterine (VU) blast cells of the larval SPh (Reproductive System - Somatic Gonad; EggFIG 4A; EggTABLE 1) (Kimble and Hirsh, 1979; Newman et al., 1996). In late L2, one of two somatic gonadal cells, Z1ppp or Z4aaa, is specified to become the anchor cell (AC), whereas the other becomes one of three VU blast cells (EggFIG 4A) (Kimble, 1981; Greenwald et al., 1983; Seydoux and Greenwald, 1989; Greenwald, 1997; Karp and Greenwald, 2003)."
+                    },
+                    {
+                        "contents": "In late L3, the AC induces VU granddaughters to adopt the \u00cf\u0080 fate (EggFIG 4B and EggFIG 5A). \u00cf\u0080 daughters subsequently differentiate into uv1 and utse cells of the ventral uterus, which lie immediately dorsal of the developing vulva (EggFIG 4C,D and EggFIG 5B,C) (Newman et al., 1995, 1996; Chang et al., 1999). The differentiation of these and many other terminal uterine cells involves dramatic changes in shape and/or fusion to achieve their final  morphology (Newman et al., 1996). As described below, the AC also patterns cells of the vulva. This dual induction of vulval and uterine cell fates by the AC ensures that cells forming the physical connection between the uterus and vulva (utse, uv1, and vulF) develop in physical register. The AC also contributes to formation of this connection by creating an opening at the apex of the vulva."
+                    }
+                ]
+            },
+            "3) The Vulva": {
+                "paragraphs": [
+                    {
+                        "contents": "The vulva (EggFIG 6A) is formed from a stack of seven nonequivalent epithelial toroids or rings: (in ventral-to-dorsal order) vulA, vulB1, vulB2, vulC, vulD, vulE, and vulF (EggFIG 3A). Each ring is either a single tetranucleate syncytium or two binucleate half-ring syncytia (vulB1 and vulB2). The vulval lumen is lined with cuticle. As described below, the toroids are formed by vulval cells of two fates: primary fate (vulE and vulF) or secondary fate (vulA\u00e2\u0080\u0093D). These cells and the toroids they form express distinct combinations of genes (Inoue et al., 2002) and, potentially, different characteristics and properties. For example, during copulation, males locate the vulva with their hook and post-cloacal sensilla, possibly in response to signals or characteristics associated specifically with toroids formed by secondary-fated cells (M. Barr, pers. comm.)."
+                    },
+                    {
+                        "contents": "Adjacent toroids are joined to their neighbors via adherens junctions (EggFIG 6E). The dorsalmost toroid vulF is also linked by adherens junctions to the uterine transitional epithelial cells uv1 and uv2 and possibly to the utse (EggFIG 3A). The ventralmost toroid vulA is linked via adherens junctions to the ventral hypodermal ridge. The vulE toroid stretches laterally and is linked on its basal (outer) surface to the body wall at the lateral seam by a specialized thickened basal lamina (EggFIG 3A,B)."
+                    },
+                    {
+                        "contents": "Vulval development spans roughly the same period as uterine development: L3 to late L4. For a summary figure of the stages of vulval development, please see EggFIG Sup1. Establishment of the vulva requires the local deformation of existing ventral structures such as the ventral nerve cord (VNC) (EggFIG 1) and ventral body wall muscles (EggFIG 3A), which are deflected laterally in this region to accommodate the vulva.  Vulval development can be divided into two phases: (1) vulval cell patterning and generation (EggFIG 7 and EggFIG 8) and (2) vulval morphogenesis (EggFIG 9). The molecular and genetic mechanisms underlying these processes, particularly cell patterning, have been studied extensively and are described in the following reviews and papers and references therein (Greenwald, 1997; Kim, 1997; Eisenmann et al., 1998; Levitan and Greenwald, 1998; Hanna-Rose and Han, 2000; Shemer and Podbilewicz, 2003; Ceol and Horvitz, 2004; Sundaram, 2004)."
+                    }
+                ]
+            },
+            "3.1) Vulval Cell Patterning": {
+                "paragraphs": [
+                    {
+                        "contents": "The cells that form the vulval toroids are the progeny of ventral hypodermal Pnp cells (EggFIG 7B) (Sulston and Horvitz, 1977). Twelve Pnp cells are born mid-L1. The six central cells P3p\u00e2\u0080\u0093P8p are endowed with equal potential to produce vulval cell lineages and are referred to as vulval precursor cells (VPCs) (EggFIG7A and EggFIG 8A). In L3, the VPCs are patterned so that vulval potential is restricted to the central three cells P5p\u00e2\u0080\u0093P7p. This patterning of the VPCs involves the combined action of three intercellular signaling events: an inductive signal emanating from the AC (LIN-3/LET-23 MAPK pathway activation), lateral signaling between VPCs (LIN-12/Notch), and signals from hyp 7 (reviewed in Greenwald, 1997; Sundaram, 2004; Sternberg, 2005)."
+                    }
+                ]
+            },
+            "3.2) Vulval Morphogenesis": {
+                "paragraphs": [
+                    {
+                        "contents": "During the final round of vulval cell divisions, the primary descendants and some secondary descendants detach from the cuticle, allowing the vulval sheet to bend inward and the cells within it to rearrange their cell\u00e2\u0080\u0093cell contacts (EggFIG 8D). This invagination step establishes the beginnings of the vulval lumen, which continues to expand during morphogenesis. Proteoglycans and their associated glycosaminoglycans, likely expressed in vulval cells, are necessary for this step, although their precise role is not known (Herman and Horvitz, 1999; Bulik et al., 2000; Hwang et al., 2003). As morphogenesis continues, cells migrate toward the center of the developing vulval primordium and wrap around to meet their anterior/posterior homologs on the other side (EggFIG 9) (Sharma-Kishore et al., 1999). Homotypic cell fusions occur between cells of homologous fate, resulting in the formation of toroid or half-toroid rings (see Inoue et al., 2002 for a useful guide to vulval cell nuclei positions during and after morphogenesis)."
+                    },
+                    {
+                        "contents": "As part of the process of joining vulval and uterine lumens, the AC creates a hole in the apex of the developing vulva (EggFIG 8). In L3, while Pnp cells are dividing, the ventral hypodermal basal lamina and gonadal basal lamina break down precisely at the site of contact with the AC. The basolateral portion of the AC crosses through this gap, attaches to, then inserts between the descendants of the primary-fated P6p lineage cells. This invasion is stimulated by a diffusible signal from the primary cells (Sherwood and Sternberg, 2003). Later, P6p terminal progeny fuse, forming a toroid (vulF) around the invading AC process. The AC is then removed by heterotypic fusion with the utse, leaving a channel in the apex of the vulva (Newman et al., 1996). When the utse membrane is ruptured by passage of the first egg, uterine and vulval lumens become continuous. \n\nDuring late L4, the vulval muscles attach to the vulval epithelial tube and to the body wall (see below). The tube then partially everts (turns inside out), generating the adult vulva in which the lumen is closed until vulval muscles contract (EggFIG 10) (Sulston and Horvitz, 1977; Sharma-Kishore et al., 1999)."
+                    }
+                ]
+            },
+            "4) Uterine and Vulval Muscles": {
+                "paragraphs": [
+                    {
+                        "contents": "The uterine (um1L/R, um2L/R) and vulval (vm1L/R, vm2L/R) muscles (EggFIG 1 and EggFIG 11A), collectively referred to as the sex muscles, are required for moving eggs through the uterus and vulva. Only 4 the 16 sex muscles receive direct inputs from the egg-laying neurons. The remaining sex muscles are electrically coupled, either directly or indirectly, to these innervated muscles (see EggFIG 13). This configuration may serve to coordinate uterine and vulval contraction. The sex muscles are classified as nonstriated muscles because they do not have the striated appearance (typified by body wall muscle) normally attributed to the presence of an ordered array of multiple sarcomeres (muscle contractile units; see Muscle System - Somatic Muscle). Vulval muscles have a single sarcomere that extends along the entire muscle length and attaches to a discrete zone in the body wall at one end and to the vulva at the other end (White, 1988). The uterine muscle myofilament network seems to be anchored to a thin basal lamina on the surface facing the uterus. In contrast to the vulval muscles, the attachment points are randomly arrayed and this distribution of dense bodies is similar to that seen in vertebrate smooth muscles (see Muscle System - Nonstriated)."
+                    },
+                    {
+                        "contents": "Eight uterine muscles are arranged in four bands around the uterus lobes: two bands per lobe, two muscle cells per band (EggFIG 1). A left/right pair of um2-type muscles (um2L/R) encircles the more distal ut toroids of each lobe. A left/right pair of um1-type muscles (um1L/R) cup the ventral half of the uterus over the more proximal ut toroids, and at their dorsal edges, they attach to the lateral seam. The ventral-proximal edges of the um2 muscles overlap with the um1 muscles (EggFIG 1). Uterine muscles are covered in a thin basal lamina (EggFIG 11C). The muscle filaments are circumferentially oriented so their contraction potentially moves eggs by squeezing on the uterus (EggFIG 11C) (Sulston and Horvitz, 1977). The uterine muscles are not directly innervated and are instead coupled via gap junctions, either directly or indirectly, to vulval muscles that are innervated by the egg-laying neurons (see EggFIG 13) (White et al., 1986) (see also Gap Junctions)."
+                    },
+                    {
+                        "contents": "The vm2 muscles attach between the uterus and vulF (EggFIG 12B). Their distal ends insinuate between adjacent members of the ventral body wall muscle quadrant (EggFIG 11B). vm1 muscles attach to the vulva more ventrally than do the vm2s, between vulC and vulD toroids (EggFIG 12B), but they join the body wall more dorsally, attaching near the dorsal edge of the ventral body wall muscle quadrant (EggFIG 11B)."
+                    },
+                    {
+                        "contents": "The vm2s are the only sex muscles that are directly innervated (EggFIG 13) (White et al., 1986). The muscles extend arms into the regions of neuropil formed at the vulva where they receive synaptic inputs (see EggFIG 15A, B&C). vm1 connects to vm2 by gap junctions. Coordinated foreshortening of the vulval muscles pulls the lips apart, allowing eggs to pass through the lumen and out into the environment."
+                    },
+                    {
+                        "contents": "Uterine and vulval muscles derive from a common precursor, the sex myoblast (SM). During L1, the mesoderm (M) blast cell (EggFIG 14A,B) lineage produces a left and a right SM (SML/R) (Sulston and Horvitz, 1977). In L2, SML/R migrate anteriorly along ventral muscle quadrants to the precise center of the developing gonad and future vulva (EggFIG14C). There, the SMs undergo three rounds of division to produce the vulval and uterine muscle cells (EggFIG 14D) which then attach to the everted vulva (EggFIG 14E) (for details on muscle specification programs, see Harfe et al., 1998; Corsi et al., 2000; Lui and Fire, 2000; Kosta and Fire, 2001; Eimer et al., 2002)."
+                    },
+                    {
+                        "contents": "SM migration and positioning at the gonad center is guided by the balance of several forces: a gonad-dependent attractive (GDA) mechanism  (Thomas et al., 1990), a gonad-dependent repulsive (GDR) mechanism (Stern and Horvitz, 1991), and a gonad-independent attractive (GIA) mechanism (Chen et al., 1997; Huang et al., 2003). The DUs, VUs, and AC of the SPh (EggFIG 14A) and primary-fated P6p vulval cells (EggFIG 7A) express FGF-related ligand EGL-17, which is likely to correspond to the GDA signal for SM migration. Interestingly, these same cells also appear to be the source of the GDR mechanism (Burdine et al., 1997, 1998; Branda and Stern, 2000)."
+                    }
+                ]
+            },
+            "5) Egg-laying Neurons": {
+                "paragraphs": [
+                    {
+                        "contents": "The vm2 muscles receive major inputs from two groups of motor neurons, the VCn neurons (VC1\u00e2\u0080\u00936) and the HSNs (HSNL/R) (EggFIG 15A) (see White et al., 1986 and Neuron system for detailed descriptions of each neuron). The precise role of each neuron and the neurotransmitters they release in egg-laying appears to be complex; several models have been proposed (Weinschenker et al., 1995; Waggoner et al., 1998, 2000; Bany et al., 2003; Shyn et al., 2003)."
+                    },
+                    {
+                        "contents": "VC4 and VC5 cell bodies flank the vulval epithelial tube and have short processes in the VNC. VC1, VC2, VC3, and VC6 neuron cell bodies are spaced along the length of the VNC. Each sends out a single main axon that runs in the dorsal \u00e2\u0080\u009cneighborhood\u00e2\u0080\u009d of the cord and makes similar synaptic contacts to one another. When VCn neuron axons reach the vicinity of the vulva, they send processes dorsally along the ventral basal (outer) surface of vulE (EggFIG 16). The neurons branch and synapse with one another and with the HSNs and vm2 muscle arms, forming a local neuropil (EggFIG 15B). VC4 and VC5 branch more extensively than other VC neurons in this region."
+                    },
+                    {
+                        "contents": "The VCn neurons are derived from the anterior daughters of ventral hypodermal blast cells P3\u00e2\u0080\u0093P8, the same cells that produce VPCs (described above; see Sulston and Horvitz, 1977). The VCn neurons are born in L1, begin to send out processes in late L3, and branch in the region of the vulva during L4 (EggFIG 14A). Surprisingly, VCn branching depends on cells of the vulva and not on the presence of their targets (Li and Chalfie, 1990; Colavita and Tessier-Lavigne, 2003)."
+                    },
+                    {
+                        "contents": "HSNL/R cell bodies are situated subventrally, just posterior to the vulva (EggFIG 15B). Each HSN axon projects ventrally to the midline to join the ipsilateral VNC (VNCR or VNCL) and from there extends into the nerve ring. As they pass the vulva, the HSNs defasciculate dorsally, branch, and form synapses with VCn neurons and vm2 muscle arms, thereby contributing to the neuropil."
+                    }
+                ]
+            },
+            "6) List of Cells in the Uterus and Vulva": {
+                "paragraphs": [
+                    {
+                        "contents": "1. Late L2/early L3 stage SPh cells that give rise to the uterus DU, Z1.pap (Dorsal Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells)\n\n\n\nVUs and AC are of either the 5R or 5L configuration: 5R configuration VU, Z1.ppa (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) \n\nAC, Z1.ppp (Anchor Cell) \n\nVU, Z4.aaa (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) \n\nVU, Z4.aap (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells)"
+                    },
+                    {
+                        "contents": "5L configuration VU, Z1.ppa (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) \n\nVU, Z1.ppp (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) \n\nAC, Z4.aaa (Anchor Cell) \n\nVU, Z4.aap (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) \n\nDU, Z4.apa (Dorsal Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells)"
+                    },
+                    {
+                        "contents": "2. L3 stage intermediate blast cells of the uterus"
+                    },
+                    {
+                        "contents": "The Dorsal Eight (DE) cells (great-grand progeny of the DUs) DE1, Z1.papaaa\u00a0(generates anterior arm sp cells)\n\nDE2, Z1.papaap\u00a0(generates anterior arm sp and sujc valve cells)\n\nDE3, Z1.papapa\u00a0(generates anterior arm sujn valve cells and ut2-4 uterus cells)\n\nDE4, Z1.papapp\u00a0(generates uv3, uv2, ut1, du)\n\nDE5, Z1.pappaa\u00a0(generates du, ut1, uv2, uv3)\n\nDE6, Z1.pappap\u00a0(generates ut2-4 and posterior arm sujn valve)\n\nDE7, Z1.papppa\u00a0(generates posterior arm sujc valve and sp)\n\nDE8, Z1.papppp\u00a0(generates posterior arm sp)"
+                    },
+                    {
+                        "contents": "DE1, Z4.apaaaa\u00a0(generates anterior arm sp)\n\n DE2, Z4.apaaap\u00a0(generates anterior arm sujc valve and sp) WB says male gon sv group\n\n DE3, Z4.apaapa\u00a0(generates anterior arm sujn valve cells and ut2-4 uterus cells)\n\n DE4, Z4.apaapp\u00a0(generates uv3, uv2, ut1, du)\n\n DE5, Z4.apapaa\u00a0(generates du, ut1, uv2, uv3)\n\n DE6, Z4.apapap\u00a0(generates ut2-4 and posterior arm sujn valve)\n\n DE7, Z4.apappa\u00a0(generates posterior arm sujc valve and sp)\n\n DE8, Z4.apappp\u00a0(generates posterior arm sp)"
+                    },
+                    {
+                        "contents": "3. Adult uterus ut1 - anterior (5L, 5R), posterior (5L, 5R)\n\nut2 - anterior (5L, 5R), posterior (5L, 5R)\n\nut3 - anterior (5L, 5R), posterior (5L, 5R)\n\nut4 - anterior (5L, 5R), posterior (5L, 5R)\n\ndu\n\nutse - 5L, 5R\n\nuv1\n\nuv2\n\nuv3"
+                    },
+                    {
+                        "contents": "4. L3 stage Vulva Precursor Cells (VPCs) P3.p\n\nP4.p\n\nP5.p\n\nP6.p\n\nP7.p\n\nP8.p"
+                    },
+                    {
+                        "contents": "5. Adult vulva vulA\n\nvulB1\n\nvulB2\n\nvulC\n\nvulD\n\nvulE\n\nvulF"
+                    },
+                    {
+                        "contents": "6. Uterine and vulval muscles (sex muscles) um1L/R\n\num2L/R\n\nvm1L/R\n\nvm2L/R"
+                    },
+                    {
+                        "contents": "7. Egg-laying neurons VCn (VC1-6)\n\nHSNL/R"
+                    }
+                ]
+            },
+            "7) References": {
+                "paragraphs": [
+                    {
+                        "contents": "Kimble, J. 1981. Alterations in cell lineage following laser ablation of cells in the somatic gonad of Caenorhabditis elegans. Dev. Biol. 87: 286-300. Abstract"
+                    }
+                ]
+            }
+        }
+    }
+}

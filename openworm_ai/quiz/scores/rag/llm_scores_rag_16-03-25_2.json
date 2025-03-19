@@ -1,0 +1,76 @@
+{
+    "Title": "Performance of LLMs in specific C. elegans knowledge Quiz",
+    "Date of Testing": "16-03-2025 15:33:46",
+    "Results": [
+        {
+            "LLM": "Ollama:llama3.2",
+            "Total Questions": 98,
+            "Correct Answers": 26,
+            "Accuracy (%)": 26.53,
+            "Avg Response Time (s)": 0.001
+        },
+        {
+            "LLM": "GPT4o",
+            "Total Questions": 98,
+            "Correct Answers": 78,
+            "Accuracy (%)": 79.59,
+            "Avg Response Time (s)": 1.135
+        },
+        {
+            "LLM": "gemini-2.0-flash",
+            "Total Questions": 98,
+            "Correct Answers": 71,
+            "Accuracy (%)": 72.45,
+            "Avg Response Time (s)": 0.392
+        },
+        {
+            "LLM": "claude-3-7-sonnet-20250219",
+            "Total Questions": 98,
+            "Correct Answers": 81,
+            "Accuracy (%)": 82.65,
+            "Avg Response Time (s)": 1.106
+        },
+        {
+            "LLM": "GPT3.5",
+            "Total Questions": 98,
+            "Correct Answers": 62,
+            "Accuracy (%)": 63.27,
+            "Avg Response Time (s)": 1.215
+        },
+        {
+            "LLM": "Ollama:phi4:latest",
+            "Total Questions": 98,
+            "Correct Answers": 62,
+            "Accuracy (%)": 63.27,
+            "Avg Response Time (s)": 10.339
+        },
+        {
+            "LLM": "Ollama:gemma2:latest",
+            "Total Questions": 98,
+            "Correct Answers": 63,
+            "Accuracy (%)": 64.29,
+            "Avg Response Time (s)": 1.365
+        },
+        {
+            "LLM": "Ollama:gemma:7b",
+            "Total Questions": 98,
+            "Correct Answers": 54,
+            "Accuracy (%)": 55.1,
+            "Avg Response Time (s)": 1.094
+        },
+        {
+            "LLM": "Ollama:qwen:4b",
+            "Total Questions": 98,
+            "Correct Answers": 38,
+            "Accuracy (%)": 38.78,
+            "Avg Response Time (s)": 0.806
+        },
+        {
+            "LLM": "Ollama:tinyllama",
+            "Total Questions": 98,
+            "Correct Answers": 12,
+            "Accuracy (%)": 12.24,
+            "Avg Response Time (s)": 1.258
+        }
+    ]
+}

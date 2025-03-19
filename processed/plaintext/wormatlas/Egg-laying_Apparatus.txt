@@ -1,0 +1,286 @@
+Egg-laying Apparatus
+
+  1) General Description
+
+The egg-laying apparatus consists of the uterus, the uterine muscles, the vulva, the vulval muscles, and a local neuropil formed by the egg-laying neurons (EggFIG 1). After fertilization, embryos pass from the spermatheca to the uterus, an epithelial egg chamber that links the two arms of the gonad. There, eggs develop to the approximately 30-cell stage (roughly 2.5 hr post-fertilization at 20Â°C) before being expelled into the environment via the vulva, a passageway from the uterus to the ventral exterior. Under optimal conditions, an adult hermaphrodite will lay 4-10 eggs/hour. Egg-laying is facilitated by contraction of the sex muscles: the vulval muscles, which attach to the lips of the vulva, and the uterine muscles, which encircle the uterus. Muscle activity is regulated by motor neurons, in particular motor neurons VCn (VC1-6) and HSNL/R, which synapse onto each other and onto vulval muscle arms, forming a neuropil near the vulva. Tissues comprising the egg-laying apparatus arise from several different lineages (see ReproTABLE 1). As described below, the developing gonad and vulva act as organizing centers, recruiting cells from other regions to the midbody, coordinating cell patterning between different tissues, and directing axon guidance and synaptic patterning of the neurons.
+
+  2) The Uterus
+
+The uterus consists of an anterior and posterior lobe joined to a  central chamber. The central chamber is joined ventrally to the vulval  epithelial tube (EggFIG 2A,B and EggFIG 3A). The entire outer (basal) surface of the uterus is covered by a thin basal lamina called the uterine basal lamina (UBL) (EggFIG 3B; see also EggFIG 11C). The organization of cells that comprise the uterus is most readily apparent during the late-L4 stage, after uterine and vulval morphogenesis have taken place but before the onset of ovulation, after which the uterus becomes distorted and crowded with embryos. The anterior and posterior uterus lobes are each composed of four uterine toroid epithelial syncytia: ut1, ut2, ut3 and ut4 (EggFIG 2A,B; EggTABLE 1). ut1âut4 are joined to one another and to their neighbors both by adherens junctions (EggFIG 2C) and by pleated septate junctions, most robust between ut4 and ut3 and less obvious at the other borders. Cytoskeletal elements are sometimes evident in ut toroids, running circumferentially, suggesting that the toroids may have myoepithelial properties (Newman et al., 1996).
+
+The central chamber of the uterus is capped dorsally by the dorsal uterine (du) syncytium and ventrally by the uterine seam (utse) syncytium and uterine ventral (uv) cells uv1â3 (EggFIG 2A,B and EggFIG 3A,B; EggTABLE 1). uv1âuv3 form a multilayered set of flaps, binding the ventral uterus to the dorsalmost ring of the vulva, vulF. The utse has a distinctive H-shaped structure. The two sides of the H attach to the lateral seam of the animal and hold the uterus in place. At the join, the basal lamina is thickened and contains hemicentin (EggFIG 3B) (Vogel and Hedgecock, 2001). The central portion of the utse (the crossbar of the H) initially forms a hymen membrane between uterine and vulval lumens. Passage of the first egg breaks this membrane and the two lumens become continuous.
+
+Before the first fertilization event, the lumen of the uterus is narrow and blocked by a series of inwardly projecting fingers that extend from the uterine lumen wall (see EggFIG 5B and EggFIG 11B below). After passage of the first egg, the mature uterus retains a few inward septa that may derive from these earlier fingers. Both the developing and the mature uterine lumen have a continuous thickening or electron-dense layer (possibly a glycocalyx or surface coat; see EggFIG 11C). This is also apparent on the lumenal (apical) membrane, lining projecting fingers, and septa.
+
+Cells of the uterus arise from dorsal uterine (DU) and ventral uterine (VU) blast cells of the larval SPh (Reproductive System - Somatic Gonad; EggFIG 4A; EggTABLE 1) (Kimble and Hirsh, 1979; Newman et al., 1996). In late L2, one of two somatic gonadal cells, Z1ppp or Z4aaa, is specified to become the anchor cell (AC), whereas the other becomes one of three VU blast cells (EggFIG 4A) (Kimble, 1981; Greenwald et al., 1983; Seydoux and Greenwald, 1989; Greenwald, 1997; Karp and Greenwald, 2003).
+
+In late L3, the AC induces VU granddaughters to adopt the Ï fate (EggFIG 4B and EggFIG 5A). Ï daughters subsequently differentiate into uv1 and utse cells of the ventral uterus, which lie immediately dorsal of the developing vulva (EggFIG 4C,D and EggFIG 5B,C) (Newman et al., 1995, 1996; Chang et al., 1999). The differentiation of these and many other terminal uterine cells involves dramatic changes in shape and/or fusion to achieve their final  morphology (Newman et al., 1996). As described below, the AC also patterns cells of the vulva. This dual induction of vulval and uterine cell fates by the AC ensures that cells forming the physical connection between the uterus and vulva (utse, uv1, and vulF) develop in physical register. The AC also contributes to formation of this connection by creating an opening at the apex of the vulva.
+
+  3) The Vulva
+
+The vulva (EggFIG 6A) is formed from a stack of seven nonequivalent epithelial toroids or rings: (in ventral-to-dorsal order) vulA, vulB1, vulB2, vulC, vulD, vulE, and vulF (EggFIG 3A). Each ring is either a single tetranucleate syncytium or two binucleate half-ring syncytia (vulB1 and vulB2). The vulval lumen is lined with cuticle. As described below, the toroids are formed by vulval cells of two fates: primary fate (vulE and vulF) or secondary fate (vulAâD). These cells and the toroids they form express distinct combinations of genes (Inoue et al., 2002) and, potentially, different characteristics and properties. For example, during copulation, males locate the vulva with their hook and post-cloacal sensilla, possibly in response to signals or characteristics associated specifically with toroids formed by secondary-fated cells (M. Barr, pers. comm.).
+
+Adjacent toroids are joined to their neighbors via adherens junctions (EggFIG 6E). The dorsalmost toroid vulF is also linked by adherens junctions to the uterine transitional epithelial cells uv1 and uv2 and possibly to the utse (EggFIG 3A). The ventralmost toroid vulA is linked via adherens junctions to the ventral hypodermal ridge. The vulE toroid stretches laterally and is linked on its basal (outer) surface to the body wall at the lateral seam by a specialized thickened basal lamina (EggFIG 3A,B).
+
+Vulval development spans roughly the same period as uterine development: L3 to late L4. For a summary figure of the stages of vulval development, please see EggFIG Sup1. Establishment of the vulva requires the local deformation of existing ventral structures such as the ventral nerve cord (VNC) (EggFIG 1) and ventral body wall muscles (EggFIG 3A), which are deflected laterally in this region to accommodate the vulva.  Vulval development can be divided into two phases: (1) vulval cell patterning and generation (EggFIG 7 and EggFIG 8) and (2) vulval morphogenesis (EggFIG 9). The molecular and genetic mechanisms underlying these processes, particularly cell patterning, have been studied extensively and are described in the following reviews and papers and references therein (Greenwald, 1997; Kim, 1997; Eisenmann et al., 1998; Levitan and Greenwald, 1998; Hanna-Rose and Han, 2000; Shemer and Podbilewicz, 2003; Ceol and Horvitz, 2004; Sundaram, 2004).
+
+   3.1) Vulval Cell Patterning
+
+The cells that form the vulval toroids are the progeny of ventral hypodermal Pnp cells (EggFIG 7B) (Sulston and Horvitz, 1977). Twelve Pnp cells are born mid-L1. The six central cells P3pâP8p are endowed with equal potential to produce vulval cell lineages and are referred to as vulval precursor cells (VPCs) (EggFIG7A and EggFIG 8A). In L3, the VPCs are patterned so that vulval potential is restricted to the central three cells P5pâP7p. This patterning of the VPCs involves the combined action of three intercellular signaling events: an inductive signal emanating from the AC (LIN-3/LET-23 MAPK pathway activation), lateral signaling between VPCs (LIN-12/Notch), and signals from hyp 7 (reviewed in Greenwald, 1997; Sundaram, 2004; Sternberg, 2005).
+
+   3.2) Vulval Morphogenesis
+
+During the final round of vulval cell divisions, the primary descendants and some secondary descendants detach from the cuticle, allowing the vulval sheet to bend inward and the cells within it to rearrange their cellâcell contacts (EggFIG 8D). This invagination step establishes the beginnings of the vulval lumen, which continues to expand during morphogenesis. Proteoglycans and their associated glycosaminoglycans, likely expressed in vulval cells, are necessary for this step, although their precise role is not known (Herman and Horvitz, 1999; Bulik et al., 2000; Hwang et al., 2003). As morphogenesis continues, cells migrate toward the center of the developing vulval primordium and wrap around to meet their anterior/posterior homologs on the other side (EggFIG 9) (Sharma-Kishore et al., 1999). Homotypic cell fusions occur between cells of homologous fate, resulting in the formation of toroid or half-toroid rings (see Inoue et al., 2002 for a useful guide to vulval cell nuclei positions during and after morphogenesis).
+
+As part of the process of joining vulval and uterine lumens, the AC creates a hole in the apex of the developing vulva (EggFIG 8). In L3, while Pnp cells are dividing, the ventral hypodermal basal lamina and gonadal basal lamina break down precisely at the site of contact with the AC. The basolateral portion of the AC crosses through this gap, attaches to, then inserts between the descendants of the primary-fated P6p lineage cells. This invasion is stimulated by a diffusible signal from the primary cells (Sherwood and Sternberg, 2003). Later, P6p terminal progeny fuse, forming a toroid (vulF) around the invading AC process. The AC is then removed by heterotypic fusion with the utse, leaving a channel in the apex of the vulva (Newman et al., 1996). When the utse membrane is ruptured by passage of the first egg, uterine and vulval lumens become continuous. 
+
+During late L4, the vulval muscles attach to the vulval epithelial tube and to the body wall (see below). The tube then partially everts (turns inside out), generating the adult vulva in which the lumen is closed until vulval muscles contract (EggFIG 10) (Sulston and Horvitz, 1977; Sharma-Kishore et al., 1999).
+
+  4) Uterine and Vulval Muscles
+
+The uterine (um1L/R, um2L/R) and vulval (vm1L/R, vm2L/R) muscles (EggFIG 1 and EggFIG 11A), collectively referred to as the sex muscles, are required for moving eggs through the uterus and vulva. Only 4 the 16 sex muscles receive direct inputs from the egg-laying neurons. The remaining sex muscles are electrically coupled, either directly or indirectly, to these innervated muscles (see EggFIG 13). This configuration may serve to coordinate uterine and vulval contraction. The sex muscles are classified as nonstriated muscles because they do not have the striated appearance (typified by body wall muscle) normally attributed to the presence of an ordered array of multiple sarcomeres (muscle contractile units; see Muscle System - Somatic Muscle). Vulval muscles have a single sarcomere that extends along the entire muscle length and attaches to a discrete zone in the body wall at one end and to the vulva at the other end (White, 1988). The uterine muscle myofilament network seems to be anchored to a thin basal lamina on the surface facing the uterus. In contrast to the vulval muscles, the attachment points are randomly arrayed and this distribution of dense bodies is similar to that seen in vertebrate smooth muscles (see Muscle System - Nonstriated).
+
+Eight uterine muscles are arranged in four bands around the uterus lobes: two bands per lobe, two muscle cells per band (EggFIG 1). A left/right pair of um2-type muscles (um2L/R) encircles the more distal ut toroids of each lobe. A left/right pair of um1-type muscles (um1L/R) cup the ventral half of the uterus over the more proximal ut toroids, and at their dorsal edges, they attach to the lateral seam. The ventral-proximal edges of the um2 muscles overlap with the um1 muscles (EggFIG 1). Uterine muscles are covered in a thin basal lamina (EggFIG 11C). The muscle filaments are circumferentially oriented so their contraction potentially moves eggs by squeezing on the uterus (EggFIG 11C) (Sulston and Horvitz, 1977). The uterine muscles are not directly innervated and are instead coupled via gap junctions, either directly or indirectly, to vulval muscles that are innervated by the egg-laying neurons (see EggFIG 13) (White et al., 1986) (see also Gap Junctions).
+
+The vm2 muscles attach between the uterus and vulF (EggFIG 12B). Their distal ends insinuate between adjacent members of the ventral body wall muscle quadrant (EggFIG 11B). vm1 muscles attach to the vulva more ventrally than do the vm2s, between vulC and vulD toroids (EggFIG 12B), but they join the body wall more dorsally, attaching near the dorsal edge of the ventral body wall muscle quadrant (EggFIG 11B).
+
+The vm2s are the only sex muscles that are directly innervated (EggFIG 13) (White et al., 1986). The muscles extend arms into the regions of neuropil formed at the vulva where they receive synaptic inputs (see EggFIG 15A, B&C). vm1 connects to vm2 by gap junctions. Coordinated foreshortening of the vulval muscles pulls the lips apart, allowing eggs to pass through the lumen and out into the environment.
+
+Uterine and vulval muscles derive from a common precursor, the sex myoblast (SM). During L1, the mesoderm (M) blast cell (EggFIG 14A,B) lineage produces a left and a right SM (SML/R) (Sulston and Horvitz, 1977). In L2, SML/R migrate anteriorly along ventral muscle quadrants to the precise center of the developing gonad and future vulva (EggFIG14C). There, the SMs undergo three rounds of division to produce the vulval and uterine muscle cells (EggFIG 14D) which then attach to the everted vulva (EggFIG 14E) (for details on muscle specification programs, see Harfe et al., 1998; Corsi et al., 2000; Lui and Fire, 2000; Kosta and Fire, 2001; Eimer et al., 2002).
+
+SM migration and positioning at the gonad center is guided by the balance of several forces: a gonad-dependent attractive (GDA) mechanism  (Thomas et al., 1990), a gonad-dependent repulsive (GDR) mechanism (Stern and Horvitz, 1991), and a gonad-independent attractive (GIA) mechanism (Chen et al., 1997; Huang et al., 2003). The DUs, VUs, and AC of the SPh (EggFIG 14A) and primary-fated P6p vulval cells (EggFIG 7A) express FGF-related ligand EGL-17, which is likely to correspond to the GDA signal for SM migration. Interestingly, these same cells also appear to be the source of the GDR mechanism (Burdine et al., 1997, 1998; Branda and Stern, 2000).
+
+  5) Egg-laying Neurons
+
+The vm2 muscles receive major inputs from two groups of motor neurons, the VCn neurons (VC1â6) and the HSNs (HSNL/R) (EggFIG 15A) (see White et al., 1986 and Neuron system for detailed descriptions of each neuron). The precise role of each neuron and the neurotransmitters they release in egg-laying appears to be complex; several models have been proposed (Weinschenker et al., 1995; Waggoner et al., 1998, 2000; Bany et al., 2003; Shyn et al., 2003).
+
+VC4 and VC5 cell bodies flank the vulval epithelial tube and have short processes in the VNC. VC1, VC2, VC3, and VC6 neuron cell bodies are spaced along the length of the VNC. Each sends out a single main axon that runs in the dorsal âneighborhoodâ of the cord and makes similar synaptic contacts to one another. When VCn neuron axons reach the vicinity of the vulva, they send processes dorsally along the ventral basal (outer) surface of vulE (EggFIG 16). The neurons branch and synapse with one another and with the HSNs and vm2 muscle arms, forming a local neuropil (EggFIG 15B). VC4 and VC5 branch more extensively than other VC neurons in this region.
+
+The VCn neurons are derived from the anterior daughters of ventral hypodermal blast cells P3âP8, the same cells that produce VPCs (described above; see Sulston and Horvitz, 1977). The VCn neurons are born in L1, begin to send out processes in late L3, and branch in the region of the vulva during L4 (EggFIG 14A). Surprisingly, VCn branching depends on cells of the vulva and not on the presence of their targets (Li and Chalfie, 1990; Colavita and Tessier-Lavigne, 2003).
+
+HSNL/R cell bodies are situated subventrally, just posterior to the vulva (EggFIG 15B). Each HSN axon projects ventrally to the midline to join the ipsilateral VNC (VNCR or VNCL) and from there extends into the nerve ring. As they pass the vulva, the HSNs defasciculate dorsally, branch, and form synapses with VCn neurons and vm2 muscle arms, thereby contributing to the neuropil.
+
+  6) List of Cells in the Uterus and Vulva
+
+1. Late L2/early L3 stage SPh cells that give rise to the uterus DU, Z1.pap (Dorsal Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells)
+
+
+
+VUs and AC are of either the 5R or 5L configuration: 5R configuration VU, Z1.ppa (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) 
+
+AC, Z1.ppp (Anchor Cell) 
+
+VU, Z4.aaa (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) 
+
+VU, Z4.aap (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells)
+
+5L configuration VU, Z1.ppa (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) 
+
+VU, Z1.ppp (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) 
+
+AC, Z4.aaa (Anchor Cell) 
+
+VU, Z4.aap (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) 
+
+DU, Z4.apa (Dorsal Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells)
+
+2. L3 stage intermediate blast cells of the uterus
+
+The Dorsal Eight (DE) cells (great-grand progeny of the DUs) DE1, Z1.papaaa (generates anterior arm sp cells)
+
+DE2, Z1.papaap (generates anterior arm sp and sujc valve cells)
+
+DE3, Z1.papapa (generates anterior arm sujn valve cells and ut2-4 uterus cells)
+
+DE4, Z1.papapp (generates uv3, uv2, ut1, du)
+
+DE5, Z1.pappaa (generates du, ut1, uv2, uv3)
+
+DE6, Z1.pappap (generates ut2-4 and posterior arm sujn valve)
+
+DE7, Z1.papppa (generates posterior arm sujc valve and sp)
+
+DE8, Z1.papppp (generates posterior arm sp)
+
+DE1, Z4.apaaaa (generates anterior arm sp)
+
+ DE2, Z4.apaaap (generates anterior arm sujc valve and sp) WB says male gon sv group
+
+ DE3, Z4.apaapa (generates anterior arm sujn valve cells and ut2-4 uterus cells)
+
+ DE4, Z4.apaapp (generates uv3, uv2, ut1, du)
+
+ DE5, Z4.apapaa (generates du, ut1, uv2, uv3)
+
+ DE6, Z4.apapap (generates ut2-4 and posterior arm sujn valve)
+
+ DE7, Z4.apappa (generates posterior arm sujc valve and sp)
+
+ DE8, Z4.apappp (generates posterior arm sp)
+
+3. Adult uterus ut1 - anterior (5L, 5R), posterior (5L, 5R)
+
+ut2 - anterior (5L, 5R), posterior (5L, 5R)
+
+ut3 - anterior (5L, 5R), posterior (5L, 5R)
+
+ut4 - anterior (5L, 5R), posterior (5L, 5R)
+
+du
+
+utse - 5L, 5R
+
+uv1
+
+uv2
+
+uv3
+
+4. L3 stage Vulva Precursor Cells (VPCs) P3.p
+
+P4.p
+
+P5.p
+
+P6.p
+
+P7.p
+
+P8.p
+
+5. Adult vulva vulA
+
+vulB1
+
+vulB2
+
+vulC
+
+vulD
+
+vulE
+
+vulF
+
+6. Uterine and vulval muscles (sex muscles) um1L/R
+
+um2L/R
+
+vm1L/R
+
+vm2L/R
+
+7. Egg-laying neurons VCn (VC1-6)
+
+HSNL/R
+
+  7) References
+
+Alkema, M.J., Hunter-Ensor, M., Ringstad, N. and Horvitz, H.R. 2005. Tyramine functions independently of octopamine in the Caenorhabditis elegans nervous system. Neuron 46: 247-250. (http://dx.doi.org/10.1016/j.neuron.2005.02.024)
+
+Bany, I.A., Dong, M.Q. and Koelle, M.R. 2003. Genetic and cellular basis for acetylcholine inhibition of Caenorhabditis elegans egg-laying behavior. J. Neurosci. 23: 8060-8069. (http://www.jneurosci.org/cgi/content/full/23/22/8060)
+
+Branda, C.S. and Stern, M.J. 2000.  Mechanisms controlling sex myoblast migration in Caenorhabditis elegans hermaphrodites. Dev. Biol. 226: 137-151. (http://dx.doi.org/10.1006/dbio.2000.9853)
+
+Bulik, D.A., Wei, G., Toyoda, H., Kinoshita-Toyoda, A., Waldrip, W.R., Esko, J.D., Robbins, P.W. and Selleck, S.B. 2000. sqv-3, -7, and -8, a set of genes affecting morphogenesis in Caenorhabditis elegans, encode enzymes required for glycosaminoglycan biosynthesis. Proc. Natl.  Acad. Sci. 97: 10838-10843. (http://dx.doi.org/10.1073/pnas.97.20.10838)
+
+Burdine, R.D., Chen, E.B., Kwok, S.F. and Stern, M.J. 1997. egl-17 encodes an invertebrate fibroblast growth factor family member required specifically for sex myoblast migration in Caenorhabditis elegans. Proc. Natl.  Acad. Sci. 94: 2433-2437. (http://www.pnas.org/content/94/6/2433.long)
+
+Burdine, R.D., Branda, C.S. and Stern, M.J. 1998.  EGL-17(FGF) expression coordinates the attraction of the migrating sex myoblasts with vulval induction in C.  elegans.  Development 125: 1083-1093.(http://dev.biologists.org/content/125/6/1083.long)
+
+Ceol, C.J. and Horvitz, H.R. 2004. A new class of C. elegans synMuv genes implicates a Tip60/NuA4-like HAT complex as a negative regulator of Ras signaling. Dev. Cell 6: 563-576. (http://dx.doi.org/10.1016/S1534-5807(04)00065-6)
+
+Chang, C., Newman, A.P. and Sternberg, P.W. 1999. Reciprocal EGF signaling back to the uterus from the induced C. elegans vulva coordinates morphogenesis of epithelia. Curr. Biol. 9: 237-246. (http://dx.doi.org/10.1016/S0960-9822(99)80112-2)
+
+Chen, E.B., Branda, C.S. and Stern, M.J. 1997. Genetic enhancers of sem-5 define components of the gonad-independent guidance mechanism controlling sex myoblast migration in Caenorhabditis elegans hermaphrodites. Dev. Biol. 182: 88-100. (http://dx.doi.org/10.1006/dbio.1996.8473)
+
+Colavita, A. and Tessier-Lavigne, M. 2003. A Neurexin-related protein, BAM-2, terminates axonal branches in C. elegans.  Science 302: 293-296. (http://dx.doi.org/DOI:10.1126/science.1089163)
+
+Corsi, A.K., Kostas, S.A., Fire, A. and Krause, M. 2000. Caenorhabditis  elegans twist plays an essential role in non-striated muscle development. Development 127: 2041-2051. (http://dev.biologists.org/content/127/10/2041.long)
+
+Desai, C., Garriga, G., McIntire, S.L. and Horvitz, H.R. 1988. A genetic pathway for the development of the Caenorhabditis elegans HSN motor neurons. Nature 336: 638-646. (http://www.nature.com/doifinder/10.1038/336638a0)
+
+Eimer, S., Donhauser, R. and Baumeister, R. 2002. The Caenorhabditis elegans presenilin sel-12 is required for mesodermal patterning and muscle function. Dev. Biol. 251: 178-192. (http://dx.doi.org/10.1006/dbio.2002.0782)
+
+Eisenmann, D.M., Maloof, J.N., Simske, J.S., Kenyon, C. and Kim, S.K. 1998. The beta-catenin homolog BAR-1 and LET-60 Ras coordinately regulate the Hox gene lin-39 during Caenorhabditis  elegans vulval development. Development 125: 3667-3680. (http://dev.biologists.org/content/125/18/3667.long)
+
+Garriga, G., Desai, C. and Horvitz, H.R. 1993. Cell interactions control the direction of outgrowth, branching and fasciculation of the HSN axons of Caenorhabditis elegans Development 117: 1071-1087. (http://dev.biologists.org/content/117/3/1071.long)
+
+Greenwald, I.S., Sternberg, P.W. and Horvitz, H.R. 1983. The lin-12 locus specifies cell fates in Caenorhabditis elegans. Cell 34: 435-444. (http://dx.doi.org/10.1016/0092-8674(83)90377-X)
+
+Greenwald, I. 1997. Development of the Vulva. In C.  elegans II (ed. D. L. Riddle et al.). chap. 19. pp. 519-541. Cold Spring Harbor Laboratory Press, Cold Spring Harbor,  New York.(http://www.ncbi.nlm.nih.gov/bookshelf/br.fcgi?book=ce2&part=A642)
+
+Hanna-Rose, W. and Han, M. 2000. Getting signals crossed in C.  elegans. Curr. Opin. Genet. Dev. 10: 523-528.(http://dx.doi.org/10.1016/S0959-437X(00)00122-2)
+
+Harfe, B.D., Branda, C.S., Krause, M., Stern, M.J. and Fire, A. 1998. MyoD and the specification of muscle and non-muscle fates during postembryonic development of the C.  elegans mesoderm.  Development 125: 2479-2488. (http://dev.biologists.org/content/125/3/421.long)
+
+Herman, T. and Horvitz, H.R. 1999. Three proteins involved in Caenorhabditis  elegans vulval invagination are similar to components of a glycosylation pathway. Proc. Natl. Acad. Sci. 96: 974-979. (http://www.pnas.org/content/96/3/974.long)
+
+Huang, X., Huang, P., Robinson, M.K., Stern, M.J. and Jin, Y. 2003. UNC-71, a disintegrin and metalloprotease (ADAM) protein, regulates motor axon guidance and sex myoblast migration in C. elegans.  Development 130: 3147-3161. (http://dev.biologists.org/content/130/14/3147.long)
+
+Hwang, H.Y., Olson, S.K., Esko,  J.D. and Horvitz, H.R. 2003. Caenorhabditis  elegans early embryogenesis and vulval morphogenesis require chondroitin biosynthesis. Nature 423: 439-443. (http://dx.doi.org/doi:10.1038/nature01634)
+
+Inoue, T., Sherwood, D.R., Aspock, G., Butler, J.A., Gupta, B.P., Kirouac, M., Wang, M., Lee, P.Y., Kramer, J.M., Hope, I., Burglin, T.R. and Sternberg, P.W. 2002. Gene expression markers for Caenorhabditis  elegans vulval cells. Mech. Dev. 119 Suppl 1: S203-209. (http://dx.doi.org/10.1016/S0925-4773(03)00117-5)
+
+Karp, X. and Greenwald, I. 2003. Post-transcriptional regulation of the E/Daughterless ortholog HLH-2, negative feedback, and birth order bias during the AC/VU decision in C. elegans. Genes Dev. 17: 3100-3111. (http://dx.doi.org/doi:10.1101/gad.1160803)
+
+Kim, S.K. 1997. Polarized signaling: basolateral receptor localization in epithelial cells by PDZ-containing proteins. Curr. Opin. Cell Biol. 6: 853-9. (http://dx.doi.org/10.1016/S0955-0674(97)80088-9)
+
+Kimble, J. 1981. Alterations in cell lineage following laser ablation of cells in the somatic gonad of Caenorhabditis elegans. Dev. Biol. 87: 286-300. Abstract
+
+Kimble, J. and Hirsh, D. 1979. The postembryonic cell lineages of the hermaphrodite and male gonads in Caenorhabditis elegans. Dev. Biol. 70: 396-417. (https://www.wormatlas.org/ver1/Postemblingonad_1979/toc.html)
+
+Kostas, S.A. and Fire, A. 2002. The T-box factor MLS-1 acts as a molecular switch during specification of nonstriated muscle in C. elegans. Genes Dev. 16: 257-269. (http://dx.doi.org/doi:10.1101/gad.923102)
+
+Levitan, D. and Greenwald, I. 1998. Effects of SEL-12 presenilin on LIN-12 localization and function in Caenorhabditis elegans. Development 125: 3599-3606. (http://dev.biologists.org/content/125/16/3101.long)
+
+Li, C. and Chalfie, M. 1990. Organogenesis in C. elegans: Positioning of neurons and muscles in the egg-laying system. Neuron 4: 681-695. (http://dx.doi.org/10.1016/0896-6273(90)90195-L)
+
+Liu, J. and Fire, A. 2000. Overlapping roles of two Hox genes and the exd ortholog ceh-20 in diversification of the C. elegans postembryonic mesoderm. Development 127: 5179-5190. (http://dev.biologists.org/content/127/23/5179.long)
+
+Newman, A.P. and Sternberg, P.W. 1996. Coordinated morphogenesis of epithelia during development of the Caenorhabditis  elegans uterine-vulval connection. Proc. Natl. Acad. Sci. 93: 9329-9333. (http://www.pnas.org/content/93/18/9329.full.pdf+html)
+
+Newman, A.P., White J.G. and Sternberg, P.W. 1996. Morphogenesis of the C. elegans hermaphrodite uterus. Development 122: 3617-3626. (http://dev.biologists.org/content/122/11/3617.long)
+
+Newman, A.P., White, J.G. and Sternberg, P.W. 1995. The Caenorhabditis  elegans lin-12 gene mediates induction of ventral uterine specialization by the anchor cell. Development 121: 263-271. (http://dx.doi.org/10.1006/dbio.1996.8429)
+
+Schedl, T. 1997. Developmental Genetics of the Germ Line.  In C. elegans II (ed. D. L. Riddle et al.). chap. 10. pp. 417-500. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New  York.(http://www.ncbi.nlm.nih.gov/bookshelf/br.fcgi?book=ce2&part=A335)
+
+Seydoux, G. and Greenwald, I. 1989. Cell autonomy of lin-12 function in a cell fate decision in C. elegans. Cell 57: 1237-1245. (http://dx.doi.org/doi:10.1016/0092-8674(89)90060-3)
+
+Sharma-Kishore, R., White, J.G, Southgate, E. and Podbilewicz, B. 1999. Formation of the vulva in Caenorhabditis elegans: a paradigm for organogenesis. Development 126: 691-699. (http://dev.biologists.org/content/126/4/691.long)
+
+Shemer, G. and Podbilewicz, B. 2003. The story of cell fusion: big lessons from little worms. Bioessays 25: 672-682. (http://dx.doi.org/doi:10.1002/bies.10301)
+
+Shen, K. and Bargmann, C.I. 2003. The immunoglobulin superfamily protein SYG-1 determines the location of specific synapses in C. elegans. Cell 112: 619-630. (http://dx.doi.org/10.1016/S0092-8674(03)00113-2)
+
+Shen, K., Fetter, R.D. and Bargmann, C.I. 2004. Synaptic specificity is generated by the synaptic guidepost protein SYG-2 and its receptor, SYG-1. Cell 116: 869-881. (http://dx.doi.org/10.1016/S0092-8674(04)00251-X)
+
+Sherwood, D.R. and Sternberg, P.W. 2003. Anchor cell invasion into the vulval epithelium in C. elegans. Dev. Cell 5: 21-31. (http://dx.doi.org/10.1016/S1534-5807(03)00168-0)
+
+Shyn, S.I., Kerr, R. and Schafer, W.R. 2003. Serotonin and Go modulate functional states of neurons and muscles controlling C.  elegans egg-laying behavior. Curr. Biol.13: 1910-1915. (http://dx.doi.org/10.1016/j.cub.2003.10.025)
+
+Stern, M.J. and Horvitz, H.R. 1991. A normally attractive cell interaction is repulsive in two C. elegans mesodermal cell migration mutants. Development 113: 797-803. (http://dev.biologists.org/content/113/3/797.long)
+
+Sternberg, P.W. and Horvitz, H.R. 1986. Pattern formation during vulval development in C. elegans. Cell 44: 761-72. (http://dx.doi.org/10.1016/0092-8674(86)90842-1)
+
+Sulston, J. E. and Horvitz, H. R. 1977. Post-embryonic cell lineages of the nematode Caenorhabditis elegans. Dev. Biol. 56: 110-156. (https://www.wormatlas.org/ver1/postemblin_1977/toc.html)
+
+Sulston, J.E., Schierenberg, E., White, J.G., and Thomson, J.N. 1983.The embryonic cell lineage of the nematode Caenorhabditis  elegans. Dev. Biol. 100: 64-119. (https://www.wormatlas.org/ver1/Sulstonemblin_1983/toc.html)
+
+Sundaram, M.V. 2004. Vulval development: the battle between Ras and Notch. Curr. Biol. 14: R311-313. (http://dx.doi.org/10.1016/j.cub.2004.03.052)
+
+Thomas, J.H., Stern, M.J. and Horvitz, H.R. 1990. Cell interactions coordinate the development of the C. elegans egg-laying system. Cell 62: 1041-1052. (http://dx.doi.org/10.1016/0092-8674(90)90382-O)
+
+Vogel, B.E. and Hedgecock, E.M. 2001. Hemicentin, a conserved extracellular member of the immunoglobulin superfamily, organizes epithelial and other cell attachments into oriented line-shaped junctions. Development 128: 883-894. (http://dev.biologists.org/content/128/6/883.long)
+
+Waggoner, L.E., Zhou, G.T., Schafer, R.W. and Schafer, W.R. 1998. Control of alternative behavioral states by serotonin in Caenorhabditis elegans. Neuron 21: 203-214. (http://dx.doi.org/10.1016/S0896-6273(00)80527-9)
+
+Waggoner, L.E., Hardaker, L.A., Golik, S. and Schafer, W.R. 2000. Effect of a neuropeptide gene on behavioral states in Caenorhabditis elegans egg-laying. Genetics 154: 1181-1192. (http://www.genetics.org/cgi/content/full/154/3/1181)
+
+Weinshenker, D., Garriga, G. and Thomas, J.H. 1995. Genetic and pharmacological analysis of neurotransmitters controlling egg laying in C. elegans. J. Neurosci. 15: 6975-6985.(http://www.jneurosci.org/cgi/reprint/15/10/6975)
+
+White, J. 1988. The Anatomy. In The nematode C. elegans (ed. W. B. Wood). chapter 4. pp 81-122. Cold Spring Harbor Laboratory Press, New York.(http://cshmonographs.org/index.php/monographs/article/view/5019)
+
+White J.G., Southgate, E., Thomson, J.N., and Brenner, S. 1986. The structure of the nervous system of the nematode C. elegans. Philos. Trans. R. Soc.  Lond. Ser. B. Biol.  Sci. 314: 1-340. (https://www.wormatlas.org/ver1/MoW_built0.92/toc.html)
+

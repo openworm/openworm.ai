@@ -3,28 +3,29 @@ import time
 import random
 import datetime
 from openworm_ai.utils.llms import (
-    LLM_OLLAMA_LLAMA32,
+    LLM_OLLAMA_LLAMA32_1B,
     LLM_GPT4o,
     LLM_GEMINI,
-    LLM_CLAUDE35,
+    LLM_CLAUDE37,
     LLM_GPT35,
     LLM_OLLAMA_PHI4,
     LLM_OLLAMA_GEMMA2,
     LLM_OLLAMA_GEMMA,
     LLM_OLLAMA_QWEN,
+    LLM_OLLAMA_TINYLLAMA,
     ask_question_get_response,
 )
 from openworm_ai.quiz.Templates import (
     ASK_Q,
 )  # Ensure this matches the correct import path
 
-iteration_per_day = 2
+iteration_per_day = 1
 field = "celegans"  # general/science/celegans
 current_date = datetime.datetime.now().strftime("%d-%m-%y")
-SOURCE_QUESTIONS_FILE = f"openworm_ai/quiz/samples/GPT4o_100questions_{field}.json"
+SOURCE_QUESTIONS_FILE = "openworm_ai/quiz/samples/GPT4o_100questions_celegans.json"
 OUTPUT_FILENAME = f"llm_scores_{field}_{current_date}_{iteration_per_day}.json"
 SAVE_DIRECTORY = f"openworm_ai/quiz/scores/{field}"
-TITLE = f"Performance of LLMs in {field} knowledge Quiz"
+TITLE = "Performance of LLMs in specific C. elegans knowledge Quiz"
 
 
 indexing = ["A", "B", "C", "D"]  # Answer labels
@@ -33,16 +34,17 @@ indexing = ["A", "B", "C", "D"]  # Answer labels
 def load_llms():
     """Loads only the selected LLMs: Ollama Llama3 and GPT-3.5."""
     llms = [
-        LLM_OLLAMA_LLAMA32,
+        LLM_OLLAMA_LLAMA32_1B,
         LLM_GPT4o,
         LLM_GEMINI,
-        LLM_CLAUDE35,
+        LLM_CLAUDE37,
         LLM_GPT35,
         LLM_OLLAMA_PHI4,
         LLM_OLLAMA_GEMMA2,
         # LLM_OLLAMA_DEEPSEEK - unable to answer A-D(too few params?),
         LLM_OLLAMA_GEMMA,
         LLM_OLLAMA_QWEN,
+        LLM_OLLAMA_TINYLLAMA,
         # LLM_OLLAMA_FALCON2 - 'only an assistant with no acess to external resources',
         # LLM_OLLAMA_CODELLAMA - understands only a fraction of questions, doesnt understand prompts
     ]  # Defined constants

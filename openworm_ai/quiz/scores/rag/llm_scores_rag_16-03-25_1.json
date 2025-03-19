@@ -1,0 +1,13 @@
+{
+    "Title": "Performance of LLMs in specific C. elegans knowledge Quiz",
+    "Date of Testing": "16-03-2025 17:52:37",
+    "Results": [
+        {
+            "LLM": "Ollama:llama3.2:1b",
+            "Total Questions": 98,
+            "Correct Answers": 26,
+            "Accuracy (%)": 26.53,
+            "Avg Response Time (s)": 0.891
+        }
+    ]
+}

@@ -1,0 +1,322 @@
+BODY	{
+	margin: 0px;
+	padding: 0px;
+	border: #C0C0C0 0px solid;
+	}
+
+
+
+
+/* COLOR CODES - BACKGROUNDS AND BORDERS */
+
+.pageheight		{ height: 675px; }
+
+#cornerimage		{ width: 40px; height: 40px; }
+
+.page-splits		{
+			height: 3px;
+			width: 100%;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			}
+			
+.page-splitwidth {
+			height: 3px;
+			width: 100px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			}
+
+
+.faqline		{ border-bottom: #000000 1px solid; }
+
+
+.pictbackground		{ background-color: #000000; }
+
+
+#date-location		{ right: 10px; POSITION: absolute; TOP: 65px; }
+
+
+
+
+
+
+/* GENERAL TEXT SIZES */
+
+.smalltext		{ COLOR: #666633; FONT: 10px arial, sans-serif; font-weight: normal; }
+
+.footer			{ COLOR: #999999; FONT: 9px verdana, arial, sans-serif; }
+
+.pharynxatlas		{ COLOR: #000000; FONT: 14px arial, arial, sans-serif; }
+
+.phonetitle		{
+	COLOR: #000000;
+	font-weight: bold;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+}
+
+.list 			{ COLOR: #000000; FONT: 12px verdana, arial, sans-serif; font-weight: normal; }
+
+
+
+
+
+
+
+/* GENERAL TEXT FORMATTING CODE */
+
+.formmargin		{ margin: 0px; }
+
+.just 			{ text-align: justify; }
+
+.faq 			{ line-height: 19px; }
+
+
+
+
+
+
+
+
+
+/* GALLERY FONTS, BORDERS AND BUTTONS */
+
+.price			{ COLOR: #3366FF; FONT: 14px verdana, arial, sans-serif; font-weight: bold; }
+
+.cartmargin		{ margin: 8px 0px 0px 0px; }
+
+.gallerytext		{ COLOR: #333333; FONT: 11px verdana, arial, sans-serif; }
+
+.picturename		{
+	COLOR: #000;
+	font-weight: bold;
+	margin-left: 0px;
+	font-family: arial, verdana, sans-serif;
+	font-size: 18px;
+			}
+
+.picturetitle 		{
+			COLOR: #000000;
+			FONT: 13px arial, verdana, sans-serif;
+			font-weight: bold;
+			}
+
+.ordertitle		{ COLOR: #999999; FONT: 16px arial, verdana, sans-serif; font-weight: bold; }
+
+.viewer-border		{ border: #000000 1px solid; }
+
+.Galborder	 	{ border: #000000 1px solid; margin-bottom: 3px; }
+
+A:hover .Galborder 	{ border: #003399 1px solid; margin-bottom: 3px; Filter: Alpha(Opacity=80);-moz-opacity: 0.8; }
+
+
+
+
+
+/* TEMPLATE ORDER BUTTONS */
+
+.button-order	 	{
+			color: #FFFFFF;
+	       		font: bold 12px verdana, arial, serif;
+			text-align: center;
+			background-color: #003399;
+	        	background-image: url("../picts/button-order.gif");
+        		padding: 3px 5px 3px 5px;
+			cursor:pointer;
+			width: 130px;
+        		border: #333399 1px solid;
+			}
+
+
+.buttonon-order	 	{
+			color: #FFFFFF;
+	       		font: bold 12px verdana, arial, serif;
+			text-align: center;
+			background-color: #003399;
+	        	background-image: url("../picts/buttonon-order.gif");
+        		padding: 3px 5px 3px 5px;
+			cursor:pointer;
+			width: 130px;
+        		border: #000000 1px solid;
+			}
+
+
+
+
+
+
+
+
+
+/* HIDE MENU AND ITEMS FOR PRINTING */
+
+
+@media print {
+.printhide 	{ display:none; }
+.printhelp	{ width:600px; }
+}
+@media screen{
+.printonly 	{ display:none; }
+}
+
+
+
+
+
+
+
+/* SIDEBAR OPTIONS */
+
+.sidebar-background 	{ width: 187px; }
+
+
+.sidebar-frame		{
+			width: 187px;
+			height: 800px;
+			min-height: 600px;
+			margin: 0px;
+			padding: 0px;
+			BORDER: #999999 0px solid;
+			}
+
+/* FOR RIGHT SIDEBAR */
+
+.sidebarright-width	{ width: 190px; }
+
+fieldset 	{
+		padding: 0px 6px 6px 6px;
+		width: 150px;
+		text-align: left;
+		-moz-border-radius: 5px;
+		}
+
+fieldset legend {
+		margin-bottom: 3px;
+		padding: 2px 5px 2px 5px;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT FORM */
+
+
+.shadeform	{ FONT: 13px arial, verdana, sans-serif;
+		background-image: url("../picts/shadeform.gif");
+		text-align: left;
+		WIDTH: 200PX;
+		BORDER: #000000 1px solid; }
+
+
+.dropdown 	{ COLOR: #333333;
+		background-color: #F5F6F7;
+		WIDTH: 200PX;
+		FONT: 11px verdana, arial, sans-serif; }
+
+
+.textarea	{ FONT: 13px arial, verdana, sans-serif;
+		background-image: url("../picts/shadeform.gif");
+		text-align: left;
+		WIDTH: 275PX;
+		BORDER: #000000 1px solid; }
+
+
+
+
+
+
+
+/* FAQ POPUP, SLIDESHOW & CONTACT FORM BUTTONS */
+
+.button 		{
+			color: #000000;
+	       		font: bold 12px arial, serif;
+			text-align: center;
+			background-color: #C9D4DA;
+	        	background-image: url("../picts/button.gif");
+        		padding: 2px 7px 2px 7px;
+			cursor:pointer;
+        		border: #000000 1px solid;
+			}
+
+.buttonon 		{
+			color: #003399;
+	       		font: bold 12px arial, serif;
+			text-align: center;
+			background-color: #e2e2e2;
+	        	background-image: url("../picts/buttonon.gif");
+        		padding: 2px 7px 2px 7px;
+			cursor:pointer;
+        		border: #003399 1px solid;
+			}
+
+
+
+
+
+
+
+/* SITE SEARCH FORM */
+
+.searchsiteform		{
+			FONT: 12px arial, verdana, sans-serif;
+			color: #000000;
+			background-color: #FFFFFF;
+			background-image: url("../picts/shadeform.gif");
+			WIDTH: 120PX;
+			HEIGHT: 19PX;
+			BORDER: #000000 1px solid;
+			margin-top: 1px;
+			}
+
+
+/* SITE SEARCH BACKGROUND */
+
+.googlesearch		{ background-color: #FFFFFF; }
+
+
+
+
+
+
+
+
+
+
+
+/* LINKS PAGE CODE */
+
+.searchbutton	{
+		color: #000000;
+	       	font: bold 11px arial, serif;
+		text-align: center;
+		background-color: #C9D4DA;
+	        background-image: url("../picts/button.gif");
+        	padding: 1px 2px 1px 2px;
+		cursor:pointer;
+        	border: #000000 1px solid;
+		}
+
+
+.linksmargin	{ margin: 10px; }
+
+
+.searchform 	{ FONT: 13px arial, verdana, sans-serif;
+		background-image: url("../picts/shadeform.gif");
+		background-color: #FFFFFF;
+		WIDTH: 120PX;
+		HEIGHT: 20PX;
+		BORDER: #999999 1px solid; }
+.editor {
+	color: #800000;
+}
