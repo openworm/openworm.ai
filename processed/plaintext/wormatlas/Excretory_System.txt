@@ -1,0 +1,130 @@
+Excretory System
+
+  1) General Description
+
+Four distinctive cell types make up the excretory system: one pore cell, one duct cell, one canal cell (excretory cell), and a fused pair of gland cells (ExcFIG 1A). The nuclei of all are located in the head region, on the ventral side of the terminal bulb of pharynx and pharyngeal-intestinal valve (ExcFIG 2A). The role of the excretory cell is probably osmotic/ionic regulation and waste elimination, analogous to the renal system of higher animals. It presumably collects fluids and then empties them outside via the excretory duct and pore (Nelson and Riddle, 1984; Buechner et al., 1999). The excretory gland cells are connected to the same duct and pore, and they secrete materials from large membrane-bound vesicles. The nature of this secretion is unknown. Although excretory gland secretion may have a role in molting in other worm species, it does not seem to be essential for this function in C. elegans (Davey and Kan 1968; Nelson and Riddle, 1984). The secreted/excreted material from the canal and gland cell passes through a cuticle-lined excretory duct located just below the terminal bulb of the pharynx and is deposited outside via the pore at the ventral midline (ExcFIG 1B, ExcFIG 2B). These cells and their shapes are highly variable in nematodes (Chitwood and Chitwood, 1950).
+
+The excretory system has a rather simple structure in C. elegans, except for the convoluted shape of the duct. The gland cell is suggested to receive synaptic input from the neurons in the nerve ring where its anterior process lies in close apposition to neurons (Nelson et al., 1983). Gap junctions exist between the excretory canals and the adjacent hypodermis as well as between the excretory cell and the duct cell, the excretory cell and the pore cell, and the duct and pore cells (White, 1988) (see also Gap Junctions). The excretory system is sealed by adherens junctions at several points: the origin of the excretory duct (secretory-excretory junction) where the excretory cell, gland cell and duct cell form a complex branched intercellular junction; the boundary between the duct and pore cells; the intracellular junctions formed by the pore cell wrapping onto itself around the duct; and the linkage between the pore cell and hyp7 to secure the pore opening to the bodywall (Mancuso et al., 2009). The excretory system is critical for the animal's survival, and when absent or compromised, a 'rod-like' lethal phenotype quickly results, often in early L1 stage, when the entire animal inflates with excess fluid (Li'geois et al., 2007).
+
+  2) Excretory (Canal) Cell
+
+The H-shaped excretory cell (see ExcFIG 5E) is the largest cell in C. elegans and its birth at 270 minutes after first cell cleavage (just around the end of gastrulation at 22Â°C) provides an easily identifiable landmark in embryogenesis (ExcFIG 3A&B) (Sulston et al., 1983; Fujita et al., 2003). Its cell body lies immediately below the anterior portion of the terminal bulb of the pharynx, adjacent to the ventral epidermal ridge, and forms a bridge between the right and left excretory canals (ExcFIG 1A&B). Its single, large nucleus, which includes a large nucleolus, is located within the cell body, just left of the midline and slightly posterior to the secretory-excretory junction (ExcFIG 2A and ExcFIG 4A). The excretory cell is polarized with distinctive basal and apical surfaces. The apical face surrounds the lumen within the canals and the excretory sinus, and the basal surface is on the outside of the cell and touches the pseudocoelom. These two faces join at the secretory-excretory junction. Laser ablation of the excretory cell, the duct cell, or the pore cell (but not the gland cell) leads to fluid collection within the animal and death within a few days, thus suggesting that these cells have a function in osmoregulation (LiÃ©geois et al., 2007).
+
+The newly born excretory cell is located on the ventral side of the developing pharynx of the embryo (ExcFIG 5A). Within an hour of its birth, one or two large vacuoles appear within the cell body (ExcFIG 5B and ExcFIG 6, inset). At about the same time, the cell starts to extend two processes dorsolaterally, and this bilateral canal extension is completed by the twofold stage (~450, minutes at 22Â°C) (ExcFIG 5C). The apical (lumenal) surface of the vacuole(s) is also enlarged as tubular arms grow from the initial vacuole(s) into the bilateral rudimentary canals (ExcFIG 6). A thick material that is visible by electron microscopy accumulates within the lumen (ExcFIG 6). At about the twofold stage, when they reach the lateral hypodermal ridges, the bilateral canals bifurcate to grow anterior and posterior arms located between the hypodermis and hypodermal basal lamina (ExcFIG5 D). The anterior arms run near the ventral margins of the lateral epidermal ridges, whereas the posterior arms run near the middle of them. By the time of hatching, posterior arms reach approximately the midbody, just past the V3 hypodermal seam cell. Between mid-three-fold stage and hatching, the electron-dense lumenal material disappears and an apical cytoskeletal material (terminal web) appears around the canals (Hedgecock et al., 1987; Buechner et al., 1999; Buechner, 2002; Berry et al., 2003). Simultaneously, the lumen of the canals assumes a flattened shape, and numerous canaliculi develop around the lumen to increase the apical surface area (ExcFIG 5E). The canals continue to grow actively during the first larval stage and reach their full length from the anterior tip of the organism to near the tip of the tail, just past the V6 seam cell by mid-L1. In the following three larval stages, canals grow passively with the growing length of the animal (Hedgecock et al., 1987; Buechner et al., 1999; Buechner, 2002; Berry et al., 2003). In the adult, the anterior segments of the canals are about 100 Î¼m in length and 1 Î¼m in diameter, whereas the posterior segments are about 1000 Î¼m in length and 2 Î¼m in diameter.
+
+The two excretory canals run along the basolateral surface of the hypodermis on each side, in close association with the processes of CAN, PVD and ALA neurons along the posterior portions (ExcFIG 7A). Among these, CAN cells have been suggested to have a role in regulating the excretory canals (Hedgecock et al., 1987). The lateral subdomain of the outer circumference of the canals is closely linked to the hypodermis by an extensive system of large gap junctions and shares a common basal lamina with it (ExcFIG 7B&C) (see also Gap Junctions). The basal subdomain of the outer circumference of each canal remains in contact with the pseudocoelom over the full length of the canal (Nelson et al., 1983). Canals contain longitudinally oriented microtubules as well as mitochondria and Golgi bodies throughout their length, whereas endosomes are concentrated at the canal endings (ExcFIG 7B&C).
+
+The central lumen of each canal is narrower in the anterior compared with the posterior regions (Buechner, 2002). These lumena fuse and join with the origin of the excretory duct through a system of small channels termed the excretory sinus, just anterior to the cellâs nucleus (ExcFIG 8). The excretory sinus contains filamentous material that extends into the excretory duct.
+
+In a fully formed excretory cell, a system of beaded canaliculi feed into the central lumen along the length of each canal (ExcFIG 7C). These canaliculi radiate from all sides of the lumen over short lengths to fill most of the canal cytoplasm (ExcFIG 7D&E). The shape of the central lumen can vary from a collapsed tube (~1 Î¼m in breadth and 0.1 Î¼m in depth) to a round cylinder (more than 1 Î¼m in diameter when it is fluid-filled) (Buechner et al., 1999). The apical cytoskeleton surrounding the plasma membrane may reinforce the shape of the lumen to prevent it from deforming during fluid outflow (Buechner et al., 1999). The shapes of the canaliculi are more plastic, and under different conditions, the canaliculi may variably appear as smooth, narrow tubes or as a set of connected beads (50 nm beads connected by narrow necks); they can also break up into a set of larger (90 nm) vesicles that are disconnected from their neighbors and from the lumen. Recent studies using electron tomography to follow the adult canal in three dimensions show that the canaliculi are actually not beads on a linear 'string', but form short branched networks, with the stem of each branch attaching to the lumen (Zhang et al., 2012 and unpublished data) (ExcFIG 7D&E). Most canaliculi (beads) lie within 1-4 bead-length from their lumenal connection.
+
+Both the central canal and canaliculi are lined by lumenal glycocalyx (mucin) that is essential for effective functioning of the secretory/excretory system (Jones and Baillie, 1995). A distinct set of mutations (âexcâ: excretory canal defective) in genes expressed in the excretory cells is known to cause tubular pathologies in the form of gross cyst formation along the canal lumen, ranging from focal cysts, followed by normal-width segments, to large cysts involving almost the entire tubule (Buechner et al., 1999; Gao et al., 2001; Suzuki et al., 2001; Fujita et al., 2003). Some of these genes encode structural proteins such as SMA-1 (spectrin), necessary to reinforce the apical membrane on the cytoplasmic side, lumenal molecules such as mucin (LET-653) or ion channels (Jones and Baillie, 1995; McKeown et al., 1998; Berry et al., 2003).
+
+Several proteins in the plasma membrane, lumenal membrane, or canaliculi have been implicated in the excretory canal cell's important physiological role in osmoregulation, including an aquaporin (AQP-8), a chloride channel (CLH-3), several anion transporters (ABTS-2, SULP-4, SULP-5), a receptor-mediated cation export channel (GTL-2) and many vacuolar ATPases (VHA-1, 2, 4, 5, 8,11,12,13,15, 16 and VHA-17) (Li'geois et al., 2007; Hisamoto et al., 2008; Mah et al., 2007; Sherman et al., 2005; Teramoto et al., 2010; Hahn-Windgassen and Van Gilst, 2009).
+
+  3) Excretory Gland Cell
+
+The excretory gland is a binucleate, A-shaped cell that is formed by fusion of two identical (exc gl L and R) cells (ExcFIG 3C; ExcMOVIE 1) (Nelson et al., 1983). It has two separate cell bodies lying subventrally in the pseudocoelomic space, on the left and right sides and just posterior to the pharyngeal-intestinal valve (ExcFIG 4B). A large process from each cell body projects anteriorly along the dorsal surface of the ventral nerve cord and fuses with the other side at the level of the secretory-excretory junction, across the anterior edge of the excretory cell body (ExcFIG 8). The bilateral gland cell processes separate again anterior to this bridge region and fuse a second time near their anterior limit to form a ring-like process which projects into the nerve ring. The gland cell is suggested to receive synaptic input from nerve ring neurons in this region (Nelson et al., 1983).
+
+The gland cell cytoplasm contains an extensive network of dilated cisternae of rough endoplasmic reticulum, many mitochondria and ribosomes, Golgi complexes, and clusters of electron dense secretory granules (Nelson et al., 1983). These granules are concentrated around the cytoplasmic bridge region near the secretory membrane, which is a specialized portion of the cell membrane that connects to the origin of the excretory duct (ExcFIG 8). Any glandular secretions entering the duct may conceivably reach the excretory sinus through the secretory-excretory junction. As the animal grows the gland cell enlarges in proportion to the size of the animal,  and the number of secretory granules increases, although the changes are not synchronous with the molting cycle (Nelson et al., 1983). The vesicles become less electron-dense in the adult gland. In dauer larvae, the gland cell cytoplasm contains only a loose membraneous network and no secretory granules. This does not seem to be a result of starvation but rather is related to this developmental state itself. The function of excretory gland cell is currently unknown. It does not seem to be involved in molting in C. elegans (Singh and Sulston, 1978), and ablation of the gland cell does not result in any obvious defects (Nelson and Riddle, 1984).
+
+  4) Duct Cell
+
+The excretory duct of C. elegans is a 15 Î¼m long, cuticle-lined channel that connects the excretory system to outside via the excretory pore located at midline on the ventral side of the body. The duct cell surrounds the duct from its origin to the boundary of the pore cell, covering about two thirds (9-10 Î¼m) of the duct, which follows a looped path within the cell (ExcFIG 1A&B). The duct cell is located just anterior and lateral (left or right) to the excretory cell body, and hence, the initial portion of the duct can be located either to the right or the left of the excretory cell (Nelson et al., 1983). The morphology of the duct cell, as well as the placement of the duct and pore along the anterior-posterior axis within related Caenorhabditis species seems to be determined by the zinc-finger gene lin-48 (Wang and Chamberlin, 2002; 2004).
+
+Inside the duct cell, the plasma membrane surrounding the duct invaginates extensively, creating lamellar stacks which greatly increase the surface area of the membrane (ExcFIG 4A and ExcFIG 9C). These lamellar sheets become more elaborate as the animal matures and are similar to those seen in hypodermis (White, 1988). Laser ablation of the duct cell leads to absence of cuticle within the duct cell portion of the excretory duct after a molt, suggesting duct cell integrity is required for formation of cuticle lining within the duct cell environment (Nelson and Riddle, 1984).
+
+Mutations that slow the growth of the duct cell lumen during embryogenesis can lead to rod-like lethality if the lumen breaks down anywhere along the length of the duct (Stone et al., 2009). In addition, as with the excretory cell, duct cell ablation eventually causes fluid accumulation within the animal followed by death, suggesting a function in osmotic/ionic regulation. This function is also supported by the finding that In other nematode species the pulse rate of the duct changes according to the osmolarity of the environment.  However, in C. elegans, the only stage when any duct pulsation is observed is the dauer larva (See Dauer Cuticle) (Nelson and Riddle, 1984).
+
+  5) Pore (excretory socket) Cell
+
+Like the duct cell, the pore cell is a specialized, transitional, epithelial cell. It encloses the ventral third of the duct and forms an adherens junctions with the duct cell at the duct cell-pore cell junction. It also makes junctions with itself by wrapping around the duct (Nelson et al., 1983). The pore cell underlies the excretory pore on the ventral side of the animal where the duct wall cuticle becomes continuous with the body wall cuticle (ExcFIG 9A). Around this region, the pore cell makes adherens junctions to the surrounding hypodermis and seals the pore (ExcFIG 9B). In the embryo, the G1 cell acts as the excretory pore cell (excretory socket cell). After hatching, G1 becomes a neuroblast and the pore function is taken over by G2 (ExcFIG 10). Eventually at L2 stage, G2 divides and the posterior daughter of G2 (G2.p) becomes the mature excretory pore cell, while the anterior daughter (G2.a) becomes a neuroblast (Nelson et al., 1983, Sulston, 1983). Mutations that inhibit this pore cell swap, or inhibit the remodeling of adherens junctions between the duct cell and the new pore cell can cause rod-like lethality if the duct/pore junction is lost (Abdus-Saboor et al., 2011; Mancuso et al., 2012).
+
+The duct cell and pore cell share responsibility for secreting the new duct cuticle at each molt. In animals where the pore cell is ablated, cuticle is completely absent throughout the duct (Nelson and Riddle, 1984). The excretory pore remains open throughout all developmental stages including the dauer larva (See Dauer Cuticle).
+
+  6) List of Cells of the Excretory System
+
+Excretory canal cell (exc cell)
+
+Excretory gland cell (syncytial)
+
+Exc gl L
+
+Exc gl R
+
+Excretory duct cell
+
+Excretory pore cell:
+
+G1 (only at embryo stage)
+
+G2 (only at L1 stage)
+
+Exc pore cell [aka excretory socket cell] (L2 and later stages)
+
+More figures of the excretory system
+
+
+
+
+
+
+
+  7) References
+
+Abdus-Saboor, I., Mancuso, V., Palozola, K., Murray, J., Howell, K.,  Huang, K., Norris, C.R., Hall, D.H. and Sundaram, M.V. (2011) Notch and Ras promote sequential steps of excretory (renal) tubulogenesis. Development 138: 3545-55. (http://dev.biologists.org/content/138/16/3545.full)
+
+Berry, K.L., Buelow, H.E., Hall, D.H. and Hobert, O. 2003. A C. elegans CLIC-like protein required for intracellular tube formation and maintenance. Science 302: 2134-2137. (http://dx.doi.org/10.1126/science.1087667)
+
+Buechner, M., Hall, D.H., Bhatt, H. and Hedgecock, E.M. 1999. Cystic canal mutants in Caenorhabditis elegans are defective in the apical membrane domain of the renal (excretory cell). Dev. Biol. 214: 227-241. (http://dx.doi.org/10.1006/dbio.1999.9398)
+
+Buechner M. 2002. Tubes and the single C. elegans excretory cell. Trends Cell Biol. 12: 479-484. (http://dx.doi.org/10.1016/S0962-8924(02)02364-4)
+
+Chitwood, B. G. and Chitwood, M. B. 1950. General structure of nematodes. In An introduction to nematology. Chapter 2. pp 7-27. Baltimore, University Park Press.
+
+Davey, K.G. and Kan, S.P. 1968. Molting in a parasitic nematode, Phocanema decipiens. IV. Ecdysis and its control. Can. J Zool. 46: 893-898. (http://dx.doi.org/10.1139/z68-125)
+
+Fujita, M., Hawkinson, D., King, K.V., Hall, D.H., Sakamoto, H. and Buechner, M. 2003. The role of the ELAV homologue EXC-7 in the development of the Caenorhabditis elegans excretory canals. Dev. Biol. 256: 290-301. (http://dx.doi.org/10.1016/S0012-1606(03)00040-X)
+
+Gao, J., Estrada, L., Cho, S., Ellis, R.E. and Gorski, J.L. 2001. The Caenorhabditis  elegans homolog of FGD1, the human Cdc42 GEF gene responsible for faciogenital dysplasia, is critical for excretory cell morphogenesis. Hum. Mol. Gen. 10: 3049-3062. (http://hmg.oxfordjournals.org/cgi/content/full/10/26/3049?view=long&pmid=11751687)
+
+Hahn-Windgassen, A. and Van Gilst, M.R. 2009. The Caenorhabditis elegans HNF4alpha Homolog, NHR-31, mediates excretory tube growth and function through coordinate regulation of the vacuolar ATPase. PLoS Genet. 5: e1000553. (http://dx.doi.org/10.1371/journal.pgen.1000553)
+
+Hedgecock, E., Culotti, J.G., Hall, D.H. and Stern, B.D. 1987. Genetics of cell and axon migrations in Caenorhabditis elegans. Development 100: 365-382.(http://dev.biologists.org/content/100/3/365.long)
+
+Hisamoto, N., Moriguchi, T., Urushiyama, S., Mitani, S., Shibuya, H. and Matsumoto, K. 2008. Caenorhabditis elegans WNK-STE20 pathway regulates tube formation by modulating ClC channel activity. EMBO Rep. 9: 70-5. (http://dx.crossref.org/10.1038%2Fsj.embor.7401128)
+
+Jones, S.J., and Baillie, D.L. 1995. Characterization of the let-653 gene in Caenorhabditis elegans. Mol. Gen. Genet. 248: 719-726. (http://dx.doi.org/10.1007/BF02191712)
+
+LiÃ©geois S, Benedetto A, Michaux G, Belliard G, and Labouesse M. 2007 Genes required for osmoregulation and apical secretion in Caenorhabditis elegans. Genetics 175: 709-24. (http://dx.doi.org/10.1534/genetics.106.066035)
+
+Mah, A.K., Armstrong, K.R., Chew, D.S., Chu, J.S., Tu, D.K., Johnsen, R.C., Chen, N., Chamberlin, H.M. and Baillie, D.L. 2007. Transcriptional regulation of AQP-8 , a Caenorhabditis elegans aquaporin exclusively expressed in the excretory system, by the POU homeobox transcription factor CEH-6. J. Biol. Chem. 282: 28074-86.(http://dx.doi.org/10.1074/jbc.M703305200)
+
+Mancuso, V.P., Parry, J.M., Storer, L., Poggioli, C., Nguyen, K.C.Q., Hall, D.H. and Sundaram, M.V. 2012. Components of the apical extracellular matrix are required to maintain epithelial junction integrity in C. elegans. Development 139: 979-90. (http://dev.biologists.org/content/139/5/979)
+
+McKeown, C., Praitis, V., and Austin, J. 1998. sma-1 encodes a bH-spectrin homolog required for Caenorhabditis  elegans morphogenesis. Development 125: 2087-2098. (http://dev.biologists.org/content/125/11/2087.long)
+
+Nelson, F.K. and Riddle, D.L. 1984. Functional study of the Caenorhabditis  elegans secretory-excretory system using laser microsurgery. J. Exp. Zool. 231: 45-56. (http://dx.doi.org/10.1002/jez.1402310107)
+
+Nelson, F.K., Albert, P.S. and Riddle, D.L. 1983. Fine structure of the Caenorhabditis elegans secretory-excretory system.  J. Ultrastruct. Res. 82: 156-171. (https://www.wormatlas.org/ver1/Nelson_1983/toc.html)
+
+Sherman, T., Chernova, M.N., Clark, J.S., Jiang, L., Alper, S.L. and Nehrke, K. 2005. The abts and sulp families of anion transporters from Caenorhabditis elegans. Am. J. Physiol. Cell Physiol. 289: C341-51.(http://ajpcell.physiology.org/cgi/pmidlookup?view=long&pmid=15814591)
+
+Singh, S.S. and Sulston, J.E. 1978. Some observations of moulting in Caenorhabditis elegans. Nematologica 24: 63-71. (http://www.ingentaconnect.com/content/brill/nem/1978/00000024/00000001/art00007)
+
+Stone, C.E., Hall, D.H. and Sundaram, M.V. 2009. Lipocalin signaling controls unicellular tube development in Caenorhabditis elegans. Developmental Biol. 329: 201-211. (http://dx.doi.org/10.1016/j.ydbio.2009.02.030)
+
+Sulston, J.E., Schierenberg, E., White, J.G. and Thomson, J.N. 1983. The embryonic cell lineage of the nematode Caenorhabditis  elegans.  Dev. Biol. 100: 64-119. (https://www.wormatlas.org/ver1/Sulstonemblin_1983/toc.html)
+
+Suzuki, N., Buechner, M., Nishiwaki, K., Hall, D.H., Nakanishi, H., Takai, Y., Hisamoto, N. and Matsumoto, K. 2001. A putative GDP-GTP exchange factor is required for development of the excretory cell in Caenorhabditis elegans. EMBO Rep.  21: 530-535. (http://www.nature.com/embor/journal/v2/n6/full/embor405.html)
+
+Teramoto, T., Sternick, L.A., Kage-Nakadai, E., Sajjadi, S., Siembida, J., Mitani, S., Iwasaki, K. and Lambie, E.J. 2010. Magnesium excretion in I requires the activity of the GTL-2 TRPM channel. PLoS One 5: e9589.(http://dx.doi.org/10.1371/journal.pone.0009589)
+
+Wang, X. and Chamberlin, H.M. 2002. Multiple regulatory changes contribute to the evolution of the Caenorhabditis  lin-48 ovo gene. Genes Dev. 16: 2345-2349. (http://dx.doi.org/10.1101/gad.996302)
+
+Wang, X. and Chamberlin, H.M. 2004. Evolutionary innovation of the excretory system in Caenorhabditis elegans. Nat. Genet. 36: 231-232. (http://dx.doi.org/10.1038/ng1301)
+
+White J. 1988. The Anatomy. In The nematode C. elegans (ed. W. B. Wood). Chapter 4. pp 81-122. Cold Spring Harbor Laboratory Press, New York. (http://cshmonographs.org/index.php/monographs/article/view/5019)
+
+Zhang, H., Kim, A., Abraham, N., Khan, L.A., Hall, D.H., Fleming, J.T. and Gobel, V. 2012. Clathrin and AP-1 regulate apical polarity and lumen formation during C. elegans tubulogenesis. Development 139: 2071-2083. (http://dx.doi.org/10.1242/dev.077347)
+

@@ -1,3 +1,4 @@
+from openworm_ai import print_
 from openworm_ai.parser.DocumentModels import Document, Section, Paragraph
 
 import json
@@ -19,23 +20,23 @@ def save_json(doc_model, file_name, json_output_dir):
     #    json.dump(content, json_file, indent=4, ensure_ascii=False)
     doc_model.to_json_file(file_path)
 
-    print(f"  JSON file saved at: {file_path}")
+    print_(f"  JSON file saved at: {file_path}")
     md_file_path = Path(f"{markdown_output_dir}/{file_name.replace('.json', '.md')}")
     doc_model.to_markdown(md_file_path)
-    print(f"  Markdown file saved at: {md_file_path}")
+    print_(f"  Markdown file saved at: {md_file_path}")
 
     text_file_path = Path(
         f"{plaintext_output_dir}/{file_name.replace('.json', '.txt')}"
     )
     doc_model.to_plaintext(text_file_path)
-    print(f"  Plaintext file saved at: {text_file_path}")
+    print_(f"  Plaintext file saved at: {text_file_path}")
 
 
 # Function to process JSON and extract markdown content
 def convert_to_json(paper_ref, paper_info, output_dir):
     loc = Path(paper_info[0])
 
-    print(f"Converting: {loc}")
+    print_(f"Converting: {loc}")
 
     # Load the input JSON file
     with open(loc, "r", encoding="utf-8") as JSON:

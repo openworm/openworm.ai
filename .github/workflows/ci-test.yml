@@ -28,7 +28,7 @@ jobs:
 
     - name: Install package
       run: |
-          pip install .[test]
+          pip install .[dev]
 
     - name: Install ollama and small LLM
       run: |

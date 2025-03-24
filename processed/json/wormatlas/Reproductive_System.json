@@ -1,0 +1,41 @@
+{
+    "Reproductive System": {
+        "title": "Reproductive System",
+        "source": "https://www.wormatlas.org/hermaphrodite/reproductive/Reproframeset.html",
+        "sections": {
+            "1) General Description": {
+                "paragraphs": [
+                    {
+                        "contents": "The reproductive system is one of the most sexually dimorphic tissues in the animal, with many components differing between hermaphrodites and males (see Introduction for an overview of the male anatomy). The hermaphrodite reproductive system produces mature gametes and provides the structure and environment for fertilization and egg-laying (ReproFIG 1). It can be divided into three major parts: the somatic gonad (described in Reproduction System - Somatic Gonad), the germ line (Reproductive System - Germ Line), and the egg-laying apparatus (Reproductive System - Egg-laying Apparatus) (ReproTABLE 1). The somatic gonad and germ line together form two symmetrical U-shaped tubes (arms) that are joined to a common uterus and egg-laying apparatus in the midbody."
+                    },
+                    {
+                        "contents": "The somatic gonad is composed of the distal tip cell (DTC), gonadal sheath, spermatheca (sp), spermathecal-uterine (sp-ut) valve, and uterus (the uterus can also be considered part of the egg-laying apparatus). The adult germ line is organized in a distal-to-proximal manner, with distal corresponding to the region approaching the distal tip cell, and proximal corresponding to the nearest point at which embryos exit from the animal. Germ cells in the distal-most part of the gonad arm are mitotic and undifferentiated. As germ cells move proximally, they enter and pass through the stages of meiosis I prophase, reaching pachytene in the loop region, then progress further through meiosis in the proximal arm (ReproFIG 1). The egg-laying apparatus consists of the vulva, uterine and vulval muscles, left and right hermaphrodite specific neurons (HSNL/R), and VC1\u00e2\u0080\u00936 neurons. The hermaphrodite is considered a specialized self-fertile female because the soma is female but the germ line first produces a fixed number of male gametes (sperm) before switching to the sole production of female gametes (oocytes) (L\u00e2\u0080\u0099Hernault, 1997; Schedl,1997)."
+                    },
+                    {
+                        "contents": "Hermaphrodites produce approximately 300 embryos by fertilization of oocytes with self-sperm (the process of self-fertilization). Fertilization is also achieved using male-derived sperm, transferred during copulation. In the proximal gonad, oocytes undergo maturation and are ovulated in single-file, assembly-line fashion into the sperm-containing spermatheca where they are fertilized (Singson, 2001). Fertilized eggs then move into the uterus. Activity of the egg-laying apparatus subsequently forces eggs out into the environment by passing them through a ventral opening called the vulva."
+                    }
+                ]
+            },
+            "2) Lineal Origin of the Reproductive System": {
+                "paragraphs": [
+                    {
+                        "contents": "Formation of the reproductive system spans the entire post-embryonic period. The reproductive system is formed by cells from several lineages (ReproTABLE 1; ReproFIG 2), including some that originate more posteriorly and must migrate considerable distances to be included in the developing system (e.g., the HSNs and uterine and vulval muscle precursors) (Sulston and Horvitz, 1977; Sulston et al., 1983). Not surprisingly, the organization of this complex system involves a hierarchy of temporally and spatially coordinated signaling events and cell\u00e2\u0080\u0093cell interactions (Sulston and White, 1980; Kimble, 1981; Sternberg and Horvitz, 1986; Sternberg, 1988; Thomas et al., 1990). The developing gonad itself serves as the primary organizer, promoting development of the vulva and uterus and guiding the precise positioning of sex muscle precursors (Kimble, 1981; Sternberg and Horvitz, 1986; Thomas et al., 1990; Newman et al., 1995). The vulva, in turn, acts as a secondary organizer for assembly of the egg-laying apparatus (Li and Chalfie, 1990; Thomas et al., 1990; Garriga et al., 1993; Chang et al., 1999; Shen and Bargmann, 2003; Shen et al., 2004). Finally, within the gonad itself, interactions between somatic tissues and the germ line have a critical role in promoting germ-line proliferation, polarity, progression of meiosis, ovulation, and gamete sexual identity (Kimble and White, 1981; Seydoux et al., 1990; McCarter et al., 1997; Pepper et al., 2003; Killian and Hubbard, 2004)."
+                    },
+                    {
+                        "contents": "Some maturation events occur remarkably late in reproductive system development. For instance, several anatomical changes are associated with ovulation. Spermatids, generated within the gonadal sheath, are pushed into the spermatheca by passage of the first oocyte. There they mature into spermatozoa (sperm) (L\u00e2\u0080\u0099Hernault ,1997). The sp-ut valve and uterus also undergo structural modification as a consequence of this first ovulation (J. White, unpubl.; D.H. Hall, unpubl.)."
+                    }
+                ]
+            },
+            "3) References": {
+                "paragraphs": [
+                    {
+                        "contents": "Chang, C., Newman, A.P. and Sternberg, P.W. 1999. Reciprocal EGF signaling back to the uterus from the induced C. elegans vulva coordinates morphogenesis of epithelia. Curr. Biol. 9: 237-246. Article"
+                    },
+                    {
+                        "contents": "Garriga, G., Desai, C. and Horvitz, H.R. 1993. Cell interactions control the direction of outgrowth, branching and fasciculation of the HSN axons of Caenorhabditis elegans. Development 117: 1071-1087. Article"
+                    }
+                ]
+            }
+        }
+    }
+}

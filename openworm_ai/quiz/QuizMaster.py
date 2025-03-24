@@ -1,7 +1,10 @@
 from openworm_ai.quiz.QuizModel import MultipleChoiceQuiz, Question, Answer
+
 from openworm_ai.quiz.TemplatesCelegans import GENERATE_Q, TEXT_ANSWER_EXAMPLE
+# from openworm_ai.quiz.Templates import GENERATE_Q, TEXT_ANSWER_EXAMPLE
 
 from openworm_ai.utils.llms import ask_question_get_response
+from openworm_ai.utils.llms import get_llm_from_argv
 
 import random
 
@@ -56,7 +59,8 @@ def save_quiz(num_questions, num_answers, llm_ver, temperature=0):
 if __name__ == "__main__":
     import sys
 
-    llm_ver = "GPT4o"
+    llm_ver = get_llm_from_argv(sys.argv)
+
     print(f"Selected LLM: {llm_ver}")
 
     if "-ask" in sys.argv:
@@ -66,6 +70,10 @@ if __name__ == "__main__":
         quiz_json = "openworm_ai/quiz/samples/GPT4o_100questions.json"
 
         quiz = MultipleChoiceQuiz.from_file(quiz_json)
+
+        print(
+            f"Asking LLM {llm_ver} {len(quiz.questions)} questions from file: {quiz_json}"
+        )
 
         total_qs = 0
         total_correct = 0
@@ -135,5 +143,9 @@ if __name__ == "__main__":
     # make this into a method which returns a dictionary of all the "stats" that lists the llm, correct/incorrect answers
     # this can be used to plot comparison of variety of llms on general knowledge
     else:
-        print(f"Debug: Using LLM {llm_ver} for saving quiz")
-        save_quiz(100, 4, llm_ver, temperature=0.2)
+        num = 100
+        for a in sys.argv:
+            if a.isnumeric():
+                num = int(a)
+        print(f"Using LLM {llm_ver} for saving quiz with {num} questions")
+        save_quiz(num, 4, llm_ver, temperature=0.2)

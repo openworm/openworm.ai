@@ -1,0 +1,110 @@
+Somatic Muscles
+
+  1) Nematode Somatic Muscle
+
+In C. elegans, the 95 rhomboid-shaped body wall muscle cells are arranged as staggered pairs in four longitudinal bundles located in four quadrants (MusFIG 7). Three of these bundles (DL, DR, VR) contain 24 cells each, whereas the VL bundle contains 23 cells. This asymmetry appears to result from a gap on the ventral left quadrant of the embryo, slightly posterior to the gonad primordium (Sulston and Horvitz, 1977). Muscles are always separated from the underlying hypodermis and nervous tissue by a thin (approximately 20 nm) basal lamina (BL). This BL remains intact within the synaptic regions, except for NMJs made in the nerve ring between the RIML/R motor neurons and their target muscle arms. A typical somatic muscle cell has three parts: the contractile filament lattice (spindle), a noncontractile body (muscle belly) containing the nucleus and the cytoplasm with mitochondria, and the muscle arms, slender processes that extend to either ventral or dorsal nerve cords or the nerve ring (MusFIG 8) (see Introduction to Muscle). Somatic muscle nuclei are oblong (ovoid), intermediate in size between neuronal and hypodermal nuclei, and have a small, spherical nucleolus. Viewed by differential interference contrast (DIC) microscopy, their nucleoplasm appears granular in L1, but becomes smooth in L2 and remains so throughout the rest of the development (Sulston and Horvitz, 1977).
+
+  2) Structure of Somatic Muscle
+
+The body wall muscle of C. elegans, as in all other nematodes, is obliquely striated (MusFIG 8). Although the filaments themselves are oriented parallel to the longitudinal axis of the muscle cell, adjacent structural units (M lines and DBs) are offset from one another by more than a micron, rather than being in register as in vertebrate cross-striated muscle (Waterston, 1988; Bird and Bird, 1991). Therefore, the observed AâI striations occur at an angle of 5â7Â° with respect to the longitudinal axes of the filaments and the muscle cell, in comparison to 90Â° in vertebrate cross-striated muscle (MusFIG 9 and MusTABLE 1). This oblique arrangement of the sarcomeres is suggested to create a more evenly distributed muscle force application over the BL and cuticle, allowing for smooth bending of the body rather than kinking (Burr and Gans, 1998). Each somatic muscle cell is attached basally to the underlying hypodermis and cuticle and laterally to the neighboring muscle cells through three distinct PAT-2/PAT-3 integrin-containing attachment complexes. These include DBs, M lines, and lateral attachment plaques.
+
+   2.1) Basal Attachments
+
+In C. elegans, the myofilament lattice of each contractile unit is anchored to the muscle cell membrane and adjacent BL by DB and M lines, which are highly ordered, regularly spaced structures that extend from the cytoplasm to the plasma membrane (MusFIG 10). DB and M lines are homologous to vertebrate focal adhesion plaques and contain many of the cytoskeletal adaptor proteins of these integrin-mediated attachments, including talin, PAT-6/actopaxin, PAT-4/ILK, and UNC-97/PINCH. DBs also share some components with muscleâmuscle attachment plaques (Francis and Waterston, 1985).
+
+At the plasma membrane, DB and M lines are mechanically linked to the outside cuticle through BL components and hypodermal fibrous organelles (FOs) (MusFIG 11 and MusFIG 12) (Waterston, 1988; Francis and Waterston, 1991; Moerman and Fire, 1997; Coutu Hresko et al., 1999; Hahn and Labouesse, 2001; Cox and Hardin, 2004). Perlecan and collagen IV concentrate in the BL underneath each DB and M line, which align with FOs of the hypodermis. FOs are also known as transepidermal attachments and are homologous to vertebrate hemidesmosomes (HD) that anchor the intermediate filament network to the plasma membrane and BL (Ding et al., 2004; Labouesse, 2006). Like HD, they are seen as two electron-dense plaques, one on the inside of each hypodermal plasma membrane, which are connected by cytoplasmic intermediate filaments that span the width of the hypodermis (MusFIG 11). FOs are restricted to the thin hypodermal regions that overlie muscle cells, and they form concurrently with muscle development. In early embryonic stages, they are localized into longitudinal strips; however, during elongation of the embryo and as circumferential actin bundles form in hypodermal cells, they change into a circumferential stripe pattern. This pattern continues through larval and adult stages (Ding et al., 2004).
+
+Loss of function in components of DB and M lines frequently results in detachment of body wall muscles from the cuticle, supporting the hypothesis that these attachment structures function to promote mechanical strength between the muscle and hypodermis (Gatewood and Bucher, 1997; Plenefisch et al., 2000).
+
+ 2.2 Attachment Plaques (Lateral Attachments)
+
+   2.2) Attachment Plaques (Lateral Attachments)
+
+Similar to myotendinous junctions of vertebrate skeletal muscle, the ends of C. elegans somatic muscle cells contain thin (actin) filament attachment plaques (the ends of the terminal half I bands at which microfilaments are attached to the cytoplasmic surface of the plasma membrane), which are most similar to DBs (MusFIG 13). By means of attachment plaques, each of the muscle cells adheres tightly to adjacent muscle cells within one quadrant (Francis and Waterston, 1991; Coutu Hresko et al., 1994). Although this may allow for some tension to be transmitted longitudinally between cells, the bulk of the tension created by muscle contraction is transferred to the exoskeleton/cuticle through basal attachments that are distributed along the entire length of the cell (Francis and Waterston, 1985; Woo et al., 2004).
+
+  3) Development of Somatic Muscle
+
+The body wall muscle cells are derived from D, C, AB, and MS cell lineages. At hatching, 81 of the 95 cells are present. Fourteen more muscle cells are generated post-embryonically from the MSapaapp lineage (MusFIG 14 , MusFIG 15A and MusFIG 15B) (Sulston and Horvitz, 1977; Sulston et al., 1983). Of the 81 body muscles of the newly hatched larva, 80 are generated in symmetrical fashion from MS, C, and D lineages. Twenty come from the D blast cell, which generates body muscle cells exclusively, 16 from Cp, 16 from Ca, 9 from MSpp, 6 from MSpa, 9 from MSap, and 4 from MSaa (Sulston et al., 1983). The remaining cell is generated by ABprpppppa and is one of a group of four muscles generated preanally by ABp(l/r)pppppa lineages (the other three cells become the anal depressor muscle, the sphincter muscle, and one of the two stomatointestinal muscles).
+
+Myoblasts are born after the end of gastrulation at about 290 minutes of embryonic development (MusFIG 14 and MusTABLE 2). At this stage, muscle cells lie in two lateral rows next to the seam cells, and some muscle cells have not yet undergone their terminal divisions. During this time, hemidesmosome components start to accumulate in the hypodermis in a diffuse fashion and muscle cells start accumulating muscle components diffusely. Subsequently, at about 350 minutes of development, the muscle cells migrate dorsally and ventrally to contact the ventral and dorsal hypodermis (Coutu Hresko et al., 1994; 1999). All muscle cells finish their divisions before assuming their final positions. Cellâcell contact induces the components of the muscle contractile apparatus to coalesce at the membrane near the contact points, and fibrous organelle components (MH5 protein, intermediate filaments) become restricted to specific regions of the hypodermis adjacent to muscle. BL components are initially recruited to regions of contact between muscle cells. Hypodermal myotactin then accumulates adjacent to where the contractile apparatus is forming in the muscle. By the twofold stage of development, muscle cells become flattened and muscle attachment and myofilament lattice assembly begins, following positional cues laid down in the BL and muscle cell membrane (Coutu Hresko et al., 1994; Williams and Waterston, 1994; Moerman and Williams, 2006). UNC-52/perlecan in BL initiates and is essential in the assembly of both DB and M-line components. In mutants that lack UNC-52, all subsequent steps of sarcomere development are blocked. Then, integrin heterodimers polarize to the basal membrane of the muscle and aggregate into a series of organized focal contacts in each muscle quadrant, in correspondence with the UNC-52 sites. Next, other components of the attachment complexes, such as PAT-4/ILK and PAT-6/actopaxin, are recruited to these focal contacts. Recruitment of ILK initiates divergence into distinct actin and myosin filament anchorage sites as the DB and M lines, respectively (Moerman and Williams, 2006). In the final step, actin and myosin filaments are recruited to these proto-DB and M-line complexes, respectively, at the basal plasma membrane. As the contacts mature, they form the highly ordered, recognizable series of DB and M lines. Sarcomeres then become organized into oblique striations, and the interlocking arrangement of the rhomboid-shaped body wall muscle cells in separate bundles becomes apparent. At the earliest stage at which individual muscle cells become discernable, each cell is two A bands wide and the filaments are about 5 Î¼m long (Moerman and Fire, 1997). During this time, myotactin remains adjacent to the forming contractile apparatus, and its organization follows the oblique striations of the muscle. In contrast, components of fibrous organelles become organized in circumferentially oriented bands restricted to regions where hypodermis is adjacent to muscle. By the threefold stage (520 min after first cleavage of the embryo at 25Â°C), myotactin is seen to colocalize with fibrous organelle components in these bands (Coutu Hresko et al., 1999). Muscle cell mass increases at each larval stage such that in the adult, each muscle cell may have grown to be as wide as 10 A bands and becomes approximately 100 Î¼m long. Individual filaments in the adult are 10 Î¼m long, and DB and M lines have also increased in size with larger integrin clusters (Moerman and Williams, 2006).
+
+During their formation in the embryos, all three types of attachment complexes look similar as electron-dense plaques. It is only during postembryonic larval stages that DB and M lines acquire their finger-like shapes by projecting into the cytoplasm from the plasma membrane. For DB, this projection coincides with the addition of Î±-actinin into the structure more distal from the membrane (Francis and Waterston, 1985; Barstead and Waterston, 1991; Moerman and Williams, 2006).
+
+Mutants with severe defects in sarcomere assembly become paralyzed with arrested elongation at the twofold stage (pat phenotype) of embryogenesis and fail to display any flipping motions (Williams and Waterston, 1994).
+
+  4) Muscle Basal Lamina (Basement Membrane)
+
+As in other organisms, BL are thin sheets of specialized extracellular matrices that contain type IV collagen, laminin, nidogen, SPARC, and perlecan in C. elegans. Somatic muscle quadrants in the body run inside tubes of BL, which separates them from the pseudocoelomic cavity and underlying hypodermis and nervous tissue. The neuronal processes that run from the ventral side to the dorsal side (commissures) extend under this BL and between muscle and hypodermis. In the head, the BL is extended around the muscle arm plate and separates the muscle arms from the nerve ring. This extension of BL terminates onto the cylinder of sheet-like processes of the GLR cells, anterior to the nerve ring (White et al., 1986).
+
+  5) Innervation of Somatic Muscle
+
+Depending on the basis of their synaptic input, somatic muscles fall into three groups: (1) The anteriormost four somatic muscle cells in each quadrant (head muscles) are innervated by motor neurons in the nerve ring, (2) the next four cells in each quadrant (neck muscles) receive dual innervation from motor neurons of the nerve ring and the ventral nerve cord, and (3) the remainder (body muscles) are exclusively innervated by ventral cord motor neurons (White et al., 1986; Bird and Bird, 1991). Such innervation involves chemical synapses (NMJs) at the muscle plate. The muscle cells in each row of a muscle quadrant are electrically coupled to their neighbors through gap junctions, most often occurring between the muscle arms. Also, the muscle arms from the neck muscles make extensive gap junctions with the head mesodermal cell, which may provide electrical coupling between the dorsal and ventral muscles in this region (White, 1988). (For detailed description see Gap Junctions).
+
+   5.1) Body
+
+   5.2) Head and Neck
+
+Although the body is limited to making dorsoventral bends, the nematodeâs head is capable of lateral motions as well. These more refined motions are believed to be due to more complex wiring of the head and neck muscles at the nerve ring, permitting differential activation of muscles in adjacent bands and even in adjacent rows in one quadrant (White et al., 1986). Head motor neuron classes include fourfold symmetric RME, SMB, and URA neurons; sixfold symmetric IL1 neurons; and bilaterally symmetric RIM, RMF, RMG, RMH, and RIV neurons (White et al., 1986). RMD and SMD motor neurons are suggested to be the cross inhibitors in the nerve ring, although the pattern of cross-inhibition is probably more complex in the head compared to the body. Both classes of putative cross-inhibitory motor neurons receive extensive synaptic input from interneurons, unlike D-type body neurons, which are only post-synaptic to ventral cord motor neurons at NMJs. The major source of synaptic input to RMD and SMD neurons comes from RIA interneurons, which themselves receive prominent input from RIB interneurons. RME neurons have been shown to limit the extent of head deflection during foraging, because head movements during foraging become loopy when RMEs are ablated (MusFIG 16) (McIntire et al., 1993; Jorgensen, 2005). RMEs are post-synaptic to stretch-receptive SMBs, and they make inhibitory NMJs onto the contralateral anterior head muscles that may have a role in restricting the level of contraction of the ventral or dorsal group of muscles during head bending (Jorgensen, 2005).
+
+  6) List of Bodywall Muscle Cells
+
+  7) References
+
+Barstead, R.J. and Waterston, R.H. 1991. Vinculin is essential for muscle function in the nematode. J. Cell Biol. 114: 715-724. (http://jcb.rupress.org/content/114/4/715.long)
+
+Bird, A.F. and Bird, J. 1991. The structure of nematodes. Academic Press, San Diego, CA.
+
+Burr, A.H.J. and Gans, C. 1998. Mechanical significance of obliquely striated architecture in nematode muscle. Biol. Bull. 194: 1-6. (http://www.biolbull.org/cgi/reprint/194/1/1?view=long&pmid=9525033)
+
+Coutu Hresko, M., Williams, B.D. and Waterston, R.H. 1994. Assembly of body wall muscle and muscle cell attachment structures in Caenorhabditis elegans. J. Cell Biol. 124: 491-506. (http://jcb.rupress.org/content/124/4/491.long)
+
+Coutu Hresko, M., Schriefer, L.A., Shrimankar, P. and Waterston, R.H. 1999. Myotactin, a novel hypodermal protein involved in muscle-cell adhesion in Caenorhabditis elegans. J. Cell Biol. 146: 659-672. (http://jcb.rupress.org/content/146/3/659.long)
+
+Cox, E.A. and Hardin, J. 2004. Sticky worms: adhesion complexes in C. elegans. J. Cell Sci. 117: 1885-1897. (http://dx.doi.org/10.1242/jcs.01176)
+
+Ding, M., Woo, W.M. and Chisholm, A.D. 2004. The cytoskeleton and epidermal morphogenesis in C. elegans. Exp. Cell Res. 301: 84-90.(http://dx.doi.org/10.1016/j.yexcr.2004.08.017)
+
+Francis, G.R. and Waterston, R.H. 1985. Muscle organization in C. elegans: Localization of proteins implicated in thin filament attachment and I-band organization. J. Cell Biol. 101: 1532-1549. (http://jcb.rupress.org/content/101/4/1532.long)
+
+Francis, G.R. and Waterston, R.H. 1991. Muscle cell attachment in Caenorhabditis elegans. J. Cell Biol. 114: 465-479. (http://jcb.rupress.org/content/114/3/465.long)
+
+Gatewood, B.K., and  Bucher, E.A. 1997. The   mup-4 locus in Caenorhabditis elegans is essential for hypodermal integrity, organismal morphogenesis and embryonic body wall muscle position. Genetics. 146: 165-183. (http://www.genetics.org/cgi/reprint/146/1/165)
+
+Hahn, B.S. and Labouesse, M. 2001. Tissue integrity: Hemidesmosomes and resistance to stress. Curr. Biol. 11: R858-R861.(http://dx.doi.org/10.1016/S0960-9822(01)00516-4)
+
+Hedgecock, E.M., Culotti, J.G., Hall, D.H. and Stern, B.G. 1987. Genetics of cell and axon migrations in Caenorhabditis  elegans. Development 100: 365â382. (http://dev.biologists.org/content/100/3/365.long)
+
+Jorgensen, E.M. 2005. GABA. WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.14.1. (http://dx.doi.org/10.1895/wormbook.1.14.1)
+
+Labouesse, M. 2006. Epithelial junctions and attachments. WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.56.1. (http://dx.doi.org/10.1895/wormbook.1.56.1)
+
+Mclntire, S.L., Jorgensen, E. and Horvitz, H.R. 1993. Genes required for GABA function in Caenorhabditis elegans. Nature 364: 334-337. (http://dx.doi.org/10.1038/364334a0)
+
+Moerman, D.G. and Fire, A. 1997. Muscle: Structure, Function, and Development. In C. elegans Volume II. Ed.s Riddle D.L., T Blumenthal, BJ Meyer and JR Priess. Pp 417-470. Cold Spring Harbor Laboratory Press. (http://www.ncbi.nlm.nih.gov/bookshelf/br.fcgi?book=ce2&part=A528)
+
+Moerman, D.G. and Williams, B.D. 2006. Sarcomere assembly in C. elegans muscle. WormBook, ed. The C. elegans Research Community, WormBook,doi/10.1895/wormbook.1.81.1. (http://dx.doi.org/10.1895/wormbook.1.81.1)
+
+Moerman, D.G., Hutter, H.,  Mullen, G.P. and Schnabel, R. 1996. Cell autonomous expression of Perlecan and plasticity of cell shape in embryonic muscle of Caenorhabditis elegans. Dev. Biol. 173: 228 â 242. (http://dx.doi.org/10.1006/dbio.1996.0019)
+
+Plenefisch, J.D., Zhu, X. and Hedgecock, E.M. 2000. Fragile skeletal muscle attachments in dystrophic mutants of Caenorhabditis elegans: isolation and characterization of the mua genes. Development 127: 1197-1207. (http://dev.biologists.org/content/127/6/1197.long)
+
+Richards, J.L, Zacharias, A.L., Walton, T., Burdick, J.T.. and Murray, J.I. 2013. A qualitative model of normal Caenorhabditis elegans embryogenesis and its disruption after stress. Dev. Biol.. 374: 12-23. (http://www.sciencedirect.com/science/article/pii/S0012160612006537)
+
+Rogalski, T.M., Mullen, G.P., Bush, J.A., Gilchrist, E.J. and Moerman, D.G. 2001. UNC-52/perlecan isoform diversity and function in Caenorhabditis elegans. Biochem. Soc. Trans. 29: 171-176. (http://www.biochemsoctrans.org/bst/029/0171/bst0290171.htm)
+
+Sulston, J.E. and Horvitz, H.R. 1977. Post-embryonic cell lineages of the nematode, Caenorhabditis elegans. Dev. Biol. 56: 110â156. (https://www.wormatlas.org/ver1/postemblin_1977/toc.html)
+
+Sulston, J.E., Schierenberg, E., White, J.G. and Thomson, J.N. 1983. The embryonic cell lineage of the nematode Caenorhabditis elegans. Dev. Biol. 100: 64-119. (https://www.wormatlas.org/ver1/Sulstonemblin_1983/toc.html)
+
+Waterston, R.H. 1988.  Muscle. In "The nematode C. elegans" (W. B. Wood ed.) pp281-335. Cold Spring Harbor Laboratory Press, New York. (http://cshmonographs.org/index.php/monographs/article/view/5025)
+
+White, J.G., Southgate, E., Thomson, J.N. and Brenner,  S. 1986. The structure of the nervous system of the nematode Caenorhabditis  elegans. Phil.  Trans. Roy.  Soc. Lond. 314B: 1-340. (https://www.wormatlas.org/ver1/MoW_built0.92/toc.html)
+
+White, J. 1988. The Anatomy. In The nematode C. elegans (ed. W.B.  Wood). Chapter 4. pp 81-122. Cold Spring Harbor Laboratory Press, Cold Spring Harbor,  New York.(http://cshmonographs.org/index.php/monographs/article/view/5019)
+
+Williams, B.D. and Waterston, R.H. 1994. Genes critical for muscle development and function in Caenorhabditis elegans identified through lethal mutations. J. Cell Biol. 124: 475-490. (http://jcb.rupress.org/content/124/4/475.long)
+
+Woo, W.M., Goncharov, A., Jin, Y. and Chisholm, A.D. 2004. Intermediate filaments are required for C. elegans epidermal elongation. Dev. Biol. 267: 216-229.(http://dx.doi.org/10.1016/j.ydbio.2003.11.007)
+
+Zengel, J.M. and Epstein H.F. 1980. Muscle development in Caenorhabditis elegans: a molecular genetic approach. In "Nematodes as Biological Models" Volume 1. (ed.) Zuckerman B.M. pp 73-126. Academic Press, New York.(http://www.wormbase.org/resources/paper/WBPaper00000474)
+

@@ -1,0 +1,42 @@
+{
+    "Atypical epithelial cells": {
+        "title": "Atypical epithelial cells",
+        "source": "https://www.wormatlas.org/hermaphrodite/atypical/Atypframeset.html",
+        "sections": {
+            "1) XXX Cells": {
+                "paragraphs": [
+                    {
+                        "contents": "The two XXX cells, XXXL/R, derive from the AB lineage as sisters of the anterior hypodermal (hyp 5) cells. They are born around 260 minutes after first cell cleavage on the dorsal side of the embryo and adjacent to the nascent hyp 5 and hyp 6 cells (Sulston et al., 1983). Similar to anterior hypodermal cells, they later translocate to the ventral anterior side of the embryo and are positioned close to the ventral hyp 4 cells in tadpole stage (AtypFIG 1)."
+                    },
+                    {
+                        "contents": "XXX cells function as part of the anterior hypodermis in the embryo, but they eventually detach from it and translocate near the anterior bulb of the pharynx on the ventral side of the head and lose their hypodermal character (AtypFIG 2) (White, 1988). They become free-standing cells adjacent to the pseudocoelom. Although they are generally found anterior to the nerve ring, their positions can be variable, and occasionally they reside anterior to the metacorpus of the pharynx (Sulston et al., 1983). After losing their hypodermal features, structurally they become neuron-like with compact cell bodies; small, granulated nuclei; and with several, short, axon-like processes. The thin, flattened, posterior process faces the pseudocoelom outside the pharynx rather similar to the processes of GLR cells (AtypFIG 3). The tubular anterior process travels a short distance with the ventral labial process bundles. In some animals, this process can extend as far anteriorly as the tip of the head (Ohkura et al., 2003). In dauer larvae, XXX cells may grow a long posterior process that does  not enter the nerve ring. These cells have no intercellular junctions and make no obvious synapses, but they remain in close contact with labial neurons, hypodermis and the pseudocoelom. They have abundant ribosomes, some smooth ER and a few vesicles."
+                    },
+                    {
+                        "contents": "XXX cells likely perform a neuroendocrine secretory function in larvae; they have been implicated in regulation of dauer arrest, but not longevity, by the insulin signaling pathway (Kimura et al., 2011.) XXX cells express NCR-1 and NCR-2, homologs of a membrane glycoprotein (Niemann-Pick type C disease gene product) suggested to function in intracellular sterol trafficking (Sym et al., 2000; Li et al., 2004). They also express DAF-9, a cytochrome P450 of the CYP2 family, that is suggested to mediate synthesis of steroid hormones, and DAF-2, insulin/IGF-1 receptor that functions upstream of DAF-9 (Jia et al., 2002; Ohkura et al., 2003; Tatar et al., 2003; Gerisch and Antebi, 2004; Kimura et al., 2011). DAF-9 functions in the same pathway as DAF-12, a nuclear hormone receptor that is thought to bind sterol derivatives and mediate the choice of dauer stage versus reproductive growth (Antebi et al., 2000; Gerisch et al., 2001; Mak and Ruvkun, 2004). SDF-9, a protein tyrosine phosphatase, is thought to help the function of DAF-9 and is also expressed in XXX cells (Ohkura et al., 2003)."
+                    }
+                ]
+            },
+            "2) Tail Spike Scaffold Cells": {
+                "paragraphs": [
+                    {
+                        "contents": "Two short-lived hypodermal cells, ABplppppppa and ABprppppppa, in the tail tip of the early embryo fuse to form a syncytium by the tadpole stage embryo, but undergo programmed cell death during late embryogenesis and leave behind a narrow spike of cuticle (Sulston et al., 1983). Their nuclei lie in the anal ridge, near hyp 10 and hyp 9 (AtypFIG 1 and AtypFIG 4). The syncytial cell is small, has somewhat darker cytoplasm than nearby hypodermis, and extends a single posterior process to the extreme tail tip. This process is filled with microtubules, called filaments by Sulston et al. (1983). These filaments give this process the appearance of a primitive cilium AtypFIG 4C). The process is wrapped by hyp10 over most of its length, whereas only the very tip of the process is exposed to the cuticle. Specialized junctions (probably gap junctions, but also possibly some adherens junctions) are seen between the tail spike cell and hyp 10 when the embryo reaches the twofold stage. The posterior cilium may provide a scaffold over which hyp 10 forms a broader, more stable posterior extension to give shape to the tail tip. When the spike cells die, hyp 10 still has a posterior process in place to maintain and support the cuticular spike directly."
+                    }
+                ]
+            },
+            "3) List of Atypical Epithelial Cells": {
+                "paragraphs": [
+                    {
+                        "contents": "1. XXX cells \n\nXXXL\n\nXXXR\n\n2. Tail spike scaffold cells\n\nABplppppppa\n\nABprppppppa"
+                    }
+                ]
+            },
+            "4) References": {
+                "paragraphs": [
+                    {
+                        "contents": "White J. 1988. The Anatomy. In The nematode C. elegans (ed. W. B. Wood). Chapter 4. pp 81-122. Cold Spring Harbor Laboratory Press, New York. Abstract"
+                    }
+                ]
+            }
+        }
+    }
+}
