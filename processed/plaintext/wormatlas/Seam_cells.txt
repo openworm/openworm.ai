@@ -1,0 +1,216 @@
+Seam cells
+
+  1) Overview
+
+In the adult animal, seam cells are arranged as longitudinal rows of 16 cells on the left and right sides of the body, and they are embedded in the cylindrical hyp 7 syncytium (SeamFIG 1). These cells are also sometimes referred to as lateral hypodermal cells, because they share some functions with the major hypodermis, including secreting cuticle and generating the contractile force during elongation of the embryo. Each seam cell is smoothly tapered in shape. At the cell body, the seam completely interrupts the hypodermis, whereas at its narrow end points, hypodermis runs behind it, covering the seam on the medial side (SeamFIG 2). Seam cells are linked to the hypodermis by small adherens junctions along their apical borders and by small gap junctions on their lateral membranes (SeamFIG 2) (see also Gap Junctions). In a newly hatched animal, there are ten seam cells on each side of the animal (H1-H2, V1-V6 and T). All seam cells, except for H0, divide in a stem-cell-like pattern before each molt. Between the L2 and L4 stages, most seam-cell divisions generate an anterior daughter cell that fuses with hyp 7 and a posterior daughter cell that continues to divide until the last molt between L4 and adult stages (see HypFIG 1). At this final molt, the seam cells exit the cell cycle, differential terminally and fuse to make one longitudinal syncytium (Sulston and Horvitz, 1977; Singh and Sulston, 1976).
+
+Similar to the hypodermal cells, seam cells are required for the formation of stage-specific cuticles through synthesis of various collagen proteins (Thein et al., 2003). They also produce alae, a set of raised cuticular ridges that extend longitudinally along the two sides of the animal over the seam cells (SeamFIG 3). Cuticular alae are produced only for the L1 stage, dauer larvae, and adults (DCutFIG 2). There is no alae production in L2, L3 and L4 stages. The adult alae are commonly used as an indicator of hypodermal seam cell terminal differentiation. It has been suggested that longitudinal alae are formed over seam cells during the elongation phase of the embryo by circumferential contraction of the seam cells and seam-specific cuticle  (Singh and Sulston, 1978; Sulston et al., 1983). Alae are formed in cuticle over seam cells as a result of the difference in placement of the circular actin filament bundles within these cells, compared to the ventral and dorsal hypodermal cells (Costa et al., 1997, see Cuticle). Seam cells shrink in cell volume during the formation of the dauer stage, leading to diametric shrinkage of the body and formation of alae (DCutFIG 2 & 3, see Dauer Cuticle) (Singh and Sulston, 1978; Melendez et al., 2003).
+
+Seam-cell divisions also generate neurons and glia of specific sensilla. During L1, H2.aa becomes an anterior deirid socket (ADEso) cell. During the L2 stage, one of the granddaughters of the V5 cell, V5pa, becomes a neuroblast that produces the posterior deirid sensillum (PDE neuron, PDE sheath cell and PDE socket cell). Seam-cell lineages also give rise to some neurons of lumbar ganglia (PVW and PVN), tail spike neurons (PHC), and support cells of the phasmids (Phso1, Phso2) (Sulston and Horvitz, 1977). In males, V5pp and V6 generate daughters that form sensory rays instead of making alae (Waring and Kenyon, 1990; Hunter et al., 1999; see also Epithelial System of the Male â Seam and Tail Hypodermis). Tail seam cells on each side (right and left T cells) function as the sockets of the phasmid sensilla in the L1 larva. The opening of the sensillum on each side is sealed by a process that extends from the cell and connects to the sheath cell and hypodermis via adherens junctions (White, 1988). The T-cell lineage ultimately gives rise to phasmid socket cells during later stages of development.
+
+In animals that have mutations in heterochronic genes, such as lin (lineage abnormal) and some let (lethal) genes, the normal progression of seam cell fate is disrupted (Ambros and Horvitz, 1984; Slack and Ruvkun; 1997; Ambros, 2000). These animals generate seam cells that inappropriately display cell fate patterns of earlier or later stages, resulting in precocious or retarded seam phenotypes (Liu et al., 1995; Abrahante et al., 1998).
+
+  2) Embryonic Development of the Seam Cells
+
+Eighteen of the 20 seam cells of the newly hatched larva are produced around 230-250 minutes after first cell division in the embryo. The mothers of the two V5 cells divide only slightly before hatching to produce V5L/R and QL/R, which give rise to posterior lateral ganglia on each side, post-embryonically. All of the embryonically generated seam cells except H0 are blast cells that undergo further divisions (SeamFIG 4) (Sulston et al., 1983). All derive from the AB lineage and AB.arp by itself gives rise to 12 of them (seven on the right and five on the  left).  The characteristic alae seen in L1 appear just before hatching.
+
+Similar to ventral and dorsal hypodermal cells, embryonic seam cells transiently acquire circumferentially oriented actin bundles at the beginning of elongation of the embryo. They are suggested to actively drive hypodermal elongation, whereas dorsal and ventral hypodermal cells change shape passively (SeamFIG 4) (Ding et al., 2004).
+
+  3) Post-embryonic Development of Seam Cells
+
+At hatching, a row of 10 seam cells on each side of the animal are embedded in hyp 7 and are in close contact with the ventral epithelial (P) cells (SeamFIG 4). The seam cells posterior to H0 round up and divide about 5 hours after hatching. The earliest division is seen in V5, whereas H1 and H2 divide 2.5 and 2 hours later, respectively, than the other seam cells (Podbilewicz and White, 1994; Shemer and Podbilewicz, 2000). Around the middle of the L1 stage, the anterior daughters of V2-V6 extend cytoplasmic processes toward the ventral midline, disrupting the adherens junctions between P cells and isolating left-right P-cell pairs from their neighbors (see HypFIG 6B). About 3 hours after birth, the anterior daughters of V1-V6 and T cells, the posterior daughter of H1 (H1p) and H2ap fuse with hyp 7. The posterior daughters of H2, V1-V6, the anterior daughter of H1, and T.ap become the new seam blast cells and extend long thin processes in both longitudinal directions over their presyncytial sisters. These processes establish contact with each other about 8 hours after hatching (see HypFIG 9A) (Austin and Kenyon, 1994).
+
+The seam cells undergo a stem-cell division again at the beginning of the L2, L3 and L4 larval stages, before molting, repeating the pattern of rounding up, cell division, hypodermal fusion, and reestablishment of contact between seam daughters (SeamFIG 4). This cellâcell contact between seam neighbors has been shown to provide signals for establishment of certain cell fates of seam daughters such as the ray/alae switch in males and post-deirid production in both sexes (Waring et al., 1992). Signaling between V5 and its anterior and posterior neighbors has been shown to be critical for V5 to produce posterior deirid cells (Austin and Kenyon, 1994). About the middle of the L4 stage (around 41 hours after hatching) and after the fusion of 13 anterior daughter cells with hyp 7, 16 seam cells on each side terminally differentiate and fuse with one another (SeamFIG 4). These fusions are the last somatic cell fusions seen in C. elegans.
+
+  4) List of Seam Cells
+
+1. Left side seam cells
+
+   1.) Left side seam cells
+
+Embryonic (L side) seam cells (do not form a syncytium):
+
+H0L
+
+H1L (postembryonic blast cell)
+
+H2L (postembryonic blast cell)
+
+V1L (postembryonic blast cell)
+
+V2L (postembryonic blast cell)
+
+V3L (postembryonic blast cell)
+
+V4L (postembryonic blast cell)
+
+V5L (postembryonic blast cell)
+
+V6L (postembryonic blast cell)
+
+TL (postembryonic blast cell; functions as phasmid socket in L1)
+
+Adult (L side ) seam cells (these cells fuse at L4 to make one row of syncytium):
+
+H0L
+
+H1L.aa
+
+H1L.appp
+
+H2L.pppp
+
+V1L.pappp
+
+V1L.ppppp
+
+V2L.pappp
+
+V2L.ppppp
+
+V3L.pappp
+
+V3L.ppppp
+
+V4L.pappp
+
+V4L.ppppp
+
+V5L.ppppp (terminally differentiated as seam only in hermaphrodite; blast cell in male)
+
+V6L.pappp (terminally differentiated as seam only in hermaphrodite; blast cell in male)
+
+V6L.ppppp (terminally differentiated as seam only in hermaphrodite; blast cell in male)
+
+TL.appa (terminally differentiated as seam only in hermaphrodite; blast cell in male)
+
+Alternate fate seam cells (L side) in adult male: 
+
+V5L.pppapp fuses with the main seam syncytium
+
+V5L.pppppp set cells (male tail seam; does not fuse with main seam and does not make alae)
+
+V6L.papapp set cells (male tail seam; does not fuse with main seam and does not make alae)
+
+V6L.papppp set cells (male tail seam; does not fuse with main seam and does not make alae)
+
+V6L.pppapp set cells (male tail seam; does not fuse with main seam and does not make alae)
+
+V6L.pppppp set cells (male tail seam; does not fuse with main seam and does not make alae)
+
+2. Right side seam cells
+
+   2.) Right side seam cells
+
+Embryonic (R side) seam cells (do not form a syncytium):
+
+H0R
+
+H1R (postembryonic blast cell)
+
+H2R (postembryonic blast cell)
+
+V1R (postembryonic blast cell)
+
+V2R (postembryonic blast cell)
+
+V3R (postembryonic blast cell)
+
+V4R (postembryonic blast cell)
+
+V5R (postembryonic blast cell)
+
+V6R (postembryonic blast cell)
+
+TR (postembryonic blast cell; functions as phasmid socket in L1)
+
+Adult (R side ) seam cells (these cells fuse at L4 to make one row of syncytium):
+
+H0R
+
+H1R.aa
+
+H1R.appp
+
+H2R.pppp
+
+V1R.pappp
+
+V1R.ppppp
+
+V2R.pappp
+
+V2R.ppppp
+
+V3R.pappp
+
+V3R.ppppp
+
+V4R.pappp
+
+V4R.ppppp
+
+V5R.ppppp (terminally differentiated as seam only in hermaphrodite; blast cell in male)
+
+V6R.pappp (terminally differentiated as seam only in hermaphrodite; blast cell in male)
+
+V6R.ppppp (terminally differentiated as seam only in hermaphrodite; blast cell in male)
+
+TR.appa (terminally differentiated as seam only in hermaphrodite; blast cell in male)
+
+Alternate fate seam cells (R side) in adult male: 
+
+V5R.pppapp fuses with the main seam syncytium
+
+V5R.pppppp set cells (male tail seam; does not fuse with main seam and does not make alae)
+
+V6R.papapp set cells (male tail seam; does not fuse with main seam and does not make alae)
+
+V6R.papppp set cells (male tail seam; does not fuse with main seam and does not make alae)
+
+V6R.pppapp set cells (male tail seam; does not fuse with main seam and does not make alae)
+
+V6R.pppppp set cells (male tail seam; does not fuse with main seam and does not make alae)
+
+  5) References
+
+Abrahante, J.E., Miller, E.A. and Rougvie, A.E. 1998. Identification of heterochronic mutants in Caenorhabditis elegans: Temporal misexpression of a collagen::green fluorescent protein fusion gene. Genetics 149: 1335-1351. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1460241/?tool=pubmed)
+
+Ambros, V.R. 2000. Control of developmental timing in Caenorhabditis elegans. Current Op. Gen. Dev. 10: 428-433. (http://dx.doi.org/10.1016/S0959-437X(00)00108-8)
+
+Ambros, V.R. and Horvitz, H.R. 1984. Heterochronic mutants of the nematode C. elegans. Science 226: 409-416. (http://www.sciencemag.org/cgi/content/abstract/226/4673/409)
+
+Austin, J. and Kenyon, C. 1994. Cell contact regulates neuroblast formation in the Caenorhabditis elegans lateral epidermis. Development 120: 313-323.(http://dev.biologists.org/content/120/2/313.long)
+
+Costa, M., Draper, B.W. and Priess,  J.R. 1997. The role of actin filaments in patterning the Caenorhabditis  elegans cuticle. Dev.  Biol. 184: 373-384. (http://dx.doi.org/10.1006/dbio.1997.8530)
+
+Ding, M., Woo, W-M. and Chisholm, A.D. 2004. The cytoskeleton and epidermal morphogenesis in C.elegans. Exp. Cell Res. 301: 84-90. (http://dx.doi.org/10.1016/j.yexcr.2004.08.017)
+
+Hunter, C.P., Harris, J.M., Maloof, J.N. and Kenyon, C. 1999. Hox gene expression in a single Caenorhabditis  elegans cell is regulated by a caudal homolog and intercellular signals that inhibit Wnt signaling. Development 126: 805-814.(http://dev.biologists.org/content/126/4/805.long)
+
+Liu, Z., Kirch, S. and Ambros, V. 1995. The Caenorhabditis elegans heterochronic gene pathway controls stage-specific transcription of collagen genes. Development 121: 2471-2478. (http://dev.biologists.org/content/121/8/2471.long)
+
+Melendez, A., Talloczy, Z., Seaman, M., Eskelinen, E.L., Hall, D.H. and Levine, B. 2003. Autophagy genes are essential for dauer development and life-span extension in C elegans. Science 301: 1387-1391. (http://www.sciencemag.org/cgi/content/abstract/301/5638/1387)
+
+McKay, S.J., Johnsen, R., Khattra, J., Asano, J., Baillie, D.L., Chan, S., Dube, N., Fang, L., Goszczynsk,i B., Ha, K., Halfnight, E., Hollebakken, R., Huang, P., Hung, K., Jensen, V., Jones, S.J.M., Kai, H., Li, D., Mah,, A., Marr, M., McGhee, J., Newbury, R., Pouzyrev, A., Riddle, D.R., Sonnhammer, E., Tian, H., Tu, D., Tyson, J., Warner, A., Wong, K., Zhao,  Z. and Moerman, D.G. 2004. Gene expression profiling of cells, tissues, and developmental stages of the nematode C. elegans. Cold Spring  Harbor Symp. Quant. Biol. 68: 159-169.(http://dx.doi.org/10.1101/sqb.2003.68.159)
+
+Podbilewicz, B. and White, J.G. 1994. Cell fusions in the developing epithelial of C.  elegans. Dev. Biol. 161: 408-424. (http://dx.doi.org/10.1006/dbio.1994.1041)
+
+Shemer, G. and Podbilewicz, B. 2000. Fusomorphogenesis: cell fusion in organ formation. Dev.  Dyn. 218: 30-51. (http://www3.interscience.wiley.com/cgi-bin/fulltext/72502441/HTMLSTART)
+
+Singh, R. N. and Sulston, J.E. 1978. Some observations on moulting in Caenorhabditis elegans. Nematologica 24:63-71. (http://dx.doi.org/10.1163/187529278X00074)(http://www.wormbase.org/db/misc/paper?name=WBPaper00000354;class=Paper)
+
+Slack, F.J. and Ruvkun, G.B. 1997. Temporal pattern formation by heterochronic genes. Ann. Rev. Gen. 31: 611-634.(http://dx.doi.org/doi:10.1146/annurev.genet.31.1.611)
+
+Sulston, J.E. and Horvitz, H.R. 1977. Post-embryonic cell lineages of the nematode Caenorhabditis elegans. Dev. Biol. 56: 110-156. (https://www.wormatlas.org/ver1/postemblin_1977/toc.html)
+
+Sulston, J.E., Schierenberg, E., White, J.G. and Thomson, J.N. 1983. The embryonic cell lineage of the nematode Caenorhabditis  elegans. Dev Biol. 100: 64-119. (https://www.wormatlas.org/ver1/Sulstonemblin_1983/toc.html)
+
+Thein, M.C., McCormack, G., Winter, A.D., Johnstone, I.L., Shoemaker, C.B. and Page, A.P. 2003. Caenorhabditis  elegans exoskeleton collagen COL-19 : an adult-specific marker for collagen modification and assembly, and the analysis of organismal morphology. Dev. Dyn. 226: 523-539. (http://www3.interscience.wiley.com/cgi-bin/fulltext/102530646/HTMLSTART)
+
+Waring, D.A. and Kenyon, C. 1990. Selective silencing of cell communication influences anteroposterior pattern formation in C.  elegans. Cell 601: 23-31. (http://dx.doi.org/doi:10.1016/0092-8674(90)90722-Q)
+
+Waring, D.A., Wrischnik, L.A. and Kenyon, C.J. 1992. Cell signals allow the expression of a preexistent neural pattern in C elegans. Development 116: 457-466. (http://dev.biologists.org/content/116/2/457.long)
+
+White, J. 1988. The Anatomy. In The nematode C. elegans (ed. W. B. Wood). Chapter 4. pp 81-122. Cold Spring Harbor Laboratory Press, New York. (http://cshmonographs.org/index.php/monographs/article/view/5019)
+

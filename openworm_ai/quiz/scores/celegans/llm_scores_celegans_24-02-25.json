@@ -1,0 +1,69 @@
+{
+    "Title": "Performance of LLMs in celegans knowledge Quiz",
+    "Date of Testing": "24-02-2025 20:39:25",
+    "Results": [
+        {
+            "LLM": "Ollama:Llama3.2",
+            "Total Questions": 100,
+            "Correct Answers": 29,
+            "Accuracy (%)": 29.0,
+            "Avg Response Time (s)": 0.766
+        },
+        {
+            "LLM": "GPT4o",
+            "Total Questions": 100,
+            "Correct Answers": 100,
+            "Accuracy (%)": 100.0,
+            "Avg Response Time (s)": 1.085
+        },
+        {
+            "LLM": "Gemini",
+            "Total Questions": 100,
+            "Correct Answers": 88,
+            "Accuracy (%)": 88.0,
+            "Avg Response Time (s)": 0.511
+        },
+        {
+            "LLM": "claude-3-5-sonnet-20241022",
+            "Total Questions": 100,
+            "Correct Answers": 99,
+            "Accuracy (%)": 99.0,
+            "Avg Response Time (s)": 1.69
+        },
+        {
+            "LLM": "GPT3.5",
+            "Total Questions": 100,
+            "Correct Answers": 86,
+            "Accuracy (%)": 86.0,
+            "Avg Response Time (s)": 1.324
+        },
+        {
+            "LLM": "Ollama:phi4:latest",
+            "Total Questions": 100,
+            "Correct Answers": 94,
+            "Accuracy (%)": 94.0,
+            "Avg Response Time (s)": 24.791
+        },
+        {
+            "LLM": "Ollama:gemma2:latest",
+            "Total Questions": 100,
+            "Correct Answers": 86,
+            "Accuracy (%)": 86.0,
+            "Avg Response Time (s)": 2.421
+        },
+        {
+            "LLM": "Ollama:gemma:7b",
+            "Total Questions": 100,
+            "Correct Answers": 80,
+            "Accuracy (%)": 80.0,
+            "Avg Response Time (s)": 1.882
+        },
+        {
+            "LLM": "Ollama:qwen:4b",
+            "Total Questions": 100,
+            "Correct Answers": 52,
+            "Accuracy (%)": 52.0,
+            "Avg Response Time (s)": 1.506
+        }
+    ]
+}

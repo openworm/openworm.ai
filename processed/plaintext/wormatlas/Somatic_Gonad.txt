@@ -1,0 +1,232 @@
+Somatic Gonad
+
+  1) General Description
+
+The somatic gonad refers to the non-germ-line component of each arm (SomaticFIG 1). It consists of five tissues, each with specific functions and distinct anatomical features: the DTCs, gonadal sheath, spermatheca, spermatheca-uterine valve, and the uterus (covered in Reproductive System - Egg-laying Apparatus ). These tissues, in particular the sheath and DTC, are intimately associated with the germ line and have a critical role in its development, organization, and function in the adult (Kimble and White, 1981; McCarter et al., 1997; Hall et al., 1999). All cells of the somatic gonad derive from two founder cells Z1 and Z4 that are present in the L1 gonad primordium (SomaticFIG 1). By L2, Z1/Z4 have generated 12 descendants: two DTCs, required for gonad elongation and germ-line patterning; nine blast cells that will, collectively, generate all other adult somatic gonad cells; and one anchor cell (AC), a transient cell that functions to pattern the cells of the vulva. Somatic and germ cells are intermingled until the L2/L3 molt, at which time they rearrange to establish the general organization of the future gonad (SomaticFIG 1). The DTCs are positioned at the anterior and posterior of the developing gonad. The ten remaining cells gather at the center to form the somatic gonadal primordium of the hermaphrodite (SPh), thus dividing the germ line into anterior and posterior populations of cells or arms (Kimble and Hirsh, 1979).
+
+  2) The Distal Tip Cell
+
+The DTC is a single, large somatic cell located at the tip of each gonad arm. It forms a close-fitting cap over the distalmost 6â10 germ cells. No intervening basement membrane or specialized intercellular junctions are found between the DTC and germ cells. Several thin cytoplasmic arms (tentacle-like cytonemes), less tightly associated with germ cells, extend from the cap for an average of 8 Â± 4 cell diameters (but can extend as far as 20 cell diameters; SomaticFIG 2A,B). The gonadal basal lamina (GBL), which covers the entire outer surface of the gonad, is thickened in the region of the DTC (SomaticFIG 2C). Fragments of the GBL appear to be shed from the trailing arms of the DTC into the pseudocoelom. The DTC has a large nucleus located at its leading (distal) edge and its cytoplasm is filled with distinctive membrane-bounded vacuoles, some rough endoplasmic reticulum (RER), and mitochondria. The plasma membrane sometimes displays âomegaâ figures (see SomaticFIG 2E) where it faces the GBL, indicative of active endocytosis or exocytosis. The gross anatomy of the DTC cell, born in the L1, does not alter significantly during the course of development, although the adult cell appears to contain more and longer cytonemes extending over the germ line (D.H. Hall and E.M.  Hedgecock, unpubl.).
+
+The hermaphrodite DTC has two major functions: (1) gonadal arm elongation during development and (2) promoting mitosis and/or inhibiting meiosis of the germ cells, both during development and in the adult.
+
+2.1 Gonadal Arm Elongation
+
+   2.1) Gonadal Arm Elongation
+
+The gonad arms acquire their U shape by the directed migration of the DTC, which acts as a leader cell (SomaticFIG 3AâD). Arm elongation begins in L2 (21 hr, 20Â°C) and continues, proceeding at variable rates, until the L4 molt (45 hr) (Antebi et al., 1997; D.H. Hall and E.M. Hedgecock, unpubl.). During migration, the DTC glides along the basal laminae of body wall muscles and hypodermis. The DTC produces a metalloprotease (GON-1) that is hypothesized to facilitate migration by remodeling the basal laminae during gonad extension (Blelloch and Kimble, 1999; Blelloch et al., 1999). In contrast to neuronal growth cones, the leading edge of the DTC is broad and blunt during migration and bears no fingers or lamellipodia (SomaticFIG 2). Genetic functions that control elongation include global guidance molecules (such as unc-6, unc-5, and unc-40) (Hedgecock et al., 1987; 1990) and cell recognition functions such as those defined by the programmed cell death corpse engulfment genes (e.g., ced-2, ced-5, and ced-10) (Conradt, 2001). DTC migration also appears to be sensitive to global signals of the developmental stage because migration halts during dauer arrest and is advanced or delayed in heterochronic mutant backgrounds (Ambros, 1997; Antebi et al., 1997).
+
+   2.2) Regulation of Germ-line Mitosis Versus Meiosis Entry
+
+The adult germ line exhibits distalâproximal polarity with mitotic cells at the distalmost end and meiotic cells filling the remainder of the gonad (SomaticFIG 4). Ablation of the DTC causes all mitotic nuclei to become meiotic and all meiotic nuclei to mature into gametes, the fate of the proximalmost meiotic germ cells (Kimble and White, 1981; Austin and Kimble, 1987; Lambie and Kimble, 1991). The DTC regulates entry into mitosis versus meiosis through a Notch/LIN-12 signal transduction pathway (Lambie and Kimble, 1991; Crittenden et al., 1994; Henderson et al., 1994; Tax et al., 1994). The DTC expresses the pathway ligand LAG-2 (Lin and Glp), whereas the germ line expresses the pathway receptor GLP-1 (germ-line proliferation abnormal mutant phenotype) and downstream effectors (SomaticFIG 2 and SomaticFIG 4B). Pathway activation blocks entry into meiosis (or promotes mitosis), maintaining germ cells near the DTC in a mitotic state (Hansen et al., 2004). It is hypothesized that germ cells enter meiosis by default due to their increased distance from the DTC. During development, the exact position and timing of the initial onset of meiosis at L3 is influenced by both DTC and non-DTC somatic cells (see GermFIG 6) (Pepper et al., 2003; Killian and Hubbard, 2004). Much of the DTCâgerm-line contact region falls short of the mitotic zone proximal boundary (SomaticFIG 4), suggesting that pathway activation must be propagated in some way to explain how cells that are not in direct contact with DTC stay in a mitotic state (see PeriFIG 3) (for models, see Crittenden et al., 1994; 2003).
+
+  3) Gonadal Sheath Cells
+
+Five pairs of thin gonadal sheath cells form a single layer covering the germ-line component of each arm. Each pair occupies a stereotyped position along the gonad proximalâdistal axis. The neighboring sheath-cell borders partially overlap, and occasional gap junctions and macular adherens junctions are observed between cells in these regions (see also Gap Junctions). Sheath cells are intimately associated with the germ line and are necessary for several aspects of germ-line development. Sheath cells or their precursors promote germ-line proliferation and exit from pachytene, gametogenesis, and male gamete fate during germ-line sex determination (Seydoux et al., 1990; McCarter et al., 1997; Rose et al., 1997; Killian and Hubbard, 2004). In the adult, distal sheath cells engulf germ cells eliminated by programmed cell death (see Reproductive system - Germ Line). Proximal sheath cells are necessary for oocyte maturation and ovulation and function permissively in the process of yolk protein uptake by oocytes (Grant and Hirsh, 1999; Hall et al., 1999; McCarter et al., 1999).
+
+Sheath cells arise from the SS blast cells present in the L2/L3 SPh (SomaticFIG 1, SomaticFIG 5A). During gonadogenesis, sheath cells reach their final distalâproximal location either by being pulled along with or crawling along the growing germ line (Kimble and Hirsh, 1979; McCarter et al., 1997). Distal and proximal sheath cells of the adult express quite different characteristics. Sheath-cell pair 1 (SomaticFIG 5B-E), which overlies the distal germ line, in particular, is strikingly different from the more proximal pairs 3â5, which overlie developing oocytes. Pair 2, located over the loop, appears to express properties intermediate to the distal and proximal pairs.
+
+
+
+   3.1) Distal Sheath-cell Pair 1
+
+The cytoplasm of these cells forms concentrated wedges between germ cells and a thin layer over them, giving pair 1 a net-like appearance (SomaticFIG 5D and SomaticFIG 6A). Distally, cells extend filopodia that form an irregular meshwork running between germ cells (Hall et al., 1999). Beneath this distal sheath pair, germ cells are gradually flowing proximally toward the loop, propelled by both the generation of new germ cells distally and the loss of some germ cells to apoptosis and/or ovulation more proximally. Thus, the distal sheath cells may be in a perpetually crawling phase, just to keep their place over the moving germ line.
+
+   3.2) Proximal Gonad Sheath-cell Pairs
+
+Pairs 3â5 differ dramatically from sheath-cell pair 1 in their morphology and ultrastructural characteristics (SomaticFIG 5A and SomaticFIG 5D&E). Pairs 3â5 express muscle components such as the filament proteins actin (detected with rhodamine phalloidin) and myosin, and the thin filament-associated muscle protein UNC-87 (Hirsh et al., 1976; Strome, 1986; Goetinck and Waterston, 1994; McCarter et al., 1997). These filaments are organized into dense networks. In pairs 3 and 4, filaments are predominantly longitudinally oriented, whereas in pair 5, filaments are both longitudinally and circumferentially oriented (SomaticFIG 5E). Filaments are also present in the distal sheath cells but are much less abundant. The presence of dense networks in proximal cells is consistent with their contractile properties. Proximal sheath contraction is required for ovulation and transfer of the oocyte into the spermatheca for fertilization. During ovulation, proximal sheath-cell contraction pulls the dilated spermatheca over the proximalmost oocyte. Neither the sheath nor the spermatheca (see below) appears to be innervated. Therefore, these tissues may be similar to arterial smooth muscle and potentially regulate contraction and relaxation through calcium sparks (see Bui and Sternberg, 2002, and references therein).
+
+Gap junctions are seen occasionally between sheath cells and between the apical sheath-cell surface and oocytes (SomaticFIG 6C&D) (Hall et al., 1999) (see also Gap Junctions). Contraction of sheath cells is coupled to oocyte maturation and the presence of sperm (see Reproductive System - Germ Line; McCarter et al., 1999; Miller et al., 2001, 2003). Sheath:sheath and sheath:oocyte gap junctions may therefore facilitate the coordination of the oocyte stage and sheath contraction rate with the presence of sperm. Sheath-cell pairs 4 and 5 also contain numerous pores (SomaticFIG 6B). Yolk particles produced in the intestine pass through the gonadal basal lamina and the sheath pores, gaining entry to the oocytes by the process of endocytosis (Grant and Hirsh, 1999; Hall et al., 1999).
+
+  4) The Spermatheca
+
+The spermatheca, the site of oocyte fertilization, is an accordion-like tube that contains sperm. It is composed of 24 cells organized into two regional groups: distally, 8 cells aligned in two rows that form a narrow corridor or neck, and proximally, 16 cells that form a wider bag-like chamber (Kimble and Hirsh, 1979; McCarter et al., 1997).
+
+In the absence of an oocyte, the adult spermatheca lumen is narrow and the apical surfaces of cells lining it are highly convoluted, providing the potential for expansion and an adherent surface for sperm (SomaticFIG 7A; compare SomaticFIG 8A&B). The outer (basal) surface displays numerous longitudinal folds of collapsed membranes (SomaticFIG 7A) that may also allow for the radial expansion of the spermatheca during oocyte passage.
+
+Spermathecal cells are rich in actin microfilaments that are organized into circumferentially oriented networks (SomaticFIG 8C). Myosin, however, has not yet been detected (Strome, 1986; McCarter et al., 1997). Circumferential dilation of the distal spermatheca during ovulation is triggered in response to activation of the LIN-3/LET-23 receptor tyrosine kinase (RTK) pathway by the maturing primary oocyte (see Reproductive System - Germ Line). Pathway activation causes an increase in IP3 levels, which leads to dilation, possibly by a mechanism involving calcium release (Clandinin et al., 1998; McCarter et al., 1999; Bui and Sternberg, 2002). Tight regulation of inositol-1,4,5-triphosphate (IP3) levels appears to be necessary to ensure that dilation is strictly controlled so that only one oocyte at a time is enveloped by the spermatheca (Bui and Sternberg, 2002). Gap junctions are located on the lateral borders between sheath and spermathecal cells (see Gap Junctions). These could serve to synchronize spermatheca dilation and relaxation with contraction of the sheath.
+
+Spermathecal cells arise from SS and DU blast cells of the somatic primordium; 18 cells are the products of the SS cells and 6 derive from the DUs (SomaticFIG 1; SomaticFIG 5A) (Kimble and Hirsh, 1979; Newman et al., 1996; McCarter et al., 1997). The terminal cells form a spermatheca with a lumen by late L4; however, this organ does not achieve its adult form until the first oocyte has passed through it (J. White, unpubl.). Before the first ovulation, the newly formed spermatheca is devoid of sperm (SomaticFIG 9A and see GermFIG 6). Male gametes are generated in the gonadal sheath lumen and remain there until passage of the first mature oocyte pushes them into the spermatheca. This first ovulation event also results in loss or reduction of numerous filopodia that extend from apical membranes into the spermathecal lumen (SomaticFIG 9C) (D.H. Hall, unpubl.; J. White, unpubl.).
+
+Maturing spermathecal cells (SomaticFIG 9B) have a dark cytoplasm (granular by differential interference contrast [DIC] microscopy) and are covered by a thick basal lamina on their basal surface. Cells are organized into a spiral structure with a single left-handed twist along the organâs anteriorâposterior axis. This arrangement likely contributes to the complex twisting of cell borders, which are hard to resolve, even at high magnification. Each cell contributes a portion of its apical side to the lumenal surface and its basal side to the outer surface of the tissue. Cell surfaces bear a variety of junction types, several of which are recognized by the anti-AJM-1 antibody MH27: the adherens, pleated septate, and smooth/continuous septate junctions (SomaticFIG 8A,B; SomaticFIG 9C; Somatic FIG 9EF) (D.H. Hall, unpubl.). Apical surfaces bear adherens and pleated septate junctions, whereas lateral surfaces bear smooth/continuous septate and gap junctions (SomaticFIG 9BâD; Somatic FIG 9EF). The pleated septate and continuous junctions, on either side of the adherens junctions, may zip and unzip as oocytes pass through the organ (SomaticFIG 9D) (J. White, pers. comm.).
+
+  5) The Spermathecal-uterine Valve
+
+After oocyte fertilization, the newly formed embryo passes from the spermatheca to the uterus via a connecting valve, the sp-ut valve (SomaticFIG 10A). The adult valve consists of a toroidal syncytium generated by the fusion of four cells (sujns) (SomaticFIG 10C) (Kimble and Hirsh, 1979).
+
+Like the spermatheca, the morphology of the sp-ut valve is altered by passage of the first fertilized oocyte. Before the first ovulation, the center of the toroid is occupied by two junctional core cells, also syncytial (sujcs) (Kimble and Hirsh, 1979). The core cells extend pseudopodia into the apical folds of the sujn cells, and core cell nuclei protrude into the uterus lumen (SomaticFIG 10B&C) (Kimble and Hirsh, 1979). Passage of the first fertilized oocyte apparently pushes the core cell bodies away to open the passage. The fate of the displaced core cells is not known.
+
+The anatomy of the sujn valve cells has been followed in serial sections (E. Southgate and J. White, pers. comm.). The outward (basal surface) of the valve is encircled by a thick basal lamina. At its apical (lumenal) face, valve membranes appear to zip together by pleated septate junctions, in the same manner as the spermatheca, thus sealing the lumen when empty (SomaticFIG 10C). Valve cells extend many interlocking fingers into the valve-spermatheca interface. These, together with possible adherens and septate junctions, may serve to hold the adjacent tissues together. On the opposite side, where the valve faces the nearest uterine epithelial cells (ut4), the lateral cell borders contain extensive septate junctions and possibly some adherens junctions.
+
+  6) List of Somatic Gonad Cells
+
+1. Late L2/early L3 stage SPh
+
+Z1.aa (Distal Tip Cell, anterior)
+
+ SS, Z1.ap (Somatic sheath and Spermatheca precursor)
+
+ SS, Z1.paa (Somatic sheath and Spermatheca precursor)
+
+DU, Z1.pap (Dorsal Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells)
+
+VUs and AC are of either the 5R or 5L configuration:
+
+5R configuration
+
+VU, Z1.ppa (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) 
+
+AC, Z1.ppp (Anchor Cell) 
+
+VU, Z4.aaa (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) 
+
+VU, Z4.aap (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells)
+
+5L configuration
+
+VU, Z1.ppa (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) 
+
+VU, Z1.ppp (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) 
+
+AC, Z4.aaa (Anchor Cell) 
+
+VU, Z4.aap (Ventral Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) 
+
+
+
+DU, Z4.apa (Dorsal Uterine precursor; generates uterus, spermatheca and spermatheca-uterine valve cells) 
+
+ SS, Z4.app (Somatic sheath and Spermatheca precursor)
+
+ SS, Z4.pa (Somatic sheath and Spermatheca precursor)
+
+Z4.pp (Distal Tip Cell, posterior)
+
+2. Adult anterior gonad arm
+
+i. Distal Tip Cell of anterior gonad arm: Z1.aa
+
+ii. Somatic Sheath (10 cells/5 pairs) of anterior gonad arm: Z1.apa (sheath cell 1)
+
+Z1.appaaa (sheath cell 2)
+
+Z1.appaap (sheath cell 3)
+
+Z1.appapa (sheath cell 4)
+
+Z1.appapp (sheath cell 5)
+
+Z1.paaa (sheath cell 1)
+
+Z1.paapaaa (sheath cell 2)
+
+Z1.paapaap (sheath cell 3)
+
+Z1.paapapa (sheath cell 4)
+
+Z1.paapapp (sheath cell 5)
+
+iii. Spermatheca (24 cells) of anterior gonad arm: Z1.apppaaaaZ1.apppaaapZ1.apppaapaZ1.apppaappZ1.apppapaaZ1.apppapapZ1.apppappZ1.appppaZ1.apppppZ1.paappaaaaZ1.paappaaapZ1.paappaapaZ1.paappaappZ1.paappapaaZ1.paappapapZ1.paappappZ1.paapppaZ1.paappppZ1.papaaadZ1.papaaavZ1.papaapvZ4.apaaaadZ4.apaaaavZ4.apaaapv
+
+iv. Spermatheca-uterine valve and core (both syncytial) of anterior gonad arm: Z1.papaapd; Z4.apaaapd (2 sujc cells that fuse to make the "core" syncytium, lost after the 1st ovulation)
+
+Z1.papapaaa; Z1.ppaaaaa; Z1.ppaaapa; Z4.apaapaaa (4 sujn cells that fuse to make the valve syncytium)
+
+3. Adult posterior gonad arm
+
+i. Distal Tip Cell of posterior gonad arm:
+
+Z4.pp
+
+ii. Somatic Sheath (10 cells/5 pairs) of posterior gonad arm: Z4.pap (sheath cell 1)
+
+Z4.paappp (sheath cell 2)
+
+Z4.paappa (sheath cell 3)
+
+Z4.paapap (sheath cell 4)
+
+Z4.paapaa (sheath cell 5)
+
+Z4.appp (sheath cell 1)
+
+Z4.appappp (sheath cell 2)
+
+Z4.appappa (sheath cell 3)
+
+Z4.appapap (sheath cell 4)
+
+Z4.appapaa (sheath cell 5)
+
+iii. Spermatheca (24 cells) of posterior gonad arm: Z1.papppavZ1.pappppdZ1.pappppvZ4.apappavZ4.apapppdZ4.apapppvZ4.appaaaaZ4.appaaapZ4.appaapaaZ4.appaapapaZ4.appaapappZ4.appaappaaZ4.appaappapZ4.appaapppaZ4.appaappppZ4.paaaaaZ4.paaaapZ4.paaapaaZ4.paaapapaZ4.paaapappZ4.paaappaaZ4.paaappapZ4.paaapppaZ4.paaapppp
+
+  7) References
+
+Ambros, V. 1997. Heterochronic Genes. In C.  elegans II (ed. D. L. Riddle et al.), pp. 501-518. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New York.(http://www.ncbi.nlm.nih.gov/bookshelf/br.fcgi?book=ce2&part=A620)
+
+Antebi, A., Norris, C. R Hedgecock, E.  M. and Garriga, G. 1997. Cell and Growth Cone Migrations. In C.  elegans II (ed. D. L. Riddle et al.), pp. 583-609. Cold Spring Harbor Laboratory Press, Cold Spring Harbor,  New York.(http://www.ncbi.nlm.nih.gov/bookshelf/br.fcgi?book=ce2&part=A714)
+
+Austin, J., and Kimble, J. 1987. glp-1 is required in the germ line for regulation of the decision between mitosis and meiosis in C. elegans. Cell 51: 589-599. Abstract
+
+Blelloch, R. and Kimble, J. 1999. Control of organ shape by a secreted metalloprotease in the nematode Caenorhabditis  elegans. Nature 399: 586-590. (http://dx.doi.org/doi:10.1038/21196)
+
+Blelloch, R., Anna-Arriola, S.S., Gao, D., Li, Y., Hodgkin, J. and Kimble, J. 1999. The gon-1 gene is required for gonadal morphogenesis in Caenorhabditis elegans. Dev. Biol. 216: 382-393. Article
+
+Broday, L., Kolotuev, I., Didier, C., Bhoumik, A., Podbilewicz, B., and Ronai, Z. 2004. The LIM domain protein UNC-95 is required for the assembly of muscle attachment structures and is regulated by the RING finger protein RNF-5 in C. elegans. J. Cell Biol. 165: 857-867. (http://jcb.rupress.org/content/165/6/857.long)
+
+Bui, Y.K. and Sternberg, P.W. 2002. Caenorhabditis  elegans inositol 5-phosphatase homolog negatively regulates inositol 1,4,5-triphosphate signaling in ovulation. Mol. Biol. Cell 13: 1641-1651. (http://dx.doi.org/10.1091/mbc.02-01-0008)
+
+Clandinin, T. R., DeModena, J.A., and Sternberg, P.W. 1998. Inositol trisphosphate mediates a RAS-independent response to LET-23 receptor tyrosine kinase activation in C. elegans. Cell 92: 523-533. (http://dx.doi.org/10.1016/S0092-8674(00)80945-9)
+
+Conradt, B. 2001. Cell engulfment, no sooner ced than done. Dev. Cell 1: 445-447. (http://dx.doi.org/10.1016/S1534-5807(01)00065-X)
+
+Crittenden, S.L., Troemel, E.R. Evans, T.C., and Kimble J. 1994. GLP-1 is localized to the mitotic region of the C. elegans germ line. Development 120: 2901-2911. (http://dev.biologists.org/content/120/10/2901.long)
+
+Crittenden, S.L., Eckmann, C.R., Wang, L., Bernstein, D.S., Wickens, M. and Kimble  J. 2003. Regulation of the mitosis/meiosis decision in the Caenorhabditis  elegans germline. Philos. Trans. R. Soc. Lond.  B Biol. Sci. 358: 1359-1362. (http://dx.doi.org/doi:10.1098/rstb.2003.1333)
+
+Goetinck, S. and Waterston, R.H. 1994. The Caenorhabditis  elegans muscle-affecting gene unc-87 encodes a novel thin filament-associated protein. J .Cell Biol. 127: 79-93. (http://jcb.rupress.org/content/127/1/79.long)
+
+Grant, B. and Hirsh, D. 1999. Receptor-mediated endocytosis in the Caenorhabditis  elegans oocyte. Mol. Biol. Cell 10: 4311-4326. (http://www.molbiolcell.org/cgi/content/full/10/12/4311)
+
+Greenstein, D., Hird, S., Plasterk, R.H., Andachi, Y., Kohara, Y., Wang, B., Finney, M., and Ruvkun, G. 1994. Targeted mutations in the Caenorhabditis  elegans POU homeo box gene ceh-18 cause defects in oocyte cell cycle arrest, gonad migration, and epidermal differentiation. Genes Dev. 8: 1935-1948.(http://genesdev.cshlp.org/content/8/16/1935.long)
+
+Hall, D. H., Winfrey, V. P., Blaeuer, G., Hoffman, L. H., Furuta, T., Rose, K. L., Hobert, O., Greenstein, D. 1999. Ultrastructural features of the adult hermaphrodite gonad of Caenorhabditis elegans: relations between the germ line and soma. Dev Biol. 212: 101-123. (http://dx.doi.org/10.1006/dbio.1999.9356)
+
+Hansen, D., Wilson-Berry, L., Dang, T., and  Schedl, T. 2004. Control of the proliferation versus meiotic development decision in the C. elegans germline through regulation of GLD-1 protein accumulation. Development 131: 93-104.(http://dev.biologists.org/content/131/1/93.long)
+
+Hedgecock, E.M., Culotti, J.G., Hall, D.H. and Stern, B.D. 1987. Genetics of cell and axon migrations in Caenorhabditis elegans. Development 100: 365-382. (http://dev.biologists.org/content/100/3/365.long)
+
+Hedgecock, E.M., Culotti, J.G., and Hall, D.H. 1990. The unc-5, unc-6, and unc-40 genes guide circumferential migrations of pioneer axons and mesodermal cells on the epidermis in C. elegans. Neuron 4: 61-85. (http://dx.doi.org/10.1016/0896-6273(90)90444-K)
+
+Henderson, S.T., Gao, D., Lambie, E.J. and Kimble, J. 1994. lag-2 may encode a signaling ligand for the GLP-1 and LIN-12 receptors of C. elegans. Development 120: 2913-2924. (http://dev.biologists.org/content/120/10/2913.long)
+
+Hirsh, D., Oppenheim, D. and Klass, M. 1976. Development of the reproductive system of Caenorhabditis elegans. Dev. Biol. 49: 200-219. (http://dx.doi.org/10.1016/0012-1606(76)90267-0)
+
+Killian, D.J. and Hubbard, E.J. 2004. C.  elegans pro-1 activity is required for soma/germline interactions that influence proliferation and differentiation in the germ line. Development 131: 1267-1278. (http://dev.biologists.org/content/131/6/1267.long)
+
+Kimble, J.E. and Hirsh, D. 1979. The postembryonic cell lineages of the hermaphrodite and male gonads in Caenorhabditis elegans. Dev. Biol. 70: 396-417. (https://www.wormatlas.org/ver1/Postemblingonad_1979/toc.html)
+
+Kimble, J.E. and White, J.G. 1981. On the control of germ cell development in Caenorhabditis elegans. Dev. Biol. 81: 208-219. (http://dx.doi.org/10.1016/0012-1606(81)90284-0)
+
+Lambie, E.J. and Kimble, J. 1991. Two homologous regulatory genes, lin-12 and glp-1, have overlapping functions. Development 112: 231-240. (http://dev.biologists.org/content/112/1/231.long)
+
+McCarter, J., Bartlett, B., Dang, T., and Schedl, T. 1997. Soma-germ cell interactions in Caenorhabditis elegans: multiple events of hermaphrodite germline development require the somatic sheath and spermathecal lineages. Dev. Biol. 181: 121-143.(http://dx.doi.org/10.1006/dbio.1996.8429)
+
+McCarter, J., Bartlett, B., Dang, T., and Schedl, T. 1999. On the control of oocyte meiotic maturation and ovulation in Caenorhabditis elegans. Dev. Biol. 205: 111-128.(http://dx.doi.org/10.1006/dbio.1996.8429)
+
+Miller, M.A., Nguyen, V.Q., Lee, M.H., Kosinski, M., Schedl, T., Caprioli, R.M. and Greenstein, D. 2001. A sperm cytoskeletal protein that signals oocyte meiotic maturation and ovulation. Science 291: 2144-2147. (http://www.sciencemag.org/cgi/content/abstract/291/5511/2144)
+
+Miller, M.A., Ruest, P.J., Kosinski, M., Hanks, S.K. and Greenstein, D. 2003. An Eph receptor sperm-sensing control mechanism for oocyte meiotic maturation in Caenorhabditis  elegans. Genes Dev. 17: 187-200. (http://genesdev.cshlp.org/content/17/2/187.long)
+
+Newman, A.P., White J.G. and Sternberg, P.W. 1996. Morphogenesis of the C. elegans hermaphrodite uterus. Development 122: 3617-3626. (http://dev.biologists.org/content/122/11/3617.full.pdf+html)
+
+Pepper, A.S., Lo, T.W., Killian, D.J., Hall, D.H. and Hubbard, E.J. 2003. The establishment of Caenorhabditis elegans germline pattern is controlled by overlapping proximal and distal somatic gonad signals. Dev. Biol. 259: 336-350. (http://dx.doi.org/10.1016/S0012-1606(03)00203-3)
+
+Rose, K.L., Winfrey, V.P., Hoffman, L.H., Hall, D.H., Furuta, T. and Greenstein D. 1997. The POU gene ceh-18 promotes gonadal sheath cell differentiation and function required for meiotic maturation and ovulation in Caenorhabditis elegans. Dev. Biol. 192: 59-77. (http://dx.doi.org/10.1006/dbio.1997.8728)
+
+Seydoux, G., Schedl, T., and Greenwald, I. 1990. Cell-cell interactions prevent a potential inductive interaction between soma and germline in C. elegans. Cell 61: 939-951. (http://dx.doi.org/10.1016/0092-8674(90)90060-R)
+
+Strome, S. 1986. Fluorescence visualization of the distribution of microfilaments in gonads and early embryos of the nematode Caenorhabditis elegans. J. Cell Biol. 103: 2241-2152. (http://jcb.rupress.org/content/103/6/2241.long)
+
+Tax, F.E,. Yeargers, J.J. and Thomas J.H. 1994. Sequence of C. elegans lag-2 reveals a cell-signalling domain shared with Delta and Serrate of Drosophila. Nature 368: 150-154. (http://dx.doi.org/doi:10.1038/368150a0)
+
