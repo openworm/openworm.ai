@@ -4,26 +4,45 @@ import time
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
+LLM_CMD_LINE_ARGS = {}
+
 LLM_GPT35 = "GPT3.5"
 LLM_GPT4 = "GPT4"
 LLM_GPT4o = "GPT4o"
-LLM_LLAMA2 = "LLAMA2"
-LLM_GEMINI = "gemini-2.0-flash"
-LLM_AI21 = "AI21"
-LLM_CLAUDE37 = "claude-3-7-sonnet-20250219"
-LLM_COHERE = "Cohere"
-LLM_OLLAMA_LLAMA32 = "Ollama:llama3.2"
-LLM_OLLAMA_LLAMA32_1B = "Ollama:llama3.2:1b"
-LLM_OLLAMA_MISTRAL = "Ollama:mistral"
-LLM_OLLAMA_TINYLLAMA = "Ollama:tinyllama"
 
+LLM_LLAMA2 = "LLAMA2"
+LLM_CMD_LINE_ARGS["-l"] = LLM_LLAMA2
+LLM_GEMINI = "gemini-2.0-flash"
+LLM_CMD_LINE_ARGS["-g"] = LLM_GEMINI
+LLM_AI21 = "AI21"
+LLM_CMD_LINE_ARGS["-a"] = LLM_AI21
+LLM_CLAUDE37 = "claude-3-7-sonnet-20250219"
+LLM_CMD_LINE_ARGS["-c"] = LLM_CLAUDE37
+LLM_COHERE = "Cohere"
+LLM_CMD_LINE_ARGS["-co"] = LLM_COHERE
+
+LLM_OLLAMA_LLAMA32 = "Ollama:llama3.2"
+LLM_CMD_LINE_ARGS["-o-l32"] = LLM_OLLAMA_LLAMA32
+LLM_OLLAMA_LLAMA32_1B = "Ollama:llama3.2:1b"
+LLM_CMD_LINE_ARGS["-o-l321b"] = LLM_OLLAMA_LLAMA32_1B
+LLM_OLLAMA_MISTRAL = "Ollama:mistral"
+LLM_CMD_LINE_ARGS["-o-m"] = LLM_OLLAMA_MISTRAL
+LLM_OLLAMA_TINYLLAMA = "Ollama:tinyllama"
+LLM_CMD_LINE_ARGS["-o-t"] = LLM_OLLAMA_TINYLLAMA
 LLM_OLLAMA_PHI3 = "Ollama:phi3:latest"
+LLM_CMD_LINE_ARGS["-o-phi3"] = LLM_OLLAMA_PHI3
 LLM_OLLAMA_PHI4 = "Ollama:phi4:latest"
-LLM_OLLAMA_GEMMA2 = "Ollama:gemma2:latest"
-LLM_OLLAMA_GEMMA3 = "Ollama:gemma3:4b"
-LLM_OLLAMA_DEEPSEEK = "Ollama:deepseek-r1:7b"
+LLM_CMD_LINE_ARGS["-o-phi4"] = LLM_OLLAMA_PHI4
 LLM_OLLAMA_GEMMA = "Ollama:gemma:7b"
+LLM_CMD_LINE_ARGS["-ge"] = LLM_OLLAMA_GEMMA
+LLM_OLLAMA_GEMMA2 = "Ollama:gemma2:latest"
+LLM_CMD_LINE_ARGS["-ge2"] = LLM_OLLAMA_GEMMA2
+LLM_OLLAMA_GEMMA3 = "Ollama:gemma3:4b"
+LLM_CMD_LINE_ARGS["-ge3"] = LLM_OLLAMA_GEMMA3
+LLM_OLLAMA_DEEPSEEK = "Ollama:deepseek-r1:7b"
+LLM_CMD_LINE_ARGS["-o-dsr1"] = LLM_OLLAMA_DEEPSEEK
 LLM_OLLAMA_QWEN = "Ollama:qwen:4b"
+LLM_CMD_LINE_ARGS["-qw"] = LLM_OLLAMA_QWEN
 LLM_OLLAMA_CODELLAMA = "Ollama:codellama:latest"
 LLM_OLLAMA_FALCON2 = "Ollama:falcon2:latest"
 
@@ -165,65 +184,23 @@ def get_llm(llm_ver, temperature):
 
         llm = ChatCohere()
 
-    elif llm_ver == LLM_OLLAMA_LLAMA32_1B:
+    elif llm_ver in [
+        LLM_OLLAMA_LLAMA32_1B,
+        LLM_OLLAMA_MISTRAL,
+        LLM_OLLAMA_TINYLLAMA,
+        LLM_OLLAMA_PHI3,
+        LLM_OLLAMA_PHI4,
+        LLM_OLLAMA_GEMMA,
+        LLM_OLLAMA_GEMMA2,
+        LLM_OLLAMA_GEMMA3,
+        LLM_OLLAMA_DEEPSEEK,
+        LLM_OLLAMA_QWEN,
+        LLM_OLLAMA_CODELLAMA,
+        LLM_OLLAMA_FALCON2,
+    ]:
         from langchain_ollama.llms import OllamaLLM
 
-        llm = OllamaLLM(model="llama3.2:1b")
-
-    elif llm_ver == LLM_OLLAMA_MISTRAL:
-        from langchain_ollama.llms import OllamaLLM
-
-        llm = OllamaLLM(model="mistral")
-
-    elif llm_ver == LLM_OLLAMA_TINYLLAMA:
-        from langchain_ollama.llms import OllamaLLM
-
-        llm = OllamaLLM(model="tinyllama")
-
-    elif llm_ver == LLM_OLLAMA_PHI3:
-        from langchain_ollama.llms import OllamaLLM
-
-        llm = OllamaLLM(model="phi3:latest", temperature=temperature)
-
-    elif llm_ver == LLM_OLLAMA_PHI4:
-        from langchain_ollama.llms import OllamaLLM
-
-        llm = OllamaLLM(model="phi4:latest", temperature=temperature)
-
-    elif llm_ver == LLM_OLLAMA_GEMMA2:
-        from langchain_ollama.llms import OllamaLLM
-
-        llm = OllamaLLM(model="gemma2:latest", temperature=temperature)
-
-    elif llm_ver == LLM_OLLAMA_GEMMA3:
-        from langchain_ollama.llms import OllamaLLM
-
-        llm = OllamaLLM(model="gemma3:4b", temperature=temperature)
-
-    elif llm_ver == LLM_OLLAMA_DEEPSEEK:
-        from langchain_ollama.llms import OllamaLLM
-
-        return OllamaLLM(model="deepseek-r1:7b", temperature=temperature)
-
-    elif llm_ver == LLM_OLLAMA_GEMMA:
-        from langchain_ollama.llms import OllamaLLM
-
-        return OllamaLLM(model="gemma:7b", temperature=temperature)
-
-    elif llm_ver == LLM_OLLAMA_QWEN:
-        from langchain_ollama.llms import OllamaLLM
-
-        return OllamaLLM(model="qwen:4b", temperature=temperature)
-
-    elif llm_ver == LLM_OLLAMA_CODELLAMA:
-        from langchain_ollama.llms import OllamaLLM
-
-        return OllamaLLM(model="codellama:latest", temperature=temperature)
-
-    elif llm_ver == LLM_OLLAMA_FALCON2:
-        from langchain_ollama.llms import OllamaLLM
-
-        return OllamaLLM(model="falcon2:latest", temperature=temperature)
+        llm = OllamaLLM(model=llm_ver[llm_ver.index(":") + 1 :])
 
     return llm
 
@@ -325,54 +302,9 @@ _**%s**:_ _%s_
 def get_llm_from_argv(argv):
     llm_ver = LLM_GPT4o
 
-    if "-g" in argv:
-        llm_ver = LLM_GEMINI
-
-    if "-ge" in argv:
-        llm_ver = LLM_OLLAMA_GEMMA
-
-    if "-ge2" in argv:
-        llm_ver = LLM_OLLAMA_GEMMA2
-
-    if "-ge3" in argv:
-        llm_ver = LLM_OLLAMA_GEMMA3
-
-    if "-qw" in argv:
-        llm_ver = LLM_OLLAMA_QWEN
-
-    if "-l" in argv:
-        llm_ver = LLM_LLAMA2
-
-    if "-a" in argv:
-        llm_ver = LLM_AI21
-
-    if "-cl" in argv:
-        llm_ver = LLM_CLAUDE37
-
-    if "-co" in argv:
-        llm_ver = LLM_COHERE
-
-    if "-o-l32" in argv:
-        llm_ver = LLM_OLLAMA_LLAMA32
-
-    if "-o-l321b" in argv:
-        llm_ver = LLM_OLLAMA_LLAMA32_1B
-        return llm_ver
-
-    if "-o-m" in argv:
-        llm_ver = LLM_OLLAMA_MISTRAL
-
-    if "-o-t" in argv:
-        llm_ver = LLM_OLLAMA_TINYLLAMA
-
-    if "-o-phi3" in argv:
-        llm_ver = LLM_OLLAMA_PHI3
-
-    if "-o-phi4" in argv:
-        llm_ver = LLM_OLLAMA_PHI4
-
-    if "-o-dsr1" in argv:
-        llm_ver = LLM_OLLAMA_DEEPSEEK
+    for arg in LLM_CMD_LINE_ARGS:
+        if arg in argv:
+            llm_ver = LLM_CMD_LINE_ARGS[arg]
 
     return llm_ver
 
