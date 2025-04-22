@@ -200,8 +200,7 @@ def get_llm(llm_ver, temperature):
     ]:
         from langchain_ollama.llms import OllamaLLM
 
-        llm = OllamaLLM(model=llm_ver[llm_ver.index(":") + 1 :])
-
+        llm = OllamaLLM(model=llm_ver.split(":", 1)[1])
     return llm
 
 
