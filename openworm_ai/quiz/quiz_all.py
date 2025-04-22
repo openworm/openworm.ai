@@ -48,7 +48,6 @@ def load_llms():
         # LLM_OLLAMA_FALCON2 - 'only an assistant with no acess to external resources',
         # LLM_OLLAMA_CODELLAMA - understands only a fraction of questions, doesnt understand prompts
     ]  # Defined constants
-    print(f"Debug: Loaded LLMs -> {llms}")
     return llms
 
 
