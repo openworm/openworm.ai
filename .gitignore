@@ -14,3 +14,5 @@ venv/
 /openworm_ai/quiz/samples/Ollama_phi3_latest_10questions_celegans.json
 /store
 /openworm_ai/corpus/wormatlas/ignore
+/openworm_ai/quiz/samples/GPT4o_10questions_general.json
+/openworm_ai/quiz/samples/GPT4o_10questions_science.json
