@@ -196,5 +196,4 @@ if __name__ == "__main__":
             )
 
     else:
-        print(f"Debug: Using LLM {llm_ver} for saving quiz")
         save_quiz(100, 4, llm_ver, temperature=0.2)

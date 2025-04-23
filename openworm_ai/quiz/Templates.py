@@ -51,7 +51,7 @@ if __name__ == "__main__":
     import sys
 
     question = (
-        GENERATE_Q.replace("<QUESTION_NUMBER>", "5").replace("<ANSWER_NUMBER>", "4")
+        GENERATE_Q.replace("<QUESTION_NUMBER>", "100").replace("<ANSWER_NUMBER>", "4")
         + TEXT_ANSWER_EXAMPLE
     )
 
