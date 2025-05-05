@@ -15,6 +15,7 @@ from llama_index.core import PromptTemplate
 from llama_index.core import VectorStoreIndex, get_response_synthesizer
 from llama_index.core.retrievers import VectorIndexRetriever
 from llama_index.core.query_engine import RetrieverQueryEngine
+from llama_index.core import Settings
 
 
 # one extra dep
@@ -27,11 +28,14 @@ import json
 STORE_DIR = "store"
 SOURCE_DOCUMENT = "source document"
 
+Settings.chunk_size = 3000
+Settings.chunk_overlap = 50
+
 
 def create_store(model):
     OLLAMA_MODEL = model.replace("Ollama:", "") if model is not LLM_GPT4o else None
 
-    json_inputs = glob.glob("processed/json/*/*.json")
+    json_inputs = glob.glob("processed/json/papers/*.json")
 
     documents = []
     for json_file in json_inputs:
@@ -155,6 +159,7 @@ def get_query_engine(index_reloaded, model, similarity_top_k=4):
             refine_template=refine_template,
             embed_model=ollama_embedding,
         )
+        # print(dir(query_engine.retriever))
 
         query_engine.retriever.similarity_top_k = similarity_top_k
 
@@ -180,7 +185,7 @@ def get_query_engine(index_reloaded, model, similarity_top_k=4):
     return query_engine
 
 
-def process_query(query, model):
+def process_query(query, model, verbose=False):
     print_("Processing query: %s" % query)
     response = query_engine.query(query)
 
@@ -196,7 +201,14 @@ def process_query(query, model):
     cutoff = 0.2
     files_used = []
     for sn in response.source_nodes:
-        # print(sn)
+        if verbose:
+            print_("===================================")
+            # print(dir(sn))
+            print_(sn.metadata["source document"])
+            print_("-------")
+            print_("Length of selection below: %i" % len(sn.text))
+            print_(sn.text)
+
         sd = sn.metadata["source document"]
 
         if sd not in files_used:
@@ -244,13 +256,16 @@ if __name__ == "__main__":
             "When was the first metazoan genome sequenced? Answer only with the year.","""
 
         queries = [
-            "The NeuroPAL transgene is amazing. Give me some examples of fluorophores in it.",
             "What is the main function of cell pair AVB?",
             "In what year was William Shakespeare born? ",
             "Tell me about the egg laying apparatus in C. elegans",
             "Tell me briefly about the neuronal control of C. elegans locomotion and the influence of monoamines.",
             "What can you tell me about Alan Coulson?",
+            "The NeuroPAL transgene is amazing. Give me some examples of fluorophores in it.",
         ]
+        """queries = [
+            "What can you tell me about Alan Coulson?",
+        ]"""
 
         print_("Processing %i queries" % len(queries))
 
