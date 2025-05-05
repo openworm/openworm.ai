@@ -25,6 +25,10 @@ LLM_OLLAMA_LLAMA32 = "Ollama:llama3.2"
 LLM_CMD_LINE_ARGS["-o-l32"] = LLM_OLLAMA_LLAMA32
 LLM_OLLAMA_LLAMA32_1B = "Ollama:llama3.2:1b"
 LLM_CMD_LINE_ARGS["-o-l321b"] = LLM_OLLAMA_LLAMA32_1B
+
+LLM_OLLAMA_LLAMA32_3B = "Ollama:llama3.2:3b"
+LLM_CMD_LINE_ARGS["-o-l323b"] = LLM_OLLAMA_LLAMA32_3B
+
 LLM_OLLAMA_MISTRAL = "Ollama:mistral"
 LLM_CMD_LINE_ARGS["-o-m"] = LLM_OLLAMA_MISTRAL
 LLM_OLLAMA_TINYLLAMA = "Ollama:tinyllama"
@@ -45,6 +49,10 @@ LLM_OLLAMA_QWEN = "Ollama:qwen:4b"
 LLM_CMD_LINE_ARGS["-qw"] = LLM_OLLAMA_QWEN
 LLM_OLLAMA_CODELLAMA = "Ollama:codellama:latest"
 LLM_OLLAMA_FALCON2 = "Ollama:falcon2:latest"
+LLM_OLLAMA_FALCON2 = "Ollama:falcon2:latest"
+
+LLM_OLLAMA_OLMO2_7B = "Ollama:olmo2:7b"
+LLM_CMD_LINE_ARGS["-o-olmo27b"] = LLM_OLLAMA_OLMO2_7B
 
 OPENAI_LLMS = [LLM_GPT35, LLM_GPT4, LLM_GPT4o]
 
@@ -70,6 +78,7 @@ PREF_ORDER_LLMS = (
     LLM_OLLAMA_QWEN,
     LLM_OLLAMA_CODELLAMA,
     LLM_OLLAMA_FALCON2,
+    LLM_OLLAMA_OLMO2_7B,
 )
 
 
@@ -186,6 +195,7 @@ def get_llm(llm_ver, temperature):
 
     elif llm_ver in [
         LLM_OLLAMA_LLAMA32_1B,
+        LLM_OLLAMA_LLAMA32_3B,
         LLM_OLLAMA_MISTRAL,
         LLM_OLLAMA_TINYLLAMA,
         LLM_OLLAMA_PHI3,
@@ -197,6 +207,7 @@ def get_llm(llm_ver, temperature):
         LLM_OLLAMA_QWEN,
         LLM_OLLAMA_CODELLAMA,
         LLM_OLLAMA_FALCON2,
+        LLM_OLLAMA_OLMO2_7B,
     ]:
         from langchain_ollama.llms import OllamaLLM
 
@@ -336,6 +347,8 @@ if __name__ == "__main__":
     import sys
 
     question = "What is the most common type of neuron in the brain?"
+    question = "Why is the worm C. elegans important to scientists?"
+    question = "Tell me briefly about the neuronal control of C. elegans locomotion and the influence of monoamines."
 
     llm_ver = get_llm_from_argv(sys.argv)
 
