@@ -235,10 +235,10 @@ if __name__ == "__main__":
 
     llm_ver = get_llm_from_argv(sys.argv)
 
-    if "-q" not in sys.argv:
-        create_store(llm_ver)
-
     if "-test" not in sys.argv:
+        if "-q" not in sys.argv:
+            create_store(llm_ver)
+
         index_reloaded = load_index(llm_ver)
         query_engine = get_query_engine(index_reloaded, llm_ver)
 
