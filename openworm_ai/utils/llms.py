@@ -6,13 +6,14 @@ from langchain_core.output_parsers import StrOutputParser
 
 LLM_CMD_LINE_ARGS = {}
 
-LLM_GPT35 = "GPT3.5"
-LLM_GPT4 = "GPT4"
-LLM_GPT4o = "GPT4o"
+LLM_GPT35 = "gpt-3.5-turbo-instruct"
+LLM_CMD_LINE_ARGS["-gpt35"] = LLM_GPT35
+LLM_GPT4 = "gpt-4"
+LLM_GPT4o = "gpt-4o"
 
 LLM_LLAMA2 = "LLAMA2"
 LLM_CMD_LINE_ARGS["-l"] = LLM_LLAMA2
-LLM_GEMINI = "gemini-2.0-flash"
+LLM_GEMINI = "Gemini-2.0-flash"
 LLM_CMD_LINE_ARGS["-g"] = LLM_GEMINI
 LLM_AI21 = "AI21"
 LLM_CMD_LINE_ARGS["-a"] = LLM_AI21
@@ -130,13 +131,19 @@ def get_llm(llm_ver, temperature):
     if llm_ver == LLM_GPT35:
         from langchain_openai import OpenAI
 
-        return OpenAI(temperature=temperature, openai_api_key=get_openai_api_key())
+        llm = OpenAI(
+            model_name=LLM_GPT35,
+            temperature=temperature,
+            openai_api_key=get_openai_api_key(),
+        )
+        # print(llm)
+        return llm
 
     elif llm_ver == LLM_GPT4:
         from langchain_openai import ChatOpenAI
 
         return ChatOpenAI(
-            model_name="gpt-4",
+            model_name=LLM_GPT4,
             openai_api_key=get_openai_api_key(),
             temperature=temperature,
         )
@@ -144,7 +151,7 @@ def get_llm(llm_ver, temperature):
         from langchain_openai import ChatOpenAI
 
         return ChatOpenAI(
-            model_name="gpt-4o",
+            model_name=LLM_GPT4o,
             openai_api_key=get_openai_api_key(),
             temperature=temperature,
         )
