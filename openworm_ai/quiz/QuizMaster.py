@@ -47,7 +47,7 @@ def save_quiz(num_questions, num_answers, llm_ver, quiz_scope, temperature=0):
     last_question = None
 
     indexing = ["1", "2", "3", "4"]
-    
+
     for line in response.split("\n"):
         if len(line.strip()) > 0:
             if "QUESTION" in line or line[-1] == "?":
@@ -87,6 +87,7 @@ if __name__ == "__main__":
         # quiz_json = "openworm_ai/quiz/samples/GPT4o_10questions.json"
 
         quiz_json = "openworm_ai/quiz/samples/GPT4o_100questions.json"
+        quiz_json = "openworm_ai/quiz/samples/GPT4o_100questions_celegans.json"
 
         quiz = MultipleChoiceQuiz.from_file(quiz_json)
 
@@ -122,9 +123,10 @@ if __name__ == "__main__":
 
             from openworm_ai.utils.llms import ask_question_get_response
 
-            resp = ask_question_get_response(
+            orig_resp = ask_question_get_response(
                 full_question, llm_ver, print_question=False
             ).strip()
+            resp = orig_resp
 
             if "<think>" in resp:  # Give deepseek a fighting chance...
                 resp = (
@@ -133,6 +135,8 @@ if __name__ == "__main__":
                 resp = resp.replace("\n", " ").strip()
                 guess = resp[-1]
             else:
+                if "\n" in resp:
+                    resp = resp.split("\n")[0]
                 guess = resp.split(":")[0].strip()
                 if " " in guess:
                     guess = guess[0]
@@ -143,7 +147,7 @@ if __name__ == "__main__":
             if guess in presented_answers:
                 g = presented_answers[guess]
             else:
-                g = "%s (cannot be interpreted!)" % guess
+                g = "[%s] [[%s]] (this cannot be interpreted!)" % (guess, orig_resp)
             print(
                 f" >> {qi}) Is their guess of ({g}) for ({q}) correct (right answer: {correct_text})? {correct_guess}"
             )

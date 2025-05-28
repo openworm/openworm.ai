@@ -15,6 +15,7 @@ from llama_index.core import PromptTemplate
 from llama_index.core import VectorStoreIndex, get_response_synthesizer
 from llama_index.core.retrievers import VectorIndexRetriever
 from llama_index.core.query_engine import RetrieverQueryEngine
+from llama_index.core import Settings
 
 
 # one extra dep
@@ -27,16 +28,18 @@ import json
 STORE_DIR = "store"
 SOURCE_DOCUMENT = "source document"
 
+Settings.chunk_size = 3000
+Settings.chunk_overlap = 50
+
 
 def create_store(model):
     OLLAMA_MODEL = model.replace("Ollama:", "") if model is not LLM_GPT4o else None
 
-    json_inputs = glob.glob("processed/json/*/*.json")
-    # print_(json_inputs)
+    json_inputs = glob.glob("processed/json/papers/*.json")
 
     documents = []
     for json_file in json_inputs:
-        print_("Adding %s" % json_file)
+        print_("Adding file to document store: %s" % json_file)
 
         with open(json_file, encoding="utf-8") as f:
             doc_model = json.load(f)
@@ -60,36 +63,33 @@ def create_store(model):
                 if len(all_text) == 0:
                     all_text = " "
                 # print_(f'---------------------\n{all_text}\n---------------------')
-                src_info = (
-                    f"WormAtlas Handbook: [{title}, Section {section}]({src_page})"
-                )
+                src_type = "Publication"
+                if "wormatlas" in json_file:
+                    src_type = "WormAtlas Handbook"
+                src_info = f"{src_type}: [{title}, Section {section}]({src_page})"
                 doc = Document(text=all_text, metadata={SOURCE_DOCUMENT: src_info})
                 documents.append(doc)
 
-    if "-test" in sys.argv:
-        print_("Finishing before section requiring OPENAI_API_KEY...")
+    print_("Creating a vector store index for %s" % model)
 
+    STORE_SUBFOLDER = ""
+
+    if OLLAMA_MODEL is not None:
+        ollama_embedding = OllamaEmbedding(
+            model_name=OLLAMA_MODEL,
+        )
+        STORE_SUBFOLDER = "/%s" % OLLAMA_MODEL.replace(":", "_")
+
+        # create an index from the parsed markdown
+        index = VectorStoreIndex.from_documents(
+            documents, embed_model=ollama_embedding, show_progress=True
+        )
     else:
-        print_("Creating a vector store index for %s" % model)
+        index = VectorStoreIndex.from_documents(documents)
 
-        STORE_SUBFOLDER = ""
+    print_("Persisting vector store index")
 
-        if OLLAMA_MODEL is not None:
-            ollama_embedding = OllamaEmbedding(
-                model_name=OLLAMA_MODEL,
-            )
-            STORE_SUBFOLDER = "/%s" % OLLAMA_MODEL.replace(":", "_")
-
-            # create an index from the parsed markdown
-            index = VectorStoreIndex.from_documents(
-                documents, embed_model=ollama_embedding, show_progress=True
-            )
-        else:
-            index = VectorStoreIndex.from_documents(documents)
-
-        print_("Persisting vector store index")
-
-        index.storage_context.persist(persist_dir=STORE_DIR + STORE_SUBFOLDER)
+    index.storage_context.persist(persist_dir=STORE_DIR + STORE_SUBFOLDER)
 
 
 def load_index(model):
@@ -147,7 +147,7 @@ def get_query_engine(index_reloaded, model, similarity_top_k=4):
 
     # create a query engine for the index
     if OLLAMA_MODEL is not None:
-        llm = Ollama(model=OLLAMA_MODEL)
+        llm = Ollama(model=OLLAMA_MODEL, request_timeout=60.0)
 
         ollama_embedding = OllamaEmbedding(
             model_name=OLLAMA_MODEL,
@@ -159,6 +159,7 @@ def get_query_engine(index_reloaded, model, similarity_top_k=4):
             refine_template=refine_template,
             embed_model=ollama_embedding,
         )
+        # print(dir(query_engine.retriever))
 
         query_engine.retriever.similarity_top_k = similarity_top_k
 
@@ -184,26 +185,9 @@ def get_query_engine(index_reloaded, model, similarity_top_k=4):
     return query_engine
 
 
-def process_query(response, model):
+def process_query(query, model, verbose=False):
+    print_("Processing query: %s" % query)
     response = query_engine.query(query)
-
-    """
-    import pprint as pp
-
-    print(type(response))
-    print(dir(response))
-
-    print("------")
-    pp.pprint(response.metadata)
-    print("------")
-
-    for sn in response.source_nodes:
-        print("  -- ")
-        print(f' - {sn.score}: {sn.metadata['source document']}')
-        pp.pprint(sn)
-    print("------")
-    pp.pprint(response.response)
-    print("------")"""
 
     response_text = str(response)
 
@@ -217,7 +201,14 @@ def process_query(response, model):
     cutoff = 0.2
     files_used = []
     for sn in response.source_nodes:
-        # print(sn)
+        if verbose:
+            print_("===================================")
+            # print(dir(sn))
+            print_(sn.metadata["source document"])
+            print_("-------")
+            print_("Length of selection below: %i" % len(sn.text))
+            print_(sn.text)
+
         sd = sn.metadata["source document"]
 
         if sd not in files_used:
@@ -244,10 +235,10 @@ if __name__ == "__main__":
 
     llm_ver = get_llm_from_argv(sys.argv)
 
-    if "-q" not in sys.argv:
-        create_store(llm_ver)
-
     if "-test" not in sys.argv:
+        if "-q" not in sys.argv:
+            create_store(llm_ver)
+
         index_reloaded = load_index(llm_ver)
         query_engine = get_query_engine(index_reloaded, llm_ver)
 
@@ -265,11 +256,18 @@ if __name__ == "__main__":
             "When was the first metazoan genome sequenced? Answer only with the year.","""
 
         queries = [
-            "The NeuroPAL transgene is amazing. Give me some examples of fluorophores in it.",
             "What is the main function of cell pair AVB?",
-            "What can you tell me about Alan Coulson?",
             "In what year was William Shakespeare born? ",
+            "Tell me about the egg laying apparatus in C. elegans",
+            "Tell me briefly about the neuronal control of C. elegans locomotion and the influence of monoamines.",
+            "What can you tell me about Alan Coulson?",
+            "The NeuroPAL transgene is amazing. Give me some examples of fluorophores in it.",
         ]
+        """queries = [
+            "What can you tell me about Alan Coulson?",
+        ]"""
+
+        print_("Processing %i queries" % len(queries))
 
         for query in queries:
             process_query(query, llm_ver)
