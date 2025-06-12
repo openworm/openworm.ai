@@ -263,9 +263,9 @@ if __name__ == "__main__":
             "What can you tell me about Alan Coulson?",
             "The NeuroPAL transgene is amazing. Give me some examples of fluorophores in it.",
         ]
-        """queries = [
-            "What can you tell me about Alan Coulson?",
-        ]"""
+        queries = [
+            "What are the main differences between NeuroML versions 1 and 2?",
+        ]
 
         print_("Processing %i queries" % len(queries))
 
