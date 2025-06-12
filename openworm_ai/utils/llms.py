@@ -6,16 +6,15 @@ from langchain_core.output_parsers import StrOutputParser
 
 LLM_CMD_LINE_ARGS = {}
 
-LLM_GPT35 = "GPT3.5"
-LLM_GPT4 = "GPT4"
-LLM_GPT4o = "GPT4o"
+LLM_GPT35 = "gpt-3.5-turbo-instruct"
+LLM_CMD_LINE_ARGS["-gpt35"] = LLM_GPT35
+LLM_GPT4 = "gpt-4"
+LLM_GPT4o = "gpt-4o"
 
 LLM_LLAMA2 = "LLAMA2"
 LLM_CMD_LINE_ARGS["-l"] = LLM_LLAMA2
-LLM_GEMINI = "gemini-2.0-flash"
-LLM_CMD_LINE_ARGS["-g"] = LLM_GEMINI
-LLM_AI21 = "AI21"
-LLM_CMD_LINE_ARGS["-a"] = LLM_AI21
+LLM_GEMINI_2F = "gemini-2.0-flash"
+LLM_CMD_LINE_ARGS["-g"] = LLM_GEMINI_2F
 LLM_CLAUDE37 = "claude-3-7-sonnet-20250219"
 LLM_CMD_LINE_ARGS["-c"] = LLM_CLAUDE37
 LLM_COHERE = "Cohere"
@@ -57,12 +56,11 @@ LLM_CMD_LINE_ARGS["-o-olmo27b"] = LLM_OLLAMA_OLMO2_7B
 OPENAI_LLMS = [LLM_GPT35, LLM_GPT4, LLM_GPT4o]
 
 PREF_ORDER_LLMS = (
-    LLM_GEMINI,
+    LLM_GEMINI_2F,
     LLM_LLAMA2,
     LLM_GPT35,
     LLM_GPT4,
     LLM_GPT4o,
-    LLM_AI21,
     LLM_CLAUDE37,
     LLM_COHERE,
     LLM_OLLAMA_LLAMA32,
@@ -108,12 +106,6 @@ def get_gemini_api_key():
     return gemini_api_key
 
 
-def get_ai21_api_key():
-    ai21_api_key = os.environ.get["AI21_API_KEY"]
-
-    return ai21_api_key
-
-
 def get_anthropic_key():
     anthropic_api_key = os.environ.get("CLAUDE_API_KEY")
 
@@ -130,13 +122,19 @@ def get_llm(llm_ver, temperature):
     if llm_ver == LLM_GPT35:
         from langchain_openai import OpenAI
 
-        return OpenAI(temperature=temperature, openai_api_key=get_openai_api_key())
+        llm = OpenAI(
+            model_name=LLM_GPT35,
+            temperature=temperature,
+            openai_api_key=get_openai_api_key(),
+        )
+        # print(llm)
+        return llm
 
     elif llm_ver == LLM_GPT4:
         from langchain_openai import ChatOpenAI
 
         return ChatOpenAI(
-            model_name="gpt-4",
+            model_name=LLM_GPT4,
             openai_api_key=get_openai_api_key(),
             temperature=temperature,
         )
@@ -144,7 +142,7 @@ def get_llm(llm_ver, temperature):
         from langchain_openai import ChatOpenAI
 
         return ChatOpenAI(
-            model_name="gpt-4o",
+            model_name=LLM_GPT4o,
             openai_api_key=get_openai_api_key(),
             temperature=temperature,
         )
@@ -165,19 +163,14 @@ def get_llm(llm_ver, temperature):
 
         llm = ChatLlamaAPI(client=llama)
 
-    elif llm_ver == LLM_GEMINI:
+    elif llm_ver == LLM_GEMINI_2F:
         from langchain_google_genai import ChatGoogleGenerativeAI
 
         return ChatGoogleGenerativeAI(
-            model="gemini-2.0-flash",
+            model=LLM_GEMINI_2F,
             google_api_key=get_gemini_api_key(),  # Retrieve API key
             temperature=temperature,
         )
-
-    elif llm_ver == LLM_AI21:
-        from langchain_ai21 import AI21LLM
-
-        llm = AI21LLM(model="j2-ultra")
 
     elif llm_ver == LLM_CLAUDE37:
         from langchain_anthropic import ChatAnthropic
