@@ -39,10 +39,17 @@ jobs:
           ##ollama pull llama3.2:1b
 
 
-    - name: Test all
+    - name: Test all free steps
       shell: bash
       run: | 
         ./regenerateAndTest.sh -free  # Only test the parts not requiring any API keys...
+
+
+    - name: Test interactions requiring API (requires OPENAI key)
+      if: ${{ matrix.runs-on == 'ubuntu-latest' && matrix.python-version == '3.12' }}
+      run: | 
+        ./regenerateAndTest.sh  # Test the parts requiring API keys...
+
 
     - name: Final version info
       run: |
