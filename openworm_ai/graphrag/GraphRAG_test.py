@@ -35,7 +35,7 @@ Settings.chunk_overlap = 50
 def create_store(model):
     OLLAMA_MODEL = model.replace("Ollama:", "") if model is not LLM_GPT4o else None
 
-    json_inputs = glob.glob("processed/json/papers/*.json")
+    json_inputs = glob.glob("processed/json/*/*.json")
 
     documents = []
     for json_file in json_inputs:
@@ -265,6 +265,8 @@ if __name__ == "__main__":
         ]
         queries = [
             "What are the main differences between NeuroML versions 1 and 2?",
+            "What are the main types of cell in the C. elegans pharynx?",
+            "Give me 3 facts about the coelomocyte system in C. elegans",
         ]
 
         print_("Processing %i queries" % len(queries))
