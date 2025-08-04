@@ -48,6 +48,8 @@ jobs:
 
     - name: Test interactions requiring API (requires OPENAI key)
       if: ${{ matrix.runs-on == 'ubuntu-latest' && matrix.python-version == '3.12' }}
+      env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: | 
         ./regenerateAndTest.sh  # Test the parts requiring API keys...
 
