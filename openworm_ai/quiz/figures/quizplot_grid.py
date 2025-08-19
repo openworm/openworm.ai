@@ -84,7 +84,7 @@ for category, file_path in file_paths.items():
 
     # Check if the file exists
     if not os.path.exists(file_path):
-        print(f"⚠️ Warning: File not found - {file_path}. Skipping this category.")
+        print(f"Warning: File not found - {file_path}. Skipping this category.")
         continue
 
     # Load JSON data
@@ -94,11 +94,8 @@ for category, file_path in file_paths.items():
     # Extract relevant data
     category_results = []
     for result in data.get("Results", []):  # Use .get() to avoid KeyError
-        print(6)
         for key in llm_parameters:
-            print("---" + key)
             if key.lower() in result["LLM"].lower():
-                print(44)
                 category_results.append(
                     {
                         "Model": key,
@@ -111,7 +108,7 @@ for category, file_path in file_paths.items():
 
     # Skip if no data
     if not category_results:
-        print(f"⚠️  No valid results found in {file_path}. Skipping...")
+        print(f"No valid results found in {file_path}. Skipping...")
         continue
 
     # Convert to DataFrame
@@ -156,6 +153,6 @@ for category, file_path in file_paths.items():
     # Save figure
     plt.legend()
     plt.savefig(save_path)
-    print(f"✅ Saved plot: {save_path}")
+    print(f"Saved plot: {save_path}")
     if "-nogui" not in sys.argv:
         plt.show()
