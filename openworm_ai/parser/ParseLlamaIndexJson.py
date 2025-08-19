@@ -83,6 +83,10 @@ if __name__ == "__main__":
             "corpus/papers/test/SinhaEtAl2025.pdf.json",
             "https://elifesciences.org/articles/95135",
         ],
+        "Wang_et_al_2024": [
+            "corpus/papers/test/Wang2024_NeurotransmitterAtlas.pdf.json",
+            "https://elifesciences.org/articles/95402",
+        ],
     }
 
     # Loop through papers and process markdown sections
