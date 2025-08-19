@@ -13,8 +13,14 @@ LLM_GPT4o = "gpt-4o"
 
 LLM_LLAMA2 = "LLAMA2"
 LLM_CMD_LINE_ARGS["-l"] = LLM_LLAMA2
+
 LLM_GEMINI_2F = "gemini-2.0-flash"
 LLM_CMD_LINE_ARGS["-g"] = LLM_GEMINI_2F
+# LLM_GEMINI_25F = "gemini-2.5-flash-"
+# LLM_CMD_LINE_ARGS["-g25"] = LLM_GEMINI_25F
+
+LLMS_GEMINI = [LLM_GEMINI_2F]  # , LLM_GEMINI_25F]
+
 LLM_CLAUDE37 = "claude-3-7-sonnet-20250219"
 LLM_CMD_LINE_ARGS["-c"] = LLM_CLAUDE37
 LLM_COHERE = "Cohere"
@@ -55,8 +61,7 @@ LLM_CMD_LINE_ARGS["-o-olmo27b"] = LLM_OLLAMA_OLMO2_7B
 
 OPENAI_LLMS = [LLM_GPT35, LLM_GPT4, LLM_GPT4o]
 
-PREF_ORDER_LLMS = (
-    LLM_GEMINI_2F,
+PREF_ORDER_LLMS = LLMS_GEMINI + [
     LLM_LLAMA2,
     LLM_GPT35,
     LLM_GPT4,
@@ -77,7 +82,7 @@ PREF_ORDER_LLMS = (
     LLM_OLLAMA_CODELLAMA,
     LLM_OLLAMA_FALCON2,
     LLM_OLLAMA_OLMO2_7B,
-)
+]
 
 
 def requires_openai_key(llm_ver):
@@ -163,11 +168,11 @@ def get_llm(llm_ver, temperature):
 
         llm = ChatLlamaAPI(client=llama)
 
-    elif llm_ver == LLM_GEMINI_2F:
+    elif llm_ver in LLMS_GEMINI:
         from langchain_google_genai import ChatGoogleGenerativeAI
 
         return ChatGoogleGenerativeAI(
-            model=LLM_GEMINI_2F,
+            model=llm_ver,
             google_api_key=get_gemini_api_key(),  # Retrieve API key
             temperature=temperature,
         )

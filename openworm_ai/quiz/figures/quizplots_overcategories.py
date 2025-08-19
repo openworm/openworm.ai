@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
@@ -95,4 +96,5 @@ plt.savefig(plot_path)
 print(f"✅ Saved plot: {plot_path}")
 
 # Show the plot
-plt.show()
+if "-nogui" not in sys.argv:
+    plt.show()

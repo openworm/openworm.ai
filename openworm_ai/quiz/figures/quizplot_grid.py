@@ -1,10 +1,29 @@
 import json
 import os
+import sys
 import matplotlib.pyplot as plt
 import pandas as pd
 
+# ruff: noqa: F401
+from openworm_ai.utils.llms import (
+    LLM_OLLAMA_LLAMA32_1B,
+    LLM_OLLAMA_LLAMA32_3B,
+    LLM_GPT4o,
+    LLM_GEMINI_2F,
+    LLM_CLAUDE37,
+    LLM_GPT35,
+    LLM_OLLAMA_PHI4,
+    LLM_OLLAMA_GEMMA2,
+    LLM_OLLAMA_GEMMA,
+    LLM_OLLAMA_QWEN,
+    LLM_OLLAMA_TINYLLAMA,
+    ask_question_get_response,
+)
+
 # Define model parameters (LLM parameter sizes in billions)
 llm_parameters = {
+    LLM_GPT4o: 1760,
+    LLM_GPT35: 175,
     "GPT3.5": 20,
     "Phi4": 14,
     "Gemma2": 9,
@@ -19,6 +38,8 @@ llm_parameters = {
 
 # Define model distributors for coloring
 model_distributors = {
+    LLM_GPT4o: "OpenAI",
+    LLM_GPT35: "OpenAI",
     "GPT3.5": "OpenAI",
     "GPT4o": "OpenAI",
     "Phi4": "Microsoft",
@@ -73,8 +94,11 @@ for category, file_path in file_paths.items():
     # Extract relevant data
     category_results = []
     for result in data.get("Results", []):  # Use .get() to avoid KeyError
+        print(6)
         for key in llm_parameters:
+            print("---" + key)
             if key.lower() in result["LLM"].lower():
+                print(44)
                 category_results.append(
                     {
                         "Model": key,
@@ -87,7 +111,7 @@ for category, file_path in file_paths.items():
 
     # Skip if no data
     if not category_results:
-        print(f"⚠️ No valid results found in {file_path}. Skipping...")
+        print(f"⚠️  No valid results found in {file_path}. Skipping...")
         continue
 
     # Convert to DataFrame
@@ -133,4 +157,5 @@ for category, file_path in file_paths.items():
     plt.legend()
     plt.savefig(save_path)
     print(f"✅ Saved plot: {save_path}")
-    plt.show()
+    if "-nogui" not in sys.argv:
+        plt.show()

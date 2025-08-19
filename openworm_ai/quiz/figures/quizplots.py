@@ -1,6 +1,7 @@
 import json
 import matplotlib.pyplot as plt
 import numpy as np
+import sys
 
 # Define model parameters
 llm_parameters = {
@@ -26,7 +27,7 @@ file_paths = {
 figures_folder = "openworm_ai/quiz/figures"
 
 for category, file_path in file_paths.items():
-    save_path = f"{figures_folder}/llm_accuracy_vs_parameters_{category.replace(' ', '_').lower()}.png"
+    save_path = f"{figures_folder}/llm_accuracy_vs_parameters_{category.replace(' ', '_').lower()}_bar.png"
 
     # Load JSON data
     with open(file_path, "r") as file:
@@ -77,4 +78,5 @@ for category, file_path in file_paths.items():
 
     # Save figure
     plt.savefig(save_path)
-    plt.show()
+    if "-nogui" not in sys.argv:
+        plt.show()
