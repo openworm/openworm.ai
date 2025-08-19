@@ -11,10 +11,10 @@ llm_parameters = {
     "Gemma": 7,
     "Qwen": 4,
     "Llama3.2": 1,
-    "TinyLlama":1.1,
+    "TinyLlama": 1.1,
     "GPT4o": 1760,
     "Gemini": 500,
-    "Claude 3.5 Sonnet": 175
+    "Claude 3.5 Sonnet": 175,
 }
 
 # Define model distributors for coloring
@@ -28,15 +28,15 @@ model_distributors = {
     "Claude 3.5 Sonnet": "Anthropic",
     "Qwen": "Alibaba",
     "Llama3.2": "Meta",
-    "TinyLlama":"Open Source"
+    "TinyLlama": "Open Source",
 }
 
 # Define quiz categories and corresponding file paths
 file_paths = {
-    #"General Knowledge": "openworm_ai/quiz/scores/general/llm_scores_general_24-02-25.json",
-    #"Science": "openworm_ai/quiz/scores/science/llm_scores_science_24-02-25.json",
-    #"C. Elegans": "openworm_ai/quiz/scores/celegans/llm_scores_celegans_24-02-25.json",
-    "RAG":"openworm_ai/quiz/scores/rag/llm_scores_rag_16-03-25_2.json"
+    # "General Knowledge": "openworm_ai/quiz/scores/general/llm_scores_general_24-02-25.json",
+    # "Science": "openworm_ai/quiz/scores/science/llm_scores_science_24-02-25.json",
+    # "C. Elegans": "openworm_ai/quiz/scores/celegans/llm_scores_celegans_24-02-25.json",
+    "RAG": "openworm_ai/quiz/scores/rag/llm_scores_rag_16-03-25_2.json"
 }
 
 # Folder to save figures
@@ -51,12 +51,15 @@ distributor_colors = {
     "Microsoft": "purple",
     "Alibaba": "orange",
     "Meta": "cyan",
-    "Open Source":"yellow"
+    "Open Source": "yellow",
 }
 
 # Process each quiz category
 for category, file_path in file_paths.items():
-    save_path = os.path.join(figures_folder, f"llm_accuracy_vs_parameters_{category.replace(' ', '_').lower()}.png")
+    save_path = os.path.join(
+        figures_folder,
+        f"llm_accuracy_vs_parameters_{category.replace(' ', '_').lower()}.png",
+    )
 
     # Check if the file exists
     if not os.path.exists(file_path):
@@ -72,12 +75,14 @@ for category, file_path in file_paths.items():
     for result in data.get("Results", []):  # Use .get() to avoid KeyError
         for key in llm_parameters:
             if key.lower() in result["LLM"].lower():
-                category_results.append({
-                    "Model": key,
-                    "Accuracy (%)": result["Accuracy (%)"],
-                    "Parameters (B)": llm_parameters[key],
-                    "Distributor": model_distributors.get(key, "Unknown")
-                })
+                category_results.append(
+                    {
+                        "Model": key,
+                        "Accuracy (%)": result["Accuracy (%)"],
+                        "Parameters (B)": llm_parameters[key],
+                        "Distributor": model_distributors.get(key, "Unknown"),
+                    }
+                )
                 break
 
     # Skip if no data
@@ -94,11 +99,25 @@ for category, file_path in file_paths.items():
     # Scatter plot with model labels, colored by distributor
     for distributor, color in distributor_colors.items():
         subset = df[df["Distributor"] == distributor]
-        plt.scatter(subset["Parameters (B)"], subset["Accuracy (%)"], s=100, color=color, label=distributor, edgecolor="black")
+        plt.scatter(
+            subset["Parameters (B)"],
+            subset["Accuracy (%)"],
+            s=100,
+            color=color,
+            label=distributor,
+            edgecolor="black",
+        )
 
     # Add model labels to each point
     for i, row in df.iterrows():
-        plt.text(row["Parameters (B)"], row["Accuracy (%)"], row["Model"], fontsize=10, ha="right", va="bottom")
+        plt.text(
+            row["Parameters (B)"],
+            row["Accuracy (%)"],
+            row["Model"],
+            fontsize=10,
+            ha="right",
+            va="bottom",
+        )
 
     # Log scale for x-axis (model parameters)
     plt.xscale("log")

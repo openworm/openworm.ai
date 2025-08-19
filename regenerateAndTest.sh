@@ -1,14 +1,20 @@
 #!/bin/bash
 set -ex
 
-ruff format openworm_ai/*/*.py openworm_ai/*.py
-ruff check openworm_ai/*/*.py openworm_ai/*.py
+ruff format openworm_ai/*.py openworm_ai/*/*.py openworm_ai/*/*/*.py
+ruff check openworm_ai/*.py openworm_ai/*/*.py openworm_ai/*/*/*.py
 
 pip install .
 
 if [ $1 == "-quiz" ]; then
     python -m openworm_ai.quiz.QuizMaster 10
     python -m openworm_ai.quiz.QuizMaster -ask
+    python -m openworm_ai.quiz.QuizMaster -ask -o-t
+
+elif [ $1 == "-qplot" ]; then
+    python -m openworm_ai.quiz.figures.quizplots_overcategories
+    python -m openworm_ai.quiz.figures.quizplot_grid
+    python -m openworm_ai.quiz.figures.quizplots
 
 elif [ $1 == "-llm" ]; then
     python -m openworm_ai.utils.llms -o-l32
