@@ -4,7 +4,7 @@ set -ex
 ruff format openworm_ai/*.py openworm_ai/*/*.py openworm_ai/*/*/*.py
 ruff check openworm_ai/*.py openworm_ai/*/*.py openworm_ai/*/*/*.py
 
-pip install .
+pip install .[dev]
 
 if [ $1 == "-quiz" ]; then
     python -m openworm_ai.quiz.QuizMaster 10
