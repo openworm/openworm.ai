@@ -1,8 +1,8 @@
-import os
 import time
 
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from langchain.chat_models import init_chat_model
 
 LLM_CMD_LINE_ARGS = {}
 
@@ -85,134 +85,6 @@ PREF_ORDER_LLMS = LLMS_GEMINI + [
 ]
 
 
-def requires_openai_key(llm_ver):
-    return llm_ver in OPENAI_LLMS
-
-
-def get_openai_api_key():
-    # if openai_api_key_sb == None or len(openai_api_key_sb)==0:
-    openai_api_key = os.environ.get("OPENAI_API_KEY")
-    if openai_api_key is None:
-        openai_api_key = str(open("../oaik", "r").readline())
-    # else:
-    #   openai_api_key = openai_api_key_sb
-    return openai_api_key
-
-
-def get_llamaapi_key():
-    llamaapi_key = os.environ.get("LLAMAAPI_KEY")
-
-    return llamaapi_key
-
-
-def get_gemini_api_key():
-    gemini_api_key = os.environ.get("GEMINI_API_KEY")
-
-    return gemini_api_key
-
-
-def get_anthropic_key():
-    anthropic_api_key = os.environ.get("CLAUDE_API_KEY")
-
-    return anthropic_api_key
-
-
-def get_cohere_key():
-    cohere_api_key = os.environ.get["COHERE_API_KEY"]
-
-    return cohere_api_key
-
-
-def get_llm(llm_ver, temperature):
-    if llm_ver == LLM_GPT35:
-        from langchain_openai import OpenAI
-
-        llm = OpenAI(
-            model_name=LLM_GPT35,
-            temperature=temperature,
-            openai_api_key=get_openai_api_key(),
-        )
-        # print(llm)
-        return llm
-
-    elif llm_ver == LLM_GPT4:
-        from langchain_openai import ChatOpenAI
-
-        return ChatOpenAI(
-            model_name=LLM_GPT4,
-            openai_api_key=get_openai_api_key(),
-            temperature=temperature,
-        )
-    elif llm_ver == LLM_GPT4o:
-        from langchain_openai import ChatOpenAI
-
-        return ChatOpenAI(
-            model_name=LLM_GPT4o,
-            openai_api_key=get_openai_api_key(),
-            temperature=temperature,
-        )
-
-    elif llm_ver == LLM_LLAMA2:
-        from llamaapi import LlamaAPI
-        import asyncio
-
-        # Create a new event loop
-        loop = asyncio.new_event_loop()
-
-        # Set the event loop as the current event loop
-        asyncio.set_event_loop(loop)
-
-        llama = LlamaAPI(get_llamaapi_key())
-
-        from langchain_experimental.llms import ChatLlamaAPI
-
-        llm = ChatLlamaAPI(client=llama)
-
-    elif llm_ver in LLMS_GEMINI:
-        from langchain_google_genai import ChatGoogleGenerativeAI
-
-        return ChatGoogleGenerativeAI(
-            model=llm_ver,
-            google_api_key=get_gemini_api_key(),  # Retrieve API key
-            temperature=temperature,
-        )
-
-    elif llm_ver == LLM_CLAUDE37:
-        from langchain_anthropic import ChatAnthropic
-
-        return ChatAnthropic(
-            model_name="claude-3-7-sonnet-20250219",
-            anthropic_api_key=get_anthropic_key(),  # Retrieve API key
-            temperature=temperature,
-        )
-
-    elif llm_ver == LLM_COHERE:
-        from langchain_cohere import ChatCohere
-
-        llm = ChatCohere()
-
-    elif llm_ver in [
-        LLM_OLLAMA_LLAMA32_1B,
-        LLM_OLLAMA_LLAMA32_3B,
-        LLM_OLLAMA_MISTRAL,
-        LLM_OLLAMA_TINYLLAMA,
-        LLM_OLLAMA_PHI3,
-        LLM_OLLAMA_PHI4,
-        LLM_OLLAMA_GEMMA,
-        LLM_OLLAMA_GEMMA2,
-        LLM_OLLAMA_GEMMA3,
-        LLM_OLLAMA_DEEPSEEK,
-        LLM_OLLAMA_QWEN,
-        LLM_OLLAMA_CODELLAMA,
-        LLM_OLLAMA_FALCON2,
-        LLM_OLLAMA_OLMO2_7B,
-    ]:
-        from langchain_ollama.llms import OllamaLLM
-
-        llm = OllamaLLM(model=llm_ver.split(":", 1)[1])
-    return llm
-
-
 GENERAL_QUERY_PROMPT_TEMPLATE = """Answer the following question. Provide succinct, yet scientifically accurate
     answers. Question: {question}
 
@@ -234,7 +106,7 @@ def generate_response(input_text, llm_ver, temperature, only_celegans):
     prompt = PromptTemplate(template=template, input_variables=["question"])
 
     try:
-        llm = get_llm(llm_ver, temperature)
+        llm = init_chat_model(llm_ver, temperature)
 
         llm_chain = prompt | llm | StrOutputParser()
 
@@ -253,7 +125,7 @@ def generate_panel_response(input_text, llm_panelists, llm_panel_chair, temperat
             template=GENERAL_QUERY_PROMPT_TEMPLATE, input_variables=["question"]
         )
 
-        llm = get_llm(llm_ver, temperature)
+        llm = init_chat_model(llm_ver, temperature)
 
         llm_chain = prompt | llm | StrOutputParser()
 
@@ -282,7 +154,7 @@ Please generate a brief answer to the researcher's question based on their respo
 
     prompt = PromptTemplate(template=panel_chair_prompt, input_variables=["question"])
 
-    llm = get_llm(llm_panel_chair, temperature)
+    llm = init_chat_model(llm_panel_chair, temperature)
 
     llm_chain = prompt | llm | StrOutputParser()
 
