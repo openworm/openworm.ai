@@ -26,39 +26,39 @@ LLM_CMD_LINE_ARGS["-c"] = LLM_CLAUDE37
 LLM_COHERE = "Cohere"
 LLM_CMD_LINE_ARGS["-co"] = LLM_COHERE
 
-LLM_OLLAMA_LLAMA32 = "Ollama:llama3.2"
+LLM_OLLAMA_LLAMA32 = "ollama:llama3.2"
 LLM_CMD_LINE_ARGS["-o-l32"] = LLM_OLLAMA_LLAMA32
-LLM_OLLAMA_LLAMA32_1B = "Ollama:llama3.2:1b"
+LLM_OLLAMA_LLAMA32_1B = "ollama:llama3.2:1b"
 LLM_CMD_LINE_ARGS["-o-l321b"] = LLM_OLLAMA_LLAMA32_1B
 
-LLM_OLLAMA_LLAMA32_3B = "Ollama:llama3.2:3b"
+LLM_OLLAMA_LLAMA32_3B = "ollama:llama3.2:3b"
 LLM_CMD_LINE_ARGS["-o-l323b"] = LLM_OLLAMA_LLAMA32_3B
 
-LLM_OLLAMA_MISTRAL = "Ollama:mistral"
+LLM_OLLAMA_MISTRAL = "ollama:mistral"
 LLM_CMD_LINE_ARGS["-o-m"] = LLM_OLLAMA_MISTRAL
-LLM_OLLAMA_TINYLLAMA = "Ollama:tinyllama"
+LLM_OLLAMA_TINYLLAMA = "ollama:tinyllama"
 LLM_CMD_LINE_ARGS["-o-t"] = LLM_OLLAMA_TINYLLAMA
-LLM_OLLAMA_PHI3 = "Ollama:phi3:latest"
+LLM_OLLAMA_PHI3 = "ollama:phi3:latest"
 LLM_CMD_LINE_ARGS["-o-phi3"] = LLM_OLLAMA_PHI3
-LLM_OLLAMA_PHI4 = "Ollama:phi4:latest"
+LLM_OLLAMA_PHI4 = "ollama:phi4:latest"
 LLM_CMD_LINE_ARGS["-o-phi4"] = LLM_OLLAMA_PHI4
-LLM_OLLAMA_GEMMA = "Ollama:gemma:7b"
+LLM_OLLAMA_GEMMA = "ollama:gemma:7b"
 LLM_CMD_LINE_ARGS["-ge"] = LLM_OLLAMA_GEMMA
-LLM_OLLAMA_GEMMA2 = "Ollama:gemma2:latest"
+LLM_OLLAMA_GEMMA2 = "ollama:gemma2:latest"
 LLM_CMD_LINE_ARGS["-ge2"] = LLM_OLLAMA_GEMMA2
-LLM_OLLAMA_GEMMA3 = "Ollama:gemma3:4b"
+LLM_OLLAMA_GEMMA3 = "ollama:gemma3:4b"
 LLM_CMD_LINE_ARGS["-ge3"] = LLM_OLLAMA_GEMMA3
-LLM_OLLAMA_DEEPSEEK = "Ollama:deepseek-r1:7b"
+LLM_OLLAMA_DEEPSEEK = "ollama:deepseek-r1:7b"
 LLM_CMD_LINE_ARGS["-o-dsr1"] = LLM_OLLAMA_DEEPSEEK
 
-LLM_OLLAMA_QWEN = "Ollama:qwen3:1.7b"
+LLM_OLLAMA_QWEN = "ollama:qwen3:1.7b"
 LLM_CMD_LINE_ARGS["-o-qw"] = LLM_OLLAMA_QWEN
 
-LLM_OLLAMA_CODELLAMA = "Ollama:codellama:latest"
-LLM_OLLAMA_FALCON2 = "Ollama:falcon2:latest"
-LLM_OLLAMA_FALCON2 = "Ollama:falcon2:latest"
+LLM_OLLAMA_CODELLAMA = "ollama:codellama:latest"
+LLM_OLLAMA_FALCON2 = "ollama:falcon2:latest"
+LLM_OLLAMA_FALCON2 = "ollama:falcon2:latest"
 
-LLM_OLLAMA_OLMO2_7B = "Ollama:olmo2:7b"
+LLM_OLLAMA_OLMO2_7B = "ollama:olmo2:7b"
 LLM_CMD_LINE_ARGS["-o-olmo27b"] = LLM_OLLAMA_OLMO2_7B
 
 OPENAI_LLMS = [LLM_GPT35, LLM_GPT4, LLM_GPT4o]
@@ -108,7 +108,7 @@ def generate_response(input_text, llm_ver, temperature, only_celegans):
     prompt = PromptTemplate(template=template, input_variables=["question"])
 
     try:
-        llm = init_chat_model(llm_ver, temperature)
+        llm = init_chat_model(llm_ver, temperature=temperature)
 
         llm_chain = prompt | llm | StrOutputParser()
 
@@ -127,7 +127,7 @@ def generate_panel_response(input_text, llm_panelists, llm_panel_chair, temperat
             template=GENERAL_QUERY_PROMPT_TEMPLATE, input_variables=["question"]
         )
 
-        llm = init_chat_model(llm_ver, temperature)
+        llm = init_chat_model(llm_ver, temperature=temperature)
 
         llm_chain = prompt | llm | StrOutputParser()
 
@@ -156,7 +156,7 @@ Please generate a brief answer to the researcher's question based on their respo
 
     prompt = PromptTemplate(template=panel_chair_prompt, input_variables=["question"])
 
-    llm = init_chat_model(llm_panel_chair, temperature)
+    llm = init_chat_model(llm_panel_chair, temperature=temperature)
 
     llm_chain = prompt | llm | StrOutputParser()
 
