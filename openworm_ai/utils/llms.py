@@ -53,9 +53,10 @@ LLM_CMD_LINE_ARGS["-o-dsr1"] = LLM_OLLAMA_DEEPSEEK
 
 LLM_OLLAMA_QWEN = "ollama:qwen3:1.7b"
 LLM_CMD_LINE_ARGS["-o-qw"] = LLM_OLLAMA_QWEN
+LLM_OLLAMA_QWEN3_4B = "ollama:qwen3:4b"
+LLM_CMD_LINE_ARGS["-o-qw34b"] = LLM_OLLAMA_QWEN3_4B
 
 LLM_OLLAMA_CODELLAMA = "ollama:codellama:latest"
-LLM_OLLAMA_FALCON2 = "ollama:falcon2:latest"
 LLM_OLLAMA_FALCON2 = "ollama:falcon2:latest"
 
 LLM_OLLAMA_OLMO2_7B = "ollama:olmo2:7b"
