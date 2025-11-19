@@ -268,6 +268,7 @@ if __name__ == "__main__":
             "What are the main types of cell in the C. elegans pharynx?",
             "Give me 3 facts about the coelomocyte system in C. elegans",
             "Tell me about the neurotransmitter betaine in C. elegans",
+            "Tell me about the different locomotory gaits of C. elegans",
         ]
 
         print_("Processing %i queries" % len(queries))
