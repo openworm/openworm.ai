@@ -17,3 +17,4 @@ venv/
 /openworm_ai/quiz/samples/GPT4o_10questions_general.json
 /openworm_ai/quiz/samples/GPT4o_10questions_science.json
 /dist
+/release.sh
