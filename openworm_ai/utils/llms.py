@@ -100,6 +100,11 @@ GENERAL_QUERY_LIMITED_PROMPT_TEMPLATE = """You are a neuroscientist who is answe
     Answer: """
 
 
+def get_llm(llm_ver, temperature):
+    llm = init_chat_model(llm_ver, temperature=temperature)
+    return llm
+
+
 def generate_response(input_text, llm_ver, temperature, only_celegans):
     template = (
         GENERAL_QUERY_LIMITED_PROMPT_TEMPLATE
