@@ -265,7 +265,7 @@ if __name__ == "__main__":
         ]
         queries = [
             "What are the main differences between NeuroML versions 1 and 2?",
-            "What are the main types of cell in the C. elegans pharynx?",
+            "What are the main types of cells in the C. elegans pharynx?",
             "Give me 3 facts about the coelomocyte system in C. elegans",
             "Tell me about the neurotransmitter betaine in C. elegans",
             "Tell me about the different locomotory gaits of C. elegans",
