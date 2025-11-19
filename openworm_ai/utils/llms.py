@@ -101,6 +101,12 @@ GENERAL_QUERY_LIMITED_PROMPT_TEMPLATE = """You are a neuroscientist who is answe
 
 
 def get_llm(llm_ver, temperature):
+    if llm_ver not in PREF_ORDER_LLMS:
+        raise ValueError(
+            "LLM version %s not recognized by openworm.ai. Try the direct route (call init_chat_model in langchain.chat_models)..."
+            % llm_ver
+        )
+
     llm = init_chat_model(llm_ver, temperature=temperature)
     return llm
 
