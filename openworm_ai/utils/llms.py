@@ -127,7 +127,7 @@ def get_llm(llm_ver, temperature, limit_to_openwormai_llms=False):
     elif llm_ver == LLM_COHERE:
         from langchain_cohere import ChatCohere
 
-        print(" ... Initializing ChatCohere model")
+        # print(" ... Initializing ChatCohere model")
         llm = ChatCohere()
 
         return llm
