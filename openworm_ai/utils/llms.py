@@ -90,6 +90,33 @@ PREF_ORDER_LLMS = LLMS_GEMINI + [
 ]
 
 
+def requires_openai_key(llm_ver):
+    return llm_ver in OPENAI_LLMS
+
+
+def get_openai_api_key():
+    """
+    Returns the OpenAI API key from:
+    1. Environment variables (preferred)
+    2. A file '../oaik' (legacy OpenWorm option), IF it exists
+    """
+    # 1. Try environment variable
+    key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_KEY")
+    if key:
+        return key.strip()
+
+    # 2. Legacy fallback – only read file if it exists
+    oaik_path = "../oaik"
+    if os.path.exists(oaik_path):
+        with open(oaik_path, "r") as f:
+            return f.read().strip()
+
+    # 3. Nothing found → fail clearly
+    raise RuntimeError(
+        "OpenAI API key not found.\n"
+        "Set environment variable OPENAI_API_KEY or place a key in '../oaik'."
+    )
+
 GENERAL_QUERY_PROMPT_TEMPLATE = """Answer the following question. Provide succinct, yet scientifically accurate
     answers. Question: {question}
 
@@ -226,13 +253,34 @@ _**%s**:_ _%s_
 
 
 def get_llm_from_argv(argv):
+    # Default remains GPT-4o
     llm_ver = LLM_GPT4o
 
-    for arg in LLM_CMD_LINE_ARGS:
+    # Allow command-line flags to override
+    for arg, model_name in LLM_CMD_LINE_ARGS.items():
         if arg in argv:
-            llm_ver = LLM_CMD_LINE_ARGS[arg]
+            return model_name
+
+    # Allow explicit model names as positional args
+    for a in argv[1:]:
+        if a.startswith("Ollama:"):
+            return a
+        if a in PREF_ORDER_LLMS:
+            return a
+        if a.upper() in ("GPT4O", "GPT-4O"):
+            return LLM_GPT4o
+
+    # --- FINAL FAILSAFE ---
+    # If default GPT-4o chosen but key missing → fallback to Ollama
+    try:
+        if requires_openai_key(llm_ver):
+            _ = get_openai_api_key()  # Just try getting key
+    except Exception:
+        print("⚠ No OpenAI key found → using local Ollama model instead.")
+        return LLM_OLLAMA_LLAMA32
 
     return llm_ver
+
 
 
 def ask_question_get_response(
