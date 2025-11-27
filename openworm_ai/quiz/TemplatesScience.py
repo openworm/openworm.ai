@@ -4,7 +4,7 @@ from openworm_ai.utils.llms import generate_response
 
 GENERATE_Q = """
 Generate a list of <QUESTION_NUMBER> multiple choice questions to test someone's scientific knowledge.
-The questions should be answerable by an intelligent adult, and should be on a wide range of subjects in scinece: biology, chemistry, physics and all the relevant fields.
+The questions should be answerable by an intelligent adult, and should be on a wide range of subjects in science: biology, chemistry, physics and all the relevant fields.
 There should be <ANSWER_NUMBER> possible answers, only one of which is unambiguously correct, and all of the answers should be kept brief.
 Each of the <QUESTION_NUMBER> question/answer sets should be presented in the following format:
 
@@ -19,24 +19,84 @@ WRONG ANSWER: Golgi Apparatus
 
 """
 
-ASK_Q = """You are to select the correct answer for a multiple choice question. 
-A number of answers will be presented and you should respond with only the letter corresponding to the correct answer.
-For example if the question is: 
+# New JSON-based MCQ generation template (v2)
+GENERATE_Q_JSON = """
+You are an expert on *Science* including biology, chemistry, physics and mathematics and all relevant fields.
+
+Generate <QUESTION_NUMBER> high-quality multiple-choice questions on a wide range of scientific topics.
+Cover a range of topics (biology, chemistry, physics, mathematics and related disciplines, and all the subtopics within these fields).
+Questions should be answerable by a scientifically literate, intelligent adult without needing to be a specialist in the specific topic area.
+
+Each question MUST:
+- Be specific to scientific knowledge.
+- Be clearly and precisely worded.
+- Have exactly ONE correct answer and three incorrect but plausible answers.
+- Be answerable in a way that two well-informed experts on the scientific topic would agree on the same option.
+
+STRICTLY AVOID AMBIGUITY:
+- Do NOT use vague terms like "main", "best", "most important", or "most likely"
+  unless the question explicitly defines them clearly enough that only one option fits.
+- Do NOT ask questions where more than one option could reasonably be argued correct.
+- Avoid vague pronouns ("this", "it", "they") if it might be unclear what they refer to.
+- If a question could be interpreted in multiple ways, REWRITE it until the meaning is unique.
+
+For the incorrect options:
+- They must be factually wrong for C. elegans.
+- They must still sound plausible to someone with partial understanding of science.
+- Avoid obviously silly or irrelevant answers.
+- Do NOT use "All of the above" or "None of the above".
+
+Return ONLY valid JSON, with no extra commentary. The JSON must be an array:
+
+[
+  {
+    "question": "string",
+    "options": [
+      {"label": "A", "text": "string"},
+      {"label": "B", "text": "string"},
+      {"label": "C", "text": "string"},
+      {"label": "D", "text": "string"}
+    ],
+    "correct_label": "A"
+  },
+  ...
+]
+
+Do not include fewer or more than <QUESTION_NUMBER> objects in the array.
+"""
+
+
+ASK_Q = """
+You are to select the correct answer for a multiple choice question.
+
+A number of answers will be presented and you should respond with only the letter
+corresponding to the correct answer.
+
+Here is an example to show the format:
+
+Example question:
 
 What is the powerhouse of the cell responsible for cellular respiration?
 
-and the potential answers are:
+Example options:
 
 E: Nucleus
 F: Mitochondria
 G: Ribosome
 H: Golgi Apparatus
 
-you should only answer: 
+In that example, the correct answer is option F, so you would answer with:
 
 F
 
-This is your question:
+IMPORTANT: In the REAL questions below, the options will ALWAYS be labelled with the letters A, B, C, and D.
+For those questions you MUST answer with exactly ONE of these letters: A, B, C, or D.
+
+Do NOT answer with any other letter.
+Do NOT repeat the question or options.
+Do NOT add explanations, punctuation, or any extra text.
+
+Now answer this question:
 
 <QUESTION>
 
@@ -44,6 +104,7 @@ These are the potential answers:
 
 <ANSWERS>
 
+Respond with exactly ONE character: A, B, C, or D.
 """
 
 if __name__ == "__main__":
