@@ -87,6 +87,10 @@ if __name__ == "__main__":
             "corpus/papers/test/Wang2024_NeurotransmitterAtlas.pdf.json",
             "https://elifesciences.org/articles/95402",
         ],
+        "BoyleBerriCohen2012": [
+            "corpus/papers/test/BoyleBerriCohen2012.json",
+            "https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2012.00010/full",
+        ],
     }
 
     # Loop through papers and process markdown sections
