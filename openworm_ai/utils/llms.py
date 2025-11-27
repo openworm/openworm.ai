@@ -117,6 +117,7 @@ def get_openai_api_key():
         "Set environment variable OPENAI_API_KEY or place a key in '../oaik'."
     )
 
+
 GENERAL_QUERY_PROMPT_TEMPLATE = """Answer the following question. Provide succinct, yet scientifically accurate
     answers. Question: {question}
 
@@ -280,7 +281,6 @@ def get_llm_from_argv(argv):
         return LLM_OLLAMA_LLAMA32
 
     return llm_ver
-
 
 
 def ask_question_get_response(

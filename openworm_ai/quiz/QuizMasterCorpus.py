@@ -5,13 +5,21 @@ from typing import List
 import glob
 
 from openworm_ai.quiz.QuizModel import MultipleChoiceQuiz, Question, Answer
-from openworm_ai.quiz.TemplatesCorpus import TEXT_ANSWER_EXAMPLE
-from openworm_ai.utils.llms import ask_question_get_response, LLM_GPT4o, LLM_OLLAMA_GEMMA2
+from openworm_ai.utils.llms import (
+    ask_question_get_response,
+    LLM_GPT4o,
+    LLM_OLLAMA_GEMMA2,
+)
 
-from openworm_ai.quiz.QuizMaster import (_is_valid_mcq_item, score_question_with_critic, deduplicate_questions_with_index, get_default_critic_llm_ver, get_embed_model_for_llm)
+from openworm_ai.quiz.QuizMaster import (
+    _is_valid_mcq_item,
+    score_question_with_critic,
+    deduplicate_questions_with_index,
+    get_default_critic_llm_ver,
+    get_embed_model_for_llm,
+)
 
-from llama_index.core import Document, VectorStoreIndex 
-
+from llama_index.core import Document, VectorStoreIndex
 
 
 indexing = ["A", "B", "C", "D"]
@@ -34,7 +42,10 @@ WRONG ANSWER: <Wrong answer 3>
 📌 **IMPORTANT:** If the text does not have enough content for <QUESTION_NUMBER> questions, generate as many as possible.  
 """
 
-def load_corpus_sections(papers_glob: str = "processed/json/papers/*.json") -> List[dict]:
+
+def load_corpus_sections(
+    papers_glob: str = "processed/json/papers/*.json",
+) -> List[dict]:
     """
     Load sections from all processed paper JSONs, skipping obvious non-body-text
     sections like References, Bibliography, etc.
@@ -81,9 +92,7 @@ def load_corpus_sections(papers_glob: str = "processed/json/papers/*.json") -> L
                     continue
 
                 paragraphs = details.get("paragraphs", [])
-                text = " ".join(
-                    p.get("contents", "") for p in paragraphs
-                ).strip()
+                text = " ".join(p.get("contents", "") for p in paragraphs).strip()
 
                 # Skip ultra-short or weird sections (tables, axes, etc.)
                 if len(text.split()) < 30:
@@ -110,8 +119,8 @@ def load_corpus_sections(papers_glob: str = "processed/json/papers/*.json") -> L
 
 
 def build_corpus_index_for_mcq(
-    llm_ver: str,
-    papers_glob: str = "processed/json/papers/*.json") -> tuple[VectorStoreIndex, List[Document]]:
+    llm_ver: str, papers_glob: str = "processed/json/papers/*.json"
+) -> tuple[VectorStoreIndex, List[Document]]:
     """
     Build a VectorStoreIndex over the corpus sections, to use for RAG-style
     context selection when generating MCQs.
@@ -140,25 +149,6 @@ def build_corpus_index_for_mcq(
     index = VectorStoreIndex.from_documents(docs, embed_model=embed_model)
     print(f"[RAG] Built index over {len(docs)} documents")
     return index, docs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 def save_quiz_v2(
@@ -275,17 +265,20 @@ Do not include any extra keys, commentary, or code fences.
 
         try:
             from openworm_ai.quiz.QuizMaster import _extract_json_array  # reuse helper
+
             json_str = _extract_json_array(raw)
             items = json.loads(json_str)
         except Exception:
-            print("⚠ Failed to parse JSON from RAG-based corpus generation. Skipping this batch.")
+            print(
+                "⚠ Failed to parse JSON from RAG-based corpus generation. Skipping this batch."
+            )
             continue
 
         valid_items = [it for it in items if _is_valid_mcq_item(it)]
         if not valid_items:
             continue
 
-        #Attach source metadata
+        # Attach source metadata
         for it in valid_items:
             it["_source"] = source
 
@@ -295,11 +288,15 @@ Do not include any extra keys, commentary, or code fences.
         print("⚠ Error: No valid MCQs generated from RAG-based corpus passages.")
         return
 
-    print(f"📊 Corpus+RAG generation produced {len(all_items)} valid MCQs before critic/dedup")
+    print(
+        f"📊 Corpus+RAG generation produced {len(all_items)} valid MCQs before critic/dedup"
+    )
 
     # Critic scoring (same as before)
     critic_llm_ver = get_default_critic_llm_ver()
-    print(f"[Corpus+RAG] Using critic model {critic_llm_ver} to score {len(all_items)} questions")
+    print(
+        f"[Corpus+RAG] Using critic model {critic_llm_ver} to score {len(all_items)} questions"
+    )
 
     for idx, item in enumerate(all_items):
         score, _ = score_question_with_critic(item, llm_ver_critic=critic_llm_ver)
@@ -308,7 +305,7 @@ Do not include any extra keys, commentary, or code fences.
 
     all_items.sort(key=lambda x: x.get("_critic_score", 0.0), reverse=True)
 
-    #Dedup with same VectorStore-based logic
+    # Dedup with same VectorStore-based logic
     try:
         selected_items = deduplicate_questions_with_index(
             all_items,
@@ -331,7 +328,7 @@ Do not include any extra keys, commentary, or code fences.
     quiz = MultipleChoiceQuiz(
         title=f"{llm_ver.replace(':', '_')}_{num_questions}questions_celegans_corpus_rag_v2",
         source=f"Corpus-based (RAG) quiz generated from processed papers by {llm_ver}, "
-               f"temperature: {temperature}",
+        f"temperature: {temperature}",
     )
 
     for item in selected_items:
@@ -340,7 +337,7 @@ Do not include any extra keys, commentary, or code fences.
 
         for i, opt in enumerate(item["options"]):
             text = opt["text"].strip()
-            is_correct = (opt["label"] == item["correct_label"])
+            is_correct = opt["label"] == item["correct_label"]
             q_obj.answers.append(Answer(str(i + 1), text, is_correct))
 
         quiz.questions.append(q_obj)
@@ -356,8 +353,6 @@ Do not include any extra keys, commentary, or code fences.
     print(f"💾 Saved corpus+RAG JSON-v2 quiz to {out_path}")
 
 
-
-
 if __name__ == "__main__":
     import sys
     import os
@@ -368,7 +363,6 @@ if __name__ == "__main__":
         llm_ver = LLM_OLLAMA_GEMMA2
 
     print(f"Selected LLM: {llm_ver}")
-
 
     if "-ask" in sys.argv:
         # Match the new v2 filename pattern

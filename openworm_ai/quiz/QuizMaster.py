@@ -5,7 +5,6 @@ from openworm_ai.utils.llms import get_llm_from_argv
 from openworm_ai.utils.llms import get_llm
 from openworm_ai.utils.llms import LLM_CLAUDE37
 from openworm_ai.utils.llms import LLM_OLLAMA_GEMMA2
-from openworm_ai.utils.llms import LLM_OLLAMA_PHI4
 from openworm_ai.utils.llms import get_anthropic_key
 
 from llama_index.core import Document, VectorStoreIndex
@@ -21,15 +20,13 @@ import json
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-from langchain_openai import OpenAIEmbeddings
-import numpy as np
-
 
 indexing = ["A", "B", "C", "D"]
 
 QuizScope = Enum(
     "QuizScope", [("GeneralKnowledge", 1), ("Science", 2), ("CElegans", 3)]
 )
+
 
 def get_default_critic_llm_ver():
     """
@@ -46,6 +43,7 @@ def get_default_critic_llm_ver():
         return LLM_CLAUDE37
     else:
         return LLM_OLLAMA_GEMMA2
+
 
 def save_quiz(num_questions, num_answers, llm_ver, quiz_scope, temperature=0):
     suffix = None
@@ -107,6 +105,7 @@ def save_quiz(num_questions, num_answers, llm_ver, quiz_scope, temperature=0):
         % (llm_ver.replace(":", "_"), num_questions, suffix)
     )
 
+
 def _extract_json_array(text: str) -> str:
     """
     Extract the first top-level JSON array from the LLM response.
@@ -117,6 +116,7 @@ def _extract_json_array(text: str) -> str:
     if start == -1 or end == -1 or end <= start:
         raise ValueError("Could not find a JSON array in the LLM response.")
     return text[start : end + 1]
+
 
 def _is_valid_mcq_item(item: dict) -> bool:
     """
@@ -249,9 +249,10 @@ Here is the MCQ to evaluate:
         print(resp)
         print(e)
         return 50.0, None
-    
 
-# VectorStore-based embedding dedup (RAG-style) 
+
+# VectorStore-based embedding dedup (RAG-style)
+
 
 def question_to_text(item: dict) -> str:
     """
@@ -315,7 +316,13 @@ def build_question_index(questions: List[dict], llm_ver: str) -> VectorStoreInde
     index = VectorStoreIndex.from_documents(docs, embed_model=embed_model)
     return index
 
-def deduplicate_questions_with_index(questions: List[dict], llm_ver: str, similarity_threshold: float = 0.9, max_items: Optional[int] = None) -> List[dict]:
+
+def deduplicate_questions_with_index(
+    questions: List[dict],
+    llm_ver: str,
+    similarity_threshold: float = 0.9,
+    max_items: Optional[int] = None,
+) -> List[dict]:
     """
     Dedup using VectorStoreIndex
 
@@ -354,7 +361,11 @@ def deduplicate_questions_with_index(questions: List[dict], llm_ver: str, simila
                 continue
 
             # If we already kept this other question and similarity is high → duplicate
-            if other_id in kept_indices and score is not None and score >= similarity_threshold:
+            if (
+                other_id in kept_indices
+                and score is not None
+                and score >= similarity_threshold
+            ):
                 is_dup = True
                 break
 
@@ -365,16 +376,6 @@ def deduplicate_questions_with_index(questions: List[dict], llm_ver: str, simila
     return [questions[i] for i in kept_indices]
 
 
-
-
-
-
-
-
-
-
-
-       
 def generate_quiz_json(num_questions, llm_ver, quiz_scope, temperature=0.2):
     """
     Generate a MultipleChoiceQuiz using JSON-based prompts instead of free-text parsing.
@@ -385,14 +386,17 @@ def generate_quiz_json(num_questions, llm_ver, quiz_scope, temperature=0.2):
     """
     if quiz_scope == QuizScope.CElegans:
         from openworm_ai.quiz.TemplatesCelegans import GENERATE_Q_JSON as GENERATE_Q
+
         suffix = "_celegans_v2"
     elif quiz_scope == QuizScope.Science:
         # Only if/when you add a science JSON template
         from openworm_ai.quiz.TemplatesScience import GENERATE_Q_JSON as GENERATE_Q
+
         suffix = "_science_v2"
     elif quiz_scope == QuizScope.GeneralKnowledge:
         # Only if/when you add a general JSON template
         from openworm_ai.quiz.Templates import GENERATE_Q_JSON as GENERATE_Q
+
         suffix = "_general_v2"
     else:
         raise ValueError(f"Unsupported quiz scope: {quiz_scope}")
@@ -425,7 +429,6 @@ def generate_quiz_json(num_questions, llm_ver, quiz_scope, temperature=0.2):
     if not data:
         raise ValueError("No valid MCQ items after validation; aborting.")
 
-
     # In theory data length should be raw_n; in practice we guard.
     # For now, we just take the first num_questions; later we'll insert critic + dedup.
     # In theory data length should be raw_n; in practice we guard.
@@ -443,7 +446,7 @@ def generate_quiz_json(num_questions, llm_ver, quiz_scope, temperature=0.2):
 
     # Sort by critic score (highest first) and select the top num_questions
     scored_items.sort(key=lambda x: x.get("_critic_score", 0.0), reverse=True)
-     # Step 7: deduplicate using a VectorStoreIndex, mimicking the RAG pattern
+    # Step 7: deduplicate using a VectorStoreIndex, mimicking the RAG pattern
     try:
         selected_items = deduplicate_questions_with_index(
             scored_items,
@@ -475,12 +478,13 @@ def generate_quiz_json(num_questions, llm_ver, quiz_scope, temperature=0.2):
         # Our quiz model uses indices "1", "2", "3", "4"
         for i, opt in enumerate(item["options"]):
             text = opt["text"].strip()
-            is_correct = (opt["label"] == item["correct_label"])
+            is_correct = opt["label"] == item["correct_label"]
             q_obj.answers.append(Answer(str(i + 1), text, is_correct))
 
         quiz.questions.append(q_obj)
 
     return quiz
+
 
 if __name__ == "__main__":
     import sys
@@ -588,9 +592,9 @@ if __name__ == "__main__":
 
     # make this into a method which returns a dictionary of all the "stats" that lists the llm, correct/incorrect answers
     # this can be used to plot comparison of variety of llms on general knowledge
-     # make this into a method which returns a dictionary of all the "stats" that lists the llm, correct/incorrect answers
+    # make this into a method which returns a dictionary of all the "stats" that lists the llm, correct/incorrect answers
     # this can be used to plot comparison of variety of llms on general knowledge
-       # make this into a method which returns a dictionary of all the "stats" that lists the llm, correct/incorrect answers
+    # make this into a method which returns a dictionary of all the "stats" that lists the llm, correct/incorrect answers
     # this can be used to plot comparison of variety of llms on general knowledge
     else:
         num = 100
@@ -629,7 +633,4 @@ if __name__ == "__main__":
                 f"Using LLM {llm_ver} for saving legacy quiz with {num} questions "
                 f"(scope={quiz_scope.name})"
             )
-            save_quiz(
-                num, 4, llm_ver, quiz_scope=quiz_scope, temperature=0.2
-            )
-
+            save_quiz(num, 4, llm_ver, quiz_scope=quiz_scope, temperature=0.2)

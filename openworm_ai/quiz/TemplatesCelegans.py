@@ -66,8 +66,6 @@ Do not include fewer or more than <QUESTION_NUMBER> objects in the array.
 """
 
 
-
-
 ASK_Q = """You are to select the correct answer for a multiple choice question. 
 A number of answers will be presented and you should respond with only the letter corresponding to the correct answer.
 For example if the question is: 
