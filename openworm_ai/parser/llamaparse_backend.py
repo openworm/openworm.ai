@@ -3,9 +3,6 @@ from __future__ import annotations
 import os
 import subprocess
 from pathlib import Path
-from typing import Iterable, List
-
-from llama_parse import LlamaParse
 
 
 def get_llama_api_key() -> str:
@@ -45,6 +42,3 @@ def generate_raw_json(pdf_path: str | Path, json_output_path: str | Path) -> Non
     # This will raise CalledProcessError if something goes wrong,
     # which is usually what we want when building the corpus.
     subprocess.run(cmd, check=True)
-
-
-

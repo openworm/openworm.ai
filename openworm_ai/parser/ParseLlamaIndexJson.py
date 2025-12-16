@@ -5,11 +5,11 @@ from openworm_ai.parser.llamaparse_backend import generate_raw_json
 import json
 from pathlib import Path
 
-# This has to be altered accordingly
 json_output_dir = "processed/json/papers"
 markdown_output_dir = "processed/markdown/papers"
 plaintext_output_dir = "processed/plaintext/papers"
 
+PDF_FOLDER = Path("corpus/papers/tests")
 
 # Function to save JSON content
 def save_json(doc_model, file_name, json_output_dir):
@@ -133,8 +133,9 @@ def convert_pdf_via_api(paper_ref: str, pdf_path: str, source_url: str) -> None:
     """
     1. Use the llama-parse CLI (via generate_raw_json) to generate a raw JSON file
        from the input PDF. This raw JSON has the same structure as the JSON that
-       would be downloaded from the LlamaParse web UI.
-    2. Feed that raw JSON into the existing convert_to_json() function, which
+       would be downloaded from the LlamaParse web UI before its additional post-processing.
+    2. Try to use a function to follow the same processing to split up json into markdown elements
+    3. Feed that raw JSON now processed into the existing convert_to_json() function, which
        builds a Document model and saves JSON/markdown/plaintext outputs.
     """
     pdf_loc = Path(pdf_path)
@@ -166,6 +167,8 @@ if __name__ == "__main__":
     #     convert_to_json(paper_ref, paper_info, json_output_dir)
 
     # New API-based path: start from PDFs instead of UI JSON
+    
+    """""
     papers_api = {
         "Donnelly_et_al_2013": [
             "corpus/papers/test/Donnelly2013.pdf",
@@ -185,9 +188,22 @@ if __name__ == "__main__":
         ],
         "Wang_et_al_2024": [
             "corpus/papers/test/Wang2024_NeurotransmitterAtlas.pdf",
-            "https://elifesciences.org/articles/95402",
+            "https://elifesciences.org/articles/95402" ,
         ],
     }
+    """"
+
+    papers_api = {}
+
+    for pdf_path in PDF_FOLDER.glob("*.pdf"):
+        # Convert file name to a clean reference ID
+        # Example: "Donnelly2013.pdf" → "Donnelly2013"
+        paper_ref = pdf_path.stem
+
+        # No source URL available unless we add metadata later
+        source_url = ""
+
+        papers_api[paper_ref] = [str(pdf_path), source_url]
 
     # Loop through papers and process via the API-backed pipeline
     for paper_ref, (pdf_path, source_url) in papers_api.items():
