@@ -36,7 +36,7 @@ df_all = pd.DataFrame()
 for category, file_path in file_paths.items():
     # Check if the file exists
     if not os.path.exists(file_path):
-        print(f"⚠️ Warning: File not found - {file_path}. Skipping this category.")
+        print(f"! Warning: File not found - {file_path}. Skipping this category.")
         continue
 
     # Load JSON data
@@ -83,7 +83,7 @@ sns.lineplot(
 
 # Improve readability
 plt.title("LLM Performance vs. Task Complexity")
-plt.xlabel("Task Complexity (Increasing Difficulty →)")
+plt.xlabel("Task Complexity (Increasing Difficulty ->)")
 plt.ylabel("Accuracy (%)")
 plt.ylim(0, 100)  # Consistent scale
 plt.xticks(rotation=20)  # Rotate x-axis labels for clarity
