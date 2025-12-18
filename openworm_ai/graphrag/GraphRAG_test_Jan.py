@@ -157,7 +157,7 @@ def process_queries(model, query_engine):
             f"\n🔹 Retrieved Context for Query {i + 1}:\n"
             + "\n\n".join(retrieval_texts)
             if retrieval_texts
-            else "⚠ No relevant context retrieved."
+            else "! No relevant context retrieved."
         )
 
         # **FALLBACK: If retrieval fails or is irrelevant, use model knowledge**

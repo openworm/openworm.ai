@@ -95,7 +95,7 @@ MCQ:
         chain = prompt | llm | StrOutputParser()
         resp = chain.invoke({"mcq_json": mcq_json_str}).strip()
     except Exception as e:
-        print(f"⚠ Critic LLM call failed ({llm_ver_critic}): {e}")
+        print(f"! Critic LLM call failed ({llm_ver_critic}): {e}")
         return 50.0, None
 
     try:
@@ -106,7 +106,7 @@ MCQ:
         obj = json.loads(resp[start : end + 1])
         return float(obj.get("score", 50.0)), None
     except Exception as e:
-        print("⚠ Failed to parse critic response as JSON:")
+        print("! Failed to parse critic response as JSON:")
         print(resp)
         print(e)
         return 50.0, None
@@ -380,7 +380,7 @@ def save_quiz(num_questions, num_answers, llm_ver, quiz_scope, temperature=0):
             f"Selected {len(selected)} questions after embedding dedup (target={num_questions})"
         )
     except Exception as e:
-        print(f"⚠ Embedding dedup failed, falling back to top-{num_questions}: {e}")
+        print(f"! Embedding dedup failed, falling back to top-{num_questions}: {e}")
         selected = scored[:num_questions]
 
     # Build MultipleChoiceQuiz

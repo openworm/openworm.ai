@@ -346,7 +346,7 @@ def get_llm_from_argv(argv):
         if requires_openai_key(llm_ver):
             _ = get_openai_api_key()  # Just try getting key
     except Exception:
-        print("⚠ No OpenAI key found → using local Ollama model instead.")
+        print("! No OpenAI key found → using local Ollama model instead.")
         return LLM_OLLAMA_LLAMA32
 
     return llm_ver

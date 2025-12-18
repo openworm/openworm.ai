@@ -59,7 +59,7 @@ def load_corpus_sections(
     sections: List[dict] = []
 
     if not json_inputs:
-        print(f"⚠ Warning: no JSON papers found under {papers_glob}")
+        print(f"! Warning: no JSON papers found under {papers_glob}")
         return sections
 
     for json_file in json_inputs:
@@ -67,7 +67,7 @@ def load_corpus_sections(
             with open(json_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
         except Exception as e:
-            print(f"⚠ Error reading {json_file}: {e}")
+            print(f"! Error reading {json_file}: {e}")
             continue
 
         for title, doc_contents in data.items():
@@ -156,11 +156,11 @@ def save_quiz_v2(
     try:
         index, docs = build_corpus_index_for_mcq(llm_ver, papers_glob=papers_glob)
     except Exception as e:
-        print(f"⚠ Error building corpus index: {e}")
+        print(f"! Error building corpus index: {e}")
         return
 
     if not docs:
-        print("⚠ Error: No documents in corpus index.")
+        print("! Error: No documents in corpus index.")
         return
 
     retriever = index.as_retriever(similarity_top_k=similarity_top_k)
@@ -180,7 +180,7 @@ def save_quiz_v2(
         try:
             results = retriever.retrieve(seed_text)
         except Exception as e:
-            print(f"⚠ RAG retrieval failed on attempt {attempts}: {e}")
+            print(f"! RAG retrieval failed on attempt {attempts}: {e}")
             continue
 
         ctx_texts: List[str] = []
@@ -235,7 +235,7 @@ def save_quiz_v2(
             )
 
     if not all_items:
-        print("⚠ Error: No valid MCQs generated from RAG-based corpus passages.")
+        print("! Error: No valid MCQs generated from RAG-based corpus passages.")
         return
 
     print(f"[Corpus+RAG] Generated {len(all_items)} valid MCQs before critic/dedup")
@@ -264,7 +264,7 @@ def save_quiz_v2(
             f"[Corpus+RAG] Selected {len(selected_items)} after dedup (target={num_questions})"
         )
     except Exception as e:
-        print(f"⚠ [Corpus+RAG] Dedup failed, falling back to top-{num_questions}: {e}")
+        print(f"! [Corpus+RAG] Dedup failed, falling back to top-{num_questions}: {e}")
         selected_items = all_items[:num_questions]
 
     quiz = MultipleChoiceQuiz(
