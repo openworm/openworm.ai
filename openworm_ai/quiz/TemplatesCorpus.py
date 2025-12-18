@@ -73,7 +73,7 @@ if __name__ == "__main__":
 
     # If no documents are found, rely entirely on model knowledge
     if not document_text.strip():
-        print("⚠ No valid documents found. Using model's knowledge instead.")
+        print("! No valid documents found. Using model's knowledge instead.")
         document_text = "**No external documents available. Use your own knowledge.**"
 
     # Generate questions prompt

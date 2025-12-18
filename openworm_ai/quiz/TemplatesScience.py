@@ -3,19 +3,19 @@ from openworm_ai.utils.llms import generate_response
 
 
 GENERATE_Q = """
-Generate a list of <QUESTION_NUMBER> multiple choice questions to test someone's scientific knowledge.
-The questions should be answerable by an intelligent adult, and should be on a wide range of subjects in scinece: biology, chemistry, physics and all the relevant fields.
+Generate a list of <QUESTION_NUMBER> multiple choice questions to test someone's general knowledge of Caenorhabditis elegans (C. elegans).
+The questions should be answerable by an intelligent adult, and should cover topics such as genetics, neurobiology, behavior, development, physiology, and research significance.
 There should be <ANSWER_NUMBER> possible answers, only one of which is unambiguously correct, and all of the answers should be kept brief.
 Each of the <QUESTION_NUMBER> question/answer sets should be presented in the following format:
 
 """
 
 TEXT_ANSWER_EXAMPLE = """
-QUESTION: What is the powerhouse of the cell responsible for cellular respiration?
-CORRECT ANSWER: Mitochondria
-WRONG ANSWER: Nucleus
-WRONG ANSWER: Ribosome
-WRONG ANSWER: Golgi Apparatus
+QUESTION: What is the primary food source for C. elegans in lab conditions?
+CORRECT ANSWER: E. coli
+WRONG ANSWER: Algae
+WRONG ANSWER: Fungi
+WRONG ANSWER: Bacteria mix
 
 """
 
@@ -23,14 +23,14 @@ ASK_Q = """You are to select the correct answer for a multiple choice question.
 A number of answers will be presented and you should respond with only the letter corresponding to the correct answer.
 For example if the question is: 
 
-What is the powerhouse of the cell responsible for cellular respiration?
+What is the primary food source for C. elegans in lab conditions?
 
 and the potential answers are:
 
-E: Nucleus
-F: Mitochondria
-G: Ribosome
-H: Golgi Apparatus
+E: Algae
+F: E. coli
+G: Fungi
+H: Bacteria mix
 
 you should only answer: 
 
