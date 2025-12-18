@@ -1,0 +1,69 @@
+{
+    "Title": "Performance of LLMs in science knowledge Quiz",
+    "Date of Testing": "24-02-2025 19:36:03",
+    "Results": [
+        {
+            "LLM": "Ollama:Llama3.2",
+            "Total Questions": 100,
+            "Correct Answers": 42,
+            "Accuracy (%)": 42.0,
+            "Avg Response Time (s)": 0.783
+        },
+        {
+            "LLM": "GPT4o",
+            "Total Questions": 100,
+            "Correct Answers": 99,
+            "Accuracy (%)": 99.0,
+            "Avg Response Time (s)": 1.078
+        },
+        {
+            "LLM": "Gemini",
+            "Total Questions": 100,
+            "Correct Answers": 98,
+            "Accuracy (%)": 98.0,
+            "Avg Response Time (s)": 0.674
+        },
+        {
+            "LLM": "claude-3-5-sonnet-20241022",
+            "Total Questions": 100,
+            "Correct Answers": 99,
+            "Accuracy (%)": 99.0,
+            "Avg Response Time (s)": 1.037
+        },
+        {
+            "LLM": "GPT3.5",
+            "Total Questions": 100,
+            "Correct Answers": 97,
+            "Accuracy (%)": 97.0,
+            "Avg Response Time (s)": 1.085
+        },
+        {
+            "LLM": "Ollama:phi4:latest",
+            "Total Questions": 100,
+            "Correct Answers": 95,
+            "Accuracy (%)": 95.0,
+            "Avg Response Time (s)": 20.377
+        },
+        {
+            "LLM": "Ollama:gemma2:latest",
+            "Total Questions": 100,
+            "Correct Answers": 95,
+            "Accuracy (%)": 95.0,
+            "Avg Response Time (s)": 2.321
+        },
+        {
+            "LLM": "Ollama:gemma:7b",
+            "Total Questions": 100,
+            "Correct Answers": 90,
+            "Accuracy (%)": 90.0,
+            "Avg Response Time (s)": 1.578
+        },
+        {
+            "LLM": "Ollama:qwen:4b",
+            "Total Questions": 100,
+            "Correct Answers": 79,
+            "Accuracy (%)": 79.0,
+            "Avg Response Time (s)": 1.254
+        }
+    ]
+}

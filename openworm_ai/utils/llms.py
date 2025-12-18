@@ -1,36 +1,88 @@
 import os
 import time
 
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-LLM_GPT35 = "GPT3.5"
-LLM_GPT4 = "GPT4"
-LLM_GPT4o = "GPT4o"
+LLM_CMD_LINE_ARGS = {}
+
+LLM_GPT35 = "gpt-3.5-turbo-instruct"
+LLM_CMD_LINE_ARGS["-gpt35"] = LLM_GPT35
+LLM_GPT4 = "gpt-4"
+LLM_GPT4o = "gpt-4o"
+
 LLM_LLAMA2 = "LLAMA2"
-LLM_GEMINI = "Gemini"
-LLM_AI21 = "AI21"
-LLM_CLAUDE2 = "Claude2.1"
+LLM_CMD_LINE_ARGS["-l"] = LLM_LLAMA2
+
+LLM_GEMINI_2F = "gemini-2.0-flash"
+LLM_CMD_LINE_ARGS["-g"] = LLM_GEMINI_2F
+# LLM_GEMINI_25F = "gemini-2.5-flash-"
+# LLM_CMD_LINE_ARGS["-g25"] = LLM_GEMINI_25F
+
+LLMS_GEMINI = [LLM_GEMINI_2F]  # , LLM_GEMINI_25F]
+
+LLM_CLAUDE37 = "claude-3-7-sonnet-20250219"
+LLM_CMD_LINE_ARGS["-c"] = LLM_CLAUDE37
 LLM_COHERE = "Cohere"
-LLM_OLLAMA_LLAMA32 = "Ollama:Llama3.2"
+LLM_CMD_LINE_ARGS["-co"] = LLM_COHERE
+
+LLM_OLLAMA_LLAMA32 = "Ollama:llama3.2"
+LLM_CMD_LINE_ARGS["-o-l32"] = LLM_OLLAMA_LLAMA32
+LLM_OLLAMA_LLAMA32_1B = "Ollama:llama3.2:1b"
+LLM_CMD_LINE_ARGS["-o-l321b"] = LLM_OLLAMA_LLAMA32_1B
+
+LLM_OLLAMA_LLAMA32_3B = "Ollama:llama3.2:3b"
+LLM_CMD_LINE_ARGS["-o-l323b"] = LLM_OLLAMA_LLAMA32_3B
+
 LLM_OLLAMA_MISTRAL = "Ollama:mistral"
+LLM_CMD_LINE_ARGS["-o-m"] = LLM_OLLAMA_MISTRAL
 LLM_OLLAMA_TINYLLAMA = "Ollama:tinyllama"
+LLM_CMD_LINE_ARGS["-o-t"] = LLM_OLLAMA_TINYLLAMA
+LLM_OLLAMA_PHI3 = "Ollama:phi3:latest"
+LLM_CMD_LINE_ARGS["-o-phi3"] = LLM_OLLAMA_PHI3
+LLM_OLLAMA_PHI4 = "Ollama:phi4:latest"
+LLM_CMD_LINE_ARGS["-o-phi4"] = LLM_OLLAMA_PHI4
+LLM_OLLAMA_GEMMA = "Ollama:gemma:7b"
+LLM_CMD_LINE_ARGS["-ge"] = LLM_OLLAMA_GEMMA
+LLM_OLLAMA_GEMMA2 = "Ollama:gemma2:latest"
+LLM_CMD_LINE_ARGS["-ge2"] = LLM_OLLAMA_GEMMA2
+LLM_OLLAMA_GEMMA3 = "Ollama:gemma3:4b"
+LLM_CMD_LINE_ARGS["-ge3"] = LLM_OLLAMA_GEMMA3
+LLM_OLLAMA_DEEPSEEK = "Ollama:deepseek-r1:7b"
+LLM_CMD_LINE_ARGS["-o-dsr1"] = LLM_OLLAMA_DEEPSEEK
+LLM_OLLAMA_QWEN = "Ollama:qwen:4b"
+LLM_CMD_LINE_ARGS["-qw"] = LLM_OLLAMA_QWEN
+LLM_OLLAMA_CODELLAMA = "Ollama:codellama:latest"
+LLM_OLLAMA_FALCON2 = "Ollama:falcon2:latest"
+LLM_OLLAMA_FALCON2 = "Ollama:falcon2:latest"
+
+LLM_OLLAMA_OLMO2_7B = "Ollama:olmo2:7b"
+LLM_CMD_LINE_ARGS["-o-olmo27b"] = LLM_OLLAMA_OLMO2_7B
 
 OPENAI_LLMS = [LLM_GPT35, LLM_GPT4, LLM_GPT4o]
 
-PREF_ORDER_LLMS = (
-    LLM_GEMINI,
+PREF_ORDER_LLMS = LLMS_GEMINI + [
     LLM_LLAMA2,
     LLM_GPT35,
     LLM_GPT4,
     LLM_GPT4o,
-    LLM_AI21,
-    LLM_CLAUDE2,
+    LLM_CLAUDE37,
     LLM_COHERE,
     LLM_OLLAMA_LLAMA32,
+    LLM_OLLAMA_LLAMA32_1B,
     LLM_OLLAMA_MISTRAL,
     LLM_OLLAMA_TINYLLAMA,
-)
+    LLM_OLLAMA_PHI3,
+    LLM_OLLAMA_PHI4,
+    LLM_OLLAMA_GEMMA2,
+    LLM_OLLAMA_GEMMA3,
+    LLM_OLLAMA_DEEPSEEK,
+    LLM_OLLAMA_GEMMA,
+    LLM_OLLAMA_QWEN,
+    LLM_OLLAMA_CODELLAMA,
+    LLM_OLLAMA_FALCON2,
+    LLM_OLLAMA_OLMO2_7B,
+]
 
 
 def requires_openai_key(llm_ver):
@@ -38,14 +90,27 @@ def requires_openai_key(llm_ver):
 
 
 def get_openai_api_key():
-    # if openai_api_key_sb == None or len(openai_api_key_sb)==0:
-    openai_api_key = os.environ.get("OPENAI_API_KEY")
-    if openai_api_key is None:
-        openai_api_key = str(open("../oaik", "r").readline())
-    # else:
-    #    openai_api_key = openai_api_key_sb
+    """
+    Returns the OpenAI API key from:
+    1. Environment variables (preferred)
+    2. A file '../oaik' (legacy OpenWorm option), IF it exists
+    """
+    # 1. Try environment variable
+    key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_KEY")
+    if key:
+        return key.strip()
 
-    return openai_api_key
+    # 2. Legacy fallback – only read file if it exists
+    oaik_path = "../oaik"
+    if os.path.exists(oaik_path):
+        with open(oaik_path, "r") as f:
+            return f.read().strip()
+
+    # 3. Nothing found → fail clearly
+    raise RuntimeError(
+        "OpenAI API key not found.\n"
+        "Set environment variable OPENAI_API_KEY or place a key in '../oaik'."
+    )
 
 
 def get_llamaapi_key():
@@ -55,25 +120,19 @@ def get_llamaapi_key():
 
 
 def get_gemini_api_key():
-    gemini_api_key = os.environ.get("GEMINIAPI_KEY")
+    gemini_api_key = os.environ.get("GEMINI_API_KEY")
 
     return gemini_api_key
 
 
-def get_ai21_api_key():
-    ai21_api_key = os.environ.get["AI21_API_KEY"]
-
-    return ai21_api_key
-
-
 def get_anthropic_key():
-    anthropic_api_key = os.environ.get["ANTHROPIC_API_KEY"]
+    anthropic_api_key = os.environ.get("CLAUDE_API_KEY")
 
     return anthropic_api_key
 
 
 def get_cohere_key():
-    cohere_api_key = os.environ.get["COHERE_API_KEY"]
+    cohere_api_key = os.environ.get("COHERE_API_KEY")
 
     return cohere_api_key
 
@@ -82,21 +141,27 @@ def get_llm(llm_ver, temperature):
     if llm_ver == LLM_GPT35:
         from langchain_openai import OpenAI
 
-        llm = OpenAI(temperature=temperature, openai_api_key=get_openai_api_key())
+        llm = OpenAI(
+            model_name=LLM_GPT35,
+            temperature=temperature,
+            openai_api_key=get_openai_api_key(),
+        )
+        # print(llm)
+        return llm
 
     elif llm_ver == LLM_GPT4:
         from langchain_openai import ChatOpenAI
 
-        llm = ChatOpenAI(
-            model_name="gpt-4",
+        return ChatOpenAI(
+            model_name=LLM_GPT4,
             openai_api_key=get_openai_api_key(),
             temperature=temperature,
         )
     elif llm_ver == LLM_GPT4o:
         from langchain_openai import ChatOpenAI
 
-        llm = ChatOpenAI(
-            model_name="gpt-4o",
+        return ChatOpenAI(
+            model_name=LLM_GPT4o,
             openai_api_key=get_openai_api_key(),
             temperature=temperature,
         )
@@ -117,43 +182,49 @@ def get_llm(llm_ver, temperature):
 
         llm = ChatLlamaAPI(client=llama)
 
-    elif llm_ver == LLM_GEMINI:
+    elif llm_ver in LLMS_GEMINI:
         from langchain_google_genai import ChatGoogleGenerativeAI
 
-        llm = ChatGoogleGenerativeAI(
-            model="gemini-pro", google_api_key=get_gemini_api_key()
+        return ChatGoogleGenerativeAI(
+            model=llm_ver,
+            google_api_key=get_gemini_api_key(),  # Retrieve API key
+            temperature=temperature,
         )
 
-    elif llm_ver == LLM_AI21:
-        from langchain_ai21 import AI21LLM
+    elif llm_ver == LLM_CLAUDE37:
+        from langchain_anthropic import ChatAnthropic
 
-        llm = AI21LLM(model="j2-ultra")
-
-    elif llm_ver == LLM_CLAUDE2:
-        from langchain_anthropic import AnthropicLLM
-
-        llm = AnthropicLLM(model="claude-2.1")
+        return ChatAnthropic(
+            model_name="claude-3-7-sonnet-20250219",
+            anthropic_api_key=get_anthropic_key(),  # Retrieve API key
+            temperature=temperature,
+        )
 
     elif llm_ver == LLM_COHERE:
         from langchain_cohere import ChatCohere
 
         llm = ChatCohere()
 
-    elif llm_ver == LLM_OLLAMA_LLAMA32:
+    elif llm_ver in [
+        LLM_OLLAMA_LLAMA32,
+        LLM_OLLAMA_LLAMA32_1B,
+        LLM_OLLAMA_LLAMA32_3B,
+        LLM_OLLAMA_MISTRAL,
+        LLM_OLLAMA_TINYLLAMA,
+        LLM_OLLAMA_PHI3,
+        LLM_OLLAMA_PHI4,
+        LLM_OLLAMA_GEMMA,
+        LLM_OLLAMA_GEMMA2,
+        LLM_OLLAMA_GEMMA3,
+        LLM_OLLAMA_DEEPSEEK,
+        LLM_OLLAMA_QWEN,
+        LLM_OLLAMA_CODELLAMA,
+        LLM_OLLAMA_FALCON2,
+        LLM_OLLAMA_OLMO2_7B,
+    ]:
         from langchain_ollama.llms import OllamaLLM
 
-        llm = OllamaLLM(model="llama3.2:1b")
-
-    elif llm_ver == LLM_OLLAMA_MISTRAL:
-        from langchain_ollama.llms import OllamaLLM
-
-        llm = OllamaLLM(model="mistral")
-
-    elif llm_ver == LLM_OLLAMA_TINYLLAMA:
-        from langchain_ollama.llms import OllamaLLM
-
-        llm = OllamaLLM(model="tinyllama")
-
+        llm = OllamaLLM(model=llm_ver.split(":", 1)[1])
     return llm
 
 
@@ -252,31 +323,31 @@ _**%s**:_ _%s_
 
 
 def get_llm_from_argv(argv):
+    # Default remains GPT-4o
     llm_ver = LLM_GPT4o
 
-    if "-g" in argv:
-        llm_ver = LLM_GEMINI
+    # Allow command-line flags to override
+    for arg, model_name in LLM_CMD_LINE_ARGS.items():
+        if arg in argv:
+            return model_name
 
-    if "-l" in argv:
-        llm_ver = LLM_LLAMA2
+    # Allow explicit model names as positional args
+    for a in argv[1:]:
+        if a.startswith("Ollama:"):
+            return a
+        if a in PREF_ORDER_LLMS:
+            return a
+        if a.upper() in ("GPT4O", "GPT-4O"):
+            return LLM_GPT4o
 
-    if "-a" in argv:
-        llm_ver = LLM_AI21
-
-    if "-cl" in argv:
-        llm_ver = LLM_CLAUDE2
-
-    if "-co" in argv:
-        llm_ver = LLM_COHERE
-
-    if "-o-l32" in argv:
-        llm_ver = LLM_OLLAMA_LLAMA32
-
-    if "-o-m" in argv:
-        llm_ver = LLM_OLLAMA_MISTRAL
-
-    if "-o-t" in argv:
-        llm_ver = LLM_OLLAMA_TINYLLAMA
+    # --- FINAL FAILSAFE ---
+    # If default GPT-4o chosen but key missing → fallback to Ollama
+    try:
+        if requires_openai_key(llm_ver):
+            _ = get_openai_api_key()  # Just try getting key
+    except Exception:
+        print("⚠ No OpenAI key found → using local Ollama model instead.")
+        return LLM_OLLAMA_LLAMA32
 
     return llm_ver
 
@@ -309,6 +380,8 @@ if __name__ == "__main__":
     import sys
 
     question = "What is the most common type of neuron in the brain?"
+    question = "Why is the worm C. elegans important to scientists?"
+    question = "Tell me briefly about the neuronal control of C. elegans locomotion and the influence of monoamines."
 
     llm_ver = get_llm_from_argv(sys.argv)
 

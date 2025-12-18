@@ -1,33 +1,40 @@
 #!/bin/bash
 set -ex
 
-ruff format openworm_ai/*/*.py openworm_ai/*.py
-ruff check openworm_ai/*/*.py openworm_ai/*.py
+ruff format openworm_ai/*.py openworm_ai/*/*.py openworm_ai/*/*/*.py
+ruff check openworm_ai/*.py openworm_ai/*/*.py openworm_ai/*/*/*.py
 
-pip install .
+pip install .[dev]
 
-python -m openworm_ai.parser.DocumentModels
+if [ $1 == "-quiz" ]; then
+    python -m openworm_ai.quiz.QuizMaster 10
+    python -m openworm_ai.quiz.QuizMaster -ask
+    python -m openworm_ai.quiz.QuizMaster -ask -o-t
 
-python -m openworm_ai.quiz.QuizModel
+elif [ $1 == "-qplot" ]; then
+    python -m openworm_ai.quiz.figures.quizplots_overcategories -nogui
+    python -m openworm_ai.quiz.figures.quizplot_grid -nogui
+    python -m openworm_ai.quiz.figures.quizplots -nogui
 
-python -m openworm_ai.parser.ParseWormAtlas
+elif [ $1 == "-llm" ]; then
+    python -m openworm_ai.utils.llms -o-l32
+    python -m openworm_ai.utils.llms -ge3
+    python -m openworm_ai.quiz.Templates -o-m
 
-python -m openworm_ai.parser.ParseLlamaIndexJson
+else
+    python -m openworm_ai.parser.DocumentModels
+    python -m openworm_ai.quiz.QuizModel
+    python -m openworm_ai.quiz.figures.quizplot_grid -nogui
+    python -m openworm_ai.parser.ParseWormAtlas
+    python -m openworm_ai.parser.ParseLlamaIndexJson
 
-
-if [ $# -eq 1 ] ; then
     if [ $1 == "-free" ]; then
         python -m openworm_ai.graphrag.GraphRAG_test -test
-    fi
-    if [ $1 == "-llm" ]; then
-        python -m openworm_ai.utils.llms -o-l32
-        python -m openworm_ai.quiz.Templates -o-m
-    fi
-else 
-        
-    python -m openworm_ai.graphrag.GraphRAG_test
+    else
+        python -m openworm_ai.graphrag.GraphRAG_test $@
 
-fi
+    fi
+fi         
 
 echo
 echo "  Success!"

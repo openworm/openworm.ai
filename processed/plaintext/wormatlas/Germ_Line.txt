@@ -1,0 +1,126 @@
+Germ Line
+
+  1) General Description
+
+The hermaphrodite germ line produces both male and female gametesâsperm and oocytes, respectively (see Germline Section in WormBook, Sperm Gallery). Oocytes are produced throughout adult life; sperm (spermatozoa) are generated during L4 and then used in adulthood to fertilize oocytes. The adult germ line exhibits distalâproximal polarity, with a mitotic cell population located at the distalmost end of the gonad and meiotic cells, extending proximally. Among the meiotic cells is also a gradient of meiotic progression with successive stages of meiosis I prophase extending from the distal arm, around the loop into the proximal arm of the gonad. Gametogenesis occurs in the proximal part of the gonad arm (GermFIG 1).
+
+The distal germ line is a syncytium. Germ cells have incomplete borders and are connected to one another via a central canal called the rachis (GermFIG 1 and GermFIG 2) (Hirsh et al., 1976). Part of the distal gonad is not covered by the somatic tissues (the âbare regionâ) and is instead ensheathed only by the gonadal basal lamina (GBL) that covers the rest of the gonad (SomaticFIG 2C) (see Reproductive System - Somatic Gonad; Hall et al., 1999). At the base of each germ cell, and covering the rachis, is a thickened extracellular matrix. This matrix contains hemicentin and is thought to reinforce and stabilize the opening of the germ cells to the rachis (GermFIG 2B; Pericellular Structures) (Vogel and Hedgecock, 2001). The end point of the rachis may differ as the animal ages. For example, in young adults, the rachis terminates within the proximal gonad, just past the loop; in older adults, the rachis terminates in the distal gonad, although still near the loop (McCarter et al., 1997). Oocytes may retain a vestigial connection to the rachis even after moving well past its apparent end point (J. White, pers. comm.), so that a maturing oocyte in the proximal arm might retain a thin, cryptic arm reaching through the loop to the distal rachis.
+
+  2) Mitosis and Meiosis in the Germ Line
+
+The distalmost end of the adult gonad, referred to as the mitotic zone, contains a stem-cell population. As germ cells move away from the influence of the DTC (see Reprodutive System - Somatic Gonad), they enter meiosis I and then proceed through prophase I to diakinesis (GermFIG 3AâE) (Hirsh et al., 1976; reviewed in Hubbard and Greenstein, 2000; Hansen et al., 2004).
+
+The mitotic zone of the adult is approximately 20 cell diameters in length, extending from the DTC to the transition zone (GermFIG 3A) (described below; Crittenden et al., 1994). With DAPI staining at the level of light microscopy, M-phase nuclei can be distinguished from the rest of the cell cycle: Nuclei are relatively uniform and, at any given time, have a hazy fluorescence in the center and brighter circumferential staining. Condensed chromatin appears as nuclei enter prometaphase. The average number of M-phase nuclei visible in any given mitotic zone in the adult is low, about two nuclei per arm (J. Maciejowski and E.J. Hubbard, pers. comm.). At the level of electron microscopy, mitotic germ cells are uniform in size and appearance (GermFIG 2). Each cell is roughly cuboidal, with a large nucleus. The cytoplasm contains a few mitochondria, limited rough endoplasmic reticulum (RER), and few free ribosomes. The rachis itself is also filled with RER and ribosomes, but  contains more mitochondria. The transition zone is characterized by germ cells entering the early phases of meiotic prophase (leptotene and zygotene) and is defined as the area between the distalmost transition nucleus and the proximalmost transition nucleus (Hansen et al., 2004). A change in the nuclear morphology can be shown with DAPI: Nuclei are condensed and crescent-shaped (GermFIG 3D).
+
+After moving through the transition zone, germ cells progress into pachytene and gradually grow. Pachytene nuclei are characterized by a distinctive âbowl of spaghettiâ morphology as homologous chromosomes start to align side by side (GermFIG 3C). Exit from pachytene requires activation of a MAPK (MAP kinase) pathway, thought to be triggered by a signal from the overlying gonadal sheath (Church et al., 1995; McCarter et al., 1997). Progression of nuclei into diplotene occurs in the loop and cells become organized in single file as they enter the proximal arm (GermFIG 3).
+
+  3) Germ-line Programmed Cell Deaths
+
+In addition to oocyte and sperm fate, programmed cell death (PCD) represents a major cell fate among adult germ cells. It is estimated that approximately one half of all potential oocytes are eliminated in the adult hermaphrodite during progression through prophase of meiosis I. Most cell deaths occur near the loop region of the gonad arm, the region containing pachytene-stage germ cells (see GermFIG 3A,C). It has been proposed that these excess germ cells may serve as a nurse cell population, providing proteins and other cytoplasmic components to surviving germ cells (Hengartner, 1997). Electron and light microscopy analyses of dying cells reveal that cell deaths occur by apoptosis (GermFIG 4AâC) (Gumienny et al., 1999). As in somatic tissues, cell death execution depends on ced-3, ced-4, and ced-9 function. However, genetic evidence also suggests that somatic and germ cell death mechanisms may not be entirely identical (Hengartner et al., 1992; Gumienny et al., 1999). Overlying gonadal sheath cells (likely sheath-cell pair 2) engulf cell death corpses (Gumienny et al., 1999).
+
+  4) Oocyte Maturation, Ovulation and Fertilization
+
+Oocyte maturation takes place in the oocyte closest to the spermatheca, just before ovulation, and is stimulated by sperm-derived major sperm protein (MSP) (GermFIG 5) (Miller et al., 2001). During maturation, nuclear envelope breakdown (NEBD; also known as germinal vesicle breakdown) occurs, the nucleus becomes less obvious, and cortical rearrangements cause the oocyte to become more spherical. Chromosome arrangement changes as bivalent chromosomes leave diakinesis and begin to align onto the metaphase plate (Ward and Carrel, 1979; McCarter et al., 1999).
+
+Ovulation follows oocyte maturation. Signals from the maturing oocyte and MSP stimulate the rate and intensity of sheath contraction from a basal rate of 10â13 contractions/minute to approximately 19 contractions/minute (McCarter et al., 1999; Miller et al., 2001, 2003). Oocyte maturation also stimulates distal spermathecal dilation through LIN-3/LET-23 RTK pathway activation and IP3 signaling (Clandinin et al., 1998; McCarter et al., 1999; Bui and Sternberg, 2002). The dilated spermatheca is pulled over the oocyte by the contracting sheath, and the spermatheca then closes. The oocyte is immediately penetrated by a sperm and fertilized. Cellâcell recognition between gametes during this process is mediated by SPE-9, a sperm-specific, epidermal growth factor (EGF)-repeat-containing transmembrane protein (Singson et al., 1998). Cytoplasmic streaming in the oocyte accompanies fertilization, meiosis is completed, and eggshell secretion commences (Ward and Carrel, 1979; Singson, 2001). The newly formed embryo then passes from the spermatheca to the uterus via the spermathecal-uterine valve.
+
+  5) Germ-line Development
+
+Germ-line development spans L1 to early adulthood (GermFIG 6; GermMOVIE 1). All germ cells are descended from either Z2 or Z3 (Schedl, 1997; Hubbard and Greenstein, 2000). In contrast to somatic lineage development, germ-line cell divisions appear to be variable with respect to their timing and planes of division, and hence the precise lineal relationships between these cells are not known (Kimble and Hirsh, 1979). In L4, approximately 37 meiotic cells per arm at the most proximal end of the germ line commit to sperm development. Subsequently, the germ line switches from making sperm to making oocytes for the remainder of development and throughout adulthood. This switch between male and female cell fate results from germ-line modulation of sex determination pathway activity (Kuwabara and Perry, 2001). Germ-line development depends on interactions with the overlying somatic gonad. Somatic gonad cells, or their precursors, affect the timing and position of the germ-line mitosis/meiosis decision, and they exit from pachytene, gametogenesis, and male gamete fate during germ-line sex determination (Kimble and White, 1981; Seydoux et al., 1990; McCarter et al., 1997; Rose et al., 1997; Pepper et al., 2003; Killian and Hubbard, 2004).
+
+  6) Spermatogenesis and Spermiogenesis
+
+  See) <a href="https://www.wormatlas.org/Wardsperm/sperm.htm" target="_blank">Sperm Gallery</a> for detailed pictures and videos
+
+The germ line of each gonad arm produces about 150 sperm during L4 (GermFIG 6 and GermFIG 7A) (LâHernault, 1997). Approximately 37 diploid germ cells per gonad arm form primary spermatocytes while still attached to the rachis. After pachytene, spermatocytes detach from the rachis and complete meiosis, generating haploid spermatids. This process of spermatid formation is called spermatogenesis (GermFIG 7B, C&D) (Ward et al., 1981).
+
+Developing spermatocytes contain a large number of specialized vesicles called fibrous body-membranous organelles (FB-MOs) (GermFIG8 A&B and GermFIG 9A). These organelles contain proteins required in the future spermatids and spermatozoa, including MSP (Ward and Klass, 1982). During development, the FB-MOs partition with the portion of the spermatocyte destined to become the future spermatid (Ward, 1986). The residual body (GermFIG 7B&7D, Budding Spermatids Figure) acts as a deposit area for proteins and organelles no longer required by the developing spermatid (LâHernault, 1997; Arduengo et al., 1998; Kelleher et al., 2000).
+
+
+
+Spermatogenesis takes place within the proximal gonad (GermFIG 7B). The formed spermatids are pushed into the spermatheca by the first oocyte during the first ovulation. In the spermatheca, an unknown signal induces these sessile spermatids to undergo morphogenesis into mature, amoeboid spermatozoa (sperm) (cf. GermFIG 9B&C, Spermatozoon SEM and TEM) (Nelson and Ward, 1980; Ward et al., 1983). This process of activation is known as spermiogenesis (See Spermiogenesis Figure and Video in Sperm Gallery).
+
+Maturing spermatids and spermatozoa have highly condensed nuclei and tightly packed mitochondria (GermFIG 9B&C, Spermatozoon TEM Figure). In spermatids, MOs (now lacking the FB) locate near the cell periphery (GermFIG 9B). During spermatid activation, MOs fuse with the plasma membrane, releasing their contents (primarily glycoproteins) onto the cell surface. A fusion pore is generated on the cell surface by the MO collar (GermFIG 9C). Mutants affected in MO fusion produce sperm with defective motility, suggesting that MO content enhances sperm mobility (Ward et al., 1981; Roberts et al., 1986; Achanzar and Ward, 1997). Unlike sperm in many other animal phyla, C. elegans sperm are not flagellated. Rather, spermatid activation involves the formation of a foot or pseudopodium that allows the spermatozoon to attach to the walls of the spermathecal lumen and to crawl by projecting from and dragging the cell body (see Sperm Crawling and Treadmilling Videos). This motility is driven by dynamic polymerization of MSP, which, in addition to containing sequences that mediate extracellular signaling (described above; Miller et al., 2001), has an intracellular cytoskeletal function (Italiano et al., 1996; Roberts and Stewart, 2000).
+
+  7) References
+
+Achanzar, W.E. and Ward, S. 1997. A nematode gene required for sperm vesicle fusion. J. Cell Sci. 110: 1073-1081.(http://jcs.biologists.org/cgi/reprint/110/9/1073)
+
+Arduengo, P.M., Appleberry, O.K., Chuang, P. and L'Hernault, S.W. 1998. The presenilin protein family member SPE-4 localizes to an ER/Golgi derived organelle and is required for proper cytoplasmic partitioning during Caenorhabditis  elegans spermatogenesis. J. Cell Sci. 111: 3645-3654. (http://jcs.biologists.org/cgi/reprint/111/24/3645)
+
+Bui, Y.K. and Sternberg, P.W. 2002. Caenorhabditis elegans inositol 5-phosphatase homolog negatively regulates inositol 1,4,5-triphosphate signaling in ovulation. Mol. Biol. Cell 13: 1641-1651. (http://dx.doi.org/10.1091/mbc.02-01-0008)
+
+Church, D.L., Guan, K.L. and Lambie, E.J. 1995. Three genes of the MAP kinase cascade, mek-2, mpk-1/sur-1 and let-60 ras, are required for meiotic cell cycle progression in Caenorhabditis elegans. Development 121: 2525-2535. (http://dev.biologists.org/content/121/8/2525.long)
+
+Clandinin, T.R., DeModena, J.A. and Sternberg, P.W. 1998. Inositol trisphosphate mediates a RAS-independent response to LET-23 receptor tyrosine kinase activation in C. elegans. Cell 92: 523-533. (http://dx.doi.org/10.1016/S0092-8674(00)80945-9)
+
+Crittenden, S.L., Troemel, E.R. Evans, T.C. and Kimble J. 1994. GLP-1 is localized to the mitotic region of the C. elegans germ line. Development 120: 2901-2911. (http://dev.biologists.org/content/120/10/2901.long)
+
+Grant, B. and Hirsh, D. 1999. Receptor-mediated endocytosis in the Caenorhabditis  elegans oocyte. Mol .Biol. Cell. 10: 4311-4326. (http://www.molbiolcell.org/cgi/content/full/10/12/4311)
+
+Gumienny, T.L., Lambie, E., Hartwieg, E., Horvitz, H.R. and Hengartner, M.O. 1999. Genetic control of programmed cell death in the Caenorhabditis  elegans hermaphrodite germline. Development 126: 1011-1022. (http://dev.biologists.org/content/126/5/1011.long)
+
+Hall, D.H., Winfrey, V. P., Blaeuer, G., Hoffman, L.H., Furuta, T., Rose, K.L., Hobert, O. and Greenstein, D. 1999. Ultrastructural features of the adult hermaphrodite gonad of Caenorhabditis elegans: relations between the germ line and soma. Dev.. Biol. 212: 101-123. (http://dx.doi.org/10.1006/dbio.1999.9356)
+
+Hansen, D., Wilson-Berry, L., Dang, T. and Schedl, T. 2004. Control of the proliferation versus meiotic development decision in the C. elegans germline through regulation of GLD-1 protein accumulation. Development 131: 93-104. (http://dev.biologists.org/content/131/1/93.long)
+
+Hengartner, M.O. 1997. Apoptosis and the shape of death. Dev. Genet. 21: 245-248.(http://dx.doi.org/10.1002/(SICI)1520-6408(1997)21:4%3C245::AID-DVG1%3E3.0.CO;2-7)
+
+Hengartner, M.O., Ellis, R.E. and Horvitz, H.  R. 1992. Caenorhabditis elegans gene ced-9 protects cells from programmed cell death. Nature 356: 494-499.(http://dx.doi.org/10.1038/356494a0)
+
+Hirsh, D., Oppenheim, D. and Klass, M. 1976. Development of the reproductive system of Caenorhabditis elegans. Dev. Biol. 49: 200-219. (http://dx.doi.org/10.1016/0012-1606(76)90267-0)
+
+Hubbard, E.J. and Greenstein D. 2000. The Caenorhabditis  elegans gonad: a test tube for cell and developmental biology. Dev. Dyn. 218: 2-22. (http://dx.doi.org/10.1002/(SICI)1097-0177(200005)218:1%3C2::AID-DVDY2%3E3.0.CO;2-W)
+
+Italiano, J.E. Jr., Roberts, T.M., Stewart, M. and Fontana,  C.A. 1996. Reconstitution in vitro of the motile apparatus from the amoeboid sperm of Ascaris shows that filament assembly and bundling move membranes. Cell 84: 105-114.(http://dx.doi.org/10.1016/S0092-8674(00)80997-6)
+
+Kelleher, J.F., Mandell, M.A., Moulder, G., Hill, K.L., L'Hernault, S.W., Barstead, R. and Titus, M.A. 2000. Myosin VI is required for asymmetric segregation of cellular components during C. elegans spermatogenesis. Curr. Biol. 10: 1489-1496. (http://dx.doi.org/10.1016/S0960-9822(00)00828-9)
+
+Killian, D.J. and Hubbard, E.J. 2004. C. elegans pro-1 activity is required for soma/germline interactions that influence proliferation and differentiation in the germ line. Development 131: 1267-1278.(http://dev.biologists.org/content/131/6/1267.long)
+
+Kimble, J.E. and Hirsh, D. 1979. The postembryonic cell lineages of the hermaphrodite and male gonads in Caenorhabditis elegans. Dev. Biol. 70: 396-417. (https://www.wormatlas.org/ver1/Postemblingonad_1979/toc.html)
+
+Kimble, J.E. and White, J.G. 1981. On the control of germ cell development in Caenorhabditis elegans. Dev. Biol. 81: 208-219. (http://dx.doi.org/10.1016/0012-1606(81)90284-0)
+
+Kuwabara, P.E. and Perry, M.D. 2001. It ain't over till it's ova: germline sex determination in C. elegans. Bioessays 23: 596-604. (http://dx.doi.org/10.1002/bies.1085)
+
+L'Hernault, S. W. 1997. Spermatogenesis. In C.  elegans II (ed. D. L. Riddle et al.). chap. 11. pp. 417-500. Cold Spring Harbor Laboratory Press, Cold Spring Harbor,  New York. (http://www.ncbi.nlm.nih.gov/bookshelf/br.fcgi?book=ce2&part=A370#A370)
+
+McCarter, J., Bartlett, B., Dang, T. and Schedl, T. 1997. Soma-germ cell interactions in Caenorhabditis elegans: multiple events of hermaphrodite germline development require the somatic sheath and spermathecal lineages. Dev. Biol. 181: 121-143. (http://dx.doi.org/10.1006/dbio.1996.8429)
+
+McCarter, J., Bartlett, B., Dang, T. and Schedl, T. 1999. On the control of oocyte meiotic maturation and ovulation in Caenorhabditis elegans. Dev. Biol. 205: 111-128. (http://dx.doi.org/10.1006/dbio.1996.8429)
+
+Miller, M.A., Nguyen, V.Q., Lee, M.H., Kosinski, M., Schedl, T., Caprioli, R.M. and Greenstein, D. 2001. A sperm cytoskeletal protein that signals oocyte meiotic maturation and ovulation. Science 291: 2144-2147. (http://dx.doi.org/10.1126/science.1057586)
+
+Miller, M.A., Ruest, P.J., Kosinski, M., Hanks, S.K. and Greenstein, D. 2003. An Eph receptor sperm-sensing control mechanism for oocyte meiotic maturation in Caenorhabditis  elegans. Genes Dev. 17: 187-200. (http://dx.doi.org/10.1101/gad.1028303)
+
+Nelson, G.A. and Ward, S. 1980. Vesicle fusion, pseudopod extension and amoeboid motility are induced in nematode spermatids by the ionophore monensin. Cell 19: 457-464. (http://dx.doi.org/10.1016/0092-8674(80)90520-6)
+
+Pepper, A.S., Lo, T.W., Killian, D.J., Hall, D.H. and Hubbard, E.J. 2003. The establishment of Caenorhabditis elegans germline pattern is controlled by overlapping proximal and distal somatic gonad signals. Dev. Biol. 259: 336-350. (http://dx.doi.org/10.1016/S0012-1606(03)00203-3)
+
+Roberts, T.M. and Stewart, M. 2000. Acting like actin. The dynamics of the nematode major sperm protein (msp) cytoskeleton indicate a push-pull mechanism for amoeboid cell motility. J. Cell Biol. 149: 7-12. (http://jcb.rupress.org/content/149/1/7.long)
+
+Roberts, T.M., Pavalko, F.M. and Ward, S.  1986. Membrane and cytoplasmic proteins are transported in the same organelle complex during nematode spermatogenesis. J. Cell Biol. 102: 1787-1796. (http://jcb.rupress.org/content/102/5/1787.full.pdf+html)
+
+Rose, K.L., Winfrey, V.P., Hoffman, L.H., Hall, D.H., Furuta, T. and Greenstein D. 1997. The POU gene ceh-18 promotes gonadal sheath cell differentiation and function required for meiotic maturation and ovulation in Caenorhabditis elegans. Dev. Biol. 192: 59-77. (http://dx.doi.org/10.1006/dbio.1997.8728)
+
+Schedl, T. 1997. Developmental Genetics of the Germ Line. In C. elegans II (ed. D. L. Riddle et al.). chap. 10. pp. 417-500. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, New  York.(http://www.ncbi.nlm.nih.gov/bookshelf/br.fcgi?book=ce2&part=A335)
+
+Seydoux, G., Schedl, T. and Greenwald, I. 1990. Cell-cell interactions prevent a potential inductive interaction between soma and germline in C. elegans. Cell 61: 939-951. (http://dx.doi.org/10.1016/0092-8674(90)90060-R)
+
+Singson, A. 2001. Every sperm is sacred: fertilization in Caenorhabditis elegans. Dev. Biol. 230: 101-109. (http://dx.doi.org/10.1006/dbio.2000.0118)
+
+Singson, A., Mercer, K.B. and L'Hernault, S.W. 1998. The C.  elegans spe-9 gene encodes a sperm transmembrane protein that contains EGF-like repeats and is required for fertilization. Cell 93: 71-79. (http://dx.doi.org/10.1016/S0092-8674(00)81147-2)
+
+Vogel, B.E. and Hedgecock, E.M. 2001. Hemicentin, a conserved extracellular member of the immunoglobulin superfamily, organizes epithelial and other cell attachments into oriented line-shaped junctions. Development 128: 883-894. (http://dev.biologists.org/content/128/6/883.long)
+
+Ward, S. 1986. Asymmetric localization of gene products during the development of C.  elegans spermatozoa. In Gametogenesis and the Early Embryo. (ed. J. G. Gall). pp. 55-75. 44th Symposium of the Society for Developmental Biology. Alan R. Liss, New York.
+
+Ward, S. and Carrel, J.S. 1979. Fertilization and sperm competition in the nematode Caenorhabditis elegans. Dev. Biol. 73: 304-321. (http://dx.doi.org/10.1016/0012-1606(79)90069-1)
+
+Ward, S. and Klass, M. 1982. The location of the major protein in Caenorhabditis  elegans sperm and spermatocytes. Dev. Biol. 92: 203-208. (http://dx.doi.org/10.1016/0012-1606(82)90164-6)
+
+Ward, S., Argon, Y. and Nelson, G.A. 1981. Sperm morphogenesis in wild-type and fertilization-defective mutants of Caenorhabditis elegans. J. Cell Biol. 91: 26-44.(http://jcb.rupress.org/content/91/1/26.long)
+
+Ward, S., Hogan, E. and Nelson, G.A. 1983. The initiation of spermiogenesis in the nematode Caenorhabditis  elegans. Dev. Biol. 98: 70-79. (http://dx.doi.org/10.1016/0012-1606(83)90336-6)
+
