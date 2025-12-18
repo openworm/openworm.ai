@@ -106,7 +106,7 @@ def get_openai_api_key():
         with open(oaik_path, "r") as f:
             return f.read().strip()
 
-    # 3. Nothing found → fail clearly
+    # 3. Nothing found -> fail clearly
     raise RuntimeError(
         "OpenAI API key not found.\n"
         "Set environment variable OPENAI_API_KEY or place a key in '../oaik'."
@@ -341,12 +341,12 @@ def get_llm_from_argv(argv):
             return LLM_GPT4o
 
     # --- FINAL FAILSAFE ---
-    # If default GPT-4o chosen but key missing → fallback to Ollama
+    # If default GPT-4o chosen but key missing -> fallback to Ollama
     try:
         if requires_openai_key(llm_ver):
             _ = get_openai_api_key()  # Just try getting key
     except Exception:
-        print("! No OpenAI key found → using local Ollama model instead.")
+        print("! No OpenAI key found -> using local Ollama model instead.")
         return LLM_OLLAMA_LLAMA32
 
     return llm_ver
