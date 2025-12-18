@@ -142,6 +142,12 @@ def get_cohere_key():
     return cohere_api_key
 
 
+def get_anthropic_key():
+    anthropic_api_key = os.environ.get("CLAUDE_API_KEY")
+
+    return anthropic_api_key
+
+
 def get_llm(llm_ver, temperature, limit_to_openwormai_llms=False):
     if llm_ver in LLMS_GEMINI:
         from langchain_google_genai import ChatGoogleGenerativeAI
