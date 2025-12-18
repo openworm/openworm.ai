@@ -113,7 +113,6 @@ def get_openai_api_key():
     )
 
 
-
 def get_llamaapi_key():
     llamaapi_key = os.environ.get("LLAMAAPI_KEY")
 
@@ -133,7 +132,7 @@ def get_anthropic_key():
 
 
 def get_cohere_key():
-    cohere_api_key = os.environ.get["COHERE_API_KEY"]
+    cohere_api_key = os.environ.get("COHERE_API_KEY")
 
     return cohere_api_key
 
@@ -207,6 +206,7 @@ def get_llm(llm_ver, temperature):
         llm = ChatCohere()
 
     elif llm_ver in [
+        LLM_OLLAMA_LLAMA32,
         LLM_OLLAMA_LLAMA32_1B,
         LLM_OLLAMA_LLAMA32_3B,
         LLM_OLLAMA_MISTRAL,
@@ -350,7 +350,6 @@ def get_llm_from_argv(argv):
         return LLM_OLLAMA_LLAMA32
 
     return llm_ver
-
 
 
 def ask_question_get_response(

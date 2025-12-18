@@ -39,6 +39,4 @@ def generate_raw_json(pdf_path: str | Path, json_output_path: str | Path) -> Non
         str(json_output_path),
     ]
 
-    # This will raise CalledProcessError if something goes wrong,
-    # which is usually what we want when building the corpus.
     subprocess.run(cmd, check=True)

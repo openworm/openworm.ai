@@ -11,6 +11,7 @@ plaintext_output_dir = "processed/plaintext/papers"
 
 PDF_FOLDER = Path("corpus/papers/tests")
 
+
 # Function to save JSON content
 def save_json(doc_model, file_name, json_output_dir):
     # Full path to the file
@@ -129,6 +130,7 @@ def convert_to_json(paper_ref, paper_info, output_dir):
     # Save the final JSON + markdown + plaintext outputs
     save_json(doc_model, f"{paper_ref}.json", output_dir)
 
+
 def convert_pdf_via_api(paper_ref: str, pdf_path: str, source_url: str) -> None:
     """
     1. Use the llama-parse CLI (via generate_raw_json) to generate a raw JSON file
@@ -167,7 +169,7 @@ if __name__ == "__main__":
     #     convert_to_json(paper_ref, paper_info, json_output_dir)
 
     # New API-based path: start from PDFs instead of UI JSON
-    
+
     """""
     papers_api = {
         "Donnelly_et_al_2013": [
@@ -191,7 +193,7 @@ if __name__ == "__main__":
             "https://elifesciences.org/articles/95402" ,
         ],
     }
-    """"
+    """ ""
 
     papers_api = {}
 

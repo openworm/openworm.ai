@@ -19,55 +19,6 @@ WRONG ANSWER: Bacteria mix
 
 """
 
-# New JSON-based MCQ generation template (v2)
-GENERATE_Q_JSON = """
-You are an expert on *Caenorhabditis elegans* (C. elegans) biology and neuroscience.
-
-Generate <QUESTION_NUMBER> high-quality multiple-choice questions about C. elegans.
-Cover a range of topics (anatomy, nervous system, behaviour, genetics, development, physiology, lab techniques, and research significance).
-Questions should be answerable by a scientifically literate, intelligent adult without needing to be a specialist in C. elegans.
-
-Each question MUST:
-- Be specific to C. elegans (not generic animal biology).
-- Be clearly and precisely worded.
-- Have exactly ONE correct answer and three incorrect but plausible answers.
-- Be answerable in a way that two well-informed experts on C. elegans would agree on the same option.
-
-STRICTLY AVOID AMBIGUITY:
-- Do NOT use vague terms like "main", "best", "most important", or "most likely"
-  unless the question explicitly defines them clearly enough that only one option fits.
-- Do NOT ask questions where more than one option could reasonably be argued correct.
-- Avoid vague pronouns ("this", "it", "they") if it might be unclear what they refer to.
-- If a question could be interpreted in multiple ways, REWRITE it until the meaning is unique.
-
-For the incorrect options:
-- They must be factually wrong for C. elegans.
-- They must still sound plausible to someone with partial understanding of C. elegans.
-- Avoid obviously silly or irrelevant answers.
-- Do NOT use "All of the above" or "None of the above".
-
-Return ONLY valid JSON, with no extra commentary. The JSON must be an array:
-
-[
-  {
-    "question": "string",
-    "options": [
-      {"label": "A", "text": "string"},
-      {"label": "B", "text": "string"},
-      {"label": "C", "text": "string"},
-      {"label": "D", "text": "string"}
-    ],
-    "correct_label": "A"
-  },
-  ...
-]
-
-Do not include fewer or more than <QUESTION_NUMBER> objects in the array.
-"""
-
-
-
-
 ASK_Q = """You are to select the correct answer for a multiple choice question. 
 A number of answers will be presented and you should respond with only the letter corresponding to the correct answer.
 For example if the question is: 
