@@ -36,7 +36,7 @@ df_all = pd.DataFrame()
 for category, file_path in file_paths.items():
     # Check if the file exists
     if not os.path.exists(file_path):
-        print(f"⚠️ Warning: File not found - {file_path}. Skipping this category.")
+        print(f"! Warning: File not found - {file_path}. Skipping this category.")
         continue
 
     # Load JSON data
