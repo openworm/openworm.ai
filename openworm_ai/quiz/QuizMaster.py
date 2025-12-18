@@ -419,7 +419,9 @@ if __name__ == "__main__":
     print(f"Selected LLM: {llm_ver}")
 
     if "-ask" in sys.argv:
-        quiz_json = "openworm_ai/quiz/samples/Ollama_llama3.2_3questions_celegans_v2.json"
+        quiz_json = (
+            "openworm_ai/quiz/samples/Ollama_llama3.2_3questions_celegans_v2.json"
+        )
         quiz = MultipleChoiceQuiz.from_file(quiz_json)
 
         print(
