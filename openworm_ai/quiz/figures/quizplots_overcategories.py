@@ -83,7 +83,7 @@ sns.lineplot(
 
 # Improve readability
 plt.title("LLM Performance vs. Task Complexity")
-plt.xlabel("Task Complexity (Increasing Difficulty →)")
+plt.xlabel("Task Complexity (Increasing Difficulty ->)")
 plt.ylabel("Accuracy (%)")
 plt.ylim(0, 100)  # Consistent scale
 plt.xticks(rotation=20)  # Rotate x-axis labels for clarity

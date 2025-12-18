@@ -271,7 +271,7 @@ def save_quiz_v2(
         title=f"{llm_ver.replace(':', '_')}_{num_questions}questions_celegans_corpus_rag_v2",
         source=(
             f"Corpus-based (RAG) quiz generated from processed papers by {llm_ver}, "
-            f"temperature={temperature}, free-text→parse→critic→dedup"
+            f"temperature={temperature}, free-text->parse->critic->dedup"
         ),
     )
 
@@ -373,7 +373,7 @@ if __name__ == "__main__":
                 wrong_answers += f"  {q}; Wrong: {resp}; Correct: {correct_answer} ({correct_text})\n"
 
             print(
-                f" >> {qi}) {q} → Guess: {resp}, Correct: {correct_answer} → {correct_guess}"
+                f" >> {qi}) {q} -> Guess: {resp}, Correct: {correct_answer} -> {correct_guess}"
             )
 
         print(wrong_answers)

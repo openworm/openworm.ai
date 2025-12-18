@@ -199,7 +199,7 @@ if __name__ == "__main__":
 
     for pdf_path in PDF_FOLDER.glob("*.pdf"):
         # Convert file name to a clean reference ID
-        # Example: "Donnelly2013.pdf" → "Donnelly2013"
+        # Example: "Donnelly2013.pdf" -> "Donnelly2013"
         paper_ref = pdf_path.stem
 
         # No source URL available unless we add metadata later
