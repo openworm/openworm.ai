@@ -31,11 +31,20 @@ else
     python -m openworm_ai.quiz.QuizModel
     python -m openworm_ai.quiz.figures.quizplot_grid -nogui
     python -m openworm_ai.parser.ParseWormAtlas
-    python -m openworm_ai.parser.ParseLlamaIndexJson
 
+     #Do not call LlamaParse; use existing parsed outputs
     if [ $1 == "-free" ]; then
+        python -m openworm_ai.parser.ParseLlamaIndexJson --skip
         python -m openworm_ai.graphrag.GraphRAG_test -test
+
+    #Force full rebuild of raw/processed outputs
+    elif [ $1 == "-reparse-all" ]; then
+        python -m openworm_ai.parser.ParseLlamaIndexJson --reparse-all
+        python -m openworm_ai.graphrag.GraphRAG_test $@
+         
+    #Default: incremental parse + monthly refresh (30 days)
     else
+        python -m openworm_ai.parser.ParseLlamaIndexJson --max-age-days 30
         python -m openworm_ai.graphrag.GraphRAG_test $@
 
     fi
