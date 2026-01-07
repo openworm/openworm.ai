@@ -51,6 +51,8 @@ jobs:
       env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: | 
+        echo "Running (paid) API comands. Env:"
+        env
         ./regenerateAndTest.sh  # Test the parts requiring API keys...
 
 
