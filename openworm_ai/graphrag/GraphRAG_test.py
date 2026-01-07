@@ -24,7 +24,6 @@ import glob
 import sys
 import json
 
-
 STORE_DIR = "store"
 SOURCE_DOCUMENT = "source document"
 
@@ -32,8 +31,16 @@ Settings.chunk_size = 3000
 Settings.chunk_overlap = 50
 
 
+def normalize_ollama_model_name(model: str) -> str:
+    s = (model or "").strip()
+    for prefix in ("Ollama:", "ollama:", "llama:"):
+        if s.startswith(prefix):
+            s = s[len(prefix) :].strip()
+    return s
+
+
 def create_store(model):
-    OLLAMA_MODEL = model.replace("Ollama:", "") if model is not LLM_GPT4o else None
+    OLLAMA_MODEL = None if model == LLM_GPT4o else normalize_ollama_model_name(model)
 
     json_inputs = glob.glob("processed/json/*/*.json")
 
@@ -48,7 +55,7 @@ def create_store(model):
             print_("  Processing document: %s" % title)
             doc_contents = doc_model[title]
             src_page = doc_contents["source"]
-            for section in doc_contents["sections"]:
+            for section in doc_contents.get("sections", []):
                 all_text = ""
                 if "paragraphs" in doc_contents["sections"][section]:
                     print_(
@@ -93,7 +100,7 @@ def create_store(model):
 
 
 def load_index(model):
-    OLLAMA_MODEL = model.replace("Ollama:", "") if model is not LLM_GPT4o else None
+    OLLAMA_MODEL = None if model == LLM_GPT4o else normalize_ollama_model_name(model)
 
     print_("Creating a storage context for %s" % model)
 
@@ -115,13 +122,19 @@ def load_index(model):
     )
     print_("Reloading index for %s" % model)
 
+    if OLLAMA_MODEL is not None:
+        Settings.embed_model = OllamaEmbedding(model_name=OLLAMA_MODEL)
+
     index_reloaded = load_index_from_storage(storage_context)
 
     return index_reloaded
 
 
 def get_query_engine(index_reloaded, model, similarity_top_k=4):
-    OLLAMA_MODEL = model.replace("Ollama:", "") if model is not LLM_GPT4o else None
+    OLLAMA_MODEL = None if model == LLM_GPT4o else normalize_ollama_model_name(model)
+
+    if OLLAMA_MODEL is not None:
+        Settings.embed_model = OllamaEmbedding(model_name=OLLAMA_MODEL)
 
     print_("Creating query engine for %s" % model)
 
@@ -147,7 +160,7 @@ def get_query_engine(index_reloaded, model, similarity_top_k=4):
 
     # create a query engine for the index
     if OLLAMA_MODEL is not None:
-        llm = Ollama(model=OLLAMA_MODEL, request_timeout=60.0)
+        llm = Ollama(model=OLLAMA_MODEL, request_timeout=600.0)
 
         ollama_embedding = OllamaEmbedding(
             model_name=OLLAMA_MODEL,
