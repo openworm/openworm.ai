@@ -47,10 +47,12 @@ jobs:
 
 
     - name: Test interactions requiring API (requires OPENAI key)
-      if: ${{ matrix.runs-on == 'ubuntu-latest' && matrix.python-version == '3.12' }}
+      if: ${{ matrix.runs-on == 'ubuntu-latest' && matrix.python-version == '3.12' && env.GITHUB_REPOSITORY_OWNER == 'openworm' }}
       env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: | 
+        echo "Running (paid) API comands. Env:"
+        env
         ./regenerateAndTest.sh  # Test the parts requiring API keys...
 
 
