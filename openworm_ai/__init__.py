@@ -1,5 +1,5 @@
 # Version of the Python module.
-__version__ = "0.3.1"
+__version__ = "0.3.4"
 
 
 def print_(msg, print_it=True):
