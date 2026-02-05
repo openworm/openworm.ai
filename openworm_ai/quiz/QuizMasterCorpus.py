@@ -12,6 +12,7 @@ from openworm_ai.quiz.QuizModel import MultipleChoiceQuiz, Question, Answer
 from openworm_ai.utils.llms import (
     ask_question_get_response,
     LLM_GPT4o,
+    LLM_HF_DEFAULT,
     LLM_OLLAMA_GEMMA2,
 )
 
@@ -319,6 +320,8 @@ if __name__ == "__main__":
 
     if os.getenv("OPENAI_API_KEY"):
         llm_ver = LLM_GPT4o
+    elif os.getenv("HF_TOKEN") or os.getenv("HUGGINGFACEHUB_API_TOKEN"):
+        llm_ver = LLM_HF_DEFAULT
     else:
         llm_ver = LLM_OLLAMA_GEMMA2
 
