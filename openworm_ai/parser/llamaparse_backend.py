@@ -4,7 +4,6 @@ import json
 import os
 import time
 from pathlib import Path
-from typing import Any, Dict, Optional
 
 import requests
 from dotenv import load_dotenv
@@ -115,22 +114,22 @@ def generate_raw_json(pdf_path: str | Path, json_output_path: str | Path) -> Non
         raise RuntimeError("No response received from API")
 
     # Now the content should be inlined
-    print(f"[llamaparse] extracting content from response", flush=True)
+    print("[llamaparse] extracting content from response", flush=True)
 
     output = {}
 
     # Extract what we got
     if response.get("text"):
         output["text"] = response["text"]
-        print(f"[llamaparse] extracted text", flush=True)
+        print("[llamaparse] extracted text", flush=True)
 
     if response.get("items"):
         output["items"] = response["items"]
-        print(f"[llamaparse] extracted items", flush=True)
+        print("[llamaparse] extracted items", flush=True)
 
     if response.get("markdown"):
         output["markdown"] = response["markdown"]
-        print(f"[llamaparse] extracted markdown", flush=True)
+        print("[llamaparse] extracted markdown", flush=True)
 
     if not output:
         # Save debug info
