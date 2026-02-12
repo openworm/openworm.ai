@@ -1,30 +1,24 @@
 # Based on https://docs.llamaindex.ai/en/stable/examples/cookbooks/GraphRAG_v1/
 
 # Load environment variables FIRST
-from dotenv import load_dotenv
-
-load_dotenv()
 
 import os
+import glob
+import time
+import sys
+import json
 
-_token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
-print(f"[DEBUG] HF Token loaded: {_token[:15] if _token else 'NONE'}...", flush=True)
-print(f"[DEBUG] Embedding model: {os.getenv('NML_AI_EMBEDDING_MODEL')}", flush=True)
-
-print("=" * 60, flush=True)
-print("GraphRAG starting... (imports may take 30-60 seconds)", flush=True)
-print("=" * 60, flush=True)
+from pathlib import Path
+import hashlib
 
 from openworm_ai import print_
 from openworm_ai.utils.llms import (
     get_llm_from_argv,
-    get_llm,
     is_huggingface_model,
     is_ollama_model,
     strip_huggingface_prefix,
     get_hf_token,
     LLM_GPT4o,
-    LLM_HF_DEFAULT,
 )
 
 from llama_index.core import Document
@@ -33,24 +27,23 @@ from llama_index.core.storage.storage_context import StorageContext
 from llama_index.core.storage.index_store import SimpleIndexStore
 from llama_index.core.storage.docstore import SimpleDocumentStore
 from llama_index.core import load_index_from_storage
-from llama_index.embeddings.ollama import OllamaEmbedding
 from llama_index.core import PromptTemplate
 from llama_index.core import VectorStoreIndex, get_response_synthesizer
 from llama_index.core.retrievers import VectorIndexRetriever
 from llama_index.core.query_engine import RetrieverQueryEngine
 from llama_index.core import Settings
 
+from dotenv import load_dotenv
 
-# one extra dep
-from llama_index.llms.ollama import Ollama
-import glob
-import time
-import sys
-import json
-import os
+load_dotenv()
 
-from pathlib import Path
-import hashlib
+_token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+print(f"[DEBUG] HF Token loaded: {_token[:15] if _token else 'NONE'}...", flush=True)
+print(f"[DEBUG] Embedding model: {os.getenv('NML_AI_EMBEDDING_MODEL')}", flush=True)
+
+print("=" * 60, flush=True)
+print("GraphRAG starting... (imports may take 30-60 seconds)", flush=True)
+print("=" * 60, flush=True)
 
 print("Imports complete. Loading configuration...", flush=True)
 
@@ -137,7 +130,9 @@ def get_store_subfolder(model: str) -> str:
 
 
 def create_store(model):
-    OLLAMA_MODEL = None if model == LLM_GPT4o else normalize_ollama_model_name(model)
+    None if model == LLM_GPT4o else normalize_ollama_model_name(model)
+
+    start_time = time.time()
 
     json_inputs = glob.glob("processed/json/*/*.json")
     print_(f"Found {len(json_inputs)} JSON files to process")

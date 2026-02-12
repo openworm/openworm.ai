@@ -246,7 +246,9 @@ def convert_to_json(paper_ref, paper_info, output_dir):
     save_json(doc_model, f"{paper_ref}.json", output_dir)
 
 
-def convert_pdf_via_api(paper_ref: str, pdf_path: str, source_url: str, manifest: Dict[str, Any]) -> None:
+def convert_pdf_via_api(
+    paper_ref: str, pdf_path: str, source_url: str, manifest: Dict[str, Any]
+) -> None:
     pdf_loc = Path(pdf_path)
     raw_json_path = RAW_JSON_DIR / f"{paper_ref}.llamaparse_raw.json"
 

@@ -237,10 +237,12 @@ def get_embed_model_for_llm(llm_ver: str):
     """Get embedding model based on LLM type."""
     # HuggingFace -> use HF API embeddings
     if is_huggingface_model(llm_ver):
-        from llama_index.embeddings.huggingface_api import HuggingFaceInferenceAPIEmbedding
+        from llama_index.embeddings.huggingface_api import (
+            HuggingFaceInferenceAPIEmbedding,
+        )
+
         return HuggingFaceInferenceAPIEmbedding(
-            model_name="BAAI/bge-small-en-v1.5",
-            token=get_hf_token()
+            model_name="BAAI/bge-small-en-v1.5", token=get_hf_token()
         )
 
     # Ollama -> local embeddings
@@ -304,12 +306,15 @@ def save_quiz(num_questions, num_answers, llm_ver, quiz_scope, temperature=0):
     """
     if quiz_scope == QuizScope.GeneralKnowledge:
         from openworm_ai.quiz.Templates import GENERATE_Q, TEXT_ANSWER_EXAMPLE
+
         suffix = "_general_v2"
     elif quiz_scope == QuizScope.Science:
         from openworm_ai.quiz.TemplatesScience import GENERATE_Q, TEXT_ANSWER_EXAMPLE
+
         suffix = "_science_v2"
     elif quiz_scope == QuizScope.CElegans:
         from openworm_ai.quiz.TemplatesCelegans import GENERATE_Q, TEXT_ANSWER_EXAMPLE
+
         suffix = "_celegans_v2"
     else:
         raise ValueError(f"Unsupported quiz scope: {quiz_scope}")
