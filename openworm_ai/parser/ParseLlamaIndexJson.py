@@ -2,27 +2,61 @@ from openworm_ai import print_
 from openworm_ai.parser.DocumentModels import Document, Section, Paragraph
 from openworm_ai.parser.llamaparse_backend import generate_raw_json
 
+import argparse
 import json
+from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any, Dict, Optional
+
 
 json_output_dir = "processed/json/papers"
 markdown_output_dir = "processed/markdown/papers"
 plaintext_output_dir = "processed/plaintext/papers"
 
-PDF_FOLDER = Path("corpus/papers/tests")
+PDF_FOLDER = Path("corpus/papers/test/pdfs")
+
+MANIFEST_PATH = Path("processed") / "manifest.json"
+
+RAW_JSON_DIR = Path("corpus/papers/test/raw_json")
+RAW_JSON_DIR.mkdir(parents=True, exist_ok=True)
+
+SOURCE_REGISTRY_PATH = Path("corpus/papers/source_registry.json")
 
 
-# Function to save JSON content
+def parse_args():
+    parser = argparse.ArgumentParser(description="Parse PDFs with LlamaParse")
+
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--skip", action="store_true", help="Don't call LlamaParse")
+    mode.add_argument(
+        "--reparse-all", action="store_true", help="Ignore manifest - reparse all PDFs"
+    )
+
+    parser.add_argument(
+        "--max-age-days",
+        type=int,
+        default=30,
+        help="Refresh PDFs that haven't been parsed for more than N days (default 30).",
+    )
+
+    return parser.parse_args()
+
+
+def load_source_registry(path: Path) -> Dict[str, Any]:
+    if not path.exists():
+        return {"papers": {}}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def save_json(doc_model, file_name, json_output_dir):
-    # Full path to the file
+    Path(json_output_dir).mkdir(parents=True, exist_ok=True)
+    Path(markdown_output_dir).mkdir(parents=True, exist_ok=True)
+    Path(plaintext_output_dir).mkdir(parents=True, exist_ok=True)
+
     file_path = Path(f"{json_output_dir}/{file_name}")
-
-    # Write content to the the final json file
-    # with open(file_path, "w", encoding="utf-8") as json_file:
-    #    json.dump(content, json_file, indent=4, ensure_ascii=False)
     doc_model.to_json_file(file_path)
-
     print_(f"  JSON file saved at: {file_path}")
+
     md_file_path = Path(f"{markdown_output_dir}/{file_name.replace('.json', '.md')}")
     doc_model.to_markdown(md_file_path)
     print_(f"  Markdown file saved at: {md_file_path}")
@@ -34,46 +68,157 @@ def save_json(doc_model, file_name, json_output_dir):
     print_(f"  Plaintext file saved at: {text_file_path}")
 
 
-# Function to process JSON and extract markdown content
+def utc_now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def load_manifest(path: Path) -> Dict[str, Any]:
+    if not path.exists():
+        return {"version": 1, "created_at": utc_now_iso(), "entries": {}}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def save_manifest(path: Path, manifest: Dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(manifest, indent=2, sort_keys=True), encoding="utf-8")
+
+
+def check_llamaparse_success(raw_json_path: Path) -> None:
+    """
+    Minimal guard: some failures come back as {"detail": "..."} or [{"detail": "..."}].
+    """
+    data = json.loads(raw_json_path.read_text(encoding="utf-8"))
+
+    if isinstance(data, dict) and "detail" in data:
+        raise RuntimeError(f"LlamaParse failed for {raw_json_path}: {data['detail']}")
+
+    if (
+        isinstance(data, list)
+        and len(data) > 0
+        and isinstance(data[0], dict)
+        and "detail" in data[0]
+    ):
+        raise RuntimeError(
+            f"LlamaParse failed for {raw_json_path}: {data[0]['detail']}"
+        )
+
+
+def should_parse_pdf(
+    pdf_path: Path, manifest: Dict[str, Any], max_age_days: int | None = None
+) -> Optional[str]:
+    pdf_key = pdf_path.as_posix()
+    entries = manifest.get("entries", {})
+
+    if pdf_key not in entries:
+        return "new"
+
+    entry = entries[pdf_key]
+    prev_pdf = entry.get("pdf", {})
+
+    st = pdf_path.stat()
+    curr_mtime = st.st_mtime
+    curr_size = st.st_size
+
+    prev_mtime = prev_pdf.get("mtime")
+    prev_size = prev_pdf.get("size")
+
+    if prev_mtime != curr_mtime or prev_size != curr_size:
+        return "changed"
+
+    if max_age_days is not None:
+        parsed_at_str = entry.get("parsed_at")
+        if parsed_at_str:
+            parsed_at = datetime.fromisoformat(parsed_at_str)
+            age = datetime.now(timezone.utc) - parsed_at
+            if age.days > max_age_days:
+                return "stale"
+
+    return None
+
+
+def _extract_pages(payload: Dict[str, Any]) -> list:
+    """
+    Extract page data from LlamaParse output.
+
+    The SDK/API returns v2 format:
+    {
+        "text": {"pages": [{"page_number": 1, "text": "raw OCR..."}, ...]},
+        "markdown": {"pages": [{"page_number": 1, "markdown": "# Clean..."}, ...]},
+        "items": [...]
+    }
+
+    We PRIORITIZE markdown.pages[].markdown (clean) over text.pages[].text (raw OCR).
+    This is critical for RAG - clean text produces better embeddings.
+    """
+    # Handle list wrapper
+    if isinstance(payload, list) and len(payload) > 0:
+        payload = payload[0] if isinstance(payload[0], dict) else {}
+
+    if not isinstance(payload, dict):
+        return []
+
+    pages = []
+
+    # Get markdown pages (clean, well-formatted) - PREFERRED for RAG
+    markdown_pages = {}
+    if isinstance(payload.get("markdown"), dict):
+        for p in payload["markdown"].get("pages", []):
+            if isinstance(p, dict):
+                page_num = p.get("page_number")
+                markdown_pages[page_num] = p.get("markdown", "")
+
+    # Get text pages (raw OCR with layout artifacts) - FALLBACK only
+    text_pages = {}
+    if isinstance(payload.get("text"), dict):
+        for p in payload["text"].get("pages", []):
+            if isinstance(p, dict):
+                page_num = p.get("page_number")
+                text_pages[page_num] = p.get("text", "")
+
+    # Merge: prefer markdown, fall back to text
+    all_page_nums = set(markdown_pages.keys()) | set(text_pages.keys())
+
+    for page_num in sorted(all_page_nums):
+        # Prioritize markdown (clean) over text (raw OCR)
+        content = markdown_pages.get(page_num) or text_pages.get(page_num) or ""
+        pages.append(
+            {
+                "page": page_num,
+                "md": content,  # Store in 'md' field for consistency
+            }
+        )
+
+    # Fallback: old CLI format with top-level pages array
+    if not pages and isinstance(payload.get("pages"), list):
+        for p in payload["pages"]:
+            if isinstance(p, dict):
+                pages.append(
+                    {
+                        "page": p.get("page"),
+                        "md": p.get("md") or p.get("text") or "",
+                    }
+                )
+
+    return pages
+
+
 def convert_to_json(paper_ref, paper_info, output_dir):
     """
-    Take a raw LlamaParse JSON file (from either the old UI export or the new CLI/API),
-    normalise its structure, and convert it into our internal Document model.
+    Convert raw LlamaParse JSON to our internal Document model.
 
-    Strategy (to match the old behaviour more closely):
-    - Try to use page["items"][*]["md"] / ["text"] as individual paragraphs/headings.
-    - If there are no usable items, fall back to page["md"] or page["text"].
+    Uses clean markdown for RAG-friendly output.
     """
-
     loc = Path(paper_info[0])
     print_(f"Converting: {loc}")
 
-    # Load the input JSON file
-    with open(loc, "r", encoding="utf-8") as JSON:
-        root = json.load(JSON)
+    with open(loc, "r", encoding="utf-8") as f:
+        root = json.load(f)
 
-    # ---- Normalise to a list of page dicts ----
-    # Case 1: old UI format -> {"pages": [ ... ]}
-    if isinstance(root, dict) and "pages" in root:
-        pages = root["pages"]
+    pages = _extract_pages(root)
 
-    # Case 2: new CLI/API format -> [ { "pages": [ ... ], ... } ]
-    elif isinstance(root, list):
-        if len(root) == 0:
-            pages = []
-        elif isinstance(root[0], dict) and "pages" in root[0]:
-            pages = root[0]["pages"]
-        else:
-            # Fallback: assume the list itself is already a list of page dicts
-            pages = root
-    else:
-        print_(
-            f"  WARNING: Unexpected JSON structure in {loc}: "
-            f"top-level type={type(root)}"
-        )
-        pages = []
+    if not pages:
+        print_(f"  WARNING: No pages found in {loc}")
 
-    # ---- Build Document model ----
     doc_model = Document(
         id=paper_ref,
         title=paper_ref.replace("_", " "),
@@ -88,142 +233,120 @@ def convert_to_json(paper_ref, paper_info, output_dir):
         section_title = f"Page {page_number}" if page_number is not None else "Page"
         current_section = Section(section_title)
 
-        paragraphs_added = 0
+        # Get the markdown content (already prioritized in _extract_pages)
+        page_content = (page.get("md") or "").strip()
 
-        # 1) Preferred path: use item-level content (like the old pipeline)
-        items = page.get("items", [])
-        for item in items:
-            if not isinstance(item, dict):
-                continue
+        if page_content:
+            current_section.paragraphs.append(Paragraph(page_content))
 
-            text = item.get("md") or item.get("text")
-            if not text:
-                continue
-
-            text = text.strip()
-            if not text:
-                continue
-
-            # Skip noisy sentinel strings
-            if "CURRENT_PAGE_RAW_OCR_TEXT" in text:
-                continue
-
-            current_section.paragraphs.append(Paragraph(text))
-            paragraphs_added += 1
-
-        # 2) Fallback: if no good items, use page-level md/text once
-        if paragraphs_added == 0:
-            page_md = page.get("md")
-            page_text = page.get("text")
-
-            fallback = (page_md or page_text or "").strip()
-            if fallback:
-                # Also strip the sentinel if it appears at page level
-                fallback = fallback.replace("CURRENT_PAGE_RAW_OCR_TEXT", "").strip()
-                if fallback:
-                    current_section.paragraphs.append(Paragraph(fallback))
-
-        # Only add non-empty sections
+        # Only add sections with content
         if current_section.paragraphs:
             doc_model.sections.append(current_section)
 
-    # Save the final JSON + markdown + plaintext outputs
     save_json(doc_model, f"{paper_ref}.json", output_dir)
 
 
-def convert_pdf_via_api(paper_ref: str, pdf_path: str, source_url: str) -> None:
-    """
-    1. Use the llama-parse CLI (via generate_raw_json) to generate a raw JSON file
-       from the input PDF. This raw JSON has the same structure as the JSON that
-       would be downloaded from the LlamaParse web UI before its additional post-processing.
-    2. Try to use a function to follow the same processing to split up json into markdown elements
-    3. Feed that raw JSON now processed into the existing convert_to_json() function, which
-       builds a Document model and saves JSON/markdown/plaintext outputs.
-    """
+def convert_pdf_via_api(
+    paper_ref: str, pdf_path: str, source_url: str, manifest: Dict[str, Any]
+) -> None:
     pdf_loc = Path(pdf_path)
-
-    # Put the raw JSON next to the PDF, with a clear suffix.
-    # e.g. Donnelly2013.pdf -> Donnelly2013.llamaparse_raw.json
-    raw_json_path = pdf_loc.with_suffix(".llamaparse_raw.json")
+    raw_json_path = RAW_JSON_DIR / f"{paper_ref}.llamaparse_raw.json"
 
     print_(f"Generating raw JSON via API: {pdf_loc} -> {raw_json_path}")
     generate_raw_json(pdf_loc, raw_json_path)
 
-    # Reuse the existing convert_to_json workflow:
-    # paper_info[0] = path to raw JSON, paper_info[1] = source URL
+    check_llamaparse_success(raw_json_path)
+
+    paper_info = [str(raw_json_path), source_url]
+    convert_to_json(paper_ref, paper_info, json_output_dir)
+
+    pdf_key = Path(pdf_path).as_posix()
+    pdf_stat = Path(pdf_path).stat()
+
+    outputs = [
+        Path(f"{json_output_dir}/{paper_ref}.json").as_posix(),
+        Path(f"{markdown_output_dir}/{paper_ref}.md").as_posix(),
+        Path(f"{plaintext_output_dir}/{paper_ref}.txt").as_posix(),
+        raw_json_path.as_posix(),
+    ]
+
+    manifest["entries"][pdf_key] = {
+        "paper_ref": paper_ref,
+        "source_url": source_url,
+        "parsed_at": utc_now_iso(),
+        "pdf": {"mtime": pdf_stat.st_mtime, "size": pdf_stat.st_size},
+        "outputs": outputs,
+    }
+
+    save_manifest(MANIFEST_PATH, manifest)
+    print_(f"Manifest updated: {MANIFEST_PATH}")
+
+
+def convert_existing_raw_json(
+    paper_ref: str, raw_json_path: Path, source_url: str
+) -> None:
+    """
+    Convert an existing raw JSON file without re-parsing.
+    Useful for regenerating processed output from cached raw JSON.
+    """
+    print_(f"Converting existing raw JSON: {raw_json_path}")
+    check_llamaparse_success(raw_json_path)
     paper_info = [str(raw_json_path), source_url]
     convert_to_json(paper_ref, paper_info, json_output_dir)
 
 
-# Main execution block
 if __name__ == "__main__":
-    # Legacy path (using pre-downloaded UI JSON) – kept for reference:
-    # papers_ui = {
-    #     "Donnelly_et_al_2013": [
-    #         "corpus/papers/test/Donnelly2013_Llamaparse_Accurate.pdf.json",
-    #         "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001529",
-    #     ],
-    #     ...
-    # }
-    # for paper_ref, paper_info in papers_ui.items():
-    #     convert_to_json(paper_ref, paper_info, json_output_dir)
+    args = parse_args()
 
-    # New API-based path: start from PDFs instead of UI JSON
-
-    """""
-    papers_api = {
-        "Donnelly_et_al_2013": [
-            "corpus/papers/test/Donnelly2013.pdf",
-            "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001529",
-        ],
-        "Randi_et_al_2023": [
-            "corpus/papers/test/Randi2023.pdf",
-            "https://www.nature.com/articles/s41586-023-06683-4",
-        ],
-        "Corsi_et_al_2015": [
-            "corpus/papers/test/PrimerOnCElegans.pdf",
-            "https://academic.oup.com/genetics/article/200/2/387/5936175",
-        ],
-        "Sinha_et_al_2025": [
-            "corpus/papers/test/SinhaEtAl2025.pdf",
-            "https://elifesciences.org/articles/95135",
-        ],
-        "Wang_et_al_2024": [
-            "corpus/papers/test/Wang2024_NeurotransmitterAtlas.pdf",
-            "https://elifesciences.org/articles/95402" ,
-        ],
-        "BoyleBerriCohen2012": [
-            "corpus/papers/test/BoyleBerriCohen2012.json",
-            "https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2012.00010/full",
-        ],
-    }
-    """ ""
+    source_registry = load_source_registry(SOURCE_REGISTRY_PATH)
 
     papers_api = {}
 
     for pdf_path in PDF_FOLDER.glob("*.pdf"):
-        # Convert file name to a clean reference ID
-        # Example: "Donnelly2013.pdf" -> "Donnelly2013"
         paper_ref = pdf_path.stem
-
-        # No source URL available unless we add metadata later
-        source_url = ""
-
+        paper_meta = source_registry.get("papers", {}).get(paper_ref, {})
+        source_url = paper_meta.get("source_url", "") or ""
         papers_api[paper_ref] = [str(pdf_path), source_url]
 
-    # Loop through papers and process via the API-backed pipeline
+    if not papers_api:
+        print(f"WARNING: No PDFs found in {PDF_FOLDER.resolve()}")
+
+    manifest = load_manifest(MANIFEST_PATH)
+
     for paper_ref, (pdf_path, source_url) in papers_api.items():
-        convert_pdf_via_api(paper_ref, pdf_path, source_url)
+        pdf_loc = Path(pdf_path)
 
+        if args.skip:
+            # Skip parsing but still convert existing raw JSON
+            raw_json_path = RAW_JSON_DIR / f"{paper_ref}.llamaparse_raw.json"
+            if raw_json_path.exists():
+                print(f"Converting existing (--skip): {raw_json_path}")
+                convert_existing_raw_json(paper_ref, raw_json_path, source_url)
+            else:
+                print(f"Skipping (no raw JSON): {pdf_loc}")
+            continue
 
-# If we dont want to write out the papers individually.
-# Found a glob.glob technique but I remember you using something else.
+        try:
+            if args.reparse_all:
+                print(f"Parsing (forced): {pdf_loc}")
+                convert_pdf_via_api(paper_ref, pdf_path, source_url, manifest)
+                continue
 
-# if __name__ == "__main__":
-# Dynamically load all JSON files from the folder
-# input_dir = "openworm.ai/processed/markdown/wormatlas"
-# papers = {Path(file).stem: file for file in glob.glob(f"{input_dir}/*.json")}
+            reason = should_parse_pdf(pdf_loc, manifest, max_age_days=args.max_age_days)
 
-# Loop through papers and process markdown sections
-# for paper_ref, paper_location in papers.items():
-# convert_to_json(paper_ref, paper_location, output_dir)
+            if reason is None:
+                print(f"Skipping (fresh + unchanged): {pdf_loc}")
+                continue
+
+            print(f"Parsing ({reason}): {pdf_loc}")
+            convert_pdf_via_api(paper_ref, pdf_path, source_url, manifest)
+
+        except Exception as e:
+            print_(f"!! Failed parsing {pdf_loc}: {e}")
+            import traceback
+
+            traceback.print_exc()
+            continue
+
+    print(f"PDF_FOLDER resolved: {PDF_FOLDER.resolve()}")
+    print(f"PDF count: {len(list(PDF_FOLDER.glob('*.pdf')))}")
