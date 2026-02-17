@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-02-16T11:02:03.565298+00:00",
+  "entries": {
+    "corpus/papers/test/pdfs/Boyle,Berri,Cohen2012.pdf": {
+      "outputs": [
+        "processed/json/papers/Boyle,Berri,Cohen2012.json",
+        "processed/markdown/papers/Boyle,Berri,Cohen2012.md",
+        "processed/plaintext/papers/Boyle,Berri,Cohen2012.txt",
+        "corpus/papers/test/raw_json/Boyle,Berri,Cohen2012.llamaparse_raw.json"
+      ],
+      "paper_ref": "Boyle,Berri,Cohen2012",
+      "parsed_at": "2026-02-16T11:28:56.626014+00:00",
+      "pdf": {
+        "mtime": 1771239230.9704494,
+        "size": 9853425
+      },
+      "source_url": "https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2012.00010/full"
+    },
+    "corpus/papers/test/pdfs/Donnelly2013.pdf": {
+      "outputs": [
+        "processed/json/papers/Donnelly2013.json",
+        "processed/markdown/papers/Donnelly2013.md",
+        "processed/plaintext/papers/Donnelly2013.txt",
+        "corpus/papers/test/raw_json/Donnelly2013.llamaparse_raw.json"
+      ],
+      "paper_ref": "Donnelly2013",
+      "parsed_at": "2026-02-16T11:27:12.147796+00:00",
+      "pdf": {
+        "mtime": 1771239228.657078,
+        "size": 1822875
+      },
+      "source_url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001529"
+    },
+    "corpus/papers/test/pdfs/PrimerOnCElegans.pdf": {
+      "outputs": [
+        "processed/json/papers/PrimerOnCElegans.json",
+        "processed/markdown/papers/PrimerOnCElegans.md",
+        "processed/plaintext/papers/PrimerOnCElegans.txt",
+        "corpus/papers/test/raw_json/PrimerOnCElegans.llamaparse_raw.json"
+      ],
+      "paper_ref": "PrimerOnCElegans",
+      "parsed_at": "2026-02-16T11:04:54.989099+00:00",
+      "pdf": {
+        "mtime": 1771239223.7395124,
+        "size": 1987124
+      },
+      "source_url": "https://academic.oup.com/genetics/article/200/2/387/5936175"
+    },
+    "corpus/papers/test/pdfs/SinhaEtAl2025.pdf": {
+      "outputs": [
+        "processed/json/papers/SinhaEtAl2025.json",
+        "processed/markdown/papers/SinhaEtAl2025.md",
+        "processed/plaintext/papers/SinhaEtAl2025.txt",
+        "corpus/papers/test/raw_json/SinhaEtAl2025.llamaparse_raw.json"
+      ],
+      "paper_ref": "SinhaEtAl2025",
+      "parsed_at": "2026-02-16T11:08:13.707628+00:00",
+      "pdf": {
+        "mtime": 1771239193.1669536,
+        "size": 5238169
+      },
+      "source_url": "https://elifesciences.org/articles/95135"
+    },
+    "corpus/papers/test/pdfs/Wang2024_NeurotransmitterAtlas.pdf": {
+      "outputs": [
+        "processed/json/papers/Wang2024_NeurotransmitterAtlas.json",
+        "processed/markdown/papers/Wang2024_NeurotransmitterAtlas.md",
+        "processed/plaintext/papers/Wang2024_NeurotransmitterAtlas.txt",
+        "corpus/papers/test/raw_json/Wang2024_NeurotransmitterAtlas.llamaparse_raw.json"
+      ],
+      "paper_ref": "Wang2024_NeurotransmitterAtlas",
+      "parsed_at": "2026-02-16T11:10:44.518362+00:00",
+      "pdf": {
+        "mtime": 1771239206.714116,
+        "size": 16289655
+      },
+      "source_url": "https://elifesciences.org/articles/95402"
+    },
+    "corpus/papers/test/pdfs/kfn121.pdf": {
+      "outputs": [
+        "processed/json/papers/kfn121.json",
+        "processed/markdown/papers/kfn121.md",
+        "processed/plaintext/papers/kfn121.txt",
+        "corpus/papers/test/raw_json/kfn121.llamaparse_raw.json"
+      ],
+      "paper_ref": "kfn121",
+      "parsed_at": "2026-02-16T11:03:29.306751+00:00",
+      "pdf": {
+        "mtime": 1771239226.23415,
+        "size": 251170
+      },
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/18566021/"
+    }
+  },
+  "version": 1
+}
