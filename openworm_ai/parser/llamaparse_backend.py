@@ -1,11 +1,10 @@
 from __future__ import annotations
 
+import asyncio
 import json
 import os
-import time
 from pathlib import Path
 
-import requests
 from dotenv import load_dotenv
 
 load_dotenv(dotenv_path=".env")
@@ -21,23 +20,37 @@ def get_llama_api_key() -> str:
     return key
 
 
-def generate_raw_json(pdf_path: str | Path, json_output_path: str | Path) -> None:
+async def _parse_async(pdf_path: Path, json_output_path: Path) -> None:
     """
-    Use the llama-parse v2 API to generate raw JSON output.
+    Core async logic: upload PDF via SDK, parse it, save raw JSON output.
+    Uses the llama_cloud>=1.0 SDK (AsyncLlamaCloud) instead of raw requests.
     """
-    pdf_path = Path(pdf_path)
-    json_output_path = Path(json_output_path)
-    json_output_path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        from llama_cloud import AsyncLlamaCloud  # pip install llama_cloud>=1.0
+    except ImportError as exc:
+        raise ImportError(
+            "llama_cloud>=1.0 is required to call LlamaParse. "
+            "Run: pip install 'llama_cloud>=1.0'"
+        ) from exc
 
-    api_key = get_llama_api_key()
-    headers = {"Authorization": f"Bearer {api_key}", "accept": "application/json"}
+    client = AsyncLlamaCloud(api_key=get_llama_api_key())
 
-    upload_url = "https://api.cloud.llamaindex.ai/api/v2/parse/upload"
+    tier = os.environ.get("LLAMAPARSE_TIER", "cost_effective")
 
-    configuration = {
-        "tier": os.environ.get("LLAMAPARSE_TIER", "cost_effective"),
-        "version": "latest",
-        "output_options": {
+    print(f"[llamaparse] uploading: {pdf_path.name} (tier={tier})", flush=True)
+
+    # Step 1: upload the file
+    with open(pdf_path, "rb") as f:
+        file_obj = await client.files.create(file=f, purpose="parse")
+
+    print(f"[llamaparse] uploaded, file_id={file_obj.id}", flush=True)
+
+    # Step 2: parse with our preferred options
+    result = await client.parsing.parse(
+        file_id=file_obj.id,
+        tier=tier,
+        version="latest",
+        output_options={
             "markdown": {
                 "tables": {
                     "compact_markdown_tables": True,
@@ -47,106 +60,83 @@ def generate_raw_json(pdf_path: str | Path, json_output_path: str | Path) -> Non
                 "inline_images": False,
             }
         },
-    }
+        processing_options={
+            "ignore": {
+                # Reduces noise from two-column PDF layouts
+                "ignore_diagonal_text": True,
+            }
+        },
+        # CHANGED: added "items" so per-paragraph structure is preserved.
+        # items gives us individual text blocks per page rather than one
+        # large page blob, which produces much better RAG chunk granularity.
+        # text is kept as a fallback only.
+        expand=["text", "markdown", "items"],
+    )
 
-    print(f"[llamaparse] uploading: {pdf_path.name}", flush=True)
+    print("[llamaparse] parse complete, building output", flush=True)
 
-    with open(pdf_path, "rb") as f:
-        files = {
-            "file": (pdf_path.name, f, "application/pdf"),
-            "configuration": (None, json.dumps(configuration)),
-        }
-        r = requests.post(upload_url, headers=headers, files=files, timeout=360)
-    r.raise_for_status()
-    resp = r.json()
-
-    job_id = resp.get("id") or resp.get("job_id")
-    if not job_id:
-        raise RuntimeError(f"Unexpected response (no job id): {resp}")
-
-    result_url = f"https://api.cloud.llamaindex.ai/api/v2/parse/{job_id}"
-
-    deadline = time.time() + 1200  # 20 minutes
-    poll_sleep_s = 3
-
-    print(f"[llamaparse] polling job_id={job_id}", flush=True)
-
-    # Use VALID expand parameters to get the content inlined
-    # These are the valid ones from the error message you got earlier
-    expand = "text,items,markdown"
-
-    # Poll for completion
-    response = None
-    while time.time() < deadline:
-        try:
-            s = requests.get(
-                result_url, headers=headers, params={"expand": expand}, timeout=60
-            )
-            if s.status_code >= 400:
-                raise RuntimeError(f"Polling failed ({s.status_code}): {s.text}")
-
-            response = s.json()
-
-        except (
-            requests.exceptions.ConnectionError,
-            requests.exceptions.ChunkedEncodingError,
-        ) as e:
-            print(f"[llamaparse] transient connection error: {e}", flush=True)
-            time.sleep(5)
-            continue
-
-        job = response.get("job") or {}
-        status = (job.get("status") or "").lower()
-        print(f"[llamaparse] job.status={status}", flush=True)
-
-        if status in {"completed", "complete", "done"}:
-            break
-        if status in {"error", "failed"}:
-            raise RuntimeError(
-                f"LlamaParse failed: {job.get('error_message') or response}"
-            )
-
-        time.sleep(poll_sleep_s)
-    else:
-        raise RuntimeError("Timed out waiting for parse")
-
-    if not response:
-        raise RuntimeError("No response received from API")
-
-    # Now the content should be inlined
-    print("[llamaparse] extracting content from response", flush=True)
-
+    # Step 3: serialise into the raw JSON shape that convert_to_json expects.
+    # The old item-level pipeline reads items[*]["md"] as individual paragraphs.
     output = {}
 
-    # Extract what we got
-    if response.get("text"):
-        output["text"] = response["text"]
-        print("[llamaparse] extracted text", flush=True)
+    if result.markdown:
+        output["markdown"] = {
+            "pages": [
+                {"page_number": p.page_number, "markdown": p.markdown}
+                for p in result.markdown.pages
+            ]
+        }
 
-    if response.get("items"):
-        output["items"] = response["items"]
-        print("[llamaparse] extracted items", flush=True)
+    if result.text:
+        output["text"] = {
+            "pages": [
+                {"page_number": p.page_number, "text": p.text}
+                for p in result.text.pages
+            ]
+        }
 
-    if response.get("markdown"):
-        output["markdown"] = response["markdown"]
-        print("[llamaparse] extracted markdown", flush=True)
+    # ADDED: serialise items into the same per-page structure.
+    # Each page's items list contains individual text blocks (paragraphs,
+    # headings, table rows etc.) which convert_to_json reads as separate
+    # Paragraph objects — giving us the fine-grained chunking we want.
+    if result.items:
+        output["items"] = {
+            "pages": [
+                {
+                    "page_number": p.page_number,
+                    "items": [
+                        # Each item has type, md, text fields.
+                        # We preserve all fields so convert_to_json can
+                        # choose between md and text as needed.
+                        item.model_dump() if hasattr(item, "model_dump") else dict(item)
+                        for item in p.items
+                    ],
+                }
+                for p in result.items.pages
+            ]
+        }
 
     if not output:
-        # Save debug info
         debug_path = json_output_path.with_suffix(".debug.json")
         debug_path.write_text(
-            json.dumps(response, ensure_ascii=False, indent=2),
+            json.dumps({"error": "no content in result"}, indent=2),
             encoding="utf-8",
         )
         raise RuntimeError(
-            f"No content found after expanding. "
-            f"Response keys: {list(response.keys())}. "
-            f"Full response saved to {debug_path}"
+            f"No content returned from LlamaParse. Debug info saved to {debug_path}"
         )
 
-    # Save the output
+    json_output_path.parent.mkdir(parents=True, exist_ok=True)
     json_output_path.write_text(
         json.dumps(output, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
     print(f"[llamaparse] saved to {json_output_path}", flush=True)
+
+
+def generate_raw_json(pdf_path: str | Path, json_output_path: str | Path) -> None:
+    """
+    Public entry point (synchronous) — matches the signature expected by
+    the rest of the pipeline (parse_pdfs.py).
+    """
+    asyncio.run(_parse_async(Path(pdf_path), Path(json_output_path)))
