@@ -389,7 +389,16 @@ def get_llm_from_argv(argv):
         if a.upper() in ("GPT4O", "GPT-4O"):
             return LLM_GPT4o
 
-    # 4) Smart default: HuggingFace > Ollama > GPT-4o
+    # 4) Check for OpenAI key...
+
+    try:
+        _ = get_openai_api_key()  # Just try getting key
+        print("Using OpenAI API (OPENAI_API_KEY found)")
+        return LLM_GPT4o  # If key exists, default to GPT-4o for best quality
+    except RuntimeError:
+        print("! No OpenAI API key found -> skipping OpenAI models")
+
+    # 5) Smart default: HuggingFace > Ollama > GPT-4o
     # Prefer HuggingFace API (free, no local setup needed)
     if has_hf_token():
         print("Using HuggingFace API (HF_TOKEN found)")
