@@ -428,5 +428,10 @@ if __name__ == "__main__":
     import sys
 
     question = "Tell me briefly about the neuronal control of C. elegans locomotion and the influence of monoamines."
+
+    question = (
+        "I know you are a Large Language Model. Tell me your name, version and maker."
+    )
+
     llm_ver = get_llm_from_argv(sys.argv)
     ask_question_get_response(question, llm_ver)
