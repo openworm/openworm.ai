@@ -47,13 +47,20 @@ jobs:
 
 
     - name: Test interactions requiring API (requires OPENAI key)
-      if: ${{ matrix.runs-on == 'ubuntu-latest' && matrix.python-version == '3.12' && env.GITHUB_REPOSITORY_OWNER == 'openworm' }}
+      if: ${{ matrix.runs-on == 'ubuntu-latest' && matrix.python-version == '3.12' }}
       env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: | 
-        echo "Running (paid) API comands. Env:"
+
+        echo "Running (paid) API commands. Env:"
         env
-        ./regenerateAndTest.sh  # Test the parts requiring API keys...
+
+        REPO_OWNER=$(echo $GITHUB_REPOSITORY | cut -d'/' -f1)
+
+        if [ "$REPO_OWNER" == "openworm" ]; then
+          echo "Error: Repository owner is 'openworm'..."
+          ./regenerateAndTest.sh  # Test the parts requiring API keys...
+        fi
 
 
     - name: Final version info
