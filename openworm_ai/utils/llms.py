@@ -30,7 +30,6 @@ LLM_CMD_LINE_ARGS["-co"] = LLM_COHERE
 
 # ----------------------------
 # Hugging Face Inference Provider default (NEW)
-# Pick a good general instruct model. You can change this anytime.
 LLM_HF_QWEN25_7B = "huggingface:Qwen/Qwen2.5-7B-Instruct"
 LLM_CMD_LINE_ARGS["-hf"] = LLM_HF_QWEN25_7B
 # ----------------------------
