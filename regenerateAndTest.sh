@@ -6,7 +6,10 @@ ruff check openworm_ai/*.py openworm_ai/*/*.py openworm_ai/*/*/*.py
 
 pip install .[dev]
 
-if [ $1 == "-quiz" ]; then
+if [ $1 == "-llamaparse" ]; then
+    python -m openworm_ai.parser.llamaparse_backend 
+
+elif [ $1 == "-quiz" ]; then
     python -m openworm_ai.quiz.QuizMaster 10
     python -m openworm_ai.quiz.QuizMaster -ask
     python -m openworm_ai.quiz.QuizMaster -ask -o-t

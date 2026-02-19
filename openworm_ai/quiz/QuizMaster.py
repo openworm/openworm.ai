@@ -15,10 +15,13 @@ from openworm_ai.quiz.QuizModel import Answer, MultipleChoiceQuiz, Question
 from openworm_ai.utils.llms import (
     LLM_CLAUDE37,
     LLM_OLLAMA_GEMMA2,
+    LLM_HF_DEFAULT,
     ask_question_get_response,
     get_anthropic_key,
+    get_hf_token,
     get_llm,
     get_llm_from_argv,
+    is_huggingface_model,
 )
 
 # -----------------------------
@@ -44,13 +47,20 @@ def get_default_critic_llm_ver():
     """
     Choose the default critic model:
     - If an Anthropic key is available -> Claude 3.7 Sonnet
+    - If HuggingFace token available -> HF default model
     - Otherwise -> fall back to local Ollama model (gemma2)
     """
     try:
         key = get_anthropic_key()
+        if key:
+            return LLM_CLAUDE37
     except Exception:
-        key = None
-    return LLM_CLAUDE37 if key else LLM_OLLAMA_GEMMA2
+        pass
+
+    if get_hf_token():
+        return LLM_HF_DEFAULT
+
+    return LLM_OLLAMA_GEMMA2
 
 
 def score_question_with_critic(
@@ -120,29 +130,10 @@ MCQ:
 def parse_free_text_mcqs_to_items(text: str) -> List[dict]:
     """
     Tolerant streaming parser for small LLMs (llama3.2, etc).
-
-    Accepts:
-    - QUESTION: ...   OR any line ending with '?'
-    - CORRECT ANSWER: ...  (also accepts CORRECT:, ANSWER:)
-    - WRONG ANSWER: ...    (also accepts WRONG:, INCORRECT:)
-
-    Ignores:
-    - explanations
-    - prompt echoes
-    - random extra lines
-
-    Produces items in the canonical internal format:
-      {
-        "question": "...",
-        "options": [{"label":"A","text":"..."}, ...],
-        "correct_label":"A"
-      }
     """
-
     if not isinstance(text, str) or not text.strip():
         return []
 
-    # If the model echoed the whole prompt, try to start at the first QUESTION:
     i = text.upper().find("QUESTION:")
     if i != -1:
         text = text[i:]
@@ -173,13 +164,11 @@ def parse_free_text_mcqs_to_items(text: str) -> List[dict]:
 
         u = line.upper()
 
-        # QUESTION line
         if u.startswith("QUESTION:") or line.endswith("?"):
             flush()
             cur_q = line.split(":", 1)[1].strip() if ":" in line else line
             continue
 
-        # CORRECT line
         if (
             u.startswith("CORRECT ANSWER:")
             or u.startswith("CORRECT:")
@@ -188,7 +177,6 @@ def parse_free_text_mcqs_to_items(text: str) -> List[dict]:
             correct = line.split(":", 1)[1].strip() if ":" in line else line
             continue
 
-        # WRONG line
         if (
             u.startswith("WRONG ANSWER:")
             or u.startswith("WRONG:")
@@ -246,8 +234,22 @@ def question_to_text(item: dict) -> str:
 
 
 def get_embed_model_for_llm(llm_ver: str):
-    if llm_ver.startswith("Ollama:"):
-        return OllamaEmbedding(model_name=llm_ver.replace("Ollama:", ""))
+    """Get embedding model based on LLM type."""
+    # HuggingFace -> use HF API embeddings
+    if is_huggingface_model(llm_ver):
+        from llama_index.embeddings.huggingface_api import (
+            HuggingFaceInferenceAPIEmbedding,
+        )
+
+        return HuggingFaceInferenceAPIEmbedding(
+            model_name="BAAI/bge-small-en-v1.5", token=get_hf_token()
+        )
+
+    # Ollama -> local embeddings
+    if llm_ver.startswith("Ollama:") or llm_ver.startswith("ollama:"):
+        return OllamaEmbedding(model_name=llm_ver.split(":", 1)[1])
+
+    # Default: OpenAI embeddings
     return OpenAIEmbedding()
 
 
@@ -294,13 +296,12 @@ def deduplicate_questions_with_index(
 
 
 # -----------------------------
-# Main generation entrypoint (keeps old name)
+# Main generation entrypoint
 # -----------------------------
 
 
 def save_quiz(num_questions, num_answers, llm_ver, quiz_scope, temperature=0):
     """
-    Same external behavior as the old version, but internally:
     free-text generation -> tolerant parse -> critic -> embed-dedup -> save quiz json.
     """
     if quiz_scope == QuizScope.GeneralKnowledge:
@@ -318,12 +319,8 @@ def save_quiz(num_questions, num_answers, llm_ver, quiz_scope, temperature=0):
     else:
         raise ValueError(f"Unsupported quiz scope: {quiz_scope}")
 
-    # Over-generate so critic+dedup have room to work
     OVERGEN = 2
     target_valid = num_questions * OVERGEN
-
-    # Retry budget (small models fail format often)
-    # This keeps the pipeline robust instead of crashing early.
     max_calls = max(20, target_valid * 3)
 
     items: List[dict] = []
@@ -354,7 +351,7 @@ def save_quiz(num_questions, num_answers, llm_ver, quiz_scope, temperature=0):
     if not data:
         raise ValueError(
             f"No valid questions parsed after {calls} generation calls. "
-            f"Try a different local model (e.g. -ge2 or -o-m) or loosen the GENERATE_Q prompt."
+            f"Try a different model (e.g. -hf-mistral or -ge2) or loosen the GENERATE_Q prompt."
         )
 
     # Critic scoring
@@ -404,12 +401,12 @@ def save_quiz(num_questions, num_answers, llm_ver, quiz_scope, temperature=0):
 
     quiz.to_json_file(
         "openworm_ai/quiz/samples/%s_%iquestions%s.json"
-        % (llm_ver.replace(":", "_"), num_questions, suffix)
+        % (llm_ver.replace(":", "_").replace("/", "_"), num_questions, suffix)
     )
 
 
 # -----------------------------
-# CLI runner (keeps old behavior)
+# CLI runner
 # -----------------------------
 
 if __name__ == "__main__":
