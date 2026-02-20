@@ -28,6 +28,12 @@ LLM_CMD_LINE_ARGS["-c"] = LLM_CLAUDE37
 LLM_COHERE = "Cohere"
 LLM_CMD_LINE_ARGS["-co"] = LLM_COHERE
 
+# ----------------------------
+# Hugging Face Inference Provider default (NEW)
+LLM_HF_QWEN25_7B = "huggingface:Qwen/Qwen2.5-7B-Instruct"
+LLM_CMD_LINE_ARGS["-hf"] = LLM_HF_QWEN25_7B
+# ----------------------------
+
 LLM_OLLAMA_LLAMA32 = "ollama:llama3.2"
 LLM_CMD_LINE_ARGS["-o-l32"] = LLM_OLLAMA_LLAMA32
 LLM_OLLAMA_LLAMA32_1B = "ollama:llama3.2:1b"
@@ -73,6 +79,7 @@ PREF_ORDER_LLMS = LLMS_GEMINI + [
     LLM_GPT4o,
     LLM_CLAUDE37,
     LLM_COHERE,
+    # (HF isn't in PREF_ORDER_LLMS because it’s provider-routed; still supported via init_chat_model)
     LLM_OLLAMA_LLAMA32,
     LLM_OLLAMA_LLAMA32_1B,
     LLM_OLLAMA_MISTRAL,
@@ -100,18 +107,15 @@ def get_openai_api_key():
     1. Environment variables (preferred)
     2. A file '../oaik' (legacy OpenWorm option), IF it exists
     """
-    # 1. Try environment variable
     key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_KEY")
     if key:
         return key.strip()
 
-    # 2. Legacy fallback – only read file if it exists
     oaik_path = "../oaik"
     if os.path.exists(oaik_path):
         with open(oaik_path, "r") as f:
             return f.read().strip()
 
-    # 3. Nothing found -> fail clearly
     raise RuntimeError(
         "OpenAI API key not found.\n"
         "Set environment variable OPENAI_API_KEY or place a key in '../oaik'."
@@ -120,26 +124,35 @@ def get_openai_api_key():
 
 def get_llamaapi_key():
     llamaapi_key = os.environ.get("LLAMAAPI_KEY")
-
     return llamaapi_key
 
 
 def get_gemini_api_key():
     gemini_api_key = os.environ.get("GEMINI_API_KEY")
-
     return gemini_api_key
 
 
 def get_anthropic_key():
     anthropic_api_key = os.environ.get("CLAUDE_API_KEY")
-
     return anthropic_api_key
 
 
 def get_cohere_key():
     cohere_api_key = os.environ.get("COHERE_API_KEY")
-
     return cohere_api_key
+
+
+# ----------------------------
+# HF token detector (NEW)
+def has_hf_token():
+    # HF hub + inference providers commonly use one of these
+    return bool(
+        (os.environ.get("HF_TOKEN") or "").strip()
+        or (os.environ.get("HUGGINGFACEHUB_API_TOKEN") or "").strip()
+    )
+
+
+# ----------------------------
 
 
 GENERAL_QUERY_PROMPT_TEMPLATE = """Answer the following question. Provide succinct, yet scientifically accurate
@@ -160,16 +173,14 @@ def get_llm(llm_ver, temperature, limit_to_openwormai_llms=False):
 
         return ChatGoogleGenerativeAI(
             model=llm_ver,
-            google_api_key=get_gemini_api_key(),  # Retrieve API key
+            google_api_key=get_gemini_api_key(),
             temperature=temperature,
         )
 
     elif llm_ver == LLM_COHERE:
         from langchain_cohere import ChatCohere
 
-        # print(" ... Initializing ChatCohere model")
         llm = ChatCohere()
-
         return llm
 
     elif limit_to_openwormai_llms and llm_ver not in PREF_ORDER_LLMS:
@@ -282,17 +293,25 @@ def get_llm_from_argv(argv):
             return a
         if a.upper() in ("GPT4O", "GPT-4O"):
             return LLM_GPT4o
+        # NEW: allow passing huggingface:* directly
+        if a.startswith("huggingface:"):
+            return a
 
     # --- FINAL FAILSAFE ---
-    # If default GPT-4o chosen but key missing -> fallback to Ollama
+    # Prefer: OpenAI -> HuggingFace -> Ollama
     try:
         if requires_openai_key(llm_ver):
-            _ = get_openai_api_key()  # Just try getting key
+            _ = get_openai_api_key()
+            return llm_ver
     except Exception:
-        print("! No OpenAI key found -> using local Ollama model instead.")
-        return LLM_OLLAMA_LLAMA32
+        pass
 
-    return llm_ver
+    if has_hf_token():
+        print("! No OpenAI key found -> using Hugging Face inference model instead.")
+        return LLM_HF_QWEN25_7B
+
+    print("! No OpenAI key found and no HF token -> using local Ollama model instead.")
+    return LLM_OLLAMA_LLAMA32
 
 
 def ask_question_get_response(

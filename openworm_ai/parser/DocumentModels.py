@@ -17,9 +17,18 @@ class Paragraph(Base):
 
     Args:
         contents: Paragraph contents, which make up the :class:`Section`s.
+        section_id: The id of the parent Section (e.g. "Page 3").
+        paragraph_index: Zero-based index of this paragraph within its Section.
+        page_number: The page number this paragraph came from.
     """
 
     contents: str = field(validator=instance_of(str))
+
+    # Provenance metadata for chunk referencing in RAG query answers.
+    # doc_id and source are intentionally omitted here — they are already
+    # stored at the Document level and would be redundant on every paragraph.
+    paragraph_index: int = field(default=None, validator=optional(instance_of(int)))
+    page_number: int = field(default=None, validator=optional(instance_of(int)))
 
 
 @modelspec.define
@@ -38,7 +47,9 @@ class Reference(Base):
 class Section(Base):
     """
     A model of a section of the :class:`Document`.
-    Will contain one :class:`Paragraph` or more, i.e the :class:`Paragraph`(s) in the section, probably related to the :code:`title` of the `Document <#document>`_.
+    Will contain one :class:`Paragraph` or more, i.e the :class:`Paragraph`(s)
+    in the section, probably related to the :code:`title` of the
+    `Document <#document>`_.
 
     Args:
         id: The id of the section

@@ -1,0 +1,141 @@
+{
+  "papers": {
+    "Boyle,Berri,Cohen2012": {
+      "name": "Boyle,Berri,Cohen2012",
+      "source_url": "https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2012.00010/full",
+      "doi": "10.3389/fncom.2012.00010",
+      "semantic_paperId": "344636b342d28963d4c247e2072ae6efae63f3e9",
+      "title": "Gait Modulation in C. elegans: An Integrated Neuromechanical Model",
+      "year": 2012,
+      "authors": [
+        "J. Boyle",
+        "S. Berri",
+        "N. Cohen"
+      ],
+      "venue": "Frontiers in Computational Neuroscience",
+      "semantic_url": "https://www.semanticscholar.org/paper/344636b342d28963d4c247e2072ae6efae63f3e9",
+      "citation": "Boyle et al., 2012"
+    },
+    "Donnelly2013": {
+      "name": "Donnelly2013",
+      "source_url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001529",
+      "doi": "10.1371/journal.pbio.1001529",
+      "semantic_paperId": "73288d8ac24f8d900e2737dd810be6272586fac3",
+      "title": "Monoaminergic Orchestration of Motor Programs in a Complex C. elegans Behavior",
+      "year": 2013,
+      "authors": [
+        "Jamie L. Donnelly",
+        "Christopher M. Clark",
+        "Andrew M Leifer",
+        "Jennifer K Pirri",
+        "M. Haburcak",
+        "M. Francis",
+        "Aravinthan D. T. Samuel",
+        "Mark J Alkema"
+      ],
+      "venue": "PLoS Biology",
+      "semantic_url": "https://www.semanticscholar.org/paper/73288d8ac24f8d900e2737dd810be6272586fac3",
+      "citation": "Donnelly et al., 2013"
+    },
+    "kfn121": {
+      "name": "kfn121",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/18566021/",
+      "doi": "10.1093/toxsci/kfn121",
+      "semantic_paperId": "6350801e77016a4d4d2ee19b6012eb797b8116c3",
+      "title": "Caenorhabditis elegans: An Emerging Model in Biomedical and Environmental Toxicology",
+      "year": 2008,
+      "authors": [
+        "M. C. Leung",
+        "Phillip L. Williams",
+        "Alexandre Benedetto",
+        "Catherine Au",
+        "K. Helmcke",
+        "M. Aschner",
+        "Joel N. Meyer"
+      ],
+      "venue": "Toxicological Sciences",
+      "semantic_url": "https://www.semanticscholar.org/paper/6350801e77016a4d4d2ee19b6012eb797b8116c3",
+      "citation": "Leung et al., 2008"
+    },
+    "PrimerOnCElegans": {
+      "name": "PrimerOnCElegans",
+      "source_url": "https://academic.oup.com/genetics/article/200/2/387/5936175",
+      "doi": "10.1534/genetics.115.176099",
+      "semantic_paperId": "4450d0b3d3bfde5c0255bd3856f4616fb5ef0906",
+      "title": "A Transparent Window into Biology: A Primer on Caenorhabditis elegans",
+      "year": 2015,
+      "authors": [
+        "A. K. Corsi",
+        "B. Wightman",
+        "M. Chalfie"
+      ],
+      "venue": "Genetics",
+      "semantic_url": "https://www.semanticscholar.org/paper/4450d0b3d3bfde5c0255bd3856f4616fb5ef0906",
+      "citation": "Corsi et al., 2015"
+    },
+    "Randi2023": {
+      "name": "Randi2023",
+      "source_url": "https://www.nature.com/articles/s41586-023-06683-4",
+      "doi": "10.1038/s41586-023-06683-4",
+      "semantic_paperId": "640f726a82931be2dfe2248074bbeff4d7671695",
+      "title": "Neural signal propagation atlas of Caenorhabditis elegans",
+      "year": 2023,
+      "authors": [
+        "F. Randi",
+        "A. Sharma",
+        "Sophie Dvali",
+        "Andrew M Leifer"
+      ],
+      "venue": "Nature",
+      "semantic_url": "https://www.semanticscholar.org/paper/640f726a82931be2dfe2248074bbeff4d7671695",
+      "citation": "Randi et al., 2023"
+    },
+    "SinhaEtAl2025": {
+      "name": "SinhaEtAl2025",
+      "source_url": "https://elifesciences.org/articles/95135",
+      "doi": "10.1101/2023.12.07.570537",
+      "semantic_paperId": "d4f639d85606b8e5bba83aa18abca725a5a219e9",
+      "title": "The NeuroML ecosystem for standardized multi-scale modeling in neuroscience",
+      "year": 2024,
+      "authors": [
+        "Ankur Sinha",
+        "P. Gleeson",
+        "Bóris Marin",
+        "S. Dura-Bernal",
+        "Sotirios Panagiotou",
+        "Sharon Crook",
+        "Matteo Cantarelli",
+        "Robert C. Cannon",
+        "Andrew P. Davison",
+        "Harsha Gurnani",
+        "R. A. Silver"
+      ],
+      "venue": "bioRxiv",
+      "semantic_url": "https://www.semanticscholar.org/paper/d4f639d85606b8e5bba83aa18abca725a5a219e9",
+      "citation": "Sinha et al., 2024"
+    },
+    "Wang2024_NeurotransmitterAtlas": {
+      "name": "Wang2024_NeurotransmitterAtlas",
+      "source_url": "https://elifesciences.org/articles/95402",
+      "doi": "10.7554/eLife.95402",
+      "semantic_paperId": "960b8a69691c31ca6e449917837857697b01ea84",
+      "title": "A neurotransmitter atlas of C. elegans males and hermaphrodites",
+      "year": 2024,
+      "authors": [
+        "Chen Wang",
+        "Berta Vidal",
+        "Surojit Sural",
+        "Curtis M. Loer",
+        "G. Aguilar",
+        "Daniel M. Merritt",
+        "I. A. Toker",
+        "Merly C. Vogt",
+        "Cyril C Cros",
+        "Oliver Hobert"
+      ],
+      "venue": "eLife",
+      "semantic_url": "https://www.semanticscholar.org/paper/960b8a69691c31ca6e449917837857697b01ea84",
+      "citation": "Wang et al., 2024"
+    }
+  }
+}
