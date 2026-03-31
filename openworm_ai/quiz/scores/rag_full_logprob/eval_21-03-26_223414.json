@@ -1,0 +1,48 @@
+{
+    "Title": "RAG Evaluation \u2014 Pretrained / RAG-Only / Hybrid / RAG-Informed",
+    "Description": "Compares four answering strategies: (1) Pretrained-only knowledge, (2) RAG-only (answer from retrieved context, skip if none), (3) Hybrid (use RAG if similarity >= threshold, else pretrained), (4) RAG-informed (context provided but model decides relevance). Includes raw responses and error categorisation per question.",
+    "RAG Retrieval Threshold": 0.7,
+    "Num Chunks Retrieved": 8,
+    "Date": "21-03-2026 22:34:38",
+    "Results": [
+        {
+            "Quiz Category": "C. elegans (Corpus)",
+            "LLM": "claude-3-7-sonnet-20250219",
+            "Total Questions": 100,
+            "Pretrained Correct": 0,
+            "Pretrained Accuracy (%)": 0.0,
+            "RAG Questions With Context": 100,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 0,
+            "Hybrid Accuracy (%)": 0.0,
+            "Hybrid Used RAG": 77,
+            "Hybrid Used Pretrained": 23,
+            "Informed Correct": 0,
+            "Informed Accuracy (%)": 0.0,
+            "Agreement Correct": 0,
+            "Agreement Accuracy (%)": 0.0,
+            "Agreement Agreed": 0,
+            "Agreement Disagreed": 100,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": 0.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "no_response": 100
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "no_response": 100
+            },
+            "Context Coverage (%)": 100.0,
+            "Avg Similarity Score": 0.7505,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 23.9,
+            "Avg Response Time (s)": 0.239
+        }
+    ]
+}

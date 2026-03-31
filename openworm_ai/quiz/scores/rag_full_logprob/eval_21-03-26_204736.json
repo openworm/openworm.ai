@@ -1,0 +1,1313 @@
+{
+    "Title": "RAG Evaluation \u2014 Pretrained / RAG-Only / Hybrid / RAG-Informed",
+    "Description": "Compares four answering strategies: (1) Pretrained-only knowledge, (2) RAG-only (answer from retrieved context, skip if none), (3) Hybrid (use RAG if similarity >= threshold, else pretrained), (4) RAG-informed (context provided but model decides relevance). Includes raw responses and error categorisation per question.",
+    "RAG Retrieval Threshold": 0.7,
+    "Num Chunks Retrieved": 8,
+    "Date": "21-03-2026 22:27:35",
+    "Results": [
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:meta-llama/Llama-3.2-1B-Instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 72,
+            "Pretrained Accuracy (%)": 72.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 72,
+            "Hybrid Accuracy (%)": 72.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 72,
+            "Informed Accuracy (%)": 72.0,
+            "Agreement Correct": 72,
+            "Agreement Accuracy (%)": 72.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -72.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "wrong_answer": 28,
+                "correct": 72
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "wrong_answer": 28,
+                "correct": 72
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 74.0,
+            "Avg Response Time (s)": 0.74
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:microsoft/Phi-3-mini-4k-instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 0,
+            "Pretrained Accuracy (%)": 0.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 0,
+            "Hybrid Accuracy (%)": 0.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 0,
+            "Informed Accuracy (%)": 0.0,
+            "Agreement Correct": 0,
+            "Agreement Accuracy (%)": 0.0,
+            "Agreement Agreed": 0,
+            "Agreement Disagreed": 100,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": 0.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "no_response": 100
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "no_response": 100
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 0.1,
+            "Avg Response Time (s)": 0.001
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:Qwen/Qwen2.5-7B-Instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 90,
+            "Pretrained Accuracy (%)": 90.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 90,
+            "Hybrid Accuracy (%)": 90.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 90,
+            "Informed Accuracy (%)": 90.0,
+            "Agreement Correct": 90,
+            "Agreement Accuracy (%)": 90.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -90.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 90,
+                "wrong_answer": 10
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 90,
+                "wrong_answer": 10
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 33.0,
+            "Avg Response Time (s)": 0.33
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:mistralai/Mistral-7B-Instruct-v0.2",
+            "Total Questions": 100,
+            "Pretrained Correct": 85,
+            "Pretrained Accuracy (%)": 85.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 85,
+            "Hybrid Accuracy (%)": 85.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 85,
+            "Informed Accuracy (%)": 85.0,
+            "Agreement Correct": 85,
+            "Agreement Accuracy (%)": 85.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -85.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "wrong_answer": 15,
+                "correct": 85
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "wrong_answer": 15,
+                "correct": 85
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 183.5,
+            "Avg Response Time (s)": 1.835
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 93,
+            "Pretrained Accuracy (%)": 93.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 93,
+            "Hybrid Accuracy (%)": 93.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 93,
+            "Informed Accuracy (%)": 93.0,
+            "Agreement Correct": 93,
+            "Agreement Accuracy (%)": 93.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -93.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 93,
+                "wrong_answer": 7
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 93,
+                "wrong_answer": 7
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 79.8,
+            "Avg Response Time (s)": 0.798
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:google/gemma-2-9b-it",
+            "Total Questions": 100,
+            "Pretrained Correct": 95,
+            "Pretrained Accuracy (%)": 95.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 95,
+            "Hybrid Accuracy (%)": 95.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 95,
+            "Informed Accuracy (%)": 95.0,
+            "Agreement Correct": 95,
+            "Agreement Accuracy (%)": 95.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -95.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 95,
+                "wrong_answer": 5
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 95,
+                "wrong_answer": 5
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 133.1,
+            "Avg Response Time (s)": 1.331
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:Qwen/Qwen3-8B",
+            "Total Questions": 100,
+            "Pretrained Correct": 0,
+            "Pretrained Accuracy (%)": 0.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 0,
+            "Hybrid Accuracy (%)": 0.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 0,
+            "Informed Accuracy (%)": 0.0,
+            "Agreement Correct": 0,
+            "Agreement Accuracy (%)": 0.0,
+            "Agreement Agreed": 0,
+            "Agreement Disagreed": 100,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": 0.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "no_response": 100
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "no_response": 100
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 422.1,
+            "Avg Response Time (s)": 4.221
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:Qwen/Qwen2.5-14B-Instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 96,
+            "Pretrained Accuracy (%)": 96.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 96,
+            "Hybrid Accuracy (%)": 96.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 96,
+            "Informed Accuracy (%)": 96.0,
+            "Agreement Correct": 96,
+            "Agreement Accuracy (%)": 96.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -96.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "wrong_answer": 4,
+                "correct": 96
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "wrong_answer": 4,
+                "correct": 96
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 130.5,
+            "Avg Response Time (s)": 1.305
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:microsoft/Phi-3-medium-4k-instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 0,
+            "Pretrained Accuracy (%)": 0.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 0,
+            "Hybrid Accuracy (%)": 0.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 0,
+            "Informed Accuracy (%)": 0.0,
+            "Agreement Correct": 0,
+            "Agreement Accuracy (%)": 0.0,
+            "Agreement Agreed": 0,
+            "Agreement Disagreed": 100,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": 0.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "no_response": 100
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "no_response": 100
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 0.1,
+            "Avg Response Time (s)": 0.001
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:google/gemma-3-27b-it",
+            "Total Questions": 100,
+            "Pretrained Correct": 98,
+            "Pretrained Accuracy (%)": 98.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 98,
+            "Hybrid Accuracy (%)": 98.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 98,
+            "Informed Accuracy (%)": 98.0,
+            "Agreement Correct": 98,
+            "Agreement Accuracy (%)": 98.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -98.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 98,
+                "wrong_answer": 2
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 98,
+                "wrong_answer": 2
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 172.0,
+            "Avg Response Time (s)": 1.72
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:Qwen/Qwen2.5-32B-Instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 96,
+            "Pretrained Accuracy (%)": 96.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 96,
+            "Hybrid Accuracy (%)": 96.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 96,
+            "Informed Accuracy (%)": 96.0,
+            "Agreement Correct": 96,
+            "Agreement Accuracy (%)": 96.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -96.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 96,
+                "wrong_answer": 4
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 96,
+                "wrong_answer": 4
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 162.8,
+            "Avg Response Time (s)": 1.628
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:CohereLabs/aya-expanse-32b",
+            "Total Questions": 100,
+            "Pretrained Correct": 93,
+            "Pretrained Accuracy (%)": 93.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 93,
+            "Hybrid Accuracy (%)": 93.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 93,
+            "Informed Accuracy (%)": 93.0,
+            "Agreement Correct": 93,
+            "Agreement Accuracy (%)": 93.0,
+            "Agreement Agreed": 99,
+            "Agreement Disagreed": 1,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -93.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 93,
+                "wrong_answer": 6,
+                "parse_failure": 1
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 93,
+                "wrong_answer": 6,
+                "parse_failure": 1
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 63.6,
+            "Avg Response Time (s)": 0.636
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:Qwen/Qwen3-32B",
+            "Total Questions": 100,
+            "Pretrained Correct": 6,
+            "Pretrained Accuracy (%)": 6.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 6,
+            "Hybrid Accuracy (%)": 6.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 6,
+            "Informed Accuracy (%)": 6.0,
+            "Agreement Correct": 6,
+            "Agreement Accuracy (%)": 6.0,
+            "Agreement Agreed": 12,
+            "Agreement Disagreed": 88,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -6.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "parse_failure": 88,
+                "wrong_answer": 6,
+                "correct": 6
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "parse_failure": 88,
+                "wrong_answer": 6,
+                "correct": 6
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 111.1,
+            "Avg Response Time (s)": 1.111
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+            "Total Questions": 100,
+            "Pretrained Correct": 0,
+            "Pretrained Accuracy (%)": 0.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 0,
+            "Hybrid Accuracy (%)": 0.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 0,
+            "Informed Accuracy (%)": 0.0,
+            "Agreement Correct": 0,
+            "Agreement Accuracy (%)": 0.0,
+            "Agreement Agreed": 0,
+            "Agreement Disagreed": 100,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": 0.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "no_response": 100
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "no_response": 100
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 625.2,
+            "Avg Response Time (s)": 6.252
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:Qwen/Qwen2.5-72B-Instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 96,
+            "Pretrained Accuracy (%)": 96.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 96,
+            "Hybrid Accuracy (%)": 96.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 96,
+            "Informed Accuracy (%)": 96.0,
+            "Agreement Correct": 96,
+            "Agreement Accuracy (%)": 96.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -96.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 96,
+                "wrong_answer": 4
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 96,
+                "wrong_answer": 4
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 106.5,
+            "Avg Response Time (s)": 1.065
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:meta-llama/Llama-3.3-70B-Instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 97,
+            "Pretrained Accuracy (%)": 97.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 97,
+            "Hybrid Accuracy (%)": 97.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 97,
+            "Informed Accuracy (%)": 97.0,
+            "Agreement Correct": 97,
+            "Agreement Accuracy (%)": 97.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -97.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 97,
+                "wrong_answer": 3
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 97,
+                "wrong_answer": 3
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 44.1,
+            "Avg Response Time (s)": 0.441
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:mistralai/Mixtral-8x22B-Instruct-v0.1",
+            "Total Questions": 100,
+            "Pretrained Correct": 97,
+            "Pretrained Accuracy (%)": 97.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 97,
+            "Hybrid Accuracy (%)": 97.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 97,
+            "Informed Accuracy (%)": 97.0,
+            "Agreement Correct": 97,
+            "Agreement Accuracy (%)": 97.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -97.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 97,
+                "wrong_answer": 3
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 97,
+                "wrong_answer": 3
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 96.4,
+            "Avg Response Time (s)": 0.964
+        },
+        {
+            "Quiz Category": "General Knowledge",
+            "LLM": "huggingface:deepseek-ai/DeepSeek-R1",
+            "Total Questions": 100,
+            "Pretrained Correct": 94,
+            "Pretrained Accuracy (%)": 94.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 94,
+            "Hybrid Accuracy (%)": 94.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 94,
+            "Informed Accuracy (%)": 94.0,
+            "Agreement Correct": 94,
+            "Agreement Accuracy (%)": 94.0,
+            "Agreement Agreed": 99,
+            "Agreement Disagreed": 1,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -94.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "wrong_answer": 5,
+                "correct": 94,
+                "no_response": 1
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "wrong_answer": 5,
+                "correct": 94,
+                "no_response": 1
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 1409.1,
+            "Avg Response Time (s)": 14.091
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:meta-llama/Llama-3.2-1B-Instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 76,
+            "Pretrained Accuracy (%)": 76.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 76,
+            "Hybrid Accuracy (%)": 76.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 76,
+            "Informed Accuracy (%)": 76.0,
+            "Agreement Correct": 76,
+            "Agreement Accuracy (%)": 76.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -76.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "wrong_answer": 24,
+                "correct": 76
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "wrong_answer": 24,
+                "correct": 76
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 74.1,
+            "Avg Response Time (s)": 0.741
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:microsoft/Phi-3-mini-4k-instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 0,
+            "Pretrained Accuracy (%)": 0.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 0,
+            "Hybrid Accuracy (%)": 0.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 0,
+            "Informed Accuracy (%)": 0.0,
+            "Agreement Correct": 0,
+            "Agreement Accuracy (%)": 0.0,
+            "Agreement Agreed": 0,
+            "Agreement Disagreed": 100,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": 0.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "no_response": 100
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "no_response": 100
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 0.0,
+            "Avg Response Time (s)": 0.0
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:Qwen/Qwen2.5-7B-Instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 99,
+            "Pretrained Accuracy (%)": 99.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 99,
+            "Hybrid Accuracy (%)": 99.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 99,
+            "Informed Accuracy (%)": 99.0,
+            "Agreement Correct": 99,
+            "Agreement Accuracy (%)": 99.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -99.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 99,
+                "wrong_answer": 1
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 99,
+                "wrong_answer": 1
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 32.2,
+            "Avg Response Time (s)": 0.322
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:mistralai/Mistral-7B-Instruct-v0.2",
+            "Total Questions": 100,
+            "Pretrained Correct": 91,
+            "Pretrained Accuracy (%)": 91.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 91,
+            "Hybrid Accuracy (%)": 91.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 91,
+            "Informed Accuracy (%)": 91.0,
+            "Agreement Correct": 91,
+            "Agreement Accuracy (%)": 91.0,
+            "Agreement Agreed": 99,
+            "Agreement Disagreed": 1,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -91.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 91,
+                "wrong_answer": 8,
+                "parse_failure": 1
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 91,
+                "wrong_answer": 8,
+                "parse_failure": 1
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 165.6,
+            "Avg Response Time (s)": 1.656
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 99,
+            "Pretrained Accuracy (%)": 99.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 99,
+            "Hybrid Accuracy (%)": 99.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 99,
+            "Informed Accuracy (%)": 99.0,
+            "Agreement Correct": 99,
+            "Agreement Accuracy (%)": 99.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -99.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 99,
+                "wrong_answer": 1
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 99,
+                "wrong_answer": 1
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 82.3,
+            "Avg Response Time (s)": 0.823
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:google/gemma-2-9b-it",
+            "Total Questions": 100,
+            "Pretrained Correct": 99,
+            "Pretrained Accuracy (%)": 99.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 99,
+            "Hybrid Accuracy (%)": 99.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 99,
+            "Informed Accuracy (%)": 99.0,
+            "Agreement Correct": 99,
+            "Agreement Accuracy (%)": 99.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -99.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 99,
+                "wrong_answer": 1
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 99,
+                "wrong_answer": 1
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 108.0,
+            "Avg Response Time (s)": 1.08
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:Qwen/Qwen3-8B",
+            "Total Questions": 100,
+            "Pretrained Correct": 0,
+            "Pretrained Accuracy (%)": 0.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 0,
+            "Hybrid Accuracy (%)": 0.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 0,
+            "Informed Accuracy (%)": 0.0,
+            "Agreement Correct": 0,
+            "Agreement Accuracy (%)": 0.0,
+            "Agreement Agreed": 0,
+            "Agreement Disagreed": 100,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": 0.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "no_response": 100
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "no_response": 100
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 423.0,
+            "Avg Response Time (s)": 4.23
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:Qwen/Qwen2.5-14B-Instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 100,
+            "Pretrained Accuracy (%)": 100.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 100,
+            "Hybrid Accuracy (%)": 100.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 100,
+            "Informed Accuracy (%)": 100.0,
+            "Agreement Correct": 100,
+            "Agreement Accuracy (%)": 100.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -100.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 100
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 100
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 137.9,
+            "Avg Response Time (s)": 1.379
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:microsoft/Phi-3-medium-4k-instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 0,
+            "Pretrained Accuracy (%)": 0.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 0,
+            "Hybrid Accuracy (%)": 0.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 0,
+            "Informed Accuracy (%)": 0.0,
+            "Agreement Correct": 0,
+            "Agreement Accuracy (%)": 0.0,
+            "Agreement Agreed": 0,
+            "Agreement Disagreed": 100,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": 0.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "no_response": 100
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "no_response": 100
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 0.0,
+            "Avg Response Time (s)": 0.0
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:google/gemma-3-27b-it",
+            "Total Questions": 100,
+            "Pretrained Correct": 99,
+            "Pretrained Accuracy (%)": 99.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 99,
+            "Hybrid Accuracy (%)": 99.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 99,
+            "Informed Accuracy (%)": 99.0,
+            "Agreement Correct": 99,
+            "Agreement Accuracy (%)": 99.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -99.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 99,
+                "wrong_answer": 1
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 99,
+                "wrong_answer": 1
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 193.1,
+            "Avg Response Time (s)": 1.931
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:Qwen/Qwen2.5-32B-Instruct",
+            "Total Questions": 100,
+            "Pretrained Correct": 99,
+            "Pretrained Accuracy (%)": 99.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 99,
+            "Hybrid Accuracy (%)": 99.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 99,
+            "Informed Accuracy (%)": 99.0,
+            "Agreement Correct": 99,
+            "Agreement Accuracy (%)": 99.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -99.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 99,
+                "wrong_answer": 1
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 99,
+                "wrong_answer": 1
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 169.0,
+            "Avg Response Time (s)": 1.69
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:CohereLabs/aya-expanse-32b",
+            "Total Questions": 100,
+            "Pretrained Correct": 97,
+            "Pretrained Accuracy (%)": 97.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 97,
+            "Hybrid Accuracy (%)": 97.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 97,
+            "Informed Accuracy (%)": 97.0,
+            "Agreement Correct": 97,
+            "Agreement Accuracy (%)": 97.0,
+            "Agreement Agreed": 100,
+            "Agreement Disagreed": 0,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -97.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "correct": 97,
+                "wrong_answer": 3
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "correct": 97,
+                "wrong_answer": 3
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 50.6,
+            "Avg Response Time (s)": 0.506
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:Qwen/Qwen3-32B",
+            "Total Questions": 100,
+            "Pretrained Correct": 15,
+            "Pretrained Accuracy (%)": 15.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 15,
+            "Hybrid Accuracy (%)": 15.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 15,
+            "Informed Accuracy (%)": 15.0,
+            "Agreement Correct": 15,
+            "Agreement Accuracy (%)": 15.0,
+            "Agreement Agreed": 23,
+            "Agreement Disagreed": 77,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": -15.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "parse_failure": 77,
+                "correct": 15,
+                "wrong_answer": 8
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "parse_failure": 77,
+                "correct": 15,
+                "wrong_answer": 8
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 101.5,
+            "Avg Response Time (s)": 1.015
+        },
+        {
+            "Quiz Category": "Science",
+            "LLM": "huggingface:deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+            "Total Questions": 100,
+            "Pretrained Correct": 0,
+            "Pretrained Accuracy (%)": 0.0,
+            "RAG Questions With Context": 0,
+            "RAG Correct": 0,
+            "RAG Accuracy on Retrieved (%)": 0.0,
+            "RAG Accuracy Overall (%)": 0.0,
+            "Hybrid Correct": 0,
+            "Hybrid Accuracy (%)": 0.0,
+            "Hybrid Used RAG": 0,
+            "Hybrid Used Pretrained": 100,
+            "Informed Correct": 0,
+            "Informed Accuracy (%)": 0.0,
+            "Agreement Correct": 0,
+            "Agreement Accuracy (%)": 0.0,
+            "Agreement Agreed": 1,
+            "Agreement Disagreed": 99,
+            "Hybrid vs Pretrained Delta (pp)": 0.0,
+            "RAG vs Pretrained Delta (pp)": 0.0,
+            "Informed vs Pretrained Delta (pp)": 0.0,
+            "Pretrained Errors": {
+                "no_response": 100
+            },
+            "RAG Errors": {
+                "no_response": 100
+            },
+            "Informed Errors": {
+                "no_response": 100
+            },
+            "Context Coverage (%)": 0.0,
+            "Avg Similarity Score": 0.0,
+            "RAG Threshold": 0.7,
+            "Num Chunks": 8,
+            "Total Time (s)": 612.5,
+            "Avg Response Time (s)": 6.125
+        }
+    ]
+}
