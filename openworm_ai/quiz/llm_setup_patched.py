@@ -3,15 +3,18 @@ Patched LLM setup for quiz evaluation - bypasses overly strict health checks.
 """
 
 import os
-import time
 from langchain.chat_models import init_chat_model
 from langchain.embeddings import init_embeddings
-from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint, HuggingFaceEndpointEmbeddings
+from langchain_huggingface import (
+    ChatHuggingFace,
+    HuggingFaceEndpoint,
+    HuggingFaceEndpointEmbeddings,
+)
 
 
 def setup_llm_patched(model_name_full, logger):
     """Set up a chat model without strict health check assertions"""
-    
+
     if model_name_full.lower().startswith("huggingface:"):
         _, model_name, provider = model_name_full.split(":")
         logger.debug(f"Using huggingface model: {model_name}")
@@ -41,17 +44,17 @@ def setup_llm_patched(model_name_full, logger):
         except Exception as e:
             logger.warning(f"Model health check failed (continuing anyway): {e}")
             # Don't fail - continue anyway
-    
+
     else:
         # For non-HuggingFace models (OpenAI, Anthropic, Ollama)
         model_var = init_chat_model(
             model_name_full, configurable_fields=("temperature")
         )
-        
+
         # Try health check
         try:
             result = model_var.invoke("Hello", config={"timeout": 10})
-            logger.debug(f"Model health check passed")
+            logger.debug("Model health check passed")
         except Exception as e:
             logger.warning(f"Model health check failed (continuing anyway): {e}")
 
@@ -61,11 +64,11 @@ def setup_llm_patched(model_name_full, logger):
 
 def setup_embedding_patched(model_name_full, logger):
     """Set up embedding model - handles both 2-part and 3-part formats"""
-    
+
     # Handle HuggingFace embeddings
     if model_name_full.lower().startswith("huggingface:"):
         parts = model_name_full.split(":")
-        
+
         if len(parts) == 2:
             # Format: huggingface:BAAI/bge-large-en-v1.5
             _, model_name = parts
@@ -75,7 +78,7 @@ def setup_embedding_patched(model_name_full, logger):
             _, model_name, provider = parts
         else:
             raise ValueError(f"Invalid model format: {model_name_full}")
-        
+
         logger.debug(f"Using huggingface embedding model: {model_name}")
 
         hf_token = os.environ.get("HF_TOKEN", None)

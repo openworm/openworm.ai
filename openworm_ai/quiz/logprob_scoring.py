@@ -81,6 +81,7 @@ def _extract_letter_from_text(text: str) -> Optional[str]:
         "Because..."           -> None  ('B' starts a word)
     """
     import re
+
     if not text:
         return None
 
@@ -97,18 +98,18 @@ def _extract_letter_from_text(text: str) -> Optional[str]:
 
     # 3. Priority patterns — checked in order, first match wins
     patterns = [
-        r"\(([A-D])\)",                          # (B)
-        r"\[([A-D])\]",                          # [B]
-        r"\*\*([A-D])\*\*",                      # **B**
-        r"[Aa]nswer\s*(?:is|:)\s*([A-D])\b",    # "answer is B" / "answer: B"
-        r"[Oo]ption\s+([A-D])\b",               # "option B"
-        r"(?:choose|select|pick)\s+([A-D])\b",   # "choose B"
+        r"\(([A-D])\)",  # (B)
+        r"\[([A-D])\]",  # [B]
+        r"\*\*([A-D])\*\*",  # **B**
+        r"[Aa]nswer\s*(?:is|:)\s*([A-D])\b",  # "answer is B" / "answer: B"
+        r"[Oo]ption\s+([A-D])\b",  # "option B"
+        r"(?:choose|select|pick)\s+([A-D])\b",  # "choose B"
         r"correct\s+(?:answer|option)\s+is\s+([A-D])\b",  # "correct answer is B"
-        r"(?:^|\.\s+)([A-D])\.",                 # "B." at start or after sentence
-        r"\b(?:is|be)\s+([A-D])\b",             # "is B" / "would be B"
-        r"(?:it'?s|its)\s+([A-D])\b",           # "it's B" / "its B"
-        r",\s*([A-D])\.?\s*$",                   # ", B" or ", B." at end
-        r"\s([A-D])\.?\s*$",                     # trailing " B" or " B." at end of text
+        r"(?:^|\.\s+)([A-D])\.",  # "B." at start or after sentence
+        r"\b(?:is|be)\s+([A-D])\b",  # "is B" / "would be B"
+        r"(?:it'?s|its)\s+([A-D])\b",  # "it's B" / "its B"
+        r",\s*([A-D])\.?\s*$",  # ", B" or ", B." at end
+        r"\s([A-D])\.?\s*$",  # trailing " B" or " B." at end of text
     ]
     for pattern in patterns:
         match = re.search(pattern, text)
@@ -127,10 +128,7 @@ def _extract_logprobs(result) -> Tuple[Dict[str, float], bool]:
     has_logprobs = False
 
     try:
-        if (
-            result.choices[0].logprobs
-            and result.choices[0].logprobs.content
-        ):
+        if result.choices[0].logprobs and result.choices[0].logprobs.content:
             has_logprobs = True
             for lp_entry in result.choices[0].logprobs.content:
                 # Check the generated token itself
@@ -195,10 +193,19 @@ def call_llm_logprob(
             except Exception as logprob_err:
                 # Provider doesn't support logprobs — retry without
                 err_msg = str(logprob_err).lower()
-                if any(t in err_msg for t in (
-                    "logprob", "unprocessable",
-                    "bad request", "422", "400",
-                )) and "stopiteration" not in err_msg:
+                if (
+                    any(
+                        t in err_msg
+                        for t in (
+                            "logprob",
+                            "unprocessable",
+                            "bad request",
+                            "422",
+                            "400",
+                        )
+                    )
+                    and "stopiteration" not in err_msg
+                ):
                     result = client.chat_completion(
                         model=model_id,
                         messages=[{"role": "user", "content": effective_prompt}],
@@ -242,7 +249,9 @@ def call_llm_logprob(
             full_text = result2.choices[0].message.content or ""
             # Strip <think>...</think> blocks (may be present even with /no_think
             # on some providers, or for non-thinking models that still emit them)
-            clean = re.sub(r"<think>.*?</think>", "", full_text, flags=re.DOTALL).strip()
+            clean = re.sub(
+                r"<think>.*?</think>", "", full_text, flags=re.DOTALL
+            ).strip()
             if clean:
                 letter = _extract_letter_from_text(clean)
                 if letter:
@@ -256,13 +265,16 @@ def call_llm_logprob(
                 messages=[
                     {"role": "user", "content": tier2_prompt},
                     {"role": "assistant", "content": full_text},
-                    {"role": "user", "content": (
-                        "Now respond with ONLY the letter of your answer. "
-                        "Just one letter: A, B, C, or D.\n/no_think"
-                        if is_thinking_model else
-                        "Now respond with ONLY the letter of your answer. "
-                        "Just one letter: A, B, C, or D."
-                    )},
+                    {
+                        "role": "user",
+                        "content": (
+                            "Now respond with ONLY the letter of your answer. "
+                            "Just one letter: A, B, C, or D.\n/no_think"
+                            if is_thinking_model
+                            else "Now respond with ONLY the letter of your answer. "
+                            "Just one letter: A, B, C, or D."
+                        ),
+                    },
                 ],
                 max_tokens=5 if is_thinking_model else 1,
                 temperature=0.01,

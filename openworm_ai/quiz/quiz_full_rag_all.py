@@ -44,7 +44,8 @@ load_dotenv()
 # already registers handlers and we can't silence them cleanly later.
 # Setting WARNING on root here covers everything downstream.
 # ---------------------------------------------------------------------------
-import logging as _logging_early
+import logging as _logging_early  # noqa: E402
+
 _logging_early.root.setLevel(_logging_early.WARNING)
 for _ln in ("NeuroML-AI", "RAG", "Vector_Stores", "neuroml_ai_utils", "gen_rag"):
     _lg = _logging_early.getLogger(_ln)
@@ -55,8 +56,12 @@ for _ln in ("NeuroML-AI", "RAG", "Vector_Stores", "neuroml_ai_utils", "gen_rag")
 # Monkey-patch NML setup_llm to bypass strict health checks (same as before)
 # ---------------------------------------------------------------------------
 try:
-    from openworm_ai.quiz.llm_setup_patched import setup_llm_patched, setup_embedding_patched
+    from openworm_ai.quiz.llm_setup_patched import (
+        setup_llm_patched,
+        setup_embedding_patched,
+    )
     import neuroml_ai_utils.llm
+
     neuroml_ai_utils.llm.setup_llm = setup_llm_patched
     neuroml_ai_utils.llm.setup_embedding = setup_embedding_patched
     print("✓ Patched NML setup_llm")
@@ -67,17 +72,19 @@ except ImportError:
 # RAG package
 # ---------------------------------------------------------------------------
 try:
-    from gen_rag.rag import RAG
+    from gen_rag.rag import RAG  # noqa: F401
     from gen_rag.stores import Vector_Stores
 except ImportError:
     print("ERROR: gen_rag package not found.")
-    print("Install: pip install git+https://github.com/NeuroML/neuroml-ai.git#subdirectory=rag_pkg/gen_rag")
+    print(
+        "Install: pip install git+https://github.com/NeuroML/neuroml-ai.git#subdirectory=rag_pkg/gen_rag"
+    )
     sys.exit(1)
 
 # ---------------------------------------------------------------------------
 # LLM list
 # ---------------------------------------------------------------------------
-from openworm_ai.utils.llms import (
+from openworm_ai.utils.llms import (  # noqa: E402
     LLM_GPT4o,
     LLM_CLAUDE37,
     LLM_GPT35,
@@ -97,8 +104,8 @@ from openworm_ai.utils.llms import (
 
 QUIZ_FILES = {
     "General Knowledge": "openworm_ai/quiz/samples/huggingface_Qwen_Qwen2.5-72B-Instruct_100questions_general_v2.json",
-    "Science":           "openworm_ai/quiz/samples/huggingface_Qwen_Qwen2.5-72B-Instruct_100questions_science_v2.json",
-    "C. elegans":        "openworm_ai/quiz/samples/huggingface_Qwen_Qwen2.5-72B-Instruct_100questions_celegans_v2.json",
+    "Science": "openworm_ai/quiz/samples/huggingface_Qwen_Qwen2.5-72B-Instruct_100questions_science_v2.json",
+    "C. elegans": "openworm_ai/quiz/samples/huggingface_Qwen_Qwen2.5-72B-Instruct_100questions_celegans_v2.json",
     "C. elegans (Corpus)": "openworm_ai/quiz/samples/huggingface_Qwen_Qwen2.5-72B-Instruct_100questions_celegans_corpus.json",
 }
 
@@ -130,6 +137,7 @@ OUTPUT_DIR = "openworm_ai/quiz/scores/rag_clean"
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
 
 def load_questions(filepath: str) -> List[Dict]:
     """Load MCQ questions from JSON file."""
@@ -216,7 +224,7 @@ def format_mcq_prompt(question: str, options: Dict[str, str], context: str = "")
 def llm_model_string(llm: str) -> str:
     """Normalise LLM string for the RAG package."""
     llm = llm.replace(":auto", "")
-    if llm.count(":") == 1:          # huggingface:ModelName → add :auto
+    if llm.count(":") == 1:  # huggingface:ModelName → add :auto
         llm = f"{llm}:auto"
     return llm
 
@@ -224,6 +232,7 @@ def llm_model_string(llm: str) -> str:
 # ---------------------------------------------------------------------------
 # Retrieval (direct, bypassing full LangGraph pipeline)
 # ---------------------------------------------------------------------------
+
 
 def retrieve_context(
     stores: Vector_Stores,
@@ -254,7 +263,7 @@ def retrieve_context(
         context_text = "\n\n---\n\n".join(chunks)
         return context_text, best_score
 
-    except Exception as e:
+    except Exception:
         return "", 0.0
 
 
@@ -273,8 +282,6 @@ def classify_domain(stores: Vector_Stores, question: str, model=None) -> Optiona
     if model is not None:
         try:
             from langchain_core.messages import HumanMessage
-            from pydantic import create_model
-            from typing_extensions import Literal
 
             domains = stores.domains
             domain_descriptions = "\n".join(f"- {d}" for d in domains)
@@ -290,7 +297,11 @@ def classify_domain(stores: Vector_Stores, question: str, model=None) -> Optiona
                 [HumanMessage(content=prompt)],
                 config={"configurable": {"temperature": 0.0}},
             )
-            raw = output.content.strip() if hasattr(output, "content") else str(output).strip()
+            raw = (
+                output.content.strip()
+                if hasattr(output, "content")
+                else str(output).strip()
+            )
 
             # Match against known domains (case-insensitive, partial ok)
             raw_lower = raw.lower()
@@ -305,11 +316,31 @@ def classify_domain(stores: Vector_Stores, question: str, model=None) -> Optiona
 
     # --- Keyword fallback (used if model unavailable or call failed) ---
     celegans_keywords = [
-        "c. elegans", "caenorhabditis", "worm", "nematode",
-        "neuron", "pharynx", "vulva", "hermaphrodite", "amphid",
-        "neuroml", "wormatlas", "synapse", "connectome", "muscle cell",
-        "daf-", "mec-", "glr-", "avl", "avm", "unc-", "elegans",
-        "locomotion", "gait", "neural circuit", "chemosensory",
+        "c. elegans",
+        "caenorhabditis",
+        "worm",
+        "nematode",
+        "neuron",
+        "pharynx",
+        "vulva",
+        "hermaphrodite",
+        "amphid",
+        "neuroml",
+        "wormatlas",
+        "synapse",
+        "connectome",
+        "muscle cell",
+        "daf-",
+        "mec-",
+        "glr-",
+        "avl",
+        "avm",
+        "unc-",
+        "elegans",
+        "locomotion",
+        "gait",
+        "neural circuit",
+        "chemosensory",
     ]
     q_lower = question.lower()
     if any(kw in q_lower for kw in celegans_keywords):
@@ -324,37 +355,43 @@ def classify_domain(stores: Vector_Stores, question: str, model=None) -> Optiona
 # LLM-only answering (direct invoke, no RAG graph)
 # ---------------------------------------------------------------------------
 
+
 async def answer_with_llm(model, question: str, options: Dict[str, str]) -> str:
     """Call the LLM directly with no context."""
     prompt_text = format_mcq_prompt(question, options)
     from langchain_core.messages import HumanMessage
+
     try:
         output = model.invoke(
             [HumanMessage(content=prompt_text)],
             config={"configurable": {"temperature": 0.0}},
         )
         return output.content if hasattr(output, "content") else str(output)
-    except Exception as e:
+    except Exception:
         return ""
 
 
-async def answer_with_context(model, question: str, options: Dict[str, str], context: str) -> str:
+async def answer_with_context(
+    model, question: str, options: Dict[str, str], context: str
+) -> str:
     """Call the LLM with retrieved context."""
     prompt_text = format_mcq_prompt(question, options, context=context)
     from langchain_core.messages import HumanMessage
+
     try:
         output = model.invoke(
             [HumanMessage(content=prompt_text)],
             config={"configurable": {"temperature": 0.0}},
         )
         return output.content if hasattr(output, "content") else str(output)
-    except Exception as e:
+    except Exception:
         return ""
 
 
 # ---------------------------------------------------------------------------
 # Per-question evaluation
 # ---------------------------------------------------------------------------
+
 
 async def evaluate_question(
     model,
@@ -394,7 +431,9 @@ async def evaluate_question(
 
     # --- Mode 2: RAG only ---
     if rag_used:
-        rag_response = await answer_with_context(model, question_text, presented, context)
+        rag_response = await answer_with_context(
+            model, question_text, presented, context
+        )
         rag_guess = extract_letter(rag_response) or random.choice(INDEXING)
     else:
         # No context available — RAG can't answer, mark as None (unanswerable)
@@ -427,6 +466,7 @@ async def evaluate_question(
 # Per-LLM × per-quiz evaluation
 # ---------------------------------------------------------------------------
 
+
 async def evaluate_llm_on_quiz(
     llm_name: str,
     quiz_category: str,
@@ -445,7 +485,7 @@ async def evaluate_llm_on_quiz(
     counters = {
         "llm_correct": 0,
         "rag_correct": 0,
-        "rag_answered": 0,       # questions where RAG had context
+        "rag_answered": 0,  # questions where RAG had context
         "hybrid_correct": 0,
         "hybrid_rag_used": 0,
         "hybrid_llm_fallback": 0,
@@ -453,14 +493,17 @@ async def evaluate_llm_on_quiz(
     }
 
     print(f"\n  {'Q':>4}  {'Correct':>7}  {'LLM':>5}  {'RAG':>5}  {'Hybrid':>7}  Score")
-    print(f"  {'─'*50}")
+    print(f"  {'─' * 50}")
 
     for idx, q_data in enumerate(questions, 1):
         # Use precomputed domain if available, otherwise classify now
         precomputed = precomputed_domains[idx - 1] if precomputed_domains else None
         t0 = time.time()
         result = await evaluate_question(
-            model, stores, q_data["question"], q_data["answers"],
+            model,
+            stores,
+            q_data["question"],
+            q_data["answers"],
             precomputed_domain=precomputed,
         )
         elapsed = time.time() - t0
@@ -468,13 +511,16 @@ async def evaluate_llm_on_quiz(
 
         correct = result["correct_letter"]
 
-        llm_ok    = result["llm_guess"]    == correct
-        rag_ok    = result["rag_guess"]    == correct if result["rag_guess"] else False
+        llm_ok = result["llm_guess"] == correct
+        rag_ok = result["rag_guess"] == correct if result["rag_guess"] else False
         hybrid_ok = result["hybrid_guess"] == correct
 
-        if llm_ok:    counters["llm_correct"] += 1
-        if rag_ok:    counters["rag_correct"] += 1
-        if hybrid_ok: counters["hybrid_correct"] += 1
+        if llm_ok:
+            counters["llm_correct"] += 1
+        if rag_ok:
+            counters["rag_correct"] += 1
+        if hybrid_ok:
+            counters["hybrid_correct"] += 1
 
         if result["rag_used"]:
             counters["rag_answered"] += 1
@@ -483,10 +529,10 @@ async def evaluate_llm_on_quiz(
         else:
             counters["hybrid_llm_fallback"] += 1
 
-        llm_sym    = "✓" if llm_ok    else "✗"
-        rag_sym    = "✓" if rag_ok    else ("─" if result["rag_guess"] is None else "✗")
+        llm_sym = "✓" if llm_ok else "✗"
+        rag_sym = "✓" if rag_ok else ("─" if result["rag_guess"] is None else "✗")
         hybrid_sym = "✓" if hybrid_ok else "✗"
-        src_tag    = "[R]" if result["hybrid_source"] == "rag" else "[L]"
+        src_tag = "[R]" if result["hybrid_source"] == "rag" else "[L]"
 
         print(
             f"  {idx:>4}  {correct:>7}  "
@@ -502,39 +548,46 @@ async def evaluate_llm_on_quiz(
         return round(100 * num / denom, 2) if denom > 0 else 0.0
 
     summary = {
-        "Quiz Category":           quiz_category,
-        "LLM":                     llm_name,
-        "Total Questions":         n,
-
+        "Quiz Category": quiz_category,
+        "LLM": llm_name,
+        "Total Questions": n,
         # LLM-only
-        "LLM Correct":             counters["llm_correct"],
-        "LLM Accuracy (%)":        pct(counters["llm_correct"], n),
-
+        "LLM Correct": counters["llm_correct"],
+        "LLM Accuracy (%)": pct(counters["llm_correct"], n),
         # RAG-only (only scored on questions where context was retrieved)
-        "RAG Questions Answered":  counters["rag_answered"],
-        "RAG Correct":             counters["rag_correct"],
-        "RAG Accuracy on Retrieved (%)": pct(counters["rag_correct"], counters["rag_answered"]),
-        "RAG Accuracy Overall (%)":      pct(counters["rag_correct"], n),
-
+        "RAG Questions Answered": counters["rag_answered"],
+        "RAG Correct": counters["rag_correct"],
+        "RAG Accuracy on Retrieved (%)": pct(
+            counters["rag_correct"], counters["rag_answered"]
+        ),
+        "RAG Accuracy Overall (%)": pct(counters["rag_correct"], n),
         # Hybrid
-        "Hybrid Correct":          counters["hybrid_correct"],
-        "Hybrid Accuracy (%)":     pct(counters["hybrid_correct"], n),
-        "Hybrid Used RAG":         counters["hybrid_rag_used"],
+        "Hybrid Correct": counters["hybrid_correct"],
+        "Hybrid Accuracy (%)": pct(counters["hybrid_correct"], n),
+        "Hybrid Used RAG": counters["hybrid_rag_used"],
         "Hybrid Used LLM Fallback": counters["hybrid_llm_fallback"],
-
         # Improvement deltas
-        "Hybrid vs LLM Delta (pp)":    round(pct(counters["hybrid_correct"], n) - pct(counters["llm_correct"], n), 2),
-        "Hybrid vs RAG-Overall Delta (pp)": round(pct(counters["hybrid_correct"], n) - pct(counters["rag_correct"], n), 2),
-
-        "Avg Response Time (s)":   round(avg_time, 3),
+        "Hybrid vs LLM Delta (pp)": round(
+            pct(counters["hybrid_correct"], n) - pct(counters["llm_correct"], n), 2
+        ),
+        "Hybrid vs RAG-Overall Delta (pp)": round(
+            pct(counters["hybrid_correct"], n) - pct(counters["rag_correct"], n), 2
+        ),
+        "Avg Response Time (s)": round(avg_time, 3),
     }
 
-    print(f"\n  ── Results ──────────────────────────────")
-    print(f"  LLM only:        {summary['LLM Accuracy (%)']:>6.1f}%  ({counters['llm_correct']}/{n})")
-    print(f"  RAG only:        {summary['RAG Accuracy Overall (%)']:>6.1f}%  ({counters['rag_correct']}/{n})  "
-          f"[retrieved context for {counters['rag_answered']}/{n} questions]")
-    print(f"  RAG + Fallback:  {summary['Hybrid Accuracy (%)']:>6.1f}%  ({counters['hybrid_correct']}/{n})  "
-          f"[RAG={counters['hybrid_rag_used']}, LLM fallback={counters['hybrid_llm_fallback']}]")
+    print("\n  ── Results ──────────────────────────────")
+    print(
+        f"  LLM only:        {summary['LLM Accuracy (%)']:>6.1f}%  ({counters['llm_correct']}/{n})"
+    )
+    print(
+        f"  RAG only:        {summary['RAG Accuracy Overall (%)']:>6.1f}%  ({counters['rag_correct']}/{n})  "
+        f"[retrieved context for {counters['rag_answered']}/{n} questions]"
+    )
+    print(
+        f"  RAG + Fallback:  {summary['Hybrid Accuracy (%)']:>6.1f}%  ({counters['hybrid_correct']}/{n})  "
+        f"[RAG={counters['hybrid_rag_used']}, LLM fallback={counters['hybrid_llm_fallback']}]"
+    )
     print(f"  Δ Hybrid vs LLM: {summary['Hybrid vs LLM Delta (pp)']:>+.1f} pp")
 
     return summary
@@ -543,6 +596,7 @@ async def evaluate_llm_on_quiz(
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+
 
 async def main():
     vs_config = os.getenv("GEN_RAG_VS_CONFIG", "./vector-stores.json")
@@ -560,8 +614,14 @@ async def main():
     # This must happen before stores.setup() or the first retrieve() call.
     # ---------------------------------------------------------------------------
     logging.root.setLevel(logging.WARNING)
-    for _noisy in ("NeuroML-AI", "RAG", "Vector_Stores",
-                   "neuroml_ai_utils", "gen_rag", ""):
+    for _noisy in (
+        "NeuroML-AI",
+        "RAG",
+        "Vector_Stores",
+        "neuroml_ai_utils",
+        "gen_rag",
+        "",
+    ):
         lg = logging.getLogger(_noisy)
         lg.setLevel(logging.WARNING)
         lg.propagate = False
@@ -603,7 +663,9 @@ async def main():
         test = stores.retrieve(domain_name=domain, query="neuron")
         print(f"  [{domain}] test retrieval: {len(test)} chunks")
         if not test:
-            print(f"  WARNING: domain '{domain}' returned no results — store may be empty!")
+            print(
+                f"  WARNING: domain '{domain}' returned no results — store may be empty!"
+            )
 
     # -------------------------------------------------------------------------
     # Load all models ONCE up front — health check runs once per model,
@@ -640,9 +702,9 @@ async def main():
             print(f"\n! No questions loaded from {quiz_file} — skipping")
             continue
 
-        print(f"\n{'='*70}")
+        print(f"\n{'=' * 70}")
         print(f"  QUIZ: {quiz_category}  ({len(questions)} questions)")
-        print(f"{'='*70}")
+        print(f"{'=' * 70}")
 
         # ------------------------------------------------------------------
         # Pre-classify domains ONCE per quiz category.
@@ -671,32 +733,43 @@ async def main():
             if force_retrieval:
                 precomputed_domains.append(default_domain)
             else:
-                precomputed_domains.append(classify_domain(stores, q["question"], model=None))
+                precomputed_domains.append(
+                    classify_domain(stores, q["question"], model=None)
+                )
 
         retrieval_count = sum(1 for d in precomputed_domains if d is not None)
-        print(f"  Pre-classification: {retrieval_count}/{len(questions)} questions will attempt retrieval")
-        print(f"  (force_retrieval={'yes' if force_retrieval else 'no'}, fallback to LLM classify for ambiguous General/Science Qs)\n")
+        print(
+            f"  Pre-classification: {retrieval_count}/{len(questions)} questions will attempt retrieval"
+        )
+        print(
+            f"  (force_retrieval={'yes' if force_retrieval else 'no'}, fallback to LLM classify for ambiguous General/Science Qs)\n"
+        )
 
         for llm_idx, llm_name in enumerate(LLMS, 1):
             print(f"\n[{llm_idx}/{len(LLMS)}] {llm_name}")
             print("-" * 60)
 
             if llm_name not in loaded_models:
-                print(f"  — skipped (failed to load at startup)")
+                print("  — skipped (failed to load at startup)")
                 continue
 
             model = loaded_models[llm_name]
 
             try:
                 result = await evaluate_llm_on_quiz(
-                    llm_name, quiz_category, questions, stores, model,
+                    llm_name,
+                    quiz_category,
+                    questions,
+                    stores,
+                    model,
                     precomputed_domains=precomputed_domains,
                 )
                 all_results.append(result)
             except Exception as e:
                 print(f"  ! Evaluation error: {e}")
-                import traceback; traceback.print_exc()
+                import traceback
 
+                traceback.print_exc()
 
     # -------------------------------------------------------------------------
     # Save results
@@ -721,28 +794,36 @@ async def main():
     with open(output_path, "w") as f:
         json.dump(output, f, indent=4)
 
-    print(f"\n{'='*70}")
+    print(f"\n{'=' * 70}")
     print(f"  ALL DONE — results saved to {output_path}")
-    print(f"{'='*70}")
+    print(f"{'=' * 70}")
 
     # -------------------------------------------------------------------------
     # Summary table
     # -------------------------------------------------------------------------
-    print(f"\n{'─'*70}")
-    print(f"  {'Category':<25} {'LLM':>6}  {'LLM%':>6}  {'RAG%':>6}  {'Hybrid%':>8}  {'Δ':>6}")
-    print(f"{'─'*70}")
+    print(f"\n{'─' * 70}")
+    print(
+        f"  {'Category':<25} {'LLM':>6}  {'LLM%':>6}  {'RAG%':>6}  {'Hybrid%':>8}  {'Δ':>6}"
+    )
+    print(f"{'─' * 70}")
 
     for cat in QUIZ_FILES.keys():
         cat_results = [r for r in all_results if r["Quiz Category"] == cat]
         if not cat_results:
             continue
-        avg_llm    = sum(r["LLM Accuracy (%)"]     for r in cat_results) / len(cat_results)
-        avg_rag    = sum(r["RAG Accuracy Overall (%)"] for r in cat_results) / len(cat_results)
-        avg_hybrid = sum(r["Hybrid Accuracy (%)"]   for r in cat_results) / len(cat_results)
-        delta      = avg_hybrid - avg_llm
-        print(f"  {cat:<25} {len(cat_results):>6}  {avg_llm:>5.1f}%  {avg_rag:>5.1f}%  {avg_hybrid:>7.1f}%  {delta:>+5.1f}pp")
+        avg_llm = sum(r["LLM Accuracy (%)"] for r in cat_results) / len(cat_results)
+        avg_rag = sum(r["RAG Accuracy Overall (%)"] for r in cat_results) / len(
+            cat_results
+        )
+        avg_hybrid = sum(r["Hybrid Accuracy (%)"] for r in cat_results) / len(
+            cat_results
+        )
+        delta = avg_hybrid - avg_llm
+        print(
+            f"  {cat:<25} {len(cat_results):>6}  {avg_llm:>5.1f}%  {avg_rag:>5.1f}%  {avg_hybrid:>7.1f}%  {delta:>+5.1f}pp"
+        )
 
-    print(f"{'─'*70}\n")
+    print(f"{'─' * 70}\n")
 
 
 if __name__ == "__main__":
