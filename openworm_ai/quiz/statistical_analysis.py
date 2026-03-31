@@ -48,7 +48,13 @@ MODEL_PARAMS_B = {
 
 
 def short_name(llm):
-    return llm.replace("huggingface:", "").split("/")[-1].replace("-Instruct", "").replace("-v0.2", "").replace("-v0.1", "")
+    return (
+        llm.replace("huggingface:", "")
+        .split("/")[-1]
+        .replace("-Instruct", "")
+        .replace("-v0.2", "")
+        .replace("-v0.1", "")
+    )
 
 
 def load_data(score_dir):
@@ -95,11 +101,11 @@ def mcnemar_test(detailed, category):
 
     We test whether b != c (discordant pairs).
     """
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print(f"TEST 1: McNemar's Test — {category}")
-    print(f"{'='*60}")
-    print(f"H0: RAG-Informed does not change accuracy (b = c)")
-    print(f"Data: Paired binary outcomes on same questions\n")
+    print(f"{'=' * 60}")
+    print("H0: RAG-Informed does not change accuracy (b = c)")
+    print("Data: Paired binary outcomes on same questions\n")
 
     a, b, c, d = 0, 0, 0, 0
     n_questions = 0
@@ -121,10 +127,10 @@ def mcnemar_test(detailed, category):
             n_questions += 1
 
     print(f"Contingency table (n={n_questions} question×model pairs):")
-    print(f"                    Informed Correct  Informed Wrong")
+    print("                    Informed Correct  Informed Wrong")
     print(f"  Pre Correct           {a:>5}            {b:>5}")
     print(f"  Pre Wrong             {c:>5}            {d:>5}")
-    print(f"\n  Concordant: {a+d} ({(a+d)/n_questions*100:.1f}%)")
+    print(f"\n  Concordant: {a + d} ({(a + d) / n_questions * 100:.1f}%)")
     print(f"  RAG fixed (c): {c} questions")
     print(f"  RAG broke (b): {b} questions")
 
@@ -133,25 +139,27 @@ def mcnemar_test(detailed, category):
         # Exact binomial test (more appropriate than chi-squared approximation)
         # Under H0, b/(b+c) ~ 0.5
         n_discord = b + c
-        result = stats.binomtest(c, n_discord, 0.5, alternative='two-sided')
+        result = stats.binomtest(c, n_discord, 0.5, alternative="two-sided")
         p_exact = result.pvalue
 
         # Also compute chi-squared version for reference
-        chi2 = (abs(b - c) - 1)**2 / (b + c) if (b + c) >= 25 else None
+        chi2 = (abs(b - c) - 1) ** 2 / (b + c) if (b + c) >= 25 else None
         p_chi2 = 1 - stats.chi2.cdf(chi2, df=1) if chi2 is not None else None
 
         print(f"\n  Discordant pairs: {n_discord}")
-        print(f"  RAG fixed / (fixed + broke) = {c}/{n_discord} = {c/n_discord:.3f}")
+        print(f"  RAG fixed / (fixed + broke) = {c}/{n_discord} = {c / n_discord:.3f}")
         print(f"  Exact binomial p-value: {p_exact:.2e}")
         if p_chi2 is not None:
             print(f"  Chi-squared approx p-value: {p_chi2:.2e} (chi2={chi2:.2f}, df=1)")
 
         if p_exact < 0.001:
-            print(f"\n  *** HIGHLY SIGNIFICANT (p < 0.001) — RAG significantly changes accuracy ***")
+            print(
+                "\n  *** HIGHLY SIGNIFICANT (p < 0.001) — RAG significantly changes accuracy ***"
+            )
         elif p_exact < 0.05:
-            print(f"\n  * SIGNIFICANT (p < 0.05) — RAG significantly changes accuracy *")
+            print("\n  * SIGNIFICANT (p < 0.05) — RAG significantly changes accuracy *")
         else:
-            print(f"\n  Not significant (p >= 0.05)")
+            print("\n  Not significant (p >= 0.05)")
 
         # Direction
         if c > b:
@@ -169,11 +177,11 @@ def wilcoxon_test(summary, category):
 
     Non-parametric paired test (appropriate for n=14, non-normal).
     """
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print(f"TEST 2: Wilcoxon Signed-Rank Test — {category}")
-    print(f"{'='*60}")
-    print(f"H0: Median difference in accuracy = 0")
-    print(f"Data: Paired model accuracies (n = number of models)\n")
+    print(f"{'=' * 60}")
+    print("H0: Median difference in accuracy = 0")
+    print("Data: Paired model accuracies (n = number of models)\n")
 
     pairs = []
     for r in summary:
@@ -191,7 +199,7 @@ def wilcoxon_test(summary, category):
     pairs.sort(key=lambda x: x[3], reverse=True)
 
     print(f"  {'Model':<25s} {'Pre':>6s} {'Inf':>6s} {'Delta':>7s}")
-    print(f"  {'-'*25} {'-'*6} {'-'*6} {'-'*7}")
+    print(f"  {'-' * 25} {'-' * 6} {'-' * 6} {'-' * 7}")
     for name, pre, inf, delta in pairs:
         sign = "+" if delta > 0 else ""
         print(f"  {name:<25s} {pre:6.1f} {inf:6.1f} {sign}{delta:6.1f}")
@@ -210,18 +218,19 @@ def wilcoxon_test(summary, category):
     diffs_arr = np.array(diffs)
     nonzero = diffs_arr[diffs_arr != 0]
     if len(nonzero) >= 5:
-        stat, p = stats.wilcoxon(nonzero, alternative='two-sided')
+        stat, p = stats.wilcoxon(nonzero, alternative="two-sided")
         print(f"\n  Wilcoxon W = {stat:.1f}, p = {p:.4f}")
         if p < 0.05:
-            print(f"  *** SIGNIFICANT (p < 0.05) ***")
+            print("  *** SIGNIFICANT (p < 0.05) ***")
         else:
-            print(f"  Not significant")
+            print("  Not significant")
     else:
-        print(f"\n  Too few non-zero differences for Wilcoxon test")
+        print("\n  Too few non-zero differences for Wilcoxon test")
 
     # Also report paired t-test for comparison (even though assumptions may not hold)
-    t_stat, t_p = stats.ttest_rel([pre for _, pre, _, _ in pairs],
-                                   [inf for _, _, inf, _ in pairs])
+    t_stat, t_p = stats.ttest_rel(
+        [pre for _, pre, _, _ in pairs], [inf for _, _, inf, _ in pairs]
+    )
     print(f"  Paired t-test: t = {t_stat:.3f}, p = {t_p:.4f} (for reference)")
 
     # Cohen's d (paired)
@@ -242,11 +251,11 @@ def spearman_size_vs_rag(summary, category):
     """
     Spearman rank correlation: does model size correlate with RAG benefit?
     """
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print(f"TEST 3: Spearman Correlation — Model Size vs RAG Benefit ({category})")
-    print(f"{'='*60}")
-    print(f"H0: No monotonic relationship between model size and RAG delta")
-    print(f"Data: log(params) vs accuracy delta\n")
+    print(f"{'=' * 60}")
+    print("H0: No monotonic relationship between model size and RAG delta")
+    print("Data: log(params) vs accuracy delta\n")
 
     points = []
     for r in summary:
@@ -272,12 +281,12 @@ def spearman_size_vs_rag(summary, category):
 
     rho, p = stats.spearmanr(np.log10(sizes), deltas)
     print(f"\n  Spearman rho = {rho:.3f}, p = {p:.4f}")
-    print(f"  (negative rho = larger models benefit LESS from RAG)")
+    print("  (negative rho = larger models benefit LESS from RAG)")
 
     if p < 0.05:
-        print(f"  *** SIGNIFICANT correlation ***")
+        print("  *** SIGNIFICANT correlation ***")
     else:
-        print(f"  Not significant at p < 0.05")
+        print("  Not significant at p < 0.05")
 
 
 def chi_squared_errors(summary, category):
@@ -285,10 +294,10 @@ def chi_squared_errors(summary, category):
     Chi-squared test: does the distribution of error types differ
     between pretrained and informed modes?
     """
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print(f"TEST 4: Chi-Squared Test — Error Distribution ({category})")
-    print(f"{'='*60}")
-    print(f"H0: Error type distribution is the same pre/post RAG\n")
+    print(f"{'=' * 60}")
+    print("H0: Error type distribution is the same pre/post RAG\n")
 
     error_types = ["correct", "wrong_answer", "format_error", "parse_failure"]
     pre_counts = defaultdict(int)
@@ -302,7 +311,7 @@ def chi_squared_errors(summary, category):
             inf_counts[et] += r.get("Informed Errors", {}).get(et, 0)
 
     print(f"  {'Error Type':<20s} {'Pretrained':>12s} {'Informed':>12s}")
-    print(f"  {'-'*20} {'-'*12} {'-'*12}")
+    print(f"  {'-' * 20} {'-' * 12} {'-' * 12}")
     for et in error_types:
         print(f"  {et:<20s} {pre_counts[et]:>12d} {inf_counts[et]:>12d}")
 
@@ -319,18 +328,18 @@ def chi_squared_errors(summary, category):
         chi2, p, dof, expected = stats.chi2_contingency(observed)
         print(f"\n  Chi-squared = {chi2:.2f}, df = {dof}, p = {p:.4f}")
         if p < 0.05:
-            print(f"  *** SIGNIFICANT — error distribution changes with RAG ***")
+            print("  *** SIGNIFICANT — error distribution changes with RAG ***")
         else:
-            print(f"  Not significant")
+            print("  Not significant")
 
 
 def bootstrap_ci(detailed, category, n_bootstrap=10000):
     """
     Bootstrap 95% confidence intervals on RAG accuracy improvement.
     """
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print(f"TEST 5: Bootstrap 95% CI — RAG Improvement ({category})")
-    print(f"{'='*60}")
+    print(f"{'=' * 60}")
     print(f"Method: Resample question-level outcomes {n_bootstrap} times\n")
 
     # Collect per-question paired outcomes
@@ -373,21 +382,21 @@ def bootstrap_ci(detailed, category, n_bootstrap=10000):
     print(f"  95% CI:                     [{ci_lo:+.2f}, {ci_hi:+.2f}]pp")
 
     if ci_lo > 0:
-        print(f"\n  *** CI excludes zero — RAG improvement is significant ***")
+        print("\n  *** CI excludes zero — RAG improvement is significant ***")
     elif ci_hi < 0:
-        print(f"\n  *** CI excludes zero — RAG significantly hurts ***")
+        print("\n  *** CI excludes zero — RAG significantly hurts ***")
     else:
-        print(f"\n  CI includes zero — effect not significant")
+        print("\n  CI includes zero — effect not significant")
 
 
 def similarity_correlation(detailed, category):
     """
     Spearman correlation: retrieval similarity score vs RAG accuracy.
     """
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print(f"TEST 6: Spearman Correlation — Retrieval Quality vs Accuracy ({category})")
-    print(f"{'='*60}")
-    print(f"H0: No relationship between similarity score and RAG accuracy\n")
+    print(f"{'=' * 60}")
+    print("H0: No relationship between similarity score and RAG accuracy\n")
 
     scores = []
     correct = []
@@ -405,9 +414,17 @@ def similarity_correlation(detailed, category):
         return
 
     # Bin for readability
-    bins = [(0.5, 0.6), (0.6, 0.65), (0.65, 0.7), (0.7, 0.75), (0.75, 0.8), (0.8, 0.85), (0.85, 1.0)]
+    bins = [
+        (0.5, 0.6),
+        (0.6, 0.65),
+        (0.65, 0.7),
+        (0.7, 0.75),
+        (0.75, 0.8),
+        (0.8, 0.85),
+        (0.85, 1.0),
+    ]
     print(f"  {'Similarity Bin':<18s} {'N':>5s} {'Accuracy':>10s}")
-    print(f"  {'-'*18} {'-'*5} {'-'*10}")
+    print(f"  {'-' * 18} {'-' * 5} {'-' * 10}")
     for lo, hi in bins:
         in_bin = [(s, c) for s, c in zip(scores, correct) if lo <= s < hi]
         if len(in_bin) >= 5:
@@ -419,35 +436,53 @@ def similarity_correlation(detailed, category):
     print(f"  n = {len(scores)} question×model pairs with retrieval")
 
     if p < 0.001:
-        print(f"  *** HIGHLY SIGNIFICANT — higher similarity = higher accuracy ***")
+        print("  *** HIGHLY SIGNIFICANT — higher similarity = higher accuracy ***")
     elif p < 0.05:
-        print(f"  * SIGNIFICANT *")
+        print("  * SIGNIFICANT *")
 
 
 def descriptive_summary(summary):
     """Overall descriptive statistics."""
-    print(f"\n{'='*60}")
-    print(f"DESCRIPTIVE STATISTICS")
-    print(f"{'='*60}\n")
+    print(f"\n{'=' * 60}")
+    print("DESCRIPTIVE STATISTICS")
+    print(f"{'=' * 60}\n")
 
     for cat in ["C. elegans (Corpus)", "C. elegans", "General Knowledge", "Science"]:
         subset = [r for r in summary if r.get("Quiz Category") == cat]
         if not subset:
             continue
 
-        pre_accs = [r.get("Pretrained Accuracy (%)", 0) for r in subset if r.get("Pretrained Accuracy (%)", 0) > 0]
-        inf_accs = [r.get("Informed Accuracy (%)", 0) for r in subset if r.get("Informed Accuracy (%)", 0) > 0]
-        deltas = [r.get("Informed vs Pretrained Delta (pp)", 0) for r in subset if r.get("Pretrained Accuracy (%)", 0) > 0]
+        pre_accs = [
+            r.get("Pretrained Accuracy (%)", 0)
+            for r in subset
+            if r.get("Pretrained Accuracy (%)", 0) > 0
+        ]
+        inf_accs = [
+            r.get("Informed Accuracy (%)", 0)
+            for r in subset
+            if r.get("Informed Accuracy (%)", 0) > 0
+        ]
+        deltas = [
+            r.get("Informed vs Pretrained Delta (pp)", 0)
+            for r in subset
+            if r.get("Pretrained Accuracy (%)", 0) > 0
+        ]
 
         if not pre_accs:
             continue
 
         print(f"  {cat}")
         print(f"    n models = {len(pre_accs)}")
-        print(f"    Pretrained: mean={np.mean(pre_accs):.1f}%, SD={np.std(pre_accs, ddof=1):.1f}, range=[{min(pre_accs):.0f}%, {max(pre_accs):.0f}%]")
+        print(
+            f"    Pretrained: mean={np.mean(pre_accs):.1f}%, SD={np.std(pre_accs, ddof=1):.1f}, range=[{min(pre_accs):.0f}%, {max(pre_accs):.0f}%]"
+        )
         if inf_accs:
-            print(f"    Informed:   mean={np.mean(inf_accs):.1f}%, SD={np.std(inf_accs, ddof=1):.1f}, range=[{min(inf_accs):.0f}%, {max(inf_accs):.0f}%]")
-            print(f"    Delta:      mean={np.mean(deltas):+.1f}pp, SD={np.std(deltas, ddof=1):.1f}, range=[{min(deltas):+.0f}, {max(deltas):+.0f}]pp")
+            print(
+                f"    Informed:   mean={np.mean(inf_accs):.1f}%, SD={np.std(inf_accs, ddof=1):.1f}, range=[{min(inf_accs):.0f}%, {max(inf_accs):.0f}%]"
+            )
+            print(
+                f"    Delta:      mean={np.mean(deltas):+.1f}pp, SD={np.std(deltas, ddof=1):.1f}, range=[{min(deltas):+.0f}, {max(deltas):+.0f}]pp"
+            )
         print()
 
 
@@ -457,7 +492,7 @@ def main():
 
     print(f"Loaded {len(summary)} summary entries, {len(detailed)} detailed entries")
     print(f"Models: {len(set(r['LLM'] for r in summary))}")
-    print(f"Categories: {sorted(set(r.get('Quiz Category','') for r in summary))}")
+    print(f"Categories: {sorted(set(r.get('Quiz Category', '') for r in summary))}")
 
     # Descriptive stats first
     descriptive_summary(summary)

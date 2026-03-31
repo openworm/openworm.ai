@@ -5,14 +5,13 @@ Filters broken models, deduplicates, produces 7 key figures + scatter plots.
 
 import json
 import glob
-import sys
 from pathlib import Path
 from collections import defaultdict
 
 import matplotlib
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-import matplotlib.ticker as mtick
 import numpy as np
 
 # ── Config ──────────────────────────────────────────────────────────────
@@ -60,47 +59,59 @@ SHORT_NAMES = {
 }
 
 COMPANY_COLORS = {
-    "Llama-1B": "#00A8E8", "Llama-8B": "#00A8E8", "Llama-70B": "#00A8E8",
-    "Qwen2.5-7B": "#FF6A00", "Qwen2.5-14B": "#FF6A00", "Qwen2.5-32B": "#FF6A00",
-    "Qwen2.5-72B": "#FF6A00", "Qwen3-32B": "#FF6A00",
-    "Gemma-2-9B": "#EA4335", "Gemma-3-27B": "#EA4335",
-    "Mistral-7B": "#F2A900", "Mixtral-8x22B": "#F2A900",
+    "Llama-1B": "#00A8E8",
+    "Llama-8B": "#00A8E8",
+    "Llama-70B": "#00A8E8",
+    "Qwen2.5-7B": "#FF6A00",
+    "Qwen2.5-14B": "#FF6A00",
+    "Qwen2.5-32B": "#FF6A00",
+    "Qwen2.5-72B": "#FF6A00",
+    "Qwen3-32B": "#FF6A00",
+    "Gemma-2-9B": "#EA4335",
+    "Gemma-3-27B": "#EA4335",
+    "Mistral-7B": "#F2A900",
+    "Mixtral-8x22B": "#F2A900",
     "Aya-32B": "#39594D",
     "DeepSeek-R1": "#7F39FB",
 }
 
 COMPANY_LABELS = {
-    "#00A8E8": "Meta (Llama)", "#FF6A00": "Alibaba (Qwen)",
-    "#EA4335": "Google (Gemma)", "#F2A900": "Mistral AI",
-    "#39594D": "Cohere (Aya)", "#7F39FB": "DeepSeek",
+    "#00A8E8": "Meta (Llama)",
+    "#FF6A00": "Alibaba (Qwen)",
+    "#EA4335": "Google (Gemma)",
+    "#F2A900": "Mistral AI",
+    "#39594D": "Cohere (Aya)",
+    "#7F39FB": "DeepSeek",
 }
 
 # Publication-quality style (Nature/Science aesthetic)
-plt.rcParams.update({
-    "font.family": "sans-serif",
-    "font.sans-serif": ["Helvetica", "Arial", "DejaVu Sans"],
-    "font.size": 10,
-    "axes.titlesize": 12,
-    "axes.labelsize": 11,
-    "xtick.labelsize": 9,
-    "ytick.labelsize": 9,
-    "legend.fontsize": 8,
-    "legend.framealpha": 0.9,
-    "legend.edgecolor": "0.8",
-    "figure.dpi": 300,
-    "savefig.dpi": 300,
-    "savefig.bbox": "tight",
-    "axes.spines.top": False,
-    "axes.spines.right": False,
-    "axes.linewidth": 0.8,
-    "xtick.major.width": 0.8,
-    "ytick.major.width": 0.8,
-    "xtick.major.size": 4,
-    "ytick.major.size": 4,
-    "axes.grid": False,
-    "grid.alpha": 0.3,
-    "grid.linewidth": 0.5,
-})
+plt.rcParams.update(
+    {
+        "font.family": "sans-serif",
+        "font.sans-serif": ["Helvetica", "Arial", "DejaVu Sans"],
+        "font.size": 10,
+        "axes.titlesize": 12,
+        "axes.labelsize": 11,
+        "xtick.labelsize": 9,
+        "ytick.labelsize": 9,
+        "legend.fontsize": 8,
+        "legend.framealpha": 0.9,
+        "legend.edgecolor": "0.8",
+        "figure.dpi": 300,
+        "savefig.dpi": 300,
+        "savefig.bbox": "tight",
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "axes.linewidth": 0.8,
+        "xtick.major.width": 0.8,
+        "ytick.major.width": 0.8,
+        "xtick.major.size": 4,
+        "ytick.major.size": 4,
+        "axes.grid": False,
+        "grid.alpha": 0.3,
+        "grid.linewidth": 0.5,
+    }
+)
 
 MODE_COLORS = {
     "Pretrained": "#4878CF",
@@ -157,6 +168,7 @@ def load_detailed(score_dir):
 # Figure 1: 4-mode bar chart for a single category
 # ═══════════════════════════════════════════════════════════════════════
 
+
 def plot_4mode_bars(results, output_dir, category):
     """Clean grouped bar chart for one category."""
     subset = [r for r in results if r.get("Quiz Category") == category]
@@ -176,10 +188,38 @@ def plot_4mode_bars(results, output_dir, category):
     width = 0.19
 
     fig, ax = plt.subplots(figsize=(14, 5.5))
-    ax.bar(x - 1.5*width, pre, width, label="Pretrained", color=MODE_COLORS["Pretrained"], alpha=0.85)
-    ax.bar(x - 0.5*width, rag, width, label="RAG Only", color=MODE_COLORS["RAG Only"], alpha=0.85)
-    ax.bar(x + 0.5*width, hyb, width, label="Hybrid", color=MODE_COLORS["Hybrid"], alpha=0.85)
-    ax.bar(x + 1.5*width, inf, width, label="RAG-Informed", color=MODE_COLORS["RAG-Informed"], alpha=0.85)
+    ax.bar(
+        x - 1.5 * width,
+        pre,
+        width,
+        label="Pretrained",
+        color=MODE_COLORS["Pretrained"],
+        alpha=0.85,
+    )
+    ax.bar(
+        x - 0.5 * width,
+        rag,
+        width,
+        label="RAG Only",
+        color=MODE_COLORS["RAG Only"],
+        alpha=0.85,
+    )
+    ax.bar(
+        x + 0.5 * width,
+        hyb,
+        width,
+        label="Hybrid",
+        color=MODE_COLORS["Hybrid"],
+        alpha=0.85,
+    )
+    ax.bar(
+        x + 1.5 * width,
+        inf,
+        width,
+        label="RAG-Informed",
+        color=MODE_COLORS["RAG-Informed"],
+        alpha=0.85,
+    )
 
     ax.set_ylabel("Accuracy (%)")
     ax.set_title(f"4-Mode RAG Evaluation — {category}")
@@ -194,8 +234,16 @@ def plot_4mode_bars(results, output_dir, category):
         for i, (p, inf_val) in enumerate(zip(pre, inf)):
             delta = inf_val - p
             if delta > 0:
-                ax.text(x[i] + 1.5*width, inf_val + 1, f"+{delta:.0f}",
-                       ha="center", va="bottom", fontsize=7, fontweight="bold", color="#2E7D32")
+                ax.text(
+                    x[i] + 1.5 * width,
+                    inf_val + 1,
+                    f"+{delta:.0f}",
+                    ha="center",
+                    va="bottom",
+                    fontsize=7,
+                    fontweight="bold",
+                    color="#2E7D32",
+                )
 
     plt.tight_layout()
     safe = category.lower().replace(" ", "_").replace("(", "").replace(")", "")
@@ -208,6 +256,7 @@ def plot_4mode_bars(results, output_dir, category):
 # ═══════════════════════════════════════════════════════════════════════
 # Figure 2: RAG delta — corpus-only horizontal bars
 # ═══════════════════════════════════════════════════════════════════════
+
 
 def plot_rag_delta_corpus(results, output_dir):
     """Horizontal bar: informed - pretrained delta on corpus questions only."""
@@ -225,14 +274,20 @@ def plot_rag_delta_corpus(results, output_dir):
 
     fig, ax = plt.subplots(figsize=(10, 6))
     colors = ["#D65F5F" if d < 0 else "#4CAF50" for d in deltas]
-    bars = ax.barh(llms, deltas, color=colors, alpha=0.85, height=0.7)
+    ax.barh(llms, deltas, color=colors, alpha=0.85, height=0.7)
     ax.axvline(x=0, color="black", linewidth=0.8)
 
     for i, (d, pre, inf_val) in enumerate(zip(deltas, pre_scores, inf_scores)):
         label = f"+{d:.0f}pp ({pre:.0f}%→{inf_val:.0f}%)"
-        ax.text(d + (0.5 if d >= 0 else -0.5), i, label,
-                va="center", ha="left" if d >= 0 else "right",
-                fontsize=8, fontweight="bold")
+        ax.text(
+            d + (0.5 if d >= 0 else -0.5),
+            i,
+            label,
+            va="center",
+            ha="left" if d >= 0 else "right",
+            fontsize=8,
+            fontweight="bold",
+        )
 
     ax.set_xlabel("Accuracy Change (pp): RAG-Informed vs Pretrained")
     ax.set_title("RAG Impact on C. elegans Corpus Questions")
@@ -249,6 +304,7 @@ def plot_rag_delta_corpus(results, output_dir):
 # Figure 3: Scaling law scatter — accuracy vs params
 # ═══════════════════════════════════════════════════════════════════════
 
+
 def plot_scaling_scatter(results, output_dir, category=None):
     """Scatter: accuracy vs model size, colored by mode, with trend lines."""
     if category:
@@ -263,11 +319,16 @@ def plot_scaling_scatter(results, output_dir, category=None):
             by_llm[llm]["rag"].append(r.get("RAG Accuracy Overall (%)", 0))
             by_llm[llm]["hyb"].append(r.get("Hybrid Accuracy (%)", 0))
             by_llm[llm]["inf"].append(r.get("Informed Accuracy (%)", 0))
-        data = [{"LLM": llm, "Pretrained Accuracy (%)": np.mean(d["pre"]),
-                 "RAG Accuracy Overall (%)": np.mean(d["rag"]),
-                 "Hybrid Accuracy (%)": np.mean(d["hyb"]),
-                 "Informed Accuracy (%)": np.mean(d["inf"])}
-                for llm, d in by_llm.items()]
+        data = [
+            {
+                "LLM": llm,
+                "Pretrained Accuracy (%)": np.mean(d["pre"]),
+                "RAG Accuracy Overall (%)": np.mean(d["rag"]),
+                "Hybrid Accuracy (%)": np.mean(d["hyb"]),
+                "Informed Accuracy (%)": np.mean(d["inf"]),
+            }
+            for llm, d in by_llm.items()
+        ]
         title_suffix = " (All Categories)"
 
     fig, ax = plt.subplots(figsize=(10, 6))
@@ -287,8 +348,18 @@ def plot_scaling_scatter(results, output_dir, category=None):
             ys.append(r.get(key, 0))
             names.append(_short(r["LLM"]))
 
-        ax.scatter(xs, ys, c=color, marker=marker, s=80, alpha=0.85,
-                  label=label, zorder=5, edgecolors="white", linewidth=0.5)
+        ax.scatter(
+            xs,
+            ys,
+            c=color,
+            marker=marker,
+            s=80,
+            alpha=0.85,
+            label=label,
+            zorder=5,
+            edgecolors="white",
+            linewidth=0.5,
+        )
 
         # Trend line
         if len(xs) >= 3:
@@ -296,13 +367,25 @@ def plot_scaling_scatter(results, output_dir, category=None):
             z = np.polyfit(log_x, ys, 1)
             p = np.poly1d(z)
             x_trend = np.linspace(min(log_x), max(log_x), 100)
-            ax.plot(10**x_trend, p(x_trend), color=color, alpha=0.4,
-                   linestyle="--", linewidth=2)
+            ax.plot(
+                10**x_trend,
+                p(x_trend),
+                color=color,
+                alpha=0.4,
+                linestyle="--",
+                linewidth=2,
+            )
 
         # Label points
         for xi, yi, name in zip(xs, ys, names):
-            ax.annotate(name, (xi, yi), textcoords="offset points",
-                       xytext=(5, 5), fontsize=7, alpha=0.7)
+            ax.annotate(
+                name,
+                (xi, yi),
+                textcoords="offset points",
+                xytext=(5, 5),
+                fontsize=7,
+                alpha=0.7,
+            )
 
     ax.set_xscale("log")
     ax.set_xlabel("Model Parameters (Billions)")
@@ -313,7 +396,11 @@ def plot_scaling_scatter(results, output_dir, category=None):
     ax.set_ylim(0, 105)
 
     plt.tight_layout()
-    safe = category.lower().replace(" ", "_").replace("(", "").replace(")", "") if category else "all"
+    safe = (
+        category.lower().replace(" ", "_").replace("(", "").replace(")", "")
+        if category
+        else "all"
+    )
     path = output_dir / f"scaling_scatter_{safe}.png"
     plt.savefig(path, dpi=200, bbox_inches="tight")
     plt.close()
@@ -323,6 +410,7 @@ def plot_scaling_scatter(results, output_dir, category=None):
 # ═══════════════════════════════════════════════════════════════════════
 # Figure 4: Domain gap — accuracy vs category (line plot, clean)
 # ═══════════════════════════════════════════════════════════════════════
+
 
 def plot_domain_gap(results, output_dir):
     """Line plot: each model's accuracy dropping from General → C. elegans."""
@@ -336,16 +424,18 @@ def plot_domain_gap(results, output_dir):
             by_llm[r["LLM"]][cat] = r.get("Pretrained Accuracy (%)", 0)
 
     # Only include models with all 4 categories
-    complete = {llm: cats for llm, cats in by_llm.items()
-                if all(c in cats for c in cat_order)}
+    complete = {
+        llm: cats for llm, cats in by_llm.items() if all(c in cats for c in cat_order)
+    }
 
     if not complete:
         print("  Not enough complete models for domain gap plot")
         return
 
     # Sort by General Knowledge score (top performers first)
-    sorted_llms = sorted(complete.keys(),
-                        key=lambda l: complete[l]["General Knowledge"], reverse=True)
+    sorted_llms = sorted(
+        complete.keys(), key=lambda m: complete[m]["General Knowledge"], reverse=True
+    )
 
     fig, ax = plt.subplots(figsize=(10, 6))
 
@@ -356,8 +446,16 @@ def plot_domain_gap(results, output_dir):
         params = _params(llm)
         lw = 2.5 if params and params >= 32 else 1.5
         alpha = 0.9 if params and params >= 32 else 0.6
-        ax.plot(cat_order, scores, "o-", label=f"{name} ({params}B)" if params else name,
-               color=color, linewidth=lw, alpha=alpha, markersize=6)
+        ax.plot(
+            cat_order,
+            scores,
+            "o-",
+            label=f"{name} ({params}B)" if params else name,
+            color=color,
+            linewidth=lw,
+            alpha=alpha,
+            markersize=6,
+        )
 
     ax.set_ylabel("Pretrained Accuracy (%)")
     ax.set_title("The Domain Gap: LLM Performance Across Knowledge Domains")
@@ -376,37 +474,66 @@ def plot_domain_gap(results, output_dir):
 # Figure 5: Error breakdown (clean — only working models)
 # ═══════════════════════════════════════════════════════════════════════
 
+
 def plot_error_breakdown(results, output_dir):
     """Side-by-side stacked bar: pretrained vs informed error types."""
-    error_types = ["correct", "wrong_answer", "format_error", "parse_failure", "no_response"]
-    colors = {"correct": "#4CAF50", "wrong_answer": "#E53935", "format_error": "#FFB347",
-              "parse_failure": "#9B59B6", "no_response": "#95A5A6"}
+    error_types = [
+        "correct",
+        "wrong_answer",
+        "format_error",
+        "parse_failure",
+        "no_response",
+    ]
+    colors = {
+        "correct": "#4CAF50",
+        "wrong_answer": "#E53935",
+        "format_error": "#FFB347",
+        "parse_failure": "#9B59B6",
+        "no_response": "#95A5A6",
+    }
 
     # Aggregate per LLM across all categories
-    llm_errors = defaultdict(lambda: {"pretrained": defaultdict(int), "informed": defaultdict(int)})
+    llm_errors = defaultdict(
+        lambda: {"pretrained": defaultdict(int), "informed": defaultdict(int)}
+    )
     for r in results:
         name = _short(r["LLM"])
         for etype in error_types:
-            llm_errors[name]["pretrained"][etype] += r.get("Pretrained Errors", {}).get(etype, 0)
-            llm_errors[name]["informed"][etype] += r.get("Informed Errors", {}).get(etype, 0)
+            llm_errors[name]["pretrained"][etype] += r.get("Pretrained Errors", {}).get(
+                etype, 0
+            )
+            llm_errors[name]["informed"][etype] += r.get("Informed Errors", {}).get(
+                etype, 0
+            )
 
     if not llm_errors:
         return
 
     # Sort by total correct (pretrained)
-    sorted_llms = sorted(llm_errors.keys(),
-                        key=lambda l: llm_errors[l]["pretrained"]["correct"], reverse=True)
+    sorted_llms = sorted(
+        llm_errors.keys(),
+        key=lambda m: llm_errors[m]["pretrained"]["correct"],
+        reverse=True,
+    )
 
     fig, axes = plt.subplots(1, 2, figsize=(15, 6), sharey=True)
 
-    for ax, mode, title in [(axes[0], "pretrained", "Pretrained"),
-                             (axes[1], "informed", "RAG-Informed")]:
+    for ax, mode, title in [
+        (axes[0], "pretrained", "Pretrained"),
+        (axes[1], "informed", "RAG-Informed"),
+    ]:
         bottom = np.zeros(len(sorted_llms))
         for etype in error_types:
             vals = [llm_errors[llm][mode][etype] for llm in sorted_llms]
             label = etype.replace("_", " ").title()
-            ax.barh(sorted_llms, vals, left=bottom, label=label,
-                   color=colors[etype], alpha=0.85)
+            ax.barh(
+                sorted_llms,
+                vals,
+                left=bottom,
+                label=label,
+                color=colors[etype],
+                alpha=0.85,
+            )
             bottom += np.array(vals, dtype=float)
 
         ax.set_title(title, fontsize=13)
@@ -414,7 +541,9 @@ def plot_error_breakdown(results, output_dir):
         ax.legend(fontsize=8, loc="lower right")
         ax.grid(axis="x", alpha=0.3)
 
-    fig.suptitle("Error Type Breakdown: Pretrained vs RAG-Informed", fontsize=14, y=1.01)
+    fig.suptitle(
+        "Error Type Breakdown: Pretrained vs RAG-Informed", fontsize=14, y=1.01
+    )
     plt.tight_layout()
     path = output_dir / "error_breakdown.png"
     plt.savefig(path, dpi=200, bbox_inches="tight")
@@ -425,6 +554,7 @@ def plot_error_breakdown(results, output_dir):
 # ═══════════════════════════════════════════════════════════════════════
 # Figure 6: Calibration curve
 # ═══════════════════════════════════════════════════════════════════════
+
 
 def plot_calibration(detailed_results, output_dir):
     """Similarity score vs RAG accuracy — proves retrieval quality matters."""
@@ -443,7 +573,9 @@ def plot_calibration(detailed_results, output_dir):
 
     for i in range(len(bins) - 1):
         lo, hi = bins[i], bins[i + 1]
-        in_bin = [q for q in all_questions if lo <= q.get("best_similarity_score", 0) < hi]
+        in_bin = [
+            q for q in all_questions if lo <= q.get("best_similarity_score", 0) < hi
+        ]
         if len(in_bin) >= 10:
             acc = sum(1 for q in in_bin if q.get("rag_correct")) / len(in_bin) * 100
             bin_accs.append(acc)
@@ -456,8 +588,16 @@ def plot_calibration(detailed_results, output_dir):
 
     fig, ax1 = plt.subplots(figsize=(8, 5))
 
-    ax1.plot(bin_centers, bin_accs, "o-", color="#4878CF", linewidth=2.5,
-            markersize=10, label="RAG Accuracy", zorder=5)
+    ax1.plot(
+        bin_centers,
+        bin_accs,
+        "o-",
+        color="#4878CF",
+        linewidth=2.5,
+        markersize=10,
+        label="RAG Accuracy",
+        zorder=5,
+    )
 
     ax1.set_xlabel("Retrieval Similarity Score")
     ax1.set_ylabel("RAG Accuracy (%)", color="#4878CF")
@@ -465,7 +605,14 @@ def plot_calibration(detailed_results, output_dir):
     ax1.set_ylim(40, 100)
 
     ax2 = ax1.twinx()
-    ax2.bar(bin_centers, bin_counts, width=0.04, alpha=0.2, color="gray", label="N questions")
+    ax2.bar(
+        bin_centers,
+        bin_counts,
+        width=0.04,
+        alpha=0.2,
+        color="gray",
+        label="N questions",
+    )
     ax2.set_ylabel("Questions in Bin", color="gray")
 
     ax1.legend(loc="upper left")
@@ -482,6 +629,7 @@ def plot_calibration(detailed_results, output_dir):
 # ═══════════════════════════════════════════════════════════════════════
 # Figure 7: Scatter — pretrained vs informed accuracy per model
 # ═══════════════════════════════════════════════════════════════════════
+
 
 def plot_pretrained_vs_informed_scatter(results, output_dir, category=None):
     """Scatter: x = pretrained, y = informed, diagonal = no change. Points above = RAG helps."""
@@ -507,17 +655,27 @@ def plot_pretrained_vs_informed_scatter(results, output_dir, category=None):
 
     # Color by company
     colors = [COMPANY_COLORS.get(n, "#888888") for n in names]
-    ax.scatter(xs, ys, c=colors, s=80, alpha=0.85, zorder=5, edgecolors="white", linewidth=0.5)
+    ax.scatter(
+        xs, ys, c=colors, s=80, alpha=0.85, zorder=5, edgecolors="white", linewidth=0.5
+    )
 
     # Labels
     for xi, yi, name in zip(xs, ys, names):
-        ax.annotate(name, (xi, yi), textcoords="offset points",
-                   xytext=(5, 4), fontsize=7, alpha=0.8)
+        ax.annotate(
+            name,
+            (xi, yi),
+            textcoords="offset points",
+            xytext=(5, 4),
+            fontsize=7,
+            alpha=0.8,
+        )
 
     # Diagonal
     lims = [0, 105]
     ax.plot(lims, lims, "k--", alpha=0.3, label="No change")
-    ax.fill_between(lims, lims, [105, 105], alpha=0.05, color="green", label="RAG helps")
+    ax.fill_between(
+        lims, lims, [105, 105], alpha=0.05, color="green", label="RAG helps"
+    )
     ax.fill_between(lims, [0, 0], lims, alpha=0.05, color="red", label="RAG hurts")
 
     ax.set_xlabel("Pretrained Accuracy (%)")
@@ -530,7 +688,11 @@ def plot_pretrained_vs_informed_scatter(results, output_dir, category=None):
     ax.grid(True, alpha=0.3)
 
     plt.tight_layout()
-    safe = category.lower().replace(" ", "_").replace("(", "").replace(")", "") if category else "all"
+    safe = (
+        category.lower().replace(" ", "_").replace("(", "").replace(")", "")
+        if category
+        else "all"
+    )
     path = output_dir / f"scatter_pre_vs_inf_{safe}.png"
     plt.savefig(path, dpi=200, bbox_inches="tight")
     plt.close()
@@ -541,6 +703,7 @@ def plot_pretrained_vs_informed_scatter(results, output_dir, category=None):
 # Main
 # ═══════════════════════════════════════════════════════════════════════
 
+
 def main():
     score_dir = "openworm_ai/quiz/scores/rag_full_logprob"
     output_dir = Path("openworm_ai/quiz/figures/final")
@@ -550,7 +713,7 @@ def main():
     results = load_and_clean(score_dir)
     print(f"  {len(results)} clean LLM × category entries")
     print(f"  Models: {len(set(r['LLM'] for r in results))}")
-    print(f"  Categories: {sorted(set(r.get('Quiz Category','') for r in results))}")
+    print(f"  Categories: {sorted(set(r.get('Quiz Category', '') for r in results))}")
 
     print(f"\nGenerating figures in {output_dir}/\n")
 
