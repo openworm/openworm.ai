@@ -3,19 +3,27 @@ from openworm_ai.utils.llms import generate_response
 
 
 GENERATE_Q = """
-Generate a list of <QUESTION_NUMBER> multiple choice questions to test someone's general knowledge of Caenorhabditis elegans (C. elegans).
-The questions should be answerable by an intelligent adult, and should cover topics such as genetics, neurobiology, behavior, development, physiology, and research significance.
-There should be <ANSWER_NUMBER> possible answers, only one of which is unambiguously correct, and all of the answers should be kept brief.
-Each of the <QUESTION_NUMBER> question/answer sets should be presented in the following format:
+Generate <QUESTION_NUMBER> multiple choice question to test someone's knowledge of Caenorhabditis elegans (C. elegans).
 
+The question should be answerable by an intelligent adult with biology knowledge and should cover diverse topics such as genetics, neurobiology, behavior, development, physiology, anatomy, research methods, or experimental techniques.
+
+IMPORTANT:
+- Avoid repeating common trivia patterns.
+- Avoid overused facts such as neuron count or basic cell lineage unless used in a novel conceptual way.
+- Prefer mechanistic, functional, or experimental understanding rather than simple memorization.
+- Ensure the question is clear, unambiguous, and factually stable.
+
+There should be <ANSWER_NUMBER> possible answers, only one of which is unambiguously correct. All answers should be brief and plausible.
+
+Each of the <QUESTION_NUMBER> question/answer sets should be presented in the following format (focus on the format, not the specific content):
 """
 
 TEXT_ANSWER_EXAMPLE = """
-QUESTION: What is the primary food source for C. elegans in lab conditions?
-CORRECT ANSWER: E. coli
-WRONG ANSWER: Algae
-WRONG ANSWER: Fungi
-WRONG ANSWER: Bacteria mix
+QUESTION: <Insert question>  
+CORRECT ANSWER: <Correct answer>  
+WRONG ANSWER: <Wrong answer 1>  
+WRONG ANSWER: <Wrong answer 2>  
+WRONG ANSWER: <Wrong answer 3>
 
 """
 

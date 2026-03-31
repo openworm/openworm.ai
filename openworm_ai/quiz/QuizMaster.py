@@ -1,25 +1,29 @@
 from __future__ import annotations
 
+import os
 import json
 import random
 from enum import Enum
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from llama_index.core import Document, VectorStoreIndex
-from llama_index.embeddings.ollama import OllamaEmbedding
 from llama_index.embeddings.openai import OpenAIEmbedding
 
 from openworm_ai.quiz.QuizModel import Answer, MultipleChoiceQuiz, Question
 from openworm_ai.utils.llms import (
     LLM_CLAUDE37,
-    LLM_OLLAMA_GEMMA2,
+    LLM_HF_QWEN25_72B,
     ask_question_get_response,
     get_anthropic_key,
     get_llm,
     get_llm_from_argv,
 )
+
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # -----------------------------
 # CLI enums / constants
@@ -44,22 +48,29 @@ def get_default_critic_llm_ver():
     """
     Choose the default critic model:
     - If an Anthropic key is available -> Claude 3.7 Sonnet
-    - Otherwise -> fall back to local Ollama model (gemma2)
+    - Otherwise -> fall back to HF model (QWEN)
     """
     try:
         key = get_anthropic_key()
     except Exception:
         key = None
-    return LLM_CLAUDE37 if key else LLM_OLLAMA_GEMMA2
+    return LLM_CLAUDE37 if key else LLM_HF_QWEN25_72B
+
+
+# -----------------------------
+# Critic: simplified (no anchors)
+# -----------------------------
 
 
 def score_question_with_critic(
-    item: dict, llm_ver_critic: Optional[str] = None, temperature: float = 0.0
-):
+    item: dict,
+    llm_ver_critic: Optional[str] = None,
+    temperature: float = 0.0,
+) -> Tuple[float, bool]:
     """
     Score a single MCQ item using a critic LLM.
 
-    Returns: (score: float, comment: None)
+    Returns: (score: float, reject: bool)
     """
     if llm_ver_critic is None:
         llm_ver_critic = get_default_critic_llm_ver()
@@ -67,22 +78,37 @@ def score_question_with_critic(
     mcq_json_str = json.dumps(item, ensure_ascii=False, indent=2)
 
     critic_prompt = """
-You are an expert evaluator of multiple-choice questions.
+You are a STRICT evaluator of multiple-choice questions (MCQs).
 
 You will be given ONE MCQ in JSON format:
 - "question": the question text
-- "options": array of answers (A–D)
+- "options": array of 4 answers (A–D)
 - "correct_label": the intended correct option.
 
-Evaluate QUALITY on:
-1) Clarity
-2) Unambiguity (exactly one correct)
-3) Factual correctness
-4) Distractor quality
-5) Appropriateness
+First, silently check:
+- Is the correct answer unambiguous and factually stable?
+- Could any other option be arguably correct?
+- Are distractors plausible (not silly / irrelevant)?
 
-Return ONLY valid JSON: {{"score": <integer 0-100>}}
-Do not include any other keys or any extra text.
+REJECT must be true if ANY:
+- The question depends on rankings, "most", "first", "largest", or "as of <year>" style facts without a stable anchor.
+- More than one option could be correct under any reasonable interpretation.
+- The correct option depends on definition/region/timeframe.
+- Any option is nonsense / fabricated.
+- Distractors are obviously non-competitive or unrelated.
+
+SCORING (0–100) — use the FULL SCALE (do NOT cluster around 80–90):
+- 95–100: Excellent. Crystal clear, one correct, strong distractors, interesting, not trivial.
+- 85–94: Very good. Minor weakness (slightly easy OR one distractor a bit weak) but still clean.
+- 70–84: OK. Noticeably easy, or distractors weak/revealing, or wording slightly clunky.
+- 50–69: Poor. Ambiguity risk, shaky fact stability, or multiple distractors weak.
+- 0–49: Broken. Likely wrong/ambiguous OR should be rejected.
+
+IMPORTANT: If you are tempted to give 85, ask yourself: is it actually "very good", or merely "OK" (70–84)?
+Also: only give 95+ if the distractors are genuinely competitive.
+
+Return ONLY valid JSON with EXACT keys "score" and "reject":
+{{"score": <integer 0-100>, "reject": <true/false>}}
 
 MCQ:
 {mcq_json}
@@ -96,20 +122,26 @@ MCQ:
         resp = chain.invoke({"mcq_json": mcq_json_str}).strip()
     except Exception as e:
         print(f"! Critic LLM call failed ({llm_ver_critic}): {e}")
-        return 50.0, None
+        return 50.0, True  # fail-safe: reject
 
+    # Robust JSON extraction & brace normalization
     try:
         start = resp.find("{")
         end = resp.rfind("}")
         if start == -1 or end == -1 or end <= start:
-            raise ValueError("No JSON object found in critic response.")
-        obj = json.loads(resp[start : end + 1])
-        return float(obj.get("score", 50.0)), None
-    except Exception as e:
+            raise ValueError("No JSON object found.")
+
+        candidate = resp[start : end + 1].strip()
+        candidate = candidate.replace("{{", "{").replace("}}", "}")
+
+        obj = json.loads(candidate)
+        score = float(obj.get("score", 50.0))
+        reject = bool(obj.get("reject", False))
+        return score, reject
+    except Exception:
         print("! Failed to parse critic response as JSON:")
         print(resp)
-        print(e)
-        return 50.0, None
+        return 50.0, True
 
 
 # -----------------------------
@@ -126,11 +158,6 @@ def parse_free_text_mcqs_to_items(text: str) -> List[dict]:
     - CORRECT ANSWER: ...  (also accepts CORRECT:, ANSWER:)
     - WRONG ANSWER: ...    (also accepts WRONG:, INCORRECT:)
 
-    Ignores:
-    - explanations
-    - prompt echoes
-    - random extra lines
-
     Produces items in the canonical internal format:
       {
         "question": "...",
@@ -138,11 +165,9 @@ def parse_free_text_mcqs_to_items(text: str) -> List[dict]:
         "correct_label":"A"
       }
     """
-
     if not isinstance(text, str) or not text.strip():
         return []
 
-    # If the model echoed the whole prompt, try to start at the first QUESTION:
     i = text.upper().find("QUESTION:")
     if i != -1:
         text = text[i:]
@@ -173,13 +198,11 @@ def parse_free_text_mcqs_to_items(text: str) -> List[dict]:
 
         u = line.upper()
 
-        # QUESTION line
         if u.startswith("QUESTION:") or line.endswith("?"):
             flush()
             cur_q = line.split(":", 1)[1].strip() if ":" in line else line
             continue
 
-        # CORRECT line
         if (
             u.startswith("CORRECT ANSWER:")
             or u.startswith("CORRECT:")
@@ -188,7 +211,6 @@ def parse_free_text_mcqs_to_items(text: str) -> List[dict]:
             correct = line.split(":", 1)[1].strip() if ":" in line else line
             continue
 
-        # WRONG line
         if (
             u.startswith("WRONG ANSWER:")
             or u.startswith("WRONG:")
@@ -239,15 +261,18 @@ def _is_valid_mcq_item(item: dict) -> bool:
 
 
 def question_to_text(item: dict) -> str:
-    stem = item.get("question", "").strip()
-    opts = item.get("options", [])
-    parts = [stem] + [f"{o.get('label')}. {o.get('text')}" for o in opts]
-    return " ".join([p for p in parts if p]).strip()
+    # NOTE: keep this simple; the stem carries most “dup” signal
+    return item.get("question", "").strip()
 
 
 def get_embed_model_for_llm(llm_ver: str):
-    if llm_ver.startswith("Ollama:"):
-        return OllamaEmbedding(model_name=llm_ver.replace("Ollama:", ""))
+    openai_key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_KEY")
+
+    if llm_ver.startswith("huggingface:") or not openai_key:
+        from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+
+        return HuggingFaceEmbedding(model_name="BAAI/bge-large-en-v1.5")
+
     return OpenAIEmbedding()
 
 
@@ -262,11 +287,16 @@ def build_question_index(questions: List[dict], llm_ver: str) -> VectorStoreInde
 def deduplicate_questions_with_index(
     questions: List[dict],
     llm_ver: str,
-    similarity_threshold: float = 0.75,
+    similarity_threshold: float = 0.85,  # <-- IMPORTANT: don't set this too low
     max_items: Optional[int] = None,
 ) -> List[dict]:
     if not questions:
         return []
+
+    import nest_asyncio
+
+    nest_asyncio.apply()
+
     index = build_question_index(questions, llm_ver)
     retriever = index.as_retriever(similarity_top_k=5)
 
@@ -294,99 +324,219 @@ def deduplicate_questions_with_index(
 
 
 # -----------------------------
-# Main generation entrypoint (keeps old name)
+# Main generation entrypoint
 # -----------------------------
 
 
-def save_quiz(num_questions, num_answers, llm_ver, quiz_scope, temperature=0):
+def save_quiz(num_questions, llm_ver, quiz_scope, temperature):
     """
-    Same external behavior as the old version, but internally:
-    free-text generation -> tolerant parse -> critic -> embed-dedup -> save quiz json.
+    Batch generation (BATCH_SIZE q/call) with context-aware dedup.
+
+    Key design:
+    - BATCH_SIZE=10 questions per LLM call: the model sees the full batch so natural
+      within-batch diversity; far fewer total API calls.
+    - accepted_descriptions fed back into every prompt so the LLM avoids repeating
+      questions that already passed the critic (fixes the "stateless call" problem).
+    - Top-up rounds do incremental dedup: `selected` is treated as fixed and new
+      candidates are checked *against* it rather than re-deduping from scratch
+      (prevents previously accepted questions being evicted on re-sort).
     """
     if quiz_scope == QuizScope.GeneralKnowledge:
         from openworm_ai.quiz.Templates import GENERATE_Q, TEXT_ANSWER_EXAMPLE
 
         suffix = "_general_v2"
+        use_topic_exclusion = True
+        topic_length = "8-12 word HIGHLY SPECIFIC"
     elif quiz_scope == QuizScope.Science:
         from openworm_ai.quiz.TemplatesScience import GENERATE_Q, TEXT_ANSWER_EXAMPLE
 
         suffix = "_science_v2"
+        use_topic_exclusion = True
+        topic_length = "8-12 word HIGHLY SPECIFIC"
     elif quiz_scope == QuizScope.CElegans:
         from openworm_ai.quiz.TemplatesCelegans import GENERATE_Q, TEXT_ANSWER_EXAMPLE
 
         suffix = "_celegans_v2"
+        use_topic_exclusion = True
+        topic_length = "8-12 word HIGHLY SPECIFIC"
     else:
         raise ValueError(f"Unsupported quiz scope: {quiz_scope}")
 
-    # Over-generate so critic+dedup have room to work
-    OVERGEN = 2
-    target_valid = num_questions * OVERGEN
+    BATCH_SIZE = 10
+    # Aim for 2x target in the pool before semantic dedup (leaves room for critic rejects)
+    target_pool = num_questions * 2
+    max_calls = max(10, (target_pool // BATCH_SIZE) * 3)
 
-    # Retry budget (small models fail format often)
-    # This keeps the pipeline robust instead of crashing early.
-    max_calls = max(20, target_valid * 3)
-
-    items: List[dict] = []
+    pool: List[dict] = []  # critic-passed, exact-deduped questions
+    pool_texts: set = set()  # exact-text keys for O(1) dedup
+    used_topics: List[str] = []
+    # Short question texts fed back to the LLM to prevent it re-generating similar questions
+    accepted_descriptions: List[str] = []
     calls = 0
+    critic_llm_ver = get_default_critic_llm_ver()
 
-    while calls < max_calls:
-        calls += 1
+    def extract_topics_from_raw(raw: str) -> None:
+        """Extract every 'Topic: ...' line from a batch response."""
+        for line in raw.splitlines():
+            stripped = line.strip()
+            if stripped.startswith("Topic:"):
+                topic = stripped.split("Topic:", 1)[1].strip()
+                if topic:
+                    used_topics.append(topic)
 
-        prompt = (
-            GENERATE_Q.replace("<QUESTION_NUMBER>", "1") + "\n\n" + TEXT_ANSWER_EXAMPLE
-        )
-        raw = ask_question_get_response(prompt, llm_ver, temperature)
-
-        parsed = parse_free_text_mcqs_to_items(raw)
-        if parsed:
-            items.extend(parsed)
-
-        data = [d for d in items if _is_valid_mcq_item(d)]
-        if len(data) >= target_valid:
-            break
-
-        if calls % 5 == 0:
-            print(
-                f"[Gen] calls={calls}/{max_calls} | parsed_items={len(items)} | valid_items={len(data)} (target={target_valid})"
+    def make_prompt(batch_num: int) -> str:
+        exclusion_context = ""
+        if use_topic_exclusion and used_topics:
+            exclusion_context += (
+                f"\n\nTopics already used (choose something DIFFERENT): "
+                f"{', '.join(used_topics[-40:])}\n"
+            )
+        if accepted_descriptions:
+            recent = accepted_descriptions[-30:]
+            exclusion_context += (
+                "\n\nQuestions already accepted - DO NOT repeat or closely resemble any of these:\n"
+                + "\n".join(f"- {d}" for d in recent)
+                + "\n"
             )
 
-    data = [d for d in items if _is_valid_mcq_item(d)]
-    if not data:
-        raise ValueError(
-            f"No valid questions parsed after {calls} generation calls. "
-            f"Try a different local model (e.g. -ge2 or -o-m) or loosen the GENERATE_Q prompt."
+        if use_topic_exclusion:
+            topic_instruction = (
+                f"\n\nGenerate batch #{batch_num} of {BATCH_SIZE} unique questions. "
+                f"For each question, first write a {topic_length} topic tag "
+                f"(e.g., 'Topic: Wright Brothers First Powered Flight at Kitty Hawk 1903'), "
+                f"then the full question in the format below.\n\n"
+            )
+        else:
+            topic_instruction = (
+                f"\n\nGenerate batch #{batch_num} of {BATCH_SIZE} unique questions.\n\n"
+            )
+
+        return (
+            GENERATE_Q.replace("<QUESTION_NUMBER>", str(BATCH_SIZE)).replace(
+                "<ANSWER_NUMBER>", "4"
+            )
+            + exclusion_context
+            + topic_instruction
+            + TEXT_ANSWER_EXAMPLE
         )
 
-    # Critic scoring
-    critic_llm_ver = get_default_critic_llm_ver()
-    print(f"Using critic model {critic_llm_ver} to score {len(data)} questions")
+    def score_and_add_to_pool(candidates: List[dict]) -> int:
+        """
+        Score each candidate with the critic and add passing, non-duplicate items to pool.
+        Returns the number added.
+        """
+        added = 0
+        for item in candidates:
+            if not _is_valid_mcq_item(item):
+                continue
+            key = item["question"].lower().strip()
+            if key in pool_texts:
+                continue
+            s, reject = score_question_with_critic(
+                item, llm_ver_critic=critic_llm_ver, temperature=0.2
+            )
+            item["_critic_score"] = s
+            item["_critic_reject"] = reject
+            if not reject:
+                pool.append(item)
+                pool_texts.add(key)
+                # Feed a short version back to the LLM in future prompts
+                accepted_descriptions.append(item["question"].strip()[:100])
+                added += 1
+        return added
 
-    scored = []
-    for idx, item in enumerate(data):
-        s, _ = score_question_with_critic(item, llm_ver_critic=critic_llm_ver)
-        item["_critic_score"] = s
-        if idx < 10 or (idx + 1) % 25 == 0:
-            print(f"  [Critic] Q{idx}: score={s:.1f}")
-        scored.append(item)
-
-    scored.sort(key=lambda x: x.get("_critic_score", 0.0), reverse=True)
-
-    # Dedup (embedding-based)
-    try:
-        selected = deduplicate_questions_with_index(
-            scored, llm_ver=llm_ver, similarity_threshold=0.9, max_items=num_questions
-        )
+    # ---------- initial generation ----------
+    print(f"Using critic model {critic_llm_ver}")
+    while calls < max_calls:
+        calls += 1
+        raw = ask_question_get_response(make_prompt(calls), llm_ver, temperature)
+        extract_topics_from_raw(raw)
+        parsed = parse_free_text_mcqs_to_items(raw)
+        added = score_and_add_to_pool(parsed)
         print(
-            f"Selected {len(selected)} questions after embedding dedup (target={num_questions})"
+            f"[Gen] call={calls}/{max_calls} | batch_parsed={len(parsed)} | "
+            f"added={added} | pool={len(pool)} (target={target_pool})"
         )
-    except Exception as e:
-        print(f"! Embedding dedup failed, falling back to top-{num_questions}: {e}")
-        selected = scored[:num_questions]
+        if len(pool) >= target_pool:
+            break
 
-    # Build MultipleChoiceQuiz
+    if not pool:
+        raise ValueError(f"No valid questions after {calls} generation calls.")
+
+    # Sort pool by critic score, then semantic-dedup to get initial selection
+    pool.sort(key=lambda x: float(x.get("_critic_score", 0.0)), reverse=True)
+    selected = deduplicate_questions_with_index(
+        pool, llm_ver=llm_ver, similarity_threshold=0.85, max_items=num_questions
+    )
+    print(f"[Init] After semantic dedup: {len(selected)}/{num_questions} questions")
+
+    # ---------- top-up rounds (incremental dedup against fixed `selected`) ----------
+    generation_round = 1
+    max_rounds = 5
+
+    while len(selected) < num_questions and generation_round <= max_rounds:
+        shortage = num_questions - len(selected)
+        # Generate enough batches to get ~2x the shortage after critic rejection
+        batches_needed = max(2, (shortage * 2 + BATCH_SIZE - 1) // BATCH_SIZE)
+        print(
+            f"\n[ROUND {generation_round + 1}] Need {shortage} more. "
+            f"Generating {batches_needed} batches (~{batches_needed * BATCH_SIZE} questions)..."
+        )
+
+        new_valid: List[dict] = []
+        for _ in range(batches_needed):
+            calls += 1
+            raw = ask_question_get_response(make_prompt(calls), llm_ver, temperature)
+            extract_topics_from_raw(raw)
+            parsed = parse_free_text_mcqs_to_items(raw)
+            for item in parsed:
+                if not _is_valid_mcq_item(item):
+                    continue
+                key = item["question"].lower().strip()
+                if key in pool_texts:
+                    continue
+                s, reject = score_question_with_critic(
+                    item, llm_ver_critic=critic_llm_ver, temperature=0.2
+                )
+                item["_critic_score"] = s
+                item["_critic_reject"] = reject
+                if not reject:
+                    new_valid.append(item)
+                    pool_texts.add(key)
+                    accepted_descriptions.append(item["question"].strip()[:100])
+
+        print(f"  {len(new_valid)} new candidates passed critic + exact-dedup")
+
+        if new_valid:
+            # Incremental dedup: pass [selected + new_valid_sorted] so that selected
+            # items (indices 0..len(selected)-1) are processed first and always kept,
+            # then new items are appended only if they don't dup anything already kept.
+            new_valid.sort(
+                key=lambda x: float(x.get("_critic_score", 0.0)), reverse=True
+            )
+            combined = selected + new_valid
+            selected = deduplicate_questions_with_index(
+                combined,
+                llm_ver=llm_ver,
+                similarity_threshold=0.85,
+                max_items=num_questions,
+            )
+            # Persist new_valid into pool for any further rounds
+            for item in new_valid:
+                pool.append(item)
+
+        print(f"  After incremental dedup: {len(selected)}/{num_questions} questions")
+        generation_round += 1
+
+    if len(selected) < num_questions:
+        print(
+            f"[WARNING] Only produced {len(selected)} questions (target={num_questions})"
+        )
+
+    # ---------- Build quiz ----------
     quiz = MultipleChoiceQuiz(
-        title=f"{llm_ver.replace(':', '_')}_{num_questions}questions{suffix}",
-        source=f"Generated by {llm_ver}, temperature={temperature}, free-text->parse(tolerant)->critic->dedup",
+        title=f"{llm_ver.replace(':', '_')}_{len(selected)}questions{suffix}",
+        source=f"Generated by {llm_ver}, temperature={temperature}, free-text->parse(tolerant)->critic->pool->dedup(0.75)",
     )
 
     indexing_local = ["1", "2", "3", "4"]
@@ -404,12 +554,12 @@ def save_quiz(num_questions, num_answers, llm_ver, quiz_scope, temperature=0):
 
     quiz.to_json_file(
         "openworm_ai/quiz/samples/%s_%iquestions%s.json"
-        % (llm_ver.replace(":", "_"), num_questions, suffix)
+        % (llm_ver.replace(":", "_").replace("/", "_"), len(selected), suffix)
     )
 
 
 # -----------------------------
-# CLI runner (keeps old behavior)
+# CLI runner
 # -----------------------------
 
 if __name__ == "__main__":
@@ -419,9 +569,39 @@ if __name__ == "__main__":
     print(f"Selected LLM: {llm_ver}")
 
     if "-ask" in sys.argv:
-        quiz_json = (
-            "openworm_ai/quiz/samples/Ollama_llama3.2_3questions_celegans_v2.json"
-        )
+        # ASK MODE - unchanged
+        quiz_json = None
+        for i, arg in enumerate(sys.argv):
+            if arg == "--quiz-file" and i + 1 < len(sys.argv):
+                quiz_json = sys.argv[i + 1]
+                break
+
+        if not quiz_json:
+            safe_model_name = llm_ver.replace(":", "_").replace("/", "_")
+
+            suffix = "_general_v2"
+            if "--celegans" in sys.argv:
+                suffix = "_celegans_v2"
+            elif "--science" in sys.argv:
+                suffix = "_science_v2"
+
+            num = 5
+            for a in sys.argv:
+                if a.isnumeric():
+                    num = int(a)
+
+            quiz_json = f"openworm_ai/quiz/samples/{safe_model_name}_{num}questions{suffix}.json"
+
+        if not os.path.exists(quiz_json):
+            print(f"! Quiz file not found: {quiz_json}")
+            print("Available quiz files:")
+            import glob
+
+            for f in glob.glob("openworm_ai/quiz/samples/*.json"):
+                print(f"  {f}")
+            sys.exit(1)
+
+        print(f"Using quiz file: {quiz_json}")
         quiz = MultipleChoiceQuiz.from_file(quiz_json)
 
         print(
@@ -495,7 +675,8 @@ if __name__ == "__main__":
                 g = "[%s] [[%s]] (this cannot be interpreted!)" % (guess, orig_resp)
 
             print(
-                f" >> {qi}) Is their guess of ({g}) for ({q}) correct (right answer: {correct_text})? {correct_guess}"
+                f" >> {qi}) Is their guess of ({g}) for ({q}) correct "
+                f"(right answer: {correct_text})? {correct_guess}"
             )
 
             if correct_guess:
@@ -517,13 +698,13 @@ if __name__ == "__main__":
             if a.isnumeric():
                 num = int(a)
 
-        quiz_scope = QuizScope.CElegans
-        if "--general" in sys.argv:
-            quiz_scope = QuizScope.GeneralKnowledge
+        quiz_scope = QuizScope.GeneralKnowledge
+        if "--celegans" in sys.argv:
+            quiz_scope = QuizScope.CElegans
         elif "--science" in sys.argv:
             quiz_scope = QuizScope.Science
 
         print(
             f"Using LLM {llm_ver} for saving quiz with {num} questions (scope={quiz_scope.name})"
         )
-        save_quiz(num, 4, llm_ver, quiz_scope=quiz_scope, temperature=0.2)
+        save_quiz(num, llm_ver, quiz_scope=quiz_scope, temperature=0.7)

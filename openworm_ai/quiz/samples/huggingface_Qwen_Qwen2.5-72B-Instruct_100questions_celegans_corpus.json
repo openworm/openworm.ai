@@ -1,0 +1,2506 @@
+{
+    "title": "huggingface_Qwen/Qwen2.5-72B-Instruct_100questions_celegans_corpus",
+    "source": "Corpus-based (RAG) from processed papers by huggingface:Qwen/Qwen2.5-72B-Instruct, temperature=0.7, free-text->parse(tolerant)->critic->pool->dedup(0.85)",
+    "questions": [
+        {
+            "question": "What is the purpose of including NeuroLex (now InterLex) identifiers in NeuroML models?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "To link model components to their biological counterparts",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "To ensure consistent behavior across simulators",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "To facilitate the export of models to other formats",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "To validate the model's electrophysiological properties",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary food source for *C. elegans* in the laboratory?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "*Escherichia coli*",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Rotting vegetables",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Yeast",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Algae",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the significance of the invariant number of somatic cells in *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "It allows researchers to track the fate of every cell",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "It ensures uniform growth rates",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "It simplifies genetic screens",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "It reduces the need for complex imaging techniques",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which neuron in *C. elegans* expresses the *cat-1/VMAT* reporter allele but not the *tph-1* or *bas-1* reporter alleles?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "PVW",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "ADF",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "PHC",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "AIM",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary evidence that the R9B and PGA neurons in *C. elegans* do not express the complete serotonin synthesis pathway?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Anti-serotonin staining is lost in *mod-5(n3314)* mutants",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Anti-serotonin staining is unaffected in *mod-5(n3314)* mutants",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Expression of *cat-1/VMAT* is absent",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Expression of *tph-1* is absent",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which neurotransmitter synthesis machinery is detected in the spicule socket glia of male *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "*cat-2/TH* and *bas-1/AAAD*",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "*tph-1* and *bas-1*",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "*unc-17/VAChT*",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "*unc-47/VGAT*",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In which neuron class is the expression of *eat-4/VGLUT* downregulated in young adult males compared to hermaphrodites?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "AIM",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "PVN",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "AVG",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "ADF",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the expression pattern of *unc-17/VAChT* in the AVG neurons of *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Dim and variable in hermaphrodites, slightly stronger in males",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Strong in both sexes",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Absent in both sexes",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Strong in hermaphrodites, absent in males",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which neuron class in *C. elegans* displays a substantial increase in the amount of synaptic output in males compared to hermaphrodites?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "PVN",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "AIM",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "AVG",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "ADF",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which neurons in *C. elegans* express *mod-5/SERT* and are capable of utilizing serotonin for vesicular release after uptake?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "R9B and PGA",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "CP1 to CP6",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "ADF",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "PHC",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In which neuron class is the expression of *unc-47/VGAT* sexually dimorphic and only detected in males?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "ADF, PDB, PVN, PHC, AS10, and AS11",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "PVW",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "AIM",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "AVG",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which neurotransmitter transporter is expressed in the PDC neuron of *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "*cat-1/VMAT* and *snf-3*",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "*cat-1/VMAT* only",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "*snf-3* only",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "*oct-1*",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the significance of the *mod-5/SERT* reporter allele expression in the male-specific nervous system of *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Indicates serotonin uptake capability",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Indicates serotonin synthesis capability",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Indicates vesicular release of serotonin",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Indicates absence of serotonin synthesis machinery",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "How many protein-coding genes are in the C. elegans genome according to WormBase release WS245?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "20,444",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "20,000",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "25,000",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "15,000",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which of the following is a feature of C. elegans chromosomes?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Holocentric",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Monocentric",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Acrocentric",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Telocentric",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary mechanism of trans-splicing in C. elegans?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Addition of SL1 or SL2 leader sequences",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Addition of a poly-A tail",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Removal of introns",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Circularization of mRNA",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which of the following statements about C. elegans operons is true?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Genes in operons are transcribed under the control of a single promoter",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Genes in operons are transcribed individually",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Genes in operons are not coexpressed",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Genes in operons are transcribed in reverse order",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary aim of the NeuroML initiative?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "To enable and encourage the use of multi-scale biophysically detailed models of neurons and neuronal circuits in neuroscience research.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "To develop a new programming language for computational neuroscience.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "To create a database of all known neuron types.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "To standardize the hardware used in neuroscience labs.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What does the first level of the NeuroMLv2 standard define?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "A formal \u2018schema\u2019 for the standard model elements, their attributes/parameters, and the relationships between them.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "The underlying dynamical behavior of the model elements.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "The simulation environments in which models can be run.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "The user interface for NeuroML tools.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is a key feature of NeuroML that promotes interoperability between different computational modeling tools?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "It is a simulator-independent language.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "It is written in Python.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "It requires all models to be run on cloud servers.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "It is only compatible with proprietary software.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the significance of the NeuroMLv2/LEMS framework in the context of model interoperability?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "It enables models to be losslessly mapped to other representations, promoting interoperability between tools.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "It restricts models to a single type of simulator.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "It only allows models to be visualized, not simulated.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "It requires all models to be manually translated between different formats.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "How does NeuroMLv2 support the FAIR principles in computational neuroscience?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "By providing a standardized, machine-readable format that supports the creation, validation, visualization, analysis, simulation, sharing, and reuse of models.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "By requiring all models to be published in peer-reviewed journals.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "By limiting the availability of NeuroML tools to a select group of researchers.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "By enforcing a single standard for all neuroscience research.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the main difference between NeuroML and PyNN in the context of computational neuroscience standards?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "NeuroML is a modular, declarative simulator-independent standard for biophysical neuronal modeling, while PyNN is a procedural Python-based simulator-independent API.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "NeuroML is used exclusively for genetic studies, while PyNN is used for neuronal modeling.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "NeuroML is a proprietary format, while PyNN is open-source.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "NeuroML is only compatible with MATLAB, while PyNN works with Python.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is a key feature of the NeuroMLv2 standard that supports the creation of standardized models?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "It provides a modular, structured, hierarchical, simulator-independent format.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "It requires all models to be written in a single programming language.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "It mandates the use of a specific simulation engine.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "It limits the types of models that can be created to only simple neuron models.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary defect observed in *ser-2* mutants during the execution of omega turns?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Shallow omega bends",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Failure to initiate omega turns",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Increased frequency of omega turns",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Excessive head movements",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What percentage of wild-type animals' heads touch the ventral side of the body during an omega turn?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "86% \u00b1 3.6%",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "72% \u00b1 7.9%",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "32% \u00b1 5.5%",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "27% \u00b1 7.8%",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the average escape angle for *ser-2* mutants in response to touch?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "150\u00b0 \u00b1 5\u00b0",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "179\u00b0 \u00b1 5\u00b0",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "177\u00b0 \u00b1 11\u00b0",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "143\u00b0 \u00b1 6\u00b0",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which of the following reporter alleles did not show any updated expression patterns in the male-specific nervous system?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "unc-25/GAD (ot1372)",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "unc-17/VAChT (syb4491)",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "eat-4/VGLUT (syb4257)",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "unc-47/VGAT (syb7566)",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In which male-specific neuron class was the expression of unc-47(syb7566) detected, but not previously observed with fosmid-based reporters?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "MCM",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "CEM",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "R1B",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "CP9",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which neuron class in the preanal ganglion showed weak expression of unc-17(syb4491)?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "DX3/4",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "DX1/2",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "CP9",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "CA9",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which pair of neurons had their identities switched in previous studies, but were correctly identified using NeuroPAL?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "CA7 and CP7",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "CA9 and CP9",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "R1B and R9B",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "DX3/4 and DX1/2",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which of the following neurons expresses high levels of eat-4(syb4257) but no unc-47(syb7566)?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "CA7",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "CP7",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "CA9",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "CP9",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary advantage of freezing and recovering *C. elegans* in terms of strain maintenance?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "It prevents the acquisition of unwanted suppressors or modifiers.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "It allows for easier genetic mapping.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "It speeds up the mutagenesis process.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "It increases the brood size of the worms.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which type of mutagen is known to cause primarily GC-to-AT transition mutations and small deletions in *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Ethane methylsulfonate (EMS)",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Trimethylpsoralen",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "N-ethyl-N-nitrosourea (ENU)",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "UV light",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the main purpose of forward genetics in *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "To identify genes responsible for specific phenotypes.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "To create targeted mutations in specific genes.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "To study the effects of RNA interference.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "To map the entire genome of *C. elegans*.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which technique involves the use of double-stranded RNA (dsRNA) to reduce gene activity in *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "RNA interference (RNAi)",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "CRISPR/Cas9",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "TALEN",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Sibling selection",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the main advantage of using the CB4856 strain in genetic mapping of *C. elegans* mutants?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "It has a high density of SNPs compared to the N2 strain.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "It is more resistant to mutagens.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "It has a larger genome size.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "It has a shorter generation time.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary method used to introduce dsRNA into *C. elegans* for RNAi experiments?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Feeding them bacteria that produce dsRNA",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Injecting dsRNA directly into the gonad",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Soaking them in a solution of dsRNA",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Using CRISPR/Cas9 to deliver dsRNA",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In the model of *C. elegans* locomotion, what is the primary function of the B-class neurons?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "To mediate forward locomotion",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "To mediate backward locomotion",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "To provide sensory input",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "To inhibit muscle contraction",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "According to the model, what is the role of hysteresis in B-class neurons?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "To prevent oscillations of arbitrarily small amplitude",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "To increase the speed of neuronal firing",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "To enhance the strength of synaptic inputs",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "To reduce the threshold for activation",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the phenotype of *C. elegans* mutants with defective GABA pathways when touched on the head?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "They contract muscles along both sides of their bodies",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "They move forward normally",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "They stop moving entirely",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "They turn around and move backward",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In the study assessing the induction of `hsp16-lacZ` and lethality in *C. elegans* exposed to water-soluble salts, which metal was NOT included?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Fe",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Cd",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Cu",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Pb",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which chemical category was NOT tested in the 4-h exposure period for behavioral assessments in *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Antibiotics",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Metals",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Pesticides",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Organic solvents",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which neurons express the *Pser-2::mCherry* transcriptional reporter?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Head muscles, head neurons, and neurons in the ventral nerve cord",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Only head neurons",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Only ventral nerve cord neurons",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Only head muscles",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which of the following mutants shows 100% immobilization on 30 mM tyramine?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "*unc-25; ser-2* double mutants",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "*ser-2* mutants",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "*goa-1* mutants",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "*eat-16* mutants",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the effect of expressing *Punc-47::SER-2* in *ser-2* mutants?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Restores sensitivity to exogenous tyramine",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Partially restores sensitivity to exogenous tyramine",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "No effect on sensitivity to exogenous tyramine",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Increases resistance to exogenous tyramine",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the effect of expressing *Punc-47::GOA-1* in *goa-1* mutants?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Largely restores sensitivity to exogenous tyramine",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Partially restores sensitivity to exogenous tyramine",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "No effect on sensitivity to exogenous tyramine",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Increases resistance to exogenous tyramine",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the effect of overexpressing *ser-2* in cholinergic neurons on aldicarb-induced paralysis in the presence of tyramine?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "More resistant to paralysis",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "More sensitive to paralysis",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "No change in sensitivity to paralysis",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Causes immediate paralysis",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which gene specifies cell fates in *C. elegans* according to the study by Greenwald, Sternberg, and Horvitz?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "lin-12",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "unc-5",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "let-60",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "pha-4",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary function of the *let-60* gene in *C. elegans* as described by Han and Sternberg?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Specifies cell fates during vulval induction",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Encodes a myosin heavy-chain",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Guides axon migrations",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Regulates programmed cell death",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which genes guide circumferential migrations of pioneer axons and mesodermal cells on the epidermis in *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "unc-5, unc-6, and unc-40",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "lin-12, sel-12, and let-60",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "pha-4, unc-4, and unc-54",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "unc-4, unc-5, and unc-6",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the role of the *ced-9* gene in *C. elegans* as identified by Hengartner and Horvitz?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Encodes a functional homolog of the mammalian proto-oncogene bcl-2",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Specifies cell fates during vulval induction",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Encodes a homeodomain protein",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Guides axon migrations",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which study identified the structural gene for a myosin heavy-chain in *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "MacLeod, Waterston, Fishpool, and Brenner",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Han and Sternberg",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Hedgecock, Culotti, and Hall",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Mello and Fire",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary function of the *pha-4* gene in *C. elegans* as reported by Mango, Lambie, and Kimble?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Required to generate the pharyngeal primordium",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Specifies cell fates during vulval induction",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Encodes a myosin heavy-chain",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Guides axon migrations",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which gene encodes a homeodomain protein that determines the pattern of synaptic input to specific motor neurons in *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "unc-4",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "unc-54",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "lin-12",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "pha-4",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the significance of the *sel-12* gene in *C. elegans* as described by Levitan and Greenwald?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Facilitates lin-12-mediated signaling",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Encodes a myosin heavy-chain",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Specifies cell fates during vulval induction",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Encodes a homeodomain protein",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which study analyzed the genetic requirements for the inheritance of RNAi in *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Grishok, Tabara, and Mello",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Han and Sternberg",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Hedgecock, Culotti, and Hall",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "MacLeod, Karn, and Brenner",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "At what intensity was the 505-nm excitation laser used to image GCaMP6s without exciting the GUR-3/PRDX-2 optogenetic system?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "1.4 mW mm^\u22122",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "1.0 mW mm^\u22122",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "2.0 mW mm^\u22122",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "10 mW mm^\u22122",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What type of filter was used to smooth the GCaMP6s intensity traces?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Causal polynomial filter (Savitzky\u2013Golay filter)",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Moving average filter",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Low-pass Butterworth filter",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "High-pass filter",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary role of the tyramine receptor SER-2 in the *C. elegans* escape response?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Facilitating the execution of a tight ventral bend",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Enhancing GABA release",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Increasing the escape angle",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Reducing the frequency of omega turns",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "How does the G\u03b1o/GOA-1 pathway function in *C. elegans* neurons?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "It antagonizes G\u03b1q/EGL-30 function",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "It enhances G\u03b1q/EGL-30 function",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "It activates G\u03b1q/EGL-30 function",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "It has no effect on G\u03b1q/EGL-30 function",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the effect of tyramine on GABA release from VD motor neurons?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Reduces GABA release",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Increases GABA release",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Has no effect on GABA release",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Enhances GABA synthesis",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the typical escape angle for *tdc-1* mutants in response to touch?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "143\u00b0",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "179\u00b0",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "150\u00b0",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "177\u00b0",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In the *C. elegans* model, how is the rest length of the lateral elements (L_0L,m) calculated?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "\\( L_0L,m = \\sqrt{L_{seg}^2 + (R_m - R_{m+1})^2} \\)",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "\\( L_0L,m = \\sqrt{L_{seg}^2 + (R_m + R_{m+1})^2} \\)",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "\\( L_0L,m = L_{seg} + (R_m - R_{m+1}) \\)",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "\\( L_0L,m = L_{seg} \\times (R_m - R_{m+1}) \\)",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the value of the damping constant \\(\\beta_L\\) in the *C. elegans* model?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "\\(\\beta_L = \\kappa_L \\times 0.025\\) s",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "\\(\\beta_L = \\kappa_D \\times 0.025\\) s",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "\\(\\beta_L = \\kappa_L \\times 0.01\\) s",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "\\(\\beta_L = \\kappa_0M \\times 0.025\\) s",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "How is the force generated by the lateral elements (f_L,m^k) when the element length is less than the rest length?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "\\( f_L,m^k = \\kappa_L (L_0L,m - L_L,m^k) + \\beta_L v_L,m^k \\)",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "\\( f_L,m^k = \\kappa_D (L_0L,m - L_L,m^k) + \\beta_D v_L,m^k \\)",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "\\( f_L,m^k = \\kappa_L [(L_0L,m - L_L,m^k)^4] + \\beta_L v_L,m^k \\)",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "\\( f_L,m^k = \\kappa_0M (L_0L,m - L_L,m^k) + \\beta_0M v_L,m^k \\)",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In the study, what was the exception to the blinding rule for neuron AIY?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Calcium activity was occasionally used to confirm AIY's identity",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "AIY\u2019s identity was always confirmed by its position alone",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "AIY\u2019s identity was never confirmed using calcium activity",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "AIY\u2019s identity was confirmed using a different classifier",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which method was primarily used to generate the knock-in reporter alleles for neurotransmitter pathway genes in *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "CRISPR/Cas9 genome engineering",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Transgenic overexpression",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "RNA interference",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Homologous recombination",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which neurotransmitter pathway gene was tagged at the 5' end rather than the 3' end in the *C. elegans* knock-in reporter strains?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "tdc-1",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "unc-25",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "unc-47",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "tph-1",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which neurotransmitter pathway gene is defined by the co-expression of *cat-2/TH* and *bas-1/AAAD* along with *cat-1/VMAT*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Dopamine-synthesizing and -releasing neurons",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Serotonin-synthesizing and -releasing neurons",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "GABAergic neurons",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Glutamatergic neurons",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which neurotransmitter pathway genes define neurons that synthesize and release GABA?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "*unc-25/GAD*, *unc-47/VGAT*, and *unc-46/LAMP*",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "*eat-4/VGLUT*, *unc-17/VAChT*, and *cha-1/ChAT*",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "*tph-1/TPH*, *bas-1/AAAD*, and *cat-1/VMAT*",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "*cat-2/TH*, *bas-1/AAAD*, and *cat-1/VMAT*",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which study evaluated the toxicity of soil from fields cultivated with Bt corn (MON810) compared to isogenic corn?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Hoss et al. (2008)",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Black and Williams (2001)",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Traunspurger et al. (1997)",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Hitchcock et al. (1997)",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In which study were transgenic strains of *C. elegans* carrying stress-inducible *lacZ* reporter genes used to assess metal contamination in the Carnon River system?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Mutwakil et al. (1997)",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Hoss et al. (1997)",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Hoss et al. (2001)",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Hoss et al. (1999)",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What does the term \"ZK154.3\" represent in *C. elegans* nomenclature?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Systematic gene identification (3rd predicted gene on cosmid ZK154).",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Allele name.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Protein name.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Strain name.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the significance of the term \"mec-7(e1506)\" in *C. elegans* nomenclature?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "It represents the 7th \"mechanosensory abnormality\" gene named and an allele from the MRC Laboratory of Molecular Biology.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "It is a duplication from the Herman Lab.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "It is a deficiency/deletion from the Horvitz Lab.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "It is a transposon insertion in the *ceh-6* gene.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What does the term \"Mec\" signify in *C. elegans* nomenclature?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Phenotype (Mechanosensory abnormal phenotype).",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Protein name.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Allele name.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Strain name.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the meaning of \"nDf6\" in *C. elegans* nomenclature?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Deficiency/Deletion (from the Horvitz Lab).",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Duplication.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Integrated transgene.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Extrachromosomal transgene array.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What does the term \"mec-7p::gfp\" represent in *C. elegans* nomenclature?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "GFP transcriptional fusion (using only the promoter of the gene).",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "GFP translational fusion (in which *gfp* is inserted in the coding sequence of the gene).",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Transposon insertion in the *ceh-6* gene.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Integrated transgene.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "In the context of the escape response, what is the role of the RIV head motorneurons?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "They trigger the initiation of the omega turn.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "They suppress head movements.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "They coordinate the timing of backing locomotion.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "They relax dorsal muscles.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the significance of the *Pmec-4::ChR2* transgenic animals in the study of *ser-2* mutants?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "They allow the induction of reversals by optogenetic activation of touch sensory neurons.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "They prevent the initiation of omega turns.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "They enhance the depth of omega turns.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "They suppress head movements.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the effect of blue light activation on the DD GABAergic motor neurons in *Pflp-13::ChR2; Pflp-13::NpHR* transgenic animals?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "It induces a deep ventral turn.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "It induces a deep dorsal turn.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "It has no effect on turning behavior.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "It causes the animal to stop moving.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the bending index of *Pflp-13::ChR2/NpHR* transgenic animals exposed to blue light?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "\u22120.45\u00b10.04",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "0.41\u00b10.06",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "0.00\u00b10.00",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "0.20\u00b10.05",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the role of the RIM neurons in the escape response?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "They release tyramine to coordinate the timing of backing locomotion and suppress head movements.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "They release serotonin to enhance forward locomotion.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "They release dopamine to increase head movements.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "They release acetylcholine to inhibit muscle contraction.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary role of SER-2 in the context of the escape response?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "It facilitates the execution of omega turns.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "It inhibits the execution of omega turns.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "It enhances the speed of forward locomotion.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "It decreases the sensitivity to anterior touch.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What does the NeuroML Model Validation (OMV) framework ensure during model development?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Consistent behavior across simulators",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Consistent behavior within a single simulator",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Consistent behavior across different versions of NeuroML",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Consistent behavior across different operating systems",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which of the following is an example of a NeuroML-compliant application that can be used to inspect and analyze elements of NeuroML models?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "NeuroConstruct",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "NeuroMorpho.Org",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Janelia MouseLight",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "SciUnit",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What type of file can be created from NeuroML models and simulations using pyNeuroML?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "COMBINE zip archive",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "JSON file",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "XML file",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "CSV file",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary advantage of NeuroML/LEMS descriptions of models being simulator independent?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Models can be simulated using a variety of simulation engines without changes",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Models can be shared on multiple platforms without changes",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Models can be visualized using multiple tools without changes",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Models can be validated using multiple frameworks without changes",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which of the following is an example of a procedural standard that has a Python API for creating network models?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "PyNN",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "NeuroML",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "SONATA",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "SBML",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which of the following is a feature provided by the graphical applications included in the NeuroML ecosystem?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Advanced model inspection features",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Automated code generation",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Real-time data streaming",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Cloud-based simulation services",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "How long can *C. elegans* survive without food in a state of stasis?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "At least a month",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "Up to 2 weeks",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "Up to 3 days",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "Up to 6 hours",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the Q10 value for *C. elegans* growth?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "~2",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "~1",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "~3",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "~4",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the upper temperature limit for continual growth of *C. elegans*?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "25\u00b0",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "30\u00b0",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "20\u00b0",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "15\u00b0",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What percentage of *C. elegans* protein-coding genes have predicted orthologs in the human genome?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "At least 38%",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "At least 50%",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "At least 25%",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "At least 70%",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary advantage of *C. elegans* being a self-fertilizing hermaphrodite in laboratory settings?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "A single animal can populate a plate",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "It increases genetic diversity",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "It reduces the need for mating pairs",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "It allows for faster development",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the main reason *C. elegans* is often mischaracterized as a soil nematode?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "It can be isolated from rotting vegetable matter",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "It is commonly found in soil",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "It prefers soil environments",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "It feeds on soil bacteria",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Which of the following is a limitation of using *C. elegans* in research?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "Not all metazoan genes are found in the *C. elegans* genome",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "It cannot be grown at low temperatures",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "It requires constant feeding",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "It cannot be genetically modified",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the primary purpose of using microfluidic devices in *C. elegans* research?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "To apply various compounds or agents while monitoring fluorescent read-out",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "To increase the growth rate of *C. elegans*",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "To freeze *C. elegans* stocks",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "To observe *C. elegans* behavior in natural environments",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the significance of the SL1 and SL2 leader sequences in C. elegans?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "They aid in translational initiation",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "They enhance mRNA stability",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "They regulate gene expression",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "They facilitate mRNA export",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the role of the NeuroML Editorial Board?",
+            "answers": [
+                {
+                    "ref": "1",
+                    "ans": "To identify a fundamental set of model types to support and ensure that a significant proportion of commonly used neurobiological modeling entities can be described with the language.",
+                    "correct": true
+                },
+                {
+                    "ref": "2",
+                    "ans": "To write and publish research papers on NeuroML.",
+                    "correct": false
+                },
+                {
+                    "ref": "3",
+                    "ans": "To develop the simulation engines that run NeuroML models.",
+                    "correct": false
+                },
+                {
+                    "ref": "4",
+                    "ans": "To provide financial support to NeuroML developers.",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}
