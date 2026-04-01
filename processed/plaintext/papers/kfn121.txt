@@ -75,10 +75,11 @@ pathway, the nuclear hormone receptor pathway, the receptor guanylate cyclase
 pathway, and the nitric oxide receptor pathway.
 
 to many other model systems, it is a useful model for molecular                                        Caenorhabditis elegans AND NEUROTOXICITY
-analyses of the response of conserved pathways to *in vivo*                   Caenorhabditis elegans Is Well Suited for
-chemical exposure. As an *in vivo* model, *C. elegans* provides                                          Neurophysiology Analysis of Neurotoxicity
-several characteristics that complement *in vitro* or cellular                           With 302 neurons representing 118 characterized neuronal
-models. The use of whole-organism assays, first of all, allows                                  subtypes (Hobert, 2005), *C. elegans* provides an *in vivo* model
+analyses of the response of conserved pathways to *in vivo*                   chemical exposure. As an *in vivo* model, *C. elegans* provides
+several characteristics that complement *in vitro* or cellular                           Caenorhabditis elegans Is Well Suited for
+models. The use of whole-organism assays, first of all, allows                                  Neurophysiology Analysis of Neurotoxicity
+With 302 neurons representing 118 characterized neuronal
+subtypes (Hobert, 2005), *C. elegans* provides an *in vivo* model
 
 ```
                                                                                                                         TABLE 2
@@ -118,7 +119,7 @@ Examples of Transgenic *Caenorhabditis elegans* Used in Toxicology Research
 |ATP level|Firefly luciferase|Measure the reduction of metabolic activity in response to environmental stressor|Lagido \*et al.\* 2001|
 Note. CYP, cytochrome P450; GST, glutathione S-transferase.
 
-for studying mechanisms of neuronal injury with resolution of single neurons. It initially underwent extensive development as a model organism in order to study the nervous system (Brenner, 1974), and its neuronal lineage and the complete wiring diagram of its nervous system are stereotyped and fully described (Sulston, 1983; Sulston *et al.*, 1983; White *et al.*, 1986). Each neuron has been assigned a code name corresponding to its location. For example, ADEL describes the dopaminergic (DAergic) head neuron “anterior deirid left.” This relatively “simple” nervous system is comprised of 6393 chemical synapses, 890 electrical junctions, and 1410 neuromuscular junctions (Chen *et al.*, 2006). Additionally, the main neurotransmitter systems (cholinergic, γ-aminobutyric acid (GABA)ergic, glutamatergic, DAergic, and serotoninergic) and their genetic networks (from neurotransmitter metabolism to vesicle cycling and synaptic transmission) are phylogenetically conserved from nematodes to vertebrates, which allows for findings from *C. elegans* to be extrapolated and further confirmed in vertebrate systems.
+for studying mechanisms of neuronal injury with resolution of single neurons. It intially underwent extensive development as a model organism in order to study the nervous system (Brenner, 1974), and its neuronal lineage and the complete wiring diagram of its nervous system are stereotyped and fully described (Sulston, 1983; Sulston *et al.*, 1983; White *et al.*, 1986). Each neuron has been assigned a code name corresponding to its location. For example, ADEL describes the dopaminergic (DAergic) head neuron “anterior deirid left.” This relatively “simple” nervous system is comprised of 6393 chemical synapses, 890 electrical junctions, and 1410 neuromuscular junctions (Chen *et al.*, 2006). Additionally, the main neurotransmitter systems (cholinergic, γ-aminobutyric acid (GABA)ergic, glutamatergic, DAergic, and serotoninergic) and their genetic networks (from neurotransmitter metabolism to vesicle cycling and synaptic transmission) are phylogenetically conserved from nematodes to vertebrates, which allows for findings from *C. elegans* to be extrapolated and further confirmed in vertebrate systems.
 
 Several genes involved in neurotransmission were originally identified in *C. elegans*. This is exemplified by the GABA vesicular transporter *unc-47* and the regulatory transcription factor *unc-30* (for review on the GABAergic system \[Jorgensen, 2005]), the vesicular acetylcholine (ACh) transporter *unc-17* (for review on the cholinergic system \[Rand, 2007]), the glutamate-gated chloride channel subunits α1 and β (*glc-1* and *glc-2*, respectively, for review on the glutamatergic system \[Brockie and Maricq, 2006]), and the synaptic proteins *unc-18*, *unc-13*, *unc-26* (for review on synaptic function \[Richmond, 2005]). Experiments challenging the *C. elegans* nervous system by laser ablation of individual neurons/axons, exposure to drugs, and other external stimuli have facilitated the design of robust behavioral tests to assess the function of defined neuronal populations (Avery and Horvitz, 1990; Bargmann, 2006; Barr and Garcia, 2006; Brockie and Maricq, 2006; Chase and Koelle, 2007; Goodman, 2006; Morgan *et al.*, 2007; Rand, 2007). For example, inhibitory GABAergic and excitatory cholinergic motor functions are assessed by quantifying the sinusoidal movement (amplitude and frequency of body bends) and foraging behavior of the worm. Motor and mechanosensory functions of glutamatergic neurons are evaluated by measuring the pharyngeal pumping rate and the response to touch. Mechanosensory functions of DAergic and serotoninergic neurons are appraised by observing the ability of worms to slow down when they encounter food. Furthermore, the creation of transgenic strains expressing fluorescent proteins in defined neurons allows *in vivo* imaging of any desired neuron. While experimentally challenging in the cells of microscopic animals, electrophysiology studies can be conducted with relative ease and success in live worms and cultured *C. elegans* neurons, establishing that they are electrophysiologically comparable to vertebrate neurons in their response to various drugs (Bianchi and Driscoll, 2006; Brockie and Maricq, 2006; Cook *et al.*, 2006; Schafer, 2006). Given the relative ease with which gene KO and transgenic animals can be generated, the ability to culture embryonic or primary *C. elegans* cells offers unique perspectives for neurotoxicology applications and study designs.
 
@@ -185,8 +186,8 @@ Paraquat, also known as methyl viologen (mev), is mainly used as an herbicide. I
 ||\`age-1(hx542)\`, \`age-1(hx546)\`|Increased catalase and Cu/Zn SOD activity, increased life span\Vitamin E (antioxidant) inhibits oxidative damage from paraquat\^b\|Vanfleteren (1993)\Goldstein and Modric (1994)|
 ||\`mev-1(kn1)\`, \`rad-8(mn162)\`|Paraquat and high oxygen content inhibit development,\inversely proportional to life span|Hartman \*et al.\* (1995)|
 ||\`age-1(hx546)\`, \`daf-16(m26)\`,\\`mev-1(kn1)^a\`|Increased resistance to paraquat and heat, extended life span,\increased SOD, and catalase mRNA level only in \`age-1\`\mutant, but not \`daf-16\` or \`mev-1\`|Yanase \*et al.\* (2002)|
-||\`mev-5(qa5005)^a\`, \`mev-6\`\\`(qa5006)^a\`, \`mev-7(qa5007)^a\`|Longevity and sensitivity to paraquat, UV or heat do\not correlate|Fujii \*et al.\* (2005)|
-||\`mev-1(kn1)\`, \`gas-1(fc21)\`|Overproduction of superoxide anion in submitochondrial\particles upon paraquat exposure|Kondo \*et al.\* (2005)|
+||\`mev-5(qa5005)^a\`, \`mev-6\`\\`(qa5006)^a\`, \`mev-7(qa5007)^a\`\\`mev-1(kn1)\`, \`gas-1(fc21)\`|Longevity and sensitivity to paraquat, UV or heat do\not correlate|Fujii \*et al.\* (2005)|
+|||Overproduction of superoxide anion in submitochondrial\particles upon paraquat exposure|Kondo \*et al.\* (2005)|
 ||\`skn-1(zu67)\`|Activation of SKN-1 transcription factor, localizes to the\nucleus following paraquat exposure|Kell \*et al.\* (2007)|
 ||\`daf-2(e1370)\`|Extended animal life span and increased resistance to ROS\produced by paraquat|Kim and Sun (2007);\Yang \*et al.\* (2007)|
 ||Overexpression of GSTO,\\`gsto-1\` RNAi|Increased resistance to paraquat-induced oxidative stress|Burmeister \*et al.\* (2008)|
@@ -204,7 +205,8 @@ Paraquat, also known as methyl viologen (mev), is mainly used as an herbicide. I
 ||\`bre-3(ye28)\`|Resistance to \*Bt\* toxin develops as a result of loss of glycolipid\receptors for the toxin|Barrows \*et al.\* (2006)|
 ||\`bre-1(ye4)\`, \`bre-2(ye31)\`|Resistance to toxin is achieved by mutations in\glycosyltransferase genes that glycosylate glycolipid or with\a loss of the monosaccharide biosynthetic pathway|Barrows \*et al.\*\(2007a, 2007b)|
 ||\`daf-2(e1370)\`, \`daf-2(e1368)\`, \`age-1\`\\`(hx546)\`, \`daf-16(mgDf50)\`, \`daf-2(0(m26)\`|Mutations in the insulin-like receptor pathway lead to\distinct behavioral responses, including the evasion\of pathogens and reduced ingestion|Hasshoff \*et al.\* (2007)|
-|Captan|\`hsp-16.48;hsp-16.1::lacZ\`|Reproduction and growth significantly reduced by \*Bt\* toxin\Stress induction localized to muscle cells of the pharynx\Inhibits feeding, cessation of muscular contraction|Hoss \*et al.\* (2008)\Jones \*et al.\* (1996)|
+|||Reproduction and growth significantly reduced by \*Bt\* toxin|Hoss \*et al.\* (2008)|
+|Captan|\`hsp-16.48;hsp-16.1::lacZ\`|Stress induction localized to muscle cells of the pharynx\Inhibits feeding, cessation of muscular contraction|Jones \*et al.\* (1996)|
 |Dithiocarbamate fungicides|\`hsp-16.48;hsp-16.1::lacZ\`|Induction of stress response|Guven \*et al.\* (1999)|
 |Organochlorinated pesticides|N2|Decreased sensitivity to organochlorinated pesticide in \*C. elegans\*\than other soil invertebrates. Compared to other organic\pollutants tested, organochlorinated pesticides are the most\toxic substances in soil or aquatic medium|Bezchlebova \*et al.\* (2007);\Sochova \*et al.\* (2007)|
 Note. MAPK, mitogen-activated protein kinase; ROS, reactive oxygen species.
@@ -212,8 +214,6 @@ Note. MAPK, mitogen-activated protein kinase; ROS, reactive oxygen species.
 ^bSOD, superoxide dismutase.
 
     Page 7
-
-CAENORHABDITIS ELEGANS IN TOXICOLOGY RESEARCH                                                                 11
 
 neurotoxicity. *Caenorhabditis elegans*, has a well-defined, yet simple DAergic network, consisting of eight neurons in the hermaphrodite and an additional six neurons located in the tail of the male (Chase and Koelle, 2007) and four DA receptors. Dopamine is known to be required in the modulation of locomotion and in learning in *C. elegans* (Hills et al., 2004; Sanyal et al., 2004; Sawin et al., 2000). To date, several paraquat/mev–altered strains have been generated to study potential pathways in which paraquat exerts its toxic effects. *mev-1* (mutated for the succinate dehydrogenase) (Hartman et al., 1995; Ishii et al., 1990; Kondo et al., 2005) and *mev-3* (Yamamoto et al., 1996) were generated first, and both strains displayed increased sensitivity to paraquat- and oxygen-mediated injury as a result of increased production of superoxide radicals (Guo and Lemire, 2003; Ishii et al., 1990) and hypersensitivity to oxidative stress. *mev-4* (Fujii et al., 2004), *mev-5*, *mev-6*, and *mev-7* (Fujii et al., 2005) displayed resistance to paraquat. However, since the proteins that are encoded by these genes are currently unknown, future mapping of these genes will likely reveal pathways involved in paraquat toxicity.
 
@@ -322,27 +322,115 @@ High-throughput screening is feasible with *C. elegans* due to its experimental 
 
 16                                                   LEUNG ET AL.
 
-measurement have been developed since the late 1980s (Baek *et al.*, 2002; Bennett and Pax, 1986; Hoshi and Shingai, 2006; Simonetta and Golombek, 2007; Tsibidis and Tavernarakis, 2007; Williams and Dusenbery, 1990b). Nowadays, cell sorters adapted to sort worms based on morphometric parameters or expression of fluorescent proteins combined with imaging platforms have been successfully used for large-scale promoter expression analyses and drug screening purposes (Burns *et al.*, 2006; Dupuy *et al.*, 2007; Pulak, 2006). Recently, a microfluidic *C. elegans* sorter with three dimensional subcellular imaging capabilities was developed, allowing high-throughput assays of higher complexity (Rohde *et al.*, 2007).
+measurement have been developed since the late 1980s (Baek
+et al., 2002; Bennett and Pax, 1986; Hoshi and Shingai, 2006;
+Simonetta and Golombek, 2007; Tsibidis and Tavernarakis,
+2007; Williams and Dusenbery, 1990b). Nowadays, cell sorters
+adapted to sort worms based on morphometric parameters or
+expression of fluorescent proteins combined with imaging
+platforms have been successfully used for large-scale promoter
+expression analyses and drug screening purposes (Burns et al.,
+2006; Dupuy et al., 2007; Pulak, 2006). Recently, a micro-
+fluidic *C. elegans* sorter with three dimensional subcellular
+imaging capabilities was developed, allowing high-throughput
+assays of higher complexity (Rohde et al., 2007).
 
-While the simplicity and manipulability of the *C. elegans* system enables high-throughput approaches, it also leads to several potential disadvantages in toxicology studies. *Caenorhabditis elegans* exhibits important metabolic differences compared to vertebrates. For example, *C. elegans* is highly resistant to benzo\[a]pyrene (Miller and Hartman, 1998), likely because it does not metabolize the chemical (M. Leung and J. Meyer, unpublished data). This problem can be potentially solved, however, by expressing the vertebrate cytochrome P450s in *C. elegans*. The impermeable cuticle layer as well as selective intestinal uptake, furthermore, may block the entry of chemicals, thereby necessitating high exposure doses to impact the worm’s physiology. A mutant strain (*dal-1*) has recently been isolated that is healthy under laboratory conditions but exhibits altered intestinal morphology and increased intestinal absorption of a wide range of drugs (C. Paulson and J. Waddle, personal communication). The resultant-increased vulnerability of this strain to the toxic or pharmacological activities of tested compounds has the potential to increase the sensitivity of the *C. elegans* system.
+While the simplicity and manipulability of the *C. elegans*
+system enables high-throughput approaches, it also leads to several
+potential disadvantages in toxicology studies. *Caenorhabditis
+elegans* exhibits important metabolic differences compared
+to vertebrates. For example, *C. elegans* is highly resistant to
+benzo\[a]pyrene (Miller and Hartman, 1998), likely because it
+does not metabolize the chemical (M. Leung and J. Meyer,
+unpublished data). This problem can be potentially solved,
+however, by expressing the vertebrate cytochrome P450s in *C.
+elegans*. The impermeable cuticle layer as well as selective
+intestinal uptake, furthermore, may block the entry of chemicals,
+thereby necessitating high exposure doses to impact the worm’s
+physiology. A mutant strain (*dal-1*) has recently been isolated that
+is healthy under laboratory conditions but exhibits altered
+intestinal morphology and increased intestinal absorption of
+a wide range of drugs (C. Paulson and J. Waddle, personal
+communication). The resultant-increased vulnerability of this
+strain to the toxic or pharmacological activities of tested
+compounds has the potential to increase the sensitivity of the
+*C. elegans* system.
 
-epithelium in *C. elegans*. Such a tissue-specific mechanism would have been difficult to detect using *in vitro* cell cultures.
+epithelium in *C. elegans*. Such a tissue-specific mechanism
+would have been difficult to detect using *in vitro* cell cultures.
 
 ## Gene Expression Analysis in *C. elegans*
 
-*Caenorhabditis elegans* has several advantages over other species in gene expression analysis. WormBase (Harris *et al.*, 2004), the information-rich central genomic database of *C. elegans*, provides an intuitive interface into a well-annotated genome. *Caenorhabditis elegans* also has a consistent system of gene identification, thereby avoiding the confusion of gene identification that is common in many species, including human. The interactome modeling of *C. elegans* is also the most developed among all animal species (Dupuy *et al.*, 2007; Li *et al.* 2004, 2008; Zhong and Sternberg, 2006) and along with other genome-level bioinformatics tools (Kim *et al.*, 2001) greatly facilitates system-based analysis.
+*Caenorhabditis elegans* has several advantages over other
+species in gene expression analysis. WormBase (Harris et al.,
+2004\), the information-rich central genomic database of
+*C. elegans*, provides an intuitive interface into a well-annotated
+genome. *Caenorhabditis elegans* also has a consistent system
+of gene identification, thereby avoiding the confusion of gene
+identification that is common in many species, including
+human. The interactome modeling of *C. elegans* is also the
+most developed among all animal species (Dupuy et al., 2007;
+Li et al. 2004, 2008; Zhong and Sternberg, 2006) and along
+with other genome-level bioinformatics tools (Kim et al., 2001)
+greatly facilitates system-based analysis.
 
-The results of gene expression analysis can be validated *in vivo* using mutational or transgenic approaches in *C. elegans*. For example, the gene expression of *C. elegans* exposed to ethanol, atrazine, polychlorinated biphenyls, endocrine disrupting chemicals, and polycyclic aromatic hydrocarbons have been profiled (Custodia *et al.*, 2001; Kwon *et al.*, 2004; Menzel *et al.*, 2007; Reichert and Menzel, 2005). Follow-up studies with transgenic *C. elegans* expressing fluorescent markers were used to detect overexpression of protein in specific tissues *in vivo* (Menzel *et al.*, 2007; Reichert and Menzel, 2005). Mutant *C. elegans* were also used to confirm the role of specific molecular targets based on gene expression analysis (Menzel *et al.*, 2007).
+The results of gene expression analysis can be validated
+*in vivo* using mutational or transgenic approaches in
+*C. elegans*. For example, the gene expression of *C. elegans*
+exposed to ethanol, atrazine, polychlorinated biphenyls,
+endocrine disrupting chemicals, and polycyclic aromatic
+hydrocarbons have been profiled (Custodia et al., 2001; Kwon
+et al., 2004; Menzel et al., 2007; Reichert and Menzel, 2005).
+Follow-up studies with transgenic *C. elegans* expressing
+fluorescent markers were used to detect overexpression of
+protein in specific tissues *in vivo* (Menzel et al., 2007; Reichert
+and Menzel, 2005). Mutant *C. elegans* were also used to
+confirm the role of specific molecular targets based on gene
+expression analysis (Menzel et al., 2007).
 
 ## Forward Genetics Screens in *C. elegans*
 
-Forward genetics refers to the study of genes based on a given phenotype. In a forward genetics screen, *C. elegans* are treated with a mutagen, as described above. Mutant strains are then exposed to a toxicant and are screened for increased resistance or sensitivity. Once a resistant or hypersensitive mutant is identified, the mutation is located using two-point and three-point mapping and confirmed using single-gene rescue or RNAi phenocopying (Hodgkin and Hope, 1999). Forward genetics is efficient in *C. elegans* because the mutants can cover genes expressed in a variety of tissues. *Caenorhabditis elegans* is hermaphroditic, so homozygous mutant strains can be produced in the F2 generation via self-crossing.
+Forward genetics refers to the study of genes based on
+a given phenotype. In a forward genetics screen, *C. elegans* are
+treated with a mutagen, as described above. Mutant strains are
+then exposed to a toxicant and are screened for increased
+resistance or sensitivity. Once a resistant or hypersensitive
+mutant is identified, the mutation is located using two-point
+and three-point mapping and confirmed using single-gene rescue
+or RNAi phenocopying (Hodgkin and Hope, 1999). Forward
+genetics is efficient in *C. elegans* because the mutants can cover
+genes expressed in a variety of tissues. *Caenorhabditis elegans* is
+hermaphroditic, so homozygous mutant strains can be produced
+in the F2 generation via self-crossing.
 
-Forward genetics screens are a useful method in mechanistic toxicology. Griffiths *et al.* (2001, 2005), for instance, discovered the role of glycolipid receptors and carbohydrate metabolism in *Bacillus thuringiensis* (Bt) toxins using *C. elegans* subjected to a forward genetics screen. The mutation of glycolipid receptors prevents Bt toxin from entering intestinal
+Forward genetics screens are a useful method in mechanistic
+toxicology. Griffiths et al. (2001, 2005), for instance,
+discovered the role of glycolipid receptors and carbohydrate
+metabolism in *Bacillus thuringiensis* (Bt) toxins using
+*C. elegans* subjected to a forward genetics screen. The mutation
+of glycolipid receptors prevents Bt toxin from entering intestinal
 
 ## Genome-Wide RNAi Screens in *C. elegans*
 
-The discovery of RNAi mechanisms in *C. elegans* for which the 2006 Nobel Prize was awarded (Fire *et al.*, 1998) and the complete sequencing of the nematode genome (*C. elegans* Sequencing Consortium, 1998) led to the generation of publicly available RNAi libraries covering \~90% of its genes (Fewell and Schmitt, 2006; Kamath and Ahringer, 2003). Strategies to improve RNAi efficiency, especially in neurons, were further developed (Esposito *et al.*, 2007; Lee *et al.*, 2006; Simmer *et al.* 2002, 2003; Tabara *et al.*, 2002; Tops *et al.*, 2005). RNAi can be triggered by injection of worms with interfering double-strand RNA (dsRNA), by feeding them with transgenic bacteria producing the dsRNA or by soaking them in a solution of dsRNA. The latter allow timed RNAi exposure and genome-wide screens in 96- or 384-well plates with liquid worm cultures and have contributed to discoveries of mechanisms of axon guidance as well as mitochondrial involvement in oxidative stress and aging (Ayyadevara *et al.*, 2007; Hamamichi *et al.*, 2008; Hamilton *et al.*, 2005; Ichishita *et al.*, 2008; Lee *et al.*, 2003; Schmitz *et al.*, 2007; Zhang *et al.*, 2006).
+The discovery of RNAi mechanisms in *C. elegans* for which
+the 2006 Nobel Prize was awarded (Fire et al., 1998) and the
+complete sequencing of the nematode genome (*C. elegans*
+Sequencing Consortium, 1998) led to the generation of
+publically available RNAi libraries covering \~90% of its genes
+(Fewell and Schmitt, 2006; Kamath and Ahringer, 2003).
+Strategies to improve RNAi efficiency, especially in neurons,
+were further developed (Esposito et al., 2007; Lee et al., 2006;
+Simmer et al. 2002, 2003; Tabara et al., 2002; Tops et al.,
+2005\). RNAi can be triggered by injection of worms with
+interfering double-strand RNA (dsRNA), by feeding them with
+transgenic bacteria producing the dsRNA or by soaking them in
+a solution of dsRNA. The latter allow timed RNAi exposure and
+genome-wide screens in 96- or 384-well plates with liquid worm
+cultures and have contributed to discoveries of mechanisms of
+axon guidance as well as mitochondrial involvement in oxidative
+stress and aging (Ayyadevara et al., 2007; Hamamichi et al.,
+2008; Hamilton et al., 2005; Ichishita et al., 2008; Lee et al.,
+2003; Schmitz et al., 2007; Zhang et al., 2006).
 
     Page 13
 
@@ -380,7 +468,7 @@ Two of the principal limitations in using *C. elegans* in environmental testing 
 |Medium|End point (test duration)|Chemicals tested/comments|References|
 |-|-|-|-|
 |A. Aquatic|Lethality (24–96 h)|Tested metallic salts of 14 metals (Ag, Hg, Be, Al, Cu, Zn, Pb, Cd, Sr, Cr, As, Tl, Ni, Sb). Established initial aquatic testing procedures and compared results to traditionally used aquatic invertebrates.|Williams and Dusenbery (1990a)|
-||Lethality and stress reporter gene induction (8–96 h)|Assessed the induction of \*hsp16-lacZ\* and lethality in \*C. elegans\* exposed to water-soluble salts of Cd, Cu, Hg, As, and Pb.|Stringham and Candido 1994|
+||Lethality and stress reporter gene induction (8–96 h)|Assessed the induction of \`hsp16-lacZ\` and lethality in \*C. elegans\* exposed to water-soluble salts of Cd, Cu, Hg, As, and Pb.|Stringham and Candido 1994|
 ||Growth, behavior, feeding, and reproduction (4–72 h)|Compared a number of sublethal end points and found feeding and behavior to be the most sensitive. Tested metallic salts Cd, Cu, and Pb.|Anderson \*et al.\* (2001)|
 ||Feeding and movement (4–24 h)|Determined changes in ingestion using microbeads and movement in the presence of metals and varying availability of food|Boyd \*et al.\* (2003)|
 ||Behavior (4 h)|Tested a variety of toxicants from several categories of chemicals including metals, pesticides, and organic solvents. Established the use of a 4-h exposure period for behavioral assessments.|Anderson \*et al.\* (2004)|
@@ -390,17 +478,17 @@ Two of the principal limitations in using *C. elegans* in environmental testing 
 |C. Soil|Lethality (24 h)|Spiked soil with CuCl\2\ and developed the recovery method used with \*C. elegans\* exposed in soil.|Donkin and Dusenberry (1993)|
 ||Lethality (24 h)|Tested metallic salts of five metals (Cu, Cd, Zn, Pb, Ni) in artificial soil. Compared \*C. elegans\* data to earthworm data from same medium. Determined that 24-h exposures for the nematode had similar effects to 14-day exposures with earthworms.|Peredney and Williams (2000)|
 ||Lethality (24–48 h)|Tested seven organic pollutants (four azarenes, one short-chain chlorinated paraffin, and two organochlorinated pesticides) in soil, aquatic, and agar and compared results across media.|Sochova \*et al.\* (2007)|
-> comparing the toxicological effects between nematodes species indicate that *C. elegans* is as representative as any of the ones commonly used and, in many cases, little difference in response has been found between species (Boyd and Williams, 2003; Kammenga *et al.*, 2000). Further, this organism is much more thoroughly understood and benefits from its ease of use.
+comparing the toxicological effects between nematodes species indicate that *C. elegans* is as representative as any of the ones commonly used and, in many cases, little difference in response has been found between species (Boyd and Williams, 2003; Kammenga *et al.*, 2000). Further, this organism is much more thoroughly understood and benefits from its ease of use.
 
 ```
-                                                                                   TABLE 7
+                                                                                                TABLE 7
                                                          Examples of Field Studies Using *Caenorhabditis elegans* to Assess Environmental Samples
 ```
 
 |Field site|Environmental medium|Overview|References|
 |-|-|-|-|
-|Carnon River system (England)|Water|Transgenic strains of \*C. elegans\* that carry stress-inducible \*lacZ\* reporter genes were used to assess metal contamination of a river system.|Mutwakil \*et al.\* (1997)|
-|Wastewater treatment process (Georgia)|Water discharges from industrial operations and a municipal treatment plant|The contribution of several industrial operations to the waste stream feeding a municipal wastewater treatment plant and the treatment plant’s discharge were assessed to identify sources of water contamination and effectiveness of waste treatment. The 72-h mortality was used as end point.|Hitchcock \*et al.\* (1997)|
+|Carnon River system (England)|Water|Transgenic strains of \*C. elegans\* that carry stress-inducible \`lacZ\` reporter genes were used to assess metal contamination of a river system.|Mutwakil \*et al.\* (1997)|
+|Wastewater treatment process (Georgia)|Water discharges from industrial operations and a municipal treatment plant|The contribution of several industrial operations to the waste stream feeding a municipal wastewater treatment plant and the treatment plant's discharge were assessed to identify sources of water contamination and effectiveness of waste treatment. The 72-h mortality was used as end point.|Hitchcock \*et al.\* (1997)|
 |Elbe River (Germany)|Sediments|Tested polluted sediments using growth and fertility as end points.|Traunspurger \*et al.\* (1997)|
 |Twelve freshwater lakes (Germany)|Fresh water sediment|Evaluated 26 sediment samples from unpolluted lakes in southern Germany to determine the effect of sediment size and organic content on growth and fertility.|Hoss \*et al.\* (1999)|
 |Middle Tisza River flood plain (Hungary)|Soil|Following a major release of cyanide and heavy metals from a mine waste lagoon in Romania, soil contamination was assessed following a 100-year flood event using mortality as end point.|Black and Williams (2001)|
@@ -542,7 +630,7 @@ Carre-Pierrat, M., Mariol, M. C., Chambonnier, L., Laugraud, A., Heskia, F., Gia
 
 Caswell-Chen, E. P., Chen, J., Lewis, E. E., Douhan, G. W., Nadler, S. A., and Carey, J. R. (2005). Revising the standard wisdom of *C. elegans* natural history: Ecology of longevity. *Sci. Aging Knowledge Environ.* **2005**, pe30.
 
-*C. elegans* Sequencing Consortium. (1998). Genome sequence of the nematode *C. elegans*: A platform for investigating biology. *Science* **282**, 2012–2018.
+*Caenorhabditis elegans* Sequencing Consortium. (1998). Genome sequence of the nematode *C. elegans*: A platform for investigating biology. *Science* **282**, 2012–2018.
 
 Chase, D. L., and Koelle, M. R. (2007). Biogenic amine neurotransmitters in *C. elegans*. In *WormBook*, pp. 1–15.
 
@@ -790,87 +878,87 @@ Ibiam, U., and Grant, A. (2005). RNA/DNA ratios as a sublethal endpoint for larg
 
     Page 20
 
-Ichibangase, T., Saimaru, H., Takamura, N., Kuwahara, T., Koyama, A., Iwatsubo, T., and Imai, K. (2008). Proteomics of Caenorhabditis elegans over-expressing human alpha-synuclein analyzed by fluorogenic derivatization-liquid chromatography/tandem mass spectrometry: Identification of actin and several ribosomal proteins as negative markers at early Parkinson's disease stages. *Biomed. Chromatogr.* **22**, 232–234.
+Ichibangase, T., Saimaru, H., Takamura, N., Kuwahara, T., Koyama, A., Iwatsubo, T., and Imai, K. (2008). Proteomics of *Caenorhabditis elegans* over-expressing human alpha-synuclein analyzed by fluorogenic derivatization-liquid chromatography/tandem mass spectrometry: Identification of actin and several ribosomal proteins as negative markers at early Parkinson's disease stages. *Biomed. Chromatogr.* **22**, 232–234.
 
-Ichishita, R., Tanaka, K., Sugiura, Y., Sayano, T., Mihara, K., and Oka, T. (2008). An RNAi screen for mitochondrial proteins required to maintain the morphology of the organelle in Caenorhabditis elegans. *J. Biochem.* **143**, 449–454.
+Ichishita, R., Tanaka, K., Sugiura, Y., Sayano, T., Mihara, K., and Oka, T. (2008). An RNAi screen for mitochondrial proteins required to maintain the morphology of the organelle in *Caenorhabditis elegans*. *J. Biochem.* **143**, 449–454.
 
-Inoue, H., Hisamoto, N., An, J. H., Oliveira, R. P., Nishida, E., Blackwell, T. K., and Matsumoto, K. (2005). The C. elegans p38 MAPK pathway regulates nuclear localization of the transcription factor SKN-1 in oxidative stress response. *Genes Dev.* **19**, 2278–2283.
+Inoue, H., Hisamoto, N., An, J. H., Oliveira, R. P., Nishida, E., Blackwell, T. K., and Matsumoto, K. (2005). The *C. elegans* p38 MAPK pathway regulates nuclear localization of the transcription factor SKN-1 in oxidative stress response. *Genes Dev.* **19**, 2278–2283.
 
-Inoue, T., and Thomas, J. H. (2000). Suppressors of transforming growth factor-beta pathway mutants in the Caenorhabditis elegans dauer formation pathway. *Genetics* **156**, 1035–1046.
+Inoue, T., and Thomas, J. H. (2000). Suppressors of transforming growth factor-beta pathway mutants in the *Caenorhabditis elegans* dauer formation pathway. *Genetics* **156**, 1035–1046.
 
-Ishiguro, H., Yasuda, K., Ishii, N., Ihara, K., Ohkubo, T., Hiyoshi, M., Ono, K., Senoo-Matsuda, N., Shinohara, O., Yosshii, F., *et al.* (2001). Enhancement of oxidative damage to cultured cells and Caenorhabditis elegans by mitochondrial electron transport inhibitors. *IUBMB life* **51**, 263–268.
+Ishiguro, H., Yasuda, K., Ishii, N., Ihara, K., Ohkubo, T., Hiyoshi, M., Ono, K., Senoo-Matsuda, N., Shinohara, O., Yosshii, F., *et al.* (2001). Enhancement of oxidative damage to cultured cells and *Caenorhabditis elegans* by mitochondrial electron transport inhibitors. *IUBMB life* **51**, 263–268.
 
-Ishii, N., Suzuki, N., Hartman, P. S., and Suzuki, K. (1993). The radiation-sensitive mutant rad-8 of Caenorhabditis elegans is hypersensitive to the effects of oxygen on aging and development. *Mech. Ageing Dev.* **68**, 1–10.
+Ishii, N., Suzuki, N., Hartman, P. S., and Suzuki, K. (1993). The radiation-sensitive mutant rad-8 of *Caenorhabditis elegans* is hypersensitive to the effects of oxygen on aging and development. *Mech. Ageing Dev.* **68**, 1–10.
 
-Ishii, N., Takahashi, K., Tomita, S., Keino, T., Honda, S., Yoshino, K., and Suzuki, K. (1990). A methyl viologen-sensitive mutant of the nematode Caenorhabditis elegans. *Mutat. Res.* **237**, 165–171.
+Ishii, N., Takahashi, K., Tomita, S., Keino, T., Honda, S., Yoshino, K., and Suzuki, K. (1990). A methyl viologen-sensitive mutant of the nematode *Caenorhabditis elegans*. *Mutat. Res.* **237**, 165–171.
 
-International Standards Organization (ISO). (2007). ISO/CD 10872 Water quality - Determination of the toxic effect of sediment and soil samples on growth, fertility and reproduction of Caenorhabditis elegans (Nematoda). Geneva, Switzerland.
+International Standards Organization (ISO). (2007). ISO/CD 10872 Water quality - Determination of the toxic effect of sediment and soil samples on growth, fertility and reproduction of *Caenorhabditis elegans* (Nematoda). Geneva, Switzerland.
 
 Jackson, D., Lewis, J., Anderson, S., Gehman, E., Szilagyi, M., and Clegg, E. (2006). A nematode model to elucidate mechanisms of developmental toxicity. In *SOT Meeting March 5-9, 2006*. Society of Toxicology, San Diego, CA. p. 229.
 
-Jagasia, R., Grote, P., Westermann, B., and Conradt, B. (2005). DRP-1-mediated mitochondrial fragmentation during EGL-1-induced cell death in C. elegans. *Nature* **433**, 754–760.
+Jagasia, R., Grote, P., Westermann, B., and Conradt, B. (2005). DRP-1-mediated mitochondrial fragmentation during EGL-1-induced cell death in *C. elegans*. *Nature* **433**, 754–760.
 
-Jiang, G. C., Tidwell, K., McLaughlin, B. A., Cai, J., Gupta, R. C., Milatovic, D., Nass, R., and Aschner, M. (2007). Neurotoxic potential of depleted uranium effects in primary cortical neuron cultures and in Caenorhabditis elegans. *Toxicol. Sci.* **99**, 553–565.
+Jiang, G. C., Tidwell, K., McLaughlin, B. A., Cai, J., Gupta, R. C., Milatovic, D., Nass, R., and Aschner, M. (2007). Neurotoxic potential of depleted uranium effects in primary cortical neuron cultures and in *Caenorhabditis elegans*. *Toxicol. Sci.* **99**, 553–565.
 
 Jin, Y. (2002). Synaptogenesis: Insights from worm and fly. *Curr. Opin. Neurobiol.* **12**, 71–79.
 
 Jin, Y. (2005). Synaptogenesis. In *WormBook*, pp. 1–11.
 
-Johnson, T. E. (2003). Advantages and disadvantages of Caenorhabditis elegans for aging research. *Exp. Gerontol.* **38**, 1329–1332.
+Johnson, T. E. (2003). Advantages and disadvantages of *Caenorhabditis elegans* for aging research. *Exp. Gerontol.* **38**, 1329–1332.
 
-Johnson, T. E., and Hartman, P. S. (1988). Radiation effects on lifespan in Caenorhabditis elegans. *J. Gerontol.* **43**, B137–B141.
+Johnson, T. E., and Hartman, P. S. (1988). Radiation effects on lifespan in *Caenorhabditis elegans*. *J. Gerontol.* **43**, B137–B141.
 
-Johnson, T. E., and Nelson, G. A. (1991). Caenorhabditis elegans: A model system for space biology studies. *Exp. Gerontol.* **26**, 299–309.
+Johnson, T. E., and Nelson, G. A. (1991). *Caenorhabditis elegans*: A model system for space biology studies. *Exp. Gerontol.* **26**, 299–309.
 
-Jones, C. A., and Hartman, P. S. (1996). Replication in UV-irradiated Caenorhabditis elegans embryos. *Photochem. Photobiol.* **63**, 187–192.
+Jones, C. A., and Hartman, P. S. (1996). Replication in UV-irradiated *Caenorhabditis elegans* embryos. *Photochem. Photobiol.* **63**, 187–192.
 
-Jones, D., and Candido, E. P. (1999). Feeding is inhibited by sublethal concentrations of toxicants and by heat stress in the nematode Caenorhabditis elegans: Relationship to the cellular stress response. *J. Exp. Zool.* **284**, 147–157.
+Jones, D., and Candido, E. P. (1999). Feeding is inhibited by sublethal concentrations of toxicants and by heat stress in the nematode *Caenorhabditis elegans*: Relationship to the cellular stress response. *J. Exp. Zool.* **284**, 147–157.
 
-Jones, D., Stringham, E. G., Babich, S. L., and Candido, E. P. (1996). Transgenic strains of the nematode C. elegans in biomonitoring and toxicology: Effects of captan and related compounds on the stress response. *Toxicology* **109**, 119–127.
+Jones, D., Stringham, E. G., Babich, S. L., and Candido, E. P. (1996). Transgenic strains of the nematode *C. elegans* in biomonitoring and toxicology: Effects of captan and related compounds on the stress response. *Toxicology* **109**, 119–127.
 
 Jorgensen, E. M. (2005). Gaba. In *WormBook*, pp. 1–13.
 
 Kaletta, T., and Hengartner, M. O. (2006). Finding function in novel targets: C-elegans as a model organism. *Nat. Rev. Drug Discovery* **5**, 387–398.
 
-Kamath, R. S., and Ahringer, J. (2003). Genome-wide RNAi screening in Caenorhabditis elegans. *Methods* **30**, 313–321.
+Kamath, R. S., and Ahringer, J. (2003). Genome-wide RNAi screening in *Caenorhabditis elegans*. *Methods* **30**, 313–321.
 
 Kammenga, J. E., Dallinger, R., Donker, M. H., Kohler, H. R., Simonsen, V., Triebskorn, R., and Weeks, J. M. (2000). Biomarkers in terrestrial invertebrates for ecotoxicological soil risk assessment. *Rev. Environ. Contam. Toxicol.* **164**, 93–147.
 
-Kanugula, S., and Pegg, A. E. (2001). Novel DNA repair alkyltransferase from Caenorhabditis elegans. *Environ. Mol. Mutagen.* **38**, 235–243.
+Kanugula, S., and Pegg, A. E. (2001). Novel DNA repair alkyltransferase from *Caenorhabditis elegans*. *Environ. Mol. Mutagen.* **38**, 235–243.
 
-Kell, A., Ventura, N., Kahn, N., and Johnson, T. E. (2007). Activation of SKN-1 by novel kinases in Caenorhabditis elegans. *Free Radic. Biol. Med.* **43**, 1560–1566.
+Kell, A., Ventura, N., Kahn, N., and Johnson, T. E. (2007). Activation of SKN-1 by novel kinases in *Caenorhabditis elegans*. *Free Radic. Biol. Med.* **43**, 1560–1566.
 
-Keller, C. I., Calkins, J., Hartman, P. S., and Rupert, C. S. (1987). UV photobiology of the nematode Caenorhabditis-elegans—Action spectra, absence of photoreactivation and effects of caffeine. *Photochem. Photobiol.* **46**, 483–488.
+Keller, C. I., Calkins, J., Hartman, P. S., and Rupert, C. S. (1987). UV photobiology of the nematode *Caenorhabditis-elegans*—Action spectra, absence of photoreactivation and effects of caffeine. *Photochem. Photobiol.* **46**, 483–488.
 
-Kelly, K. O., Dernburg, A. F., Stanfield, G. M., and Villeneuve, A. M. (2000). Caenorhabditis elegans msh-5 is required for both normal and radiation-induced meiotic crossing over but not for completion of meiosis. *Genetics* **156**, 617–630.
+Kelly, K. O., Dernburg, A. F., Stanfield, G. M., and Villeneuve, A. M. (2000). *Caenorhabditis elegans* msh-5 is required for both normal and radiation-induced meiotic crossing over but not for completion of meiosis. *Genetics* **156**, 617–630.
 
 Kenyon, C. (2005). The plasticity of aging: Insights from long-lived mutants. *Cell* **120**, 449–460.
 
-Kim, S. K., Lund, J., Kiraly, M., Duke, K., Jiang, M., Stuart, J. M., Eizinger, A., Wylie, B. N., and Davidson, G. S. (2001). A gene expression map for Caenorhabditis elegans. *Science* **293**, 2087–2092.
+Kim, S. K., Lund, J., Kiraly, M., Duke, K., Jiang, M., Stuart, J. M., Eizinger, A., Wylie, B. N., and Davidson, G. S. (2001). A gene expression map for *Caenorhabditis elegans*. *Science* **293**, 2087–2092.
 
 Kim, Y., and Sun, H. (2007). Functional genomic approach to identify novel genes involved in the regulation of oxidative stress resistance and animal lifespan. *Aging Cell* **6**, 489–503.
 
-Kinchen, J. M., and Hengartner, M. O. (2005). Tales of cannibalism, suicide, and murder: Programmed cell death in C. elegans. *Curr. Top. Dev. Biol* **65**, 1–45.
+Kinchen, J. M., and Hengartner, M. O. (2005). Tales of cannibalism, suicide, and murder: Programmed cell death in *C. elegans*. *Curr. Top. Dev. Biol* **65**, 1–45.
 
-Kiontke, K., and Sudhaus, W. (2006). Ecology of Caenorhabditis species. In *WormBook*, pp. 1–14.
+Kiontke, K., and Sudhaus, W. (2006). Ecology of *Caenorhabditis* species. In *WormBook*, pp. 1–14.
 
-Kipreos, E. T. (2005). Ubiquitin-mediated pathways in C. elegans. In *WormBook*, pp. 1–24.
+Kipreos, E. T. (2005). Ubiquitin-mediated pathways in *C. elegans*. In *WormBook*, pp. 1–24.
 
-Kitagawa, N., Shimohama, S., Oeda, T., Uemura, K., Kohno, R., Kuzuya, A., Shibasaki, H., and Ishii, N. (2003). The role of the presenilin-1 homologue gene sel-12 of Caenorhabditis elegans in apoptotic activities. *J. Biol. Chem.* **278**, 12130–12134.
+Kitagawa, N., Shimohama, S., Oeda, T., Uemura, K., Kohno, R., Kuzuya, A., Shibasaki, H., and Ishii, N. (2003). The role of the presenilin-1 homologue gene sel-12 of *Caenorhabditis elegans* in apoptotic activities. *J. Biol. Chem.* **278**, 12130–12134.
 
-Klass, M., Nguyen, P. N., and Dechavigny, A. (1983). Age-correlated changes in the DNA template in the nematode Caenorhabditis elegans. *Mech. Ageing Dev.* **22**, 253–263.
+Klass, M., Nguyen, P. N., and Dechavigny, A. (1983). Age-correlated changes in the DNA template in the nematode *Caenorhabditis elegans*. *Mech. Ageing Dev.* **22**, 253–263.
 
-Klass, M. R. (1977). Aging in nematode Caenorhabditis elegans—Major biological and environmental factors influencing lifespan. *Mech. Ageing Dev.* **6**, 413–429.
+Klass, M. R. (1977). Aging in nematode *Caenorhabditis elegans*—Major biological and environmental factors influencing lifespan. *Mech. Ageing Dev.* **6**, 413–429.
 
 Koh, J. Y. (2001). Zinc and disease of the brain. *Mol. Neurobiol.* **24**, 99–106.
 
-Kondo, M., Senoo-Matsuda, N., Yanase, S., Ishii, T., Hartman, P. S., and Ishii, N. (2005). Effect of oxidative stress on translocation of DAF-16 in oxygen-sensitive mutants, mev-1 and gas-1 of Caenorhabditis elegans. *Mech. Ageing Dev.* **126**, 637–641.
+Kondo, M., Senoo-Matsuda, N., Yanase, S., Ishii, T., Hartman, P. S., and Ishii, N. (2005). Effect of oxidative stress on translocation of DAF-16 in oxygen-sensitive mutants, mev-1 and gas-1 of *Caenorhabditis elegans*. *Mech. Ageing Dev.* **126**, 637–641.
 
 Kopin, I. J., and Markey, S. P. (1988). MPTP toxicity: Implications for research in Parkinson’s disease. *Annu. Rev. Neurosci.* **11**, 81–96.
 
-Koselke, L., Sam, C., Hajela, R., and Atchison, B. (2007). Protective effects of verapamil on mercury toxicity in C. elegans. In *SOT Meeting March 25-29, 2007* (Abstract No. 98). Society of Toxicology, Charlotte, NC. p. 20.
+Koselke, L., Sam, C., Hajela, R., and Atchison, B. (2007). Protective effects of verapamil on mercury toxicity in *C. elegans*. In *SOT Meeting March 25-29, 2007* (Abstract No. 98). Society of Toxicology, Charlotte, NC. p. 20.
 
-Kraemer, B. C., Burgess, J. K., Chen, J. H., Thomas, J. H., and Schellenberg, G. D. (2006). Molecular pathways that influence human tau-induced pathology in Caenorhabditis elegans. *Hum. Mol. Genet.* **15**, 1483–1496.
+Kraemer, B. C., Burgess, J. K., Chen, J. H., Thomas, J. H., and Schellenberg, G. D. (2006). Molecular pathways that influence human tau-induced pathology in *Caenorhabditis elegans*. *Hum. Mol. Genet.* **15**, 1483–1496.
 
     Page 21
 
@@ -878,7 +966,7 @@ Kraemer, B. C., Burgess, J. K., Chen, J. H., Thomas, J. H., and Schellenberg, G.
 
 Kraemer, B. C., and Schellenberg, G. D. (2007). SUT-1 enables tau-induced neurotoxicity in *C. elegans*. *Hum. Mol. Genet.* **16**, 1959–1971.
 
-Kraemer, B. C., Zhang, B., Leverenz, J. B., Thomas, J. H., Trojanowski, J. Q., and Schellenberg, G. D. (2003). Neurodegeneration and defective neuro-transmission in a *Caenorhabditis elegans* model of tauopathy. *Proc. Natl Acad. Sci. USA* **100**, 9980–9985.
+Kraemer, B. C., Zhang, B., Leverenz, J. B., Thomas, J. H., Trojanowski, J. Q., and Schellenberg, G. D. (2003). Neurodegeneration and defective neurotransmission in a *Caenorhabditis elegans* model of tauopathy. *Proc. Natl Acad. Sci. USA* **100**, 9980–9985.
 
 Kroll, J. (2007). Molecular chaperones and the epigenetics of longevity and cancer resistance. *Ann. N. Y. Acad. Sci.* **1100**, 75–83.
 
@@ -1144,7 +1232,7 @@ Tullet, J. M., Hertweck, M., An, J. H., Baker, J., Hwang, J. Y., Liu, S., Olivei
 
 Tvermoes, B., and Freedman, J. H. (2008). Caenorhabditis elegans gene, Numr-1, assembles into nuclear stress granules after cadmium treatment. In SOT Meeting March 16-20, 2008. Society of Toxicology, Seattle, WA. p. 331–332.
 
-Uversky, V. N. (2004). Neurotoxicant-induced animal models of Parkinson's disease: Understanding the role of rotenone, maneb and paraquat in neurodegeneration. Cell Tissue Res. 318, 225–241.
+Uversky, V. N. (2004). Neurotoxicant-induced animal models of Parkinson’s disease: Understanding the role of rotenone, maneb and paraquat in neurodegeneration. Cell Tissue Res. 318, 225–241.
 
 Vanfleteren, J. R. (1993). Oxidative stress and ageing in Caenorhabditis elegans. Biochem. J. 292(Pt 2), 605–608.
 
@@ -1162,7 +1250,7 @@ Ventura, N., Rea, S. L., and Testi, R. (2006). Long-lived C. elegans mitochondri
 
 Wadsworth, W. G. (2002). Moving around in a worm: Netrin UNC-6 and circumferential axon guidance in C. elegans. Trends Neurosci. 25, 423–429.
 
-Wang, H., Lim, P. J., Yin, C., Rieckher, M., Vogel, B. E., and Monteiro, M. J. (2006). Suppression of polyglutamine-induced toxicity in cell and animal models of Huntington's disease by ubiquilin. Hum. Mol. Genet. 15, 1025–1041.
+Wang, H., Lim, P. J., Yin, C., Rieckher, M., Vogel, B. E., and Monteiro, M. J. (2006). Suppression of polyglutamine-induced toxicity in cell and animal models of Huntington’s disease by ubiquilin. Hum. Mol. Genet. 15, 1025–1041.
 
 Wang, S., Tang, M., Pei, B., Xiao, X., Wang, J., Hang, H., and Wu, L. (2008). Cadmium-induced germline apoptosis in Caenorhabditis elegans: The roles of HUS1, p53, and MAPK signaling pathways. Toxicol. Sci. 102, 345–351.
 
@@ -1186,13 +1274,13 @@ Williams, P. L., and Dusenbery, D. B. (1990a). Aquatic toxicity testing using th
 
 Williams, P. L., and Dusenbery, D. B. (1990b). A promising indicator of neurobehavioral toxicity using the nematode Caenorhabditis elegans and computer tracking. Toxicol. Ind. Health 6, 425–440.
 
-Wilson, J. M., Levey, A. I., Rajput, A., Ang, L., Guttman, M., Shannak, K., Niznik, H. B., Hornykiewicz, O., Pifl, C., and Kish, S. J. (1996). Differential changes in neurochemical markers of striatal dopamine nerve terminals in idiopathic Parkinson's disease. Neurology 47, 718–726.
+Wilson, J. M., Levey, A. I., Rajput, A., Ang, L., Guttman, M., Shannak, K., Niznik, H. B., Hornykiewicz, O., Pifl, C., and Kish, S. J. (1996). Differential changes in neurochemical markers of striatal dopamine nerve terminals in idiopathic Parkinson’s disease. Neurology 47, 718–726.
 
-Wolozin, B., Saha, S., Guillily, M., Ferree, A., and Riley, M. (2008). Investigating convergent actions of genes linked to familial Parkinson's disease. Neurodegener. Dis. 5, 182–185.
+Wolozin, B., Saha, S., Guillily, M., Ferree, A., and Riley, M. (2008). Investigating convergent actions of genes linked to familial Parkinson’s disease. Neurodegener. Dis. 5, 182–185.
 
-Wood-Kaczmar, A., Gandhi, S., and Wood, N. W. (2006). Understanding the molecular causes of Parkinson's disease. Trends Mol. Med. 12, 521–528.
+Wood-Kaczmar, A., Gandhi, S., and Wood, N. W. (2006). Understanding the molecular causes of Parkinson’s disease. Trends Mol. Med. 12, 521–528.
 
-Wu, Y., and Luo, Y. (2005). Transgenic C. elegans as a model in Alzheimer's research. Curr. Alzheimer Res. 2, 37–45.
+Wu, Y., and Luo, Y. (2005). Transgenic C. elegans as a model in Alzheimer’s research. Curr. Alzheimer Res. 2, 37–45.
 
 Wu, Y., Wu, Z., Butko, P., Christen, Y., Lambert, M. P., Klein, W. L., Link, C. D., and Luo, Y. (2006). Amyloid-beta-induced pathological behaviors are suppressed by Ginkgo biloba extract EGb 761 and ginkgolides in transgenic Caenorhabditis elegans. J. Neurosci. 26, 13102–13113.
 
