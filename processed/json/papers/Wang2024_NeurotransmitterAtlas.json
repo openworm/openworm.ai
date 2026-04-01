@@ -395,33 +395,38 @@
                         "page_number": 7
                     },
                     {
-                        "contents": "|CLASS|NEURON|NEUROTRANSMITTER(S)|\n|-|-|-|\n|ADA|ADAL/R|Glu|\n|ADE|ADEL/R|DA|\n|ADF|ADFL/R|ACh 5-HT (syn + up)|\n|ADL|ADLL/R|Glu|\n|AFD|AFDL/R|Glu ACh|\n|AIA|AIAL/R|ACh|\n|AIB|AIBL/R|Glu betaine (up)|\n|AIM|AIML/R|Glu 5-HT (up)|\n|AIN|AINL/R|ACh|\n|AIY|AIYL/R|ACh|\n|AIZ|AIZL/R|Glu|\n|ALA|ALA/R|GABA|\n|ALM|ALML/R|Glu|\n|ALN|ALNL/R|ACh|\n|AQR|AQR|Glu|\n|AS|AS1-AS11|ACh|\n|ASE|ASEL/R|Glu|\n|ASG|ASGL/R|Glu \\*betaine (up)|\n|ASH|ASHL/R|Glu|\n|ASI|ASIL/R|\\*betaine (up)|\n|ASJ|ASJL/R|ACh|\n|ASK|ASKL/R|Glu|\n|AUA|AUAL/R|Glu betaine (up)|\n|AVA|AVAL/R|ACh|\n|AVB|AVBL/R|ACh|\n|AVD|AVDL/R|ACh|\n|AVE|AVEL/R|ACh|\n|AVF|AVFL/R|GABA (up)|\n|AVG|AVG|\\*ACh|\n|AVH|AVHL/R|orphan|\n|AVJ|AVJL/R|\\*GABA|\n|AVK|AVKL/R|orphan, unc-47 (+)|\n|AVL|AVL|GABA unknown MA?|\n|AVM|AVM|Glu|\n|AWA|AWAL/R|\\*ACh|\n|AWB|AWBL/R|ACh|\n|AWC|AWCL/R|Glu|\n|BAG|BAGL/R|Glu|\n|BDU|BDUL/R|orphan|\n|CAN|CANL/R|betaine (up)|\n|CEP|CEPDL/DR/VL/VR|DA|\n|DA|DA1-DA8|ACh|\n|DA9|DA9|ACh \\*betaine (up)|\n|DB|DB1-DB7|ACh|\n|DD|DD1-DD6|GABA|\n|DVA|DVA|ACh Glu|\n|DVB|DVB|GABA \\*betaine (up)|\n|DVC|DVC|Glu|\n|FLP|FLPL/R|Glu|\n|HSN|HSNL/R|ACh 5-HT|\n|I1|I1L/R|ACh|\n|I2|I2L/R|Glu|\n|I3|I3|ACh|\n|I4|I4|\\*Glu 5-HT (alt syn/up mechanism)|\n|I5|I5|Glu|\n|I6|I6|orphan, unc-47 (+)|\n|IL1|IL1DL/DR/L/R/VL/VR|Glu|\n|IL2|IL2DL/DR/L/R/VL/VR|ACh unknown MA?|\n|LUA|LUAL/R|Glu|\n### CLASS | NEURON | NEUROTRANSMITTER(S)\n---|---|---\nM1 | M1 | ACh\nM2 | M2L/R | ACh\nM3 | M3L/R | Glu *betaine (up)\nM4 | M4 | ACh\nM5 | M5 | ACh Glu\nMC | MCL/R | ACh\nMI | MI | Glu 5-HTP\nNSM | NSML/R | 5-HT *betaine (up)\nOLL | OLLL/R | Glu\nOLQ | OLQDL/DR/VL/VR | Glu\nPDA | PDA | ACh *betaine (up)\nPDB | PDB | ACh\nPDE | PDEL/R | DA Glu\nPHA | PHAL/R | *Glu\nPHB | PHBL/R | Glu\nPHC | PHCL/R | Glu betaine (up)\nPLM | PLML/R | Glu\nPLN | PLNL/R | ACh\nPQR | PQR | Glu\nPVC | PVCL/R | ACh\nPVD | PVDL/R | Glu\nPVM | PVM | orphan\nPVN | PVNL/R | ACh Glu betaine (up)\nPVP | PVPL/R | ACh\nPVQ | PVQL/R | orphan\nPVR | PVR | Glu\nPVT | PVT | orphan, unc-47 (+) orphan, unc-46 (+)\nPVW | PVWL/R | orphan, unc-47 (+) orphan, unc-46 (+)\nRIA | RIAL/R | Glu\nRIB | RIBL/R | GABA\nRIC | RICL/R | octopamine Glu\nRID | RID | orphan, unc-47 (+)\nRIF | RIFL/R | ACh\nRIG | RIGL/R | Glu\nRIH | RIH | ACh 5-HT (up)\nRIM | RIML/R | Glu tyramine (syn + up) betaine (up)\nRIP | RIPL/R | ACh\nRIR | RIR | ACh *betaine (up)\nRIS | RIS | GABA betaine (up)\nRIV | RIVL/R | ACh\nRMD | RMDDL/DR/L/R/VL/VR | ACh\nRME | RMED/L/R/V | GABA\nRMF | RMFL/R | ACh\nRMG | RMGL/R | orphan\nRMH | RMHL/R | ACh *betaine (up)\nSAA | SAADL/DR/VL/VR | ACh\nSAB | SABD/VL/VR | ACh\nSDQ | SDQL/R | ACh\nSIA | SIADL/DR/VL/VR | ACh\nSIB | SIBDL/DR/VL/VR | ACh\nSMB | SMBDL/DR/VL/VR | ACh\nSMD | SMDDL/DR/VL/VR | ACh *GABA *betaine (up)\nURA | URADL/DR/VL/VR | ACh\nURB | URBL/R | ACh bas-1-depen MA?\nURX | URXL/R | ACh *5-HT (up) *betaine (up)\nURY | URYDL/DR/VL/VR | Glu\nVA | VA1-VA11 | ACh\nVA12 | VA12 | ACh *betaine (up)\nVB | VB1-VB11 | ACh *betaine (up)\nVC | VC1-VC3, VC6 | ACh 5-HT (alt syn/up mechanism)\nVC4, VC5 | VC4, VC5 | ACh\nVD | VD1-VD13 | GABA",
+                        "contents": "|CLASS|NEURON|NEUROTRANSMITTER(S)|\n|-|-|-|\n|ADA|ADAL/R|Glu|\n|ADE|ADEL/R|DA|\n|ADF|ADFL/R|ACh 5-HT (syn + up)|\n|ADL|ADLL/R|Glu|\n|AFD|AFDL/R|Glu ACh|\n|AIA|AIAL/R|ACh|\n|AIB|AIBL/R|Glu betaine (up)|\n|AIM|AIML/R|Glu 5-HT (up)|\n|AIN|AINL/R|ACh|\n|AIY|AIYL/R|ACh|\n|AIZ|AIZL/R|Glu|\n|ALA|ALA/R|GABA|\n|ALM|ALML/R|Glu|\n|ALN|ALNL/R|ACh|\n|AQR|AQR|Glu|\n|AS|AS1-AS11|ACh|\n|ASE|ASEL/R|Glu|\n|ASG|ASGL/R|Glu \\*betaine (up)|\n|ASH|ASHL/R|Glu|\n|ASI|ASIL/R|\\*betaine (up)|\n|ASJ|ASJL/R|ACh|\n|ASK|ASKL/R|Glu|\n|AUA|AUAL/R|Glu betaine (up)|\n|AVA|AVAL/R|ACh|\n|AVB|AVBL/R|ACh|\n|AVD|AVDL/R|ACh|\n|AVE|AVEL/R|ACh|\n|AVF|AVFL/R|GABA (up)|\n|AVG|AVG|\\*ACh|\n|AVH|AVHL/R|orphan|\n|AVJ|AVJL/R|\\*GABA|\n|AVK|AVKL/R|orphan, unc-47 (+)|\n|AVL|AVL|GABA unknown MA?|\n|AVM|AVM|Glu|\n|AWA|AWAL/R|\\*ACh|\n|AWB|AWBL/R|ACh|\n|AWC|AWCL/R|Glu|\n|BAG|BAGL/R|Glu|\n|BDU|BDUL/R|orphan|\n|CAN|CANL/R|betaine (up)|\n|CEP|CEPDL/DR/VL/VR|DA|\n|DA|DA1-DA8|ACh|\n|DA9|DA9|ACh \\*betaine (up)|\n|DB|DB1-DB7|ACh|\n|DD|DD1-DD6|GABA|\n|DVA|DVA|ACh Glu|\n|DVB|DVB|GABA \\*betaine (up)|\n|DVC|DVC|Glu|\n|FLP|FLPL/R|Glu|\n|HSN|HSNL/R|ACh 5-HT|\n|I1|I1L/R|ACh|\n|I2|I2L/R|Glu|\n|I3|I3|ACh|\n|I4|I4|\\*Glu 5-HT (alt syn/up mechanism)|\n|I5|I5|Glu|\n|I6|I6|orphan, unc-47 (+)|\n|IL1|IL1DL/DR/L/R/VL/VR|Glu|\n|IL2|IL2DL/DR/L/R/VL/VR|ACh unknown MA?|\n|LUA|LUAL/R|Glu|\n### CLASS | NEURON | NEUROTRANSMITTER(S)\n|M1|M1|ACh|\n|-|-|-|\n|M2|M2L/R|ACh|\n|M3|M3L/R|Glu \\*betaine (up)|\n|M4|M4|ACh|\n|M5|M5|ACh Glu|\n|MC|MCL/R|ACh|\n|MI|MI|Glu 5-HTP|\n|NSM|NSML/R|5-HT \\*betaine (up)|\n|OLL|OLLL/R|Glu|\n|OLQ|OLQDL/DR/VL/VR|Glu|\n|PDA|PDA|ACh \\*betaine (up)|\n|PDB|PDB|ACh|\n|PDE|PDEL/R|DA Glu|\n|PHA|PHAL/R|\\*Glu|\n|PHB|PHBL/R|Glu|\n|PHC|PHCL/R|Glu betaine (up)|\n|PLM|PLML/R|Glu|\n|PLN|PLNL/R|ACh|\n|PQR|PQR|Glu|\n|PVC|PVCL/R|ACh|\n|PVD|PVDL/R|Glu|\n|PVM|PVM|orphan|\n|PVN|PVNL/R|ACh Glu betaine (up)|\n|PVP|PVPL/R|ACh|\n|PVQ|PVQL/R|orphan|\n|PVR|PVR|Glu|\n|PVT|PVT|orphan, unc-47 (+) orphan, unc-46 (+)|\n|PVW|PVWL/R||\n|RIA|RIAL/R|Glu|\n|RIB|RIBL/R|GABA Glu|\n|RIC|RICL/R|octopamine Glu|\n|RID|RID|orphan, unc-47 (+)|\n|RIF|RIFL/R|ACh|\n|RIG|RIGL/R|Glu|\n|RIH|RIH|ACh 5-HT (up)|\n|RIM|RIML/R|Glu tyramine (syn + up) betaine (up)|\n|RIP|RIPL/R|ACh|\n|RIR|RIR|ACh \\*betaine (up)|\n|RIS|RIS|GABA betaine (up)|\n|RIV|RIVL/R|ACh|\n|RMD|RMDDL/DR/L/R/VL/VR|ACh|\n|RME|RMED/L/R/V|GABA|\n|RMF|RMFL/R|ACh|\n|RMG|RMGL/R|orphan|\n|RMH|RMHL/R|ACh \\*betaine (up)|\n|SAA|SAADL/DR/VL/VR|ACh|\n|SAB|SABD/VL/VR|ACh|\n|SDQ|SDQL/R|ACh|\n|SIA|SIADL/DR/VL/VR|ACh|\n|SIB|SIBDL/DR/VL/VR|ACh|\n|SMB|SMBDL/DR/VL/VR|ACh|\n|SMD|SMDDL/DR/VL/VR|ACh \\*GABA \\*betaine (up)|\n|URA|URADL/DR/VL/VR|ACh|\n|URB|URBL/R|ACh bas-1-depen MA?|\n|URX|URXL/R|ACh \\*5-HT (up) \\*betaine (up)|\n|URY|URYDL/DR/VL/VR|Glu|\n|VA|VA1-VA11|ACh|\n|VA12|VA12|ACh \\*betaine (up)|\n|VB|VB1-VB11|ACh \\*betaine (up)|\n|VC|VC1-VC3, VC6|ACh 5-HT (alt syn/up mechanism)|\n|VC4, VC5|VC4, VC5|ACh|\n|VD|VD1-VD13|GABA|\n### MALE-SPECIFIC NEURONS",
                         "paragraph_index": 4,
                         "page_number": 7
                     },
                     {
-                        "contents": "### MALE-SPECIFIC NEURONS",
+                        "contents": "|CLASS|NEURON|NEUROTRANSMITTER(S)|\n|-|-|-|\n|CEM|CEMDLDR/VL/VR|ACh 5-HTP unknown MA?|\n|MCM|MCML/R|orphan, unc-47 (+)|\n|CA|CA1-CA4|ACh \\*Glu|\n||CA5, CA6, CA8, CA9|ACh|\n||CA7|ACh Glu|\n|CP|CP0|Glu|\n||CP1-CP4|ACh 5-HT (syn + up)|\n||CP5, CP6|Glu 5-HT (syn + up)|\n||CP7, CP8|ACh|\n|CP9|CP9|GABA|\n|DVE|DVE|\\*bas-1-depen MA?|\n|DVF|DVF|\\*bas-1-depen MA?|\n|DX|DX1/2|ACh|\n|EF|EF1/2|GABA|\n|HOA|HOA|Glu tyramine bas-1-depen MA?|\n|HOB|HOB|ACh unknown MA?|\n|PDC|PDC|ACh betaine (up)|\n|PGA|PGA|ACh 5-HT (up)|\n|PVV|PVV|ACh Glu \\*betaine (up)|\n|PVY|PVY|ACh unknown MA?|\n|PVX|PVX|ACh unknown MA?|\n|PVZ|PVZ|ACh|\n|DX|DX3/4|ACh|\n|EF|EF3/4|GABA|\n|RnA|R1AL/R|ACh|\n||R2AL/R|ACh GABA bas-1-depen MA?|\n||R3AL/R|ACh bas-1-depen MA?|\n||R4AL/R|ACh|\n||R5AL/R|Glu DA|\n||R6AL/R|ACh GABA bas-1-depen MA?|\n||R7AL/R|DA tyramine|\n||R8AL/R|ACh tyramine bas-1-depen MA?|\n||R9AL/R|Glu DA|\n|RnB|R1BL/R|ACh 5-HT PEOH?|\n||R2BL/R|Glu PEOH?|\n||R3BL/R|5-HT PEOH?|\n||R4BL/R|ACh \\*5-HT PEOH?|\n||R5BL/R|ACh unknown MA?|\n||R6BL/R|Glu \\*bas-1-depen MA?|\n||R7BL/R|\\*ACh \\*5-HT PEOH?|\n||R8BL/R|ACh octopamine|\n||R9BL/R|\\*ACh GABA 5-HTP & 5-HT (up)|\n|PHD|PHDL/R|ACh betaine (up)|\n|PCA|PCAL/R|Glu|\n|PCB|PCBL/R|ACh bas-1-depen MA?|\n|PCC|PCCL/R|ACh|\n|SPC|SPCL/R|ACh bas-1-depen MA?|\n|SPD|SPDL/R|orphan|\n|SPV|SPVL/R|ACh|\n> See Supplementary Files 2 & 3 and Tables 1 & 2 for gene expression details, neurotransmitter assignment rationale, and updates in this paper compared to prior studies. See Supplementary File 4 for sexually dimorphic expression of reporter alleles in sex-shared neurons.",
                         "paragraph_index": 5,
                         "page_number": 7
                     },
                     {
-                        "contents": "|CLASS|NEURON|NEUROTRANSMITTER(S)|\n|-|-|-|\n|CEM|CEMDLDR/VL/VR|ACh 5-HTP unknown MA?|\n|MCM|MCML/R|orphan, unc-47 (+)|\n|CA|CA1-CA4|ACh \\*Glu|\n||CA5, CA6, CA8, CA9|ACh|\n||CA7|ACh Glu|\n|CP|CP0|Glu|\n||CP1-CP4|ACh 5-HT (syn + up)|\n||CP5, CP6|Glu 5-HT (syn + up)|\n||CP7, CP8|ACh|\n|CP9|CP9|GABA|\n|DVE|DVE|\\*bas-1-depen MA?|\n|DVF|DVF|\\*bas-1-depen MA?|\n|DX|DX1/2|ACh|\n|EF|EF1/2|GABA|\n|HOA|HOA|Glu tyramine bas-1-depen MA?|\n|HOB|HOB|ACh unknown MA?|\n|PDC|PDC|ACh betaine (up)|\n|PGA|PGA|ACh 5-HT (up)|\n|PVV|PVV|ACh Glu \\*betaine (up)|\n|PVY|PVY|ACh unknown MA?|\n|PVX|PVX|ACh unknown MA?|\n|PVZ|PVZ|ACh|\n|DX|DX3/4|ACh|\n|EF|EF3/4|GABA|\n|RnA|R1AL/R|ACh|\n||R2AL/R|ACh GABA bas-1-depen MA?|\n||R3AL/R|ACh bas-1-depen MA?|\n||R4AL/R|ACh|\n||R5AL/R|Glu DA|\n||R6AL/R|ACh GABA bas-1-depen MA?|\n||R7AL/R|DA tyramine|\n||R8AL/R|ACh tyramine bas-1-depen MA?|\n||R9AL/R|Glu DA|\n|RnB|R1BL/R|ACh 5-HT PEOH?|\n||R2BL/R|Glu PEOH?|\n||R3BL/R|5-HT PEOH?|\n||R4BL/R|ACh \\*5-HT PEOH?|\n||R5BL/R|ACh unknown MA?|\n||R6BL/R|Glu \\*bas-1-depen MA?|\n||R7BL/R|\\*ACh \\*5-HT PEOH?|\n||R8BL/R|ACh octopamine|\n||R9BL/R|\\*ACh GABA 5-HTP & 5-HT (up)|\n|PHD|PHDL/R|ACh betaine (up)|\n|PCA|PCAL/R|Glu|\n|PCB|PCBL/R|ACh bas-1-depen MA?|\n|PCC|PCCL/R|ACh|\n|SPC|SPCL/R|ACh bas-1-depen MA?|\n|SPD|SPDL/R|orphan|\n|SPV|SPVL/R|ACh|\n> See Supplementary Files 2 & 3 and Tables 1 & 2 for gene expression details, neurotransmitter assignment rationale, and updates in this paper compared to prior studies. See Supplementary File 4 for sexually dimorphic expression of reporter alleles in sex-shared neurons.",
+                        "contents": "When neurotransmitter is marked with \\*: potential neurotransmitter usage is predicted based on variable expression of given gene(s).",
                         "paragraph_index": 6,
                         "page_number": 7
                     },
                     {
-                        "contents": "When neurotransmitter is marked with \\*: potential neurotransmitter usage is predicted based on variable expression of given gene(s).",
+                        "contents": "## B",
                         "paragraph_index": 7,
                         "page_number": 7
                     },
                     {
-                        "contents": "## B",
+                        "contents": "acetylcholine GABA glutamate 5-HT or 5-HTP tyramine octopamine dopamine betaine",
                         "paragraph_index": 8,
                         "page_number": 7
                     },
                     {
-                        "contents": "Figure 3. Summary of neurotransmitter usage and atlases. See Table 1, Table 2, and Supplementary files 2\u20134 for individual gene expression, rationale for neurotransmitter assignments, and more detailed notes. (A) ACh=acetylcholine; Glu=glutamate; GABA=\u03b3-aminobutyric acid; DA=dopamine; 5-HT=5-hydroxytryptamine, or serotonin; 5-HTP=5-hydroxytryptophan; PEOH?=the neuron has the potential to use \u03b2-hydroxyphenethylamine, or phenylethanolamine; bas-1-depen MA?=the neuron has the potential to use bas-1-dependent unknown monoamines (histamine, tryptamine,",
+                        "contents": "* p may transmit phenylethanolamine\n* unknown monoamine (incl. bas-1-dependent)\n* orphan\n* u neuron has neurotransmitter uptake capacity\n* * gene expression dim and variable\n* alt alternative synthesis and/or uptake mechanism(s)\n* sex-shared neuron\n* sex-specific neuron",
                         "paragraph_index": 9,
+                        "page_number": 7
+                    },
+                    {
+                        "contents": "Figure 3. Summary of neurotransmitter usage and atlases. See Table 1, Table 2, and Supplementary files 2\u20134 for individual gene expression, rationale for neurotransmitter assignments, and more detailed notes. (A) ACh=acetylcholine; Glu=glutamate; GABA=\u03b3-aminobutyric acid; DA=dopamine; 5-HT=5-hydroxytryptamine, or serotonin; 5-HTP=5-hydroxytryptophan; PEOH?=the neuron has the potential to use \u03b2-hydroxyphenethylamine, or phenylethanolamine; bas-1-depen MA?=the neuron has the potential to use bas-1-dependent unknown monoamines (histamine, tryptamine,",
+                        "paragraph_index": 10,
                         "page_number": 7
                     }
                 ]
@@ -488,38 +493,33 @@
                         "page_number": 9
                     },
                     {
-                        "contents": "* HERM MIDBODY\n* HERM TAIL\n* MALE TAIL\n* PDE\n* DVC\n* PVQ (-)\n* PVN\n* PVD\n* DVA\n* PHA(+/-)\n* PDE\n* DVC\n* PVQ\n* PVN\n* PVD\n* DVA\n* PHA\n* PDE\n* DVC\n* PVQ\n* PVN\n* PVD\n* DVA\n* PHA\n* **eat-4**^CRISPR::gfp\n* expression in PVN\n* GFP intensity (a.u.)\n* 2.0\n* 1.5\n* 1.0\n* 0.5\n* 0.0\n* herm\n* male",
+                        "contents": "* HERM MIDBODY\n* HERM TAIL\n* MALE TAIL\n* PDE\n* DVC\n* PVQ (-)\n* PVN\n* PVD\n* DVA\n* PHA(+/-)\n* **eat-4**^CRISPR::gfp\n* expression in PVN\n* PDE\n* DVC\n* PVQ\n* PVN\n* PVD\n* DVA\n* PHA\n* PDE\n* DVC\n* PVQ\n* PVN\n* PVD\n* DVA\n* PHA",
                         "paragraph_index": 5,
                         "page_number": 9
                     },
                     {
-                        "contents": "# unc-17(syb4491\\[unc-17::t2a::gfp::h2b]) IV",
+                        "contents": "## C",
                         "paragraph_index": 6,
                         "page_number": 9
                     },
                     {
-                        "contents": "## C",
+                        "contents": "* **unc-17**^CRISPR::gfp\n* NeuroPAL\n* MERGE\n* lateral view\n* AVJ(-)\n* AWA\n* RIP\n* AFD\n* RIB(-)\n* FLP(-)\n* RIP\n* AFD\n* RIB\n* FLP\n* RIP\n* AWA\n* AVJ\n* AFD\n* RIB(-)\n* FLP(-)\n* AIM\n* AIY\n* AVG\n* AIM\n* AIY\n* AVG\n* AIM\n* AIY\n* AVG\n* lateral view\n* AIM\n* AIY\n* AVG\n* AIM\n* AIY\n* AVG\n* AIM\n* AIY\n* AVG",
                         "paragraph_index": 7,
                         "page_number": 9
                     },
                     {
-                        "contents": "* **unc-17**^CRISPR::gfp\n* NeuroPAL\n* MERGE\n* lateral view\n* AVJ(-)\n* AVJ\n* RIP\n* AWA(+/-)\n* AFD\n* RIB(-)\n* FLP(-)\n* AFD\n* RIB\n* FLP\n* AWA(+/-)\n* AVJ(-)\n* AFD\n* RIB(-)\n* FLP(-)\n* (+)\n* AIM\n* AIY\n* AVG\n* AIM\n* AIY\n* AVG\n* AIM\n* AIY\n* AVG\n* lateral view\n* AIM\n* AIY\n* AVG\n* AIM\n* AIY\n* AVG\n* AIM\n* AIY\n* AVG\n* lateral view",
+                        "contents": "## D",
                         "paragraph_index": 8,
                         "page_number": 9
                     },
                     {
-                        "contents": "## D",
+                        "contents": "* **unc-17**^CRISPR::gfp\n* NeuroPAL\n* MERGE\n* lateral view\n* PVN\n* PVN\n* PVN\n* lateral view\n* PVN\n* PVN\n* PVN",
                         "paragraph_index": 9,
                         "page_number": 9
                     },
                     {
-                        "contents": "* **unc-17**^CRISPR::gfp\n* NeuroPAL\n* MERGE\n* PVN\n* PVN\n* PVN\n* lateral view\n* PVN\n* PVN\n* PVN\n* lateral view",
+                        "contents": "Figure 4. Expression of eat-4/VGLUT and unc-17/VAChT reporter alleles in the adult hermaphrodite. Neuronal expression of eat-4(syb4257) and unc-17(syb4491) was characterized with landmark strain NeuroPAL (otIs696 and otIs669, respectively). Only selected neurons are shown for illustrating updates from previous reports. See *Supplementary file 2* for a complete list of neurons. (A) Dim expression of eat-4(syb4257) in head neurons",
                         "paragraph_index": 10,
-                        "page_number": 9
-                    },
-                    {
-                        "contents": "Figure 4. Expression of eat-4/VGLUT and unc-17/VAChT reporter alleles in the adult hermaphrodite. Neuronal expression of eat-4(syb4257) and unc-17(syb4491) was characterized with landmark strain NeuroPAL (otIs696 and otIs669, respectively). Only selected neurons are shown for illustrating updates from previous reports. See *Supplementary file 2* for a complete list of neurons. (A) Dim expression of eat-4(syb4257) in head neurons\nFigure 4 continued on next page",
-                        "paragraph_index": 11,
                         "page_number": 9
                     }
                 ]
@@ -581,93 +581,93 @@
             "Page 11": {
                 "paragraphs": [
                     {
-                        "contents": "# A",
-                        "paragraph_index": 1,
+                        "contents": "# eLife Tools and resources",
+                        "paragraph_index": 0,
                         "page_number": 11
                     },
                     {
-                        "contents": "lateral view\nHERM HEAD\nRMED\nRIBL\nRMEL/R\nRIS\nRIBR\nAVL\nRMEV\nVD1/DD1\nVD2",
-                        "paragraph_index": 3,
+                        "contents": "## A",
+                        "paragraph_index": 2,
                         "page_number": 11
                     },
                     {
-                        "contents": "HERM WHOLE WORM\nshowing ventral cord\nDD and VD neurons\nVD1/DD1\nVD2\nVD3\nDD2\nVD4\nDD6\nVD13\nVD12\nVD5\nDD3\nVD6\nVD11\nVD10\nDD5\nVD9\nDD4\nVD8",
+                        "contents": "lateral view\nHERM HEAD\nRMED\nRIBL\nRMEL/R\nRIBR\nRIS\nRMEV\nAVL\nVD1/DD1\nVD2",
+                        "paragraph_index": 4,
+                        "page_number": 11
+                    },
+                    {
+                        "contents": "HERM WHOLE WORM\nshowing ventral cord\nDD and VD neurons\nVD1/DD1\nVD2\nVD3\nDD2\nVD4\nDD6\nVD13\nVD5\nVD12\nDD3\nVD6\nVD11\nVD10\nDD5\nVD9\nDD4\nVD8\nVD7",
                         "paragraph_index": 5,
                         "page_number": 11
                     },
                     {
-                        "contents": "# B",
-                        "paragraph_index": 6,
+                        "contents": "## B",
+                        "paragraph_index": 7,
                         "page_number": 11
                     },
                     {
                         "contents": "lateral view\n::gfp\nunc-47^CRISPR::gfp\nMI\nM4\nNSM\nI2\nRMED\nRID\nURX\nSMDV\nRIB\nAIN\nASE\nAVL\nAIY\nRIS\nRMEL/R\nRMH\nSMDD\nSIAV/D\nRIF\nVD1\nVD2\nAVG",
-                        "paragraph_index": 8,
-                        "page_number": 11
-                    },
-                    {
-                        "contents": "lateral view\n::sl2::mCherry::h2b\nunc-47^fosmid::sl2::mCherry::h2b\nMI\nM4\nNSM\nI2\nRMED\nRID\nURX\nSMDV\nRIB\nAIN\nASE\nAVL\nAIY\nRIS\nRMEL/R\nRMH\nSMDD\nSIAV/D\nRIF\nVD1\nVD2\nAVG",
                         "paragraph_index": 9,
                         "page_number": 11
                     },
                     {
-                        "contents": "HERM HEAD\n::gfp\nunc-47^CRISPR::gfp\nIL1D(+/-)\nALA(+)\nM1(-)\nSMD(+)\nADF(-)\nIL1V\n(L/R)(+/-)\nI1(+/-)",
+                        "contents": "::sl2::mCherry::h2b\nunc-47^fosmid::sl2::mCherry::h2b\nMI\nM4\nNSM\nI2\nRMED\nRID\nURX\nSMDV\nRIB\nAIN\nASE\nAVL\nAIY\nRIS\nRMEL/R\nRMH\nSMDD\nSIAV/D\nRIF\nVD1\nVD2\nAVG",
+                        "paragraph_index": 10,
+                        "page_number": 11
+                    },
+                    {
+                        "contents": "MERGE\nMI\nM4\nNSM\nI2\nRMED\nRID\nURX\nSMDV\nRIB\nAIN\nASE\nAVL\nAIY\nRIS\nRMEL/R\nRMH\nSMDD\nSIAV/D\nRIF\nVD1\nVD2\nAVG",
                         "paragraph_index": 11,
                         "page_number": 11
                     },
                     {
-                        "contents": "NeuroPAL\nunc-47^CRISPR::gfp\nIL1D\nALA\nM1\nSMD\nADF\nIL1V\n(L/R)\nI1",
+                        "contents": "HERM HEAD\n::gfp\nunc-47^CRISPR::gfp\nIL1D(+/-)\nALA(+)\nM1(-)\nSMD(+)\nADF(-)\nIL1V\n(L/R)(+/-)\nI1(+/-)",
                         "paragraph_index": 12,
                         "page_number": 11
                     },
                     {
+                        "contents": "NeuroPAL\nunc-47^CRISPR::gfp\nIL1D\nALA\nM1\nSMD\nADF\nIL1V\n(L/R)\nI1",
+                        "paragraph_index": 13,
+                        "page_number": 11
+                    },
+                    {
                         "contents": "MALE HEAD\n::gfp\nunc-47^CRISPR::gfp\nIL1D(+/-)\nALA(+)\nM1(-)\nSMD(+)\nADF(+)\nIL1V(+/-)\nI1(+/-)",
-                        "paragraph_index": 14,
+                        "paragraph_index": 15,
                         "page_number": 11
                     },
                     {
                         "contents": "HERM TAIL\n::gfp\nunc-47^CRISPR::gfp\nPDB(-)\nAS11(-)\nPVN(-)\nPHC(-)\nPLM(+)",
-                        "paragraph_index": 17,
+                        "paragraph_index": 18,
                         "page_number": 11
                     },
                     {
                         "contents": "MALE TAIL\n::gfp\nunc-47^CRISPR::gfp\nPDB(+)\nPVN(+)\nAS11(+)\nPHC(+)\nPLM(+)",
-                        "paragraph_index": 20,
+                        "paragraph_index": 21,
                         "page_number": 11
                     },
                     {
-                        "contents": "# C",
-                        "paragraph_index": 23,
+                        "contents": "## C",
+                        "paragraph_index": 24,
                         "page_number": 11
                     },
                     {
-                        "contents": "lateral view\nunc-46^CRISPR::gfp\nHERM HEAD\nRMED\nGLRD\nAVB\nRIA\nM2\nRMDVL\nRIB\nRME\nGLRV\nRMDD\nAVL\nRIS\nDD1\nVD1\nVD2\nRMEV",
-                        "paragraph_index": 25,
-                        "page_number": 11
-                    },
-                    {
-                        "contents": "lateral view\nunc-46^fosmid::sl2::mCherry::h2b\nHERM HEAD\nRMED\nGLRD\nAVB\nRIA\nM2\nRMDVL\nRIB\nRME\nGLRV\nRMDD\nAVL\nRIS\nDD1\nVD1\nVD2\nRMEV",
+                        "contents": "lateral view\nunc-46^CRISPR::gfp\nHERM HEAD\nRMED\nGLRD\nAVB\nRIA\nM2\nRMDVL\nRIB\nGLRV\nRMDD\nAVL\nRIS\nDD1\nVD1\nVD2\nRMEV",
                         "paragraph_index": 26,
                         "page_number": 11
                     },
                     {
-                        "contents": "MERGE\nHERM HEAD\nRMED\nGLRD\nAVB\nRIA\nM2\nRMDVL\nRIB\nRME\nGLRV\nRMDD\nAVL\nRIS\nDD1\nVD1\nVD2\nRMEV",
+                        "contents": "lateral view\nunc-46^fosmid::sl2::mCherry::h2b\nHERM HEAD\nRMED\nGLRD\nAVB\nRIA\nM2\nRMDVL\nRIB\nGLRV\nRMDD\nAVL\nRIS\nDD1\nVD1\nVD2\nRMEV",
                         "paragraph_index": 27,
                         "page_number": 11
                     },
                     {
-                        "contents": "lateral view\nunc-46^CRISPR::gfp\nHERM TAIL\nDVB\nPVW\nVD12\nDD6\nVD13\nPDA\nPVN",
+                        "contents": "MERGE\nHERM HEAD\nRMED\nGLRD\nAVB\nRIA\nM2\nRMDVL\nRIB\nGLRV\nRMDD\nAVL\nRIS\nDD1\nVD1\nVD2\nRMEV",
                         "paragraph_index": 28,
                         "page_number": 11
                     },
                     {
-                        "contents": "lateral view\nunc-46^fosmid::sl2::mCherry::h2b\nHERM TAIL\nDVB\nPVW\nVD12\nDD6\nVD13\nPDA\nPVN",
-                        "paragraph_index": 29,
-                        "page_number": 11
-                    },
-                    {
                         "contents": "Figure 5. Expression of GABA pathway genes in the adult hermaphrodite. (A) Expression of the unc-25/GAD reporter allele ot1372 is detected in the head, ventral nerve cord, and tail neurons. The expression pattern of this new T2A-based reporter allele is similar to that of a previously described SL2-based reporter allele, unc-25(ot867) (Gendrel et al., 2016). (B) Expression of unc-47/VGAT reporter allele syb7566. Left, the expression pattern of the reporter allele largely matches that of a previously described unc-47 mCherry fosmid-based reporter (otIs564) in the head. Right, a close-up view for the Figure 5 continued on next page",
-                        "paragraph_index": 31,
+                        "paragraph_index": 32,
                         "page_number": 11
                     }
                 ]
@@ -695,23 +695,28 @@
                         "page_number": 12
                     },
                     {
-                        "contents": "While promoter-based transgenes for the vesicular transporter for GABA, unc-47/VGAT, had shown expression patterns that precisely match that of unc-25/GAD (Eastman et al., 1999), we had noted in our previous analysis of the GABA system that a fosmid-based reporter showed much broader expression in many additional neuron classes that showed no sign of GABA usage (Gendrel et al., 2016). In several of these neuron classes both the fosmid-based reporter and the CeNGEN scRNA data indicate very robust expression (e.g. AIN, SIA, SDQ), while in many others scRNA transcripts are only evident at looser thresholds and, correspondingly, fosmid-based reporter expression in these cells is often weak (Supplementary file 1; Gendrel et al., 2016). To investigate this matter further, we CRISPR/Cas9-engineered a gfp-based reporter allele for unc-47, syb7566, and first crossed it with an mCherry-based unc-47 fosmid-based reporter (otIs564) as a first-pass assessment for any obvious overlaps and mismatches of expression patterns between the two (Figure 5B, left side panels). The vast majority of neurons exhibited overlapping expression between syb7566 and otIs564. There were also many notable similarities in the robustness of expression of the fosmid-based reporter and the reporter allele (Supplementary file 1). In a few cases where the fosmid-based reporter expression was so dim that it is only detectable via antibody staining against its fluorophore (mCherry) (Gendrel et al., 2016; Serrano-Saiz et al., 2017b), the reporter allele expression was readily visible (Supplementary file 1). The very few mismatches of expression of the fosmid-based reporter and the reporter allele included the pharyngeal neuron M1, which expresses no visible unc-47(syb7566) reporter allele but weak fosmid-based reporter expression, and the pharyngeal neuron I1, which expresses dim syb7566 but no fosmid-based reporter (Figure 5B, right side panels). AVJ shows very dim and variable unc-47(syb7566) reporter allele expression but no fosmid-based reporter expression. Since AVJ stains with anti-GABA antibodies (Gendrel et al., 2016), this neuron likely engages in vesicular release of GABA, even though its source of GABA remains unclear since it neither expresses conventional GABA synthesis machinery (UNC-25/GAD) nor GABA uptake machinery (SNF-11). Other neurons previously shown to stain with anti-GABA antibodies and to express the unc-47 fosmid-based reporter (ALA and SMD) (Gendrel et al., 2016) still show expression of the unc-47 reporter allele.",
+                        "contents": "While promoter-based transgenes for the vesicular transporter for GABA, unc-47/VGAT, had shown expression patterns that precisely match that of unc-25/GAD (Eastman et al., 1999), we had noted in our previous analysis of the GABA system that a fosmid-based reporter showed much broader expression in many additional neuron classes that showed no sign of GABA usage (Gendrel et al., 2016). In several of these neuron classes both the fosmid-based reporter and the CeNGEN scRNA data indicate very robust expression (e.g. AIN, SIA, SDQ), while in many others scRNA transcripts are only evident at looser thresholds and, correspondingly, fosmid-based reporter expression in these cells is often weak (Supplementary file 1; Gendrel et al., 2016). To investigate this matter further, we CRISPR/Cas9-engineered a gfp-based reporter allele for unc-47, syb7566, and first crossed it with an mCherry-based unc-47 fosmid-based reporter (otIs564) as a first-pass assessment for any obvious overlaps and mismatches of expression patterns between the two (Figure 5B, left side panels). The vast majority of neurons exhibited overlapping expression between syb7566 and otIs564. There were also many notable similarities in the robustness of expression of the fosmid-based reporter and the reporter allele (Supplementary file 1). In a few cases where the fosmid-based reporter expression was so dim that it is only detectable via antibody staining against its fluorophore (mCherry) (Gendrel et al., 2016; Serrano-Saiz et al., 2017b), the reporter allele expression was readily visible (Supplementary file 1).",
                         "paragraph_index": 6,
                         "page_number": 12
                     },
                     {
-                        "contents": "In addition, while the reporter allele of unc-47/VGAT, in conjunction with CeNGEN scRNA data, corroborates the notion that unc-47/VGAT is expressed in all GABA-synthesizing and most GABA uptake neurons, there is a substantial number of unc-47-positive neurons that do not show any evidence of GABA presence. This suggests that UNC-47/VGAT may transport another unidentified neurotransmitter (see Discussion) (Gendrel et al., 2016).",
+                        "contents": "The very few mismatches of expression of the fosmid-based reporter and the reporter allele included the pharyngeal neuron M1, which expresses no visible unc-47(syb7566) reporter allele but weak fosmid-based reporter expression, and the pharyngeal neuron I1, which expresses dim syb7566 but no fosmid-based reporter (Figure 5B, right side panels). AVJ shows very dim and variable unc-47(syb7566) reporter allele expression but no fosmid-based reporter expression. Since AVJ stains with anti-GABA antibodies (Gendrel et al., 2016), this neuron likely engages in vesicular release of GABA, even though its source of GABA remains unclear since it neither expresses conventional GABA synthesis machinery (UNC-25/GAD) nor GABA uptake machinery (SNF-11). Other neurons previously shown to stain with anti-GABA antibodies and to express the unc-47 fosmid-based reporter (ALA and SMD) (Gendrel et al., 2016) still show expression of the unc-47 reporter allele.",
                         "paragraph_index": 7,
                         "page_number": 12
                     },
                     {
-                        "contents": "## Expression of unc-46/LAMP",
+                        "contents": "In addition, while the reporter allele of unc-47/VGAT, in conjunction with CeNGEN scRNA data, corroborates the notion that unc-47/VGAT is expressed in all GABA-synthesizing and most GABA uptake neurons, there is a substantial number of unc-47-positive neurons that do not show any evidence of GABA presence. This suggests that UNC-47/VGAT may transport another unidentified neurotransmitter (see Discussion) (Gendrel et al., 2016).",
                         "paragraph_index": 8,
                         "page_number": 12
                     },
                     {
-                        "contents": "In all GABA-synthesizing neurons, the UNC-47/VGAT protein requires the LAMP-like protein UNC-46 for proper localization (Schuske et al., 2007). A previously analyzed fosmid-based reporter confirmed unc-46/LAMP expression in all \u2018classic\u2019 GABAergic neurons (i.e. anti-GABA and unc-25/GAD-positive neurons), but also showed robust expression in GABA- and unc-47-negative neurons, such as RMD (Gendrel et al., 2016). This non-GABAergic neuron expression is confirmed by CeNGEN scRNA",
+                        "contents": "## Expression of unc-46/LAMP",
                         "paragraph_index": 9,
+                        "page_number": 12
+                    },
+                    {
+                        "contents": "In all GABA-synthesizing neurons, the UNC-47/VGAT protein requires the LAMP-like protein UNC-46 for proper localization (Schuske et al., 2007). A previously analyzed fosmid-based reporter confirmed unc-46/LAMP expression in all \u2018classic\u2019 GABAergic neurons (i.e. anti-GABA and unc-25/GAD-positive neurons), but also showed robust expression in GABA- and unc-47-negative neurons, such as RMD (Gendrel et al., 2016). This non-GABAergic neuron expression is confirmed by CeNGEN scRNA",
+                        "paragraph_index": 10,
                         "page_number": 12
                     }
                 ]
@@ -773,8 +778,28 @@
                         "page_number": 14
                     },
                     {
-                        "contents": "|tph-1CRISPR::gfp|marker|MERGE|\n|-|-|-|\n|D/V view|eat-4fosmid::sl2::mCherry::h2b||\n|NSM||NSM|\n|ADF||ADF|\n|MI||MI|\n|MI||MI|\n\n|vulval region ventral view|ida-1p::mCherry||\n|-|-|-|\n|HSN||HSN|\n|VC4||VC4|\n|VC5||VC5|\n|HSN||HSN|\n|HSN||HSN|\n\n|HERM HEAD|HERM MIDBODY||\n|-|-|-|\n|D/V view|PDE||\n|NSM||HSN|\n|URB||HSN|\n|CEPD||HSN|\n|ADF||HSN|\n|ADE||HSN|\n|CEPV||HSN|\n|NSM||HSN|\n|URB||HSN|\n|CEPD||HSN|\n|ADE||HSN|\n|CEPV||HSN|\n|NSM||HSN|\n|URB||HSN|\n|CEPD||HSN|\n|ADE||HSN|\n|CEPV||HSN|\n|NSM||HSN|\n|URB||HSN|\n|CEPD||HSN|\n|ADE||HSN|\n|CEPV||HSN|\n\n|HERM HEAD|HERM MIDBODY||\n|-|-|-|\n|lateral view|lateral view||\n|CEPD||CAN|\n|ASI||CAN|\n|ADF||VC4|\n|RIM||HSN|\n|RIC||VC5|\n|CEPV||PDE|\n|RIH||PDE|\n|RIR||PDE|\n|AVL(+/-)||PDE|\n|NSML/R||VC4|\n|||HSN|\n|||VC5|\n\n|HERM HEAD|HERM MIDBODY||\n|-|-|-|\n|lateral view|lateral view||\n|CEPD||CAN|\n|ASI||CAN|\n|ADF||VC4|\n|RIM||HSN|\n|RIC||VC5|\n|CEPV||PDE|\n|RIH||PDE|\n|RIR||PDE|\n|AVL||PDE|\n|NSML/R||VC4|\n|||HSN|\n|||VC5|\n\n|HERM HEAD|HERM MIDBODY||\n|-|-|-|\n|lateral view|lateral view||\n|CEPD||CAN|\n|ASI||CAN|\n|ADF||VC4|\n|RIM||HSN|\n|RIC||VC5|\n|CEPV||PDE|\n|RIH||PDE|\n|RIR||PDE|\n|AVL||PDE|\n|NSML/R||VC4|\n|||HSN|\n|||VC5|",
+                        "contents": "|tph-1(syb6451)\\[tph-1::gfp]|HERM HEAD|HERM MIDBODY|||||\n|-|-|-|-|-|-|-|\n|D/V view|marker|MERGE|vulval region ventral view|marker|MERGE||\n|NSM||NSM||HSN||HSN|\n|ADF||ADF||VC4||VC4|\n|MI||MI||VC5||VC5|\n|||HSN||HSN||HSN|",
                         "paragraph_index": 2,
+                        "page_number": 14
+                    },
+                    {
+                        "contents": "(B) Expression of bas-1(bas-1::gfp) in the adult hermaphrodite.",
+                        "paragraph_index": 3,
+                        "page_number": 14
+                    },
+                    {
+                        "contents": "|bas-1(bas-1::gfp)|HERM HEAD|HERM MIDBODY|||||||||\n|-|-|-|-|-|-|-|-|-|-|-|\n|D/V view|marker|MERGE|D/V view|marker|MERGE||||||\n|NSM||NSM||NSM||HSN||HSN||HSN|\n|URB||URB||URB||HSN||HSN||HSN|\n|CEPD||CEPD||CEPD||PDE||PDE||PDE|\n|ADF||ADF||ADF||HSN||HSN||HSN|\n|ADE||ADE||ADE||PDE||PDE||PDE|\n|CEPV||CEPV||CEPV||HSN||HSN||HSN|",
+                        "paragraph_index": 4,
+                        "page_number": 14
+                    },
+                    {
+                        "contents": "(C) Expression of cat-1(cat-1::gfp) in the adult hermaphrodite.",
+                        "paragraph_index": 5,
+                        "page_number": 14
+                    },
+                    {
+                        "contents": "|cat-1(cat-1::gfp)|HERM HEAD|HERM MIDBODY|||\n|-|-|-|-|-|\n|lateral view|lateral view||||\n|CEPD||CEPD||CAN|\n|ASI||ASI||CAN|\n|ADF||ADF||VC4|\n|RIM||RIM||HSN|\n|RIC||RIC||VC5|\n|AUA||AUA||PDE|\n|NSML/R||NSML/R||VC4|\n|CEPV||CEPV||HSN|\n|RIH||RIH||VC5|\n|RIR||RIR||PDE|\n|AVL(+/-)|AVL(+/-)||AVL||",
+                        "paragraph_index": 6,
                         "page_number": 14
                     }
                 ]
@@ -990,11 +1015,6 @@
                         "contents": "Notably, four CAT-1/VMAT-expressing neuron classes, CAN, AUA, RIR, and ASI, do not express biosynthetic enzymes for synthesis or uptake transporters of the four conventional monoaminergic transmitters known to be employed in C. elegans (serotonin, dopamine, octopamine, or tyramine). Hence, these neuron classes might instead synthesize or uptake another transmitter for ensuing synaptic",
                         "paragraph_index": 17,
                         "page_number": 20
-                    },
-                    {
-                        "contents": "Wang et al. eLife 2024;13:RP95402. DOI: https://doi.org/10.7554/eLife.95402    20 of 46",
-                        "paragraph_index": 18,
-                        "page_number": 20
                     }
                 ]
             },
@@ -1016,83 +1036,38 @@
                         "page_number": 21
                     },
                     {
-                        "contents": "### HERMAPHRODITE",
+                        "contents": "#### HERMAPHRODITE",
                         "paragraph_index": 4,
                         "page_number": 21
                     },
                     {
-                        "contents": "### NeuroPAL",
-                        "paragraph_index": 5,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "### MERGE",
+                        "contents": "## B",
                         "paragraph_index": 6,
                         "page_number": 21
                     },
                     {
-                        "contents": "* HEAD\n  * NSM\n  * ADF\n  * AIM\n  * RIH\n* single focal plane\n  * URX\n* TAIL\n  * PHA",
+                        "contents": "### mod-5^CRISPR ::mNG",
                         "paragraph_index": 7,
                         "page_number": 21
                     },
                     {
-                        "contents": "## B",
+                        "contents": "#### MALE",
                         "paragraph_index": 8,
                         "page_number": 21
                     },
                     {
-                        "contents": "### mod-5^CRISPR ::mNG",
-                        "paragraph_index": 9,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "### MALE",
-                        "paragraph_index": 10,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "### NeuroPAL",
+                        "contents": "* NSM\n* ADF\n* AIM\n* RIH\n* single focal plane\n* URX\n* PHA\n* R3B\n* R9B(R/L)\n* PGA\n* PHA\n* R3B\n* R9B(R/L)\n* PGA\n* PHA\n* R3B\n* R9B(R/L)\n* PGA\n* PHA",
                         "paragraph_index": 11,
                         "page_number": 21
                     },
                     {
-                        "contents": "### MERGE",
-                        "paragraph_index": 12,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "* HEAD\n  * NSM\n  * CEMD\n  * AIM\n  * RIH\n  * CEMV\n* single focal plane\n  * URX\n* TAIL\n  * R9B(R/L)\n  * R3B\n  * PGA\n  * PHA",
+                        "contents": "* PHA\n* PHA\n* PHA\n* R3B\n* R9B(R/L)\n* PGA\n* PHA\n* R3B\n* R9B(R/L)\n* PGA\n* PHA\n* R3B\n* R9B(R/L)\n* PGA\n* PHA",
                         "paragraph_index": 13,
                         "page_number": 21
                     },
                     {
-                        "contents": "## C",
-                        "paragraph_index": 14,
-                        "page_number": 21
-                    },
-                    {
                         "contents": "### mod-5^CRISPR ::mNG",
-                        "paragraph_index": 15,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "### VNC",
-                        "paragraph_index": 16,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "### gut autofluorescence",
                         "paragraph_index": 17,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "### MERGE with NeuroPAL",
-                        "paragraph_index": 18,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "## D",
-                        "paragraph_index": 19,
                         "page_number": 21
                     },
                     {
@@ -1101,153 +1076,83 @@
                         "page_number": 21
                     },
                     {
-                        "contents": "### VNC",
-                        "paragraph_index": 21,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "### MERGE with NeuroPAL",
-                        "paragraph_index": 22,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "## E",
-                        "paragraph_index": 24,
-                        "page_number": 21
-                    },
-                    {
                         "contents": "### mod-5^CRISPR ::mNG + DiD (for PHA & PHB)",
-                        "paragraph_index": 25,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "* YOUNG ADULT HERM\n  * PHB\n  * PHA\n* YOUNG ADULT MALE\n  * PHB\n  * PHA\n* L4 MALE\n  * PHB\n  * PHA",
-                        "paragraph_index": 26,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "## F",
-                        "paragraph_index": 27,
+                        "paragraph_index": 23,
                         "page_number": 21
                     },
                     {
                         "contents": "### expression of reporter alleles in ADF",
-                        "paragraph_index": 28,
+                        "paragraph_index": 26,
                         "page_number": 21
                     },
                     {
-                        "contents": "* mod-5^CRISPR ::mNG\n  - mNG intensity (a.u.)\n  - HERM\n  - MALE\n  - ***\n* tph-1^CRISPR ::gfp\n  * GFP intensity (a.u.)\n  * HERM\n  * MALE\n  * n.s.\n* unc-17^CRISPR ::gfp\n  * GFP intensity (a.u.)\n  * HERM\n  * MALE\n  * n.s.",
-                        "paragraph_index": 29,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "## G",
-                        "paragraph_index": 30,
+                        "contents": "* mod-5^CRISPR ::mNG\n* tph-1^CRISPR ::gfp\n* unc-17^CRISPR ::gfp",
+                        "paragraph_index": 27,
                         "page_number": 21
                     },
                     {
                         "contents": "### anti-5-HT immunostaining in the male tail",
+                        "paragraph_index": 29,
+                        "page_number": 21
+                    },
+                    {
+                        "contents": "## oct-1(syb8870\\[oct-1::sl2::gfp::h2b]) I",
                         "paragraph_index": 31,
                         "page_number": 21
                     },
                     {
-                        "contents": "* wild type\n  * CP5\n  * CP6\n  * R1B\n  * R3B\n  * PGA\n  * R9B\n* mod-5 mutant\n  * CP5\n  * CP6\n  * R1B\n  * R3B",
+                        "contents": "## H",
                         "paragraph_index": 32,
                         "page_number": 21
                     },
                     {
-                        "contents": "# oct-1(syb8870\\[oct-1::sl2::gfp::h2b]) I",
+                        "contents": "### oct-1^CRISPR ::gfp",
                         "paragraph_index": 33,
                         "page_number": 21
                     },
                     {
-                        "contents": "## H",
+                        "contents": "#### HERMAPHRODITE",
                         "paragraph_index": 34,
                         "page_number": 21
                     },
                     {
-                        "contents": "### oct-1^CRISPR ::gfp",
-                        "paragraph_index": 35,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "### HERMAPHRODITE",
+                        "contents": "## I",
                         "paragraph_index": 36,
                         "page_number": 21
                     },
                     {
-                        "contents": "### NeuroPAL",
+                        "contents": "### oct-1^CRISPR ::gfp",
                         "paragraph_index": 37,
                         "page_number": 21
                     },
                     {
-                        "contents": "### MERGE",
+                        "contents": "#### MALE",
                         "paragraph_index": 38,
                         "page_number": 21
                     },
                     {
-                        "contents": "## I",
-                        "paragraph_index": 40,
+                        "contents": "### HERMAPHRODITE",
+                        "paragraph_index": 45,
                         "page_number": 21
                     },
                     {
-                        "contents": "### oct-1^CRISPR ::gfp",
-                        "paragraph_index": 41,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "### MALE",
-                        "paragraph_index": 42,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "### NeuroPAL",
-                        "paragraph_index": 43,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "### MERGE",
-                        "paragraph_index": 44,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "## J",
+                        "contents": "* head\n* tail\n* (BWM throughout body)\n* (BWM throughout body)",
                         "paragraph_index": 46,
                         "page_number": 21
                     },
                     {
-                        "contents": "### HERMAPHRODITE",
-                        "paragraph_index": 47,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "### MALE",
+                        "contents": "### oct-1^CRISPR ::gfp merge with non-neuronal markers",
                         "paragraph_index": 48,
                         "page_number": 21
                     },
                     {
-                        "contents": "* head\n  * (BWM throughout body)\n* tail\n  * (BWM throughout body)",
+                        "contents": "* merge with hypodermal marker\n* HEAD\n* glia\n* pan-glial marker\n* glia\n* MERGE\n* glia",
                         "paragraph_index": 49,
                         "page_number": 21
                     },
                     {
-                        "contents": "## K",
-                        "paragraph_index": 50,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "### oct-1^CRISPR ::gfp merge with non-neuronal markers",
-                        "paragraph_index": 51,
-                        "page_number": 21
-                    },
-                    {
-                        "contents": "* HEAD\n  * merge with hypodermal marker\n    * oct-1^CRISPR ::gfp\n    * hyp\n    * hyp\n  * pan-glial marker\n    * ::gfp\n    * glia\n* MID\n  * ms\n  * ms\n* TAIL\n  * gonadal cells\n  * hyp\n  * gonadal cells\n  * hyp\n* MERGE\n  * glia",
-                        "paragraph_index": 52,
-                        "page_number": 21
-                    },
-                    {
                         "contents": "Figure 8. Expression of mod-5/SERT and oct-1/OCT reporter alleles in adult animals. Neuronal expression was characterized with landmark strain NeuroPAL (otIs669) and DiD-filling. (A, C) In adult hermaphrodites, mod-5(vlc47) is expressed in sex-shared neurons NSM, ADF, RIH, AIM, consistent with previous reports (Jafari et al., 2011; Maicas et al., 2021). In addition, we also observed expression in the phasmid neuron PHA and dim and variable expression in URX. There is no visible expression in the ventral nerve cord (VNC). (B, D) In adult males, mod-5(vlc47) is visibly expressed in NSM, RIH, AIM, as well as the male-specific neurons CEM, PGA, R3B, R9B, and CP1 to CP6. Expression in ADF is often not detected (see F). (E) DiD-filling confirms mod-5(vlc47) expression in phasmid neuron class PHA, and not PHB, in young adults in both sexes (L4 male image is to facilitate neuron ID in Figure 8 continued on next page",
-                        "paragraph_index": 53,
+                        "paragraph_index": 56,
                         "page_number": 21
                     }
                 ]
@@ -1265,12 +1170,12 @@
                         "page_number": 22
                     },
                     {
-                        "contents": "release via CAT-1/VMAT. We considered the putative neurotransmitter betaine as a possible candidate, since CAT-1/VMAT is also able to package betaine (`Peden et al., 2013; Hardege et al., 2022`). Betaine is synthesized endogenously, within the nervous system mostly in the cat-1/VMAT-positive RIM neuron (`Hardege et al., 2022`), but it is also available in the bacterial diet of *C. elegans* (`Peden et al., 2013`). In vertebrates, dietary betaine is taken up by the betaine transporter BGT1 (aka SLC6A12). To test whether cat-1/VMAT-positive neurons may acquire betaine via BGT1-mediated uptake, we CRISPR/Cas9-engineered a reporter allele for `snf-3/BGT1`, `syb7290`. We detected expression in the betaine-synthesizing (and also tyraminergic) RIM neuron (Figure 9, Tables 1 and 2). In addition, `snf-3` is indeed expressed in all the four cat-1/VMAT-positive neuron classes that do not synthesize a previously known monoaminergic transmitter (CAN, AUA, and variably, RIR and ASI) (Figure 9A and B). These neurons may therefore take up betaine and synaptically release it via CAT-1/VMAT. The `snf-3(syb7290)` reporter allele is also expressed in the serotonergic neuron NSM (albeit variably) (Tables 1 and 2), thus NSM could also be a betaine uptake neuron. In addition, we also detected `snf-3(syb7290)` expression in several other neurons that do not express `cat-1(syb6486)` (Supplementary file 1). Expression was also observed in a substantial number of non-neuronal cell types (Figure 9E\u2013G, Table 2, Supplementary file 1). These neurons and non-neuronal cells may serve to clear betaine (see Discussion, Neurotransmitter synthesis versus uptake). `snf-3(syb7290)` is not expressed in the inner and outer labial neuron classes as previously suggested (`Peden et al., 2013`); these cells were likely misidentified in the previous study and are in fact inner and outer labial glial cells (as discussed further below).",
+                        "contents": "release via CAT-1/VMAT. We considered the putative neurotransmitter betaine as a possible candidate, since CAT-1/VMAT is also able to package betaine (*Peden et al., 2013; Hardege et al., 2022*). Betaine is synthesized endogenously, within the nervous system mostly in the cat-1/VMAT-positive RIM neuron (*Hardege et al., 2022*), but it is also available in the bacterial diet of *C. elegans* (*Peden et al., 2013*). In vertebrates, dietary betaine is taken up by the betaine transporter BGT1 (aka SLC6A12). To test whether cat-1/VMAT-positive neurons may acquire betaine via BGT1-mediated uptake, we CRISPR/Cas9-engineered a reporter allele for `snf-3/BGT1`, `syb7290`. We detected expression in the betaine-synthesizing (and also tyraminergic) RIM neuron (*Figure 9, Tables 1 and 2*). In addition, `snf-3` is indeed expressed in all the four cat-1/VMAT-positive neuron classes that do not synthesize a previously known monoaminergic transmitter (CAN, AUA, and variably, RIR and ASI) (*Figure 9A and B*). These neurons may therefore take up betaine and synaptically release it via CAT-1/VMAT. The `snf-3(syb7290)` reporter allele is also expressed in the serotonergic neuron NSM (albeit variably) (*Tables 1 and 2*), thus NSM could also be a betaine uptake neuron. In addition, we also detected `snf-3(syb7290)` expression in several other neurons that do not express `cat-1(syb6486)` (*Supplementary file 1*). Expression was also observed in a substantial number of non-neuronal cell types (*Figure 9E\u2013G, Table 2, Supplementary file 1*). These neurons and non-neuronal cells may serve to clear betaine (see Discussion, Neurotransmitter synthesis versus uptake). `snf-3(syb7290)` is not expressed in the inner and outer labial neuron classes as previously suggested (*Peden et al., 2013*); these cells were likely misidentified in the previous study and are in fact inner and outer labial glial cells (as discussed further below).",
                         "paragraph_index": 4,
                         "page_number": 22
                     },
                     {
-                        "contents": "Together with the expression pattern of the uptake transporters, all cat-1/VMAT-positive neurons in the hermaphrodite can be matched with an aminergic neurotransmitter. We nevertheless wondered whether another presently unknown monoaminergic transmitter, e.g., histamine or other trace amine, could be synthesized by a previously uncharacterized AAAD enzyme encoded in the *C. elegans* genome, `hdl-1` (Figure 1\u2014figure supplement 1A; `Hare and Loer, 2004`). We CRISPR/Cas9-engineered an `hdl-1` reporter allele, `syb1048`, but detected no expression of this reporter in the animal (Figure 1\u2014figure supplement 1C and D). Attempts to amplify weak expression signals by insertion of Cre recombinase into the locus failed \\[`hdl-1(syb4208)`] (see Materials and methods). CeNGEN scRNA data also shows no strong transcript expression in the hermaphrodite nervous system and only detected notable expression in sperm (`Taylor et al., 2021`).",
+                        "contents": "Together with the expression pattern of the uptake transporters, all cat-1/VMAT-positive neurons in the hermaphrodite can be matched with an aminergic neurotransmitter. We nevertheless wondered whether another presently unknown monoaminergic transmitter, e.g., histamine or other trace amine, could be synthesized by a previously uncharacterized AAAD enzyme encoded in the *C. elegans* genome, `hdl-1` (*Figure 1\u2014figure supplement 1A; Hare and Loer, 2004*). We CRISPR/Cas9-engineered an `hdl-1` reporter allele, `syb1048`, but detected no expression of this reporter in the animal (*Figure 1\u2014figure supplement 1C and D*). Attempts to amplify weak expression signals by insertion of Cre recombinase into the locus failed \\[`hdl-1(syb4208)`] (see Materials and methods). CeNGEN scRNA data also shows no strong transcript expression in the hermaphrodite nervous system and only detected notable expression in sperm (*Taylor et al., 2021*).",
                         "paragraph_index": 5,
                         "page_number": 22
                     },
@@ -1280,7 +1185,7 @@
                         "page_number": 22
                     },
                     {
-                        "contents": "No comprehensive scRNA atlas has yet been reported for the nervous system of the male. Based on the expression of fosmid-based reporters, we had previously assembled a neurotransmitter atlas of the *C. elegans* male nervous system in which individual neuron classes are notoriously difficult to identify (`Serrano-Saiz et al., 2017b`). We have since established a NeuroPAL landmark strain that permits more reliable identification of gene expression patterns in both the hermaphrodite and male-specific nervous system (`Tekieli et al., 2021; Yemini et al., 2021`). We used NeuroPAL to facilitate the analysis of the expression profiles of our CRISPR/Cas9-engineered reporter alleles in the male, resulting in updated expression profiles for 11 of the 16 knock-in reporter alleles analyzed. As in the hermaphrodite, reasons for these updates vary. In addition to the improved accuracy of neuron identification",
+                        "contents": "No comprehensive scRNA atlas has yet been reported for the nervous system of the male. Based on the expression of fosmid-based reporters, we had previously assembled a neurotransmitter atlas of the *C. elegans* male nervous system in which individual neuron classes are notoriously difficult to identify (*Serrano-Saiz et al., 2017b*). We have since established a NeuroPAL landmark strain that permits more reliable identification of gene expression patterns in both the hermaphrodite and male-specific nervous system (*Tekieli et al., 2021; Yemini et al., 2021*). We used NeuroPAL to facilitate the analysis of the expression profiles of our CRISPR/Cas9-engineered reporter alleles in the male, resulting in updated expression profiles for 11 of the 16 knock-in reporter alleles analyzed. As in the hermaphrodite, reasons for these updates vary. In addition to the improved accuracy of neuron identification",
                         "paragraph_index": 7,
                         "page_number": 22
                     }
@@ -1290,92 +1195,52 @@
                 "paragraphs": [
                     {
                         "contents": "# snf-3(syb7290\\[snf-3::tagRFP::sl2::gfp::h2b]) II",
-                        "paragraph_index": 0,
-                        "page_number": 23
-                    },
-                    {
-                        "contents": "## HERMAPHRODITE",
                         "paragraph_index": 1,
                         "page_number": 23
                     },
                     {
-                        "contents": "### A",
+                        "contents": "## HERMAPHRODITE",
                         "paragraph_index": 2,
                         "page_number": 23
                     },
                     {
-                        "contents": "* **snf-3^CRISPR ::gfp NeuroPAL MERGE**\n  * **HEAD**\n    * AIB\n    * RIM\n    * AUA\n  * **TAIL**\n    * RIR\n    * RMH\n    * SMD\n* **snf-3^CRISPR ::gfp DiD MERGE**\n  * ASI (+/-)\n* **snf-3^CRISPR ::gfp NeuroPAL MERGE**\n  * VA12\n  * PDA\n  * DA9\n  * PVN\n  * PHC",
+                        "contents": "* **A**\n  * `snf-3^CRISPR::gfp` NeuroPAL MERGE\n    * AIB RIM\n    * AUA\n    * RIR RMH\n    * SMD\n    * `snf-3^CRISPR::gfp` DiD MERGE\n      * ASI (+/-)\n      * ASI\n    * `snf-3^CRISPR::gfp` NeuroPAL MERGE\n      * VA12 PDA\n      * DA9\n      * PVN\n      * PHC\n* **B**\n  * `snf-3^CRISPR::gfp`\n    * CAN\n  * VULVA AREA\n* **C**\n  * `snf-3^CRISPR::gfp` NeuroPAL MERGE\n    * PDA DA9\n    * PDC\n    * VA12 PVX PVY\n    * (-)\n    * DVB\n    * PVN\n    * PHD\n    * PHC\n  * TAIL\n* **D**\n  * `snf-3^CRISPR::gfp`\n    * CAN\n  * MIDBODY\n    * `snf-3^CRISPR::gfp` + NeuroPAL\n      * PDEso/sh\n      * PDE (no snf-3)",
                         "paragraph_index": 3,
                         "page_number": 23
                     },
                     {
-                        "contents": "## B",
+                        "contents": "## MALE",
                         "paragraph_index": 4,
                         "page_number": 23
                     },
                     {
-                        "contents": "## C",
-                        "paragraph_index": 6,
-                        "page_number": 23
-                    },
-                    {
-                        "contents": "* **snf-3^CRISPR ::gfp NeuroPAL MERGE**\n  * **TAIL**\n    * PDA\n    * DA9\n    * PDC\n    * VA12\n    * PVV\n    * PVX\n    * (-)\n    * DVB\n    * PHD\n    * PVN\n    * PHC",
-                        "paragraph_index": 7,
-                        "page_number": 23
-                    },
-                    {
-                        "contents": "## MALE",
-                        "paragraph_index": 8,
-                        "page_number": 23
-                    },
-                    {
-                        "contents": "### D",
-                        "paragraph_index": 9,
-                        "page_number": 23
-                    },
-                    {
-                        "contents": "* **snf-3^CRISPR ::gfp**\n  * **MIDBODY**\n    * CAN\n    * PDEso/sh\n    * PDE (no snf-3)\n* **snf-3^CRISPR ::gfp + NeuroPAL**",
-                        "paragraph_index": 10,
-                        "page_number": 23
-                    },
-                    {
-                        "contents": "## E",
-                        "paragraph_index": 11,
-                        "page_number": 23
-                    },
-                    {
-                        "contents": "* **snf-3^CRISPR ::gfp**\n  * **TAIL**\n    * SPso/sh\n    * somatic gonad\n    * dorsal view\n    * ventral view",
-                        "paragraph_index": 12,
+                        "contents": "* **E**\n  * `snf-3^CRISPR::gfp`\n    * SPso/sh\n    * dorsal view\n    * somatic gonad\n    * ventral view\n  * TAIL",
+                        "paragraph_index": 5,
                         "page_number": 23
                     },
                     {
                         "contents": "## F",
-                        "paragraph_index": 13,
+                        "paragraph_index": 6,
                         "page_number": 23
                     },
                     {
-                        "contents": "* **HERM HEAD**\n  * glia\n* **HERM TAIL**\n  * hyp\n  * glia\n  * hyp\n* **MALE TAIL**\n  * glia\n  * hyp\n  * glia\n* **pan-neuronal snf-3^CRISPR ::gfp**\n  * **MERGE**\n    * (no overlap)\n    * (no overlap)\n    * (no overlap)",
-                        "paragraph_index": 14,
+                        "contents": "* **HERM HEAD**\n  * `snf-3^CRISPR::gfp`\n    * glia\n  * pan-neuronal\n    * glia\n  * MERGE\n    * (no overlap)\n* **HERM TAIL**\n  * `snf-3^CRISPR::gfp`\n    * hyp\n    * glia\n    * hyp\n    * hyp\n    * hyp\n  * pan-neuronal\n    * hyp\n    * glia\n    * hyp\n  * MERGE\n    * (no overlap)\n* **MALE TAIL**\n  * `snf-3^CRISPR::gfp`\n    * glia\n    * glia\n    * glia\n  * pan-neuronal\n    * glia\n  * MERGE\n    * (no overlap)",
+                        "paragraph_index": 7,
                         "page_number": 23
                     },
                     {
                         "contents": "## G",
-                        "paragraph_index": 15,
+                        "paragraph_index": 8,
                         "page_number": 23
                     },
                     {
                         "contents": "* **HERMAPHRODITE**\n  * hypodermal and seam cells\n* **MALE**\n  * hypodermal and seam cells",
-                        "paragraph_index": 16,
+                        "paragraph_index": 9,
                         "page_number": 23
                     },
                     {
-                        "contents": "|Cell type|Expression in hermaphrodite|Expression in male|\n|-|-|-|\n|AIB|+|+|\n|RIM|+|+|\n|AUA|+|+|\n|CAN|+|+|\n|RIR|+|+|\n|RMH|+|+|\n|SMD|+|+|\n|VA12|+|+|\n|DA9|+|+|\n|PDA|+|+|\n|PHC|+|+|\n|PVN|+|+|\n|DiD|+|+|\n|PDE|-|-|\n|PDC|-|+|\n|PHD|-|+|\n|PVV|-|+|",
-                        "paragraph_index": 17,
-                        "page_number": 23
-                    },
-                    {
-                        "contents": "**Figure 9.** Expression of *snf-3/BGT1/SLC6A12* in adult animals. Neuronal expression was characterized with landmark strain NeuroPAL (*otIs669*) and DiD-filling. (A, B) In the adult hermaphrodite, neuronal expression of *snf-3(syb7290)* is detected in cat-1/VMAT-positive neurons AUA, CAN, and dimly and variably, RIR and ASI (confirmed with DiD-filling). In addition, it is also expressed in cat-1/VMAT-negative neurons AIB, RIM, RMH, SMD, VA12, DA9, PDA, PHC, PVN as labeled, as well as more neurons listed in *Supplementary file 1*. In the midbody, expression is not detected in PDE (dopaminergic, cat-1-positive) but is in its associated glial cells. It is also detected in multiple vulval support cells (B) and some epithelial cells near the somatic gonad. (C) In the adult male, in addition to its expression in sex-shared neurons as in hermaphrodites, *snf-3(syb7290)* is also expressed in male-specific neuron class PDC, as well as in PHD and variably in PVV. (D) Similarly to its expression in hermaphrodites, *snf-3(syb7290)* is detected in CAN and PDE-associated glial cells, but not PDE neurons, in males. (E) In the male tail, *snf-3(syb7290)* is expressed in a number of glial cells including the spicule sockets and/or sheath cells (dorsal view). It is also detected in the somatic gonad (ventral view). (F) *snf-3(syb7290)* is broadly expressed in most if not all glia in both sexes. Glial cell type is determined by cell location and the appearance of their nuclei in Normarski. To confirm they are not neurons, a pan-neuronal marker (UPN, or 'uber pan-neuronal', a component in NeuroPAL) is used to determine non-overlapping signals between the two reporters. Head expression in Figure 9 continued on next page",
-                        "paragraph_index": 18,
+                        "contents": "Figure 9. Expression of snf-3/BGT1/SLC6A12 in adult animals. Neuronal expression was characterized with landmark strain NeuroPAL (otIs669) and DiD-filling. (A, B) In the adult hermaphrodite, neuronal expression of snf-3(syb7290) is detected in cat-1/VMAT-positive neurons AUA, CAN, and dimly and variably, RIR and ASI (confirmed with DiD-filling). In addition, it is also expressed in cat-1/VMAT-negative neurons AIB, RIM, RMH, SMD, VA12, DA9, PDA, PHC, PVN as labeled, as well as more neurons listed in Supplementary file 1. In the midbody, expression is not detected in PDE (dopaminergic, cat-1-positive) but is in its associated glial cells. It is also detected in multiple vulval support cells (B) and some epithelial cells near the somatic gonad. (C) In the adult male, in addition to its expression in sex-shared neurons as in hermaphrodites, snf-3(syb7290) is also expressed in male-specific neuron class PDC, as well as in PHD and variably in PVV. (D) Similarly to its expression in hermaphrodites, snf-3(syb7290) is detected in CAN and PDE-associated glial cells, but not PDE neurons, in males. (E) In the male tail, snf-3(syb7290) is expressed in a number of glial cells including the spicule sockets and/or sheath cells (dorsal view). It is also detected in the somatic gonad (ventral view). (F) snf-3(syb7290) is broadly expressed in most if not all glia in both sexes. Glial cell type is determined by cell location and the appearance of their nuclei in Normarski. To confirm they are not neurons, a pan-neuronal marker (UPN, or 'uber pan-neuronal', a component in NeuroPAL) is used to determine non-overlapping signals between the two reporters. Head expression in Figure 9 continued on next page",
+                        "paragraph_index": 10,
                         "page_number": 23
                     }
                 ]
@@ -1447,7 +1312,7 @@
                         "page_number": 25
                     },
                     {
-                        "contents": "* **ventral view**\n  * eat-4^CRISPR ::gfp\n  * NeuroPAL\n  * MERGE\n* **CA1**\n* **CA2**\n* **CA3**",
+                        "contents": "* **ventral view**\n  * eat-4^CRISPR ::gfp\n  * NeuroPAL\n  * MERGE\n* **ventral view**\n  * eat-4^CRISPR ::gfp\n  * NeuroPAL\n  * MERGE",
                         "paragraph_index": 3,
                         "page_number": 25
                     },
@@ -1462,7 +1327,7 @@
                         "page_number": 25
                     },
                     {
-                        "contents": "* **ventral view**\n  * unc-17^CRISPR ::gfp\n  * NeuroPAL\n  * MERGE\n* **CA1**\n* **CP1**\n* **CA2**\n* **CP2**\n* **CA3**\n* **CP3**",
+                        "contents": "* **ventral view**\n  * unc-17^CRISPR ::gfp\n  * NeuroPAL\n  * MERGE\n* **ventral view**\n  * unc-17^CRISPR ::gfp\n  * NeuroPAL\n  * MERGE",
                         "paragraph_index": 6,
                         "page_number": 25
                     },
@@ -1472,7 +1337,7 @@
                         "page_number": 25
                     },
                     {
-                        "contents": "* **ventral view**\n  * unc-17^CRISPR ::gfp\n  * NeuroPAL\n  * MERGE\n* **R1B**\n* **R4B**\n* **R5B**\n* **R7B**\n* **R9B**\n* **DX3/4**",
+                        "contents": "* **lateral view**\n  * unc-17^CRISPR ::gfp\n  * NeuroPAL\n  * MERGE\n* **ventral view**\n  * unc-17^CRISPR ::gfp\n  * NeuroPAL\n  * MERGE",
                         "paragraph_index": 8,
                         "page_number": 25
                     },
@@ -1482,7 +1347,7 @@
                         "page_number": 25
                     },
                     {
-                        "contents": "|P2-derived|P3-derived|P4-derived|P5-derived|P6-derived|P7-derived|P8-derived|P9-derived|P10-derived|P11-derived||\n|-|-|-|-|-|-|-|-|-|-|-|\n|CA|CA1|CA2|CA3|CA4|CA5|CA6|CA7|CA8|CA9||\n||unc-17|unc-17|unc-17|unc-17|unc-17|unc-17|unc-17|unc-17|unc-17|unc-17|\n||unc-47|unc-47|unc-47|unc-47|unc-47|unc-47|eat-4|unc-47|||\n|CP|CP0|eat-4|eat-4|eat-4|eat-4|CP5|CP6|CP7|CP8|CP9|\n||CP1|CP2|CP3|CP4|||||||\n|eat-4|unc-17|unc-17|unc-17|unc-17|eat-4|eat-4|unc-17|unc-17|GABA(+)||\n||unc-47|unc-47|unc-47|unc-47|unc-47|unc-47|unc-47|unc-47|||\n||5-HT(+)|5-HT(+)|5-HT(+)|5-HT(+)|5-HT(+)|5-HT(+)|5-HT(+)|5-HT(+)|||",
+                        "contents": "|CACP|P2-derivedCA1unc-17unc-47eat-4CP0eat-4unc-475-HT(+)|P3-derivedCA2unc-17unc-47eat-4CP1unc-17unc-475-HT(+)|P4-derivedCA3unc-17unc-47eat-4CP2unc-17unc-475-HT(+)|P5-derivedCA4unc-17unc-47eat-4CP3unc-17unc-475-HT(+)|P6-derivedCA5unc-17unc-47CP4unc-17unc-475-HT(+)|P7-derivedCA6unc-17unc-47eat-4CP5eat-4unc-475-HT(+)|P8-derivedCA7unc-17CP6eat-4unc-475-HT(+)|P9-derivedCA8unc-17unc-47CP9CP7unc-17unc-475-HT(+)|P10-derivedCA9unc-17CP8unc-17unc-475-HT(+)|P11-derivedCP9GABA(+)|\n|-|-|-|-|-|-|-|-|-|-|-|",
                         "paragraph_index": 10,
                         "page_number": 25
                     }
@@ -1491,7 +1356,7 @@
             "Page 26": {
                 "paragraphs": [
                     {
-                        "contents": "Figure 10 continued\nvisible, albeit very dim, novel expression of eat-4 (also expressed in CA4). Bottom panels: CA7 strongly expresses eat-4(syb4257), whereas CP7 does not. Neuron IDs for these two neurons were previously switched (Serrano-Saiz et al., 2017b). (B) unc-17(syb4491) expression. Top, long panels: ventral view of a male ventral nerve cord showing high levels of expression in CA1, CA2, and CA3 and previously unreported low levels of expression in CP1, CP2, and CP3. Middle panels: low levels of expression in CA7 and CP7. There is no visible expression in CP9. Bottom panels: lateral view of a male tail showing previously unreported dim expression in R1B, R4B, R5B, R7B, and R9B; ventral view of the preanal ganglion showing expression in DX3/4. Scale bars, 10 \u00b5m. (C) The updated neurotransmitter atlas underscores the molecular diversity of the male-specific ventral cord neuron class CA and CP. Based on their expression patterns for neurotransmitter genes, these neurons can be grouped into four CA and five CP subclasses.",
+                        "contents": "Figure 10 continued\nvisible, albeit very dim, novel expression of eat-4 (also expressed in CA4). Bottom panels: CA7 strongly expresses eat-4(syb4257), whereas CP7 does not. Neuron IDs for these two neurons were previously switched (Serrano-Saiz et al., 2017b). (B) unc-17(syb4491) expression. Top, long panels: ventral view of a male ventral nerve cord showing high levels of expression in CA1, CA2, and CA3 and previously unreported low levels of expression in CP1, CP2, and CP3. Middle panels: low levels of expression in CA7 and CP7. There is no visible expression in CP9. Bottom panels: lateral view of a male tail showing previously unreported dim expression in R1B, R4B, R5B, R7B, and R9B; ventral view of the preanal ganglion showing expression in DX3/4. Scale bars, 10 \u03bcm. (C) The updated neurotransmitter atlas underscores the molecular diversity of the male-specific ventral cord neuron class CA and CP. Based on their expression patterns for neurotransmitter genes, these neurons can be grouped into four CA and five CP subclasses.",
                         "paragraph_index": 1,
                         "page_number": 26
                     },
@@ -1555,53 +1420,28 @@
                         "page_number": 27
                     },
                     {
-                        "contents": "### unc-25(ot1372\\[unc-25::t2a::gfp::h2b]) III",
+                        "contents": "unc-25(ot1372\\[unc-25::t2a::gfp::h2b]) III\nMALE TAIL\nlateral view\nunc-25^CRISPR::gfp\nNeuroPAL\nMERGE\nEF1/2\nDVB\nEF1/2\nEF3/4\nVD13\nVD12\nDD6\nCP9\nVD11\nEF1/2\nDVB\nEF1/2\nEF3/4\nVD13\nVD12\nDD6\nCP9\nVD11\nEF1/2\nDVB\nEF1/2\nEF3/4\nVD13\nVD12\nDD6\nCP9\nVD11",
                         "paragraph_index": 2,
                         "page_number": 27
                     },
                     {
-                        "contents": "#### MALE TAIL",
+                        "contents": "## B",
                         "paragraph_index": 3,
                         "page_number": 27
                     },
                     {
-                        "contents": "* lateral view\n* **unc-25^CRISPR::gfp**\n  * EF1/2\n  * EF1/2\n  * EF3/4\n  * VD13\n  * VD12\n  * DD6\n  * CP9\n  * VD11\n* **NeuroPAL**\n  * EF1/2\n  * EF1/2\n  * EF3/4\n  * VD13\n  * VD12\n  * DD6\n  * CP9\n  * VD11\n* **MERGE**\n  * EF1/2\n  * EF1/2\n  * EF3/4\n  * VD13\n  * VD12\n  * DD6\n  * CP9\n  * VD11",
+                        "contents": "unc-47(syb7566\\[unc-47::sl2::gfp::h2b]) III\nMALE HEAD\nunc-47^CRISPR::gfp\nNeuroPAL\nMERGE\nMCM\nMCM\nMCM\nAMso\n(landmark)\nCEMD\nCEMD\nCEMD\nCEMV\nCEMV\nCEMV",
                         "paragraph_index": 4,
                         "page_number": 27
                     },
                     {
-                        "contents": "## B",
+                        "contents": "## C",
                         "paragraph_index": 5,
                         "page_number": 27
                     },
                     {
-                        "contents": "### unc-47(syb7566\\[unc-47::sl2::gfp::h2b]) III",
+                        "contents": "MALE VENTRAL NERVE CORD (ventral view)\nunc-47^CRISPR::gfp\nNeuro PAL\nMERGE\nCA1\nCP1\nCA2\nCP2\nCA3\nCP3\nCA1\nCP1\nCA2\nCP2\nCA3\nCP3\nCA1\nCP1\nCA2\nCP2\nCA3\nCP3\nCA4\nCP4\nCA5\nCP5\nCA6\nCP6\nCA4\nCP4\nCA5\nCP5\nCA6\nCP6\nCA4\nCP4\nCA5\nCP5\nCA6\nCP6\nCA7(-)\nCP7\nCA8\nCP8\nCP9\nCA9(-)\nR2A\nR9B\nCA7\nCP7\nCA8\nCP8\nCP9\nCA9\nR2A\nR9B\nCA7\nCP7\nCA8\nCP8\nCP9\nCA9\nR2A\nR9B",
                         "paragraph_index": 6,
-                        "page_number": 27
-                    },
-                    {
-                        "contents": "#### MALE HEAD",
-                        "paragraph_index": 7,
-                        "page_number": 27
-                    },
-                    {
-                        "contents": "* **unc-47^CRISPR::gfp**\n  * MCM\n* **NeuroPAL**\n  * MCM\n  * AMso (landmark)\n* **MERGE**\n  * MCM\n  * AMso (landmark)\n* **unc-47^CRISPR::gfp**\n  * CEMD\n  * CEMV\n* **NeuroPAL**\n  * CEMD\n  * CEMV\n* **MERGE**\n  * CEMD\n  * CEMV",
-                        "paragraph_index": 8,
-                        "page_number": 27
-                    },
-                    {
-                        "contents": "## C",
-                        "paragraph_index": 9,
-                        "page_number": 27
-                    },
-                    {
-                        "contents": "### MALE VENTRAL NERVE CORD (ventral view)",
-                        "paragraph_index": 10,
-                        "page_number": 27
-                    },
-                    {
-                        "contents": "* **unc-47^CRISPR::gfp**\n  * CA1\n  * CP1\n  * CA2\n  * CP2\n  * CA3\n  * CP3\n  * CA4\n  * CP4\n  * CA5\n  * CP5\n  * CA6\n  * CP6\n  * CA7(-)\n  * CP7\n  * CA8\n  * CP8\n  * CA9(-)\n  * CP9\n  * R2A\n  * R9B\n* **Neuro PAL**\n  * CA1\n  * CP1\n  * CA2\n  * CP2\n  * CA3\n  * CP3\n  * CA4\n  * CP4\n  * CA5\n  * CP5\n  * CA6\n  * CP6\n  * CA7\n  * CP7\n  * CA8\n  * CP8\n  * CA9\n  * CP9\n  * R2A\n  * R9B\n* **MERGE**\n  * CA1\n  * CP1\n  * CA2\n  * CP2\n  * CA3\n  * CP3\n  * CA4\n  * CP4\n  * CA5\n  * CP5\n  * CA6\n  * CP6\n  * CA7\n  * CP7\n  * CA8\n  * CP8\n  * CA9\n  * CP9\n  * R2A\n  * R9B",
-                        "paragraph_index": 11,
                         "page_number": 27
                     }
                 ]
@@ -1736,48 +1576,73 @@
             "Page 31": {
                 "paragraphs": [
                     {
-                        "contents": "# A",
-                        "paragraph_index": 1,
+                        "contents": "# eLife Tools and resources",
+                        "paragraph_index": 0,
                         "page_number": 31
                     },
                     {
-                        "contents": "## MALE TAIL",
-                        "paragraph_index": 3,
+                        "contents": "## A",
+                        "paragraph_index": 2,
                         "page_number": 31
                     },
                     {
-                        "contents": "# B",
-                        "paragraph_index": 8,
+                        "contents": "### MALE TAIL",
+                        "paragraph_index": 4,
                         "page_number": 31
                     },
                     {
-                        "contents": "## MALE HEAD",
-                        "paragraph_index": 10,
+                        "contents": "* D/V view\n  * R5A(L)\n  * R5A(R)\n  * R7A(L)\n  * R7A(R)\n  * R9A(L)\n  * R9A(R)\n\n* NeuroPAL\n  * R5A(L)\n  * R5A(R)\n  * R7A(L)\n  * R7A(R)\n  * R9A(L)\n  * R9A(R)\n\n* MERGE\n  * R5A(L)\n  * R5A(R)\n  * R7A(L)\n  * R7A(R)\n  * R9A(L)\n  * R9A(R)",
+                        "paragraph_index": 6,
                         "page_number": 31
                     },
                     {
-                        "contents": "## MALE TAIL",
+                        "contents": "## B",
+                        "paragraph_index": 7,
+                        "page_number": 31
+                    },
+                    {
+                        "contents": "### MALE HEAD",
+                        "paragraph_index": 9,
+                        "page_number": 31
+                    },
+                    {
+                        "contents": "### MALE TAIL",
+                        "paragraph_index": 11,
+                        "page_number": 31
+                    },
+                    {
+                        "contents": "* D/V view\n  * R7A\n  * R8A(R)\n  * R8B\n  * R8A(L)\n  * HOA\n\n* NeuroPAL\n  * R7A\n  * R8A(R)\n  * R8B\n  * R8A(L)\n  * HOA\n\n* MERGE\n  * R7A\n  * R8A(R)\n  * R8B\n  * R8A(L)\n  * HOA",
                         "paragraph_index": 12,
                         "page_number": 31
                     },
                     {
-                        "contents": "# C",
-                        "paragraph_index": 23,
+                        "contents": "## C",
+                        "paragraph_index": 13,
                         "page_number": 31
                     },
                     {
-                        "contents": "## MALE HEAD",
-                        "paragraph_index": 25,
+                        "contents": "### MALE HEAD",
+                        "paragraph_index": 15,
                         "page_number": 31
                     },
                     {
-                        "contents": "## MALE TAIL",
-                        "paragraph_index": 27,
+                        "contents": "* lateral view\n  * IL2D\n  * IL2(L)\n  * IL2V\n  * CEMD\n  * CEMV\n  * RIC",
+                        "paragraph_index": 16,
+                        "page_number": 31
+                    },
+                    {
+                        "contents": "### MALE TAIL",
+                        "paragraph_index": 17,
+                        "page_number": 31
+                    },
+                    {
+                        "contents": "* R1B\n\n* R2B\n\n* R4B\n\n* R7B\n\n* R9B\n\n* R8B\n\n* R3B\n\n* R5B\n\n* HOB\n\n* NeuroPAL\n  * IL2D\n  * IL2(L)\n  * IL2V\n  * CEMD\n  * CEMV\n  * RIC\n  * R1B\n  * R2B\n  * R4B\n  * R7B\n  * R9B\n  * R8B\n  * R3B\n  * R5B\n  * HOB\n\n* MERGE\n  * IL2D\n  * IL2(L)\n  * IL2V\n  * CEMD\n  * CEMV\n  * RIC\n  * R1B\n  * R2B\n  * R4B\n  * R7B\n  * R9B\n  * R8B\n  * R3B\n  * R5B\n  * HOB",
+                        "paragraph_index": 18,
                         "page_number": 31
                     },
                     {
                         "contents": "Figure 13. Expression of cat-2/TH, tdc-1/TDC, and tbh-1/TBH reporter alleles in the adult male. Neuronal expression was characterized with landmark strain NeuroPAL (otIs669). (A) cat-2(syb8255) is expressed in male-specific neurons R4A, R7A, and R9B. This expression, as well as its expression in sex-shared neurons PDE, CEP, and ADE, is consistent with previous reports (Sulston et al., 1975; Sulston et al., 1980; Lints and Emmons, 1999). (B) tdc-1(syb7768) is expressed in sex-shared neurons RIM and RIC and male-specific neurons HOA, R8A, and R8B, all consistent with previous studies (Serrano-Saiz et al., 2017b). We also detected weak expression in R7A. (C) tbh-1(syb7786) is expressed in RIC, consistent with its previously reported expression in hermaphrodites. As in hermaphrodites, we also detected tbh-1(syb7786) in IL2 neurons of the male. In male-specific neurons, previously unreported expression is detected in CEM, HOB, and all type B ray neurons except for R6B. Intriguingly, this expression pattern resembles that of pkd-2 and lov-1, both genes essential for male mating functions (Barr and Sternberg, 1999; Barr et al., 2001). Inset, grayscale image showing dim expression for IL2 neurons. Scale bars, 10 \u00b5m. Asterisks, non-neuronal expression, also see Figure 14 and Figure 14\u2014figure supplement 1.",
-                        "paragraph_index": 37,
+                        "paragraph_index": 19,
                         "page_number": 31
                     }
                 ]
@@ -2078,53 +1943,58 @@
             "Page 39": {
                 "paragraphs": [
                     {
-                        "contents": "reporter transgenes revealed expression of the respective genes (*Li et al., 2023*). Functions of these genes in the respective cell types were corroborated by cell-type-specific RNAi experiments and/or rescue experiments; whether there is indeed very low expression of these genes in those respective cells or whether drivers used in these studies for knock-down and/or rescue produce very low expression in other functionally relevant cells remains to be resolved.",
-                        "paragraph_index": 1,
+                        "contents": "# eLife Tools and resources",
+                        "paragraph_index": 0,
                         "page_number": 39
                     },
                     {
-                        "contents": "## Conclusions",
+                        "contents": "reporter transgenes revealed expression of the respective genes (*Li et al., 2023*). Functions of these genes in the respective cell types were corroborated by cell-type-specific RNAi experiments and/or rescue experiments; whether there is indeed very low expression of these genes in those respective cells or whether drivers used in these studies for knock-down and/or rescue produce very low expression in other functionally relevant cells remains to be resolved.",
                         "paragraph_index": 2,
                         "page_number": 39
                     },
                     {
-                        "contents": "In conclusion, we have presented here the most complete neurotransmitter map that currently exists for any animal nervous system. Efforts to map neurotransmitter usage on a system-wide level are underway in other organisms, most notably, *Drosophila melanogaster* (*Deng et al., 2019; Eckstein et al., 2024*). The *C. elegans* neurotransmitter map presented here comprises a critical step toward deciphering information flow in the nervous system and provides valuable tools for studying the genetic mechanisms underlying cell identity specification. Moreover, this neurotransmitter map opens new opportunities for investigating sex-specific neuronal differentiation processes, particularly in the male-specific nervous system, where a scarcity of molecular markers has limited the analysis of neuronal identity control. Lastly, our analysis strongly suggests that additional neurotransmitter systems remain to be identified.",
+                        "contents": "## Conclusions",
                         "paragraph_index": 3,
                         "page_number": 39
                     },
                     {
-                        "contents": "While the gene expression patterns delineated here enable informed predictions about novel neuronal functions and neurotransmitter identities, further investigations involving genetic perturbations, high-resolution imaging, complementary functional assays, and analyses across developmental stages are needed to shed further light on neurotransmitter usage. Nonetheless, this comprehensive neurotransmitter map provides a robust foundation for deciphering neural information flow, elucidating developmental mechanisms governing neuronal specification, exploring sexual dimorphisms in neuronal differentiation, and potentially uncovering novel neurotransmitter systems awaiting characterization.",
+                        "contents": "In conclusion, we have presented here the most complete neurotransmitter map that currently exists for any animal nervous system. Efforts to map neurotransmitter usage on a system-wide level are underway in other organisms, most notably, *Drosophila melanogaster* (*Deng et al., 2019; Eckstein et al., 2024*). The *C. elegans* neurotransmitter map presented here comprises a critical step toward deciphering information flow in the nervous system and provides valuable tools for studying the genetic mechanisms underlying cell identity specification. Moreover, this neurotransmitter map opens new opportunities for investigating sex-specific neuronal differentiation processes, particularly in the male-specific nervous system, where a scarcity of molecular markers has limited the analysis of neuronal identity control. Lastly, our analysis strongly suggests that additional neurotransmitter systems remain to be identified.",
                         "paragraph_index": 4,
                         "page_number": 39
                     },
                     {
-                        "contents": "## Materials and methods",
+                        "contents": "While the gene expression patterns delineated here enable informed predictions about novel neuronal functions and neurotransmitter identities, further investigations involving genetic perturbations, high-resolution imaging, complementary functional assays, and analyses across developmental stages are needed to shed further light on neurotransmitter usage. Nonetheless, this comprehensive neurotransmitter map provides a robust foundation for deciphering neural information flow, elucidating developmental mechanisms governing neuronal specification, exploring sexual dimorphisms in neuronal differentiation, and potentially uncovering novel neurotransmitter systems awaiting characterization.",
                         "paragraph_index": 5,
                         "page_number": 39
                     },
                     {
-                        "contents": "### Transgenic reporter strains",
+                        "contents": "## Materials and methods",
                         "paragraph_index": 6,
                         "page_number": 39
                     },
                     {
-                        "contents": "Knock-in reporter alleles were generated either by SunyBiotech (syb alleles) or in-house (ot alleles) using CRISPR/Cas9 genome engineering. Most genes were tagged with a nuclear-targeted gfp sequence (gfp fused to his-44, a histone h2b gene) at the 3' end of the locus to capture all isoforms, except tdc-1 which was tagged at the 5' end. For unc-25, both isoforms were individually tagged since a single tag would not capture both. Transgene schematics are shown in Figure 2.",
+                        "contents": "### Transgenic reporter strains",
                         "paragraph_index": 7,
                         "page_number": 39
                     },
                     {
-                        "contents": "Reporter alleles generated in this study:",
+                        "contents": "Knock-in reporter alleles were generated either by SunyBiotech (syb alleles) or in-house (ot alleles) using CRISPR/Cas9 genome engineering. Most genes were tagged with a nuclear-targeted gfp sequence (gfp fused to his-44, a histone h2b gene) at the 3' end of the locus to capture all isoforms, except tdc-1 which was tagged at the 5' end. For unc-25, both isoforms were individually tagged since a single tag would not capture both. Transgene schematics are shown in Figure 2.",
                         "paragraph_index": 8,
                         "page_number": 39
                     },
                     {
-                        "contents": "* unc-25(ot1372\\[unc-25a.1c.1::t2a:gfp::h2b]) III\n* unc-25(ot1536\\[unc-25b.1::t2a::gfp::h2b]) III\n* unc-46(syb7278\\[unc-46::sl2::gfp:h2b]) V\n* unc-47(syb7566\\[unc-47::sl2::gfp::h2b]) III\n* cat-1(syb6486\\[cat-1::sl2::gfp::h2b]) X\n* tph-1(syb6451\\[tph-1::sl2::gfp::h2b]) II\n* tbh-1(syb7786\\[tbh-1::sl2::gfp::h2b]) X\n* tdc-1(syb7768\\[gfp::linker::h2b::t2a::tdc-1]) II\n* cat-2(syb8255\\[cat-2::sl2::gfp::h2b]) II\n* snf-3(syb7290\\[snf-3::TagRFP::sl2::gfp::h2b]) II\n* oct-1(syb8870\\[oct-1::sl2::gfp::h2b]) I\n* hdl-1(syb1048\\[hdl-1::gfp]) IV\n* hdl-1(syb4208\\[hdl-1::t2a::3xnls::cre]) IV",
+                        "contents": "Reporter alleles generated in this study:",
                         "paragraph_index": 9,
                         "page_number": 39
                     },
                     {
-                        "contents": "Since we did not detect fluorophore signals in the hdl-1(syb1048\\[hdl-1::gfp]) strain, we attempted to amplify low-level signals, by inserting Cre recombinase at the C-terminus of the hdl-1 locus (hdl-1(syb4208\\[hdl-1::t2a::3xnls::cre])). We crossed this strain to the recently published \u2018Flexon\u2019 strain (arTi361\\[rps-27p::gfp\"flexon\"-h2b::unc-54\u20133'UTR]) (*Shaffer and Greenwald, 2022*). Even low expression of hdl-1 should have led to Cre-mediated excision of the flexon stop cassette, which is designed to abrogate gene expression by a translational stop and frameshift mutation, and subsequently can",
+                        "contents": "* unc-25(ot1372\\[unc-25a.1c.1::t2a:gfp::h2b]) III\n* unc-25(ot1536\\[unc-25b.1::t2a::gfp::h2b]) III\n* unc-46(syb7278\\[unc-46::sl2::gfp:h2b]) V\n* unc-47(syb7566\\[unc-47::sl2::gfp::h2b]) III\n* cat-1(syb6486\\[cat-1::sl2::gfp::h2b]) X\n* tph-1(syb6451\\[tph-1::sl2::gfp::h2b]) II\n* tbh-1(syb7786\\[tbh-1::sl2::gfp::h2b]) X\n* tdc-1(syb7768\\[gfp::linker::h2b::t2a::tdc-1]) II\n* cat-2(syb8255\\[cat-2::sl2::gfp::h2b]) II\n* snf-3(syb7290\\[snf-3::TagRFP::sl2::gfp::h2b]) II\n* oct-1(syb8870\\[oct-1::sl2::gfp::h2b]) I\n* hdl-1(syb1048\\[hdl-1::gfp]) IV\n* hdl-1(syb4208\\[hdl-1::t2a::3xnls::cre]) IV",
                         "paragraph_index": 10,
+                        "page_number": 39
+                    },
+                    {
+                        "contents": "Since we did not detect fluorophore signals in the hdl-1(syb1048\\[hdl-1::gfp]) strain, we attempted to amplify low-level signals, by inserting Cre recombinase at the C-terminus of the hdl-1 locus (hdl-1(syb4208\\[hdl-1::t2a::3xnls::cre])). We crossed this strain to the recently published \u2018Flexon\u2019 strain (arTi361\\[rps-27p::gfp\"flexon\"-h2b::unc-54\u20133'UTR]) (*Shaffer and Greenwald, 2022*). Even low expression of hdl-1 should have led to Cre-mediated excision of the flexon stop cassette, which is designed to abrogate gene expression by a translational stop and frameshift mutation, and subsequently can",
+                        "paragraph_index": 11,
                         "page_number": 39
                     }
                 ]
@@ -2291,112 +2161,12 @@
                 "paragraphs": [
                     {
                         "contents": "# References",
-                        "paragraph_index": 0,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Alfonso A, Grundahl K, McManus JR, Asbury JM, Rand JB. 1994. Alternative splicing leads to two cholinergic proteins in *Caenorhabditis elegans*. *Journal of Molecular Biology* **241**:627\u2013630. DOI:",
                         "paragraph_index": 1,
                         "page_number": 42
                     },
                     {
-                        "contents": "Alhajeri MM, Alkhanjari RR, Hodeify R, Khraibi A, Hamdan H. 2022. Neurotransmitters, neuropeptides and calcium in oocyte maturation and early development. *Frontiers in Cell and Developmental Biology* **10**:980219. DOI:",
-                        "paragraph_index": 3,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Alkema MJ, Hunter-Ensor M, Ringstad N, Horvitz HR. 2005. Tyramine Functions independently of octopamine in the *Caenorhabditis elegans* nervous system. *Neuron* **46**:247\u2013260. DOI:",
-                        "paragraph_index": 5,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Araque A, Carmignoto G, Haydon PG, Oliet SHR, Robitaille R, Volterra A. 2014. Gliotransmitters travel in time and space. *Neuron* **81**:728\u2013739. DOI:",
-                        "paragraph_index": 7,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Aubrey KR, Rossi FM, Ruivo R, Alboni S, Bellenchi GC, Le Goff A, Gasnier B, Supplisson S. 2007. The transporters GlyT2 and VIAAT cooperate to determine the vesicular glycinergic phenotype. *The Journal of Neuroscience* **27**:6273\u20136281. DOI:",
-                        "paragraph_index": 9,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Barr MM, Sternberg PW. 1999. A polycystic kidney-disease gene homologue required for male mating behaviour in *C. elegans*. *Nature* **401**:386\u2013389. DOI:",
-                        "paragraph_index": 11,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Barr MM, DeModena J, Braun D, Nguyen CQ, Hall DH, Sternberg PW. 2001. The *Caenorhabditis elegans* autosomal dominant polycystic kidney disease gene homologs lov-1 and pkd-2 act in the same pathway. *Current Biology* **11**:1341\u20131346. DOI:",
-                        "paragraph_index": 13,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Berry MD, Hart S, Pryor AR, Hunter S, Gardiner D. 2016. Pharmacological characterization of a high-affinity p-tyramine transporter in rat brain synaptosomes. *Scientific Reports* **6**:38006. DOI:",
-                        "paragraph_index": 15,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Breidert T, Spitzenberger F, Gr\u00fcndemann D, Sch\u00f6mig E. 1998. Catecholamine transport by the organic cation transporter type 1 (OCT1). *British Journal of Pharmacology* **125**:218\u2013224. DOI:",
-                        "paragraph_index": 17,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Cheng H, Chen D, Li X, Al-Sheikh U, Duan D, Fan Y, Zhu L, Zeng W, Hu Z, Tong X, Zhao G, Zhang Y, Zou W, Duan S, Kang L. 2024. Phasic/tonic glial GABA differentially transduce for olfactory adaptation and neuronal aging. *Neuron* **112**:1473\u20131486. DOI:",
-                        "paragraph_index": 19,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Choi JH, Horowitz LB, Ringstad N. 2021. Opponent vesicular transporters regulate the strength of glutamatergic neurotransmission in a *C. elegans* sensory circuit. *Nature Communications* **12**:6334. DOI:",
-                        "paragraph_index": 21,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Cook SJ, Jarrell TA, Brittin CA, Wang Y, Bloniarz AE, Yakovlev MA, Nguyen KCQ, Tang LT-H, Bayer EA, Duerr JS, B\u00fclow HE, Hobert O, Hall DH, Emmons SW. 2019. Whole-animal connectomes of both *Caenorhabditis elegans* sexes. *Nature* **571**:63\u201371. DOI:",
-                        "paragraph_index": 23,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Davis P, Zarowiecki M, Arnaboldi V, Becerra A, Cain S, Chan J, Chen WJ, Cho J, da Veiga Beltrame E, Diamantakis S, Gao S, Grigoriadis D, Grove CA, Harris TW, Kishore R, Le T, Lee RYN, Luypaert M, M\u00fcller H-M, Nakamura C, et al. 2022. WormBase in 2022-data, processes, and tools for analyzing *Caenorhabditis elegans*. *Genetics* **220**:iyac003. DOI:",
-                        "paragraph_index": 25,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "de Ceglia R, Ledonne A, Litvin DG, Lind BL, Carriero G, Latagliata EC, Bindocci E, Di Castro MA, Savtchouk I, Vitali I, Ranjak A, Congiu M, Canonica T, Wisden W, Harris K, Mameli M, Mercuri N, Telley L, Volterra A. 2023. Specialized astrocytes mediate glutamatergic gliotransmission in the CNS. *Nature* **622**:120\u2013129. DOI:",
-                        "paragraph_index": 27,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Deng B, Li Q, Liu X, Cao Y, Li B, Qian Y, Xu R, Mao R, Zhou E, Zhang W, Huang J, Rao Y. 2019. Chemoconnectomics: Mapping chemical transmission in *Drosophila*. *Neuron* **101**:876\u2013893. DOI:",
-                        "paragraph_index": 29,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Duan D, Zhang H, Yue X, Fan Y, Xue Y, Shao J, Ding G, Chen D, Li S, Cheng H, Zhang X, Zou W, Liu J, Zhao J, Wang L, Zhao B, Wang Z, Xu S, Wen Q, Liu J, et al. 2020. Sensory glia detect repulsive odorants and drive olfactory adaptation. *Neuron* **108**:707\u2013721. DOI:",
-                        "paragraph_index": 31,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Duerr JS, Frisby DL, Gaskin J, Duke A, Asermely K, Huddleston D, Eiden LE, Rand JB. 1999. The cat-1 gene of *Caenorhabditis elegans* encodes a vesicular monoamine transporter required for specific monoamine-dependent behaviors. *The Journal of Neuroscience* **19**:72\u201384. DOI:",
-                        "paragraph_index": 33,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Duerr JS, Gaskin J, Rand JB. 2001. Identified neurons in *C. elegans* coexpress vesicular transporters for acetylcholine and monoamines. *American Journal of Physiology. Cell Physiology* **280**:C1616\u2013C1622. DOI:",
-                        "paragraph_index": 35,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Duerr JS, Han HP, Fields SD, Rand JB. 2008. Identification of major classes of cholinergic neurons in the nematode *Caenorhabditis elegans*. *The Journal of Comparative Neurology* **506**:398\u2013408. DOI:",
-                        "paragraph_index": 37,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Eastman C, Horvitz HR, Jin Y. 1999. Coordinated transcriptional regulation of the UNC-25 glutamic acid decarboxylase and the UNC-47 GABA vesicular transporter by the *Caenorhabditis elegans* UNC-30 homeodomain protein. *The Journal of Neuroscience* **19**:6225\u20136234. DOI:",
-                        "paragraph_index": 39,
-                        "page_number": 42
-                    },
-                    {
-                        "contents": "Eckstein N, Bates AS, Champion A, Du M, Yin Y, Schlegel P, Lu AK-Y, Rymer T, Finley-May S, Paterson T, Parekh R, Dorkenwald S, Matsliah A, Yu S-C, McKellar C, Sterling A, Eichler K, Costa M, Seung S, Murthy M,",
-                        "paragraph_index": 41,
+                        "contents": "* Alfonso A, Grundahl K, McManus JR, Asbury JM, Rand JB. 1994. Alternative splicing leads to two cholinergic proteins in *Caenorhabditis elegans*. *Journal of Molecular Biology* **241**:627\u2013630. DOI: , PMID: 8057385\n* Alhajeri MM, Alkhanjari RR, Hodeify R, Khraibi A, Hamdan H. 2022. Neurotransmitters, neuropeptides and calcium in oocyte maturation and early development. *Frontiers in Cell and Developmental Biology* **10**:980219. DOI: , PMID: 36211465\n* Alkema MJ, Hunter-Ensor M, Ringstad N, Horvitz HR. 2005. Tyramine Functions independently of octopamine in the *Caenorhabditis elegans* nervous system. *Neuron* **46**:247\u2013260. DOI: , PMID: 15848803\n* Araque A, Carmignoto G, Haydon PG, Oliet SHR, Robitaille R, Volterra A. 2014. Gliotransmitters travel in time and space. *Neuron* **81**:728\u2013739. DOI: , PMID: 24559669\n* Aubrey KR, Rossi FM, Ruivo R, Alboni S, Bellenchi GC, Le Goff A, Gasnier B, Supplisson S. 2007. The transporters GlyT2 and VIAAT cooperate to determine the vesicular glycinergic phenotype. *The Journal of Neuroscience* **27**:6273\u20136281. DOI: , PMID: 17554001\n* Barr MM, Sternberg PW. 1999. A polycystic kidney-disease gene homologue required for male mating behaviour in *C. elegans*. *Nature* **401**:386\u2013389. DOI: , PMID: 10517638\n* Barr MM, DeModena J, Braun D, Nguyen CQ, Hall DH, Sternberg PW. 2001. The *Caenorhabditis elegans* autosomal dominant polycystic kidney disease gene homologs lov-1 and pkd-2 act in the same pathway. *Current Biology* **11**:1341\u20131346. DOI: , PMID: 11553327\n* Berry MD, Hart S, Pryor AR, Hunter S, Gardiner D. 2016. Pharmacological characterization of a high-affinity p-tyramine transporter in rat brain synaptosomes. *Scientific Reports* **6**:38006. DOI: , PMID: 27901065\n* Breidert T, Spitzenberger F, Gr\u00fcndemann D, Sch\u00f6mig E. 1998. Catecholamine transport by the organic cation transporter type 1 (OCT1). *British Journal of Pharmacology* **125**:218\u2013224. DOI: , PMID: 9776363\n* Cheng H, Chen D, Li X, Al-Sheikh U, Duan D, Fan Y, Zhu L, Zeng W, Hu Z, Tong X, Zhao G, Zhang Y, Zou W, Duan S, Kang L. 2024. Phasic/tonic glial GABA differentially transduce for olfactory adaptation and neuronal aging. *Neuron* **112**:1473\u20131486. DOI: , PMID: 38447577\n* Choi JH, Horowitz LB, Ringstad N. 2021. Opponent vesicular transporters regulate the strength of glutamatergic neurotransmission in a *C. elegans* sensory circuit. *Nature Communications* **12**:6334. DOI: , PMID: 34732711\n* Cook SJ, Jarrell TA, Brittin CA, Wang Y, Bloniarz AE, Yakovlev MA, Nguyen KCQ, Tang LT-H, Bayer EA, Duerr JS, B\u00fclow HE, Hobert O, Hall DH, Emmons SW. 2019. Whole-animal connectomes of both *Caenorhabditis elegans* sexes. *Nature* **571**:63\u201371. DOI: , PMID: 31270481\n* Davis P, Zarowiecki M, Arnaboldi V, Becerra A, Cain S, Chan J, Chen WJ, Cho J, da Veiga Beltrame E, Diamantakis S, Gao S, Grigoriadis D, Grove CA, Harris TW, Kishore R, Le T, Lee RYN, Luypaert M, M\u00fcller H-M, Nakamura C, et al. 2022. WormBase in 2022-data, processes, and tools for analyzing *Caenorhabditis elegans*. *Genetics* **220**:iyac003. DOI: , PMID: 35134929\n* de Ceglia R, Ledonne A, Litvin DG, Lind BL, Carriero G, Latagliata EC, Bindocci E, Di Castro MA, Savtchouk I, Vitali I, Ranjak A, Congiu M, Canonica T, Wisden W, Harris K, Mameli M, Mercuri N, Telley L, Volterra A. 2023. Specialized astrocytes mediate glutamatergic gliotransmission in the CNS. *Nature* **622**:120\u2013129. DOI: , PMID: 37674083\n* Deng B, Li Q, Liu X, Cao Y, Li B, Qian Y, Xu R, Mao R, Zhou E, Zhang W, Huang J, Rao Y. 2019. Chemoconnectomics: Mapping chemical transmission in *Drosophila*. *Neuron* **101**:876\u2013893. DOI: , PMID: 30799021\n* Duan D, Zhang H, Yue X, Fan Y, Xue Y, Shao J, Ding G, Chen D, Li S, Cheng H, Zhang X, Zou W, Liu J, Zhao J, Wang L, Zhao B, Wang Z, Xu S, Wen Q, Liu J, et al. 2020. Sensory glia detect repulsive odorants and drive olfactory adaptation. *Neuron* **108**:707\u2013721. DOI: , PMID: 32970991\n* Duerr JS, Frisby DL, Gaskin J, Duke A, Asermely K, Huddleston D, Eiden LE, Rand JB. 1999. The cat-1 gene of *Caenorhabditis elegans* encodes a vesicular monoamine transporter required for specific monoamine-dependent behaviors. *The Journal of Neuroscience* **19**:72\u201384. DOI: , PMID: 9870940\n* Duerr JS, Gaskin J, Rand JB. 2001. Identified neurons in *C. elegans* coexpress vesicular transporters for acetylcholine and monoamines. *American Journal of Physiology. Cell Physiology* **280**:C1616\u2013C1622. DOI: , PMID: 11350757\n* Duerr JS, Han HP, Fields SD, Rand JB. 2008. Identification of major classes of cholinergic neurons in the nematode *Caenorhabditis elegans*. *The Journal of Comparative Neurology* **506**:398\u2013408. DOI: , PMID: 18041778\n* Eastman C, Horvitz HR, Jin Y. 1999. Coordinated transcriptional regulation of the UNC-25 glutamic acid decarboxylase and the UNC-47 GABA vesicular transporter by the *Caenorhabditis elegans* UNC-30 homeodomain protein. *The Journal of Neuroscience* **19**:6225\u20136234. DOI: , PMID: 10414952\n* Eckstein N, Bates AS, Champion A, Du M, Yin Y, Schlegel P, Lu AK-Y, Rymer T, Finley-May S, Paterson T, Parekh R, Dorkenwald S, Matsliah A, Yu S-C, McKellar C, Sterling A, Eichler K, Costa M, Seung S, Murthy M,",
+                        "paragraph_index": 2,
                         "page_number": 42
                     }
                 ]
@@ -2523,118 +2293,8 @@
                         "page_number": 44
                     },
                     {
-                        "contents": "Liu X, Long F, Peng H, Aerni SJ, Jiang M, S\u00e1nchez-Blanco A, Murray JI, Preston E, Mericle B, Batzoglou S, Myers EW, Kim SK. 2009. Analysis of cell fate from single-cell gene expression profiles in C. elegans. *Cell* **139**:623\u2013633. DOI:",
+                        "contents": "* Liu X, Long F, Peng H, Aerni SJ, Jiang M, S\u00e1nchez-Blanco A, Murray JI, Preston E, Mericle B, Batzoglou S, Myers EW, Kim SK. 2009. Analysis of cell fate from single-cell gene expression profiles in *C. elegans*. *Cell* **139**:623\u2013633. DOI: , PMID: 19879847\n* Loer CM, Kenyon CJ. 1993. Serotonin-deficient mutants and male mating behavior in the nematode *Caenorhabditis elegans*. *The Journal of Neuroscience* **13**:5407\u20135417. DOI: , PMID: 8254383\n* Maicas M, Jimeno-Mart\u00edn \u00c1, Mill\u00e1n-Trejo A, Alkema MJ, Flames N. 2021. The transcription factor LAG-1/CSL plays a Notch-independent role in controlling terminal differentiation, fate maintenance, and plasticity of serotonergic chemosensory neurons. *PLOS Biology* **19**:e3001334. DOI: , PMID: 34232959\n* Matsui T, Nakata T, Kobayashi Y. 2016. Localization of organic cation transporter 2 (OCT2) in monoaminergic and cholinergic axon terminals of the mouse brain. *Neuroscience Letters* **633**:118\u2013124. DOI: , PMID: 27651065\n* Mayerhofer A, Frungieri MB, Bulling A, Fritz S. 1999. Sources and function of neuronal signalling molecules in the gonads. *Medicina* **59**:542\u2013545. PMID: 10684155\n* McCarthy MM, Davis AM, Mong JA. 1997. Excitatory neurotransmission and sexual differentiation of the brain. *Brain Research Bulletin* **44**:487\u2013495. DOI: 00230-x), PMID: 9370215\n* McIntire SL, Jorgensen E, Kaplan J, Horvitz HR. 1993. The GABAergic nervous system of *Caenorhabditis elegans*. *Nature* **364**:337\u2013341. DOI: , PMID: 8332191\n* McIntire SL, Reimer RJ, Schuske K, Edwards RH, Jorgensen EM. 1997. Identification and characterization of the vesicular GABA transporter. *Nature* **389**:870\u2013876. DOI: , PMID: 9349821\n* Mondal S, Hegarty E, Sahn JJ, Scott LL, G\u00f6k\u00e7e SK, Martin C, Ghorashian N, Satarasinghe PN, Iyer S, Sae-Lee W, Hodges TR, Pierce JT, Martin SF, Ben-Yakar A. 2018. High-content microfluidic screening platform used to identify \u03c32R/Tmem97 binding ligands that reduce age-dependent neurodegeneration in *C. elegans* SC\\_APP model. *ACS Chemical Neuroscience* **9**:1014\u20131026. DOI: , PMID: 29426225\n* Mullen GP, Mathews EA, Saxena P, Fields SD, McManus JR, Moulder G, Barstead RJ, Quick MW, Rand JB. 2006. The *Caenorhabditis elegans* snf-11 gene encodes a sodium-dependent GABA transporter required for clearance of synaptic GABA. *Molecular Biology of the Cell* **17**:3021\u20133030. DOI: , PMID: 16641366\n* Nance J, Frokjaer-Jensen C. 2019. The *Caenorhabditis elegans* transgenic toolbox. *Genetics* **212**:959\u2013990. DOI: \n* Nigam SK. 2018. The SLC22 transporter family: A paradigm for the impact of drug transporters on metabolic pathways, signaling, and disease. *Annual Review of Pharmacology and Toxicology* **58**:663\u2013687. DOI: , PMID: 29309257\n* Nonet ML, Grundahl K, Meyer BJ, Rand JB. 1993. Synaptic function is impaired but not eliminated in *C. elegans* mutants lacking synaptotagmin. *Cell* **73**:1291\u20131305. DOI: 90357-v), PMID: 8391930\n* Peden AS, Mac P, Fei Y-J, Castro C, Jiang G, Murfitt KJ, Miska EA, Griffin JL, Ganapathy V, Jorgensen EM. 2013. Betaine acts on a ligand-gated ion channel in the nervous system of the nematode *C. elegans*. *Nature Neuroscience* **16**:1794\u20131801. DOI: , PMID: 24212673\n* Pereira L, Kratsios P, Serrano-Saiz E, Sheftel H, Mayo AE, Hall DH, White JG, LeBoeuf B, Garcia LR, Alon U, Hobert O. 2015. A cellular and regulatory map of the cholinergic nervous system of *C. elegans*. *eLife* **4**:e12432. DOI: , PMID: 26705699\n* Pereira L, Aeschimann F, Wang C, Lawson H, Serrano-Saiz E, Portman DS, Gro\u00dfhans H, Hobert O. 2019. Timing mechanism of sexually dimorphic nervous system differentiation. *eLife* **8**:e42078. DOI: , PMID: 30599092\n* Pertel R, Wilson SH. 1974. Histamine content of the nematode, *Caenorhabditis elegans*. *Comparative and General Pharmacology* **5**:83\u201385. DOI: 80011-x), PMID: 4617652\n* Purice MD, Quitevis EJA, Manning RS, Severs LJ, Tran NT. 2023. Molecular Heterogeneity of *C. elegans* Glia across Sexes. *bioRxiv*. DOI: \n* Ram\u00edrez-Reveco A, Villarroel-Esp\u00edndola F, Rodr\u00edguez-Gil JE, Concha II. 2017. Neuronal signaling repertoire in the mammalian sperm functionality. *Biology of Reproduction* **96**:505\u2013524. DOI: , PMID: 28339693\n* Rand JB, Nonet ML. 1997. Neurotransmitter assignments for specific neurons. Riddle DL, Blumenthal T, Meyer BJ, Priess JR (Eds). *C.elegans II*. Cold Spring Harbor Laboratory Press. p. 1049\u20131052.\n* Ranganathan R, Sawin ER, Trent C, Horvitz HR. 2001. Mutations in the *Caenorhabditis elegans* serotonin reuptake transporter MOD-5 reveal serotonin-dependent and -independent activities of fluoxetine. *The Journal of Neuroscience* **21**:5871\u20135884. DOI: , PMID: 11487610\n* Reilly MB, Tekieli T, Cros C, Aguilar GR, Lao J, Toker IA, Vidal B, Leyva-D\u00edaz E, Bhattacharya A, Cook SJ, Smith JJ, Kovacevic I, Gulez B, Fernandez RW, Bradford EF, Ramadan YH, Kratsios P, Bao Z, Hobert O. 2022. Widespread employment of conserved *C. elegans* homeobox genes in neuronal identity specification. *PLOS Genetics* **18**:e1010372. DOI: , PMID: 36178933\n* Ripoll-S\u00e1nchez L, Watteyne J, Sun H, Fernandez R, Taylor SR, Weinreb A, Bentley BL, Hammarlund M, Miller DM, Hobert O, Beets I, V\u00e9rtes PE, Schafer WR. 2023. The neuropeptidergic connectome of *C. elegans*. *Neuron* **111**:3570\u20133589. DOI: , PMID: 37935195",
                         "paragraph_index": 1,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Loer CM, Kenyon CJ. 1993. Serotonin-deficient mutants and male mating behavior in the nematode *Caenorhabditis elegans*. *The Journal of Neuroscience* **13**:5407\u20135417. DOI:",
-                        "paragraph_index": 3,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Maicas M, Jimeno-Mart\u00edn \u00c1, Mill\u00e1n-Trejo A, Alkema MJ, Flames N. 2021. The transcription factor LAG-1/CSL plays a Notch-independent role in controlling terminal differentiation, fate maintenance, and plasticity of serotonergic chemosensory neurons. *PLOS Biology* **19**:e3001334. DOI:",
-                        "paragraph_index": 5,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Matsui T, Nakata T, Kobayashi Y. 2016. Localization of organic cation transporter 2 (OCT2) in monoaminergic and cholinergic axon terminals of the mouse brain. *Neuroscience Letters* **633**:118\u2013124. DOI:",
-                        "paragraph_index": 7,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Mayerhofer A, Frungieri MB, Bulling A, Fritz S. 1999. Sources and function of neuronal signalling molecules in the gonads. *Medicina* **59**:542\u2013545. PMID: 10684155",
-                        "paragraph_index": 9,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "McCarthy MM, Davis AM, Mong JA. 1997. Excitatory neurotransmission and sexual differentiation of the brain. *Brain Research Bulletin* **44**:487\u2013495. DOI:",
-                        "paragraph_index": 10,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "McIntire SL, Jorgensen E, Kaplan J, Horvitz HR. 1993. The GABAergic nervous system of *Caenorhabditis elegans*. *Nature* **364**:337\u2013341. DOI:",
-                        "paragraph_index": 12,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "McIntire SL, Reimer RJ, Schuske K, Edwards RH, Jorgensen EM. 1997. Identification and characterization of the vesicular GABA transporter. *Nature* **389**:870\u2013876. DOI:",
-                        "paragraph_index": 14,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Mondal S, Hegarty E, Sahn JJ, Scott LL, G\u00f6k\u00e7e SK, Martin C, Ghorashian N, Satarasinghe PN, Iyer S, Sae-Lee W, Hodges TR, Pierce JT, Martin SF, Ben-Yakar A. 2018. High-content microfluidic screening platform used to identify \u03c32R/Tmem97 binding ligands that reduce age-dependent neurodegeneration in C. elegans SC\\_APP model. *ACS Chemical Neuroscience* **9**:1014\u20131026. DOI:",
-                        "paragraph_index": 16,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Mullen GP, Mathews EA, Saxena P, Fields SD, McManus JR, Moulder G, Barstead RJ, Quick MW, Rand JB. 2006. The *Caenorhabditis elegans* snf-11 gene encodes a sodium-dependent GABA transporter required for clearance of synaptic GABA. *Molecular Biology of the Cell* **17**:3021\u20133030. DOI:",
-                        "paragraph_index": 18,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Nance J, Frokjaer-Jensen C. 2019. The *Caenorhabditis elegans* transgenic toolbox. *Genetics* **212**:959\u2013990. DOI:",
-                        "paragraph_index": 20,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Nigam SK. 2018. The SLC22 transporter family: A paradigm for the impact of drug transporters on metabolic pathways, signaling, and disease. *Annual Review of Pharmacology and Toxicology* **58**:663\u2013687. DOI:",
-                        "paragraph_index": 21,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Nonet ML, Grundahl K, Meyer BJ, Rand JB. 1993. Synaptic function is impaired but not eliminated in C. elegans mutants lacking synaptotagmin. *Cell* **73**:1291\u20131305. DOI:",
-                        "paragraph_index": 23,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Peden AS, Mac P, Fei Y-J, Castro C, Jiang G, Murfitt KJ, Miska EA, Griffin JL, Ganapathy V, Jorgensen EM. 2013. Betaine acts on a ligand-gated ion channel in the nervous system of the nematode C. elegans. *Nature Neuroscience* **16**:1794\u20131801. DOI:",
-                        "paragraph_index": 25,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Pereira L, Kratsios P, Serrano-Saiz E, Sheftel H, Mayo AE, Hall DH, White JG, LeBoeuf B, Garcia LR, Alon U, Hobert O. 2015. A cellular and regulatory map of the cholinergic nervous system of C. elegans. *eLife* **4**:e12432. DOI:",
-                        "paragraph_index": 27,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Pereira L, Aeschimann F, Wang C, Lawson H, Serrano-Saiz E, Portman DS, Gro\u00dfhans H, Hobert O. 2019. Timing mechanism of sexually dimorphic nervous system differentiation. *eLife* **8**:e42078. DOI:",
-                        "paragraph_index": 29,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Pertel R, Wilson SH. 1974. Histamine content of the nematode, Caenorhabditis elegans. *Comparative and General Pharmacology* **5**:83\u201385. DOI:",
-                        "paragraph_index": 31,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Purice MD, Quitevis EJA, Manning RS, Severs LJ, Tran NT. 2023. Molecular Heterogeneity of C. elegans Glia across Sexes. *bioRxiv*. DOI:",
-                        "paragraph_index": 33,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Ram\u00edrez-Reveco A, Villarroel-Esp\u00edndola F, Rodr\u00edguez-Gil JE, Concha II. 2017. Neuronal signaling repertoire in the mammalian sperm functionality. *Biology of Reproduction* **96**:505\u2013524. DOI:",
-                        "paragraph_index": 34,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Rand JB, Nonet ML. 1997. Neurotransmitter assignments for specific neurons. Riddle DL, Blumenthal T, Meyer BJ, Priess JR (Eds). *C.elegans II*. Cold Spring Harbor Laboratory Press. p. 1049\u20131052.",
-                        "paragraph_index": 36,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Ranganathan R, Sawin ER, Trent C, Horvitz HR. 2001. Mutations in the Caenorhabditis elegans serotonin reuptake transporter MOD-5 reveal serotonin-dependent and -independent activities of fluoxetine. *The Journal of Neuroscience* **21**:5871\u20135884. DOI:",
-                        "paragraph_index": 37,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Reilly MB, Tekieli T, Cros C, Aguilar GR, Lao J, Toker IA, Vidal B, Leyva-D\u00edaz E, Bhattacharya A, Cook SJ, Smith JJ, Kovacevic I, Gulez B, Fernandez RW, Bradford EF, Ramadan YH, Kratsios P, Bao Z, Hobert O. 2022. Widespread employment of conserved C. elegans homeobox genes in neuronal identity specification. *PLOS Genetics* **18**:e1010372. DOI:",
-                        "paragraph_index": 39,
-                        "page_number": 44
-                    },
-                    {
-                        "contents": "Ripoll-S\u00e1nchez L, Watteyne J, Sun H, Fernandez R, Taylor SR, Weinreb A, Bentley BL, Hammarlund M, Miller DM, Hobert O, Beets I, V\u00e9rtes PE, Schafer WR. 2023. The neuropeptidergic connectome of C. elegans. *Neuron* **111**:3570\u20133589. DOI:",
-                        "paragraph_index": 41,
                         "page_number": 44
                     }
                 ]

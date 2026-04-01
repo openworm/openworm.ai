@@ -12,6 +12,8 @@ from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_core.documents import Document as LangChainDocument
 from langchain_huggingface import HuggingFaceEmbeddings
+
+# LlamaIndex LLMs (used only for standalone test queries)
 from llama_index.core import Settings
 from llama_index.llms.huggingface_api import HuggingFaceInferenceAPI
 from llama_index.llms.ollama import Ollama
@@ -37,9 +39,9 @@ def _has_openai_key() -> bool:
 
 def _select_embed_model():
     """
-    Prefer OpenAI embeddings if a key is present, otherwise fall back to HF BGE small.
+    Prefer OpenAI embeddings if a key is present, otherwise fall back to HF BGE large (local).
 
-    CHANGED: Returns LangChain-compatible embeddings for Chroma
+    Uses native LangChain embeddings for direct Chroma compatibility.
     """
     if _has_openai_key():
         try:
@@ -49,33 +51,28 @@ def _select_embed_model():
             return OpenAIEmbeddings()
         except Exception as e:
             print_(
-                f"! OpenAI embeddings unavailable ({type(e).__name__}: {e}) -> falling back to HF BGE-small."
+                f"! OpenAI embeddings unavailable ({type(e).__name__}: {e}) -> falling back to HF BGE-large."
             )
 
-    # Fallback: HF BGE small (fast + good) - LangChain version for Chroma
-    hf = HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
-    print_("Embedding model: HuggingFace BAAI/bge-small-en-v1.5")
+    hf = HuggingFaceEmbeddings(model_name="BAAI/bge-large-en-v1.5")
+    print_("Embedding model: HuggingFace BAAI/bge-large-en-v1.5")
     return hf
 
 
 # Choose once, then use consistently for create + query + reload
 EMBED_MODEL = _select_embed_model()
-# Don't set Settings.embed_model since we're using LangChain embeddings
 
 
 def _get_embedding_folder_name():
     """
     Returns a stable folder name based on the embedding model being used.
-
-    CHANGED: Works with LangChain embedding models
     """
     if "openai" in EMBED_MODEL.__class__.__name__.lower():
         return "embed_openai"
 
-    if hasattr(EMBED_MODEL, "model_name"):
-        name = EMBED_MODEL.model_name
+    name = getattr(EMBED_MODEL, "model_name", None)
+    if name:
         return "embed_" + name.replace("/", "_").replace(":", "_")
-
     return "embed_" + EMBED_MODEL.__class__.__name__.lower()
 
 
@@ -185,6 +182,7 @@ def create_store(model):
         anonymized_telemetry=False,
     )
 
+    # Use LangChain-compatible embedding model
     vectorstore = Chroma(
         collection_name="openworm-corpus",
         embedding_function=EMBED_MODEL,
@@ -218,6 +216,7 @@ def load_index(model):
         anonymized_telemetry=False,
     )
 
+    # Use LangChain-compatible embedding model
     vectorstore = Chroma(
         collection_name="openworm-corpus",
         embedding_function=EMBED_MODEL,
@@ -332,12 +331,68 @@ SOURCES:
     return response_text
 
 
+def generate_vector_store_config(output_path: str = "vector-stores.json"):
+    """
+    Generate a vector store configuration JSON for the neuroml.ai RAG package.
+
+    This creates a config pointing to the Chroma store built by this script,
+    with the correct embedding model and domain structure.
+    """
+    STORE_SUBFOLDER = "/" + _get_embedding_folder_name()
+    chroma_dir = Path(STORE_DIR + STORE_SUBFOLDER)
+
+    # Get the embedding model name for the config
+    # IMPORTANT: neuroml.ai expects format "provider:model:inference_provider"
+    # The folder name doesn't include :auto, but the JSON config does
+    if hasattr(EMBED_MODEL, "model_name"):
+        embedding_model_name = f"huggingface:{EMBED_MODEL.model_name}:auto"
+    elif "openai" in EMBED_MODEL.__class__.__name__.lower():
+        embedding_model_name = "openai:text-embedding-ada-002:auto"
+    else:
+        embedding_model_name = "huggingface:BAAI/bge-large-en-v1.5:auto"
+
+    print(embedding_model_name)
+
+    config = {
+        "embedding_model": "huggingface:BAAI/bge-large-en-v1.5",
+        "domains": {
+            "corpus_and_wormatlas": {
+                # CRITICAL: This description determines when RAG is triggered
+                # Make it VERY BROAD to catch all C. elegans questions
+                "description": """Questions about C. elegans (Caenorhabditis elegans) biology, including:
+    - Anatomy, morphology, and cellular structure
+    - Nervous system, neurons, synapses, and neural circuits
+    - Neurotransmitters, neuroscience, and behavior
+    - Genetics, development, and molecular biology
+    - Locomotion, movement, gaits, and biomechanics
+    - Pharynx, muscles, intestine, and other organs
+    - Research methods, experimental techniques, and tools
+    - NeuroML, computational models, and simulations
+    - WormAtlas anatomical information
+    - Any biological, scientific, or research question mentioning C. elegans, worms, nematodes, or related terms
+
+    This domain covers ALL questions related to C. elegans research and biology.""",
+                "vector_stores": [
+                    {"name": "openworm-corpus", "path": str(chroma_dir.absolute())}
+                ],
+            }
+        },
+    }
+
+    output_file = Path(output_path)
+    output_file.write_text(json.dumps(config, indent=4), encoding="utf-8")
+    print_(f"Vector store config written to: {output_file.absolute()}")
+    print_(f"Set GEN_RAG_VS_CONFIG={output_file.absolute()} to use with neuroml.ai RAG")
+
+
 if __name__ == "__main__":
     llm_ver = get_llm_from_argv(sys.argv)
 
     if "-test" not in sys.argv:
         if "-q" not in sys.argv:
             create_store(llm_ver)
+            # Generate config after building the store
+            generate_vector_store_config()
 
         vectorstore = load_index(llm_ver)
 

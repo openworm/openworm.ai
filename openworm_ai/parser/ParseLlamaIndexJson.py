@@ -428,6 +428,8 @@ if __name__ == "__main__":
         source_url = paper_meta.get("source_url", "") or ""
         papers_api[paper_ref] = [str(pdf_path), source_url]
 
+        print_(f"Found PDF: {pdf_path} with source URL: {source_url}")
+
     if not papers_api:
         print_(f"WARNING: No PDFs found in {PDF_FOLDER.resolve()}")
 

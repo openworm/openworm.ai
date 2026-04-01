@@ -1,0 +1,14 @@
+{
+    "embedding_model": "huggingface:BAAI/bge-large-en-v1.5",
+    "domains": {
+        "corpus_and_wormatlas": {
+            "description": "Questions about C. elegans (Caenorhabditis elegans) biology, including:\n    - Anatomy, morphology, and cellular structure\n    - Nervous system, neurons, synapses, and neural circuits\n    - Neurotransmitters, neuroscience, and behavior\n    - Genetics, development, and molecular biology\n    - Locomotion, movement, gaits, and biomechanics\n    - Pharynx, muscles, intestine, and other organs\n    - Research methods, experimental techniques, and tools\n    - NeuroML, computational models, and simulations\n    - WormAtlas anatomical information\n    - Any biological, scientific, or research question mentioning C. elegans, worms, nematodes, or related terms\n\n    This domain covers ALL questions related to C. elegans research and biology.",
+            "vector_stores": [
+                {
+                    "name": "openworm-corpus",
+                    "path": "/Users/sabarishganesh/Desktop/openworm.ai/store/embed_BAAI_bge-large-en-v1.5"
+                }
+            ]
+        }
+    }
+}
