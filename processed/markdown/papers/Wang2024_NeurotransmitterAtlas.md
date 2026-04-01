@@ -1,8 +1,8 @@
-Wang2024 NeurotransmitterAtlas
+# Wang2024 NeurotransmitterAtlas
 
-Generated from: https://elifesciences.org/articles/95402
+_Generated from: https://elifesciences.org/articles/95402_
 
-    Page 1
+## Page 1
 
 # A neurotransmitter atlas of C. elegans males and hermaphrodites
 
@@ -30,7 +30,7 @@ This fundamental study reports the most comprehensive neurotransmitter atlas of 
 
 Understanding information processing in the brain necessitates the generation of precise maps of neurotransmitter deployment. Moreover, comprehending synaptic wiring diagrams is contingent upon decoding the nature of signaling events between anatomically connected neurons. Mapping of neurotransmitter identities onto individual neuron classes also presents a valuable entry point for studying how neuronal identity features become genetically specified during development and
 
-    Page 2
+## Page 2
 
 potentially modified in response to specific external factors (such as the environment) or internal factors (such as sexual identity or neuronal activity patterns).
 
@@ -44,7 +44,7 @@ However, even fosmid-based reporters may not be the final word. In theory, they 
 
 An indication that previous neurotransmitter assignments may not have been complete was provided by recent single-cell RNA (scRNA) transcriptomic analyses of the hermaphrodite nervous
 
-    Page 3
+## Page 3
 
 # eLife Tools and resources
 
@@ -402,7 +402,7 @@ The online version of this article includes the following figure supplement(s) f
 
 **Figure supplement 1.** Use of aromatic amino acid decarboxylases (AAADs) in *C. elegans*.
 
-    Page 4
+## Page 4
 
 system of L4 stage animals by the CeNGEN consortium (*Taylor et al.*, 2021). As we describe in this paper in more detail, transcripts for several neurotransmitter-synthesizing enzymes or transporters were detected in a few cells beyond those previously described to express the respective reporter genes. This motivated us to use CRISPR/Cas9 engineering to fluorescently tag a comprehensive panel of genetic loci that code for neurotransmitter-synthesizing, -transporting, and -uptaking proteins ('neurotransmitter pathway genes'). Using the landmark strain NeuroPAL for neuron identification (*Yemini et al.*, 2021), we identified novel sites of expression of most neurotransmitter pathway genes. Furthermore, we used these reagents to expand and refine neurotransmitter maps of the entire nervous system of the *C. elegans* male, which contains almost 30% more neurons than the nervous system of the hermaphrodite yet lacks a reported scRNA transcriptome atlas. Together with the NeuroPAL cell-identification tool, these reporter alleles allowed us to substantially improve the previously described neurotransmitter map of the male nervous system (*Serrano-Saiz et al.*, 2017b). Our analysis provides insights into the breadth of usage of each individual neurotransmitter system, reveals instances of co-transmitter use, indicates the existence of neurons that may entirely rely on neuropeptides instead of classic neurotransmitters, reveals sexual dimorphisms in neurotransmitter usage, and suggests the likely existence of presently unknown neurotransmitters.
 
@@ -422,7 +422,7 @@ To investigate the neurotransmitter identity of neurons throughout the entire *C
 * h. *cat-1/VMAT*: expression of this vesicular monoamine transporter defines all four above-mentioned monoaminergic neurons (serotonin, dopamine, tyramine, octopamine) (*Duerr et al.*, 1999), but as described and discussed below, it may also define additional sets of monoaminergic neurons.
 * i. *hdl-1/AAAD*: *hdl-1*, a previously uncharacterized gene, encodes the only other AAAD with sequence similarity to the *bas-1* and *tdc-1* AAAD enzymes that produce other bona fide
 
-    Page 5
+## Page 5
 
 monoamines (Figure 1—figure supplement 1; Hare and Loer, 2004). hdl-1 expression may therefore, in combination with cat-1/VMAT, identify neurons that produce and release trace amines of unknown identity.
 
@@ -436,13 +436,13 @@ For all these 15 genetic loci, we compared scRNA transcriptome data from the CeN
 
 Hence, to consolidate and further improve neurotransmitter identity assignment throughout the entire C. elegans nervous system, and to circumvent potential limitations of multicopy, fosmid-based reporter transgenes on which previous neurotransmitter assignments have been based, we engineered and examined expression patterns of 16 knock-in reporter alleles of the 15 neurotransmitter synthesis, vesicular transport, and uptake loci listed above (Figure 1, Figure 2). For unc-17 and eat-4, we knocked-in a t2a::gfp::h2b (his-44) cassette right before the stop codon of the respective gene. For unc-25, we created two knock-in alleles with the t2a::gfp::h2b (his-44) cassette tagging isoforms a.1/c.1 and b.1 separately. For tdc-1, a gfp::h2b::t2a cassette was knocked into the N-terminus of the locus because of different C-terminal splice variants. The self-cleaving T2A peptide frees up GFP::H2B, which will be transported to the nucleus, thereby facilitating cell identification. For unc-46, unc-47, tph-1, bas-1, tbh-1, cat-1, cat-2, snf-3, and oct-1, we knocked-in a sl2::gfp::h2b cassette at the C-terminus of the locus. The SL2 sequence also provides for the separate production of GFP::H2B. Both types of reporter cassettes should capture posttranscriptional, 3'UTR-mediated regulation of each locus, e.g., by miRNAs and RNA-binding proteins (not captured by CeNGEN scRNA data). Since in each case the reporter is targeted to the nucleus, this strategy circumvents shortcomings associated with interpreting antibody staining patterns or dealing with too densely packed cytosolic signals. For mod-5, we analyzed a previously generated, non-nuclear reporter allele (Maicas et al., 2021). For all our neuronal cell identification, we utilized the neuronal landmark strain NeuroPAL (Tekieli et al., 2021; Yemini et al., 2021). The results of our neuronal expression pattern analysis are summarized in Figure 3 and detailed in Supplementary files 2 and 3. In the ensuing sections we describe these patterns in detail.
 
-    Page 6
+## Page 6
 
 # eLife Tools and resources
 
 Figure 2. Schematics of reporter knock-in alleles. Reporter alleles were generated by CRISPR/Cas9 genome engineering. The SL2- or T2A-based separation of the reporter from the coding sequence of the respective loci enables targeting of the reporter to the nucleus (via the H2B tag), which in turn facilitates the identification of the cell expressing a given reporter. Genome schematics are from WormBase (Davis et al., 2022). See Figure 1—figure supplement 1 for hdl-1 reporter alleles.
 
-    Page 7
+## Page 7
 
 # eLife Tools and resources
 
@@ -512,70 +512,69 @@ Figure 2. Schematics of reporter knock-in alleles. Reporter alleles were generat
 |IL2|IL2DL/DR/L/R/VL/VR|ACh unknown MA?|
 |LUA|LUAL/R|Glu|
 ### CLASS | NEURON | NEUROTRANSMITTER(S)
----|---|---
-M1 | M1 | ACh
-M2 | M2L/R | ACh
-M3 | M3L/R | Glu *betaine (up)
-M4 | M4 | ACh
-M5 | M5 | ACh Glu
-MC | MCL/R | ACh
-MI | MI | Glu 5-HTP
-NSM | NSML/R | 5-HT *betaine (up)
-OLL | OLLL/R | Glu
-OLQ | OLQDL/DR/VL/VR | Glu
-PDA | PDA | ACh *betaine (up)
-PDB | PDB | ACh
-PDE | PDEL/R | DA Glu
-PHA | PHAL/R | *Glu
-PHB | PHBL/R | Glu
-PHC | PHCL/R | Glu betaine (up)
-PLM | PLML/R | Glu
-PLN | PLNL/R | ACh
-PQR | PQR | Glu
-PVC | PVCL/R | ACh
-PVD | PVDL/R | Glu
-PVM | PVM | orphan
-PVN | PVNL/R | ACh Glu betaine (up)
-PVP | PVPL/R | ACh
-PVQ | PVQL/R | orphan
-PVR | PVR | Glu
-PVT | PVT | orphan, unc-47 (+) orphan, unc-46 (+)
-PVW | PVWL/R | orphan, unc-47 (+) orphan, unc-46 (+)
-RIA | RIAL/R | Glu
-RIB | RIBL/R | GABA
-RIC | RICL/R | octopamine Glu
-RID | RID | orphan, unc-47 (+)
-RIF | RIFL/R | ACh
-RIG | RIGL/R | Glu
-RIH | RIH | ACh 5-HT (up)
-RIM | RIML/R | Glu tyramine (syn + up) betaine (up)
-RIP | RIPL/R | ACh
-RIR | RIR | ACh *betaine (up)
-RIS | RIS | GABA betaine (up)
-RIV | RIVL/R | ACh
-RMD | RMDDL/DR/L/R/VL/VR | ACh
-RME | RMED/L/R/V | GABA
-RMF | RMFL/R | ACh
-RMG | RMGL/R | orphan
-RMH | RMHL/R | ACh *betaine (up)
-SAA | SAADL/DR/VL/VR | ACh
-SAB | SABD/VL/VR | ACh
-SDQ | SDQL/R | ACh
-SIA | SIADL/DR/VL/VR | ACh
-SIB | SIBDL/DR/VL/VR | ACh
-SMB | SMBDL/DR/VL/VR | ACh
-SMD | SMDDL/DR/VL/VR | ACh *GABA *betaine (up)
-URA | URADL/DR/VL/VR | ACh
-URB | URBL/R | ACh bas-1-depen MA?
-URX | URXL/R | ACh *5-HT (up) *betaine (up)
-URY | URYDL/DR/VL/VR | Glu
-VA | VA1-VA11 | ACh
-VA12 | VA12 | ACh *betaine (up)
-VB | VB1-VB11 | ACh *betaine (up)
-VC | VC1-VC3, VC6 | ACh 5-HT (alt syn/up mechanism)
-VC4, VC5 | VC4, VC5 | ACh
-VD | VD1-VD13 | GABA
-
+|M1|M1|ACh|
+|-|-|-|
+|M2|M2L/R|ACh|
+|M3|M3L/R|Glu \*betaine (up)|
+|M4|M4|ACh|
+|M5|M5|ACh Glu|
+|MC|MCL/R|ACh|
+|MI|MI|Glu 5-HTP|
+|NSM|NSML/R|5-HT \*betaine (up)|
+|OLL|OLLL/R|Glu|
+|OLQ|OLQDL/DR/VL/VR|Glu|
+|PDA|PDA|ACh \*betaine (up)|
+|PDB|PDB|ACh|
+|PDE|PDEL/R|DA Glu|
+|PHA|PHAL/R|\*Glu|
+|PHB|PHBL/R|Glu|
+|PHC|PHCL/R|Glu betaine (up)|
+|PLM|PLML/R|Glu|
+|PLN|PLNL/R|ACh|
+|PQR|PQR|Glu|
+|PVC|PVCL/R|ACh|
+|PVD|PVDL/R|Glu|
+|PVM|PVM|orphan|
+|PVN|PVNL/R|ACh Glu betaine (up)|
+|PVP|PVPL/R|ACh|
+|PVQ|PVQL/R|orphan|
+|PVR|PVR|Glu|
+|PVT|PVT|orphan, unc-47 (+) orphan, unc-46 (+)|
+|PVW|PVWL/R||
+|RIA|RIAL/R|Glu|
+|RIB|RIBL/R|GABA Glu|
+|RIC|RICL/R|octopamine Glu|
+|RID|RID|orphan, unc-47 (+)|
+|RIF|RIFL/R|ACh|
+|RIG|RIGL/R|Glu|
+|RIH|RIH|ACh 5-HT (up)|
+|RIM|RIML/R|Glu tyramine (syn + up) betaine (up)|
+|RIP|RIPL/R|ACh|
+|RIR|RIR|ACh \*betaine (up)|
+|RIS|RIS|GABA betaine (up)|
+|RIV|RIVL/R|ACh|
+|RMD|RMDDL/DR/L/R/VL/VR|ACh|
+|RME|RMED/L/R/V|GABA|
+|RMF|RMFL/R|ACh|
+|RMG|RMGL/R|orphan|
+|RMH|RMHL/R|ACh \*betaine (up)|
+|SAA|SAADL/DR/VL/VR|ACh|
+|SAB|SABD/VL/VR|ACh|
+|SDQ|SDQL/R|ACh|
+|SIA|SIADL/DR/VL/VR|ACh|
+|SIB|SIBDL/DR/VL/VR|ACh|
+|SMB|SMBDL/DR/VL/VR|ACh|
+|SMD|SMDDL/DR/VL/VR|ACh \*GABA \*betaine (up)|
+|URA|URADL/DR/VL/VR|ACh|
+|URB|URBL/R|ACh bas-1-depen MA?|
+|URX|URXL/R|ACh \*5-HT (up) \*betaine (up)|
+|URY|URYDL/DR/VL/VR|Glu|
+|VA|VA1-VA11|ACh|
+|VA12|VA12|ACh \*betaine (up)|
+|VB|VB1-VB11|ACh \*betaine (up)|
+|VC|VC1-VC3, VC6|ACh 5-HT (alt syn/up mechanism)|
+|VC4, VC5|VC4, VC5|ACh|
+|VD|VD1-VD13|GABA|
 ### MALE-SPECIFIC NEURONS
 
 |CLASS|NEURON|NEUROTRANSMITTER(S)|
@@ -635,9 +634,20 @@ When neurotransmitter is marked with \*: potential neurotransmitter usage is pre
 
 ## B
 
+acetylcholine GABA glutamate 5-HT or 5-HTP tyramine octopamine dopamine betaine
+
+* p may transmit phenylethanolamine
+* unknown monoamine (incl. bas-1-dependent)
+* orphan
+* u neuron has neurotransmitter uptake capacity
+* * gene expression dim and variable
+* alt alternative synthesis and/or uptake mechanism(s)
+* sex-shared neuron
+* sex-specific neuron
+
 Figure 3. Summary of neurotransmitter usage and atlases. See Table 1, Table 2, and Supplementary files 2–4 for individual gene expression, rationale for neurotransmitter assignments, and more detailed notes. (A) ACh=acetylcholine; Glu=glutamate; GABA=γ-aminobutyric acid; DA=dopamine; 5-HT=5-hydroxytryptamine, or serotonin; 5-HTP=5-hydroxytryptophan; PEOH?=the neuron has the potential to use β-hydroxyphenethylamine, or phenylethanolamine; bas-1-depen MA?=the neuron has the potential to use bas-1-dependent unknown monoamines (histamine, tryptamine,
 
-    Page 8
+## Page 8
 
 Figure 3 continued
 phenylethylamine \[PEA]; also see Figure 1—figure supplement 1); unknown MA?=the neuron has the potential to use non-canonical monoamines; (up)=neurotransmitter uptake; (syn)=neurotransmitter synthesis; \*=dim and variable expression of respective identity gene(s) is detected. Variability could be due to one of the following reasons: (1) the endogenous gene is indeed expressed in some but not all animals; (2) the endogenous gene is indeed expressed in every animal but the level of reporter expression is below detection threshold in some. Variability is detected only at low fluorescent intensity; at higher intensities, expression remains consistent. Results for anti-γ-aminobutyric acid (GABA) staining in SMD and anti-serotonin staining in VC4, VC5, CEM, I5, and URX are variable based on previous reports (see text for citations). (B) Information from (A) shown in the context of neuron positions in worm schematics. Note 'unknown monoamine' here includes both 'bas-1-depen MA' and 'unknown MA' in (A). Neurons marked with 'u' can uptake given neurotransmitters but not exclusively; some may also synthesize them, e.g., ADF can both synthesize and uptake serotonin.
@@ -654,7 +664,7 @@ A few neurons were found to express eat-4 transcripts by the CeNGEN atlas, but o
 
 41 of previously described 52 neuron classes that show unc-17 fosmid-based reporter expression (Pereira et al., 2015) showed transcripts in the CeNGEN scRNA atlas at four out of four threshold levels, another seven neuron classes at three out of four threshold levels, and one at the lowest two threshold levels (Taylor et al., 2021). Only one neuron class, RIP, displayed scRNA levels at all four thresholds, but showed no corresponding unc-17 fosmid-based reporter expression (Figure 1B, Supplementary file 1). Using the unc-17(syb4491) reporter allele (Figure 1A), we confirmed expression in RIP (Figure 4C, Supplementary file 2). Of the additional neuron classes that show unc-17 expression at the lower stringency transcript detection levels (Figure 1B, Supplementary file 1), we were able to detect unc-17 reporter allele expression only in AWA (Figure 4C, Supplementary file 2). Conversely, a few neurons display weak expression with previous multicopy, fosmid-based reporter constructs (RIB, AVG, PVN) (Pereira et al., 2015), but show no CeNGEN scRNA support for such
 
-    Page 9
+## Page 9
 
 # eat-4(syb4257\[eat-4::t2a::gfp::h2b]) III
 
@@ -681,32 +691,22 @@ A few neurons were found to express eat-4 transcripts by the CeNGEN atlas, but o
 * PVD
 * DVA
 * PHA(+/-)
-* PDE
-* DVC
-* PVQ
-* PVN
-* PVD
-* DVA
-* PHA
-* PDE
-* DVC
-* PVQ
-* PVN
-* PVD
-* DVA
-* PHA
 * **eat-4**^CRISPR::gfp
 * expression in PVN
-* GFP intensity (a.u.)
-* 2.0
-* 1.5
-* 1.0
-* 0.5
-* 0.0
-* herm
-* male
-
-# unc-17(syb4491\[unc-17::t2a::gfp::h2b]) IV
+* PDE
+* DVC
+* PVQ
+* PVN
+* PVD
+* DVA
+* PHA
+* PDE
+* DVC
+* PVQ
+* PVN
+* PVD
+* DVA
+* PHA
 
 ## C
 
@@ -715,21 +715,21 @@ A few neurons were found to express eat-4 transcripts by the CeNGEN atlas, but o
 * MERGE
 * lateral view
 * AVJ(-)
-* AVJ
+* AWA
 * RIP
-* AWA(+/-)
 * AFD
 * RIB(-)
 * FLP(-)
+* RIP
 * AFD
 * RIB
 * FLP
-* AWA(+/-)
-* AVJ(-)
+* RIP
+* AWA
+* AVJ
 * AFD
 * RIB(-)
 * FLP(-)
-* (+)
 * AIM
 * AIY
 * AVG
@@ -749,26 +749,24 @@ A few neurons were found to express eat-4 transcripts by the CeNGEN atlas, but o
 * AIM
 * AIY
 * AVG
-* lateral view
 
 ## D
 
 * **unc-17**^CRISPR::gfp
 * NeuroPAL
 * MERGE
-* PVN
-* PVN
-* PVN
 * lateral view
 * PVN
 * PVN
 * PVN
 * lateral view
+* PVN
+* PVN
+* PVN
 
 Figure 4. Expression of eat-4/VGLUT and unc-17/VAChT reporter alleles in the adult hermaphrodite. Neuronal expression of eat-4(syb4257) and unc-17(syb4491) was characterized with landmark strain NeuroPAL (otIs696 and otIs669, respectively). Only selected neurons are shown for illustrating updates from previous reports. See *Supplementary file 2* for a complete list of neurons. (A) Dim expression of eat-4(syb4257) in head neurons
-Figure 4 continued on next page
 
-    Page 10
+## Page 10
 
 Figure 4 continued
 ASK and ADL is consistent with previous fosmid-based reporter expression. RIC expression is consistent with previous observation using the same reporter allele (*Reilly et al., 2022*). In addition, dim expression is detected in pharyngeal neuron M5 (also in grayscale inset), previously not detected with eat-4 GFP fosmid-based reporter (otIs388) but visible with eat-4 mCherry fosmid-based reporter (otIs518). (B) Previously uncharacterized eat-4 expression in PDE and DVA neurons is detected with the eat-4(syb4257) reporter allele. Variable expression in PHA is also occasionally detected. No expression is detected in PVQ. Expression in PVN is detected in both sexes but at a much higher level in the male. (C) In the head, prominent expression of unc-17(syb4491) in RIP and dim expression in AWA and AFD neurons are detected. There is no visible expression in RIB, FLP, or AVJ. Consistent with previous reports, AIM expresses unc-17 only in males and not hermaphrodites. In addition, very dim expression of AVG can be detected occasionally in hermaphrodites (representative image showing an animal with no visible expression) and slightly stronger in males (representative image showing an animal with visible expression). Inset, grayscale image showing dim expression for AWA and AFD and no expression for RIB. (D) In the tail, PVN expresses unc-17(syb4491) in both sexes, consistent with previous reports. Scale bars, 10 µm in color images in A, C, and D; 5 µm in B and all grayscale images. Quantification in B is done by normalizing fluorescent intensity of eat-4 GFP to that of the blue channel in the NeuroPAL background. Statistics, Mann-Whitney test.
@@ -791,19 +789,21 @@ We carefully examined potential unc-25/GAD reporter allele expression in the AMs
 
 ), we generated another reporter allele, unc-25(ot1536), to specifically
 
-    Page 11
+## Page 11
 
-# A
+# eLife Tools and resources
+
+## A
 
 lateral view
 HERM HEAD
 RMED
 RIBL
 RMEL/R
-RIS
 RIBR
-AVL
+RIS
 RMEV
+AVL
 VD1/DD1
 VD2
 
@@ -817,8 +817,8 @@ DD2
 VD4
 DD6
 VD13
-VD12
 VD5
+VD12
 DD3
 VD6
 VD11
@@ -827,8 +827,9 @@ DD5
 VD9
 DD4
 VD8
+VD7
 
-# B
+## B
 
 lateral view
 ::gfp
@@ -856,9 +857,32 @@ VD1
 VD2
 AVG
 
-lateral view
 ::sl2::mCherry::h2b
 unc-47^fosmid::sl2::mCherry::h2b
+MI
+M4
+NSM
+I2
+RMED
+RID
+URX
+SMDV
+RIB
+AIN
+ASE
+AVL
+AIY
+RIS
+RMEL/R
+RMH
+SMDD
+SIAV/D
+RIF
+VD1
+VD2
+AVG
+
+MERGE
 MI
 M4
 NSM
@@ -934,7 +958,7 @@ AS11(+)
 PHC(+)
 PLM(+)
 
-# C
+## C
 
 lateral view
 unc-46^CRISPR::gfp
@@ -946,7 +970,6 @@ RIA
 M2
 RMDVL
 RIB
-RME
 GLRV
 RMDD
 AVL
@@ -966,7 +989,6 @@ RIA
 M2
 RMDVL
 RIB
-RME
 GLRV
 RMDD
 AVL
@@ -985,7 +1007,6 @@ RIA
 M2
 RMDVL
 RIB
-RME
 GLRV
 RMDD
 AVL
@@ -995,31 +1016,9 @@ VD1
 VD2
 RMEV
 
-lateral view
-unc-46^CRISPR::gfp
-HERM TAIL
-DVB
-PVW
-VD12
-DD6
-VD13
-PDA
-PVN
-
-lateral view
-unc-46^fosmid::sl2::mCherry::h2b
-HERM TAIL
-DVB
-PVW
-VD12
-DD6
-VD13
-PDA
-PVN
-
 Figure 5. Expression of GABA pathway genes in the adult hermaphrodite. (A) Expression of the unc-25/GAD reporter allele ot1372 is detected in the head, ventral nerve cord, and tail neurons. The expression pattern of this new T2A-based reporter allele is similar to that of a previously described SL2-based reporter allele, unc-25(ot867) (Gendrel et al., 2016). (B) Expression of unc-47/VGAT reporter allele syb7566. Left, the expression pattern of the reporter allele largely matches that of a previously described unc-47 mCherry fosmid-based reporter (otIs564) in the head. Right, a close-up view for the Figure 5 continued on next page
 
-    Page 12
+## Page 12
 
 # eLife Tools and resources
 
@@ -1029,7 +1028,9 @@ target this isoform. However, we did not observe any discernible fluorescent rep
 
 ## Expression of unc-47/VGAT
 
-While promoter-based transgenes for the vesicular transporter for GABA, unc-47/VGAT, had shown expression patterns that precisely match that of unc-25/GAD (Eastman et al., 1999), we had noted in our previous analysis of the GABA system that a fosmid-based reporter showed much broader expression in many additional neuron classes that showed no sign of GABA usage (Gendrel et al., 2016). In several of these neuron classes both the fosmid-based reporter and the CeNGEN scRNA data indicate very robust expression (e.g. AIN, SIA, SDQ), while in many others scRNA transcripts are only evident at looser thresholds and, correspondingly, fosmid-based reporter expression in these cells is often weak (Supplementary file 1; Gendrel et al., 2016). To investigate this matter further, we CRISPR/Cas9-engineered a gfp-based reporter allele for unc-47, syb7566, and first crossed it with an mCherry-based unc-47 fosmid-based reporter (otIs564) as a first-pass assessment for any obvious overlaps and mismatches of expression patterns between the two (Figure 5B, left side panels). The vast majority of neurons exhibited overlapping expression between syb7566 and otIs564. There were also many notable similarities in the robustness of expression of the fosmid-based reporter and the reporter allele (Supplementary file 1). In a few cases where the fosmid-based reporter expression was so dim that it is only detectable via antibody staining against its fluorophore (mCherry) (Gendrel et al., 2016; Serrano-Saiz et al., 2017b), the reporter allele expression was readily visible (Supplementary file 1). The very few mismatches of expression of the fosmid-based reporter and the reporter allele included the pharyngeal neuron M1, which expresses no visible unc-47(syb7566) reporter allele but weak fosmid-based reporter expression, and the pharyngeal neuron I1, which expresses dim syb7566 but no fosmid-based reporter (Figure 5B, right side panels). AVJ shows very dim and variable unc-47(syb7566) reporter allele expression but no fosmid-based reporter expression. Since AVJ stains with anti-GABA antibodies (Gendrel et al., 2016), this neuron likely engages in vesicular release of GABA, even though its source of GABA remains unclear since it neither expresses conventional GABA synthesis machinery (UNC-25/GAD) nor GABA uptake machinery (SNF-11). Other neurons previously shown to stain with anti-GABA antibodies and to express the unc-47 fosmid-based reporter (ALA and SMD) (Gendrel et al., 2016) still show expression of the unc-47 reporter allele.
+While promoter-based transgenes for the vesicular transporter for GABA, unc-47/VGAT, had shown expression patterns that precisely match that of unc-25/GAD (Eastman et al., 1999), we had noted in our previous analysis of the GABA system that a fosmid-based reporter showed much broader expression in many additional neuron classes that showed no sign of GABA usage (Gendrel et al., 2016). In several of these neuron classes both the fosmid-based reporter and the CeNGEN scRNA data indicate very robust expression (e.g. AIN, SIA, SDQ), while in many others scRNA transcripts are only evident at looser thresholds and, correspondingly, fosmid-based reporter expression in these cells is often weak (Supplementary file 1; Gendrel et al., 2016). To investigate this matter further, we CRISPR/Cas9-engineered a gfp-based reporter allele for unc-47, syb7566, and first crossed it with an mCherry-based unc-47 fosmid-based reporter (otIs564) as a first-pass assessment for any obvious overlaps and mismatches of expression patterns between the two (Figure 5B, left side panels). The vast majority of neurons exhibited overlapping expression between syb7566 and otIs564. There were also many notable similarities in the robustness of expression of the fosmid-based reporter and the reporter allele (Supplementary file 1). In a few cases where the fosmid-based reporter expression was so dim that it is only detectable via antibody staining against its fluorophore (mCherry) (Gendrel et al., 2016; Serrano-Saiz et al., 2017b), the reporter allele expression was readily visible (Supplementary file 1).
+
+The very few mismatches of expression of the fosmid-based reporter and the reporter allele included the pharyngeal neuron M1, which expresses no visible unc-47(syb7566) reporter allele but weak fosmid-based reporter expression, and the pharyngeal neuron I1, which expresses dim syb7566 but no fosmid-based reporter (Figure 5B, right side panels). AVJ shows very dim and variable unc-47(syb7566) reporter allele expression but no fosmid-based reporter expression. Since AVJ stains with anti-GABA antibodies (Gendrel et al., 2016), this neuron likely engages in vesicular release of GABA, even though its source of GABA remains unclear since it neither expresses conventional GABA synthesis machinery (UNC-25/GAD) nor GABA uptake machinery (SNF-11). Other neurons previously shown to stain with anti-GABA antibodies and to express the unc-47 fosmid-based reporter (ALA and SMD) (Gendrel et al., 2016) still show expression of the unc-47 reporter allele.
 
 In addition, while the reporter allele of unc-47/VGAT, in conjunction with CeNGEN scRNA data, corroborates the notion that unc-47/VGAT is expressed in all GABA-synthesizing and most GABA uptake neurons, there is a substantial number of unc-47-positive neurons that do not show any evidence of GABA presence. This suggests that UNC-47/VGAT may transport another unidentified neurotransmitter (see Discussion) (Gendrel et al., 2016).
 
@@ -1037,7 +1038,7 @@ In addition, while the reporter allele of unc-47/VGAT, in conjunction with CeNGE
 
 In all GABA-synthesizing neurons, the UNC-47/VGAT protein requires the LAMP-like protein UNC-46 for proper localization (Schuske et al., 2007). A previously analyzed fosmid-based reporter confirmed unc-46/LAMP expression in all ‘classic’ GABAergic neurons (i.e. anti-GABA and unc-25/GAD-positive neurons), but also showed robust expression in GABA- and unc-47-negative neurons, such as RMD (Gendrel et al., 2016). This non-GABAergic neuron expression is confirmed by CeNGEN scRNA
 
-    Page 13
+## Page 13
 
 data (Taylor et al., 2021; Supplementary file 1). We generated an unc-46/LAMP reporter allele, syb7278, and found its expression to be largely similar to that of the fosmid-based reporter and to the scRNA data (Figure 5C, Supplementary file 1), therefore corroborating the non-GABAergic neuron expression of unc-46/LAMP. We also detected previously unreported expression in the PVW and PVN neurons in both the reporter allele and fosmid-based reporter (Figure 5C), thereby further corroborating CeNGEN data. In addition, we also detected very dim expression in PDA (Figure 5C), which shows no scRNA transcript reads (Supplementary file 1). With one exception (pharyngeal M2 neuron class), the sites of non-GABAergic neuron expression of unc-46/LAMP expression do not show any overlap with the sites of unc-47/VGAT expression, indicating that these two proteins have functions independent of each other.
 
@@ -1055,102 +1056,50 @@ As expected from the role of bas-1/AAAD in dopamine synthesis (Hare and Loer, 20
 
 The CeNGEN scRNA atlas shows transcripts for the rate-limiting enzyme of dopamine synthesis encoded by cat-2/TH (Figure 1B, Supplementary file 1) at all four threshold levels in all three previously described dopaminergic neuron classes in the hermaphrodite, ADE, PDE, and CEP (Sulston et al., 1975; Sulston et al., 1980; Lints and Emmons, 1999). At lower threshold levels, transcripts can also be detected in the OLL neurons. A CRISPR/Cas9-engineered reporter allele for cat-2/TH, syb8255, confirmed expression in ADE, PDE, and CEP in adult hermaphrodites (Figure 7A, Supplementary file
 
-    Page 14
+## Page 14
 
 # Figure 6. Expression of tph-1/TPH, bas-1/AAAD, and cat-1/VMAT reporter alleles in the adult hermaphrodite.
 
 (A) Dorsoventral view of a hermaphrodite head and midbody expressing tph-1(syb6451). tph-1 expression is detected robustly in the MI neuron and dimly and variably in VC4 and VC5. Neuron identities for MI and VC4 and VC5 were validated using otIs518\[eat-4(fosmid)::sl2::mCherry::h2b] and vsls269\[ida-1::mCherry], respectively, as
 
-|tph-1CRISPR::gfp|marker|MERGE|
-|-|-|-|
-|D/V view|eat-4fosmid::sl2::mCherry::h2b||
-|NSM||NSM|
-|ADF||ADF|
-|MI||MI|
-|MI||MI|
+|tph-1(syb6451)\[tph-1::gfp]|HERM HEAD|HERM MIDBODY|||||
+|-|-|-|-|-|-|-|
+|D/V view|marker|MERGE|vulval region ventral view|marker|MERGE||
+|NSM||NSM||HSN||HSN|
+|ADF||ADF||VC4||VC4|
+|MI||MI||VC5||VC5|
+|||HSN||HSN||HSN|
 
-|vulval region ventral view|ida-1p::mCherry||
-|-|-|-|
-|HSN||HSN|
-|VC4||VC4|
-|VC5||VC5|
-|HSN||HSN|
-|HSN||HSN|
+(B) Expression of bas-1(bas-1::gfp) in the adult hermaphrodite.
 
-|HERM HEAD|HERM MIDBODY||
-|-|-|-|
-|D/V view|PDE||
-|NSM||HSN|
-|URB||HSN|
-|CEPD||HSN|
-|ADF||HSN|
-|ADE||HSN|
-|CEPV||HSN|
-|NSM||HSN|
-|URB||HSN|
-|CEPD||HSN|
-|ADE||HSN|
-|CEPV||HSN|
-|NSM||HSN|
-|URB||HSN|
-|CEPD||HSN|
-|ADE||HSN|
-|CEPV||HSN|
-|NSM||HSN|
-|URB||HSN|
-|CEPD||HSN|
-|ADE||HSN|
-|CEPV||HSN|
+|bas-1(bas-1::gfp)|HERM HEAD|HERM MIDBODY|||||||||
+|-|-|-|-|-|-|-|-|-|-|-|
+|D/V view|marker|MERGE|D/V view|marker|MERGE||||||
+|NSM||NSM||NSM||HSN||HSN||HSN|
+|URB||URB||URB||HSN||HSN||HSN|
+|CEPD||CEPD||CEPD||PDE||PDE||PDE|
+|ADF||ADF||ADF||HSN||HSN||HSN|
+|ADE||ADE||ADE||PDE||PDE||PDE|
+|CEPV||CEPV||CEPV||HSN||HSN||HSN|
 
-|HERM HEAD|HERM MIDBODY||
-|-|-|-|
-|lateral view|lateral view||
-|CEPD||CAN|
-|ASI||CAN|
-|ADF||VC4|
-|RIM||HSN|
-|RIC||VC5|
-|CEPV||PDE|
-|RIH||PDE|
-|RIR||PDE|
-|AVL(+/-)||PDE|
-|NSML/R||VC4|
-|||HSN|
-|||VC5|
+(C) Expression of cat-1(cat-1::gfp) in the adult hermaphrodite.
 
-|HERM HEAD|HERM MIDBODY||
-|-|-|-|
-|lateral view|lateral view||
-|CEPD||CAN|
-|ASI||CAN|
-|ADF||VC4|
-|RIM||HSN|
-|RIC||VC5|
-|CEPV||PDE|
-|RIH||PDE|
-|RIR||PDE|
-|AVL||PDE|
-|NSML/R||VC4|
-|||HSN|
-|||VC5|
+|cat-1(cat-1::gfp)|HERM HEAD|HERM MIDBODY|||
+|-|-|-|-|-|
+|lateral view|lateral view||||
+|CEPD||CEPD||CAN|
+|ASI||ASI||CAN|
+|ADF||ADF||VC4|
+|RIM||RIM||HSN|
+|RIC||RIC||VC5|
+|AUA||AUA||PDE|
+|NSML/R||NSML/R||VC4|
+|CEPV||CEPV||HSN|
+|RIH||RIH||VC5|
+|RIR||RIR||PDE|
+|AVL(+/-)|AVL(+/-)||AVL||
 
-|HERM HEAD|HERM MIDBODY||
-|-|-|-|
-|lateral view|lateral view||
-|CEPD||CAN|
-|ASI||CAN|
-|ADF||VC4|
-|RIM||HSN|
-|RIC||VC5|
-|CEPV||PDE|
-|RIH||PDE|
-|RIR||PDE|
-|AVL||PDE|
-|NSML/R||VC4|
-|||HSN|
-|||VC5|
-
-    Page 15
+## Page 15
 
 Figure 6 continued
 landmarks. Inset, grayscale image highlighting dim expression in VC4. Larval expression of this reporter allele is shown in Figure 6—figure supplement 1. (B) Neuronal expression of bas-1(syb5923) characterized with the landmark NeuroPAL (otIs669) strain in the head and midbody regions of young adult hermaphrodites. Dorsoventral view of the adult head shows bas-1/AAAD expression in left-right neuron pairs, including previously reported expression in NSM, CEP, ADF, and ADE (Hare and Loer, 2004). Additionally, we observed previously unreported expression in the URB neurons. Non-neuronal bas-1/AAAD expression is detected in other non-neuronal cell types as reported previously (Yu et al., 2023; also see Figure 14—figure supplement 1, Figure 14). (C) Lateral views of young adult hermaphrodite head and midbody expressing cat-1/VMAT (syb6486). Previously unreported cat-1/VMAT expression is seen in RIR, CAN, AUA, ASI (also in inset), and variably, AVL. Non-neuronal expression of cat-1/VMAT is detected in a single midbody cell in the gonad (also see Figure 14—figure supplement 1), marked with an asterisk. Scale bars, 10 µm for all color images; 5 µm for the inset in grayscale.
@@ -1170,7 +1119,7 @@ As the vesicular monoamine transporter, cat-1/VMAT is expected to be expressed i
 
 In addition to these canonical monoaminergic neurons, the CeNGEN scRNA data shows cat-1/VMAT expression at all four threshold levels in RIR, CAN, AVM and, at a much lower threshold, eight additional neuron classes (Figure 1B, Supplementary file 1). Our cat-1/VMAT reporter allele, syb6486, corroborates expression in RIR and CAN, but not in AVM (Figure 6C, Supplementary file 2). We also observed expression of the cat-1 reporter allele in two of the neuron classes with scRNA transcripts at the lowest threshold level, ASI and variably, AVL (Figure 6C, Supplementary file 1). Interestingly, AVL does not express any other monoaminergic pathway genes (Supplementary file 2), therefore it
 
-    Page 16
+## Page 16
 
 Table 1. Neurons that uptake monoaminergic neurotransmitters.
 +: presence of reporter allele expression; -: lack of visible reporter allele expression; +/-: dim and variable expression (variability is only detected when reporter fluorescent intensity is low); m: anti-serotonin staining observed in males; \*: sex-specific neurons; \*\*: variable/very dim antibody staining reported in previous publications. \*\*\*N/A=not presently applicable because betaine is provided by diet, in addition to possible endogenous synthesis. See text for citations.
@@ -1197,7 +1146,7 @@ Table 1. Neurons that uptake monoaminergic neurotransmitters.
 |Tyramine|RIM|+|+|+|
 Table 1 continued on next page
 
-    Page 17
+## Page 17
 
 |Neuron|Uptake|Synthesis|Release|
 |-|-|-|-|
@@ -1233,7 +1182,7 @@ The *cat-1/VMAT* reporter allele revealed expression in an additional neuron cla
 
 In addition to or in lieu of synthesizing monoamines, neurons can uptake them from their surroundings. To investigate the cellular sites of monoamine uptake in more detail, we analyzed fluorescent protein expression from engineered reporter alleles for the uptake transporter of serotonin (*mod-5*/
 
-    Page 18
+## Page 18
 
 # eLife Tools and resources
 
@@ -1269,7 +1218,7 @@ Criteria for monoaminergic neurotransmitter assignment and a summary for neurons
 |5-HTP (synthesis) and 5-HT (alternative synthesis/uptake mechanism?)|+|+|-|-|-|-|-|-|-|5-HT||VC4-5\*|
 Table 2 continued on next page
 
-    Page 19
+## Page 19
 
 # eLife Tools and resources
 
@@ -1292,7 +1241,7 @@ In the hermaphrodite-specific neurons HSN, VC4, and VC5, we did not observe expr
 
 Biochemical studies in vertebrates have shown that the SLC22A1/2/3 (aka OCT-1/2/3) organic cation transporters can uptake monoaminergic neurotransmitters (Nigam, 2018), with SLC22A2 being apparently selective for tyramine (Berry et al., 2016). oct-1 is the ortholog of the OCT subclass of SLC22 family members (Zhu et al., 2015), but neither its expression nor function in the nervous system had been previously reported. We tagged the endogenous oct-1 locus with an sl2::gfp::h2b cassette (syb8870) and, within the nervous system, observed exclusive expression in the RIM neuron (Figure 8H and I), indicating that RIM is likely capable of uptaking tyramine in addition to synthesizing it via tdc-1/TDC. This is consistent with RIM being the only neuron showing oct-1 scRNA transcripts at all four threshold levels in the CeNGEN atlas (Supplementary file 1).
 
-    Page 20
+## Page 20
 
 # Figure 7. Expression of cat-2/TH, tdc-1/TDC, and tbh-1/TBH reporter alleles in the adult hermaphrodite. Neuronal expression was characterized with landmark strain NeuroPAL (otIs669). Lateral views of young adult hermaphrodites expressing reporter alleles for (A) cat-2(syb8255), (B) tbh-1(syb7786), and (C) tdc-1(syb7768). (A) cat-2/TH expression in CEP, ADE, and PDE match previously reported dopamine straining expression (Sulston et al., 1975). (B) and (C) Head areas are shown; no neuronal expression was detected in other areas. tdc-1 expression matches previous analysis (Alkema et al., 2005). We detected previously unreported expression of tbh-1 in all six IL2 neurons at low levels. Scale bars, 10 μm.
 
@@ -1320,9 +1269,7 @@ Biochemical studies in vertebrates have shown that the SLC22A1/2/3 (aka OCT-1/2/
 
 Notably, four CAT-1/VMAT-expressing neuron classes, CAN, AUA, RIR, and ASI, do not express biosynthetic enzymes for synthesis or uptake transporters of the four conventional monoaminergic transmitters known to be employed in C. elegans (serotonin, dopamine, octopamine, or tyramine). Hence, these neuron classes might instead synthesize or uptake another transmitter for ensuing synaptic
 
-Wang et al. eLife 2024;13:RP95402. DOI: https://doi.org/10.7554/eLife.95402    20 of 46
-
-    Page 21
+## Page 21
 
 # mod-5(vlc47\[mod-5::t2a::mNeonGreen]) I
 
@@ -1330,267 +1277,194 @@ Wang et al. eLife 2024;13:RP95402. DOI: https://doi.org/10.7554/eLife.95402    2
 
 ### mod-5^CRISPR ::mNG
 
-### HERMAPHRODITE
-
-### NeuroPAL
-
-### MERGE
-
-* HEAD
-  * NSM
-  * ADF
-  * AIM
-  * RIH
-* single focal plane
-  * URX
-* TAIL
-  * PHA
+#### HERMAPHRODITE
 
 ## B
 
 ### mod-5^CRISPR ::mNG
 
-### MALE
+#### MALE
 
-### NeuroPAL
-
-### MERGE
-
-* HEAD
-  * NSM
-  * CEMD
-  * AIM
-  * RIH
-  * CEMV
+* NSM
+* ADF
+* AIM
+* RIH
 * single focal plane
-  * URX
-* TAIL
-  * R9B(R/L)
-  * R3B
-  * PGA
-  * PHA
+* URX
+* PHA
+* R3B
+* R9B(R/L)
+* PGA
+* PHA
+* R3B
+* R9B(R/L)
+* PGA
+* PHA
+* R3B
+* R9B(R/L)
+* PGA
+* PHA
 
-## C
+* PHA
+* PHA
+* PHA
+* R3B
+* R9B(R/L)
+* PGA
+* PHA
+* R3B
+* R9B(R/L)
+* PGA
+* PHA
+* R3B
+* R9B(R/L)
+* PGA
+* PHA
 
 ### mod-5^CRISPR ::mNG
 
-### VNC
-
-### gut autofluorescence
-
-### MERGE with NeuroPAL
-
-## D
-
 ### mod-5^CRISPR ::mNG
-
-### VNC
-
-### MERGE with NeuroPAL
-
-## E
 
 ### mod-5^CRISPR ::mNG + DiD (for PHA & PHB)
-
-* YOUNG ADULT HERM
-  * PHB
-  * PHA
-* YOUNG ADULT MALE
-  * PHB
-  * PHA
-* L4 MALE
-  * PHB
-  * PHA
-
-## F
 
 ### expression of reporter alleles in ADF
 
 * mod-5^CRISPR ::mNG
-  - mNG intensity (a.u.)
-  - HERM
-  - MALE
-  - ***
 * tph-1^CRISPR ::gfp
-  * GFP intensity (a.u.)
-  * HERM
-  * MALE
-  * n.s.
 * unc-17^CRISPR ::gfp
-  * GFP intensity (a.u.)
-  * HERM
-  * MALE
-  * n.s.
-
-## G
 
 ### anti-5-HT immunostaining in the male tail
 
-* wild type
-  * CP5
-  * CP6
-  * R1B
-  * R3B
-  * PGA
-  * R9B
-* mod-5 mutant
-  * CP5
-  * CP6
-  * R1B
-  * R3B
-
-# oct-1(syb8870\[oct-1::sl2::gfp::h2b]) I
+## oct-1(syb8870\[oct-1::sl2::gfp::h2b]) I
 
 ## H
 
 ### oct-1^CRISPR ::gfp
 
-### HERMAPHRODITE
-
-### NeuroPAL
-
-### MERGE
+#### HERMAPHRODITE
 
 ## I
 
 ### oct-1^CRISPR ::gfp
 
-### MALE
-
-### NeuroPAL
-
-### MERGE
-
-## J
+#### MALE
 
 ### HERMAPHRODITE
 
-### MALE
-
 * head
-  * (BWM throughout body)
 * tail
-  * (BWM throughout body)
-
-## K
+* (BWM throughout body)
+* (BWM throughout body)
 
 ### oct-1^CRISPR ::gfp merge with non-neuronal markers
 
+* merge with hypodermal marker
 * HEAD
-  * merge with hypodermal marker
-    * oct-1^CRISPR ::gfp
-    * hyp
-    * hyp
-  * pan-glial marker
-    * ::gfp
-    * glia
-* MID
-  * ms
-  * ms
-* TAIL
-  * gonadal cells
-  * hyp
-  * gonadal cells
-  * hyp
+* glia
+* pan-glial marker
+* glia
 * MERGE
-  * glia
+* glia
 
 Figure 8. Expression of mod-5/SERT and oct-1/OCT reporter alleles in adult animals. Neuronal expression was characterized with landmark strain NeuroPAL (otIs669) and DiD-filling. (A, C) In adult hermaphrodites, mod-5(vlc47) is expressed in sex-shared neurons NSM, ADF, RIH, AIM, consistent with previous reports (Jafari et al., 2011; Maicas et al., 2021). In addition, we also observed expression in the phasmid neuron PHA and dim and variable expression in URX. There is no visible expression in the ventral nerve cord (VNC). (B, D) In adult males, mod-5(vlc47) is visibly expressed in NSM, RIH, AIM, as well as the male-specific neurons CEM, PGA, R3B, R9B, and CP1 to CP6. Expression in ADF is often not detected (see F). (E) DiD-filling confirms mod-5(vlc47) expression in phasmid neuron class PHA, and not PHB, in young adults in both sexes (L4 male image is to facilitate neuron ID in Figure 8 continued on next page
 
-    Page 22
+## Page 22
 
 # eLife Tools and resources
 
 adults, because the positions of the two neuron classes can change in males during the L4 to adult transition). (F) Expression of mod-5(vlc47) in ADF is stronger in hermaphrodites than in males. Each dot represents a single animal. Expression is not sexually dimorphic for the reporter alleles of either the serotonin-synthesizing enzyme `tph-1` or the vesicular acetylcholine transporter `unc-17`. Expression was normalized against expression in other reporter-expressing neurons. Statistics, Mann-Whitney test. (G) In the tail region of wild type males, male-specific neurons PGA, R1B, R3B, and R9B are stained positive for serotonin. In a mod-5(n3314) mutant background, staining is completely lost in PGA (41/41 stained animals) and significantly affected for R9B (completely lost in 31/41 animals and much dimmer in the rest), while it remains in all 41 stained animals for R1B and R3B. The staining for CP1 to CP6 are also not affected in mod-5 mutant animals (remaining in 41/41 stained animals; image showing CP5 and CP6). (H, I) In adult animals, oct-1(syb8870) is expressed in the tyraminergic neuron class RIM in both sexes. Expression is not observed in any other neurons. (J, K) Outside the nervous system, oct-1(syb8870) is expressed in body wall muscle (BWM) throughout the worm (J) as well as hypodermal cells and selected head glia (K). Expression is also observed in gonadal cells in the male vas deferens (K). A pan-glial reporter `otIs870[mir-228p::3xnls::TagRFP]` and a `dpy-7p::mCherry` reporter `stIs10166 [dpy-7p::his-24::mCherry+unc-119(+)]` were used for glial and hypodermal identification, respectively. Scale bars, 10 µm.
 
-release via CAT-1/VMAT. We considered the putative neurotransmitter betaine as a possible candidate, since CAT-1/VMAT is also able to package betaine (`Peden et al., 2013; Hardege et al., 2022`). Betaine is synthesized endogenously, within the nervous system mostly in the cat-1/VMAT-positive RIM neuron (`Hardege et al., 2022`), but it is also available in the bacterial diet of *C. elegans* (`Peden et al., 2013`). In vertebrates, dietary betaine is taken up by the betaine transporter BGT1 (aka SLC6A12). To test whether cat-1/VMAT-positive neurons may acquire betaine via BGT1-mediated uptake, we CRISPR/Cas9-engineered a reporter allele for `snf-3/BGT1`, `syb7290`. We detected expression in the betaine-synthesizing (and also tyraminergic) RIM neuron (Figure 9, Tables 1 and 2). In addition, `snf-3` is indeed expressed in all the four cat-1/VMAT-positive neuron classes that do not synthesize a previously known monoaminergic transmitter (CAN, AUA, and variably, RIR and ASI) (Figure 9A and B). These neurons may therefore take up betaine and synaptically release it via CAT-1/VMAT. The `snf-3(syb7290)` reporter allele is also expressed in the serotonergic neuron NSM (albeit variably) (Tables 1 and 2), thus NSM could also be a betaine uptake neuron. In addition, we also detected `snf-3(syb7290)` expression in several other neurons that do not express `cat-1(syb6486)` (Supplementary file 1). Expression was also observed in a substantial number of non-neuronal cell types (Figure 9E–G, Table 2, Supplementary file 1). These neurons and non-neuronal cells may serve to clear betaine (see Discussion, Neurotransmitter synthesis versus uptake). `snf-3(syb7290)` is not expressed in the inner and outer labial neuron classes as previously suggested (`Peden et al., 2013`); these cells were likely misidentified in the previous study and are in fact inner and outer labial glial cells (as discussed further below).
+release via CAT-1/VMAT. We considered the putative neurotransmitter betaine as a possible candidate, since CAT-1/VMAT is also able to package betaine (*Peden et al., 2013; Hardege et al., 2022*). Betaine is synthesized endogenously, within the nervous system mostly in the cat-1/VMAT-positive RIM neuron (*Hardege et al., 2022*), but it is also available in the bacterial diet of *C. elegans* (*Peden et al., 2013*). In vertebrates, dietary betaine is taken up by the betaine transporter BGT1 (aka SLC6A12). To test whether cat-1/VMAT-positive neurons may acquire betaine via BGT1-mediated uptake, we CRISPR/Cas9-engineered a reporter allele for `snf-3/BGT1`, `syb7290`. We detected expression in the betaine-synthesizing (and also tyraminergic) RIM neuron (*Figure 9, Tables 1 and 2*). In addition, `snf-3` is indeed expressed in all the four cat-1/VMAT-positive neuron classes that do not synthesize a previously known monoaminergic transmitter (CAN, AUA, and variably, RIR and ASI) (*Figure 9A and B*). These neurons may therefore take up betaine and synaptically release it via CAT-1/VMAT. The `snf-3(syb7290)` reporter allele is also expressed in the serotonergic neuron NSM (albeit variably) (*Tables 1 and 2*), thus NSM could also be a betaine uptake neuron. In addition, we also detected `snf-3(syb7290)` expression in several other neurons that do not express `cat-1(syb6486)` (*Supplementary file 1*). Expression was also observed in a substantial number of non-neuronal cell types (*Figure 9E–G, Table 2, Supplementary file 1*). These neurons and non-neuronal cells may serve to clear betaine (see Discussion, Neurotransmitter synthesis versus uptake). `snf-3(syb7290)` is not expressed in the inner and outer labial neuron classes as previously suggested (*Peden et al., 2013*); these cells were likely misidentified in the previous study and are in fact inner and outer labial glial cells (as discussed further below).
 
-Together with the expression pattern of the uptake transporters, all cat-1/VMAT-positive neurons in the hermaphrodite can be matched with an aminergic neurotransmitter. We nevertheless wondered whether another presently unknown monoaminergic transmitter, e.g., histamine or other trace amine, could be synthesized by a previously uncharacterized AAAD enzyme encoded in the *C. elegans* genome, `hdl-1` (Figure 1—figure supplement 1A; `Hare and Loer, 2004`). We CRISPR/Cas9-engineered an `hdl-1` reporter allele, `syb1048`, but detected no expression of this reporter in the animal (Figure 1—figure supplement 1C and D). Attempts to amplify weak expression signals by insertion of Cre recombinase into the locus failed \[`hdl-1(syb4208)`] (see Materials and methods). CeNGEN scRNA data also shows no strong transcript expression in the hermaphrodite nervous system and only detected notable expression in sperm (`Taylor et al., 2021`).
+Together with the expression pattern of the uptake transporters, all cat-1/VMAT-positive neurons in the hermaphrodite can be matched with an aminergic neurotransmitter. We nevertheless wondered whether another presently unknown monoaminergic transmitter, e.g., histamine or other trace amine, could be synthesized by a previously uncharacterized AAAD enzyme encoded in the *C. elegans* genome, `hdl-1` (*Figure 1—figure supplement 1A; Hare and Loer, 2004*). We CRISPR/Cas9-engineered an `hdl-1` reporter allele, `syb1048`, but detected no expression of this reporter in the animal (*Figure 1—figure supplement 1C and D*). Attempts to amplify weak expression signals by insertion of Cre recombinase into the locus failed \[`hdl-1(syb4208)`] (see Materials and methods). CeNGEN scRNA data also shows no strong transcript expression in the hermaphrodite nervous system and only detected notable expression in sperm (*Taylor et al., 2021*).
 
 ## Reporter alleles and NeuroPAL-facilitated neuron class-identification reveal novel expression patterns of neurotransmitters in the male-specific nervous system
 
-No comprehensive scRNA atlas has yet been reported for the nervous system of the male. Based on the expression of fosmid-based reporters, we had previously assembled a neurotransmitter atlas of the *C. elegans* male nervous system in which individual neuron classes are notoriously difficult to identify (`Serrano-Saiz et al., 2017b`). We have since established a NeuroPAL landmark strain that permits more reliable identification of gene expression patterns in both the hermaphrodite and male-specific nervous system (`Tekieli et al., 2021; Yemini et al., 2021`). We used NeuroPAL to facilitate the analysis of the expression profiles of our CRISPR/Cas9-engineered reporter alleles in the male, resulting in updated expression profiles for 11 of the 16 knock-in reporter alleles analyzed. As in the hermaphrodite, reasons for these updates vary. In addition to the improved accuracy of neuron identification
+No comprehensive scRNA atlas has yet been reported for the nervous system of the male. Based on the expression of fosmid-based reporters, we had previously assembled a neurotransmitter atlas of the *C. elegans* male nervous system in which individual neuron classes are notoriously difficult to identify (*Serrano-Saiz et al., 2017b*). We have since established a NeuroPAL landmark strain that permits more reliable identification of gene expression patterns in both the hermaphrodite and male-specific nervous system (*Tekieli et al., 2021; Yemini et al., 2021*). We used NeuroPAL to facilitate the analysis of the expression profiles of our CRISPR/Cas9-engineered reporter alleles in the male, resulting in updated expression profiles for 11 of the 16 knock-in reporter alleles analyzed. As in the hermaphrodite, reasons for these updates vary. In addition to the improved accuracy of neuron identification
 
-    Page 23
+## Page 23
 
 # snf-3(syb7290\[snf-3::tagRFP::sl2::gfp::h2b]) II
 
 ## HERMAPHRODITE
 
-### A
-
-* **snf-3^CRISPR ::gfp NeuroPAL MERGE**
-  * **HEAD**
-    * AIB
-    * RIM
+* **A**
+  * `snf-3^CRISPR::gfp` NeuroPAL MERGE
+    * AIB RIM
     * AUA
-  * **TAIL**
-    * RIR
-    * RMH
+    * RIR RMH
     * SMD
-* **snf-3^CRISPR ::gfp DiD MERGE**
-  * ASI (+/-)
-* **snf-3^CRISPR ::gfp NeuroPAL MERGE**
-  * VA12
-  * PDA
-  * DA9
-  * PVN
-  * PHC
-
-## B
-
-## C
-
-* **snf-3^CRISPR ::gfp NeuroPAL MERGE**
-  * **TAIL**
-    * PDA
-    * DA9
+    * `snf-3^CRISPR::gfp` DiD MERGE
+      * ASI (+/-)
+      * ASI
+    * `snf-3^CRISPR::gfp` NeuroPAL MERGE
+      * VA12 PDA
+      * DA9
+      * PVN
+      * PHC
+* **B**
+  * `snf-3^CRISPR::gfp`
+    * CAN
+  * VULVA AREA
+* **C**
+  * `snf-3^CRISPR::gfp` NeuroPAL MERGE
+    * PDA DA9
     * PDC
-    * VA12
-    * PVV
-    * PVX
+    * VA12 PVX PVY
     * (-)
     * DVB
-    * PHD
     * PVN
+    * PHD
     * PHC
+  * TAIL
+* **D**
+  * `snf-3^CRISPR::gfp`
+    * CAN
+  * MIDBODY
+    * `snf-3^CRISPR::gfp` + NeuroPAL
+      * PDEso/sh
+      * PDE (no snf-3)
 
 ## MALE
 
-### D
-
-* **snf-3^CRISPR ::gfp**
-  * **MIDBODY**
-    * CAN
-    * PDEso/sh
-    * PDE (no snf-3)
-* **snf-3^CRISPR ::gfp + NeuroPAL**
-
-## E
-
-* **snf-3^CRISPR ::gfp**
-  * **TAIL**
+* **E**
+  * `snf-3^CRISPR::gfp`
     * SPso/sh
-    * somatic gonad
     * dorsal view
+    * somatic gonad
     * ventral view
+  * TAIL
 
 ## F
 
 * **HERM HEAD**
-  * glia
+  * `snf-3^CRISPR::gfp`
+    * glia
+  * pan-neuronal
+    * glia
+  * MERGE
+    * (no overlap)
 * **HERM TAIL**
-  * hyp
-  * glia
-  * hyp
+  * `snf-3^CRISPR::gfp`
+    * hyp
+    * glia
+    * hyp
+    * hyp
+    * hyp
+  * pan-neuronal
+    * hyp
+    * glia
+    * hyp
+  * MERGE
+    * (no overlap)
 * **MALE TAIL**
-  * glia
-  * hyp
-  * glia
-* **pan-neuronal snf-3^CRISPR ::gfp**
-  * **MERGE**
-    * (no overlap)
-    * (no overlap)
+  * `snf-3^CRISPR::gfp`
+    * glia
+    * glia
+    * glia
+  * pan-neuronal
+    * glia
+  * MERGE
     * (no overlap)
 
 ## G
@@ -1600,29 +1474,9 @@ No comprehensive scRNA atlas has yet been reported for the nervous system of the
 * **MALE**
   * hypodermal and seam cells
 
-|Cell type|Expression in hermaphrodite|Expression in male|
-|-|-|-|
-|AIB|+|+|
-|RIM|+|+|
-|AUA|+|+|
-|CAN|+|+|
-|RIR|+|+|
-|RMH|+|+|
-|SMD|+|+|
-|VA12|+|+|
-|DA9|+|+|
-|PDA|+|+|
-|PHC|+|+|
-|PVN|+|+|
-|DiD|+|+|
-|PDE|-|-|
-|PDC|-|+|
-|PHD|-|+|
-|PVV|-|+|
+Figure 9. Expression of snf-3/BGT1/SLC6A12 in adult animals. Neuronal expression was characterized with landmark strain NeuroPAL (otIs669) and DiD-filling. (A, B) In the adult hermaphrodite, neuronal expression of snf-3(syb7290) is detected in cat-1/VMAT-positive neurons AUA, CAN, and dimly and variably, RIR and ASI (confirmed with DiD-filling). In addition, it is also expressed in cat-1/VMAT-negative neurons AIB, RIM, RMH, SMD, VA12, DA9, PDA, PHC, PVN as labeled, as well as more neurons listed in Supplementary file 1. In the midbody, expression is not detected in PDE (dopaminergic, cat-1-positive) but is in its associated glial cells. It is also detected in multiple vulval support cells (B) and some epithelial cells near the somatic gonad. (C) In the adult male, in addition to its expression in sex-shared neurons as in hermaphrodites, snf-3(syb7290) is also expressed in male-specific neuron class PDC, as well as in PHD and variably in PVV. (D) Similarly to its expression in hermaphrodites, snf-3(syb7290) is detected in CAN and PDE-associated glial cells, but not PDE neurons, in males. (E) In the male tail, snf-3(syb7290) is expressed in a number of glial cells including the spicule sockets and/or sheath cells (dorsal view). It is also detected in the somatic gonad (ventral view). (F) snf-3(syb7290) is broadly expressed in most if not all glia in both sexes. Glial cell type is determined by cell location and the appearance of their nuclei in Normarski. To confirm they are not neurons, a pan-neuronal marker (UPN, or 'uber pan-neuronal', a component in NeuroPAL) is used to determine non-overlapping signals between the two reporters. Head expression in Figure 9 continued on next page
 
-**Figure 9.** Expression of *snf-3/BGT1/SLC6A12* in adult animals. Neuronal expression was characterized with landmark strain NeuroPAL (*otIs669*) and DiD-filling. (A, B) In the adult hermaphrodite, neuronal expression of *snf-3(syb7290)* is detected in cat-1/VMAT-positive neurons AUA, CAN, and dimly and variably, RIR and ASI (confirmed with DiD-filling). In addition, it is also expressed in cat-1/VMAT-negative neurons AIB, RIM, RMH, SMD, VA12, DA9, PDA, PHC, PVN as labeled, as well as more neurons listed in *Supplementary file 1*. In the midbody, expression is not detected in PDE (dopaminergic, cat-1-positive) but is in its associated glial cells. It is also detected in multiple vulval support cells (B) and some epithelial cells near the somatic gonad. (C) In the adult male, in addition to its expression in sex-shared neurons as in hermaphrodites, *snf-3(syb7290)* is also expressed in male-specific neuron class PDC, as well as in PHD and variably in PVV. (D) Similarly to its expression in hermaphrodites, *snf-3(syb7290)* is detected in CAN and PDE-associated glial cells, but not PDE neurons, in males. (E) In the male tail, *snf-3(syb7290)* is expressed in a number of glial cells including the spicule sockets and/or sheath cells (dorsal view). It is also detected in the somatic gonad (ventral view). (F) *snf-3(syb7290)* is broadly expressed in most if not all glia in both sexes. Glial cell type is determined by cell location and the appearance of their nuclei in Normarski. To confirm they are not neurons, a pan-neuronal marker (UPN, or 'uber pan-neuronal', a component in NeuroPAL) is used to determine non-overlapping signals between the two reporters. Head expression in Figure 9 continued on next page
-
-    Page 24
+## Page 24
 
 Figure 9 continued
 the male is very similar to that in the hermaphrodite and thus not shown. (G) snf-3(syb7290) is broadly expressed in hypodermal and seam cells in both sexes. Scale bars, 10 µm. Asterisks, non-neuronal expression.
@@ -1643,7 +1497,7 @@ In the head, we detected expression of unc-47(syb7566) in the male-specific neur
 
 We analyzed the expression of reporter alleles for genes involved in monoamine biosynthesis and uptake in the male-specific nervous system: cat-1/VMAT (syb6486), tph-1/TPH (syb6451), cat-2/TH (syb8255), bas-1/AAAD (syb5923), tdc-1/TDC (syb7768), tbh-1/TBH (syb7786), mod-5/SERT (vlc47), oct-1/OCT (syb8870), and snf-3/BGT1 (syb7290). As in the hermaphrodite nervous system, we used the NeuroPAL reporter landmark (otIs669) for neuron ID (Tekieli et al., 2021). We found novel expression patterns in all male-specific ganglia (Figures 12 and 13, Supplementary file 3).
 
-    Page 25
+## Page 25
 
 # Figure 10. Expression of eat-4/VGLUT and unc-17/VAChT reporter alleles in the adult male. Neuronal expression of eat-4(syb4257) and unc-17(syb4491) was characterized with landmark strain NeuroPAL (otIs696 and otIs669, respectively). Only selected neurons are shown to illustrate updates from previous studies. See Supplementary file 3 for a complete list of neurons. (A) eat-4(syb4257) expression. Top, long panels: CA1, CA2, and CA3 show
 
@@ -1655,9 +1509,10 @@ We analyzed the expression of reporter alleles for genes involved in monoamine b
   * eat-4^CRISPR ::gfp
   * NeuroPAL
   * MERGE
-* **CA1**
-* **CA2**
-* **CA3**
+* **ventral view**
+  * eat-4^CRISPR ::gfp
+  * NeuroPAL
+  * MERGE
 
 ## B
 
@@ -1667,43 +1522,31 @@ We analyzed the expression of reporter alleles for genes involved in monoamine b
   * unc-17^CRISPR ::gfp
   * NeuroPAL
   * MERGE
-* **CA1**
-* **CP1**
-* **CA2**
-* **CP2**
-* **CA3**
-* **CP3**
-
-### MALE TAIL
-
 * **ventral view**
   * unc-17^CRISPR ::gfp
   * NeuroPAL
   * MERGE
-* **R1B**
-* **R4B**
-* **R5B**
-* **R7B**
-* **R9B**
-* **DX3/4**
+
+### MALE TAIL
+
+* **lateral view**
+  * unc-17^CRISPR ::gfp
+  * NeuroPAL
+  * MERGE
+* **ventral view**
+  * unc-17^CRISPR ::gfp
+  * NeuroPAL
+  * MERGE
 
 ## C
 
-|P2-derived|P3-derived|P4-derived|P5-derived|P6-derived|P7-derived|P8-derived|P9-derived|P10-derived|P11-derived||
+|CACP|P2-derivedCA1unc-17unc-47eat-4CP0eat-4unc-475-HT(+)|P3-derivedCA2unc-17unc-47eat-4CP1unc-17unc-475-HT(+)|P4-derivedCA3unc-17unc-47eat-4CP2unc-17unc-475-HT(+)|P5-derivedCA4unc-17unc-47eat-4CP3unc-17unc-475-HT(+)|P6-derivedCA5unc-17unc-47CP4unc-17unc-475-HT(+)|P7-derivedCA6unc-17unc-47eat-4CP5eat-4unc-475-HT(+)|P8-derivedCA7unc-17CP6eat-4unc-475-HT(+)|P9-derivedCA8unc-17unc-47CP9CP7unc-17unc-475-HT(+)|P10-derivedCA9unc-17CP8unc-17unc-475-HT(+)|P11-derivedCP9GABA(+)|
 |-|-|-|-|-|-|-|-|-|-|-|
-|CA|CA1|CA2|CA3|CA4|CA5|CA6|CA7|CA8|CA9||
-||unc-17|unc-17|unc-17|unc-17|unc-17|unc-17|unc-17|unc-17|unc-17|unc-17|
-||unc-47|unc-47|unc-47|unc-47|unc-47|unc-47|eat-4|unc-47|||
-|CP|CP0|eat-4|eat-4|eat-4|eat-4|CP5|CP6|CP7|CP8|CP9|
-||CP1|CP2|CP3|CP4|||||||
-|eat-4|unc-17|unc-17|unc-17|unc-17|eat-4|eat-4|unc-17|unc-17|GABA(+)||
-||unc-47|unc-47|unc-47|unc-47|unc-47|unc-47|unc-47|unc-47|||
-||5-HT(+)|5-HT(+)|5-HT(+)|5-HT(+)|5-HT(+)|5-HT(+)|5-HT(+)|5-HT(+)|||
 
-    Page 26
+## Page 26
 
 Figure 10 continued
-visible, albeit very dim, novel expression of eat-4 (also expressed in CA4). Bottom panels: CA7 strongly expresses eat-4(syb4257), whereas CP7 does not. Neuron IDs for these two neurons were previously switched (Serrano-Saiz et al., 2017b). (B) unc-17(syb4491) expression. Top, long panels: ventral view of a male ventral nerve cord showing high levels of expression in CA1, CA2, and CA3 and previously unreported low levels of expression in CP1, CP2, and CP3. Middle panels: low levels of expression in CA7 and CP7. There is no visible expression in CP9. Bottom panels: lateral view of a male tail showing previously unreported dim expression in R1B, R4B, R5B, R7B, and R9B; ventral view of the preanal ganglion showing expression in DX3/4. Scale bars, 10 µm. (C) The updated neurotransmitter atlas underscores the molecular diversity of the male-specific ventral cord neuron class CA and CP. Based on their expression patterns for neurotransmitter genes, these neurons can be grouped into four CA and five CP subclasses.
+visible, albeit very dim, novel expression of eat-4 (also expressed in CA4). Bottom panels: CA7 strongly expresses eat-4(syb4257), whereas CP7 does not. Neuron IDs for these two neurons were previously switched (Serrano-Saiz et al., 2017b). (B) unc-17(syb4491) expression. Top, long panels: ventral view of a male ventral nerve cord showing high levels of expression in CA1, CA2, and CA3 and previously unreported low levels of expression in CP1, CP2, and CP3. Middle panels: low levels of expression in CA7 and CP7. There is no visible expression in CP9. Bottom panels: lateral view of a male tail showing previously unreported dim expression in R1B, R4B, R5B, R7B, and R9B; ventral view of the preanal ganglion showing expression in DX3/4. Scale bars, 10 μm. (C) The updated neurotransmitter atlas underscores the molecular diversity of the male-specific ventral cord neuron class CA and CP. Based on their expression patterns for neurotransmitter genes, these neurons can be grouped into four CA and five CP subclasses.
 
 ## Serotonin/5-HT synthesis
 
@@ -1723,138 +1566,133 @@ We detected no neurons in addition to the sex-shared RIC neuron class that share
 
 Curiously, while there are no other male-specific neurons that co-express tdc-1 and tbh-1, several male-specific neurons express tbh-1, but not tdc-1 (Figure 13B and C; Table 2, Supplementary file 3). The absence of the TDC-1/AAAD protein, which produces tyramine, the canonical substrate of the
 
-    Page 27
+## Page 27
 
 # Figure 11. Expression of GABAergic reporter alleles in the adult male. Neuronal expression of unc-25(ot1372) and unc-47(syb7566) reporter alleles was characterized with landmark strain NeuroPAL (otIs669). Only selected neurons are shown to illustrate updates from previous reports. See Supplementary file 3 for a complete list of neurons. (A) unc-25(ot1372) is expressed in male-specific CP9 and EF neurons as well as a few sex-shared neurons, all consistent with previous reports (Gendrel et al., 2016; Serrano-Saiz et al., 2017b). (B) unc-47(syb7566) shows expression in male head
 
 ## A
 
-### unc-25(ot1372\[unc-25::t2a::gfp::h2b]) III
-
-#### MALE TAIL
-
-* lateral view
-* **unc-25^CRISPR::gfp**
-  * EF1/2
-  * EF1/2
-  * EF3/4
-  * VD13
-  * VD12
-  * DD6
-  * CP9
-  * VD11
-* **NeuroPAL**
-  * EF1/2
-  * EF1/2
-  * EF3/4
-  * VD13
-  * VD12
-  * DD6
-  * CP9
-  * VD11
-* **MERGE**
-  * EF1/2
-  * EF1/2
-  * EF3/4
-  * VD13
-  * VD12
-  * DD6
-  * CP9
-  * VD11
+unc-25(ot1372\[unc-25::t2a::gfp::h2b]) III
+MALE TAIL
+lateral view
+unc-25^CRISPR::gfp
+NeuroPAL
+MERGE
+EF1/2
+DVB
+EF1/2
+EF3/4
+VD13
+VD12
+DD6
+CP9
+VD11
+EF1/2
+DVB
+EF1/2
+EF3/4
+VD13
+VD12
+DD6
+CP9
+VD11
+EF1/2
+DVB
+EF1/2
+EF3/4
+VD13
+VD12
+DD6
+CP9
+VD11
 
 ## B
 
-### unc-47(syb7566\[unc-47::sl2::gfp::h2b]) III
-
-#### MALE HEAD
-
-* **unc-47^CRISPR::gfp**
-  * MCM
-* **NeuroPAL**
-  * MCM
-  * AMso (landmark)
-* **MERGE**
-  * MCM
-  * AMso (landmark)
-* **unc-47^CRISPR::gfp**
-  * CEMD
-  * CEMV
-* **NeuroPAL**
-  * CEMD
-  * CEMV
-* **MERGE**
-  * CEMD
-  * CEMV
+unc-47(syb7566\[unc-47::sl2::gfp::h2b]) III
+MALE HEAD
+unc-47^CRISPR::gfp
+NeuroPAL
+MERGE
+MCM
+MCM
+MCM
+AMso
+(landmark)
+CEMD
+CEMD
+CEMD
+CEMV
+CEMV
+CEMV
 
 ## C
 
-### MALE VENTRAL NERVE CORD (ventral view)
+MALE VENTRAL NERVE CORD (ventral view)
+unc-47^CRISPR::gfp
+Neuro PAL
+MERGE
+CA1
+CP1
+CA2
+CP2
+CA3
+CP3
+CA1
+CP1
+CA2
+CP2
+CA3
+CP3
+CA1
+CP1
+CA2
+CP2
+CA3
+CP3
+CA4
+CP4
+CA5
+CP5
+CA6
+CP6
+CA4
+CP4
+CA5
+CP5
+CA6
+CP6
+CA4
+CP4
+CA5
+CP5
+CA6
+CP6
+CA7(-)
+CP7
+CA8
+CP8
+CP9
+CA9(-)
+R2A
+R9B
+CA7
+CP7
+CA8
+CP8
+CP9
+CA9
+R2A
+R9B
+CA7
+CP7
+CA8
+CP8
+CP9
+CA9
+R2A
+R9B
 
-* **unc-47^CRISPR::gfp**
-  * CA1
-  * CP1
-  * CA2
-  * CP2
-  * CA3
-  * CP3
-  * CA4
-  * CP4
-  * CA5
-  * CP5
-  * CA6
-  * CP6
-  * CA7(-)
-  * CP7
-  * CA8
-  * CP8
-  * CA9(-)
-  * CP9
-  * R2A
-  * R9B
-* **Neuro PAL**
-  * CA1
-  * CP1
-  * CA2
-  * CP2
-  * CA3
-  * CP3
-  * CA4
-  * CP4
-  * CA5
-  * CP5
-  * CA6
-  * CP6
-  * CA7
-  * CP7
-  * CA8
-  * CP8
-  * CA9
-  * CP9
-  * R2A
-  * R9B
-* **MERGE**
-  * CA1
-  * CP1
-  * CA2
-  * CP2
-  * CA3
-  * CP3
-  * CA4
-  * CP4
-  * CA5
-  * CP5
-  * CA6
-  * CP6
-  * CA7
-  * CP7
-  * CA8
-  * CP8
-  * CA9
-  * CP9
-  * R2A
-  * R9B
-
-    Page 28
+## Page 28
 
 # eLife Tools and resources
 
@@ -1876,13 +1714,13 @@ In the male-specific nervous system, we detected *mod-5/SERT* reporter allele ex
 
 We did not observe *oct-1(syb8870)* reporter allele expression in male-specific neurons. As in the hermaphrodite nervous system, we detected *snf-3(syb7290)* in a number of neurons that do not express CAT-1/VMAT (Supplementary file 1), including in male-specific neurons PHD, and variably, PVV (Figure 9C). As mentioned earlier, the male-specific neuron PDC expresses both *cat-1(syb6486)* and *snf-3(syb7290)*, making it a likely betaine-signaling neuron.
 
-    Page 29
+## Page 29
 
 # eLife Tools and resources
 
 ## Figure 12. Expression of the cat-1/VMAT, tph-1/TPH, and bas-1/AAAD reporter alleles in the adult male. Neuronal expression was characterized with landmark strain NeuroPAL (otIs669). (A) Novel cat-1(syb6486) expression is seen in male-specific neurons PDC, PVY, PVX, R2A, and R4B. Consistent with previous reports, it is also expressed in HOA, PGA, R5A, R7A, R9A, R1B, and R8B. Its expression in ventral cord neurons CP1 to CP6 is consistent with earlier studies. (B) tph-1(syb6451) is expressed in male-specific head neuron class CEM and sex-shared neurons ADF, NSM, and MI. Similar to its expression in hermaphrodites, tph-1 in MI was previously undetected. In the tail, in addition to previously determined expression in R1B, R3B, and R9B,
 
-    Page 30
+## Page 30
 
 Figure 12 continued
 tph-1(syb6451) is also expressed at very low levels in R4B and R7B. Ventral cord expression of tph-1(syb6451) in CP1 to CP6 is consistent with previous reports and thus not shown here. (C) bas-1(syb5923) is expressed in previously identified NSM, ADE, PDE, and CEP neurons. In addition, we detected weak expression in URB as in the hermaphrodite. We also updated bas-1/AAAD expression in 39 male-specific neurons (see Supplementary file 3 for complete list). Neurons are also shown in grayscale for clearer visualization in some cases. Scale bars, 10 µm. Asterisks, non-neuronal expression, also see Figure 14 and Figure 14—figure supplement 1.
@@ -1907,27 +1745,134 @@ unc-47(syb7566) confirms previously reported sexually dimorphic expression of un
 
 Expression of the mod-5(vlc47) reporter allele is sexually dimorphic in the pheromone-sensing ADF neurons, with higher levels in hermaphrodites compared to males (Figure 8F). Notably, the
 
-    Page 31
+## Page 31
 
-# A
+# eLife Tools and resources
 
-## MALE TAIL
+## A
 
-# B
+### MALE TAIL
 
-## MALE HEAD
+* D/V view
+  * R5A(L)
+  * R5A(R)
+  * R7A(L)
+  * R7A(R)
+  * R9A(L)
+  * R9A(R)
 
-## MALE TAIL
+* NeuroPAL
+  * R5A(L)
+  * R5A(R)
+  * R7A(L)
+  * R7A(R)
+  * R9A(L)
+  * R9A(R)
 
-# C
+* MERGE
+  * R5A(L)
+  * R5A(R)
+  * R7A(L)
+  * R7A(R)
+  * R9A(L)
+  * R9A(R)
 
-## MALE HEAD
+## B
 
-## MALE TAIL
+### MALE HEAD
+
+### MALE TAIL
+
+* D/V view
+  * R7A
+  * R8A(R)
+  * R8B
+  * R8A(L)
+  * HOA
+
+* NeuroPAL
+  * R7A
+  * R8A(R)
+  * R8B
+  * R8A(L)
+  * HOA
+
+* MERGE
+  * R7A
+  * R8A(R)
+  * R8B
+  * R8A(L)
+  * HOA
+
+## C
+
+### MALE HEAD
+
+* lateral view
+  * IL2D
+  * IL2(L)
+  * IL2V
+  * CEMD
+  * CEMV
+  * RIC
+
+### MALE TAIL
+
+* R1B
+
+* R2B
+
+* R4B
+
+* R7B
+
+* R9B
+
+* R8B
+
+* R3B
+
+* R5B
+
+* HOB
+
+* NeuroPAL
+  * IL2D
+  * IL2(L)
+  * IL2V
+  * CEMD
+  * CEMV
+  * RIC
+  * R1B
+  * R2B
+  * R4B
+  * R7B
+  * R9B
+  * R8B
+  * R3B
+  * R5B
+  * HOB
+
+* MERGE
+  * IL2D
+  * IL2(L)
+  * IL2V
+  * CEMD
+  * CEMV
+  * RIC
+  * R1B
+  * R2B
+  * R4B
+  * R7B
+  * R9B
+  * R8B
+  * R3B
+  * R5B
+  * HOB
 
 Figure 13. Expression of cat-2/TH, tdc-1/TDC, and tbh-1/TBH reporter alleles in the adult male. Neuronal expression was characterized with landmark strain NeuroPAL (otIs669). (A) cat-2(syb8255) is expressed in male-specific neurons R4A, R7A, and R9B. This expression, as well as its expression in sex-shared neurons PDE, CEP, and ADE, is consistent with previous reports (Sulston et al., 1975; Sulston et al., 1980; Lints and Emmons, 1999). (B) tdc-1(syb7768) is expressed in sex-shared neurons RIM and RIC and male-specific neurons HOA, R8A, and R8B, all consistent with previous studies (Serrano-Saiz et al., 2017b). We also detected weak expression in R7A. (C) tbh-1(syb7786) is expressed in RIC, consistent with its previously reported expression in hermaphrodites. As in hermaphrodites, we also detected tbh-1(syb7786) in IL2 neurons of the male. In male-specific neurons, previously unreported expression is detected in CEM, HOB, and all type B ray neurons except for R6B. Intriguingly, this expression pattern resembles that of pkd-2 and lov-1, both genes essential for male mating functions (Barr and Sternberg, 1999; Barr et al., 2001). Inset, grayscale image showing dim expression for IL2 neurons. Scale bars, 10 µm. Asterisks, non-neuronal expression, also see Figure 14 and Figure 14—figure supplement 1.
 
-    Page 32
+## Page 32
 
 serotonin-synthesizing enzyme (*tph-1*) and vesicular acetylcholine transporter (*unc-17*) do not exhibit this dimorphism in ADF (Figure 8F). This suggests that the sex difference specifically involves serotonin signaling mechanisms, particularly serotonin uptake rather than synthesis.
 
@@ -1947,7 +1892,7 @@ There is, however, abundant evidence for neurotransmitter uptake by *C. elegans*
 
 We detected expression of a few neurotransmitter pathway genes in cells outside the nervous system. The most prominent sites of reporter allele expression are located within the gonad. We detected expression of *tdc-1(syb7768)* and *tbh-1(syb7786)* reporter alleles in the gonad of hermaphrodite as well as *tdc-1(syb7768)* expression in the neuroendocrine uv1 cells (Figure 14C; Figure 14—figure supplement 1), as previously reported (Alkema et al., 2005). Intriguingly, while *cat-1(syb6486)*
 
-    Page 33
+## Page 33
 
 # eLife Tools and resources
 
@@ -1957,7 +1902,7 @@ The online version of this article includes the following figure supplement(s) f
 
 Figure supplement 1. Whole-worm images showing monoaminergic pathway gene expression in different tissue types.
 
-    Page 34
+## Page 34
 
 is expressed in a midbody gonadal cell posterior to the vulva, likely the distal valve (Figure 6C, Figure 14—figure supplement 1), we observed no expression of cat-1(syb6486) in the gonad or the uv1 cells (Figure 14C). This suggests alternative release mechanisms for tyramine and octopamine. A vertebrate homolog of the putative tyramine uptake transporter, oct-1, has been found to be located presynaptically and to co-purify with synaptosomes (Berry et al., 2016; Matsui et al., 2016), therefore indicating that this transporter may have the potential to also act in tyramine release, at least in vertebrate cells. However, we observed no expression of our oct-1 reporter allele in uv1 or gonadal cells.
 
@@ -1973,7 +1918,7 @@ Using CRISPR/Cas9-engineered reporter alleles we have refined and extended neuro
 
 Direct detection of neurotransmitters through antibody staining has shown that at least two neurotransmitters, GABA and serotonin, are present in some neurons that do not express the synthesis machinery for these transmitters (Tables 1 and 2). Instead, these neurons acquire GABA and serotonin through uptaking them via defined uptake transporters, SNF-11/BGT1 for GABA (Mullen et al., 2006) and MOD-5/SERT for serotonin (Ranganathan et al., 2001; Jafari et al., 2011). A combination of CeNGEN scRNA transcriptome and our reporter allele data corroborates the absence of synthesis machinery in these presumptive uptake neurons (Tables 1 and 2). One interesting question that relates to these uptake neurons is whether they serve as ‘sinks’ for clearance of a neurotransmitter or whether the taken-up neurotransmitter is subsequently ‘recycled’ for synaptic release via a vesicular transporter. Previous data, as well as our updated expression profiles, provide evidence for both scenarios: ALA and AVF do not synthesize GABA via UNC-25/GAD, but they stain with anti-GABA antibodies in a manner that is dependent on the uptake transporter SNF-11 (Gendrel et al., 2016). ALA expresses unc-47, hence it is likely to synaptically release GABA, but AVF does not, and it is therefore apparently involved only in GABA clearance. Similarly, RIH, AIM, and PGA express the serotonin uptake transporter mod-5/SERT and stain for serotonin in a MOD-5-dependent manner
 
-    Page 35
+## Page 35
 
 # eLife Tools and resources
 
@@ -1991,7 +1936,7 @@ Lastly, based on sequence similarity and expression pattern, we predict that the
 
 unc-47/VGAT is expressed in a substantial number of non-GABAergic neurons (95 out of 302 total neurons in hermaphrodites, plus 61 out of 93 male-specific neurons). However, expression in many of these non-GABAergic neurons is low and variable and such expression may not lead to sufficient amounts of a functional gene product. Yet, in some neurons (e.g. the SIA neurons) expression of unc-47 is easily detectable and robust (based on fosmid-based reporter, reporter allele, and scRNA data), indicating that VGAT may transport another presently unknown neurotransmitter (Gendrel et al., 2016). In vertebrates, VGAT transports both GABA and glycine, and the same is observed for UNC-47 in vitro (Aubrey et al., 2007). While the C. elegans genome encodes no easily recognizable ortholog of known ionotropic glycine receptors, it does encode anion channels that are closely related by primary sequence (Hobert, 2013). Moreover, a recently identified metabotropic glycine receptor, GPR158 (Laboute et al., 2023), has a clear sequence ortholog in C. elegans, F39B2.8. Therefore, glycine may also act as a neurotransmitter in C. elegans. VGAT has also been shown to transport β-alanine (Juge et al., 2013), another potential, but as yet unexplored, neurotransmitter in C. elegans. However, it needs to be pointed out that most of the additional unc-47-positive neurons do not co-express the LAMP-type UNC-46 protein, which is important for sorting UNC-47/VGAT to synaptic vesicles in conventional GABAergic neurons (Schuske et al., 2007). In vertebrates, the functional UNC-46 ortholog LAMP5 is only expressed and required for VGAT transport in a subset of VGAT-positive, GABAergic neurons (Tiveron et al., 2016; Koebis et al., 2019), indicating that alternative vesicular sorting mechanisms exist for UNC-47/VGAT.
 
-    Page 36
+## Page 36
 
 # Novel monoaminergic transmitters?
 
@@ -2009,7 +1954,7 @@ We identified neurons that do not express any conventional, well-characterized v
 
 That said, electron microscopy shows that some of the neurons devoid of conventional neurotransmitter pathway genes generate synapses with small, clear synaptic vesicles, indicative of the use of non-peptidergic transmitters (e.g. the sex-shared RMG and PVM neurons or the male-specific SPD neurons) (White et al., 1986; Cook et al., 2019; Witvliet et al., 2021). It is therefore conceivable that either conventional neurotransmitters utilize non-conventional neurotransmitter synthesis and/or release pathways, or that completely novel neurotransmitter systems remain to be discovered. Although the C. elegans genome does not encode additional members of the SLC18A2/3 (cat-1/VMAT, unc-17/VAChT) or SLC32A1 (unc-47/VGAT) family of vesicular neurotransmitter transporters, it does contain a number of additional members of the SLC17A6/7/8 (VGLUT) family (Hobert, 2013).
 
-    Page 37
+## Page 37
 
 These may serve as non-canonical vesicular transporters of more uncommon neurotransmitters or, alternatively, may be involved in modulating release of glutamate (Serrano-Saiz et al., 2020; Choi et al., 2021). Uncharacterized paralogs of bona fide neurotransmitter uptake transporters (SLC6 superfamily) may also have functions in neurotransmitter release rather than uptake. However, based on CeNGEN scRNA data, no robust or selective expression of these SLC17 or SLC6 family members is observed in these ‘orphan neurons’.
 
@@ -2031,7 +1976,7 @@ Neurotransmitter uptake is a classic function of glial cells across animal phylo
 
 Studies in vertebrates have also suggested that specific glial cell types synthesize and release several neurotransmitters (Araque et al., 2014; Savtchouk and Volterra, 2018). For example,
 
-    Page 38
+## Page 38
 
 # eLife Tools and resources
 
@@ -2047,7 +1992,9 @@ Our analysis also provides an unprecedented and systematic comparison of antibod
 
 Our detailed analysis of reporter allele expression has uncovered several cases where expression of a neurotransmitter pathway gene in a given neuron class appears very low and variable from animal to animal. Such variability only exists when expression is dim, thus one possible explanation for it is that expression levels merely hover around an arbitrary microscopical detection limit. However, we cannot rule out the other possibility that this may also reflect true on/off variability of gene expression. Taking this notion a step further, we cannot exclude the possibility that expression observed with reporter alleles misses sites of expression. This possibility is raised by our inability to detect unc-25/GAD reporter allele expression in AMsh glia (Duan et al., 2020; Fernandez-Abascal et al., 2022) or eat-4 reporter allele expression in AVL and DVB neurons, in which some (but not other) multicopy
 
-    Page 39
+## Page 39
+
+# eLife Tools and resources
 
 reporter transgenes revealed expression of the respective genes (*Li et al., 2023*). Functions of these genes in the respective cell types were corroborated by cell-type-specific RNAi experiments and/or rescue experiments; whether there is indeed very low expression of these genes in those respective cells or whether drivers used in these studies for knock-down and/or rescue produce very low expression in other functionally relevant cells remains to be resolved.
 
@@ -2081,7 +2028,7 @@ Reporter alleles generated in this study:
 
 Since we did not detect fluorophore signals in the hdl-1(syb1048\[hdl-1::gfp]) strain, we attempted to amplify low-level signals, by inserting Cre recombinase at the C-terminus of the hdl-1 locus (hdl-1(syb4208\[hdl-1::t2a::3xnls::cre])). We crossed this strain to the recently published ‘Flexon’ strain (arTi361\[rps-27p::gfp"flexon"-h2b::unc-54–3'UTR]) (*Shaffer and Greenwald, 2022*). Even low expression of hdl-1 should have led to Cre-mediated excision of the flexon stop cassette, which is designed to abrogate gene expression by a translational stop and frameshift mutation, and subsequently can
 
-    Page 40
+## Page 40
 
 result in strong and sustained gfp expression under the control of the rps-27 promoter and thereby providing information about cell-specific hdl-1 expression. However, no robust, consistent reporter expression was seen in hdl-1(syb4208\[hdl-1::t2a::3xnls::cre]); arTi361\[rps-27p::gfp"flexon"-h2b::unc-54–3'UTR] animals.
 
@@ -2117,7 +2064,7 @@ All newly generated strains are available at the Caenorhabditis Genetics Center 
 
 We thank Chi Chen for generating nematode strains. We thank Emily Bayer, James Rand, Piali Sengupta, and Esther Serrano-Saiz for comments on the manuscript, Frank Schroeder and Marie Gendrel for discussion and communicating unpublished results, Aakanksha Singhvi for discussing glia scRNA data and Michael Koelle for an ida-1 reporter strain. Some strains were provided by the CGC, which is funded by NIH Office of Research Infrastructure Programs (P40 OD010440). This work was funded by the Howard Hughes Medical Institute and by NIH R01 NS039996.
 
-    Page 41
+## Page 41
 
 # Additional information
 
@@ -2165,53 +2112,33 @@ Chen Wang, Conceptualization, Data curation, Formal analysis, Investigation, Vis
 
 All data generated or analysed during this study are included in the manuscript and supporting files.
 
-    Page 42
+## Page 42
 
 # References
 
-Alfonso A, Grundahl K, McManus JR, Asbury JM, Rand JB. 1994. Alternative splicing leads to two cholinergic proteins in *Caenorhabditis elegans*. *Journal of Molecular Biology* **241**:627–630. DOI:
+* Alfonso A, Grundahl K, McManus JR, Asbury JM, Rand JB. 1994. Alternative splicing leads to two cholinergic proteins in *Caenorhabditis elegans*. *Journal of Molecular Biology* **241**:627–630. DOI: , PMID: 8057385
+* Alhajeri MM, Alkhanjari RR, Hodeify R, Khraibi A, Hamdan H. 2022. Neurotransmitters, neuropeptides and calcium in oocyte maturation and early development. *Frontiers in Cell and Developmental Biology* **10**:980219. DOI: , PMID: 36211465
+* Alkema MJ, Hunter-Ensor M, Ringstad N, Horvitz HR. 2005. Tyramine Functions independently of octopamine in the *Caenorhabditis elegans* nervous system. *Neuron* **46**:247–260. DOI: , PMID: 15848803
+* Araque A, Carmignoto G, Haydon PG, Oliet SHR, Robitaille R, Volterra A. 2014. Gliotransmitters travel in time and space. *Neuron* **81**:728–739. DOI: , PMID: 24559669
+* Aubrey KR, Rossi FM, Ruivo R, Alboni S, Bellenchi GC, Le Goff A, Gasnier B, Supplisson S. 2007. The transporters GlyT2 and VIAAT cooperate to determine the vesicular glycinergic phenotype. *The Journal of Neuroscience* **27**:6273–6281. DOI: , PMID: 17554001
+* Barr MM, Sternberg PW. 1999. A polycystic kidney-disease gene homologue required for male mating behaviour in *C. elegans*. *Nature* **401**:386–389. DOI: , PMID: 10517638
+* Barr MM, DeModena J, Braun D, Nguyen CQ, Hall DH, Sternberg PW. 2001. The *Caenorhabditis elegans* autosomal dominant polycystic kidney disease gene homologs lov-1 and pkd-2 act in the same pathway. *Current Biology* **11**:1341–1346. DOI: , PMID: 11553327
+* Berry MD, Hart S, Pryor AR, Hunter S, Gardiner D. 2016. Pharmacological characterization of a high-affinity p-tyramine transporter in rat brain synaptosomes. *Scientific Reports* **6**:38006. DOI: , PMID: 27901065
+* Breidert T, Spitzenberger F, Gründemann D, Schömig E. 1998. Catecholamine transport by the organic cation transporter type 1 (OCT1). *British Journal of Pharmacology* **125**:218–224. DOI: , PMID: 9776363
+* Cheng H, Chen D, Li X, Al-Sheikh U, Duan D, Fan Y, Zhu L, Zeng W, Hu Z, Tong X, Zhao G, Zhang Y, Zou W, Duan S, Kang L. 2024. Phasic/tonic glial GABA differentially transduce for olfactory adaptation and neuronal aging. *Neuron* **112**:1473–1486. DOI: , PMID: 38447577
+* Choi JH, Horowitz LB, Ringstad N. 2021. Opponent vesicular transporters regulate the strength of glutamatergic neurotransmission in a *C. elegans* sensory circuit. *Nature Communications* **12**:6334. DOI: , PMID: 34732711
+* Cook SJ, Jarrell TA, Brittin CA, Wang Y, Bloniarz AE, Yakovlev MA, Nguyen KCQ, Tang LT-H, Bayer EA, Duerr JS, Bülow HE, Hobert O, Hall DH, Emmons SW. 2019. Whole-animal connectomes of both *Caenorhabditis elegans* sexes. *Nature* **571**:63–71. DOI: , PMID: 31270481
+* Davis P, Zarowiecki M, Arnaboldi V, Becerra A, Cain S, Chan J, Chen WJ, Cho J, da Veiga Beltrame E, Diamantakis S, Gao S, Grigoriadis D, Grove CA, Harris TW, Kishore R, Le T, Lee RYN, Luypaert M, Müller H-M, Nakamura C, et al. 2022. WormBase in 2022-data, processes, and tools for analyzing *Caenorhabditis elegans*. *Genetics* **220**:iyac003. DOI: , PMID: 35134929
+* de Ceglia R, Ledonne A, Litvin DG, Lind BL, Carriero G, Latagliata EC, Bindocci E, Di Castro MA, Savtchouk I, Vitali I, Ranjak A, Congiu M, Canonica T, Wisden W, Harris K, Mameli M, Mercuri N, Telley L, Volterra A. 2023. Specialized astrocytes mediate glutamatergic gliotransmission in the CNS. *Nature* **622**:120–129. DOI: , PMID: 37674083
+* Deng B, Li Q, Liu X, Cao Y, Li B, Qian Y, Xu R, Mao R, Zhou E, Zhang W, Huang J, Rao Y. 2019. Chemoconnectomics: Mapping chemical transmission in *Drosophila*. *Neuron* **101**:876–893. DOI: , PMID: 30799021
+* Duan D, Zhang H, Yue X, Fan Y, Xue Y, Shao J, Ding G, Chen D, Li S, Cheng H, Zhang X, Zou W, Liu J, Zhao J, Wang L, Zhao B, Wang Z, Xu S, Wen Q, Liu J, et al. 2020. Sensory glia detect repulsive odorants and drive olfactory adaptation. *Neuron* **108**:707–721. DOI: , PMID: 32970991
+* Duerr JS, Frisby DL, Gaskin J, Duke A, Asermely K, Huddleston D, Eiden LE, Rand JB. 1999. The cat-1 gene of *Caenorhabditis elegans* encodes a vesicular monoamine transporter required for specific monoamine-dependent behaviors. *The Journal of Neuroscience* **19**:72–84. DOI: , PMID: 9870940
+* Duerr JS, Gaskin J, Rand JB. 2001. Identified neurons in *C. elegans* coexpress vesicular transporters for acetylcholine and monoamines. *American Journal of Physiology. Cell Physiology* **280**:C1616–C1622. DOI: , PMID: 11350757
+* Duerr JS, Han HP, Fields SD, Rand JB. 2008. Identification of major classes of cholinergic neurons in the nematode *Caenorhabditis elegans*. *The Journal of Comparative Neurology* **506**:398–408. DOI: , PMID: 18041778
+* Eastman C, Horvitz HR, Jin Y. 1999. Coordinated transcriptional regulation of the UNC-25 glutamic acid decarboxylase and the UNC-47 GABA vesicular transporter by the *Caenorhabditis elegans* UNC-30 homeodomain protein. *The Journal of Neuroscience* **19**:6225–6234. DOI: , PMID: 10414952
+* Eckstein N, Bates AS, Champion A, Du M, Yin Y, Schlegel P, Lu AK-Y, Rymer T, Finley-May S, Paterson T, Parekh R, Dorkenwald S, Matsliah A, Yu S-C, McKellar C, Sterling A, Eichler K, Costa M, Seung S, Murthy M,
 
-Alhajeri MM, Alkhanjari RR, Hodeify R, Khraibi A, Hamdan H. 2022. Neurotransmitters, neuropeptides and calcium in oocyte maturation and early development. *Frontiers in Cell and Developmental Biology* **10**:980219. DOI:
-
-Alkema MJ, Hunter-Ensor M, Ringstad N, Horvitz HR. 2005. Tyramine Functions independently of octopamine in the *Caenorhabditis elegans* nervous system. *Neuron* **46**:247–260. DOI:
-
-Araque A, Carmignoto G, Haydon PG, Oliet SHR, Robitaille R, Volterra A. 2014. Gliotransmitters travel in time and space. *Neuron* **81**:728–739. DOI:
-
-Aubrey KR, Rossi FM, Ruivo R, Alboni S, Bellenchi GC, Le Goff A, Gasnier B, Supplisson S. 2007. The transporters GlyT2 and VIAAT cooperate to determine the vesicular glycinergic phenotype. *The Journal of Neuroscience* **27**:6273–6281. DOI:
-
-Barr MM, Sternberg PW. 1999. A polycystic kidney-disease gene homologue required for male mating behaviour in *C. elegans*. *Nature* **401**:386–389. DOI:
-
-Barr MM, DeModena J, Braun D, Nguyen CQ, Hall DH, Sternberg PW. 2001. The *Caenorhabditis elegans* autosomal dominant polycystic kidney disease gene homologs lov-1 and pkd-2 act in the same pathway. *Current Biology* **11**:1341–1346. DOI:
-
-Berry MD, Hart S, Pryor AR, Hunter S, Gardiner D. 2016. Pharmacological characterization of a high-affinity p-tyramine transporter in rat brain synaptosomes. *Scientific Reports* **6**:38006. DOI:
-
-Breidert T, Spitzenberger F, Gründemann D, Schömig E. 1998. Catecholamine transport by the organic cation transporter type 1 (OCT1). *British Journal of Pharmacology* **125**:218–224. DOI:
-
-Cheng H, Chen D, Li X, Al-Sheikh U, Duan D, Fan Y, Zhu L, Zeng W, Hu Z, Tong X, Zhao G, Zhang Y, Zou W, Duan S, Kang L. 2024. Phasic/tonic glial GABA differentially transduce for olfactory adaptation and neuronal aging. *Neuron* **112**:1473–1486. DOI:
-
-Choi JH, Horowitz LB, Ringstad N. 2021. Opponent vesicular transporters regulate the strength of glutamatergic neurotransmission in a *C. elegans* sensory circuit. *Nature Communications* **12**:6334. DOI:
-
-Cook SJ, Jarrell TA, Brittin CA, Wang Y, Bloniarz AE, Yakovlev MA, Nguyen KCQ, Tang LT-H, Bayer EA, Duerr JS, Bülow HE, Hobert O, Hall DH, Emmons SW. 2019. Whole-animal connectomes of both *Caenorhabditis elegans* sexes. *Nature* **571**:63–71. DOI:
-
-Davis P, Zarowiecki M, Arnaboldi V, Becerra A, Cain S, Chan J, Chen WJ, Cho J, da Veiga Beltrame E, Diamantakis S, Gao S, Grigoriadis D, Grove CA, Harris TW, Kishore R, Le T, Lee RYN, Luypaert M, Müller H-M, Nakamura C, et al. 2022. WormBase in 2022-data, processes, and tools for analyzing *Caenorhabditis elegans*. *Genetics* **220**:iyac003. DOI:
-
-de Ceglia R, Ledonne A, Litvin DG, Lind BL, Carriero G, Latagliata EC, Bindocci E, Di Castro MA, Savtchouk I, Vitali I, Ranjak A, Congiu M, Canonica T, Wisden W, Harris K, Mameli M, Mercuri N, Telley L, Volterra A. 2023. Specialized astrocytes mediate glutamatergic gliotransmission in the CNS. *Nature* **622**:120–129. DOI:
-
-Deng B, Li Q, Liu X, Cao Y, Li B, Qian Y, Xu R, Mao R, Zhou E, Zhang W, Huang J, Rao Y. 2019. Chemoconnectomics: Mapping chemical transmission in *Drosophila*. *Neuron* **101**:876–893. DOI:
-
-Duan D, Zhang H, Yue X, Fan Y, Xue Y, Shao J, Ding G, Chen D, Li S, Cheng H, Zhang X, Zou W, Liu J, Zhao J, Wang L, Zhao B, Wang Z, Xu S, Wen Q, Liu J, et al. 2020. Sensory glia detect repulsive odorants and drive olfactory adaptation. *Neuron* **108**:707–721. DOI:
-
-Duerr JS, Frisby DL, Gaskin J, Duke A, Asermely K, Huddleston D, Eiden LE, Rand JB. 1999. The cat-1 gene of *Caenorhabditis elegans* encodes a vesicular monoamine transporter required for specific monoamine-dependent behaviors. *The Journal of Neuroscience* **19**:72–84. DOI:
-
-Duerr JS, Gaskin J, Rand JB. 2001. Identified neurons in *C. elegans* coexpress vesicular transporters for acetylcholine and monoamines. *American Journal of Physiology. Cell Physiology* **280**:C1616–C1622. DOI:
-
-Duerr JS, Han HP, Fields SD, Rand JB. 2008. Identification of major classes of cholinergic neurons in the nematode *Caenorhabditis elegans*. *The Journal of Comparative Neurology* **506**:398–408. DOI:
-
-Eastman C, Horvitz HR, Jin Y. 1999. Coordinated transcriptional regulation of the UNC-25 glutamic acid decarboxylase and the UNC-47 GABA vesicular transporter by the *Caenorhabditis elegans* UNC-30 homeodomain protein. *The Journal of Neuroscience* **19**:6225–6234. DOI:
-
-Eckstein N, Bates AS, Champion A, Du M, Yin Y, Schlegel P, Lu AK-Y, Rymer T, Finley-May S, Paterson T, Parekh R, Dorkenwald S, Matsliah A, Yu S-C, McKellar C, Sterling A, Eichler K, Costa M, Seung S, Murthy M,
-
-    Page 43
+## Page 43
 
 et al. 2024. Neurotransmitter classification from electron microscopy images at synaptic sites in Drosophila melanogaster. Cell 187:2574–2594. DOI:
 
@@ -2278,57 +2205,35 @@ Li Y, Chitturi J, Yu B, Zhang Y, Wu J, Ti P, Hung W, Zhen M, Gao S. 2023. UBR-1 
 , PMID: 37811674
 Lints R, Emmons SW. 1999. Patterning of dopaminergic neurotransmitter identity among Caenorhabditis elegans ray sensory neurons by a TGFbeta family signaling pathway and a Hox gene. Development 126:5819–5831. DOI:
 
-    Page 44
+## Page 44
 
 # Neuroscience
 
-Liu X, Long F, Peng H, Aerni SJ, Jiang M, Sánchez-Blanco A, Murray JI, Preston E, Mericle B, Batzoglou S, Myers EW, Kim SK. 2009. Analysis of cell fate from single-cell gene expression profiles in C. elegans. *Cell* **139**:623–633. DOI:
+* Liu X, Long F, Peng H, Aerni SJ, Jiang M, Sánchez-Blanco A, Murray JI, Preston E, Mericle B, Batzoglou S, Myers EW, Kim SK. 2009. Analysis of cell fate from single-cell gene expression profiles in *C. elegans*. *Cell* **139**:623–633. DOI: , PMID: 19879847
+* Loer CM, Kenyon CJ. 1993. Serotonin-deficient mutants and male mating behavior in the nematode *Caenorhabditis elegans*. *The Journal of Neuroscience* **13**:5407–5417. DOI: , PMID: 8254383
+* Maicas M, Jimeno-Martín Á, Millán-Trejo A, Alkema MJ, Flames N. 2021. The transcription factor LAG-1/CSL plays a Notch-independent role in controlling terminal differentiation, fate maintenance, and plasticity of serotonergic chemosensory neurons. *PLOS Biology* **19**:e3001334. DOI: , PMID: 34232959
+* Matsui T, Nakata T, Kobayashi Y. 2016. Localization of organic cation transporter 2 (OCT2) in monoaminergic and cholinergic axon terminals of the mouse brain. *Neuroscience Letters* **633**:118–124. DOI: , PMID: 27651065
+* Mayerhofer A, Frungieri MB, Bulling A, Fritz S. 1999. Sources and function of neuronal signalling molecules in the gonads. *Medicina* **59**:542–545. PMID: 10684155
+* McCarthy MM, Davis AM, Mong JA. 1997. Excitatory neurotransmission and sexual differentiation of the brain. *Brain Research Bulletin* **44**:487–495. DOI: 00230-x), PMID: 9370215
+* McIntire SL, Jorgensen E, Kaplan J, Horvitz HR. 1993. The GABAergic nervous system of *Caenorhabditis elegans*. *Nature* **364**:337–341. DOI: , PMID: 8332191
+* McIntire SL, Reimer RJ, Schuske K, Edwards RH, Jorgensen EM. 1997. Identification and characterization of the vesicular GABA transporter. *Nature* **389**:870–876. DOI: , PMID: 9349821
+* Mondal S, Hegarty E, Sahn JJ, Scott LL, Gökçe SK, Martin C, Ghorashian N, Satarasinghe PN, Iyer S, Sae-Lee W, Hodges TR, Pierce JT, Martin SF, Ben-Yakar A. 2018. High-content microfluidic screening platform used to identify σ2R/Tmem97 binding ligands that reduce age-dependent neurodegeneration in *C. elegans* SC\_APP model. *ACS Chemical Neuroscience* **9**:1014–1026. DOI: , PMID: 29426225
+* Mullen GP, Mathews EA, Saxena P, Fields SD, McManus JR, Moulder G, Barstead RJ, Quick MW, Rand JB. 2006. The *Caenorhabditis elegans* snf-11 gene encodes a sodium-dependent GABA transporter required for clearance of synaptic GABA. *Molecular Biology of the Cell* **17**:3021–3030. DOI: , PMID: 16641366
+* Nance J, Frokjaer-Jensen C. 2019. The *Caenorhabditis elegans* transgenic toolbox. *Genetics* **212**:959–990. DOI: 
+* Nigam SK. 2018. The SLC22 transporter family: A paradigm for the impact of drug transporters on metabolic pathways, signaling, and disease. *Annual Review of Pharmacology and Toxicology* **58**:663–687. DOI: , PMID: 29309257
+* Nonet ML, Grundahl K, Meyer BJ, Rand JB. 1993. Synaptic function is impaired but not eliminated in *C. elegans* mutants lacking synaptotagmin. *Cell* **73**:1291–1305. DOI: 90357-v), PMID: 8391930
+* Peden AS, Mac P, Fei Y-J, Castro C, Jiang G, Murfitt KJ, Miska EA, Griffin JL, Ganapathy V, Jorgensen EM. 2013. Betaine acts on a ligand-gated ion channel in the nervous system of the nematode *C. elegans*. *Nature Neuroscience* **16**:1794–1801. DOI: , PMID: 24212673
+* Pereira L, Kratsios P, Serrano-Saiz E, Sheftel H, Mayo AE, Hall DH, White JG, LeBoeuf B, Garcia LR, Alon U, Hobert O. 2015. A cellular and regulatory map of the cholinergic nervous system of *C. elegans*. *eLife* **4**:e12432. DOI: , PMID: 26705699
+* Pereira L, Aeschimann F, Wang C, Lawson H, Serrano-Saiz E, Portman DS, Großhans H, Hobert O. 2019. Timing mechanism of sexually dimorphic nervous system differentiation. *eLife* **8**:e42078. DOI: , PMID: 30599092
+* Pertel R, Wilson SH. 1974. Histamine content of the nematode, *Caenorhabditis elegans*. *Comparative and General Pharmacology* **5**:83–85. DOI: 80011-x), PMID: 4617652
+* Purice MD, Quitevis EJA, Manning RS, Severs LJ, Tran NT. 2023. Molecular Heterogeneity of *C. elegans* Glia across Sexes. *bioRxiv*. DOI: 
+* Ramírez-Reveco A, Villarroel-Espíndola F, Rodríguez-Gil JE, Concha II. 2017. Neuronal signaling repertoire in the mammalian sperm functionality. *Biology of Reproduction* **96**:505–524. DOI: , PMID: 28339693
+* Rand JB, Nonet ML. 1997. Neurotransmitter assignments for specific neurons. Riddle DL, Blumenthal T, Meyer BJ, Priess JR (Eds). *C.elegans II*. Cold Spring Harbor Laboratory Press. p. 1049–1052.
+* Ranganathan R, Sawin ER, Trent C, Horvitz HR. 2001. Mutations in the *Caenorhabditis elegans* serotonin reuptake transporter MOD-5 reveal serotonin-dependent and -independent activities of fluoxetine. *The Journal of Neuroscience* **21**:5871–5884. DOI: , PMID: 11487610
+* Reilly MB, Tekieli T, Cros C, Aguilar GR, Lao J, Toker IA, Vidal B, Leyva-Díaz E, Bhattacharya A, Cook SJ, Smith JJ, Kovacevic I, Gulez B, Fernandez RW, Bradford EF, Ramadan YH, Kratsios P, Bao Z, Hobert O. 2022. Widespread employment of conserved *C. elegans* homeobox genes in neuronal identity specification. *PLOS Genetics* **18**:e1010372. DOI: , PMID: 36178933
+* Ripoll-Sánchez L, Watteyne J, Sun H, Fernandez R, Taylor SR, Weinreb A, Bentley BL, Hammarlund M, Miller DM, Hobert O, Beets I, Vértes PE, Schafer WR. 2023. The neuropeptidergic connectome of *C. elegans*. *Neuron* **111**:3570–3589. DOI: , PMID: 37935195
 
-Loer CM, Kenyon CJ. 1993. Serotonin-deficient mutants and male mating behavior in the nematode *Caenorhabditis elegans*. *The Journal of Neuroscience* **13**:5407–5417. DOI:
-
-Maicas M, Jimeno-Martín Á, Millán-Trejo A, Alkema MJ, Flames N. 2021. The transcription factor LAG-1/CSL plays a Notch-independent role in controlling terminal differentiation, fate maintenance, and plasticity of serotonergic chemosensory neurons. *PLOS Biology* **19**:e3001334. DOI:
-
-Matsui T, Nakata T, Kobayashi Y. 2016. Localization of organic cation transporter 2 (OCT2) in monoaminergic and cholinergic axon terminals of the mouse brain. *Neuroscience Letters* **633**:118–124. DOI:
-
-Mayerhofer A, Frungieri MB, Bulling A, Fritz S. 1999. Sources and function of neuronal signalling molecules in the gonads. *Medicina* **59**:542–545. PMID: 10684155
-
-McCarthy MM, Davis AM, Mong JA. 1997. Excitatory neurotransmission and sexual differentiation of the brain. *Brain Research Bulletin* **44**:487–495. DOI:
-
-McIntire SL, Jorgensen E, Kaplan J, Horvitz HR. 1993. The GABAergic nervous system of *Caenorhabditis elegans*. *Nature* **364**:337–341. DOI:
-
-McIntire SL, Reimer RJ, Schuske K, Edwards RH, Jorgensen EM. 1997. Identification and characterization of the vesicular GABA transporter. *Nature* **389**:870–876. DOI:
-
-Mondal S, Hegarty E, Sahn JJ, Scott LL, Gökçe SK, Martin C, Ghorashian N, Satarasinghe PN, Iyer S, Sae-Lee W, Hodges TR, Pierce JT, Martin SF, Ben-Yakar A. 2018. High-content microfluidic screening platform used to identify σ2R/Tmem97 binding ligands that reduce age-dependent neurodegeneration in C. elegans SC\_APP model. *ACS Chemical Neuroscience* **9**:1014–1026. DOI:
-
-Mullen GP, Mathews EA, Saxena P, Fields SD, McManus JR, Moulder G, Barstead RJ, Quick MW, Rand JB. 2006. The *Caenorhabditis elegans* snf-11 gene encodes a sodium-dependent GABA transporter required for clearance of synaptic GABA. *Molecular Biology of the Cell* **17**:3021–3030. DOI:
-
-Nance J, Frokjaer-Jensen C. 2019. The *Caenorhabditis elegans* transgenic toolbox. *Genetics* **212**:959–990. DOI:
-
-Nigam SK. 2018. The SLC22 transporter family: A paradigm for the impact of drug transporters on metabolic pathways, signaling, and disease. *Annual Review of Pharmacology and Toxicology* **58**:663–687. DOI:
-
-Nonet ML, Grundahl K, Meyer BJ, Rand JB. 1993. Synaptic function is impaired but not eliminated in C. elegans mutants lacking synaptotagmin. *Cell* **73**:1291–1305. DOI:
-
-Peden AS, Mac P, Fei Y-J, Castro C, Jiang G, Murfitt KJ, Miska EA, Griffin JL, Ganapathy V, Jorgensen EM. 2013. Betaine acts on a ligand-gated ion channel in the nervous system of the nematode C. elegans. *Nature Neuroscience* **16**:1794–1801. DOI:
-
-Pereira L, Kratsios P, Serrano-Saiz E, Sheftel H, Mayo AE, Hall DH, White JG, LeBoeuf B, Garcia LR, Alon U, Hobert O. 2015. A cellular and regulatory map of the cholinergic nervous system of C. elegans. *eLife* **4**:e12432. DOI:
-
-Pereira L, Aeschimann F, Wang C, Lawson H, Serrano-Saiz E, Portman DS, Großhans H, Hobert O. 2019. Timing mechanism of sexually dimorphic nervous system differentiation. *eLife* **8**:e42078. DOI:
-
-Pertel R, Wilson SH. 1974. Histamine content of the nematode, Caenorhabditis elegans. *Comparative and General Pharmacology* **5**:83–85. DOI:
-
-Purice MD, Quitevis EJA, Manning RS, Severs LJ, Tran NT. 2023. Molecular Heterogeneity of C. elegans Glia across Sexes. *bioRxiv*. DOI:
-
-Ramírez-Reveco A, Villarroel-Espíndola F, Rodríguez-Gil JE, Concha II. 2017. Neuronal signaling repertoire in the mammalian sperm functionality. *Biology of Reproduction* **96**:505–524. DOI:
-
-Rand JB, Nonet ML. 1997. Neurotransmitter assignments for specific neurons. Riddle DL, Blumenthal T, Meyer BJ, Priess JR (Eds). *C.elegans II*. Cold Spring Harbor Laboratory Press. p. 1049–1052.
-
-Ranganathan R, Sawin ER, Trent C, Horvitz HR. 2001. Mutations in the Caenorhabditis elegans serotonin reuptake transporter MOD-5 reveal serotonin-dependent and -independent activities of fluoxetine. *The Journal of Neuroscience* **21**:5871–5884. DOI:
-
-Reilly MB, Tekieli T, Cros C, Aguilar GR, Lao J, Toker IA, Vidal B, Leyva-Díaz E, Bhattacharya A, Cook SJ, Smith JJ, Kovacevic I, Gulez B, Fernandez RW, Bradford EF, Ramadan YH, Kratsios P, Bao Z, Hobert O. 2022. Widespread employment of conserved C. elegans homeobox genes in neuronal identity specification. *PLOS Genetics* **18**:e1010372. DOI:
-
-Ripoll-Sánchez L, Watteyne J, Sun H, Fernandez R, Taylor SR, Weinreb A, Bentley BL, Hammarlund M, Miller DM, Hobert O, Beets I, Vértes PE, Schafer WR. 2023. The neuropeptidergic connectome of C. elegans. *Neuron* **111**:3570–3589. DOI:
-
-    Page 45
+## Page 45
 
 # Neuroscience
 
@@ -2355,7 +2260,7 @@ Ripoll-Sánchez L, Watteyne J, Sun H, Fernandez R, Taylor SR, Weinreb A, Bentley
 * Witvliet D, Mulcahy B, Mitchell JK, Meirovitch Y, Berger DR, Wu Y, Liu Y, Koh WX, Parvathala R, Holmyard D, Schalek RL, Shavit N, Chisholm AD, Lichtman JW, Samuel ADT, Zhen M. 2021. Connectomes across development reveal principles of brain maturation. *Nature* **596**:257–261. DOI: , PMID: 34349261
 * Yang H, Kunes S. 2004. Nonvesicular release of acetylcholine is required for axon targeting in the *Drosophila* visual system. *PNAS* **101**:15213–15218. DOI: , PMID: 15469930
 
-    Page 46
+## Page 46
 
 # eLife Tools and resources
 
