@@ -69,7 +69,9 @@ The experimental strengths and the similarities between the cellular and molecul
 
 ## Page 3
 
-Figure 1 Observing *C. elegans*. (A) Petri dishes sitting on the base of a dissecting stereomicroscope. Bacterial lawns are visible on the surface of the agar inside the dishes but the *C. elegans* are too small to be seen in this view. (B) *C. elegans* viewed through the dissecting microscope. The two adults are moving in this view. Tracks in the plate indicate where animals have traveled on the bacterial lawn. (C) An adult hermaphrodite is viewed in a compound microscope. In all pictures, anterior is to the left and ventral is on the bottom. *C. elegans* moves on either its left or right side; in this image the surface facing the viewer is the left side. Because the animals are transparent, one can see, from left to right on the ventral side, developing oocytes in the gonad (rectangular cells with a clear, circular nucleus inside) followed by the spermatheca (where oocytes are fertilized), and multiple embryos in the uterus. (D) Fluorescent image showing the nervous system labeled with a GFP reporter (*sto-6::gfp*). Photo credits: (C) Original (modified here): B. Goldstein; (D) J. Kratz.
+# Figure 1 Observing *C. elegans*.
+
+(A) Petri dishes sitting on the base of a dissecting stereomicroscope. Bacterial lawns are visible on the surface of the agar inside the dishes but the *C. elegans* are too small to be seen in this view. (B) *C. elegans* viewed through the dissecting microscope. The two adults are moving in this view. Tracks in the plate indicate where animals have traveled on the bacterial lawn. (C) An adult hermaphrodite is viewed in a compound microscope. In all pictures, anterior is to the left and ventral is on the bottom. *C. elegans* moves on either its left or right side; in this image the surface facing the viewer is the left side. Because the animals are transparent, one can see, from left to right on the ventral side, developing oocytes in the gonad (rectangular cells with a clear, circular nucleus inside) followed by the spermatheca (where oocytes are fertilized), and multiple embryos in the uterus. (D) Fluorescent image showing the nervous system labeled with a GFP reporter (*sto-6::gfp*). Photo credits: (C) Original (modified here): B. Goldstein; (D) J. Kratz.
 
 * organelle structure and function, gene regulation, protein biology, etc.) have made *C. elegans* an excellent organism with which to study general metazoan biology. At least 38% of the *C. elegans* protein-coding genes have predicted orthologs in the human genome (Shaye and Greenwald 2011), 60–80% of human genes have an ortholog in the *C. elegans* genome (Kaletta and Hengartner 2006), and 40% of genes known to be associated with human diseases have clear orthologs in the *C. elegans* genome (Culetto and Sattelle 2000). Thus, many discoveries in *C. elegans* have relevance to the study of human health and disease.
 
@@ -83,9 +85,17 @@ Several other features greatly facilitate the maintenance of *C. elegans* stocks
 
 ## Page 4
 
-# Figure 2 Life cycle of C. elegans. Animals increase in size throughout the four larval stages, but individual sexes are not easily distinguished until the L4 stage. At the L4 stage, hermaphrodites have a tapered tail and the developing vulva (white arrowhead) can be seen as a clear half circle in the center of the ventral side. The males have a wider tail (black arrowhead) but no discernible fan at this stage. In adults, the two sexes can be distinguished by the wider girth and tapered tail of the hermaphrodite and slimmer girth and fan-shaped tail (black arrowhead) of the male. Oocytes can be fertilized by sperm from the hermaphrodite or sperm obtained from males through mating. The dauer larvae are skinnier than all of the other larval stages. Photographs were taken on Petri dishes (note the bacterial lawns in all but the dauer image). Bar, 0.1 mm.
+# Figure 2 Life cycle of *C. elegans*. Animals increase in size throughout the four larval stages, but individual sexes are not easily distinguished until the L4 stage. At the L4 stage, hermaphrodites have a tapered tail and the developing vulva (white arrowhead) can be seen as a clear half circle in the center of the ventral side. The males have a wider tail (black arrowhead) but no discernible fan at this stage. In adults, the two sexes can be distinguished by the wider girth and tapered tail of the hermaphrodite and slimmer girth and fan-shaped tail (black arrowhead) of the male. Oocytes can be fertilized by sperm from the hermaphrodite or sperm obtained from males through mating. The dauer larvae are skinnier than all of the other larval stages. Photographs were taken on Petri dishes (note the bacterial lawns in all but the dauer image). Bar, 0.1 mm.
 
-* males (Sulston and Hodgkin 1988). Fifth, animals can be synchronized by isolating newly hatched larvae or by treating gravid adults with bleach (which decontaminates by killing everything but embryos) and isolating eggs, which are resistant to bleach treatment. Sixth, to facilitate biochemical studies, animals can be grown in bulk in liquid medium. “Worm sorters” such as the COPAS Biosorter are also available to quickly select large quantities of individual worms with desired characteristics. Finally, one does not need especially expensive equipment beyond a good dissecting microscope and a compound microscope to work with this animal. Overall, the animals are inexpensive and convenient to maintain.
+* **L4**
+* **Adult**
+* **Embryos**
+* **L1**
+* **L2**
+* **L3**
+* **Dauer**
+
+males (Sulston and Hodgkin 1988). Fifth, animals can be synchronized by isolating newly hatched larvae or by treating gravid adults with bleach (which decontaminates by killing everything but embryos) and isolating eggs, which are resistant to bleach treatment. Sixth, to facilitate biochemical studies, animals can be grown in bulk in liquid medium. “Worm sorters” such as the COPAS Biosorter are also available to quickly select large quantities of individual worms with desired characteristics. Finally, one does not need especially expensive equipment beyond a good dissecting microscope and a compound microscope to work with this animal. Overall, the animals are inexpensive and convenient to maintain.
 
 ## Sexual forms and their importance
 
@@ -102,9 +112,9 @@ Self-fertilizing hermaphrodites provide several advantages for genetic analysis.
 
 ## Life cycle
 
-*C. elegans* embryogenesis takes \~16 hr at 20° (all of the subsequent times are also for development at 20°) (Figure 2). A virtually impermeable eggshell is made after fertilization, allowing the embryo to develop completely independent of the mother. However, embryos are usually retained within the hermaphrodite until about the 24-cell stage at which time they are laid. The hermaphrodite embryo hatches with 558 nuclei (some nuclei are in multinuclear syncytia, so the cell count is lower) and becomes a first stage (L1) larva. The animals begin to eat and develop through four larval stages (L1–L4). The L1 stage is \~16 hr long; the other stages are \~12 hr long. Each stage ends with a sleep-like period of inactivity called lethargus (Raizen et al. 2008) in which a new cuticle (outer collagenous layer) is made. Lethargus ends with the molting of the old cuticle. Approximately 12 hr after the L4 molt, adult hermaphrodites begin producing progeny for a period of 2–3 days until they have utilized all of their self-produced sperm; additional progeny can be generated if the sperm-depleted hermaphrodite mates with a male. After the reproductive period, hermaphrodites can live several more weeks before dying of senescence.
+*C. elegans* embryogenesis takes \~16 hr at 20° (all of the subsequent times are also for development at 20°) (Figure 2). A virtually impermeable eggshell is made after fertilization, allowing the embryo to develop completely independent of the mother. However, embryos are usually retained within the hermaphrodite until about the 24-cell stage at which time they are laid. The hermaphrodite embryo hatches with 558 nuclei (some nuclei are in multinuclear syncytia, so the cell count is lower) and becomes a first stage (L1) larva. The animals begin to eat and develop through four larval stages (L1–L4). The L1 stage is \~16 hr long; the other stages are \~12 hr long. Each stage ends with a sleep-like period of inactivity called lethargus (Raizen et al. 2008) in which a new *cuticle* (outer collagenous layer) is made. Lethargus ends with the molting of the old *cuticle*. Approximately 12 hr after the L4 molt, adult hermaphrodites begin producing progeny for a period of 2–3 days until they have utilized all of their self-produced sperm; additional progeny can be generated if the sperm-depleted hermaphrodite mates with a male. After the reproductive period, hermaphrodites can live several more weeks before dying of senescence.
 
-When bacteria are depleted and the animals are crowded, L2 larvae activate an alternative life cycle (Hu 2007) and molt into an alternative L3 larval stage called the “dauer” larva (“dauer” in German means “lasting”; the signal is actually processed by L1 animals, but its results are not seen until the so-called “L2d” stage; Golden and Riddle 1984). The dauer larva cuticle completely surrounds the animal and plugs the mouth preventing the animal from eating and thereby arresting development. The dauer cuticle has enhanced resistance to chemicals, so it provides the dauer with greater protection against environmental stresses and caustic agents. Dauer larvae can survive for many months and are the dispersal form most commonly encountered in the wild. When the dauer larvae are transferred onto plates with bacteria, they shed their mouth plugs, molt, and continue their development as slightly different L4 larvae.
+When bacteria are depleted and the animals are crowded, L2 larvae activate an alternative life cycle (Hu 2007) and molt into an alternative L3 larval stage called the “dauer” larva (“dauer” in German means “lasting”; the signal is actually processed by L1 animals, but its results are not seen until the so-called “L2d” stage; Golden and Riddle 1984). The dauer larva *cuticle* completely surrounds the animal and plugs the mouth preventing the animal from eating and thereby arresting development. The dauer cuticle has enhanced resistance to chemicals, so it provides the dauer with greater protection against environmental stresses and caustic agents. Dauer larvae can survive for many months and are the dispersal form most commonly encountered in the wild. When the dauer larvae are transferred onto plates with bacteria, they shed their mouth plugs, molt, and continue their development as slightly different L4 larvae.
 
 ## C. elegans Genetics
 
@@ -291,7 +301,7 @@ perspective of cellular and molecular detail, most of the problems of neurobiolo
 
 In C. elegans, some individual neurons perform functions that would be performed by multiple neurons in vertebrates. For example, individual olfactory neurons express multiple G protein-coupled odorant receptors (Troemel et al. 1995; Wes and Bargmann 2001), rather than a single receptor as in vertebrates; each of the two mirror image bilateral ASE chemosensory cells respond to several different ions (Hobert 2010); and the connectivity of the touch receptor neurons suggests that their stimulation initiates several different activities (Chalfie et al. 1985). Thus, functions of multiple vertebrate sensory neurons are compressed into a single neuron in C. elegans. This multifunctionality (or “polymodality”) may be an evolutionary consequence of the small number of neurons in the C. elegans nervous system. Alternatively, multifunctionality may reflect a general feature of nervous systems that was revealed by the ability to do detailed single-cell analyses with this animal.
 
-## Reproductive tissue—sex-specific anatomy
+### Reproductive tissue—sex-specific anatomy
 
 The C. elegans sexes display several obvious anatomical differences in the somatic gonad, secondary sexual structures, and body size (Figure 2, Figure 3, A and B). The somatic gonad is located in the center of the body alongside the intestine. In hermaphrodites the gonad consists of two mirror-image U-shaped tubes; in males the gonad consists of a single U-shaped lobe (Figure 3). Both gonads house the germline where the oocytes and sperm develop (Hubbard and Greenstein 2005). The somatic gonad and the germline develop together during larval stages until animals reach maturity at the young adult stage. A powerful advantage for studies of the C. elegans germline is that one can observe all stages of meiosis at once as the germline is a visible
 
@@ -315,15 +325,91 @@ In the wild, C. elegans is primarily restricted to temperate regions. In contras
 
 ## Page 14
 
+* Homo
+* Mus
+* Teleosts
+* Xenoturbella
+* Asteroids
+* Echinoids
+* Hemichordates
+* Arachnids
+  * Xiphosurans
+  * Pycnogonids
+* Chilopods
+  * Diplopods
+  * Crustaceans
+  * Thysanurans
+    * Apis
+    * Anopheles
+    * Drosophila
+* Priapulids
+* Clade III
+  * Nematodes
+    * Caenorhabditis
+* Nematomorphs
+  * Polychaetes
+  * Echiurans
+  * Clitellates
+  * Sipunculids
+  * Polyplacophorans
+  * Phoronids
+    * Cephalopods
+    * Bivalves
+    * Gastropods
+    * Nemerteans
+    * Brachiopods
+    * Bryozoans
+* Urochordates
+* Hydrozoans
+* Anthozoans
+* Poriferans
+
+* Xenambulacraria
+  * Chelicerata
+  * Mandibulata
+  * Nematoida
+  * Annelida
+* Deuterostomia
+* Ecdysozoa
+* Protostomia
+  * Lophotrochozoa
+* C. nigoni
+* C. briggsae
+* C. sinica
+* C. latens
+* C. remanei
+* C. wallacei
+* C. tropicalis
+* C. brenneri
+* C. doughertyi
+* C. elegans
+* C. nouraguensis
+* C. yunquensis
+* C. macrosperma
+* C. afra
+* C. imperialis
+* C. japonica
+* C. kamaaina
+* C. drosophilae
+* C. sp. 2
+* C. angaria
+* C. castelli
+* C. sp. 8
+* C. portoensis
+* C. virilis
+* C. guadeloupensis
+* C. plicata
+* C. sp. 1
+
 Figure 7 Caenorhabditis species in the animal kingdom. (A) Phylogenetic tree placing Caenorhabditis species (boxed in red) among metazoans based on sequence data from two ribosomal subunits, eight protein coding genes, and mitochondrial genomes. Image was modified from Bourlat et al. (2008). (B) Phylogenetic tree placing C. elegans (boxed in red) among named Caenorhabditis species grown in the laboratory. Species in red have hermaphrodites and males; species in blue have females and males. An ‘o’ denotes branches with low support. Image modified from Félix et al. (2014).
 
-Blaxter 1998). Plant parasitic nematodes cause significant crop damage (billions of dollars each year; Kandoth and Mitchum 2013) and animal parasites devastate domesticated animals (including heartworm in dogs and cats; McCall et al. 2008). *C. elegans* has played a critical role in elucidating the mode of action of anthelmintic drugs (Holden-Dye and Walker 2014). *C. elegans* may also prove useful in identifying new strategies to reduce or alleviate the action of parasitic nematodes, particularly since the emergence of resistance to current drugs (Holden-Dye and Walker 2014).
+Blaxter 1998). Plant parasitic nematodes cause significant crop damage (billions of dollars each year; Kandoth and Mitchum 2013) and animal parasites devastate domesticated animals (including heartworm in dogs and cats; McCall et al. 2008). C. elegans has played a critical role in elucidating the mode of action of anthelmintic drugs (Holden-Dye and Walker 2014). C. elegans may also prove useful in identifying new strategies to reduce or alleviate the action of parasitic nematodes, particularly since the emergence of resistance to current drugs (Holden-Dye and Walker 2014).
 
-### Brief History of *C. elegans* Research and Key Discoveries
+### Brief History of C. elegans Research and Key Discoveries
 
-In Brenner’s original vision, detailed elucidation of the development and anatomy of *C. elegans* would serve as the foundation for the subsequent analysis of mutants. Both of these efforts were completed primarily at the LMB. The transparency of the animal allowed John Sulston, Robert Horvitz, Judith Kimble, David Hirsh, and Einhard Schierenberg to describe every cell division starting with the single-celled zygote and ending with the adult male and hermaphrodite (Sulston and Horvitz 1977; Kimble and Hirsh 1979; Sulston et al. 1980, 1983). These efforts produced the first and only entire cell lineage of any multicellular organism. During this same time, John White, Sydney Brenner, Donna Albertson, Eileen Southgate, Sam Ward, and Nichol Thomson described the anatomy and connectivity of all 302 neurons of the adult hermaphrodite (Ward et al. 1975; Albertson and Thomson 1976; White et al. 1976, 1986). These projects set a standard for completeness in the understanding of the animal that has been a hallmark of *C. elegans* research. Such completeness was also seen in the sequencing of the *C. elegans* genome (*C. elegans* Genome Consortium 1998), the description of the wiring diagram of the adult male (Jarrell et al. 2012), and development of genome-wide feeding RNAi experiments (Fraser et al. 2000; Kamath et al. 2001). Sydney Brenner, Robert Horvitz, and John Sulston were awarded the 2002 Nobel Prize in Physiology or Medicine in part for the significance of the lineage project as a platform for discovery of genes that orchestrated developmental decisions.
+In Brenner’s original vision, detailed elucidation of the development and anatomy of C. elegans would serve as the foundation for the subsequent analysis of mutants. Both of these efforts were completed primarily at the LMB. The transparency of the animal allowed John Sulston, Robert Horvitz, Judith Kimble, David Hirsh, and Einhard Schierenberg to describe every cell division starting with the single-celled zygote and ending with the adult male and hermaphrodite (Sulston and Horvitz 1977; Kimble and Hirsh 1979; Sulston et al. 1980, 1983). These efforts produced the first and only entire cell lineage of any multicellular organism. During this same time, John White, Sydney Brenner, Donna Albertson, Eileen Southgate, Sam Ward, and Nichol Thomson described the anatomy and connectivity of all 302 neurons of the adult hermaphrodite (Ward et al. 1975; Albertson and Thomson 1976; White et al. 1976, 1986). These projects set a standard for completeness in the understanding of the animal that has been a hallmark of C. elegans research. Such completeness was also seen in the sequencing of the C. elegans genome (C. elegans Genome Consortium 1998), the description of the wiring diagram of the adult male (Jarrell et al. 2012), and development of genome-wide feeding RNAi experiments (Fraser et al. 2000; Kamath et al. 2001). Sydney Brenner, Robert Horvitz, and John Sulston were awarded the 2002 Nobel Prize in Physiology or Medicine in part for the significance of the lineage project as a platform for discovery of genes that orchestrated developmental decisions.
 
-Since work on *C. elegans* genetics began in earnest during the 1970s, this animal has proven fruitful for making general discoveries about cell and developmental biology (Table 2). These findings have helped us understand molecular genetic mechanisms in all animals. Evolution has maintained thousands of conserved genes that play similar, or in some cases nearly identical, functions in nematodes and other animals
+Since work on C. elegans genetics began in earnest during the 1970s, this animal has proven fruitful for making general discoveries about cell and developmental biology (Table 2). These findings have helped us understand molecular genetic mechanisms in all animals. Evolution has maintained thousands of conserved genes that play similar, or in some cases nearly identical, functions in nematodes and other animals
 
 ## Page 15
 
@@ -536,74 +622,114 @@ Greenwald, I., 1985 lin-12, a nematode homeotic gene, is homologous to a set of 
 
 ## Page 19
 
-Greenwald, I. S., P. W. Sternberg, and H. R. Horvitz, 1983 The lin-12 locus specifies cell fates in Caenorhabditis elegans. Cell 34: 435–344.\
-Grishok, A., H. Tabara, and C. C. Mello, 2000 Genetic requirements for inheritance of RNAi in C. elegans. Science 287: 2494–2497.\
-Hammarlund, M., and Y. Jin, 2014 Axon regeneration in C. elegans. Curr. Opin. Neurobiol. 27: 199–207.\
-Han, M., and P. W. Sternberg, 1990 let-60, a gene that specifies cell fates during C. elegans vulval induction, encodes a ras protein. Cell 63: 921–931.\
+Greenwald, I. S., P. W. Sternberg, and H. R. Horvitz, 1983 The lin-12 locus specifies cell fates in Caenorhabditis elegans. Cell 34: 435–344.
+
+Grishok, A., H. Tabara, and C. C. Mello, 2000 Genetic requirements for inheritance of RNAi in C. elegans. Science 287: 2494–2497.
+
+Hammarlund, M., and Y. Jin, 2014 Axon regeneration in C. elegans. Curr. Opin. Neurobiol. 27: 199–207.
+
+Han, M., and P. W. Sternberg, 1990 let-60, a gene that specifies cell fates during C. elegans vulval induction, encodes a ras protein. Cell 63: 921–931.
+
 Hart, A. C., 2006 Behavior (July 3, 2006), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.87.1,
 
-.\
-Hedgecock, E. M., and R. L. Russell, 1975 Normal and mutant thermotaxis in the nematode Caenorhabditis elegans. Proc. Natl. Acad. Sci. USA 72: 4061–4065.\
-Hedgecock, E. M. and J. G. White, 1985 Polyploid tissues in the nematode Caenorhabditis elegans. Dev. Biol. 107: 128–133.\
-Hedgecock, E. M., J. E. Sulston, and J. N. Thomson, 1983 Mutations affecting programmed cell deaths in the nematode Caenorhabditis elegans. Science 220: 1277–1279.\
-Hedgecock, E. M., J. G. Culotti, D. H. Hall, and B. D. Stern, 1987 Genetics of cell and axon migrations in Caenorhabditis elegans. Development 100: 365–382.\
-Hedgecock, E. M., J. G. Culotti, and D. H. Hall, 1990 The unc-5, unc-6, and unc-40 genes guide circumferential migrations of pioneer axons and mesodermal cells on the epidermis in C. elegans. Neuron 4: 61–85.\
-Hengartner, M. O., and H. R. Horvitz, 1994 C. elegans cell survival gene ced-9 encodes a functional homolog of the mammalian proto-oncogene bcl-2. Cell 76: 665–676.\
+.
+
+Hedgecock, E. M., and R. L. Russell, 1975 Normal and mutant thermotaxis in the nematode Caenorhabditis elegans. Proc. Natl. Acad. Sci. USA 72: 4061–4065.
+
+Hedgecock, E. M. and J. G. White, 1985 Polyploid tissues in the nematode Caenorhabditis elegans. Dev. Biol. 107: 128–133.
+
+Hedgecock, E. M., J. E. Sulston, and J. N. Thomson, 1983 Mutations affecting programmed cell deaths in the nematode Caenorhabditis elegans. Science 220: 1277–1279.
+
+Hedgecock, E. M., J. G. Culotti, D. H. Hall, and B. D. Stern, 1987 Genetics of cell and axon migrations in Caenorhabditis elegans. Development 100: 365–382.
+
+Hedgecock, E. M., J. G. Culotti, and D. H. Hall, 1990 The unc-5, unc-6, and unc-40 genes guide circumferential migrations of pioneer axons and mesodermal cells on the epidermis in C. elegans. Neuron 4: 61–85.
+
+Hengartner, M. O., and H. R. Horvitz, 1994 C. elegans cell survival gene ced-9 encodes a functional homolog of the mammalian proto-oncogene bcl-2. Cell 76: 665–676.
+
 Herman, M. A., 2006 Hermaphrodite cell-fate specification (January 09, 2006), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.39.1,
 
-.\
+.
+
 Hobert, O., 2010 Neurogenesis in the nematode Caenorhabditis elegans (October 4, 2010), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.12.2,
 
-.\
+.
+
 Hobert, O., 2013 The neuronal genome of Caenorhabditis elegans (August 13, 2013), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.161.1,
 
-.\
-Hodgkin, J., 1983 Male phenotypes and mating efficiency in Caenorhabditis elegans. Genetics 103: 43–64.\
+.
+
+Hodgkin, J., 1983 Male phenotypes and mating efficiency in Caenorhabditis elegans. Genetics 103: 43–64.
+
 Hodgkin, J., 2005 Genetic suppression (December 27, 2005b), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.59.1,
 
-.\
-Hodgkin, J. A., and S. Brenner, 1977 Mutations causing transformation of sexual phenotype in the nematode Caenorhabditis elegans. Genetics 86: 275–287.\
+.
+
+Hodgkin, J. A., and S. Brenner, 1977 Mutations causing transformation of sexual phenotype in the nematode Caenorhabditis elegans. Genetics 86: 275–287.
+
 Holden-Dye, L., and R. J. Walker, 2014 Anthelmintic drugs and nematicides: studies in Caenorhabditis elegans (December 16, 2014), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.143.2,
 
-.\
-Hu, C. W., J. L. Chen, Y. W. Hsu, C. C. Yen, and M. R. Chao, 2015 Trace analysis of methylated and hydroxymethylated cytosines in DNA by isotope-dilution LC-MS/MS: first evidence of DNA methylation in Caenorhabditis elegans. Biochem. J. 465: 39–47.\
+.
+
+Hu, C. W., J. L. Chen, Y. W. Hsu, C. C. Yen, and M. R. Chao, 2015 Trace analysis of methylated and hydroxymethylated cytosines in DNA by isotope-dilution LC-MS/MS: first evidence of DNA methylation in Caenorhabditis elegans. Biochem. J. 465: 39–47.
+
 Hu, P. J., 2007 Dauer (August 8, 2007), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.144.1,
 
-.\
+.
+
 Hubbard, E. J. A., and D. Greenstein, 2005 Introduction to the germ line (September 1, 2005), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.18.1,
 
 .
 
-Husson, S. J., A. Gottschalk, and A. M. Leifer, 2013 Optogenetic manipulation of neural activity in C. elegans: from synapse to circuits and behaviour. Biol. Cell 105: 235–250.\
-Jarrell, T. A., Y. Wang, A. E. Bloniarz, C. A. Brittin, M. Xu et al., 2012 The connectome of a decision-making neural network. Science 337: 437–444.\
-Jorgensen, E. M., and S. E. Mango, 2002 The art and design of genetic screens: Caenorhabditis elegans. Nat. Rev. Genet. 3: 356–369.\
-Kaletta, T., and M. O. Hengartner, 2006 Finding function in novel targets: C. elegans as a model organism. Nat. Rev. Drug Discov. 5: 387–398.\
-Kamath R. S., M. Martinez-Campos, P. Zipperlen, A. G. Fraser, and J. Ahringer, 2001 Effectiveness of specific RNA-mediated interference through ingested double-stranded RNA in Caenorhabditis elegans. Genome Biol. 2:RESEARCH0002.\
-Kandoth, P. K., and M. G. Mitchum, 2013 War of the worms: how plants fight underground attacks. Curr. Opin. Plant Biol. 16: 457–463.\
-Kemphues, K. J., J. R. Priess, D. G. Morton, and N. S. Cheng, 1988 Identification of genes required for cytoplasmic localization in early C. elegans embryos. Cell 52: 311–320.\
-Kennedy, M. W., 2013 Ascaris – Antigens, allergens, immunogenetics, protein structures, pp. 51–79 in Ascaris, The Neglected Parasite, Ed. 100, Chap. 3. Elsevier, Holland.\
-Kenyon, C., J. Chang, E. Gensch, A. Rudner, and R. Tabtiang, 1993 A C. elegans mutant that lives twice as long as wild type. Nature 366: 461–464.\
-Kerr R., V. Lev-Ram, G. Baird, P. Vincent, R. Y. Tsien, and W. R. Schafer, 2000 Optical imaging of calcium transients in neurons and pharyngeal muscle of C. elegans. Neuron 26: 583–594.\
+Husson, S. J., A. Gottschalk, and A. M. Leifer, 2013 Optogenetic manipulation of neural activity in C. elegans: from synapse to circuits and behaviour. Biol. Cell 105: 235–250.
+
+Jarrell, T. A., Y. Wang, A. E. Bloniarz, C. A. Brittin, M. Xu et al., 2012 The connectome of a decision-making neural network. Science 337: 437–444.
+
+Jorgensen, E. M., and S. E. Mango, 2002 The art and design of genetic screens: Caenorhabditis elegans. Nat. Rev. Genet. 3: 356–369.
+
+Kaletta, T., and M. O. Hengartner, 2006 Finding function in novel targets: C. elegans as a model organism. Nat. Rev. Drug Discov. 5: 387–398.
+
+Kamath R. S., M. Martinez-Campos, P. Zipperlen, A. G. Fraser, and J. Ahringer, 2001 Effectiveness of specific RNA-mediated interference through ingested double-stranded RNA in Caenorhabditis elegans. Genome Biol. 2:RESEARCH0002.
+
+Kandoth, P. K., and M. G. Mitchum, 2013 War of the worms: how plants fight underground attacks. Curr. Opin. Plant Biol. 16: 457–463.
+
+Kemphues, K. J., J. R. Priess, D. G. Morton, and N. S. Cheng, 1988 Identification of genes required for cytoplasmic localization in early C. elegans embryos. Cell 52: 311–320.
+
+Kennedy, M. W., 2013 Ascaris – Antigens, allergens, immunogenetics, protein structures, pp. 51–79 in Ascaris, The Neglected Parasite, Ed. 100, Chap. 3. Elsevier, Holland.
+
+Kenyon, C., J. Chang, E. Gensch, A. Rudner, and R. Tabtiang, 1993 A C. elegans mutant that lives twice as long as wild type. Nature 366: 461–464.
+
+Kerr R., V. Lev-Ram, G. Baird, P. Vincent, R. Y. Tsien, and W. R. Schafer, 2000 Optical imaging of calcium transients in neurons and pharyngeal muscle of C. elegans. Neuron 26: 583–594.
+
 Kerr, R. A., 2006 Imaging the activity of neurons and muscles (June 2, 2006), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.113.1,
 
-.\
-Kimble, J., and D. Hirsh, 1979 The post-embryonic cell lineages of the hermaphrodite and male gonads in Caenorhabditis elegans. Dev. Biol. 70: 396–417.\
-Kimble, J. E., and J. G. White, 1981 On the control of germ cell development in Caenorhabditis elegans. Dev. Biol. 81: 208–219.\
+.
+
+Kimble, J., and D. Hirsh, 1979 The post-embryonic cell lineages of the hermaphrodite and male gonads in Caenorhabditis elegans. Dev. Biol. 70: 396–417.
+
+Kimble, J. E., and J. G. White, 1981 On the control of germ cell development in Caenorhabditis elegans. Dev. Biol. 81: 208–219.
+
 Kimble, J., and S. L. Crittenden, 2005 Germline proliferation and its control (August 15, 2005), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.13.1,
 
-.\
-Kimura, K. D., H. A. Tissenbaum, Y. Liu, and G. Ruvkun, 1997 daf-2, an insulin receptor-like gene that regulates longevity and diapause in Caenorhabditis elegans. Science 277: 942–946.\
+.
+
+Kimura, K. D., H. A. Tissenbaum, Y. Liu, and G. Ruvkun, 1997 daf-2, an insulin receptor-like gene that regulates longevity and diapause in Caenorhabditis elegans. Science 277: 942–946.
+
 Kiontke, K., and D. H. A. Fitch, 2005 The phylogenetic relationships of Caenorhabditis and other rhabditids (August 11, 2005), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.11.1,
 
-.\
+.
+
 Kiontke, K., and W. Sudhaus, 2006 Ecology of Caenorhabditis species (January 9, 2006), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.37.1,
 
-.\
+.
+
 Kutscher, L. M., and S. Shaham, Forward and reverse mutagenesis in C. elegans (January 17, 2014), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.167.1,
 
-.\
-Lee, H., M. K. Choi, D. Lee, H. S. Kim, H. Hwang et al., 2011 Nictation, a dispersal behavior of the nematode Caenorhabditis elegans, is regulated by IL2 neurons. Nat. Neurosci. 15: 107–112.\
-Lee, R. C., R. L. Feinbaum, and V. Ambros, 1993 The C. elegans heterochronic gene lin-4 encodes small RNAs with antisense complementarity to lin-14. Cell 75: 843–854.\
+.
+
+Lee, H., M. K. Choi, D. Lee, H. S. Kim, H. Hwang et al., 2011 Nictation, a dispersal behavior of the nematode Caenorhabditis elegans, is regulated by IL2 neurons. Nat. Neurosci. 15: 107–112.
+
+Lee, R. C., R. L. Feinbaum, and V. Ambros, 1993 The C. elegans heterochronic gene lin-4 encodes small RNAs with antisense complementarity to lin-14. Cell 75: 843–854.
+
 Lesa, G. M., 2006 Isolation of Caenorhabditis elegans gene knockouts by PCR screening of chemically mutagenized libraries. Nat. Protoc. 1: 2231–2240.
 
 ## Page 20
@@ -750,7 +876,7 @@ Spieth, J., and D. Lawson, 2006 Overview of gene structure (January 18, 2006), W
 
 Starich, T., M. Sheehan, J. Jadrich, and J. Shaw, 2001 Innexins in C. elegans. Cell Commun. Adhes. 8: 311–314.
 
-Sternberg, P. W., 2005 Vulval development (June 25 2005), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.6.1,
+Sternberg, P. W., 2005 Vulval development (June 25, 2005), WormBook, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.6.1,
 
 .
 
