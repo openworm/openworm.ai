@@ -6,6 +6,7 @@ import os
 import sys
 
 from dotenv import load_dotenv
+
 from llama_index.core import (
     Document,
     PromptTemplate,
@@ -18,16 +19,16 @@ from llama_index.core.storage.index_store import SimpleIndexStore
 from llama_index.core.storage.storage_context import StorageContext
 from llama_index.core.vector_stores import SimpleVectorStore
 
-# HF embeddings fallback
+# LlamaIndex LLMs and embeddings (pure LlamaIndex, no LangChain dependency)
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-
-# LLMs - Native LlamaIndex (no LangChain dependency)
 from llama_index.llms.huggingface_api import HuggingFaceInferenceAPI
 from llama_index.llms.ollama import Ollama
 from llama_index.llms.openai import OpenAI
 
 from openworm_ai import print_
 from openworm_ai.utils.llms import get_llm_from_argv
+
+print_("Loading environment variables from .env file (if present)")
 
 load_dotenv()
 
@@ -58,24 +59,19 @@ def _select_embed_model():
                 f"! OpenAI embeddings unavailable ({type(e).__name__}: {e}) -> falling back to HF BGE-small."
             )
 
-    hf = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
-    print_("Embedding model: HuggingFace BAAI/bge-small-en-v1.5")
+    hf = HuggingFaceEmbedding(model_name="BAAI/bge-large-en-v1.5")
+    print_("Embedding model: HuggingFace BAAI/bge-large-en-v1.5")
     return hf
 
 
 EMBED_MODEL = _select_embed_model()
-Settings.embed_model = EMBED_MODEL
 
 
 def _get_embedding_folder_name():
-    if EMBED_MODEL.__class__.__name__.lower().startswith("openai"):
-        return "embed_openai"
-
-    if hasattr(EMBED_MODEL, "model_name"):
-        name = EMBED_MODEL.model_name
+    name = getattr(EMBED_MODEL, "model_name", None)
+    if name:
         return "embed_" + name.replace("/", "_").replace(":", "_")
-
-    return "embed_unknown"
+    return "embed_" + EMBED_MODEL.__class__.__name__.lower()
 
 
 def _make_llamaindex_llm(model: str):
@@ -160,7 +156,9 @@ def create_store(model):
                     doc = Document(text=text, metadata={SOURCE_DOCUMENT: src_info})
                     documents.append(doc)
 
-    print_("Creating a vector store index for %s" % model)
+    print_(
+        f"Creating a vector store index for LLM={model} with EMBED={_get_embedding_folder_name()}"
+    )
 
     STORE_SUBFOLDER = "/" + _get_embedding_folder_name()
 
@@ -177,19 +175,15 @@ def load_index(model):
 
     STORE_SUBFOLDER = "/" + _get_embedding_folder_name()
 
+    persist_dir = STORE_DIR + STORE_SUBFOLDER
+
     storage_context = StorageContext.from_defaults(
-        docstore=SimpleDocumentStore.from_persist_dir(
-            persist_dir=STORE_DIR + STORE_SUBFOLDER
-        ),
-        vector_store=SimpleVectorStore.from_persist_dir(
-            persist_dir=STORE_DIR + STORE_SUBFOLDER
-        ),
-        index_store=SimpleIndexStore.from_persist_dir(
-            persist_dir=STORE_DIR + STORE_SUBFOLDER
-        ),
+        docstore=SimpleDocumentStore.from_persist_dir(persist_dir=persist_dir),
+        vector_store=SimpleVectorStore.from_persist_dir(persist_dir=persist_dir),
+        index_store=SimpleIndexStore.from_persist_dir(persist_dir=persist_dir),
     )
 
-    print_("Reloading index for %s" % model)
+    print_("Reloading index for %s from %s" % (model, persist_dir))
     index_reloaded = load_index_from_storage(storage_context)
     return index_reloaded
 

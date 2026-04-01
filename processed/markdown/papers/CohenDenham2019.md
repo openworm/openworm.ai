@@ -1,6 +1,6 @@
 # CohenDenham2019
 
-_Generated from: _
+_Generated from: https://www.sciencedirect.com/science/article/pii/S2452310018301082_
 
 ## Page 1
 
