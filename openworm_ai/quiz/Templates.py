@@ -3,19 +3,26 @@ from openworm_ai.utils.llms import generate_response
 
 
 GENERATE_Q = """
-Generate a list of <QUESTION_NUMBER> multiple choice questions to test someone's general knowledge.
-The questions should be answerable by a reasonably intelligent adult, and should be on a wide range of subjects.
-There should be <ANSWER_NUMBER> possible answers, only one of which is unambiguously correct, and all of the answers should be kept brief.
-Each of the <QUESTION_NUMBER> question/answer sets should be presented in the following format:
+Generate <QUESTION_NUMBER> multiple choice question to test someone's general knowledge (not science heavy).
+The question should be answerable by a reasonably intelligent adult, and should cover a diverse subject from areas like geography, history, arts, mathematics, technology, sports, culture and others.
 
+IMPORTANT:
+- Avoid repeating common trivia patterns.
+- Avoid very common question types like "In what year...", "Who was the first...", "capital of...", or simple record/number questions.
+- Prefer varied and interesting topics rather than predictable defaults.
+- Ensure the question is clear, unambiguous, and factually stable (not dependent on rankings or recent events).
+
+There should be <ANSWER_NUMBER> possible answers, only one of which is unambiguously correct, and all of the answers should be kept brief and plausible.
+
+Each of the <QUESTION_NUMBER> question/answer sets should be presented in the following format (focus on the format, not the specific content):
 """
 
 TEXT_ANSWER_EXAMPLE = """
-QUESTION: What is the capital of France?
-CORRECT ANSWER: Paris
-WRONG ANSWER: Madrid
-WRONG ANSWER: Rome
-WRONG ANSWER: Dublin
+QUESTION: <Insert question>  
+CORRECT ANSWER: <Correct answer>  
+WRONG ANSWER: <Wrong answer 1>  
+WRONG ANSWER: <Wrong answer 2>  
+WRONG ANSWER: <Wrong answer 3>
 
 """
 

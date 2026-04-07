@@ -14,31 +14,30 @@ def load_documents(directory="."):
 
 # === QUESTION GENERATION TEMPLATE === #
 GENERATE_Q = """
-You must generate exactly <QUESTION_NUMBER> multiple-choice questions **strictly based on the provided text**.  
-If the text **does not contain enough information**, generate the remaining questions **using your own knowledge** on the topic.  
+Generate <QUESTION_NUMBER> multiple choice question **strictly based on the provided text/corpus**.  
 
-🔹 **Rules:**  
-- Prioritize document-based questions, but if the text lacks sufficient detail, rely on your own knowledge.  
-- The questions should be **highly specific** and avoid generalizations.  
-- If a topic is not covered in the text, only then use external knowledge.  
-- Questions should challenge a **researcher or advanced student**.
+**Rules:**  
+- Questions MUST be answerable from the information provided in the text
+- Focus on specific details, facts, or data mentioned in the corpus
+- Avoid general knowledge questions - prioritize document-specific information
+- Questions should test deep understanding of the material, suitable for researchers or advanced students
+- If the text covers multiple topics, ensure variety across different sections
 
-🔹 **Format:**  
+**Format Requirements:**
+- Each question should have <ANSWER_NUMBER> possible answers
+- Only one answer should be unambiguously correct
+- All answers should be kept brief
+- Questions should be presented in the following format (focus on the format not the actual question or answers specifically):
+
+"""
+
+TEXT_ANSWER_EXAMPLE = """
 QUESTION: <Insert question>  
 CORRECT ANSWER: <Correct answer>  
 WRONG ANSWER: <Wrong answer 1>  
 WRONG ANSWER: <Wrong answer 2>  
-WRONG ANSWER: <Wrong answer 3>  
+WRONG ANSWER: <Wrong answer 3>
 
-📌 **Reminder: If the provided text does not contain enough information for <QUESTION_NUMBER> questions, use your own knowledge to complete the set.**  
-"""
-
-TEXT_ANSWER_EXAMPLE = """
-QUESTION: What are the dimensions of the C. elegans pharynx?
-CORRECT ANSWER: 100 µm long and 20 µm in diameter
-WRONG ANSWER: 80 µm long and 15 µm in diameter
-WRONG ANSWER: 150 µm long and 25 µm in diameter
-WRONG ANSWER: 200 µm long and 35 µm in diameter
 """
 
 # === LLM RESPONSE FORMAT FOR QUIZ === #
