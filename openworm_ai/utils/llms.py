@@ -31,7 +31,33 @@ LLM_CMD_LINE_ARGS["-co"] = LLM_COHERE
 # ----------------------------
 # Hugging Face Inference Provider default (NEW)
 LLM_HF_QWEN25_7B = "huggingface:Qwen/Qwen2.5-7B-Instruct"
-LLM_CMD_LINE_ARGS["-hf"] = LLM_HF_QWEN25_7B
+LLM_HF_QWEN25_72B = "huggingface:Qwen/Qwen2.5-72B-Instruct"
+LLM_HF_QWEN25_14B = "huggingface:Qwen/Qwen2.5-14B-Instruct"
+LLM_HF_QWEN25_32B = "huggingface:Qwen/Qwen2.5-32B-Instruct"
+LLM_HF_LLAMA32_1b = "huggingface:meta-llama/Llama-3.2-1B-Instruct"
+LLM_HF_LLAMA31_8B = "huggingface:meta-llama/Llama-3.1-8B-Instruct"
+LLM_HF_GEMMA_2_9B = "huggingface:google/gemma-2-9b-it"
+# Microsoft Phi models
+LLM_HF_PHI3_MINI = "huggingface:microsoft/Phi-3-mini-4k-instruct"  # 3.8B
+LLM_HF_PHI3_MED = "huggingface:microsoft/Phi-3-medium-4k-instruct"  # 14B
+# Mistral AI models (Mixtral works better than Mistral 7B)
+LLM_HF_MISTRAL_7B = "huggingface:mistralai/Mistral-7B-Instruct-v0.2"  # 7B
+# Cohere models
+LLM_HF_COHERE_AYA_32B = "huggingface:CohereLabs/aya-expanse-32b"  # 8B
+
+
+LLM_CMD_LINE_ARGS["-hfs"] = LLM_HF_QWEN25_7B
+LLM_CMD_LINE_ARGS["-hf"] = LLM_HF_QWEN25_72B
+LLM_CMD_LINE_ARGS["-hfsm"] = LLM_HF_QWEN25_14B
+LLM_CMD_LINE_ARGS["-hfm"] = LLM_HF_QWEN25_32B
+LLM_CMD_LINE_ARGS["-hf-l"] = LLM_HF_LLAMA32_1b
+LLM_CMD_LINE_ARGS["-hf-lm"] = LLM_HF_LLAMA31_8B
+LLM_CMD_LINE_ARGS["-hf-ps"] = LLM_HF_PHI3_MINI
+LLM_CMD_LINE_ARGS["-hf-pm"] = LLM_HF_PHI3_MED
+LLM_CMD_LINE_ARGS["-hf-m"] = LLM_HF_MISTRAL_7B
+LLM_CMD_LINE_ARGS["-hf-g"] = LLM_HF_GEMMA_2_9B
+LLM_CMD_LINE_ARGS["-hf-c"] = LLM_HF_COHERE_AYA_32B
+
 # ----------------------------
 
 LLM_OLLAMA_LLAMA32 = "ollama:llama3.2"
@@ -79,7 +105,7 @@ PREF_ORDER_LLMS = LLMS_GEMINI + [
     LLM_GPT4o,
     LLM_CLAUDE37,
     LLM_COHERE,
-    # (HF isn't in PREF_ORDER_LLMS because it’s provider-routed; still supported via init_chat_model)
+    # (HF isn't in PREF_ORDER_LLMS because it's provider-routed; still supported via init_chat_model)
     LLM_OLLAMA_LLAMA32,
     LLM_OLLAMA_LLAMA32_1B,
     LLM_OLLAMA_MISTRAL,
@@ -182,6 +208,22 @@ def get_llm(llm_ver, temperature, limit_to_openwormai_llms=False):
 
         llm = ChatCohere()
         return llm
+
+    # NEW: Handle HuggingFace Inference API explicitly
+    elif llm_ver.startswith("huggingface:"):
+        from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+
+        model_id = llm_ver.replace("huggingface:", "")
+
+        print(f" ... Using HuggingFace Inference API for model: {model_id}")
+
+        llm = HuggingFaceEndpoint(
+            repo_id=model_id,
+            temperature=temperature,
+            huggingfacehub_api_token=os.environ.get("HF_TOKEN"),
+            max_new_tokens=1024,  # Reasonable default for chat
+        )
+        return ChatHuggingFace(llm=llm)
 
     elif limit_to_openwormai_llms and llm_ver not in PREF_ORDER_LLMS:
         raise ValueError(
