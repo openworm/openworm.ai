@@ -19,3 +19,9 @@ venv/
 /dist
 /release.sh
 /old
+.claude/worktrees/
+/config
+.ruff_cache/
+# Auto-generated LangGraph diagrams (regenerated at startup)
+*-lang-graph.png
+*-assistant-graph.png
