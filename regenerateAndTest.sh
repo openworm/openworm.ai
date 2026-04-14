@@ -11,8 +11,8 @@ if [ $1 == "-llamaparse" ]; then
 
 elif [ $1 == "-quiz" ]; then
     python -m openworm_ai.quiz.QuizMaster 10
-    python -m openworm_ai.quiz.QuizMaster -ask
-    python -m openworm_ai.quiz.QuizMaster -ask -o-t
+    python -m openworm_ai.quiz.QuizMaster -ask --quiz-file openworm_ai/quiz/samples/huggingface_Qwen_Qwen2.5-72B-Instruct_40questions_science_v2.json
+    python -m openworm_ai.quiz.QuizMaster -ask -o-t --quiz-file openworm_ai/quiz/samples/huggingface_Qwen_Qwen2.5-72B-Instruct_40questions_science_v2.json
 
 elif [ "$1" == "-qplot" ]; then
     python -m openworm_ai.quiz.figures.quizplots_overcategories -nogui
