@@ -6,83 +6,53 @@
             "Page 1": {
                 "paragraphs": [
                     {
-                        "contents": "frontiers in COMPUTATIONAL NEUROSCIENCE\nORIGINAL RESEARCH ARTICLE\npublished: 07 March 2012\ndoi: 10.3389/fncom.2012.00010",
-                        "paragraph_index": 0,
-                        "page_number": 1
-                    },
-                    {
-                        "contents": "# Gait modulation in *C. elegans*: an integrated neuromechanical model",
+                        "contents": "ORIGINAL RESEARCH ARTICLE\npublished: 07 March 2012\ndoi: 10.3389/fncom.2012.00010",
                         "paragraph_index": 1,
                         "page_number": 1
                     },
                     {
-                        "contents": "**Jordan H. Boyle^1\u2020, Stefano Berri^1\u2020 and Netta Cohen^1,2**\\*",
+                        "contents": "# Gait modulation in *C. elegans*: an integrated neuromechanical model",
                         "paragraph_index": 2,
                         "page_number": 1
                     },
                     {
-                        "contents": "^1 School of Computing, University of Leeds, Leeds, UK ^2 Institute of Membrane and Systems Biology, University of Leeds, Leeds, UK",
+                        "contents": "**Jordan H. Boyle**^1\\dagger, **Stefano Berri**^1\\dagger and **Netta Cohen**^1,2\\*",
                         "paragraph_index": 3,
                         "page_number": 1
                     },
                     {
-                        "contents": "**Edited by:**\nMisha Tsodyks, Weizmann Institute of Science, Israel",
+                        "contents": "^1 School of Computing, University of Leeds, Leeds, UK\n^2 Institute of Membrane and Systems Biology, University of Leeds, Leeds, UK",
                         "paragraph_index": 4,
                         "page_number": 1
                     },
                     {
-                        "contents": "**Reviewed by:**\nMisha Tsodyks, Weizmann Institute of Science, Israel\nAlexander G. Dimitrov, Washington State University Vancouver, USA",
+                        "contents": "|Edited by:|Equipped with its 302-cell nervous system, the nematode \\*Caenorhabditis elegans\\* adapts its locomotion in different environments, exhibiting so-called \\*swimming\\* in liquids and \\*crawling\\* on dense gels. Recent experiments have demonstrated that the worm displays the full range of intermediate behaviors when placed in intermediate environments. The continuous nature of this transition strongly suggests that these behaviors all stem from modulation of a single underlying mechanism. We present a model of \\*C. elegans\\* forward locomotion that includes a neuromuscular control system that relies on a sensory feedback mechanism to generate undulations and is integrated with a physical model of the body and environment. We find that the model reproduces the entire swim-crawl transition, as well as locomotion in complex and heterogeneous environments. This is achieved with no modulatory mechanism, except via the proprioceptive response to the physical environment. Manipulations of the model are used to dissect the proposed pattern generation mechanism and its modulation. The model suggests a possible role for GABAergic D-class neurons in forward locomotion and makes a number of experimental predictions, in particular with respect to non-linearities in the model and to symmetry breaking between the neuromuscular systems on the ventral and dorsal sides of the body.|\n|-|-|\n|Misha Tsodyks, Weizmann Institute of Science, Israel||\n|\\*\\*Reviewed by:\\*\\*|\\*\\*Keywords:\\*\\* invertebrate, locomotion, motor control, neuromechanical model, proprioception|\n|Misha Tsodyks, Weizmann Institute of Science, Israel||\n|Alexander G. Dimitrov, Washington State University Vancouver, USA||\n|\\*\\*\\*Correspondence:\\*\\*\\*||\n|Netta Cohen, School of Computing, University of Leeds, Leeds LS2 9JT, UK.||\n|e-mail: n.cohen\\@leeds.ac.uk||\n|^\\dagger\\*\\*Present address:\\*\\*||\n|Jordan H. Boyle, School of Mechanical Engineering, University of Leeds, Leeds, UK;||\n|Stefano Berri, Leeds Institute of Molecular Medicine, St James\u2019s University Hospital, Leeds, UK.||",
                         "paragraph_index": 5,
                         "page_number": 1
                     },
                     {
-                        "contents": "\\***Correspondence:**\nNetta Cohen, School of Computing, University of Leeds, Leeds LS2 9JT, UK.\ne-mail:",
+                        "contents": "## 1. INTRODUCTION",
                         "paragraph_index": 6,
                         "page_number": 1
                     },
                     {
-                        "contents": "^\u2020**Present address:**\nJordan H. Boyle, School of Mechanical Engineering, University of Leeds, Leeds, UK;\nStefano Berri, Leeds Institute of Molecular Medicine, St James\u2019s University Hospital, Leeds, UK.",
+                        "contents": "One essential requirement for the survival of most animals is the ability to move around in a world characterized by complex, unpredictable, and variable environments. Adapting to different environments often involves the use of qualitatively distinct patterns of locomotion, called gaits. The animal\u2019s nervous system is responsible for generating the rhythmic neuromuscular activity associated with each of these gaits and must coordinate the task of switching seamlessly between them. Furthermore, the animal must be able to reliably adapt any of these patterns in response to external perturbations. Understanding the neural basis of animal locomotion is an important challenge that has received considerable attention (Kiehn et al., 1998; Grillner and Wall\u00e9n, 2002; Hill et al., 2003; Borgmann et al., 2009).",
                         "paragraph_index": 7,
                         "page_number": 1
                     },
                     {
-                        "contents": "Equipped with its 302-cell nervous system, the nematode *Caenorhabditis elegans* adapts its locomotion in different environments, exhibiting so-called *swimming* in liquids and *crawling* on dense gels. Recent experiments have demonstrated that the worm displays the full range of intermediate behaviors when placed in intermediate environments. The continuous nature of this transition strongly suggests that these behaviors all stem from modulation of a single underlying mechanism. We present a model of *C. elegans* forward locomotion that includes a neuromuscular control system that relies on a sensory feedback mechanism to generate undulations and is integrated with a physical model of the body and environment. We find that the model reproduces the entire swim-crawl transition, as well as locomotion in complex and heterogeneous environments. This is achieved with no modulatory mechanism, except via the proprioceptive response to the physical environment. Manipulations of the model are used to dissect the proposed pattern generation mechanism and its modulation. The model suggests a possible role for GABAergic D-class neurons in forward locomotion and makes a number of experimental predictions, in particular with respect to non-linearities in the model and to symmetry breaking between the neuromuscular systems on the ventral and dorsal sides of the body.",
+                        "contents": "The popular model organism *Caenorhabditis elegans* is a tiny (\\approx1 mm long) nematode worm with a largely invariant nervous system, consisting of exactly 302 neurons with known connectivity (White et al., 1986; Chen et al., 2006). Moreover, the behavioral roles of many of these neurons have been uncovered using experimental techniques including targeted cell killing (Chalfie et al., 1985; McIntire et al., 1993b) and genetic mutations (Brenner, 1974; McIntire et al., 1993a). The result is an organism in which the nervous system is mapped at cellular resolution. Despite its small size and the apparent simplicity of the underlying nervous system, the worm is capable of a surprisingly rich repertoire of behaviors including navigation and foraging, mating, learning, and even rudimentary social behavior (aggregation).",
                         "paragraph_index": 8,
                         "page_number": 1
                     },
                     {
-                        "contents": "**Keywords: invertebrate, locomotion, motor control, neuromechanical model, proprioception**",
+                        "contents": "Central to all of these behaviors, the worm\u2019s locomotion is remarkably adaptive and changes in response to its environment. Specifically, the body undulations used by the worm when swimming in liquid or crawling on a firm gel substrate like agar are kinematically different (see Movie S1 in Supplementary Material), and have generally been thought to represent two distinct gaits (White et al., 1986; Pierce-Shimomura et al., 2008). In line with this two gait hypothesis, previous models of the worm\u2019s locomotion (Niebur and Erd\u00f6s, 1991; Bryden and Cohen, 2004, 2008; Karbowski et al., 2008) have mostly addressed crawling on agar. Recent results, however, demonstrated that forward swimming and crawling are two extremes in a spectrum of behaviors. Indeed the intermediate waveforms can be revealed by placing worms in appropriate intermediate media (Berri et al., 2009; Fang-Yen et al., 2010; Sznitman et al., 2010; Boyle et al., 2011). The continuity of the swim-crawl transition strongly suggests that the entire range of behaviors are produced through modulation of a single neural mechanism. This discovery sets an exciting new challenge to develop a model of the worm that is capable of reproducing the entire range of locomotor behaviors.",
                         "paragraph_index": 9,
                         "page_number": 1
                     },
                     {
-                        "contents": "## 1. INTRODUCTION",
-                        "paragraph_index": 10,
-                        "page_number": 1
-                    },
-                    {
-                        "contents": "One essential requirement for the survival of most animals is the ability to move around in a world characterized by complex, unpredictable, and variable environments. Adapting to different environments often involves the use of qualitatively distinct patterns of locomotion, called gaits. The animal\u2019s nervous system is responsible for generating the rhythmic neuromuscular activity associated with each of these gaits and must coordinate the task of switching seamlessly between them. Furthermore, the animal must be able to reliably adapt any of these patterns in response to external perturbations. Understanding the neural basis of animal locomotion is an important challenge that has received considerable attention (Kiehn et al., 1998; Grillner and Wall\u00e9n, 2002; Hill et al., 2003; Borgmann et al., 2009).",
-                        "paragraph_index": 11,
-                        "page_number": 1
-                    },
-                    {
-                        "contents": "The popular model organism *Caenorhabditis elegans* is a tiny (\\approx1 mm long) nematode worm with a largely invariant nervous system, consisting of exactly 302 neurons with known connectivity (White et al., 1986; Chen et al., 2006). Moreover, the behavioral roles of many of these neurons have been uncovered using experimental techniques including targeted cell killing (Chalfie et al., 1985; McIntire et al., 1993b) and genetic mutations (Brenner, 1974; McIntire et al., 1993a). The result is an organism in which the nervous system is mapped at cellular resolution. Despite its small size and the apparent simplicity of the underlying nervous system, the worm is capable of a surprisingly rich repertoire of behaviors including navigation and foraging, mating, learning, and even rudimentary social behavior (aggregation).",
-                        "paragraph_index": 12,
-                        "page_number": 1
-                    },
-                    {
-                        "contents": "Central to all of these behaviors, the worm\u2019s locomotion is remarkably adaptive and changes in response to its environment. Specifically, the body undulations used by the worm when swimming in liquid or crawling on a firm gel substrate like agar are kinematically different (see Movie S1 in Supplementary Material), and have generally been thought to represent two distinct gaits (White et al., 1986; Pierce-Shimomura et al., 2008). In line with this two gait hypothesis, previous models of the worm\u2019s locomotion (Niebur and Erd\u00f6s, 1991; Bryden and Cohen, 2004, 2008; Karbowski et al., 2008) have mostly addressed crawling on agar. Recent results, however, demonstrated that forward swimming and crawling are two extremes in a spectrum of behaviors. Indeed the intermediate waveforms can be revealed by placing worms in appropriate intermediate media (Berri et al., 2009; Fang-Yen et al., 2010; Sznitman et al., 2010; Boyle et al., 2011). The continuity of the swim-crawl transition strongly suggests that the entire range of behaviors are produced through modulation of a single neural mechanism. This discovery sets an exciting new challenge to develop a model of the worm that is capable of reproducing the entire range of locomotor behaviors.",
-                        "paragraph_index": 13,
-                        "page_number": 1
-                    },
-                    {
                         "contents": "Here we present an integrated neuromechanical model of *C. elegans* forward locomotion, grounded in the neurobiology, anatomy, and physics of the real worm, that successfully accounts for locomotion across a range of media from water to agar, as well as in more complex inhomogeneous environments. This model suggests that sensory feedback mechanisms are sufficient to account for the observed modulation of the locomotion behavior in",
-                        "paragraph_index": 14,
-                        "page_number": 1
-                    },
-                    {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | **1**",
-                        "paragraph_index": 15,
+                        "paragraph_index": 10,
                         "page_number": 1
                     }
                 ]
@@ -100,7 +70,7 @@
                         "page_number": 2
                     },
                     {
-                        "contents": "# 2. MATERIALS AND METHODS",
+                        "contents": "## 2. MATERIALS AND METHODS",
                         "paragraph_index": 2,
                         "page_number": 2
                     },
@@ -125,17 +95,17 @@
                         "page_number": 2
                     },
                     {
-                        "contents": "## 2.1. PROPERTIES OF THE ENVIRONMENT",
+                        "contents": "### 2.1. PROPERTIES OF THE ENVIRONMENT",
                         "paragraph_index": 7,
                         "page_number": 2
                     },
                     {
-                        "contents": "Small size and relatively slow speeds mean that the worm's motion is well described by low Reynolds number physics, in which inertial forces can be neglected. As previously demonstrated (Berri et al., 2009), the resistive forces applied by the worm's physical environment can be well represented by local drag coefficients resisting motion tangential (C\\_||) and normal (C\\_\\perp) to the local body surface. In Newtonian fluids of known viscosity, values of drag coefficients can be determined from slender body theory, using equations due to Lighthill (1976)",
+                        "contents": "Small size and relatively slow speeds mean that the worm's motion is well described by low Reynolds number physics, in which inertial forces can be neglected. As previously demonstrated (Berri et al., 2009), the resistive forces applied by the worm's physical environment can be well represented by local drag coefficients resisting motion tangential (C\\_\\parallel) and normal (C\\_\\perp) to the local body surface. In Newtonian fluids of known viscosity, values of drag coefficients can be determined from slender body theory, using equations due to Lighthill (1976)",
                         "paragraph_index": 8,
                         "page_number": 2
                     },
                     {
-                        "contents": "C\\_||,  water = L \\frac{2\\pi\\mu}{\\ln(2q/a)} (1)\nC\\_\\perp,  water = L \\frac{4\\pi\\mu}{\\ln(2q/a) + 0.5},",
+                        "contents": "C\\_\\parallel, water = L \\frac{2\\pi\\mu}{\\ln(2q/a)} \n C\\_\\perp, water = L \\frac{4\\pi\\mu}{\\ln(2q/a) + 0.5} , \\quad (1)",
                         "paragraph_index": 9,
                         "page_number": 2
                     },
@@ -145,33 +115,28 @@
                         "page_number": 2
                     },
                     {
-                        "contents": "Note that the values above are for the whole worm, so the drag coefficient experienced locally along the worm is proportionately smaller. Importantly, in Newtonian environments, the ratio of drag coefficients is fully specified by the geometry of the object, and for the worm is roughly K = C\\_\\perp/C\\_|| \\approx 1.5.",
+                        "contents": "Note that the values above are for the whole worm, so the drag coefficient experienced locally along the worm is proportionately smaller. Importantly, in Newtonian environments, the ratio of drag coefficients is fully specified by the geometry of the object, and for the worm is roughly K = C\\_\\perp/C\\_\\parallel \\approx 1.5.",
                         "paragraph_index": 11,
                         "page_number": 2
                     },
                     {
-                        "contents": "For agar, Wallace estimated the tangential drag coefficients C\\_||, agar by directly measuring the force required to pull glass fibers of similar dimension to *C. elegans* across the surface (Wallace, 1969). Based on this measurement, Niebur and Erd\u00f6s (1991) estimated C\\_||, agar = 3.2 \\times 10^-3 kg\u00b7s^-1. We previously estimated the normal drag coefficient C\\_\\perp, agar from recordings of wild type worms using our motion simulator (Berri et al., 2009). Briefly, we found the ratio of drag coefficients to be in the range K\\_agar \\approx 30--40; taking a value of K\\_agar = 40 and Niebur and Erd\u00f6s' estimate for C\\_||, agar gives C\\_\\perp, agar = 128 \\times 10^-3 kg\u00b7s^-1, which will be used in what follows.",
+                        "contents": "For agar, Wallace estimated the tangential drag coefficients C\\_\\parallel, agar by directly measuring the force required to pull glass fibers of similar dimension to *C. elegans* across the surface (Wallace, 1969). Based on this measurement, Niebur and Erd\u00f6s (1991) estimated C\\_\\parallel, agar = 3.2 \\times 10^-3 kg\u00b7s^-1. We previously estimated the normal drag coefficient C\\_\\perp, agar from recordings of wild type worms using our motion simulator (Berri et al., 2009). Briefly, we found the ratio of drag coefficients to be in the range K\\_agar \\approx 30-40; taking a value of K\\_agar = 40 and Niebur and Erd\u00f6s' estimate for C\\_\\parallel, agar gives C\\_\\perp, agar = 128 \\times 10^-3 kg\u00b7s^-1, which will be used in what follows.",
                         "paragraph_index": 12,
                         "page_number": 2
                     },
                     {
-                        "contents": "For generality in our simulations, we allow all combinations of drag coefficients C\\_|| and C\\_\\perp, such that (i) the minimum drag coefficients correspond to a water environment; (ii) the maximum drag coefficients correspond to estimates of agar properties; and (iii) the ratio of drag coefficients falls within the range 1.5 \\leq K \\leq 40. The specific combinations used are shown in **Figure 4C**.",
+                        "contents": "For generality in our simulations, we allow all combinations of drag coefficients C\\_\\parallel and C\\_\\perp, such that (i) the minimum drag coefficients correspond to a water environment; (ii) the maximum drag coefficients correspond to estimates of agar properties; and (iii) the ratio of drag coefficients falls within the range 1.5 \\le K \\le 40. The specific combinations used are shown in **Figure 4C**.",
                         "paragraph_index": 13,
                         "page_number": 2
                     },
                     {
-                        "contents": "## 2.2. THE PHYSICAL MODEL",
+                        "contents": "### 2.2. THE PHYSICAL MODEL",
                         "paragraph_index": 14,
                         "page_number": 2
                     },
                     {
                         "contents": "In line with previous work (Niebur and Erd\u00f6s, 1991; Boyle et al., 2008), we model the worm's body as a 2D outline. The 2D representation is justifiable as the *C. elegans* body (with the exception of the head) only bends in the dorso-ventral plane. The passive body is modeled as a lightly damped elastic beam. The model body is divided into repeating \"segments\" and articulated by pairs of (D)orsal and (V)entral muscles, with each muscle located in the gap between two points of the physical model (see **Figures 1A,B**). The hydrostatic skeleton and muscles are represented by a combination of damped springs and solid rods connecting these points. Each resulting set of four points and two muscles is referred to as a segment. The number of segments thus corresponds to the number of muscle pairs in the model. We have chosen M = 48 to provide a good approximation of a smooth (biologically unsegmented) body without being excessively computationally expensive. This number also approximates closely the number of muscles along the body (*C. elegans* has 48 dorsal and 47 ventral muscle cells). Note, however, that the term \"segments\" is used for convenience to denote repeating structures, and does not imply biological segmentation. The muscles are modeled as damped",
                         "paragraph_index": 15,
-                        "page_number": 2
-                    },
-                    {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | **2**",
-                        "paragraph_index": 16,
                         "page_number": 2
                     }
                 ]
@@ -184,47 +149,47 @@
                         "page_number": 3
                     },
                     {
-                        "contents": "!\\[A diagram showing the physical structure of the worm model with rods, lateral, and diagonal elements. B diagram showing a single segment with nomenclature for points and lengths. C schematic of the neuromuscular circuit with neurons and muscles.]",
+                        "contents": "**FIGURE 1 |** **(A)** Structure of the physical model. The worm is represented by 49 solid rods (black lines) whose end points (filled black circles) are connected by lateral (red) and diagonal (blue) elements. **(B)** Detailed schematic diagram of a single segment of the physical model illustrating nomenclature. Solid rods maintain equal width, diagonal elements (blue) preserve internal pressure and active muscles line the lateral elements (red). k and \\bar{k} denote opposite ventral and dorsal sides, or vice versa. **(C)** Schematic of the neuromuscular model, showing one of 12 repeating units making up a symmetrized circuit for forward locomotion control. The circuit includes a pair of B-class excitatory neurons (circles), a pair of D-class inhibitory neurons (squares), and four muscles (diamonds) on each side (dorsal and ventral). Synapses are labeled either as excitatory (arrowhead) or inhibitory (circlehead). Posteriorly directed lines from B-class neurons denote the stretch receptor inputs. AVB also forms gap junctional connections with VB and DB (not shown).",
                         "paragraph_index": 1,
                         "page_number": 3
                     },
                     {
-                        "contents": "**FIGURE 1 | (A)** Structure of the physical model. The worm is represented by 49 solid rods (black lines) whose end points (filled black circles) are connected by lateral (red) and diagonal (blue) elements. **(B)** Detailed schematic diagram of a single segment of the physical model illustrating nomenclature. Solid rods maintain equal width, diagonal elements (blue) preserve internal pressure and active muscles line the lateral elements (red). k and \\bar{k} denote opposite ventral and dorsal sides, or vice versa. **(C)** Schematic of the neuromuscular model, showing one of 12 repeating units making up a symmetrized circuit for forward locomotion control. The circuit includes a pair of B-class excitatory neurons (circles), a pair of D-class inhibitory neurons (squares), and four muscles (diamonds) on each side (dorsal and ventral). Synapses are labeled either as excitatory (arrowhead) or inhibitory (circlehead). Posteriorly directed lines from B-class neurons denote the stretch receptor inputs. AVB also forms gap junctional connections with VB and DB (not shown).",
+                        "contents": "opposite side to k, i.e., D = \\bar{V} and \\bar{D} = V). **Lateral elements** representing passive cuticle forces and active muscle forces connect each point p\\_i^k to adjacent points p\\_i\\pm1^k. The volume-preserving effect of internal pressure is approximated by **diagonal elements** that connect p\\_i^k to p\\_i\\pm1^\\bar{k}. Together, these elements yield a net force f\\_i^k on each point. The forces acting on p\\_i^k and p\\_i^\\bar{k} combine into a net force and torque acting on the midpoint of the ith rod.",
                         "paragraph_index": 2,
                         "page_number": 3
                     },
                     {
-                        "contents": "opposite side to k, i.e., D = \\bar{V} and \\bar{D} = V). *Lateral elements* representing passive cuticle forces and active muscle forces connect each point p*i^k to adjacent points p*{i \\pm 1}^k. The volume-preserving effect of internal pressure is approximated by *diagonal elements* that connect p*i^k to p*{i \\pm 1}^\\bar{k}. Together, these elements yield a net force f\\_i^k on each point. The forces acting on p\\_i^k and p\\_i^\\bar{k} combine into a net force and torque acting on the midpoint of the ith rod.",
+                        "contents": "### Passive body forces",
                         "paragraph_index": 3,
                         "page_number": 3
                     },
                     {
-                        "contents": "### Passive body forces",
+                        "contents": "In the absence of muscle activation, passive body forces capture the combined effect of the cuticle and internal pressure. In the interest of numerical stability, diagonal elements that strongly resist compression are used to represent the effect of pressure.",
                         "paragraph_index": 4,
                         "page_number": 3
                     },
                     {
-                        "contents": "In the absence of muscle activation, passive body forces capture the combined effect of the cuticle and internal pressure. In the interest of numerical stability, diagonal elements that strongly resist compression are used to represent the effect of pressure.",
+                        "contents": "For the model to work in a highly resistive environment such as agar, spring forces suffice (Niebur and Erd\u00f6s, 1991; Boyle et al., 2008). However, to model motion in liquid, damping terms must also be included. We therefore model each lateral and diagonal element as a spring in parallel with a damper. Forces applied by the passive lateral elements are given by",
                         "paragraph_index": 5,
                         "page_number": 3
                     },
                     {
-                        "contents": "For the model to work in a highly resistive environment such as agar, spring forces suffice (Niebur and Erd\u00f6s, 1991; Boyle et al., 2008). However, to model motion in liquid, damping terms must also be included. We therefore model each lateral and diagonal element as a spring in parallel with a damper. Forces applied by the passive lateral elements are given by",
+                        "contents": "$$\nf\\_L,m^k = \\begin{cases}\n\\kappa\\_L(L\\_0L,m - L\\_L,m^k) + \\beta\\_Lv\\_L,m^k & , \\quad L\\_L,m^k < L\\_0L,m \\\\\n\\kappa\\_L\\[(L\\_0L,m - L\\_L,m^k) \\\\",
                         "paragraph_index": 6,
                         "page_number": 3
                     },
                     {
-                        "contents": "f\\_L,m^k = \\begin{cases} \\kappa\\_L (L\\_0L,m - L\\_L,m^k) + \\beta\\_L v\\_L,m^k & , \\quad L\\_L,m^k < L\\_0L,m \\ \\kappa\\_L \\[(L\\_0L,m - L\\_L,m^k) \\ \\quad + 2(L\\_0L,m - L\\_L,m^k)^4] + \\beta\\_L v\\_L,m^k & , \\quad otherwise , \\end{cases} \\quad (3)",
+                        "contents": "* 2(L\\_0L,m - L\\_L,m^k)^4] + \\beta\\_Lv\\_L,m^k & , \\quad otherwise,\n  \\end{cases} \\tag{3}\n  $$",
                         "paragraph_index": 7,
                         "page_number": 3
                     },
                     {
-                        "contents": "where \\kappa\\_L, \\beta\\_L, and L\\_0L,m denote the lateral spring constant, damping constant, and rest length, respectively. The length of lateral element is L\\_L,m^k while v\\_L,m^k = \\frac{d}{dt} L\\_L,m^k. Note that, due to the non-constant radius, the rest lengths vary along the worm according to L\\_0L,m = \\sqrt{L\\_seg^2 + (R\\_m - R\\_m+1)^2}. Similarly, the forces exerted by diagonal elements are given by",
+                        "contents": "where \\kappa\\_L, \\beta\\_L, and L\\_0L,m denote the lateral spring constant, damping constant, and rest length, respectively. The length of lateral element is L\\_L,m^k while v\\_L,m^k = \\frac{d}{dt}L\\_L,m^k. Note that, due to the non-constant radius, the rest lengths vary along the worm according to L\\_0L,m = \\sqrt{L\\_seg^2 + (R\\_m - R\\_m+1)^2}. Similarly, the forces exerted by diagonal elements are given by",
                         "paragraph_index": 8,
                         "page_number": 3
                     },
                     {
-                        "contents": "f\\_D,m^k = \\kappa\\_D  L\\_0D,m - L\\_D,m^k  + \\beta\\_D v\\_D,m^k, \\quad (4)",
+                        "contents": "f\\_D,m^k = \\kappa\\_D  L\\_0D,m - L\\_D,m^k  + \\beta\\_Dv\\_D,m^k, \\tag{4}",
                         "paragraph_index": 9,
                         "page_number": 3
                     },
@@ -234,7 +199,7 @@
                         "page_number": 3
                     },
                     {
-                        "contents": "The parameters for the passive body were chosen by comparing the behavior of the passive physical model embedded in virtual water and agar environments to that of a flaccid *C. elegans* in water or on agar (Sauvage, 2007). Accordingly, a model worm initiated in a bent position will straighten almost instantaneously in water but will straighten only very slowly on agar. These parameters are given in **Table 1**.",
+                        "contents": "The parameters for the passive body were chosen by comparing the behavior of the passive physical model embedded in virtual water and agar environments to that of a flaccid *C. elegans* in water or on agar (Sauvage, 2007). Accordingly, a model worm initiated in a bent position will straighten almost instantaneously in water but will straighten only very slowly on agar. These parameters are given in Table 1.",
                         "paragraph_index": 11,
                         "page_number": 3
                     },
@@ -244,38 +209,28 @@
                         "page_number": 3
                     },
                     {
-                        "contents": "The worm's longitudinal body wall muscles are anchored to the inside of the cuticle and are effectively grouped into dorsal and ventral sets. In the model, muscles connect adjacent points on the same side of the body, and therefore act in parallel with the passive lateral elements representing the cuticle (**Figure 1B**). Thus, the muscle length and cuticle length for a given section of the body are assumed to be identical, consistent with recent experimental",
+                        "contents": "The worm's longitudinal body wall muscles are anchored to the inside of the cuticle and are effectively grouped into dorsal and ventral sets. In the model, muscles connect adjacent points on the same side of the body, and therefore act in parallel with the passive lateral elements representing the cuticle (**Figure 1B**). Thus, the muscle length and cuticle length for a given section of the body are assumed to be identical, consistent with recent experimental springs whose spring \"constant,\" rest length, and damping \"constant\" are functions of the level of activation. This implementation endows the muscles with simplified Hill-like length-force and speed-force relations (Hill, 1938), as illustrated in **Figures 2A,B** respectively.",
                         "paragraph_index": 13,
                         "page_number": 3
                     },
                     {
-                        "contents": "springs whose spring \"constant,\" rest length, and damping \"constant\" are functions of the level of activation. This implementation endows the muscles with simplified Hill-like length-force and speed-force relations (Hill, 1938), as illustrated in **Figures 2A,B** respectively.",
+                        "contents": "### Structure",
                         "paragraph_index": 14,
                         "page_number": 3
                     },
                     {
-                        "contents": "### Structure",
+                        "contents": "In the model, a worm of length L and radius R is represented by P = 2(M + 1) = 98 discrete points p\\_i^k, where i = 1, \\dots, M + 1 and k = {D, V}. In other words 49 dorso-ventral point pairs i = 1, \\dots, M + 1 form the boundaries of the M = 48 segments. The model approximates the tapered shape of the worm as a prolate ellipse. To avoid zero-valued radii at the ends, the major radius is taken to be slightly greater than L/2. For a minor radius R, the radii along the body are given by",
                         "paragraph_index": 15,
                         "page_number": 3
                     },
                     {
-                        "contents": "In the model, a worm of length L and radius R is represented by P = 2(M + 1) = 98 discrete points p\\_i^k, where i = 1, \\dots, M + 1 and k = {D, V}. In other words 49 dorso-ventral point pairs i = 1, \\dots, M + 1 form the boundaries of the M = 48 segments. The model approximates the tapered shape of the worm as a prolate ellipse. To avoid zero-valued radii at the ends, the major radius is taken to be slightly greater than L/2. For a minor radius R, the radii along the body are given by",
+                        "contents": "R\\_i = R \\left| \\sin \\left\\[ \\cos^-1  \\frac{i - (M/2 + 1)}{M/2 + 0.2}   \\right|. \\tag{2}",
                         "paragraph_index": 16,
                         "page_number": 3
                     },
                     {
-                        "contents": "R\\_i = R \\left| \\sin \\left\\[ \\cos^-1  \\frac{i - (M/2 + 1)}{M/2 + 0.2}   \\right|. \\quad (2)",
-                        "paragraph_index": 17,
-                        "page_number": 3
-                    },
-                    {
                         "contents": "Neglecting the worm's radial elasticity implies the body will maintain a fixed diameter over time. This allows opposite points p\\_i^k and p\\_i^\\bar{k} to be connected by a solid rod of length 2R\\_i (with \\bar{k} denoting the",
-                        "paragraph_index": 18,
-                        "page_number": 3
-                    },
-                    {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | **3**",
-                        "paragraph_index": 19,
+                        "paragraph_index": 17,
                         "page_number": 3
                     }
                 ]
@@ -283,53 +238,73 @@
             "Page 4": {
                 "paragraphs": [
                     {
-                        "contents": "|A|B|||\n|-|-|-|-|\n|-fkM,m (\u00b5N) vs LkL,m / Lk0L,m|-fkM,m (\u00b5N) vs vkL,m (mm/s)|||\n|0|-8|-0.1|0|\n|0.5|-4|-0.05|\\~1.2 (for V=0.25) to \\~5 (for V=1)|\n|1|0|0|\\~2.5 (for V=0.25) to \\~10 (for V=1)|\n|1.5|4|0.05|\\~3.8 (for V=0.25) to \\~15 (for V=1)|\n||(Linear relationship with activation VkM,m = 0.25, 0.5, 0.75, 1)|0.1|\\~5.2 (for V=0.25) to \\~21 (for V=1)|",
+                        "contents": "Boyle et al. Neuromechanical model of *C. elegans* locomotion",
+                        "paragraph_index": 0,
+                        "page_number": 4
+                    },
+                    {
+                        "contents": "**FIGURE 2 |** The force generated by model muscles is a function of their activation, length, and rate of contraction. (A) Force/length relationship obtained by holding the muscle at a specific length.",
+                        "paragraph_index": 1,
+                        "page_number": 4
+                    },
+                    {
+                        "contents": "|V^k\\_M,m|Line Color|\n|-|-|\n|0.25|Blue|\n|0.5|Green|\n|0.75|Red|\n|1|Cyan|",
                         "paragraph_index": 2,
                         "page_number": 4
                     },
                     {
-                        "contents": "**FIGURE 2 | The force generated by model muscles is a function of their activation, length, and rate of contraction.** (A) Force/length relationship obtained by holding the muscle at a specific length. (B) Force/velocity relationship obtained by allowing the muscle to contract at a specified rate and measuring the force it exerts at the moment it reaches its rest length L\\_0L. The model therefore provides a simple linear approximation of these properties of biological muscles. Note that in both cases -f is plotted for simplicity, because contractile forces are defined as negative in the model.",
-                        "paragraph_index": 3,
+                        "contents": "|X (L^k\\_L,m / L^k\\_0L,m)|Y (-f^k\\_M,m) for V=0.25|Y (-f^k\\_M,m) for V=0.5|Y (-f^k\\_M,m) for V=0.75|Y (-f^k\\_M,m) for V=1|\n|-|-|-|-|-|\n|0|-7|-5|-4|-3|\n|0.5|-3|-1|0|1|\n|1|1|3|4|5|\n|1.5|5|7|8|9|",
+                        "paragraph_index": 4,
                         "page_number": 4
                     },
                     {
-                        "contents": "|Param.|Value|\n|-|-|\n|M|48|\n|L|1 mm|\n|\u03baL|\\frac{M}{24} 0.01  kg \\cdot s^-1|\n|\u03baD|\\kappa\\_L \\times 350|\n|\u03ba0M|\\kappa\\_L \\times 20|\n|Fmax,1|0.7 \\times (2/3)|\n|P|2 \\ (M + 1)|\n|\u0394M|0.65|\n|L0L,m|\\sqrt{L\\_seg^2 + (R\\_m - R\\_m+1)^2}|\n|L0D,m|\\sqrt{L\\_seg^2 + (R\\_m + R\\_m+1)^2}|\n|Lmin,m|L\\_0L,m \\ (1 - \\Delta\\_M \\ (R\\_m + R\\_m+1) / 2R)|\n|Fmax,m=2,...,M|0.70 - 0.42 \\ (m - 1) / M|\n|R|40 \\ \\mum|\n|Lseg|L/M|\n|\u03b2L|\\kappa\\_L \\times 0.025  s|\n|\u03b2D|\\kappa\\_D \\times 0.01  s|\n|\u03b20M|\\beta\\_L \\times 100|",
+                        "contents": "(B) Force/velocity relationship obtained by allowing the muscle to contract at a specified rate and measuring the force it exerts at the moment it reaches its rest length L\\_0L. The model therefore provides a simple linear approximation of these properties of biological muscles. Note that in both cases -f is plotted for simplicity, because contractile forces are defined as negative in the model.",
                         "paragraph_index": 5,
                         "page_number": 4
                     },
                     {
-                        "contents": "findings (Petzold et al., 2011). Qualitatively following Hill's relations (Hill, 1938), muscle forces are modeled as a function of the muscle activation and mechanical state (**Figure 2**), such that (i) as a muscle shortens the maximum force it can develop will decrease, eventually reaching saturation, and (ii) the force it generates varies inversely with the speed of contraction. Accordingly, muscles are implemented as a variable lateral element (again consisting of a spring acting in parallel with a damper), whose spring parameter \\kappa^k\\_M,m (equivalent to the spring \"constant\" in an ideal Hooke's Law spring), spring rest length L^k\\_0M,m, and damping coefficient \\beta^k\\_M,m all depend on the muscle activation. An anterior-posterior gradient in the maximum muscle efficacies is implemented by a linearly (posteriorly) decreasing factor F\\_max,m. This gradient makes the shape of the worm more biologically realistic (see **Figure 3**). Finally, the most anterior muscles receive somewhat weaker innervation to prevent the tip of the head from displaying unrealistically strong bending. Muscle forces are therefore given by",
+                        "contents": "|v^k\\_L,m (mm/s)|Y (-f^k\\_M,m) for V=0.25|Y (-f^k\\_M,m) for V=0.5|Y (-f^k\\_M,m) for V=0.75|Y (-f^k\\_M,m) for V=1|\n|-|-|-|-|-|\n|-0.1|0|1|2|3|\n|-0.05|1|2|3|4|\n|0|2|3|4|5|\n|0.05|3|4|5|6|\n|0.1|4|5|6|7|",
                         "paragraph_index": 6,
                         "page_number": 4
                     },
                     {
-                        "contents": "f^k\\_M,m = \\kappa^k\\_M,m  L^k\\_0M,m - L^k\\_L,m  + \\beta^k\\_M,m v^k\\_L,m, \\tag{5}",
+                        "contents": "Table 1 | Parameters of the physical model.",
                         "paragraph_index": 7,
                         "page_number": 4
                     },
                     {
-                        "contents": "\\begin{aligned} \\kappa^k\\_M,m &= \\kappa\\_0M \\ F\\_max,m \\ \\sigma  A^k\\_M,m  \\ L^k\\_0M,m &= L\\_0L,m - F\\_max,m \\ \\sigma  A^k\\_M,m  (L\\_0L,m - L\\_min,m) \\ \\beta^k\\_M,m &= \\beta\\_0M \\ F\\_max,m \\ \\sigma  A^k\\_M,m , \\end{aligned} \\tag{6}",
+                        "contents": "|Param.|Value|\n|-|-|\n|M|48|\n|L|1 mm|\n|\\kappa\\_L|\\frac{M}{24} 0.01 kg \\cdot s^-1|\n|\\kappa\\_D|\\kappa\\_L \\times 350|\n|\\kappa\\_0M|\\kappa\\_L \\times 20|\n|F\\_max,1|0.7 \\times (2/3)|\n|P|2(M+1)|\n|\\Delta\\_M|0.65|\n|L\\_0L,m|\\sqrt{L^2\\_seg + (R\\_m - R\\_m+1)^2}|\n|L\\_0D,m|\\sqrt{L^2\\_seg + (R\\_m + R\\_m+1)^2}|\n|L\\_min,m|L\\_0L,m (1 - \\Delta\\_M (R\\_m + R\\_m+1)/2R)|\n|F\\_max, m=2,\\dots,M|0.70 - 0.42(m-1)/M|\n|R|40 \\mum|\n|L\\_seg|L/M|\n|\\beta\\_L|\\kappa\\_L \\times 0.025 s|\n|\\beta\\_D|\\kappa\\_D \\times 0.01 s|\n|\\beta\\_0M|\\beta\\_L \\times 100|",
+                        "paragraph_index": 8,
+                        "page_number": 4
+                    },
+                    {
+                        "contents": "findings (Petzold et al., 2011). Qualitatively following Hill\u2019s relations (Hill, 1938), muscle forces are modeled as a function of the muscle activation and mechanical state (**Figure 2**), such that (i) as a muscle shortens the maximum force it can develop will decrease, eventually reaching saturation, and (ii) the force it generates varies inversely with the speed of contraction. Accordingly, muscles are implemented as a variable lateral element (again consisting of a spring acting in parallel with a damper), whose spring parameter \\kappa^k\\_M,m (equivalent to the spring \u201cconstant\u201d in an ideal Hooke\u2019s Law spring), spring rest length L^k\\_0M,m, and damping coefficient \\beta^k\\_M,m all depend on the muscle activation. An anterior-posterior gradient in the maximum muscle efficacies is implemented by a linearly (posteriorly) decreasing factor F\\_max,m. This gradient makes the shape of the worm more biologically realistic (see **Figure 3**). Finally, the most anterior muscles receive somewhat weaker innervation to prevent the tip of the head from displaying unrealistically strong bending. Muscle forces are therefore given by",
                         "paragraph_index": 9,
                         "page_number": 4
                     },
                     {
-                        "contents": "and where \\kappa\\_0M and \\beta\\_0M are constants. The function \\sigma is a piecewise linear approximation of a sigmoid that binds the muscle's electromechanical response to the allowable range",
+                        "contents": "f^k\\_M,m = \\kappa^k\\_M,m  L^k\\_0M,m - L^k\\_L,m  + \\beta^k\\_M,m v^k\\_L,m, \\quad (5)",
                         "paragraph_index": 10,
                         "page_number": 4
                     },
                     {
-                        "contents": "\\sigma(x) = \\begin{cases} 0 & , & x \\le 0 \\ x & , & 0 < x < 1 \\ 1 & , & x \\ge 1. \\end{cases} \\tag{7}",
-                        "paragraph_index": 11,
-                        "page_number": 4
-                    },
-                    {
-                        "contents": "A minimum muscle length L\\_min,m prevents the muscles from contracting unrealistically. To allow the same curvatures to be",
+                        "contents": "\\kappa^k\\_M,m = \\kappa\\_0M F\\_max,m \\sigma  A^k\\_M,m  \n L^k\\_0M,m = L\\_0L,m - F\\_max,m \\sigma  A^k\\_M,m  (L\\_0L,m - L\\_min,m) \\quad (6) \n \\beta^k\\_M,m = \\beta\\_0M F\\_max,m \\sigma  A^k\\_M,m ,",
                         "paragraph_index": 12,
                         "page_number": 4
                     },
                     {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | 4",
+                        "contents": "and where \\kappa\\_0M and \\beta\\_0M are constants. The function \\sigma is a piecewise linear approximation of a sigmoid that binds the muscle\u2019s electromechanical response to the allowable range",
                         "paragraph_index": 13,
+                        "page_number": 4
+                    },
+                    {
+                        "contents": "\\sigma(x) = \\begin{cases} 0 0 & , \\quad x \\le 0 \\ x & , \\quad 0 < x < 1 \\ 1  \\ 1 & , \\quad x \\ge 1. \\end{cases} \\quad (7)",
+                        "paragraph_index": 14,
+                        "page_number": 4
+                    },
+                    {
+                        "contents": "A minimum muscle length L\\_min,m prevents the muscles from contracting unrealistically. To allow the same curvatures to be",
+                        "paragraph_index": 15,
                         "page_number": 4
                     }
                 ]
@@ -342,12 +317,12 @@
                         "page_number": 5
                     },
                     {
-                        "contents": "![Figure 3: Curvature gradients in experiment and model.](https://placeholder.com)",
+                        "contents": "**FIGURE 3 |** The worm's locomotion wave exhibits a posteriorly decreasing gradient in curvature, averaged over time (\\bar{\\kappa}). S is a measure of the position along the worm's body, with S=0 corresponding to the head and S=1 corresponding to the tail. (A) Experimentally observed curvature gradient obtained by averaging the curvature at each point along the body, first over time (\\approx 10 s) and then over several worms (n=3 for agar and n=5 for water). Bars indicate the standard deviation over the n worms. (B) Qualitatively similar curvature gradients exhibited by the model, due to the gradients in muscle efficacy and stretch receptor weighting.",
                         "paragraph_index": 1,
                         "page_number": 5
                     },
                     {
-                        "contents": "**FIGURE 3 | The worm\u2019s locomotion wave exhibits a posteriorly decreasing gradient in curvature, averaged over time (\\bar{\\kappa}). S is a measure of the position along the worm\u2019s body, with S = 0 corresponding to the head and S = 1 corresponding to the tail. (A)** Experimentally observed curvature gradient obtained by averaging the curvature at each point along the body, first over time (\\approx10 s) and then over several worms (n = 3 for agar and n = 5 for water). Bars indicate the standard deviation over the n worms. **(B)** Qualitatively similar curvature gradients exhibited by the model, due to the gradients in muscle efficacy and stretch receptor weighting.",
+                        "contents": "|S|Agar \\bar{\\kappa} (1/mm)|Water \\bar{\\kappa} (1/mm)|\n|-|-|-|\n|0.0|\\~6.2|\\~4.8|\n|0.1|\\~7.8|\\~3.2|\n|0.2|\\~7.0|\\~2.8|\n|0.3|\\~5.8|\\~2.6|\n|0.4|\\~5.2|\\~2.5|\n|0.5|\\~5.0|\\~2.4|\n|0.6|\\~5.1|\\~2.6|\n|0.7|\\~4.9|\\~2.3|\n|0.8|\\~4.5|\\~2.1|\n|0.9|\\~4.2|\\~2.0|\n|1.0|\\~5.8|\\~5.0|",
                         "paragraph_index": 2,
                         "page_number": 5
                     },
@@ -367,7 +342,7 @@
                         "page_number": 5
                     },
                     {
-                        "contents": "#### The neural circuit",
+                        "contents": "### The neural circuit",
                         "paragraph_index": 6,
                         "page_number": 5
                     },
@@ -377,13 +352,8 @@
                         "page_number": 5
                     },
                     {
-                        "contents": "In the model, the ventral cord circuit (White et al., 1976, 1986; Chen et al., 2006) is simplified to a single AVB command neuron that drives a series of N = 12 repeating units, each containing one motor neuron of each class DBn, VBn, DDn, and VDn, with n = 1, \\dots, N (see **Figure 1C**). Note the inclusion of neural inhibition from VD to VB, that is partially consistent with the connectivity data (Chen et al., 2006). Within each unit, B-class neurons receive a constant-current input from AVB, switching the entire circuit on and off. D-class neurons are modeled as passive (linear) elements. Postulated stretch-receptor-mediated proprioception in B-class neurons forms the fundamental oscillatory mechanism of the model. Each DB (VB) neuron integrates stretch-receptor currents from the dorsal (ventral) side, both locally and posteriorly, along its axon. Finally, all electrical synapses except those between AVB and VB/DB are neglected in our model. Indeed, a modeling study on the role of inter-muscle coupling (Boyle and Cohen, 2008) suggested that the coupling may be too weak to have any observable effect and",
+                        "contents": "In the model, the ventral cord circuit (White et al., 1976, 1986; Chen et al., 2006) is simplified to a single AVB command neuron that drives a series of N = 12 repeating units, each containing one motor neuron of each class DBn, VBn, DDn, and VDn, with n = 1, \\dots, N (see **Figure 1C**). Note the inclusion of neural inhibition from VD to VB, that is partially consistent with the connectivity data (Chen et al., 2006). Within each unit, B-class neurons receive a constant-current input from AVB, switching the entire circuit on and off. D-class neurons are modeled as passive (linear) elements. Postulated stretch-receptor-mediated proprioception in B-class neurons forms the fundamental oscillatory mechanism of the model. Each DB (VB) neuron integrates stretch-receptor currents from the dorsal (ventral) side, both locally and posteriorly, along its axon. Finally, all electrical synapses except those between AVB and VB/DB are neglected in our model. Indeed, a modeling study on the role of intermuscle coupling (Boyle and Cohen, 2008) suggested that the coupling may be too weak to have any observable effect and",
                         "paragraph_index": 8,
-                        "page_number": 5
-                    },
-                    {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | **5**",
-                        "paragraph_index": 9,
                         "page_number": 5
                     }
                 ]
@@ -391,108 +361,43 @@
             "Page 6": {
                 "paragraphs": [
                     {
+                        "contents": "Boyle et al. Neuromechanical model of *C. elegans* locomotion",
+                        "paragraph_index": 0,
+                        "page_number": 6
+                    },
+                    {
                         "contents": "our simulation experiments found that electrical coupling among adjacent motoneurons was similarly insignificant in the present model (data not shown).",
                         "paragraph_index": 1,
                         "page_number": 6
                     },
                     {
-                        "contents": "### Motor neurons",
+                        "contents": "**Motor neurons**\nMotivated by electrophysiological recordings of RMD motor neurons in the head (Mellem et al., 2008), we model B-class neurons as binary bistable elements. For simplicity, a binary variable S = {0, 1} denotes *off* and *on* states (and abstractly represents polarized and depolarized membrane potentials). Each B-neuron turns on in response to a supra-threshold input signal which includes internal activation from stretch receptors (see below) and synaptic inputs. B-neurons turn off when this signal falls below some threshold. Hysteresis is implemented by making the activation/deactivation threshold state dependent (see arrows in **Figure 7A**). Given the short time scale of RMD neurons, which we estimate to be \\leq 10 ms (see Figure 2 of Mellem et al., 2008), it is reasonable to model these neurons as instantaneous.",
                         "paragraph_index": 2,
                         "page_number": 6
                     },
                     {
-                        "contents": "Motivated by electrophysiological recordings of RMD motor neurons in the head (Mellem et al., 2008), we model B-class neurons as binary bistable elements. For simplicity, a binary variable S = {0, 1} denotes *off* and *on* states (and abstractly represents polarized and depolarized membrane potentials). Each B-neuron turns on in response to a supra-threshold input signal which includes internal activation from stretch receptors (see below) and synaptic inputs. B-neurons turn off when this signal falls below some threshold. Hysteresis is implemented by making the activation/deactivation threshold state dependent (see arrows in **Figure 7A**). Given the short time scale of RMD neurons, which we estimate to be \\le 10 ms (see Figure 2 of Mellem et al., 2008), it is reasonable to model these neurons as instantaneous.",
+                        "contents": "The state variables for model B-class neurons are given by\n S\\_n^k = \\begin{cases} 1 1 & , I\\_n^k > 0.5 + \\epsilon\\_hys (0.5 - S\\_n^k) \\ 0 & , otherwise, \\end{cases} \\quad (8) \nwhere S\\_n^k is the neuronal state variable for the nth neuron on side k; \\epsilon\\_hys sets the width of the hysteresis band; and I\\_n^k is the total input (or \"electrical current\") into the neuron in question. Hysteresis is achieved by introducing state-dependent activation and deactivation thresholds 0.5(1 \\pm \\epsilon\\_hys). This prevents oscillations of arbitrarily small amplitude and, in conjunction with the stretch receptor weight, controls the extent of body bending. Each D-class neuron is excited by a single B-class neuron and assumed to respond instantaneously (with state \\bar{S}\\_n^k).",
                         "paragraph_index": 3,
                         "page_number": 6
                     },
                     {
-                        "contents": "S^k\\_n = \\begin{cases} 1 & , \\quad I^k\\_n > 0.5 + \\epsilon\\_hys (0.5 - S^k\\_n) \\ 0 & , \\quad otherwise , \\end{cases} \\tag{8}",
+                        "contents": "The input term I\\_n^k for B-class neurons is given by\n I\\_n^k = I\\_AVB^k + I\\_SR, n^k + w\\_-^k \\bar{S}*n^k, \nwhere I*{AVB}^k (a constant input current from forward locomotion command interneurons AVB) differs for dorsal and ventral neurons; I\\_SR, n^k is the stretch receptor (SR) current; and w\\_-^k sets the inhibitory (GABAergic) synaptic weight. Note that only ventral neurons receive inhibitory synaptic inputs (w\\_-^D = 0).",
+                        "paragraph_index": 4,
+                        "page_number": 6
+                    },
+                    {
+                        "contents": "**Stretch receptors**\nMechanosensory feedback and its importance in the regulation of locomotion has been reported in *C. elegans* interneurons (Li et al., 2006). While direct evidence for proprioception is still lacking in the motoneurons themselves, mechanosensitive stretch receptor channels have long been postulated to exist in B (and A) class motoneurons. This suggestion was originally motivated by the morphology of these neurons, specifically their long, posteriorly directed undifferentiated processes on which no synapses are found (White et al., 1986). Indeed, the stretch receptor hypothesis is widely recognized as an attractive and plausible conjecture (Riddle et al., 1997; Tavernarakis et al., 1997; Bryden and Cohen, 2004, 2008; O\u2019Hagan and Chal\ufb01e, 2005; Karbowski et al., 2008) and forms the basis of our model. The proposed mechanosensitive channels in these processes would respond to the changes in length associated with body bending. In our model, stretch receptors integrate over local and posterior body segments, in line with the anatomy.",
                         "paragraph_index": 5,
                         "page_number": 6
                     },
                     {
-                        "contents": "where S^k\\_n is the neuronal state variable for the nth neuron on side k; \\epsilon\\_hys sets the width of the hysteresis band; and I^k\\_n is the total input (or \"electrical current\") into the neuron in question. Hysteresis is achieved by introducing state-dependent activation and deactivation thresholds 0.5(1 \\pm \\epsilon\\_hys). This prevents oscillations of arbitrarily small amplitude and, in conjunction with the stretch receptor weight, controls the extent of body bending. Each D-class neuron is excited by a single B-class neuron and assumed to respond instantaneously (with state S^\\bar{k}\\_n).",
+                        "contents": "The stretch receptor current\n I\\_SR, n^k = A\\_n G\\_SR, n \\sum\\_m=(n-1)N\\_{out+1}^s h\\_m^k \\quad (9) \nsums over contributions from a number of segments m of the physical model, where s = \\min{M; N\\_SR + (n-1)N\\_out} sets the number of segments sensed to either N\\_SR or to the number of remaining posterior segments. A prefactor\n A\\_n = \\begin{cases} 1 & , (n-1)N\\_out \\leq M - N\\_SR \\ \\sqrt{\\frac{N\\_SR}{(M-(n-1)N\\_out)}} )}} & , (n-1)N\\_out > M - N\\_SR \\end{cases} \\quad (10) \ncompensates for the variable number of contributing segments. The conductance parameter G\\_SR, n increases linearly from head to tail to compensate for the decreasing curvature of undulations down the worm, imposed by the gradient in muscle efficacy. Finally, h\\_m^k is the effective stretch receptor activation function. We allow the stretch receptor conductance to generate a depolarizing response to stretch and a polarizing response to compression, relative to the local segment resting length. (A similar effect could be achieved in the worm with stretch sensitive channels that are partially open at the rest length.) For simplicity, we take this function to be linear (bilinear) on the ventral (dorsal) sides:\n h\\_m^k = \\lambda\\_m \\gamma\\_m^k \\frac{L\\_L, m^k - L\\_0L, m}{L\\_0L, m}, \\quad (11) \nwhere L\\_0L, m is the segment rest length and L\\_L, m^k is the current length of the kth side of the mth segment. Here,\n \\lambda\\_m = \\frac{2R}{R\\_m + R\\_m+1} \\quad (12) \nis required due to the elliptical shape (and variable radius) of the body, and\n \\gamma\\_m^k = \\begin{cases} 1 & , k = V \\ 0.8 & , k = D; L\\_L, m^k > L\\_0L, m \\ 1.2 & , k = D; L\\_L, m^k < L\\_0L, m \\end{cases} \\quad (13) \nmodifies the dorsal stretch receptors to ensure that the worm will move straight despite the asymmetry in the neural circuit.",
                         "paragraph_index": 6,
                         "page_number": 6
                     },
                     {
-                        "contents": "I^k\\_n = I^k\\_AVB + I^k\\_SR,n + w^k\\_- S^\\bar{k}\\_n ,",
-                        "paragraph_index": 8,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "where I^k\\_AVB (a constant input current from forward locomotion command interneurons AVB) differs for dorsal and ventral neurons; I^k\\_SR,n is the stretch receptor (SR) current; and w^k\\_- sets the inhibitory (GABAergic) synaptic weight. Note that only ventral neurons receive inhibitory synaptic inputs (w^D\\_- = 0).",
-                        "paragraph_index": 9,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "### Stretch receptors",
-                        "paragraph_index": 10,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "Mechanosensory feedback and its importance in the regulation of locomotion has been reported in *C. elegans* interneurons (Li et al., 2006). While direct evidence for proprioception is still lacking in the motoneurons themselves, mechanosensitive stretch receptor channels have long been postulated to exist in B (and A) class motoneurons. This suggestion was originally motivated by the morphology of these neurons, specifically their long, posteriorly directed undifferentiated processes on which no synapses are found (White et al., 1986). Indeed, the stretch receptor hypothesis is widely recognized as an attractive and plausible conjecture (Riddle et al., 1997; Tavernarakis et al., 1997; Bryden and Cohen, 2004, 2008; O'Hagan and Chalfie, 2005; Karbowski et al., 2008) and forms the basis of our model. The proposed mechanosensitive channels in these processes would respond to the changes in length associated with body bending. In our model, stretch receptors integrate over local and posterior body segments, in line with the anatomy.",
-                        "paragraph_index": 11,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "I^k\\_SR,n = A\\_n G\\_SR,n \\sum\\_m=(n-1)N\\_{out+1}^s h^k\\_m \\tag{9}",
-                        "paragraph_index": 13,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "sums over contributions from a number of segments m of the physical model, where s = \\min{M; N\\_SR + (n - 1) N\\_out} sets the number of segments sensed to either N\\_SR or to the number of remaining posterior segments. A prefactor",
-                        "paragraph_index": 14,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "A\\_n = \\begin{cases} 1 & , \\quad (n - 1) N\\_out \\le M - N\\_SR \\ \\sqrt{\\frac{N\\_SR}{(M - (n - 1) N\\_out)}} & , \\quad (n - 1) N\\_out > M - N\\_SR \\end{cases} \\tag{10}",
-                        "paragraph_index": 15,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "compensates for the variable number of contributing segments. The conductance parameter G\\_SR,n increases linearly from head to tail to compensate for the decreasing curvature of undulations down the worm, imposed by the gradient in muscle efficacy. Finally, h^k\\_m is the effective stretch receptor activation function. We allow the stretch receptor conductance to generate a depolarizing response to stretch and a polarizing response to compression, relative to the local segment resting length. (A similar effect could be achieved in the worm with stretch sensitive channels that are partially open at the rest length.) For simplicity, we take this function to be linear (bilinear) on the ventral (dorsal) sides:",
-                        "paragraph_index": 16,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "h^k\\_m = \\lambda\\_m \\gamma^k\\_m \\frac{L^k\\_L,m - L\\_0L,m}{L\\_0L,m} , \\tag{11}",
-                        "paragraph_index": 17,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "where L\\_0L,m is the segment rest length and L^k\\_L,m is the current length of the kth side of the mth segment. Here,",
-                        "paragraph_index": 18,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "is required due to the elliptical shape (and variable radius) of the body, and",
-                        "paragraph_index": 20,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "\\gamma^k\\_m = \\begin{cases} 1 & , \\quad k = V \\ 0.8 & , \\quad k = D; L^k\\_L,m > L\\_0L,m \\ 1.2 & , \\quad k = D; L^k\\_L,m < L\\_0L,m \\end{cases} \\tag{13}",
-                        "paragraph_index": 21,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "modifies the dorsal stretch receptors to ensure that the worm will move straight despite the asymmetry in the neural circuit.",
-                        "paragraph_index": 22,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "### Conductance-based neurons",
-                        "paragraph_index": 23,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "The neural model presented above makes use of two key simplifications, namely treating the neurons as binary and instantaneous. However, it could certainly be argued that a mechanism that works with simple binary neurons would not necessarily work with more realistic continuous-valued (and non-instantaneous) neurons. To validate the binary model, we developed a conductance-based model of the B-class neurons based on the RMD dynamics presented in Mellem et al. (2008).",
-                        "paragraph_index": 24,
-                        "page_number": 6
-                    },
-                    {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | 6",
-                        "paragraph_index": 25,
+                        "contents": "**Conductance-based neurons**\nThe neural model presented above makes use of two key simplifications, namely treating the neurons as binary and instantaneous. However, it could certainly be argued that a mechanism that works with simple binary neurons would not necessarily work with more realistic continuous-valued (and non-instantaneous) neurons. To validate the binary model, we developed a conductance-based model of the B-class neurons based on the RMD dynamics presented in Mellem et al. (2008).",
+                        "paragraph_index": 7,
                         "page_number": 6
                     }
                 ]
@@ -500,7 +405,7 @@
             "Page 7": {
                 "paragraphs": [
                     {
-                        "contents": "Boyle et al. | Neuromechanical model of *C. elegans* locomotion",
+                        "contents": "Boyle et al. Neuromechanical model of *C. elegans* locomotion",
                         "paragraph_index": 0,
                         "page_number": 7
                     },
@@ -545,7 +450,7 @@
                         "page_number": 7
                     },
                     {
-                        "contents": "I\\_NMJ,m^k =  \\frac{w\\_ACh}{1 + e^-k\\_NMJ  V\\_{mem,n(m)^k - V\\_0,NMJ }} + \\frac{w\\_GABA}{1 + e^-k\\_NMJ  V\\_{mem,n(m)^\\bar{k} - V\\_0,NMJ }} , \\quad (15)",
+                        "contents": "I\\_NMJ,m^k =  \\frac{w\\_ACh}{1 + e^-k\\_NMJ(V\\_{mem,n(m)^k - V\\_0,NMJ)}} + \\frac{w\\_GABA}{1 + e^-k\\_NMJ(V\\_{mem,n(m)^\\bar{k} - V\\_0,NMJ)}} , \\quad (15)",
                         "paragraph_index": 12,
                         "page_number": 7
                     },
@@ -555,58 +460,48 @@
                         "page_number": 7
                     },
                     {
-                        "contents": "### Muscle electrophysiology",
+                        "contents": "**Muscle electrophysiology**\nVentral (dorsal) muscle cells m receive both excitatory and inhibitory current inputs from the local VBn (DBn) and VDn (DDn) motor neurons n(m) = ceil\\[m/N\\_out] (with each neuron outputting to N\\_out = 4 muscles). The total input \u201ccurrent\u201d to the muscles is therefore given by",
                         "paragraph_index": 14,
                         "page_number": 7
                     },
                     {
-                        "contents": "Ventral (dorsal) muscle cells m receive both excitatory and inhibitory current inputs from the local VBn (DBn) and VDn (DDn) motor neurons n(m) = ceil\\[m/N\\_out] (with each neuron outputting to N\\_out = 4 muscles). The total input \"current\" to the",
+                        "contents": "I\\_NMJ,m^k = w\\_NMJ S\\_n(m)^k + \\bar{w}*{NMJ} S*{n(m)}^\\bar{k}, \\quad (16)",
                         "paragraph_index": 15,
                         "page_number": 7
                     },
                     {
-                        "contents": "|Param.|Val.|\n|-|-|\n|Gmem|500 pS|\n|Gact|20 pS|\n|GGABA|10 pS|\n|wACh|3|\n|wGABA|-0.5|\n|IVbias|8 pA|\n|Cmem|1 pF|\n|kact|500|\n|kGABA|100|\n|kNMJ|50|\n|GAVB|150 pS|\n|IDbias|0|\n|Vrest|-72 mV|\n|Vact|-60 mV|\n|V0,GABA|Vrest|\n|V0,NMJ|-22 mV|\n|VAVB|-87.5 mV|",
-                        "paragraph_index": 17,
-                        "page_number": 7
-                    },
-                    {
-                        "contents": "*Any parameters not given here are the same as in the binary model.*",
-                        "paragraph_index": 18,
-                        "page_number": 7
-                    },
-                    {
-                        "contents": "|Parameter|Value|\n|-|-|\n|N|12|\n|M|48|\n|NSR|M/2|\n|Nout|M/N|\n|wV|-1|\n|wNMJ|1|\n|\u03c4M|100 ms|\n|\u03f5hys|0.5|\n|IVAVB|1.175|\n|IDAVB|0.675|\n|GSR,n|(0.224 + 0.056n)/Nout|\n|wD|0|\n|w\u0304NMJ|-wNMJ|",
-                        "paragraph_index": 20,
-                        "page_number": 7
-                    },
-                    {
-                        "contents": "I\\_NMJ,m^k = w\\_NMJ S\\_n(m)^k + \\bar{w}*{NMJ} S*{n(m)}^\\bar{k}, \\quad (16)",
-                        "paragraph_index": 22,
-                        "page_number": 7
-                    },
-                    {
                         "contents": "where w\\_NMJ are the excitatory neuromuscular junction (NMJ) weights and \\bar{w}*{NMJ} = -w*{NMJ} denote the strength of GABAergic muscle inhibition by D-class neurons (**Table 3**).",
-                        "paragraph_index": 23,
+                        "paragraph_index": 16,
                         "page_number": 7
                     },
                     {
                         "contents": "Muscles respond as leaky integrators with a characteristic time scale of \\tau\\_M = 100 ms, which crudely agrees with response times of obliquely striated muscle (Milligan et al., 1997). The muscle activation is represented by the unitless variable A\\_M,m^k that evolves according to",
-                        "paragraph_index": 24,
+                        "paragraph_index": 17,
                         "page_number": 7
                     },
                     {
                         "contents": "\\frac{dA\\_M,m^k}{dt} = \\frac{1}{\\tau\\_M} (I\\_NMJ,m^k - A\\_M,m^k), \\quad (17)",
-                        "paragraph_index": 25,
+                        "paragraph_index": 18,
                         "page_number": 7
                     },
                     {
                         "contents": "where I\\_NMJ,m^k is the total current driving the muscle.",
-                        "paragraph_index": 26,
+                        "paragraph_index": 19,
                         "page_number": 7
                     },
                     {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | 7",
-                        "paragraph_index": 27,
+                        "contents": "|Param.|Val.|\n|-|-|\n|G\\_mem|500 pS|\n|G\\_act|20 pS|\n|G\\_GABA|10 pS|\n|w\\_ACh|3|\n|w\\_GABA|-0.5|\n|I\\_bias^V|8 pA|\n|C\\_mem|1 pF|\n|k\\_act|500|\n|k\\_GABA|100|\n|k\\_NMJ|50|\n|G\\_AVB|150 pS|\n|I\\_bias^D|0|\n|V\\_rest|-72 mV|\n|V\\_act|-60 mV|\n|V\\_0,GABA|V\\_rest|\n|V\\_0,NMJ|-22 mV|\n|V\\_AVB|-87.5 mV|",
+                        "paragraph_index": 21,
+                        "page_number": 7
+                    },
+                    {
+                        "contents": "Any parameters not given here are the same as in the binary model.",
+                        "paragraph_index": 22,
+                        "page_number": 7
+                    },
+                    {
+                        "contents": "|Parameter|Value|\n|-|-|\n|N|12|\n|M|48|\n|N\\_SR|M/2|\n|N\\_out|M/N|\n|w\\_-^V|-1|\n|w\\_NMJ|1|\n|\\tau\\_M|100 ms|\n|\\epsilon\\_hys|0.5|\n|I\\_AVB^V|1.175|\n|I\\_AVB^D|0.675|\n|G\\_SR,n|(0.224 + 0.056n)/N\\_out|\n|w\\_-^D|0|\n|\\bar{w}\\_NMJ|-w\\_NMJ|",
+                        "paragraph_index": 24,
                         "page_number": 7
                     }
                 ]
@@ -619,73 +514,48 @@
                         "page_number": 8
                     },
                     {
-                        "contents": "### 2.4. NUMERICAL METHODS",
+                        "contents": "**2.4. NUMERICAL METHODS**\nThe model was implemented in C++ and uses a freely available implicit solver (SUNDIALS IDA 2.3.0; Hindmarsh et al., 2005) as a physics engine. The neuromuscular system was solved by Euler integration (with a 1 ms step); the Sundials physics solver used adaptive time steps with a base relative error tolerance of 10^-12 and absolute spatial tolerances of 10^-9 for the coordinates and 10^-5 for rod angles. For less resistive media C\\_\\parallel \\leq 27.3 \\times 10^-6  kg\\cdots^-1 or C\\_\\perp \\leq 51.2 \\times 10^-6  kg\\cdots^-1, all tolerances were reduced by a factor of 10.",
                         "paragraph_index": 1,
                         "page_number": 8
                     },
                     {
-                        "contents": "The model was implemented in C++ and uses a freely available implicit solver (SUNDIALS IDA 2.3.0; Hindmarsh et al., 2005) as a physics engine. The neuromuscular system was solved by Euler integration (with a 1 ms step); the Sundials physics solver used adaptive time steps with a base relative error tolerance of 10^-12 and absolute spatial tolerances of 10^-9 for the coordinates and 10^-5 for rod angles. For less resistive media C\\_|| \\le 27.3 \\times 10^-6  kg \\cdot s^-1 or C\\_\\perp \\le 51.2 \\times 10^-6  kg \\cdot s^-1, all tolerances were reduced by a factor of 10.",
+                        "contents": "**3. RESULTS**\nHaving developed our neuromechanical model of *C. elegans* forward locomotion, the first key question is to what extent this model can capture swimming and crawling behaviors in different physical environments. In particular, one would expect that placing model worms in different virtual environments would result in different motor behaviors, but it is not clear *a priori* what range of motor behaviors can be obtained in this way. For example, what would a model that was optimized for replicating crawling behavior yield when placed in virtual water, or vice versa? And are two different parameter sets needed to generate crawling and swimming patterns? If so, some form of neural or muscular modulation mechanism may need to be conjectured to account for parameter changes.",
                         "paragraph_index": 2,
                         "page_number": 8
                     },
                     {
-                        "contents": "## 3. RESULTS",
+                        "contents": "**3.1. A SINGLE NEURAL MECHANISM ACCOUNTS FOR SWIMMING AND CRAWLING**\nWe find that a single model with a single set of parameters is able to reproduce both crawling and swimming with realistic undulation frequencies and waveforms (**Figures 4B** and **5A,C**; Movie S2 in Supplementary Material). Crucially, this is accomplished without any explicit modulatory mechanism (beyond proprioceptive feedback). Indeed, the *only* changes necessary to obtain these different behaviors are to the effective drag coefficients that define the model environment. We conclude that a single, fixed neural circuit is sufficient to model both behaviors, without recourse to neuromodulation, additional sensory input to head neurons, or variations in proprioceptive fields or properties.",
                         "paragraph_index": 3,
                         "page_number": 8
                     },
                     {
-                        "contents": "Having developed our neuromechanical model of *C. elegans* forward locomotion, the first key question is to what extent this model can capture swimming and crawling behaviors in different physical environments. In particular, one would expect that placing model worms in different virtual environments would result in different motor behaviors, but it is not clear *a priori* what range of motor behaviors can be obtained in this way. For example, what would a model that was optimized for replicating crawling behavior yield when placed in virtual water, or vice versa? And are two different parameter sets needed to generate crawling and swimming patterns? If so, some form of neural or muscular modulation mechanism may need to be conjectured to account for parameter changes.",
+                        "contents": "How does the same model generate both crawling and swimming patterns? To understand the common oscillatory mechanism underpinning these behaviors, it is helpful to follow an oscillation in a single neural unit connected to a section of body. Consider such a system that is initialized with both DB and VB states off, with the body shape completely straight. Switching the AVB input on drives VB above its activation threshold, and causes the ventral muscles to contract, stretching the dorsal side. At some point the dorsal stretch will be sufficient to activate DB and VD. Ventral inhibition resets VB (switching it off). At this stage bending will reverse, with the dorsal side contracting and the ventral side stretching, until the dorsal contraction drops the input to DB below the deactivation threshold, turning it off and indirectly releasing VB from inhibition. Note the importance of dorso-ventral asymmetry that allows the ventral side to be activated first and to de-activate only in response to ventral inhibition (with AVB on).",
                         "paragraph_index": 4,
                         "page_number": 8
                     },
                     {
-                        "contents": "### 3.1. A SINGLE NEURAL MECHANISM ACCOUNTS FOR SWIMMING AND CRAWLING",
+                        "contents": "For the oscillation to propagate down the length of the body, some form of coupling among units is required. In our model, the neural units are indirectly coupled through the shape of the body (i.e., through posterior stretch receptors) and through the physical properties of the body and environment. The relative importance of these contributions depends on the properties of the medium (Boyle, 2010; Fang-Yen et al., 2010). First let us consider highly resistive environments, such as agar. With the body initialized along a straight line, as above, all VB neurons are on. During forward motion, the worm\u2019s body exhibits a decreasing undulation amplitude from head to tail. Accordingly, in the model, ventral muscles exert a contractile force with a decreasing gradient toward the tail. Thus the head is the most strongly activated and will bend first, pulling the worm forward slightly and allowing more of the body to bend. Sufficient bending of the head will eventually activate dorsal neurons and bending will reverse. It is the delay in bending (rather than in actuation) imposed by strong lateral drag forces that gives rise to the crawling wavelength. In less resistive media such as water, neural units cannot rely on physical coupling via the environment for entrainment, so the synchronizing effect of non-local stretch receptor signals must determine the spatial wavelength.",
                         "paragraph_index": 5,
                         "page_number": 8
                     },
                     {
-                        "contents": "We find that a single model with a single set of parameters is able to reproduce both crawling and swimming with realistic undulation frequencies and waveforms (**Figures 4B** and **5A,C**; Movie S2 in Supplementary Material). Crucially, this is accomplished without any explicit modulatory mechanism (beyond proprioceptive feedback). Indeed, the only *changes* necessary to obtain these different behaviors are to the effective drag coefficients that define the model environment. We conclude that a single, fixed neural circuit is sufficient to model both behaviors, without recourse to neuromodulation, additional sensory input to head neurons, or variations in proprioceptive fields or properties.",
+                        "contents": "To test the above reasoning we used the model to experiment with variable length stretch receptor fields in B-class motor neurons. Comparison of **Figure 6** to **Figure 4D** confirms that forward crawling (but not swimming) can be generated by a model with exclusively local proprioceptive feedback. Thus the model predicts that shortening the distal processes of B-class neurons through laser axotomy or mutation would lead to a locomotion defect that is significantly more pronounced in less resistive media like water.",
                         "paragraph_index": 6,
                         "page_number": 8
                     },
                     {
-                        "contents": "How does the same model generate both crawling and swimming patterns? To understand the common oscillatory mechanism underpinning these behaviors, it is helpful to follow an oscillation in a single neural unit connected to a section of body. Consider such a system that is initialized with both DB and VB states off, with the body shape completely straight. Switching the AVB input on drives VB above its activation threshold, and causes the ventral muscles to contract, stretching the dorsal side. At some point the dorsal stretch will be sufficient to activate DB and VD. Ventral inhibition resets VB (switching it off). At this stage bending will reverse, with the dorsal side contracting and the ventral side stretching, until the dorsal contraction drops the input to DB below the deactivation threshold, turning it off and indirectly releasing VB from inhibition. Note the importance of dorso-ventral asymmetry that allows the ventral side to be activated first and to de-activate only in response to ventral inhibition (with AVB on).",
+                        "contents": "**3.2. INCREASING FLUID VISCOSITY OR VISCOELASTICITY IS SUFFICIENT TO ACCOUNT FOR THE SWIM-CRAWL TRANSITION**\nHaving developed a model that can swim and crawl, we performed simulations of the same model in a range of additional model environments and compared our results with experimental data. In the model, fluid environments are represented by local drag coefficients resisting motion tangential (C\\_\\parallel) and normal (C\\_\\perp) to the local body surface. In Newtonian environments, the ratio K = C\\_\\perp/C\\_\\parallel is constant. More general, viscoelastic environments (like gels), are also well described by a pair of drag coefficients, but the ratio K can vary. We tested our model in a range of viscous and viscoelastic model environments.",
                         "paragraph_index": 7,
                         "page_number": 8
                     },
                     {
-                        "contents": "For the oscillation to propagate down the length of the body, some form of coupling among units is required. In our model, the neural units are indirectly coupled through the shape of the body (i.e., through posterior stretch receptors) and through the physical properties of the body and environment. The relative importance of these contributions depends on the properties of the medium (Boyle, 2010; Fang-Yen et al., 2010). First let us consider highly resistive environments, such as agar. With the body initialized along a straight line, as above, all VB neurons are on. During forward motion, the worm's body exhibits a decreasing undulation amplitude from head to tail. Accordingly, in the model, ventral muscles exert a contractile force with a decreasing gradient toward the tail. Thus the head is the most strongly activated and will bend first, pulling the worm forward slightly and allowing more of the body to bend. Sufficient bending of the head will eventually activate dorsal neurons and bending will reverse. It is the delay in bending (rather than in actuation) imposed by strong lateral drag forces that gives rise to the crawling wavelength. In less resistive media such as water, neural units cannot rely on physical coupling via the environment for entrainment, so the synchronizing effect of non-local stretch receptor signals must determine the spatial wavelength.",
+                        "contents": "First, we sought to test the model\u2019s swim-crawl transition. This transition has been experimentally mapped in gelatin solutions with different concentrations (Berri et al., 2009), and is characterized by a smooth and monotonic frequency-wavelength relation (**Figure 4A**). Our model is also capable of intermediate behaviors (**Figures 4D** and **5**; Movie S2 in Supplementary Material) and follows a similar frequency-wavelength relation (**Figure 4B**) across a large class of intermediate environments, qualitatively reproducing the smooth swim-crawl transition. Thus, we find that the entire swim-crawl transition can be modeled by a single (fixed parameter) neuromechanical system that is being modulated purely by modifying the drag coefficients of the fluid environment.",
                         "paragraph_index": 8,
                         "page_number": 8
                     },
                     {
-                        "contents": "To test the above reasoning we used the model to experiment with variable length stretch receptor fields in B-class motor neurons. Comparison of **Figure 6** to **Figure 4D** confirms that forward crawling (but not swimming) can be generated by a model with exclusively local proprioceptive feedback. Thus the model predicts that shortening the distal processes of B-class neurons through laser axotomy or mutation would lead to a locomotion defect that is significantly more pronounced in less resistive media like water.",
-                        "paragraph_index": 9,
-                        "page_number": 8
-                    },
-                    {
-                        "contents": "### 3.2. INCREASING FLUID VISCOSITY OR VISCOELASTICITY IS SUFFICIENT TO ACCOUNT FOR THE SWIM-CRAWL TRANSITION",
-                        "paragraph_index": 10,
-                        "page_number": 8
-                    },
-                    {
-                        "contents": "Having developed a model that can swim and crawl, we performed simulations of the same model in a range of additional model environments and compared our results with experimental data. In the model, fluid environments are represented by local drag coefficients resisting motion tangential (C\\_||) and normal (C\\_\\perp) to the local body surface. In Newtonian environments, the ratio K = C\\_\\perp/C\\_|| is constant. More general, viscoelastic environments (like gels), are also well described by a pair of drag coefficients, but the ratio K can vary. We tested our model in a range of viscous and viscoelastic model environments.",
-                        "paragraph_index": 11,
-                        "page_number": 8
-                    },
-                    {
-                        "contents": "First, we sought to test the model's swim-crawl transition. This transition has been experimentally mapped in gelatin solutions with different concentrations (Berri et al., 2009), and is characterized by a smooth and monotonic frequency-wavelength relation (**Figure 4A**). Our model is also capable of intermediate behaviors (**Figures 4D** and **5**; Movie S2 in Supplementary Material) and follows a similar frequency-wavelength relation (**Figure 4B**) across a large class of intermediate environments, qualitatively reproducing the smooth swim-crawl transition. Thus, we find that the entire swim-crawl transition can be modeled by a single (fixed parameter) neuromechanical system that is being modulated purely by modifying the drag coefficients of the fluid environment.",
-                        "paragraph_index": 12,
-                        "page_number": 8
-                    },
-                    {
                         "contents": "A waveform modulation similar to that reported by Berri et al. (2009) for viscoelastic media was consequently reported also for increasing viscosities (Fang-Yen et al., 2010; Shen and Arratia,",
-                        "paragraph_index": 13,
-                        "page_number": 8
-                    },
-                    {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | **8**",
-                        "paragraph_index": 14,
+                        "paragraph_index": 9,
                         "page_number": 8
                     }
                 ]
@@ -693,43 +563,68 @@
             "Page 9": {
                 "paragraphs": [
                     {
-                        "contents": "Boyle et al.\nNeuromechanical model of *C. elegans* locomotion",
+                        "contents": "Boyle et al. Neuromechanical model of *C. elegans* locomotion",
                         "paragraph_index": 0,
                         "page_number": 9
                     },
                     {
-                        "contents": "![Figure 4: Swim-crawl transition analysis. (A) Experimental data. (B) Model results. (C) Parameter space of drag coefficients. (D) Curvature contour plots.](figure_4_placeholder)",
+                        "contents": "**FIGURE 4 | (A)** Experimentally observed transition from swimming to crawling, from Berri et al. (2009), showing locomotion in gelatin (circles; color bar indicates percent gelatin concentrations) and agar (black triangles).",
                         "paragraph_index": 1,
                         "page_number": 9
                     },
                     {
-                        "contents": "**FIGURE 4 | (A)** Experimentally observed transition from swimming to crawling, from Berri et al. (2009), showing locomotion in gelatin (circles; color bar indicates percent gelatin concentrations) and agar (black triangles). **(B)** The swim-crawl transition. The model reproduces the smooth regulation of undulation frequencies and wavelengths with good quantitative agreement \\[colors as in **(C)**]. Selected points used in **(D)** are highlighted with pink circles. Wave properties are extracted as described in Berri et al. (2009). **(C)** Values of C\\_|| and C\\_\\perp used to evaluate the swim-crawl transition (1.5 \\le K \\le 40). Colors denote the product C\\_|| \\times C\\_\\perp, ranging from light yellow (virtual water) to dark red (virtual agar). Newtonian environments (K = 1.5) are marked with blue crosses, as are the corresponding points in **(B)**. A few combinations of drag coefficients yielded uncoordinated behavior (black dots), and were omitted from **(B)**. **(D)** Contour plots for locomotion in (from top) water, two intermediate environments and agar. The plots show the local curvature (color) along the worm (vertical axis) and in time (horizontal axis).",
+                        "contents": "|\\lambda/L|f (Hz)|Color Bar (C\\_\\parallel \\times C\\_\\perp)|\n|-|-|-|\n|2.0|1.5|4.0|\n|1.5|1.5|3.0|\n|1.0|1.0|2.0|\n|0.5|0.5|1.8|\n|0.0|0.0|1.6|\n|||1.4|\n|||1.2|\n|||1.0|\n|||0.5|\n|||0.0|",
                         "paragraph_index": 2,
                         "page_number": 9
                     },
                     {
-                        "contents": "2011\\). It is therefore natural to ask whether the model could also generate a swim-crawl transition in Newtonian media of increasing viscosity. **Figures 4B,C** confirm that, in the model, Newtonian media can modulate the waveform and kinematics of the locomotion, similarly to the modulation observed in viscoelastic media.",
+                        "contents": "**(B)** The swim-crawl transition. The model reproduces the smooth regulation of undulation frequencies and wavelengths with good quantitative agreement \\[colors as in **(C)**]. Selected points used in **(D)** are highlighted with pink circles. Wave properties are extracted as described in Berri et al. (2009).",
                         "paragraph_index": 3,
                         "page_number": 9
                     },
                     {
-                        "contents": "Combined, these results suggest that it is the resistivity of the medium, rather than the ratio of drag coefficients that modulates the waveform and kinematics of locomotion. Such a conclusion would be consistent with our previous observation (Berri et al., 2009) that the worm can generate crawling-like undulations even in isotropic environments with K \\approx 1.",
+                        "contents": "|\\lambda/L|f (Hz)|\n|-|-|\n|2.0|2.0|\n|1.5|1.5|\n|1.0|1.0|\n|0.5|0.5|\n|0.0|0.0|",
                         "paragraph_index": 4,
                         "page_number": 9
                     },
                     {
-                        "contents": "### 3.3. THE MODEL REPRODUCES OBSERVED LOCOMOTION DYNAMICS IN ARTIFICIAL DIRT ENVIRONMENTS",
+                        "contents": "**(C)** Values of C\\_\\parallel and C\\_\\perp used to evaluate the swim-crawl transition (1.5 \\le K \\le 40). Colors denote the product C\\_\\parallel \\times C\\_\\perp, ranging from light yellow (virtual water) to dark red (virtual agar). Newtonian environments (K = 1.5) are marked with blue crosses, as are the corresponding points in **(B)**. A few combinations of drag coefficients yielded uncoordinated behavior (black dots), and were omitted from **(B)**.",
                         "paragraph_index": 5,
                         "page_number": 9
                     },
                     {
-                        "contents": "While in the lab *C. elegans* is studied mostly on agar environments, its natural habitat is far more heterogeneous and likely to include many solid obstacles. Studying locomotion in complex environments can inform our understanding of the worm's behavior in more natural environments. Furthermore, studying",
+                        "contents": "|\\log(C\\_\\perp)|\\log(C\\_\\parallel)|\n|-|-|\n|10^0|10^-2|\n|10^-1|10^-4|\n|10^-2|10^-6|\n|10^-3||\n|10^-4||\n|10^-5||\n|10^-6||",
                         "paragraph_index": 6,
                         "page_number": 9
                     },
                     {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | **9**",
+                        "contents": "**(D)** Contour plots for locomotion in (from top) water, two intermediate environments and agar. The plots show the local curvature (color) along the worm (vertical axis) and in time (horizontal axis).",
                         "paragraph_index": 7,
+                        "page_number": 9
+                    },
+                    {
+                        "contents": "|Time (s)|Curvature Pattern|\n|-|-|\n|2|T H|\n|4|T H|\n|6|T H|\n|8|T H|\n|10|T H|",
+                        "paragraph_index": 8,
+                        "page_number": 9
+                    },
+                    {
+                        "contents": "2011\\). It is therefore natural to ask whether the model could also generate a swim-crawl transition in Newtonian media of increasing viscosity. **Figures 4B,C** confirm that, in the model, Newtonian media can modulate the waveform and kinematics of the locomotion, similarly to the modulation observed in viscoelastic media.",
+                        "paragraph_index": 9,
+                        "page_number": 9
+                    },
+                    {
+                        "contents": "Combined, these results suggest that it is the resistivity of the medium, rather than the ratio of drag coefficients that modulates the waveform and kinematics of locomotion. Such a conclusion would be consistent with our previous observation (Berri et al., 2009) that the worm can generate crawling-like undulations even in isotropic environments with K \\approx 1.",
+                        "paragraph_index": 10,
+                        "page_number": 9
+                    },
+                    {
+                        "contents": "### 3.3. THE MODEL REPRODUCES OBSERVED LOCOMOTION DYNAMICS IN ARTIFICIAL DIRT ENVIRONMENTS",
+                        "paragraph_index": 11,
+                        "page_number": 9
+                    },
+                    {
+                        "contents": "While in the lab *C. elegans* is studied mostly on agar environments, its natural habitat is far more heterogeneous and likely to include many solid obstacles. Studying locomotion in complex environments can inform our understanding of the worm's behavior in more natural environments. Furthermore, studying",
+                        "paragraph_index": 12,
                         "page_number": 9
                     }
                 ]
@@ -737,7 +632,7 @@
             "Page 10": {
                 "paragraphs": [
                     {
-                        "contents": "Boyle et al. | Neuromechanical model of C. elegans locomotion",
+                        "contents": "Boyle et al. Neuromechanical model of *C. elegans* locomotion",
                         "paragraph_index": 0,
                         "page_number": 10
                     },
@@ -747,42 +642,42 @@
                         "page_number": 10
                     },
                     {
-                        "contents": "To investigate whether the difference in behavior can be attributed to the layout of the posts or increased resistance, we performed simulations with variable post sizes and inter-post separations; with either water- or agar-filled chambers; and with or without an effective ceiling (Lockery et al., 2008). We found that both the post layout and the properties of the filler medium can affect the locomotion behavior. When the filler medium has low resistance (i.e., water) the undulation frequency is high, but the amplitude and wavelength depend on the post layout (Movies S7\u2013S9 in Supplementary Material). In contrast, when the filler medium is highly resistive (i.e., agar) the behavior tends to be crawling-like. In cases where the post layout is roughly compatible with crawling, the locomotion waveform adapts to these constraints (Movie S10 in Supplementary Material). However, when the layout is not compatible, the worm essentially becomes obstacles (Movie S11 in Supplementary Material).",
+                        "contents": "To investigate whether the difference in behavior can be attributed to the layout of the posts or increased resistance, we performed simulations with variable post sizes and inter-post separations; with either water- or agar-filled chambers; and with or without an effective ceiling (Lockery et al., 2008). We found that both the post layout and the properties of the filler medium can affect the locomotion behavior. When the filler medium has low resistance (i.e., water) the undulation frequency is high, but the amplitude and wavelength depend on the post layout (Movies S7\u2013S9 in Supplementary Material). In contrast, when the filler medium is highly resistive (i.e., agar) the behavior tends to be crawling-like. In cases where the post layout is roughly compatible with crawling, the locomotion waveform adapts to these constraints (Movie S10 in Supplementary Material). However, when the layout is not compatible, the posts essentially become obstacles (Movie S11 in Supplementary Material).",
                         "paragraph_index": 2,
                         "page_number": 10
                     },
                     {
-                        "contents": "## 3.4. THE MODEL REPRODUCES CONTACT FORCES",
+                        "contents": "### 3.4. THE MODEL REPRODUCES CONTACT FORCES",
                         "paragraph_index": 3,
                         "page_number": 10
                     },
                     {
-                        "contents": "One advantage of a fully integrated neuromechanical model is its physical grounding that can be tested against measurable properties or even actual force measurements. Indeed, the force exerted by C. elegans as it moves against a microfluidic pillar was recently reported to be 2.5 \u00b1 2.5 \u03bcN (Doll et al., 2009). Recreating the same setup in our model, we obtain a value of F = 0.84 \u00b1 0.22 \u03bcN for the mean peak contact force when the worm touches a pillar in model simulations. This value is totally consistent with the experimentally reported value, which is particularly remarkable when considering that parameters in our physical model were chosen purely on the basis of estimates of environmental properties and behavioral observations (Sauvage, 2007).",
+                        "contents": "One advantage of a fully integrated neuromechanical model is its physical grounding that can be tested against measurable properties or even actual force measurements. Indeed, the force exerted by *C. elegans* as it moves against a microfluidic pillar was recently reported to be 2.5 \\pm 2.5 \\muN (Doll et al., 2009). Recreating the same setup in our model, we obtain a value of F = 0.84 \\pm 0.22 \\muN for the mean peak contact force when the worm touches a pillar in model simulations. This value is totally consistent with the experimentally reported value, which is particularly remarkable when considering that parameters in our physical model were chosen purely on the basis of estimates of environmental properties and behavioral observations (Sauvage, 2007).",
                         "paragraph_index": 4,
                         "page_number": 10
                     },
                     {
-                        "contents": "## 3.5. BISTABLE NEUROMUSCULAR CONTROL IS ESSENTIAL FOR SUSTAINING PROPRIOCEPTIVELY DRIVEN UNDULATIONS ACROSS THE RANGE OF OBSERVED BEHAVIORS",
+                        "contents": "### 3.5. BISTABLE NEUROMUSCULAR CONTROL IS ESSENTIAL FOR SUSTAINING PROPRIOCEPTIVELY DRIVEN UNDULATIONS ACROSS THE RANGE OF OBSERVED BEHAVIORS",
                         "paragraph_index": 5,
                         "page_number": 10
                     },
                     {
-                        "contents": "Previous models of locomotion typically assumed graded potential neurons (Niebur and Erd\u0151s, 1991; Rakowski et al., 2006; Bryden and Cohen, 2008), in line with available data at the time (Goodman et al., 1998; Nickel et al., 2002; Francis et al., 2003; O'Hagan et al., 2005). In fact, the richness of neurodynamics has only recently come to light (Mathews et al., 2003; Suzuki et al., 2003; Mellem et al., 2008). In particular, the finding of bistable motoneurons with discrete membrane potential states (Mellem et al., 2008) suggests that motor control circuits may be modeled as a network of binary motoneurons with hysteresis.",
+                        "contents": "Previous models of locomotion have typically assumed graded potential neurons (Niebur and Erd\u00f6s, 1991; Karbowski et al., 2006; Bryden and Cohen, 2008), in line with available data at the time (Goodman et al., 1998; Nickell et al., 2002; Francis et al., 2003; O\u2019Hagan et al., 2005). In fact, the richness of neuronal dynamics has only recently come to light (Mathews et al., 2003; Suzuki et al., 2003; Mellem et al., 2008). In particular, the finding of bistable motoneurons with discrete membrane potential states (Mellem et al., 2008) suggests that motor control circuits may be modeled as a network of binary motoneurons with hysteresis.",
                         "paragraph_index": 6,
                         "page_number": 10
                     },
                     {
-                        "contents": "Bistability introduces memory into the system, allowing neurons to respond differently to inputs when the body is bending one way or the other. This allows the system to generate robust oscillations with a broad range of frequencies (here, \u22480.5\u20132 Hz) that depend on the physical load. Indeed, in the absence of such bistability (or explicit modulation of the neuronal properties), one would expect oscillations to occur only over a relatively narrow range, determined by the interplay between relevant neuronal time constants.",
+                        "contents": "Bistability introduces memory into the system, allowing neurons to respond differently to inputs when the body is bending one way or the other. This allows the system to generate robust oscillations with a broad range of frequencies (here, \\approx 0.5\u20132 Hz) that depend on the physical load. Indeed, in the absence of such bistability (or explicit modulation of the neuronal properties), one would expect oscillations to occur only over a relatively narrow range, determined by the interplay between relevant neuronal time constants.",
                         "paragraph_index": 7,
                         "page_number": 10
                     },
                     {
-                        "contents": "|**FIGURE 5 \\| Selected stills showing behavior of the integrated model in, virtual water (A), intermediate gelatin (B), and agar (C).** The corresponding movie clips are available in Supporting Information Movie S2 in Supplementary Material. The time in seconds for each frame is given in the lower left corner. Note the different time intervals between stills in (A) versus (B) and (C).|||\n|-|-|-|\n|**A**|**B**|**C**|\n|0|0|0|\n|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\n|0.03|0.2|0.2|\n|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\n|0.16|0.4|0.4|\n|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\n|0.22|0.6|0.6|\n|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\n|0.32|0.8|0.8|\n|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\n|0.4|1|1|\n|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\n|0.48|1.2|1.2|\n|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\n|0.56|1.4|1.4|\n|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\n|0.64|1.6|1.6|\n|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\n|0.72|1.8|1.8|\n|\\[Worm body curve illustration]|\\[Worm body curve illustration]|\\[Worm body curve illustration]|",
+                        "contents": "**FIGURE 5 | Selected stills showing behavior of the integrated model in, virtual water (A), intermediate gelatin (B), and agar (C).** The corresponding movie clips are available in Supporting Information (Movie S2 in Supplementary Material). The time (in seconds) for each frame is given in the top right hand corner. Note the different time intervals between stills in **(A)** versus **(B)** and **(C)**.",
                         "paragraph_index": 8,
                         "page_number": 10
                     },
                     {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | 10",
+                        "contents": "the worm\u2019s response to solid obstacles can shed light on its proprioceptive mechanisms and closed-loop motor control. In particular, arrays of microfluidic posts (\u201cartificial dirt\u201d) have recently been developed specifically for this purpose (Lockery et al., 2008; Park et al., 2008). We recreated model microfluidic chambers with the same quasi-2D hexagonal arrays as in Lockery et al. (2008) and cubic arrays as in Park et al. (2008) and used these to perform simulations of our integrated model. We find that the model copes well with these environments, producing remarkably realistic locomotion when compared to the reported behavior (Lockery et al., 2008; Park et al., 2008). Specifically, as in the experiments,",
                         "paragraph_index": 9,
                         "page_number": 10
                     }
@@ -791,48 +686,38 @@
             "Page 11": {
                 "paragraphs": [
                     {
-                        "contents": "![Curvature plots showing the effect of eliminating posterior stretch receptor input such that feedback is from local segments only. (A) On virtual agar, model worms still propagate coordinated waves from head to tail. (B) In contrast, locomotion in water is highly uncoordinated.](image_description_1)",
+                        "contents": "Boyle et al. Neuromechanical model of *C. elegans* locomotion",
+                        "paragraph_index": 0,
+                        "page_number": 11
+                    },
+                    {
+                        "contents": "**FIGURE 6 | Curvature plots showing the effect of eliminating posterior stretch receptor input such that feedback is from local segments only.**\n(A) On virtual agar, model worms still propagate coordinated waves from head to tail. (B) In contrast, locomotion in water is highly uncoordinated.",
                         "paragraph_index": 1,
                         "page_number": 11
                     },
                     {
-                        "contents": "**FIGURE 6 | Curvature plots showing the effect of eliminating posterior stretch receptor input such that feedback is from local segments only. (A)** On virtual agar, model worms still propagate coordinated waves from head to tail. **(B)** In contrast, locomotion in water is highly uncoordinated.",
+                        "contents": "**FIGURE 7 | Dynamics of binary (A) and continuous (B) model B-class neurons.** Note the different thresholds for activation and deactivation (arrows).",
                         "paragraph_index": 2,
                         "page_number": 11
                     },
                     {
-                        "contents": "![Dynamics of binary (A) and continuous (B) model B-class neurons. Note the different thresholds for activation and deactivation (arrows).](image_description_2)",
+                        "contents": "In our model bistability is implemented by modeling B-class neurons as binary entities with bistable activation functions (see Figure 7). This simplification approximates the behavior of RMD neurons as reported in Mellem et al. (2008). The strong non-linearity imposed by binary threshold elements (even without bistability) turns the B-neurons into on-off elements and ensures on-off switching of inputs to the muscles, and hence anti-phase (dorso-ventral) muscle contractions that are entrained to the neurons. Interestingly, previous models of locomotion have introduced non-linearities elsewhere in the locomotion circuit. In the case of Bryden and Cohen (2008) for example, stretch receptor conductances have strong non-linearity that effectively leads to \u201con-off\u201d neuronal states, even though the underlying equations were of a graded potential neuron. The introduction of bistability into the stretch receptor conductances, or indeed into any of a number of components of the model, may lead to similar network dynamics that can robustly adapt to a range of physical environments.",
                         "paragraph_index": 3,
                         "page_number": 11
                     },
                     {
-                        "contents": "**FIGURE 7 | Dynamics of binary (A) and continuous (B) model B-class neurons.** Note the different thresholds for activation and deactivation (arrows).",
+                        "contents": "### 3.6. BISTABLE NEURAL DYNAMICS ARE CONSISTENT WITH RECENT RECORDINGS OF NMJ CURRENTS",
                         "paragraph_index": 4,
                         "page_number": 11
                     },
                     {
-                        "contents": "In our model bistability is implemented by modeling B-class neurons as binary entities with bistable activation functions (see **Figure 7**). This simplification approximates the behavior of RMD neurons as reported in Mellem et al. (2008). The strong non-linearity imposed by binary threshold elements (even without bistability) turns the B-neurons into on-off elements and ensures on-off switching of inputs to the muscles, and hence anti-phase (dorso-ventral) muscle contractions that are entrained to the neurons. Interestingly, previous models of locomotion have introduced non-linearities elsewhere in the locomotion circuit. In the case of Bryden and Cohen (2008) for example, stretch receptor conductances have strong non-linearity that effectively leads to \"on-off\" neuronal states, even though the underlying equations were of a graded potential neuron. The introduction of bistability into the stretch receptor conductances, or indeed into any of a number of components of the model, may lead to similar network dynamics that can robustly adapt to a range of physical environments.",
+                        "contents": "While the relative simplicity of the binary model makes it preferable to use for most of our simulations, certain questions remain outside its scope. Specifically, the simplified dynamics of the binary neurons, with discrete on and off states, makes it impossible to evaluate their behavior against electrophysiological data in a meaningful way. A recent publication by Liu et al. (2009) provides the first characterization of the *C. elegans* body wall neuromuscular junction (NMJ) response to optogenetic activation and inhibition of B-class neurons.",
                         "paragraph_index": 5,
                         "page_number": 11
                     },
                     {
-                        "contents": "### 3.6. BISTABLE NEURAL DYNAMICS ARE CONSISTENT WITH RECENT RECORDINGS OF NMJ CURRENTS",
-                        "paragraph_index": 6,
-                        "page_number": 11
-                    },
-                    {
-                        "contents": "While the relative simplicity of the binary model makes it preferable to use for most of our simulations, certain questions remain outside its scope. Specifically, the simplified dynamics of the binary neurons, with discrete on and off states, makes it impossible to evaluate their behavior against electrophysiological data in a meaningful way. A recent publication by Liu et al. (2009) provides the first characterization of the *C. elegans* body wall neuromuscular junction (NMJ) response to optogenetic activation and inhibition of B-class neurons.",
-                        "paragraph_index": 7,
-                        "page_number": 11
-                    },
-                    {
                         "contents": "In their experiments, Liu et al. used channelrhodopsin, a light activated depolarizing ion channel, to stimulate the presynaptic B-class neuron with light of increasing intensity, and recording the response current in the muscle cells. They found that the postsynaptic current increases smoothly as shown in **Figure 8A**. Liu et al. also used halorhodopsin, a light activated hyperpolarizing ion channel, to inhibit the presynaptic neuron, finding that the postsynaptic current is reduced. Looking at these results, the obvious interpretation is that the cholinergic motor neurons exhibit tonic, graded release of neurotransmitter at resting membrane potential that can be up- and down-regulated by membrane potential. This elegant result is an important contribution to understanding (and modeling of) this and other neural circuits in *C. elegans*. Moreover, the results might be taken to suggest that the motor neuron membrane dynamics are similarly graded. Indeed, had the neurons fired classical all-or-nothing action potentials then one might expect the postsynaptic currents to be similarly binary, or at least strongly non-linear. It might appear, therefore, that the",
-                        "paragraph_index": 8,
-                        "page_number": 11
-                    },
-                    {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | **11**",
-                        "paragraph_index": 9,
+                        "paragraph_index": 6,
                         "page_number": 11
                     }
                 ]
@@ -840,68 +725,53 @@
             "Page 12": {
                 "paragraphs": [
                     {
-                        "contents": "Boyle et al.                                                                                                    Neuromecanical model of C. elegans locomotion",
+                        "contents": "Boyle et al. Neuromechanical model of *C. elegans* locomotion",
                         "paragraph_index": 0,
                         "page_number": 12
                     },
                     {
-                        "contents": "|Panel A|Light Intensity (mW/mm\u00b2)|Iinject (Muscle)|Iinject (Synaptic)|\n|-|-|-|-|\n||0|0.3|0.3|\n||1|0.4|0.4|\n||2|0.5|0.5|\n||3|0.6|0.65|\n||4|0.7|0.75|\n||6|0.8|0.85|\n||10|0.9|0.95|\n|||||\n|Panel B|I\\_inj (pA)|I\\_inj/I\\_inj||\n||-5|0.4||\n||0|0.5||\n||10|0.65||\n||20|0.8||\n||30|0.9||\n||45|0.95||\n|||||\n|Panel C|I\\_inj (pA)|I\\_inj/I\\_inj||\n||-30|0.05||\n||-10|0.1||\n||0|0.4||\n||10|0.85||\n||20|0.95||\n||40|1.0||",
+                        "contents": "|A|A|A|B|C|||||||||||||||||||||\n|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|\n|*I/I*max|1.0||*I/I*max|1|||||||||||||||||||||\n||0.8|Muscle|0.8|0.8|||||||||||||||||||||\n||0.6|Synaptic|0.6|0.6|||||||||||||||||||||\n||0.4||0.4|0.4|||||||||||||||||||||\n||0.2||0.2|0.2|||||||||||||||||||||\n||0.0||0.0|-0.2|||||||||||||||||||||\n|Light intensity (mW/mm\u00b2)||*I*in (pA)|*I*in (pA)||||||||||||||||||||||\n|0|2|4|6|8|10|-5|0|5|10|15|20|25|30|35|40|45|-20|-10|0|10|20|30|40||",
                         "paragraph_index": 1,
                         "page_number": 12
                     },
                     {
-                        "contents": "**FIGURE 8 | Postsynaptic currents in response to excitation of motor neurons, normalized by the maximum outward current in response to light stimulus reproduced with permission from Liu et al. (2009). Symbols indicate experimental data points and the solid lines are the best single component fits. (B) Postsynaptic currents at the conductance-based model NMJ in response to depolarizing current injection to a VB motor neuron. Red squares highlight specific points for comparison with (A). (C) Postsynaptic response of the conductance-based model to hyperpolarizing and depolarizing currents. The blue circle indicates the postsynaptic current at the neuron's rest potential of either the \"on\" or \"off\" state will result in smooth modulation of the postsynaptic current.**",
+                        "contents": "findings of Liu et al. (2009) do not support the model proposed here.",
                         "paragraph_index": 2,
                         "page_number": 12
                     },
                     {
-                        "contents": "findings of Liu et al. (2009) do not support the model proposed here.",
+                        "contents": "To examine this apparent inconsistency, we developed a conductance-based model of B-class neurons (see Section 2.3). Using this neural model and a simpler, rectangular body model, we were able to demonstrate reasonably realistic locomotion in water and on agar (Boyle, 2010), confirming that the locomotion mechanism presented here does not depend on the binary approximation.",
                         "paragraph_index": 3,
                         "page_number": 12
                     },
                     {
-                        "contents": "To examine this apparent inconsistency, we developed a conductance-based model of B-class neurons (see Section 2.3). Using this neural model and a simpler, rectangular body model, we were able to demonstrate reasonably realistic locomotion in water and on agar (Boyle, 2010), confirming that the locomotion mechanism presented here does not depend on the binary approximation.",
+                        "contents": "Like the binary model, here too B-class neurons exhibit rapid (though not instantaneous) switching between low and high membrane potentials. However, the binary discrete \"on\"/\"off\" states are replaced by continuous-valued ranges of membrane potentials (**Figure 7**).",
                         "paragraph_index": 4,
                         "page_number": 12
                     },
                     {
-                        "contents": "Like the binary model, here too B-class neurons exhibit rapid (though not instantaneous) switching between high membrane potentials. However, the binary discrete \"on\"/\"off\" states are replaced by continuous-valued ranges of membrane potentials (Figure 7).",
+                        "contents": "Using this conductance-based model, we compared the behavior of our continuous neural model (**Figure 8B**) to the data (Liu et al., 2009; **Figure 8A**). Specifically, we compared the postsynaptic current in the real and virtual muscles, measured as a function of the presynaptic current stimulus or light intensity. We find that, despite the strongly non-linear response in the B-class model neurons, there exists good quantitative agreement with the reported experimental currents. **Figure 8C** shows that the postsynaptic current in the model also decreases significantly in response to presynaptic hyperpolarization, in line with the experimental finding of tonic neurotransmitter release. While this model cannot be used conclusively to infer a single model of B-class neurons (or even to rule out passive behavior of these neurons), we can conclude that the data of Liu et al. (2009) are consistent with the bistable B-class neuron dynamics.",
                         "paragraph_index": 5,
                         "page_number": 12
                     },
                     {
-                        "contents": "Using this conductance-based model, we compared the behavior of our continuous neural model (Figure 8B) to the data (Liu et al., 2009; Figure 8A). Specifically, we compared the postsynaptic current stimulus or light intensity. We find that, despite the strongly non-linear response in the B-class model neurons, there exists good qualitative agreement with the reported experimental currents. Figure 8C shows that the postsynaptic current in the model also decreases significantly in response to presynaptic hyperpolarization, in line with the experimental finding of tonic neurotransmitter release. While this model cannot be used conclusively to infer a single model of B-class neurons (or even to rule out passive behavior of these neurons), we can conclude that the data of Liu et al. (2009) are consistent with the bistable B-class neuron dynamics.",
+                        "contents": "### 3.7. THE MODEL PREDICTS A ROLE FOR GABAergic D-CLASS NEURONS IN FORWARD LOCOMOTION",
                         "paragraph_index": 6,
                         "page_number": 12
                     },
                     {
-                        "contents": "## 3.7. THE MODEL PREDICTS A ROLE FOR GABAergic D-CLASS NEURONS IN FORWARD LOCOMOTION",
+                        "contents": "In the worm's ventral cord locomotion circuit, cholinergic neurons of class B and A mediate forward and backward locomotion respectively. The only inhibition in this circuit is mediated by D-class GABAergic neurons. Individual D-class neurons receive input from both A- and B-class neurons. They inhibit muscles, and in some cases also motoneurons of class D, on either side, and of classes A and B, on the ventral side only (Chen et al., 2006; Boyle, 2010). The connectivity diagram of these inhibitory D-class neurons suggests involvement in both forward and backward locomotion (White et al., 1986; Chen et al., 2006). The function of D-class neurons can be knocked out through mutation of genes required in the GABA pathway (McIntire et al., 1993b), by targeted killing of D-class neurons (Walthall et al., 1993) and by laser axotomy (Yanik et al., 2004), yielding essentially the same so-called *shrinker* phenotype (Hodgkin, 1983) in all cases: When touched on the head, wild type worms will back up, whereas worms whose GABA pathway is defective will contract muscles along both sides of their bodies. Thus, D-class neurons are implicated in backward motion, or at least its initiation. In contrast, forward locomotion in these mutants or D-ablated worms is described either as wild type (Walthall et al., 1993; Yanik et al., 2004), or nearly wild type with a reduction in amplitude (McIntire et al., 1993b). This leads to the commonly held conclusion that D-class neurons are not essential for forward locomotion.",
                         "paragraph_index": 7,
                         "page_number": 12
                     },
                     {
-                        "contents": "In the worm's ventral cord locomotion circuit, cholinergic neurons of class B and A mediate forward and backward locomotion respectively. The only inhibition in this circuit is mediated by D-class GABAergic neurons. Individual D-class neurons receive input from both A and B-class neurons. They inhibit muscles, and in some cases also motoneurons of class D, on either side.",
+                        "contents": "We therefore investigated the effect of removing inhibition from our model. We find that removing all inhibition in our model leads to grossly normal crawling behavior on model agar, but a total inability to swim in water (Movies S12 and S13 in Supplementary Material). At first sight, this model result may appear in stark contradiction to experimental data. In fact, in every case where forward locomotion of GABA pathway defective worms was reported (McIntire et al., 1993b; Walthall et al., 1993; Yanik et al., 2004), the assay was performed on agar. Our model therefore makes a novel prediction that these worms are forward swim-defective.",
                         "paragraph_index": 8,
                         "page_number": 12
                     },
                     {
-                        "contents": "and of classes A and B, on the ventral side only (Chen et al., 2006; Boyle, 2010). The connectivity diagram of these inhibitory D-class neurons suggests involvement in both forward and backward locomotion (White et al., 1986; Chen et al., 2006). The function of D-class neurons can be blocked out through mutations of genes required in the GABA pathway (McIntire et al., 1993b), by targeted killing of D-class neurons (Walthall et al., 1993) and by laser axotomy (Yanik et al., 2004), yielding essentially the same so-called *shrinker* phenotype (Hodgkin, 1983) in all cases: When touched on the head, wild type worms will back up, whereas worms without a functional GABA pathway will contract muscles along both sides of their bodies. Thus, D-class neurons are implicated in backward motion, or at least its initiation. In contrast, forward locomotion in these mutants or D-ablated worms is described either as wild type (Walthall et al., 1993; Yanik et al., 2004), or nearly wild type with a reduction in amplitude (McIntire et al., 1993b). This leads to the commonly held conclusion that D-class neurons are not essential for forward locomotion.",
-                        "paragraph_index": 9,
-                        "page_number": 12
-                    },
-                    {
-                        "contents": "We therefore investigated the effect of removing inhibition from our model. We find that removing all inhibition in our model leads to grossly normal crawling behavior on model agar, but a total inability to swim in water (Boyle S12 and S13 in Supplementary Material). At first sight, this model result may appear in stark contradiction to experimental data. In fact, in every case where forward locomotion of GABA pathway defective worms was reported (McIntire et al., 1993b; Walthall et al., 1993; Yanik et al., 2004), the assay was performed on agar. Our model therefore makes a novel prediction that these worms are swim-defective.",
-                        "paragraph_index": 10,
-                        "page_number": 12
-                    },
-                    {
                         "contents": "Further analysis of the swim-defective model phenotype suggests that in the model, it is neural inhibition (of VB by VD neurons) that is responsible for the swim-defective phenotype. This effect is consistent with our description of the oscillation mechanism which requires inhibition of VB neurons to switch them off when the dorsal side is activated. Recall that in our model, we have introduced asymmetries in the parameters of the ventral and dorsal neurons that allow ventral (VBn) but not dorsal (DBn) neurons to switch on even when the worm is completely straight.",
-                        "paragraph_index": 11,
-                        "page_number": 12
-                    },
-                    {
-                        "contents": "Frontiers in Computational Neuroscience                                                                                                    www.frontiersin.org                                                                                                    March 2012 | Volume 6 | Article 10 | 12",
-                        "paragraph_index": 12,
+                        "paragraph_index": 9,
                         "page_number": 12
                     }
                 ]
@@ -919,7 +789,7 @@
                         "page_number": 13
                     },
                     {
-                        "contents": "# 4. DISCUSSION",
+                        "contents": "## 4. DISCUSSION",
                         "paragraph_index": 2,
                         "page_number": 13
                     },
@@ -949,7 +819,7 @@
                         "page_number": 13
                     },
                     {
-                        "contents": "Secondly, some bistability is essential in our model to support the dynamic range of undulation frequencies. In line with data on RMD neurons, we have chosen to implement such bistability via state-dependent activation and deactivation of the B-class motor neurons. In addition, some form of strong non-linearity is likely to be needed somewhere along the neuromuscular pathway to avoid muscle co-activation on the two sides of the body. In other words, for wild type worms performing forward locomotion it is reasonable to expect that when one side is contracting, the other side should relax. In fact, RMD neurons exhibit such strong non-linearities, and we conjecture that B-class neurons may exhibit similar behavior. Thus, we have implemented bistability by defining binary activation states of B-class motor neurons. To validate these assumptions against available data (Liu et al., 2009), we also presented a complementary conductance-based model of B-class neurons. The ability to fine tune the activation of motor neurons within effective bands of \u201coff\u201d and \u201con\u201d activation states may confer important advantages to the worm in richer, more realistic forms of motor pattern generation. However further experiments would be needed to ascertain whether B-class neurons exhibit any bistable behavior.",
+                        "contents": "Secondly, some bistability is essential in our model to support the dynamic range of undulation frequencies. In line with data on RMD neurons, we have chosen to implement such bistability via state-dependent activation and deactivation of the B-class motor neurons. In addition, some form of strong non-linearity is likely to be needed somewhere along the neuromuscular pathway to avoid muscle co-activation on the two sides of the body. In other words, for wild type worms performing forward locomotion it is reasonable to expect that when one side is contracting, the other side should relax. In fact, RMD neurons exhibit such strong nonlinearities, and we conjecture that B-class neurons may exhibit similar behavior. Thus, we have implemented bistability by defining binary activation states of B-class motor neurons. To validate these assumptions against available data (Liu et al., 2009), we also presented a complementary conductance-based model of B-class neurons. The ability to fine tune the activation of motor neurons within effective bands of \u201coff\u201d and \u201con\u201d activation states may confer important advantages to the worm in richer, more realistic forms of motor pattern generation. However further experiments would be needed to ascertain whether B-class neurons exhibit any bistable behavior.",
                         "paragraph_index": 8,
                         "page_number": 13
                     },
@@ -957,16 +827,16 @@
                         "contents": "Finally, our model achieves robust proprioceptively driven pattern generation that is not reliant on independent head oscillations and can initiate locomotion from any initial worm conformation. To do so requires some asymmetry between the ventral and dorsal sides. In our model, we have chosen to instantiate that asymmetry by a lower activation threshold of the ventral side. Consequently, an additional mechanism must be invoked in order to reset the activation of the ventral side. Perhaps surprisingly, muscle inhibition by D-class neurons is not likely to perform this role (Boyle, 2010). By contrast, neural inhibition could in principle provide a suitable mechanism and would be interesting to investigate further experimentally. Specifically, if neural inhibition is responsible for VB resetting then our model predicts that GABA-null worms should experience strong defects in forward swimming, but not necessarily in crawling. Alternatively a range",
                         "paragraph_index": 9,
                         "page_number": 13
-                    },
-                    {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | **13**",
-                        "paragraph_index": 10,
-                        "page_number": 13
                     }
                 ]
             },
             "Page 14": {
                 "paragraphs": [
+                    {
+                        "contents": "Boyle et al. Neuromechanical model of *C. elegans* locomotion",
+                        "paragraph_index": 0,
+                        "page_number": 14
+                    },
                     {
                         "contents": "of other mechanisms could be involved in resetting neuronal states on one or both sides of the body. Of those, perhaps the most likely involves activity dependent changes in neuronal excitability or in neurotransmitter release (Liu et al., 2009). Other mechanisms, involving other inhibitory pathways (other than VD to VB inhibition) or even modified body properties may contribute to the predicted asymmetry.",
                         "paragraph_index": 1,
@@ -983,7 +853,7 @@
                         "page_number": 14
                     },
                     {
-                        "contents": "### ACKNOWLEDGMENTS",
+                        "contents": "## ACKNOWLEDGMENTS",
                         "paragraph_index": 4,
                         "page_number": 14
                     },
@@ -993,7 +863,7 @@
                         "page_number": 14
                     },
                     {
-                        "contents": "### SUPPLEMENTARY MATERIAL",
+                        "contents": "## SUPPLEMENTARY MATERIAL",
                         "paragraph_index": 6,
                         "page_number": 14
                     },
@@ -1003,153 +873,153 @@
                         "page_number": 14
                     },
                     {
-                        "contents": "### REFERENCES",
+                        "contents": "http://www.frontiersin.org/computational_neuroscience/10.3389/fncom.2012.00010/abstract",
                         "paragraph_index": 8,
                         "page_number": 14
                     },
                     {
-                        "contents": "Berri, S., Boyle, J. H., Tassieri, M., Hope, I. A., and Cohen, N. (2009). Forward locomotion of the nematode *C. elegans* is achieved through modulation of a single gait. *HFSP J.* 3, 186\u2013193.",
+                        "contents": "## REFERENCES",
                         "paragraph_index": 9,
                         "page_number": 14
                     },
                     {
-                        "contents": "Borgmann, A., Hooper, S. L., and B\u00fcschges, A. (2009). Sensory feedback induced by front-leg stepping entrains the activity of central pattern generators in caudal segments of the stick insect walking system. *J. Neurosci.* 29, 2972\u20132983.",
+                        "contents": "Berri, S., Boyle, J. H., Tassieri, M., Hope, I. A., and Cohen, N. (2009). Forward locomotion of the nematode *C. elegans* is achieved through modulation of a single gait. *HFSP J.* 3, 186\u2013193.",
                         "paragraph_index": 10,
                         "page_number": 14
                     },
                     {
-                        "contents": "Boyle, J. H. (2010). *C. elegans Locomotion: and Integrated Approach.* Ph.D. thesis, School of Computing, University of Leeds, Leeds.",
+                        "contents": "Borgmann, A., Hooper, S. L., and B\u00fcschges, A. (2009). Sensory feedback induced by front-leg stepping entrains the activity of central pattern generators in caudal segments of the stick insect walking system. *J. Neurosci.* 29, 2972\u20132983.",
                         "paragraph_index": 11,
                         "page_number": 14
                     },
                     {
-                        "contents": "Boyle, J. H., Berri, S., Tassieri, M., Hope, I. A., and Cohen, N. (2011). Gait modulation in *C. elegans*: it\u2019s not a choice, it\u2019s a reflex! *Front. Behav. Neurosci.* 5:10. doi:10.3389/fnbeh.2011.00010",
+                        "contents": "Boyle, J. H. (2010). *C. elegans Locomotion: and Integrated Approach*. Ph.D. thesis, School of Computing, University of Leeds, Leeds.",
                         "paragraph_index": 12,
                         "page_number": 14
                     },
                     {
-                        "contents": "Boyle, J. H., Bryden, J. A., and Cohen, N. (2008). \u201cAn integrated neuromechanical model of *C. elegans* forward locomotion,\u201d in *LNCS: Neural Information Processing, Part 1*, Vol. 4984, eds M. Ishikawa, K. Doya, H. Miyamoto, and T. Yamakawa (Berlin: Springer-Verlag), 37\u201347.",
+                        "contents": "Boyle, J. H., Berri, S., Tassieri, M., Hope, I. A., and Cohen, N. (2011). Gait modulation in *C. elegans*: it\u2019s not a choice, it\u2019s a reflex! *Front. Behav. Neurosci.* 5:10. doi:10.3389/fnbeh.2011.00010",
                         "paragraph_index": 13,
                         "page_number": 14
                     },
                     {
-                        "contents": "Boyle, J. H., and Cohen, N. (2008). *C. elegans* body wall muscles are simple actuators. *Biosystems* 94, 170\u2013181.",
+                        "contents": "Boyle, J. H., Bryden, J. A., and Cohen, N. (2008). \u201cAn integrated neuromechanical model of *C. elegans* forward locomotion,\u201d in *LNCS: Neural Information Processing, Part 1*, Vol. 4984, eds M. Ishikawa, K. Doya, H. Miyamoto, and T. Yamakawa (Berlin: Springer-Verlag), 37\u201347.",
                         "paragraph_index": 14,
                         "page_number": 14
                     },
                     {
-                        "contents": "Brenner, S. (1974). The genetics of *Caenorhabditis elegans*. *Genetics* 77, 71\u201394.",
+                        "contents": "Boyle, J. H., and Cohen, N. (2008). *C. elegans* body wall muscles are simple actuators. *Biosystems* 94, 170\u2013181.",
                         "paragraph_index": 15,
                         "page_number": 14
                     },
                     {
-                        "contents": "Bryden, J. A., and Cohen, N. (2004). \u201cA simulation model of the locomotion controllers for the nematode *Caenorhabditis elegans*,\u201d in *From Animals to Animats 8: Proceedings of the Eighth International Conference on the Simulation of Adaptive Behavior*, eds S. Schaal, A. J. Ijspeert, A. Billard, S. Vijayakumar, J. Hallam, and J.-A. Meyer (Cambridge: MIT Press/Bradford Books), 183\u2013192.",
+                        "contents": "Brenner, S. (1974). The genetics of *Caenorhabditis elegans*. *Genetics* 77, 71\u201394.",
                         "paragraph_index": 16,
                         "page_number": 14
                     },
                     {
-                        "contents": "Bryden, J. A., and Cohen, N. (2008). Neural control of *Caenorhabditis elegans* forward locomotion: the role of sensory feedback. *Biol. Cybern.* 98, 339\u2013351.",
+                        "contents": "Bryden, J. A., and Cohen, N. (2004). \u201cA simulation model of the locomotion controllers for the nematode *Caenorhabditis elegans*,\u201d in *From Animals to Animats 8: Proceedings of the Eighth International Conference on the Simulation of Adaptive Behavior*, eds S. Schaal, A. J. Ijspeert, A. Billard, S. Vijayakumar, J. Hallam, and J.-A. Meyer (Cambridge: MIT Press/Bradford Books), 183\u2013192.",
                         "paragraph_index": 17,
                         "page_number": 14
                     },
                     {
-                        "contents": "Chalfie, M., Sulston, J. E., White, J. G., Southgate, E., Thomson, J. N., and Brenner, S. (1985). The neural circuit for touch sensitivity in *Caenorhabditis elegans*. *J. Neurosci.* 5, 956\u2013964.",
+                        "contents": "Bryden, J. A., and Cohen, N. (2008). Neural control of *Caenorhabditis elegans* forward locomotion: the role of sensory feedback. *Biol. Cybern.* 98, 339\u2013351.",
                         "paragraph_index": 18,
                         "page_number": 14
                     },
                     {
-                        "contents": "Chen, B., Hall, D., and Chklovskii, D. (2006). Wiring optimization can relate neuronal structure and function. *Proc. Natl. Acad. Sci. U.S.A.* 103, 4723\u20134728.",
+                        "contents": "Chal\ufb01e, M., Sulston, J. E., White, J. G., Southgate, E., Thomson, J. N., and Brenner, S. (1985). The neural circuit for touch sensitivity in *Caenorhabditis elegans*. *J. Neurosci.* 5, 956\u2013964.",
                         "paragraph_index": 19,
                         "page_number": 14
                     },
                     {
-                        "contents": "Doll, J. C., Harjee, N., Klejwa, N., Kwon, R., Coulthard, S. M., Petzold, B., Goodman, M. B., and Pruitt, B. L. (2009). SU-8 force sensing pillar arrays for biological measurements. *Lab Chip* 9, 1449\u20131454.",
+                        "contents": "Chen, B., Hall, D., and Chklovskii, D. (2006). Wiring optimization can relate neuronal structure and function. *Proc. Natl. Acad. Sci. U.S.A.* 103, 4723\u20134728.",
                         "paragraph_index": 20,
                         "page_number": 14
                     },
                     {
-                        "contents": "Fang-Yen, C., Wyart, M., Xie, J., Kawai, R., Kodger, T., Chen, S., Wen, Q., and Samuel, A. D. T. (2010). Biomechanical analysis of gait adaptation in the nematode *Caenorhabditis elegans*. *Proc. Natl. Acad. Sci. U.S.A.* 107, 20323\u201320328.",
+                        "contents": "Doll, J. C., Harjee, N., Klejwa, N., Kwon, R., Coulthard, S. M., Petzold, B., Goodman, M. B., and Pruitt, B. L. (2009). SU-8 force sensing pillar arrays for biological measurements. *Lab Chip* 9, 1449\u20131454.",
                         "paragraph_index": 21,
                         "page_number": 14
                     },
                     {
-                        "contents": "Francis, M. M., Mellem, J. E., and Maricq, A. V. (2003). Bridging the gap between genes and behavior: recent advances in the electrophysiological analysis of neural function in *Caenorhabditis elegans*. *Trends Neurosci.* 26, 90\u201399.",
+                        "contents": "Fang-Yen, C., Wyart, M., Xie, J., Kawai, R., Kodger, T., Chen, S., Wen, Q., and Samuel, A. D. T. (2010). Biomechanical analysis of gait adaptation in the nematode *Caenorhabditis elegans*. *Proc. Natl. Acad. Sci. U.S.A.* 107, 20323\u201320328.",
                         "paragraph_index": 22,
                         "page_number": 14
                     },
                     {
-                        "contents": "Goodman, M. B., Hall, D. H., Avery, L., and Lockery, S. R. (1998). Active currents regulate sensitivity and dynamic range in *C. elegans* neurons. *Neuron* 20, 763\u2013772.",
+                        "contents": "Francis, M. M., Mellem, J. E., and Maricq, A. V. (2003). Bridging the gap between genes and behavior: recent advances in the electrophysiological analysis of neural function in *Caenorhabditis elegans*. *Trends Neurosci.* 26, 90\u201399.",
                         "paragraph_index": 23,
                         "page_number": 14
                     },
                     {
-                        "contents": "Grillner, S., and Wall\u00e9n, P. (2002). Cellular bases of a vertebrate locomotor system-steering, intersegmental and segmental co-ordination and sensory control. *Brain Res. Rev.* 40, 92\u2013106.",
+                        "contents": "Goodman, M. B., Hall, D. H., Avery, L., and Lockery, S. R. (1998). Active currents regulate sensitivity and dynamic range in *C. elegans* neurons. *Neuron* 20, 763\u2013772.",
                         "paragraph_index": 24,
                         "page_number": 14
                     },
                     {
-                        "contents": "Harris-Warrick, R. M. (1993). Pattern generation. *Curr. Opin. Neurobiol.* 3, 982\u2013988.",
+                        "contents": "Grillner, S., and Wall\u00e9n, P. (2002). Cellular bases of a vertebrate locomotor system-steering, intersegmental and segmental co-ordination and sensory control. *Brain Res. Rev.* 40, 92\u2013106.",
                         "paragraph_index": 25,
                         "page_number": 14
                     },
                     {
-                        "contents": "Hill, A. A., Masino, M. A., and Calabrese, R. L. (2003). Intersegmental coordination of rhythmic motor patterns. *J. Neurophysiol.* 90, 531\u2013538.",
+                        "contents": "Harris-Warrick, R. M. (1993). Pattern generation. *Curr. Opin. Neurobiol.* 3, 982\u2013988.",
                         "paragraph_index": 26,
                         "page_number": 14
                     },
                     {
-                        "contents": "Hill, A. V. (1938). The heat of shortening and the dynamic constants of muscle. *Proc. R. Soc. Lond. B Biol. Sci.* 126, 136\u2013195.",
+                        "contents": "Hill, A. A., Masino, M. A., and Calabrese, R. L. (2003). Intersegmental coordination of rhythmic motor patterns. *J. Neurophysiol.* 90, 531\u2013538.",
                         "paragraph_index": 27,
                         "page_number": 14
                     },
                     {
-                        "contents": "Hindmarsh, A., Taylor, A., and Serban, R. (2005). *Sundials*. Available at:",
+                        "contents": "Hill, A. V. (1938). The heat of shortening and the dynamic constants of muscle. *Proc. R. Soc. Lond. B Biol. Sci.* 126, 136\u2013195.",
                         "paragraph_index": 28,
                         "page_number": 14
                     },
                     {
-                        "contents": "Hodgkin, J. (1983). Male phenotypes and mating efficiency in *Caenorhabditis elegans*. *Genetics* 103, 43\u201364.",
+                        "contents": "Hindmarsh, A., Taylor, A., and Serban, R. (2005). Sundials. Available at:",
                         "paragraph_index": 29,
                         "page_number": 14
                     },
                     {
-                        "contents": "Karbowski, J., Cronin, C. J., Seah, A., Mendel, J. E., Cleary, D., and Sternberg, P. W. (2006). Conservation rules, their breakdown, and optimality in *Caenorhabditis* sinusoidal locomotion. *J. Theor. Biol.* 242, 652\u2013669.",
-                        "paragraph_index": 30,
-                        "page_number": 14
-                    },
-                    {
-                        "contents": "Karbowski, J., Schindelman, G., Cronin, C., Seah, A., and Sternberg, P. (2008). Systems level circuit model of *C. elegans* undulatory locomotion: mathematical modeling and molecular genetics. *J. Comput. Neurosci.* 24, 253\u2013276.",
+                        "contents": ", J. (1983). Male phenotypes and mating efficiency in *Caenorhabditis elegans*. *Genetics* 103, 43\u201364.",
                         "paragraph_index": 31,
                         "page_number": 14
                     },
                     {
-                        "contents": "Kiehn, O., Harris-Warrick, R. M., Jordan, L. M., Hultborn, H., and Kudo, N. (1998). *Neuronal Mechanisms for Generating Locomotor Activity*, 1st Edn. New York: New York Academy of Sciences.",
+                        "contents": "Karbowski, J., Cronin, C. J., Seah, A., Mendel, J. E., Cleary, D., and Sternberg, P. W. (2006). Conservation rules, their breakdown, and optimality in *Caenorhabditis sinusoidal* locomotion. *J. Theor. Biol.* 242, 652\u2013669.",
                         "paragraph_index": 32,
                         "page_number": 14
                     },
                     {
-                        "contents": "Li, W., Feng, Z., Sternberg, P. W., and Xu, X. Z. S. (2006). A *C. elegans* stretch receptor neuron revealed by a mechanosensitive TRP channel homologue. *Nature* 440, 684\u2013687.",
+                        "contents": "Karbowski, J., Schindelman, G., Cronin, C., Seah, A., and Sternberg, P. (2008). Systems level circuit model of *C. elegans* undulatory locomotion: mathematical modeling and molecular genetics. *J. Comput. Neurosci.* 24, 253\u2013276.",
                         "paragraph_index": 33,
                         "page_number": 14
                     },
                     {
-                        "contents": "Li, W. C., Sautois, B., Roberts, A., and Soffe, S. R. (2007). Reconfiguration of a vertebrate motor network: specific neuron recruitment and context-dependent synaptic plasticity. *J. Neurosci.* 27, 12267\u201312276.",
+                        "contents": "Kiehn, O., Harris-Warrick, R. M., Jordan, L. M., Hultborn, H., and Kudo, N. (1998). *Neuronal Mechanisms for Generating Locomotor Activity*, 1st Edn. New York: New York Academy of Sciences.",
                         "paragraph_index": 34,
                         "page_number": 14
                     },
                     {
-                        "contents": "Lighthill, J. (1976). Flagellar hydrodynamics. *SIAM Rev. Soc. Ind. Appl. Math.* 18, 161\u2013230.",
+                        "contents": "Li, W., Feng, Z., Sternberg, P. W., and Xu, X. Z. S. (2006). A *C. elegans* stretch receptor neuron revealed by a mechanosensitive TRP channel homologue. *Nature* 440, 684\u2013687.",
                         "paragraph_index": 35,
                         "page_number": 14
                     },
                     {
-                        "contents": "Liu, Q., Hollopeter, G., and Jorgensen, E. M. (2009). Graded synaptic transmission at the *Caenorhabditis elegans* neuromuscular junction. *Proc. Natl. Acad. Sci. U.S.A.* 106, 10823\u201310828.",
+                        "contents": "Li, W. C., Sautois, B., Roberts, A., and Soffe, S. R. (2007). Reconfiguration of a vertebrate motor network: specific neuron recruitment and context-dependent synaptic plasticity. *J. Neurosci.* 27, 12267\u201312276.",
                         "paragraph_index": 36,
                         "page_number": 14
                     },
                     {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | 14",
+                        "contents": "Lighthill, J. (1976). Flagellar hydrodynamics. *SIAM Rev. Soc. Ind. Appl. Math.* 18, 161\u2013230.",
                         "paragraph_index": 37,
+                        "page_number": 14
+                    },
+                    {
+                        "contents": "Liu, Q., Hollopeter, G., and Jorgensen, E. M. (2009). Graded synaptic transmission at the *Caenorhabditis elegans* neuromuscular junction. *Proc. Natl. Acad. Sci. U.S.A.* 106, 10823\u201310828.",
+                        "paragraph_index": 38,
                         "page_number": 14
                     }
                 ]
@@ -1202,12 +1072,12 @@
                         "page_number": 15
                     },
                     {
-                        "contents": "O\u2019Hagan, R., and Chalfie, M. (2005). Mechanosensation in *Caenorhabditis elegans*. *Int. Rev. Neurobiol.* 69, 169\u2013203.",
+                        "contents": "O\u2019Hagan, R., and Chal\ufb01e, M. (2005). Mechanosensation in *Caenorhabditis elegans*. *Int. Rev. Neurobiol.* 69, 169\u2013203.",
                         "paragraph_index": 9,
                         "page_number": 15
                     },
                     {
-                        "contents": "O\u2019Hagan, R., Chalfie, M., and Goodman, M. B. (2005). The MEC-4 DEG/ENaC channel of *Caenorhabditis elegans* touch receptor neurons transduces mechanical signals. *Nat. Neurosci.* 8, 43\u201350.",
+                        "contents": "O\u2019Hagan, R., Chal\ufb01e, M., and Goodman, M. B. (2005). The MEC-4 DEG/ENaC channel of *Caenorhabditis elegans* touch receptor neurons transduces mechanical signals. *Nat. Neurosci.* 8, 43\u201350.",
                         "paragraph_index": 10,
                         "page_number": 15
                     },
@@ -1287,7 +1157,7 @@
                         "page_number": 15
                     },
                     {
-                        "contents": "Yanik, M. F., Cinar, H., Cinar, H. N., Chisholm, A. D., Jin, Y., and Ben-Yakar, A. (2004). Neurosurgery: functional regeneration after laser axotomy. *Nature* 432, 822.",
+                        "contents": "Yanik, M. F., Cinarm, H., Cinarm, H. N., Chisholm, A. D., Jin, Y., and Ben-Yakar, A. (2004). Neurosurgery: functional regeneration after laser axotomy. *Nature* 432, 822.",
                         "paragraph_index": 26,
                         "page_number": 15
                     },
@@ -1297,23 +1167,18 @@
                         "page_number": 15
                     },
                     {
-                        "contents": "*Received: 07 October 2011; accepted: 07 February 2012; published online: 07 March 2012.*",
+                        "contents": "Received: 07 October 2011; accepted: 07 February 2012; published online: 07 March 2012.",
                         "paragraph_index": 28,
                         "page_number": 15
                     },
                     {
-                        "contents": "*Citation: Boyle JH, Berri S and Cohen N (2012) Gait modulation in C. elegans: an integrated neuromechanical model. Front. Comput. Neurosci. **6**:10. doi: 10.3389/fncom.2012.00010*",
+                        "contents": "Citation: Boyle JH, Berri S and Cohen N (2012) Gait modulation in *C. elegans*: an integrated neuromechanical model. *Front. Comput. Neurosci.* 6:10. doi: 10.3389/fncom.2012.00010",
                         "paragraph_index": 29,
                         "page_number": 15
                     },
                     {
-                        "contents": "*Copyright \u00a9 2012 Boyle, Berri and Cohen. This is an open-access article distributed under the terms of the Creative Commons Attribution Non Commercial License, which permits non-commercial use, distribution, and reproduction in other forums, provided the original authors and source are credited.*",
+                        "contents": "Copyright \u00a9 2012 Boyle, Berri and Cohen. This is an open-access article distributed under the terms of the Creative Commons Attribution Non Commercial License, which permits non-commercial use, distribution, and reproduction in other forums, provided the original authors and source are credited.",
                         "paragraph_index": 30,
-                        "page_number": 15
-                    },
-                    {
-                        "contents": "Frontiers in Computational Neuroscience | www.frontiersin.org | March 2012 | Volume 6 | Article 10 | **15**",
-                        "paragraph_index": 31,
                         "page_number": 15
                     }
                 ]

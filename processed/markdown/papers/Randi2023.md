@@ -10,11 +10,17 @@ _Generated from: https://www.nature.com/articles/s41586-023-06683-4_
 
 Francesco Randi^1,3, Anuj K. Sharma^1, Sophie Dvali^1 & Andrew M. Leifer^1,2 ✉
 
+Received: 15 July 2022
+Accepted: 27 September 2023
+Published online: 1 November 2023
+Open access
+\[ ] Check for updates
+
 Establishing how neural function emerges from network properties is a fundamental problem in neuroscience^1. Here, to better understand the relationship between the structure and the function of a nervous system, we systematically measure signal propagation in 23,433 pairs of neurons across the head of the nematode *Caenorhabditis elegans* by direct optogenetic activation and simultaneous whole-brain calcium imaging. We measure the sign (excitatory or inhibitory), strength, temporal properties and causal direction of signal propagation between these neurons to create a functional atlas. We find that signal propagation differs from model predictions that are based on anatomy. Using mutants, we show that extrasynaptic signalling not visible from anatomy contributes to this difference. We identify many instances of dense-core-vesicle-dependent signalling, including on timescales of less than a second, that evoke acute calcium transients—often where no direct wired connection exists but where relevant neuropeptides and receptors are expressed. We propose that, in such cases, extrasynaptically released neuropeptides serve a similar function to that of classical neurotransmitters. Finally, our measured signal propagation atlas better predicts the neural dynamics of spontaneous activity than do models based on anatomy. We conclude that both synaptic and extrasynaptic signalling drive neural dynamics on short timescales, and that measurements of evoked signal propagation are crucial for interpreting neural function.
 
 Brain connectivity mapping is motivated by the claim that “nothing defines the function of a neuron more faithfully than the nature of its inputs and outputs”^2. This approach to revealing neural function drives large-scale efforts to generate connectomes—anatomical maps of the synaptic contacts of the brain—in a diverse set of organisms, ranging from mice^3 to *Platynereis*^4. The *C. elegans* connectome^1,5,6 is the most mature of these efforts, and has been used to reveal circuit-level mechanisms of sensorimotor processing^7,8, to constrain models of neural dynamics^9 and to make predictions of neural function^10.
 
-Anatomy, however, omits key aspects of neurons’ inputs and outputs, or leaves them ambiguous: the strength and sign (excitatory or inhibitory) of a neural connection are not always evident from wiring or gene expression. Many mammalian neurons release both excitatory and inhibitory neurotransmitters, and functional measurements are thus required to disambiguate their connections^11. For example, starburst amacrine cells release both GABA (γ-aminobutyric acid) and acetylcholine^12; neurons in the dorsal raphe nucleus release both serotonin and glutamate^13; and neurons in the ventral tegmental area release two or more of dopamine, GABA and glutamate^14. The timescale of neural signalling is also ambiguous from anatomy. In addition, anatomy disregards changes to neural connections from plasticity or neuromodulation; for example, in the head compass circuit in *Drosophila*^15 or in the crab stomatogastric ganglion^16, respectively. Both mechanisms serve to strengthen or to select subsets of neural connections out of a menu of possible latent circuits. Finally, anatomy ignores neural signalling that occurs outside the synapse, as explored here. These ambiguities or omissions all pose challenges for revealing neural function from anatomy.
+Anatomy, however, omits key aspects of neurons’ inputs and outputs, or leaves them ambiguous: the strength and sign (excitatory or inhibitory) of a neural connection are not always evident from wiring or gene expression. Many mammalian neurons release both excitatory and inhibitory neurotransmitters, and functional measurements are thus required to disambiguate their connections^11. For example, starburst amacrine cells release both GABA (\gamma-aminobutyric acid) and acetylcholine^12; neurons in the dorsal raphe nucleus release both serotonin and glutamate^13; and neurons in the ventral tegmental area release two or more of dopamine, GABA and glutamate^14. The timescale of neural signalling is also ambiguous from anatomy. In addition, anatomy disregards changes to neural connections from plasticity or neuromodulation; for example, in the head compass circuit in *Drosophila*^15 or in the crab stomatogastric ganglion^16, respectively. Both mechanisms serve to strengthen or to select subsets of neural connections out of a menu of possible latent circuits. Finally, anatomy ignores neural signalling that occurs outside the synapse, as explored here. These ambiguities or omissions all pose challenges for revealing neural function from anatomy.
 
 A more direct way to probe neural function is to measure signal propagation by perturbing neural activity and measuring the responses of other neurons. Measuring signal propagation captures the strength and sign of neural connections reflecting plasticity, neuromodulation and even extrasynaptic signalling. Moreover, direct measures of signal propagation allow us to define mathematical relations that describe how the activity of an upstream neuron drives activity in a downstream neuron, including its temporal response profile. Historically, this and related perturbative approaches have been called many names (Supplementary Information), but they all stand in contrast to correlative approaches that seek to infer neural function from activity correlations alone. Correlative approaches do not directly measure causality and are limited to finding relations among only those neurons that happen to be active. Perturbative approaches measure signal propagation directly, but previous efforts have been restricted to selected circuits or subregions of the brain, and have often achieved only cell-type and not single-cell resolution^17–22.
 
@@ -24,156 +30,21 @@ Here we use neural activation to measure signal propagation between neurons thro
 
 ## Page 2
 
-a
-Tunable
-lenses
-2P
-stimulation
-1P Ca2+ imaging
-spinning disk
-confocal
-
-d
-Stimulation:
-SABD I3 OLLL I2R AWAR I1L M3R AVDR AWBL IL2DR RMDDR CEPDR URBL I1L AWBL DB2 RMDVL RMR AVL RMDL FLPR ASHL RMDDR RIS ASHL AWAR RIVR RIG ASHL ASHR RMDR IL1DR AVDL RMDR RIVL AQR RID FLPR OLLL I2L RMDR I1R I1R RIG IL1VL M3L AIM RMDDL IL2DL RMDDR AVJL AVER IL1VL AQR OLQDR IL1DR
-ADL AIM
-AIZR AQR
-ASER ASGL
-ASGR ASHL
-ASHR AUAL
-AUAR AVAR
-AVDL AVDR
-AVEL AVER
-AVJL AVKR
-AVL AWAR
-AWBL CEPDR
-CEPVR DB2
-FLPL FLPR
-I1L I1R
-I2L I2R
-I3 I4
-I6 IL1DR
-IL1VL IL1VR
-IL2 IL2DL
-IL2DR M1
-M2L M2R
-M3L M3R
-M5 MCL
-MI NSML
-OLLL OLQDL
-OLQDR RID
-RIG RIML
-RIMR RIS
-RIVL RIVR
-RMDDL RMDDR
-RMDL RMDR
-RMDVL RMDVR
-RMEL RMER
-RMEV SAAVL
-SABD SMDDR
-URADR URBL
-VB1 VB2
-Responding neuron
-0 500 1,000 1,500 2,000
-Time (s)
-
-e
-AVJR (stimulated)
-AVDR (responding)
-ΔF/F₀
-1.0
-0.5
-0
--10 0 10 20 30
--10 0 10 20 30
-Sorted trials
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
--10 0 10 20 30
--10 0 10 20 30
-
-f
-AVER (stimulated)
-AVAR (responding)
-ΔF/F₀
-1.0
-0.5
-0
--10 0 10 20 30
--10 0 10 20 30
-Sorted trials
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
--10 0 10 20 30
--10 0 10 20 30
-Time (s)
-Time (s)
-
-g
-SAADL (stimulated)
-OLLR (responding)
-ΔF/F₀
-0.5
-0
--10 0 10 20 30
--10 0 10 20 30
-Sorted trials
-1
-2
-3
-4
-5
--10 0 10 20 30
--10 0 10 20 30
-Time (s)
-Time (s)
-
-Fig. 1 | Measuring neural activation and network response. a, b, Schematics of the instrument (a) and the experiment (b). c, NeuroPAL fluorophores for neural identification. d, Whole-brain cell-resolved calcium activity (GCaMP6s fluorescence normalized by noise) during stimulation of individual neurons. A stimulation was delivered once every 30 s; grey lines indicate those instances when the stimuli were delivered on-target. The targeted neurons are listed at the top. e, Paired activity of AVJR and AVDR in response to AVJR stimulation, shown as relative change (ΔF/F₀). Top, mean (blue) and s.d. (shading) across trials and animals. Bottom, simultaneously recorded paired activity for individual trials (sorted by mean AVDR activity). All trials are shown that elicited activity. f, Same as e for AVER stimulation and AVAR response. g, Same as e for SAADL stimulation and OLLR response.
+**Fig. 1 | Measuring neural activation and network response.** **a,b**, Schematics of the instrument (**a**) and the experiment (**b**). **c**, NeuroPAL fluorophores for neural identification. **d**, Whole-brain cell-resolved calcium activity (GCaMP6s fluorescence normalized by noise) during stimulation of individual neurons. A stimulation was delivered once every 30 s; grey lines indicate those instances when the stimuli were delivered on-target. The targeted neurons are listed at the top. **e**, Paired activity of AVJR and AVDR in response to AVJR stimulation, shown as relative change (\Delta F/F\_0). Top, mean (blue) and s.d. (shading) across trials and animals. Bottom, simultaneously recorded paired activity for individual trials (sorted by mean AVDR activity). All trials are shown that elicited activity. **f**, Same as **e** for AVER stimulation and AVAR response. **g**, Same as **e** for SAADL stimulation and OLLR response.
 
 and that peptidergic extrasynaptic signalling contributes to neural dynamics by performing a functional role similar to that of a classical neurotransmitter.
 
-## Population imaging and single-cell activation
+### Population imaging and single-cell activation
 
-To measure signal propagation, we activated each single neuron, one at a time, through two-photon stimulation, while simultaneously recording the calcium activity of the population at cellular resolution using spinning disk confocal microscopy (Fig. 1). We recorded activity from 113 wild-type (WT)-background animals, each for up to 40 min, while stimulating a mostly randomly selected sequence of neurons one by one every 30 s. We spatially restricted our two-photon activation in three dimensions to be the size of a typical *C. elegans* neuron, to minimize off-target activation of neighbouring neurons (Extended Data Fig. 2a,c–e,i,j and Supplementary Information). Animals were
+To measure signal propagation, we activated each single neuron, one at a time, through two-photon stimulation, while simultaneously recording the calcium activity of the population at cellular resolution using spinning disk confocal microscopy (**Fig. 1**). We recorded activity from 113 wild-type (WT)-background animals, each for up to 40 min, while stimulating a mostly randomly selected sequence of neurons one by one every 30 s. We spatially restricted our two-photon activation in three dimensions to be the size of a typical *C. elegans* neuron, to minimize off-target activation of neighbouring neurons (Extended Data **Fig. 2a,c–e,i,j** and Supplementary Information). Animals were
 
 ## Page 3
 
 # Article
 
-immobilized but awake, and pharyngeal pumping was visible during recordings. To overcome the challenges associated with spectral overlap between the actuator and the indicator, we used TWISP—a transgenic worm for interrogating signal propagation^23, which expresses a purple-light actuator, GUR-3/PRDX-2 (refs. 24,25) and a nuclear-localized calcium indicator GCaMP6s (ref. 26) in each neuron (Fig. 1b and Extended Data Fig. 2b), along with fluorophores for neural identification from NeuroPAL (ref. 27) (Fig. 1c). Validation of the GUR-3/PRDX-2 system is discussed in the Supplementary Information (see also Extended Data Fig. 2h and Supplementary Video 1). A drug-inducible gene-expression system was used to avoid toxicity during development, resulting in animals that were viable but still significantly less active than WT animals^23 (see Methods). A stimulus duration of 0.3 s or 0.5 s was chosen to evoke modest calcium responses (Extended Data Fig. 2f), similar in amplitude to those evoked naturally by odour stimuli^28.
+immobilized but awake, and pharyngeal pumping was visible during recordings. To overcome the challenges associated with spectral overlap between the actuator and the indicator, we used TWISP—a transgenic worm for interrogating signal propagation^23, which expresses a purple-light actuator, GUR-3/PRDX-2 (refs. 24,25) and a nuclear-localized calcium indicator GCaMP6s (ref. 26) in each neuron (Fig. 1b and Extended Data Fig. 2b), along with fluorophores for neural identification from NeuroPAL (ref. 27) (Fig. 1c). Validation of the GUR-3/ PRDX-2 system is discussed in the Supplementary Information (see also Extended Data Fig. 2h and Supplementary Video 1). A drug-inducible gene-expression system was used to avoid toxicity during development, resulting in animals that were viable but still significantly less active than WT animals^23 (see Methods). A stimulus duration of 0.3 s or 0.5 s was chosen to evoke modest calcium responses (Extended Data Fig. 2f), similar in amplitude to those evoked naturally by odour stimuli^28.
 
-Many neurons exhibited calcium activity in response to the activation of one or more other neurons (Fig. 1d). A downstream neuron's response to a stimulated neuron is evidence that a signal propagated from the stimulated neuron to the downstream neuron.
+Many neurons exhibited calcium activity in response to the activation of one or more other neurons (Fig. 1d). A downstream neuron’s response to a stimulated neuron is evidence that a signal propagated from the stimulated neuron to the downstream neuron.
 
 We highlight three examples from the motor circuit (Fig. 1e–g). Stimulation of the interneuron AVJR evoked activity in AVDR (Fig. 1e). AVJ had been predicted to coordinate locomotion after egg-laying by promoting forward movements^29. The activity of AVD is associated with sensory-evoked (but not spontaneous) backward locomotion^7,8,30,31, and AVD receives chemical and electrical synaptic input from AVJ^1,6. Therefore, both wiring and our functional measurements suggest that AVJ has a role in coordinating backward locomotion, in addition to its previously described roles in egg-laying and forward locomotion.
 
@@ -185,7 +56,7 @@ Activation of the turning-associated neuron SAADL^36 inhibited the activity of t
 
 We generated a signal propagation map by aggregating downstream responses to stimulation from 113 *C. elegans* individuals (Fig. 2a). We report the mean calcium response in a 30-s time window \langle \Delta F / F\_0 \rangle\_t averaged across trials and animals (Extended Data Fig. 3a). We imaged activity in response to stimulation for 23,433 pairs of neurons (66% of all possible pairs in the head). Measured pairs were imaged at least once, and some as many as 59 times (Extended Data Figs. 3b and 4a). This includes activity from 186 of 188 neurons in the head, or 99% of all head neurons.
 
-We developed a statistical framework, described in the Methods, to identify neuron pairs that can be deemed ‘functionally connected’ (q < 0.05; Extended Data Fig. 4b), ‘functionally non-connected’ (q\_eq < 0.05; Extended Data Fig. 5b) or for which we lack the confidence to make either determination. The statistical framework is conservative and requires consistent and reliable responses (or non-responses) compared to an empirical null distribution, considering effect size, sample size and multiple-hypothesis testing^40 to make either determination. Many neuron pairs fail to pass either statistical test, even though they often contain neural activity that, when observed in isolation, could easily be classified as a response (for example, AVJR→ASGR in Extended Data Fig. 4c).
+We developed a statistical framework, described in the Methods, to identify neuron pairs that can be deemed ‘functionally connected’ (q < 0.05; Extended Data Fig. 4b), ‘functionally non-connected’ (q\_eq < 0.05; Extended Data Fig. 5b) or for which we lack the confidence to make either determination. The statistical framework is conservative and requires consistent and reliable responses (or non-responses) compared to an empirical null distribution, considering effect size, sample size and multiple-hypothesis testing^40 to make either determination. Many neuron pairs fail to pass either statistical test, even though they often contain neural activity that, when observed in isolation, could easily be classified as a response (for example, AVJR\rightarrowASGR in Extended Data Fig. 4c).
 
 Our signal propagation map comprises the response amplitude and its associated q value (Fig. 2a and Extended Data Fig. 5a) and can be browsed online (
 
@@ -205,7 +76,24 @@ We observed an apparent contradiction with the wiring diagram—a large fraction
 
 ## Page 4
 
-Fig. 2 | Signal propagation map of *C. elegans*. **a**, Mean post-stimulus neural activity \langle \Delta F / F\_0 \rangle\_t averaged across trials and individuals. The q values report the false discovery rate (more grey is less significant). White indicates no measurement. An autoresponse is required for inclusion and is not shown (black diagonal). n = 113 animals. Neurons that were recorded but never stimulated are shown in Extended Data Fig. 5. **b**, Corresponding network graph with neurons positioned anatomically (only q < 0.05 connections). Width and transparency indicate mean response amplitude (red, excitatory; blue, inhibitory). A, anterior; D, dorsal; P, posterior; V, ventral. **c**, A bilaterally symmetric pair is more likely to have a q < 0.05 functional connection than is a pair chosen at random. **d**, Fraction of connections that are inhibitory as a function of the q-value threshold. Green indicates q < 0.05. **e**, Probability of being functionally connected (q < 0.05) given minimum anatomical path length l. **f**, Distribution of l for functionally connected pairs (blue) compared to all possible pairs (black). **g**, Probability of being functionally non-connected (q\_eq < 0.05) given l.
+|Responding|Stimulated||||
+|-|-|-|-|-|
+|\*\*Sensory\*\*|ADEL ADERADFL ADLLADLR AFDLAFDR AQRASEL ASERASGL ASGRASHL ASHRASIL ASIRASJL ASJRASKL ASKRAUAL AUARAVG AWALAWAR AWBLAWBR AWCLAWCR BAGLBAGR CEPDLCEPDR CEPVLCEPVR FLPLFLPR IL1DLIL1DR IL1RIL1VL IL1VRIL2DL IL2DRIL2L IL2RIL2VL IL2VRNSML NSMROLLL OLLROLQDL OLQDROLQVL OLQVRURADL URADRURAVL URAVRURBL URBRURXL URXRURYDL URYDRURYVL URYVR|\*\*Interneuron\*\*|ADAL ADARAIBL AIBRAIML AIMRAINL AINRAIYL AIYRAIZL AIZRALA AVALAVAR AVBLAVBR AVDLAVDR AVELAVER AVFLAVHL AVHRAVJL AVJRAVKL AVKRAVL I1LI1R I2LI2R I3I4 I6RIAL RIARRIBL RIBRRICL RICRRIFR RIGLRIGR RIHRIPL RIRRIS RIVLRIVR SAADLSAADR SAAVLSAAVR SABDSABVL SABVRSIBVR AS1DA1 DB2DD1 M1M2L M2RM3L M3RM5 MCLMCR MIRID RIMLRIMR RMDDLRMDDR RMDLRMDR RMDVLRMDVR RMEDRMEL RMERRMEV RMFLRMFR RMGLRMGR SMBDLSMBDR SMBVLSMBVR SMDDLSMDDR SMDVLSMDVR VA1VB1 VB2|\*\*Motor\*\*|
+
+**d**
+Inhibitory fraction
+Max q value
+Green indicates q < 0.05.
+
+**e**
+Probability of q < 0.05 given l
+Minimum anatomical path length (l)
+
+**g**
+Probability of q\_eq < 0.05 given l
+Minimum anatomical path length (l)
+
+**Fig. 2 | Signal propagation map of *C. elegans*.** a, Mean post-stimulus neural activity \langle \Delta F / F\_0 \rangle\_t averaged across trials and individuals. The q values report the false discovery rate (more grey is less significant). White indicates no measurement. An autoresponse is required for inclusion and is not shown (black diagonal). n = 113 animals. Neurons that were recorded but never stimulated are shown in Extended Data Fig. 5. b, Corresponding network graph with neurons positioned anatomically (only q < 0.05 connections). Width and transparency indicate mean response amplitude (red, excitatory; blue, inhibitory). A, anterior; D, dorsal; P, posterior; V, ventral. c, A bilaterally symmetric pair is more likely to have a q < 0.05 functional connection than is a pair chosen at random. d, Fraction of connections that are inhibitory as a function of the q-value threshold. Green indicates q < 0.05. e, Probability of being functionally connected (q < 0.05) given minimum anatomical path length l. f, Distribution of l for functionally connected pairs (blue) compared to all possible pairs (black). g, Probability of being functionally non-connected (q\_eq < 0.05) given l.
 
 measurements (Fig. 2g). To further compare our measurements to anatomy, we sought to better understand what responses we should expect from the wiring diagram. Anatomical features such as synapse count are properties of only the direct (monosynaptic) connection between two neurons, but our signal propagation measurements reflect contributions from all paths through the network (Fig. 3a). To compare
 
@@ -213,70 +101,71 @@ measurements (Fig. 2g). To further compare our measurements to anatomy, we sough
 
 # Article
 
-Fig. 3 | Functional measurements differ from anatomy-based predictions.
-a, Signals propagate along all paths, including indirect and recursive (coloured). Anatomical descriptions such as synapse count describe only direct paths (black). Connectome-constrained simulations are therefore used to predict signal propagation from anatomy. b, Pairs predicted from anatomy to have large downstream responses (\Delta V > 0.1V, n = 23,454 pairs) tend to have stronger measured responses (larger \Delta F/F\_0) than do those predicted to have small responses (\Delta V  0.1V, compared to functionally non-connected pairs (P < 0.0001, one-sided Kolmogorov–Smirnov test). d, Agreement of measured responses to anatomy-predicted responses is shown for WT (green) and unc-31 (cyan) animals, either using weights and signs from anatomy, or when weights and signs are fitted optimally. Agreement is reported as R^2 coefficient for the line of best fit: \Delta F/F\_0 = m\Delta V. Perfect agreement would be R^2 = 1.
+**Fig. 3 | Functional measurements differ from anatomy-based predictions.** **a**, Signals propagate along all paths, including indirect and recursive (coloured). Anatomical descriptions such as synapse count describe only direct paths (black). Connectome-constrained simulations are therefore used to predict signal propagation from anatomy. **b**, Pairs predicted from anatomy to have large downstream responses (\Delta V > 0.1, n = 23,454 pairs) tend to have stronger measured responses (larger \Delta F/F\_0) than do those predicted to have small responses (\Delta V  0.1 V, compared to functionally non-connected pairs (P < 0.0001, one-sided Kolmogorov–Smirnov test). **d**, Agreement of measured responses to anatomy-predicted responses is shown for WT (green) and *unc-31* (cyan) animals, either using weights and signs from anatomy, or when weights and signs are fitted optimally. Agreement is reported as R^2 coefficient for the line of best fit: \Delta F/F\_0 = m \Delta V. Perfect agreement would be R^2 = 1.
 
-the two, we relied on a connectome-constrained biophysical model that predicts signal propagation from anatomy, considering all paths. We activated neurons in silico and simulated the network's predicted response using synaptic weights from the connectome^1,6, polarities estimated from gene expression^37 and common assumptions about timescales and dynamics^47.
+### Fig. 3b: Anatomy-derived response vs Measured Response
 
-The anatomy-derived biophysical model made some predictions that agreed with our measurements. Neuron pairs that the model predicted to have large responses (\Delta V > 0.1) were significantly more likely to have larger measured responses than were those predicted to have little or no response (\Delta V  0.1) compared to pairs that our measurements deem functionally non-connected (q\_eq < 0.05), (Fig. 3c, top).
+|Category|Mean Value|Range (Approx.)|
+|-|-|-|
+|\Delta V \le 0.1|\~0.0|-0.5 to 2.5|
+|\Delta V > 0.1|\~0.1|-0.2 to 1.2|
 
-Overall, however, there was fairly poor agreement between anatomy-based model predictions and our measurements. For example, we measured large calcium responses in neuron pairs that were predicted from anatomy to have almost no response (Fig. 3c). There was also poor agreement between anatomy-based prediction and measurement when considering the response amplitudes of all neuron pairs (Fig. 3d, R^2 < 0, where an R^2 of 1 would be perfect agreement).
+### Fig. 3c: Anatomy-derived response (|\Delta V|) vs Measured Response (\Delta F/F\_0)
 
-Fundamental challenges in inferring the properties of neural connections from anatomy could contribute to the disagreement between anatomical-based model predictions and our measurements. It is challenging to infer the strength and sign of a neural connection from anatomy when many neurons send both excitatory and inhibitory signals to their postsynaptic partner^11,37. AFD→AIY, for example, expresses machinery for inhibiting AIY through glutamate, but is excitatory owing to peptidergic signalling^48 (Extended Data Fig. 2g). We therefore wondered whether agreement between structure and function would improve if we instead fitted the strength and sign of the wired connections to our measurements. Fitting the weights and signs, given simplifying assumptions, but forbidding new connections that do not appear in the wiring diagram, improved the agreement between the anatomical prediction and the functional measurements, although overall agreement remained poor (Fig. 3d). We therefore investigated whether additional functional connections exist beyond the connectome. We measured signal propagation in unc-31-mutant animals, which are defective for extrasynaptic signalling mediated by dense-core vesicles, as explained below. Although agreement was still poor, signal propagation in these animals showed better agreement with anatomy than it did in WT animals (Fig. 3d). This prompted us to consider extrasynaptic signalling further.
+gt; 10^-2$
+
+|X-axis (|\Delta V|)|Y-axis (\Delta F/F\_0)|Condition|
+|-|-|-|-|-|
+|10^-8 to 10^-2|\~0|Functionally connected (q  10^-2|||
+||||||
+
+### Fig. 3d: Anatomical weights vs Fitted weights (Agreement R^2)
+
+|Weights Type|WT (R^2)|\*unc-31\* (R^2)|
+|-|-|-|
+|Anatomical weights|\~ -0.09|\~ -0.06|
+|Fitted weights|\~ -0.07|\~ 0.0|
+
+the two, we relied on a connectome-constrained biophysical model that predicts signal propagation from anatomy, considering all paths. We activated neurons in silico and simulated the network’s predicted response using synaptic weights from the connectome^1,6, polarities estimated from gene expression^37 and common assumptions about timescales and dynamics^47.
+
+The anatomy-derived biophysical model made some predictions that agreed with our measurements. Neuron pairs that the model predicted to have large responses (\Delta V > 0.1) were significantly more likely to have larger measured responses than were those predicted to have little or no response (\Delta V  0.1) compared to pairs that our measurements deem functionally non-connected (q\_eq < 0.05), (**Fig. 3c**, top).
+
+Overall, however, there was fairly poor agreement between anatomy-based model predictions and our measurements. For example, we measured large calcium responses in neuron pairs that were predicted from anatomy to have almost no response (**Fig. 3c**). There was also poor agreement between anatomy-based prediction and measurement when considering the response amplitudes of all neuron pairs (**Fig. 3d**, R^2 < 0, where an R^2 of 1 would be perfect agreement).
+
+Fundamental challenges in inferring the properties of neural connections from anatomy could contribute to the disagreement between anatomical-based model predictions and our measurements. It is challenging to infer the strength and sign of a neural connection from anatomy when many neurons send both excitatory and inhibitory signals to their postsynaptic partner^11,37. AFD\rightarrowAIY, for example, expresses machinery for inhibiting AIY through glutamate, but is excitatory owing to peptidergic signalling^48 (Extended Data Fig. 2g). We therefore wondered whether agreement between structure and function would improve if we instead fitted the strength and sign of the wired connections to our measurements. Fitting the weights and signs, given simplifying assumptions, but forbidding new connections that do not appear in the wiring diagram, improved the agreement between the anatomical prediction and the functional measurements, although overall agreement remained poor (**Fig. 3d**). We therefore investigated whether additional functional connections exist beyond the connectome. We measured signal propagation in *unc-31*-mutant animals, which are defective for extrasynaptic signalling mediated by dense-core vesicles, as explained below. Although agreement was still poor, signal propagation in these animals showed better agreement with anatomy than it did in WT animals (**Fig. 3d**). This prompted us to consider extrasynaptic signalling further.
 
 ## Extrasynaptic signalling also drives neural dynamics
 
 Neurons can communicate extrasynaptically by releasing transmitters, often via dense-core vesicles, that diffuse through the extracellular milieu to reach downstream neurons instead of directly traversing a synaptic cleft (Supplementary Information). Extrasynaptic signalling forms an additional layer of communication not visible from anatomy^49 and its molecular machinery is ubiquitous in mammals^50 and *C. elegans*^38,51,52.
 
-To examine the role of extrasynaptic signalling, we measured the signal propagation of unc-31-mutant animals defective for dense-core-vesicle-mediated release (Extended Data Fig. 7a; 18 individuals) and compared the results with those from WT animals (browsable online at
+To examine the role of extrasynaptic signalling, we measured the signal propagation of *unc-31*-mutant animals defective for dense-core-vesicle-mediated release (Extended Data Fig. 7a; 18 individuals) and compared the results with those from WT animals (browsable online at
 
 ). This mutation disrupts dense-core-vesicle-mediated extrasynaptic signalling of peptides and monoamines by removing UNC-31 (CAPS), a protein involved in dense-core-vesicle fusion^53.
 
-We expected that most signalling in the brain visible within the time-scales of our measurements (30 s) would be mediated by chemical or electrical synapses and would therefore be unaffected by the unc-31 mutation. Consistent with this, many individual functional connections that we observed in the WT case persisted in the unc-31 mutant (Extended Data Fig. 8). But if fast dense-core-vesicle-dependent extrasynaptic signalling were present, it should be observed only in WT and not in unc-31-mutant individuals. Consistent with this, unc-31 animals had a smaller proportion of functional connections than did WT animals (Extended Data Fig. 7b).
+We expected that most signalling in the brain visible within the timescales of our measurements (30 s) would be mediated by chemical or electrical synapses and would therefore be unaffected by the *unc-31* mutation. Consistent with this, many individual functional connections that we observed in the WT case persisted in the *unc-31* mutant (Extended Data Fig. 8). But if fast dense-core-vesicle-dependent extrasynaptic signalling were present, it should be observed only in WT and not in *unc-31*-mutant individuals. Consistent with this, *unc-31* animals had a smaller proportion of functional connections than did WT animals (Extended Data Fig. 7b).
 
 We investigated the neuron RID, a cell that is thought to signal to other neurons extrasynaptically through neuropeptides, and that has
 
-```html
-
-|Agreement with anatomy (R^2)|\Delta F/F\_0 versus \Delta V|
-|-|-|
-|–0.04|unc-31|
-|–0.08|WT|
-
-```
-
-```html
-
-|Functionally connected (q < 0.05)|Functionally not connected (q\_eq < 0.05)|
-|-|-|
-|Blue|Orange|
-
-```
-
-```html
-
-|Measured \Delta F/F\_0|Anatomy-derived response (biophysical model)|
-|-|-|
-|2|\Delta V \leq 0.1|
-|1|\Delta V > 0.1|
-
-```
-
 ## Page 6
 
-**Fig. 4** | Anatomy does not capture extrasynaptic signalling from the neuron RID. a, ADL, AWB and URX are predicted from anatomy to have no response to RID stimulation because there is no strong anatomical path from RID to those neurons (vertical lines at or near 0 V). Their anatomy-predicted responses are shown within the distribution of anatomy-predicted responses for all neuron pairs (blue histogram), as in Fig. 3b. b–d, Activity of neurons URXL (b), ADLR (c) and AWBR (d) to RID stimulation, in WT and unc-31 mutant backgrounds. Top, mean (blue) and s.d. (shading) across trials and animals. Bottom, individual traces are sorted across trial and animal by mean response amplitude. Here, trials are shown even in cases when RID activity was not measured. Additional neurons are shown in Extended Data Fig. 7c.
+**Fig. 4 | Anatomy does not capture extrasynaptic signalling from the neuron RID.** **a**, ADL, AWB and URX are predicted from anatomy to have no response to RID stimulation because there is no strong anatomical path from RID to those neurons (vertical lines at or near 0 V). Their anatomy-predicted responses are shown within the distribution of anatomy-predicted responses for all neuron pairs (blue histogram), as in Fig. 3b. **b–d**, Activity of neurons URXL (**b**), ADLR (**c**) and AWBR (**d**) to RID stimulation, in WT and *unc-31*-mutant backgrounds. Top, mean (blue) and s.d. (shading) across trials and animals. Bottom, individual traces are sorted across trial and animal by mean response amplitude. Here, trials are shown even in cases when RID activity was not measured. Additional neurons are shown in Extended Data Fig. 7c.
 
-only few and weak outgoing wired connections^54. RID had dim tagRFP-T expression, so we adjusted our analysis protocol for only this neuron, as described in the Methods. Many neurons responded to RID activation (Extended Data Fig. 7c), including URX, ADL and AWB, three neuron subtypes that were predicted from anatomy to have no response (Fig. 4a). These three neurons showed strong responses in WT animals but their responses were reduced or absent in unc-31 mutants (Fig. 4b–d), consistent with dense-core-vesicle-mediated extrasynaptic signalling. The gene expression and wiring of these neurons also suggest that peptidergic extrasynaptic signalling is producing the observed responses. All three express receptors for peptides produced by RID (NPR-4 and NPR-11 for FLP-14 and PDFR-1 for PDF-1), and no direct (monosynaptic) wiring connects RID to URX, ADL or AWB: a minimum of two hops are required from RID to URXL or AWBR, and three from RID to ADLR. These shortest paths all rely on fragile single-contact synapses that appear in only one out of the four individual connectomes^6. We conclude that RID signals to other neurons extrasynaptically, and that this is captured by signal propagation measurements but not by anatomy.
+|Panel|Description|
+|-|-|
+|\*\*a\*\*|\*\*RID→ADLR\*\*\*\*RID→AWBR\*\*\*\*RID→URXL\*\*\*\*All→All\*\*\*\*RID→All\*\*Density vs Anatomy-derived responses (V)|
+|\*\*b\*\*|\*\*RID→URXL (WT)\*\*\*\*RID→URXL (\*unc-31\*)\*\*Sorted trials vs Time (s) (\Delta F/F\_0)|
+|\*\*c\*\*|\*\*RID→ADLR (WT)\*\*\*\*RID→ADLR (\*unc-31\*)\*\*Sorted trials vs Time (s) (\Delta F/F\_0)|
+|\*\*d\*\*|\*\*RID→AWBR (WT)\*\*\*\*RID→AWBR (\*unc-31\*)\*\*Sorted trials vs Time (s) (\Delta F/F\_0)|
+
+only few and weak outgoing wired connections^54. RID had dim tagRFP-T expression, so we adjusted our analysis protocol for only this neuron, as described in the Methods. Many neurons responded to RID activation (Extended Data Fig. 7c), including URX, ADL and AWB, three neuron subtypes that were predicted from anatomy to have no response (Fig. 4a). These three neurons showed strong responses in WT animals but their responses were reduced or absent in *unc-31* mutants (Fig. 4b–d), consistent with dense-core-vesicle-mediated extrasynaptic signalling. The gene expression and wiring of these neurons also suggest that peptidergic extrasynaptic signalling is producing the observed responses. All three express receptors for peptides produced by RID (NPR-4 and NPR-11 for FLP-14 and PDFR-1 for PDF-1), and no direct (monosynaptic) wiring connects RID to URX, ADL or AWB: a minimum of two hops are required from RID to URXL or AWBR, and three from RID to ADLR. These shortest paths all rely on fragile single-contact synapses that appear in only one out of the four individual connectomes^6. We conclude that RID signals to other neurons extrasynaptically, and that this is captured by signal propagation measurements but not by anatomy.
 
 ### Extrasynaptic-dependent signal propagation screen
 
-To identify new pairs of neurons that communicate purely extrasynaptically, we performed an unbiased screen and selected for neuron pairs that had functional connections in WT animals (q < 0.05) but were functionally non-connected in unc-31 mutants (q\_eq < 0.05). Fifty-three pairs of neurons met our criteria (Extended Data Fig. 9), and were therefore putative candidates for purely extrasynaptic signalling. This is likely to be a lower bound because many more pairs could communicate extrasynaptically but might not appear in our screen, either because they don’t meet our statistical threshold or because they communicate through parallel paths, of which only some are extrasynaptic. Other scenarios not captured by the screen, and additional caveats, are discussed in the Supplementary Information. The timescales of
+To identify new pairs of neurons that communicate purely extrasynaptically, we performed an unbiased screen and selected for neuron pairs that had functional connections in WT animals (q < 0.05) but were functionally non-connected in *unc-31* mutants (q\_eq < 0.05). Fifty-three pairs of neurons met our criteria (Extended Data Fig. 9), and were therefore putative candidates for purely extrasynaptic signalling. This is likely to be a lower bound because many more pairs could communicate extrasynaptically but might not appear in our screen, either because they don’t meet our statistical threshold or because they communicate through parallel paths, of which only some are extrasynaptic. Other scenarios not captured by the screen, and additional caveats, are discussed in the Supplementary Information. The timescales of signal propagation for those neuron pairs that passed our screen were similar to that of all functional connections (Fig. 5a), suggesting that in the worm, *unc-31*-dependent extrasynaptic signalling can also propagate quickly.
 
-signal propagation for those neuron pairs that passed our screen were similar to that of all functional connections (Fig. 5a), suggesting that in the worm, unc-31-dependent extrasynaptic signalling can also propagate quickly.
+Neuron pair M3L\rightarrowURYVL is a representative example of a purely extrasynaptic-dependent connection found from our screen. There are no direct chemical or electrical synapses between M3L and URYVL, but stimulation of M3L evokes *unc-31*-dependent calcium activity in URYVL (Fig. 5b). The majority of neuron pairs identified in our screen express peptide and receptor combinations consistent with extrasynaptic signalling^38,52 (Supplementary Table 1). For example, M3L expresses FLP-4, which binds to the receptor NPR-4, expressed by URVYL; and FLP-5, which binds to the receptor NPR-11, also expressed by URYVL.
 
-Neuron pair M3L→URYVL is a representative example of a purely extrasynaptic-dependent connection found from our screen. There are no direct chemical or electrical synapses between M3L and URYVL, but stimulation of M3L evokes unc-31-dependent calcium activity in URYVL (Fig. 5b). The majority of neuron pairs identified in our screen express peptide and receptor combinations consistent with extrasynaptic signalling^38,52 (Supplementary Table 1). For example, M3L expresses FLP-4, which binds to the receptor NPR-4, expressed by URVYL; and FLP-5, which binds to the receptor NPR-11, also expressed by URYVL.
-
-The bilateral neuron pair AVDR and AVDL was also identified in our screen for having purely extrasynaptic-dependent connections. AVDR and AVDL have no or only weak wired connections between them (three of four connectomes show no wired connections, and the fourth finds only a very weak gap junction), but stimulation of AVDR evoked robust unc-31-dependent responses in AVDL. Notably, the AVD cell type was recently predicted to have a peptidergic autocrine loop^51 mediated by the neuropeptide–GPCR combinations NLP-10→NPR-35 and FLP-6→FRPR-8 (refs. 38,52) (Fig. 5c). The bilateral extrasynaptic signalling that we observe is consistent with this prediction because two neurons that express the same autocrine signalling machinery can necessarily signal to one another. AVD was also predicted to be among the top 25 highest-degree ‘hub’ nodes in a peptidergic network based on gene expression^51, and, in agreement, AVD is highly represented among hits in our screen (Extended Data Fig. 9b).
+The bilateral neuron pair AVDR and AVDL was also identified in our screen for having purely extrasynaptic-dependent connections. AVDR and AVDL have no or only weak wired connections between them (three of four connectomes show no wired connections, and the fourth finds only a very weak gap junction), but stimulation of AVDR evoked robust *unc-31*-dependent responses in AVDL. Notably, the AVD cell type was recently predicted to have a peptidergic autocrine loop^51 mediated by the neuropeptide–GPCR combinations NLP-10\rightarrowNPR-35 and FLP-6\rightarrowFRPR-8 (refs. 38,52) (Fig. 5c). The bilateral extrasynaptic signalling that we observe is consistent with this prediction because two neurons that express the same autocrine signalling machinery can necessarily signal to one another. AVD was also predicted to be among the top 25 highest-degree ‘hub’ nodes in a peptidergic network based on gene expression^51, and, in agreement, AVD is highly represented among hits in our screen (Extended Data Fig. 9b).
 
 ### Signal propagation predicts spontaneous activity
 
@@ -286,31 +175,143 @@ A key motivation for mapping neural connections is to understand how they give r
 
 # Article
 
-## Fig. 5 | Candidate purely extrasynaptic-dependent functional connections.
+**Fig. 5 | Candidate purely extrasynaptic-dependent functional connections.** **a**, Distribution of signal propagation timescales. **b,c**, Paired responses for M3L→URYVL (**b**) and AVDR→AVDL (**c**), for WT and *unc-31* animals. *unc-31* animals do not show downstream responses to stimulation. AVDR→AVDL extrasynaptic communication is putatively mediated in autocrine loops through NLP-10→NPR-35 and FLP-6→FRPR-8 signalling. Top, average (blue) and s.d. (shading) across trials and animals.
 
-a, Distribution of signal propagation timescales. b, c, Paired responses for M3L→URYVL (b) and AVDR→AVDL (c), for WT and unc-31 animals. unc-31 animals do not show downstream responses to stimulation. AVDR→AVDL extrasynaptic communication is putatively mediated in autocrine loops through NLP-10→NPR-35 and FLP-6→FRPR-8 signalling. Top, average (blue) and s.d. (shading) across trials and animals.
+|Average kernel rise time (s)|Number of connections|
+|-|-|
+|0 - 2|\~90 (All), \~40 (Candidate purely extrasynaptic)|
+|2 - 4|\~70 (All), \~30 (Candidate purely extrasynaptic)|
+|4 - 6|\~40 (All), \~15 (Candidate purely extrasynaptic)|
+|6 - 8|\~20 (All), \~5 (Candidate purely extrasynaptic)|
+|8 - 10|\~10 (All), \~2 (Candidate purely extrasynaptic)|
+|10 - 12|\~5 (All), \~1 (Candidate purely extrasynaptic)|
+|12 - 14|\~2 (All), \~0 (Candidate purely extrasynaptic)|
+|14 - 16|\~1 (All), \~0 (Candidate purely extrasynaptic)|
 
-of our signal propagation map to predict worms' spontaneous activity, and compared this to predictions from anatomy (Fig. 6). Spontaneous activity was measured in immobilized worms lacking optogenetic actuators under bright imaging conditions. A matrix of bare anatomical weights (synapse counts) was a poor predictor of the correlations of spontaneous activity (left bar, Fig. 6), consistent with previous reports^27,41. The connectome-constrained biophysical model from Fig. 3 better predicted spontaneous activity correlations (middle bars, Fig. 6; described in the Methods)—as we would expect because it considers all anatomical paths through the network—but it still performed fairly poorly. Predictions based on our functional measurements of signal propagation kernels (right bars, Fig. 6) performed best of all at predicting spontaneous activity correlations. To generate predictions of correlations either from the biophysical model or from our functional kernel measurements required the activity of a set of neurons to be driven in silico. For the biophysical model, driving all neurons was optimal, but for the kernel-based predictions, driving a specific set of six neurons ('top-n') markedly improved performance. We conclude that functionally derived predictions based on our measured signal propagation kernels better agree with spontaneous activity than do either a bare description of anatomical weights or an established model constrained by the connectome, and that some subsets of neurons make outsized contributions to driving spontaneous dynamics. The kernel-based simulation (interactive version at
+### WT
+
+#### M3L (stimulated) vs URYVL (responding)
+
+|Time (s)|Response (\Delta F/F\_0)|
+|-|-|
+|-10|0|
+|0|0|
+|10|\~0.8|
+|20|\~0.4|
+|30|\~0.2|
+
+|Trial|-10s|0s|10s|20s|30s|
+|-|-|-|-|-|-|
+|1|Low|Low|High|Med|Low|
+|2|Low|Low|High|Med|Low|
+|3|Low|Low|High|Med|Low|
+|4|Low|Low|High|Med|Low|
+|5|Low|Low|High|Med|Low|
+|6|Low|Low|High|Med|Low|
+|7|Low|Low|High|Med|Low|
+|8|Low|Low|High|Med|Low|
+|9|Low|Low|High|Med|Low|
+|10|Low|Low|High|Med|Low|
+|11|Low|Low|High|Med|Low|
+|12|Low|Low|High|Med|Low|
+
+### *unc-31*
+
+#### M3L (stimulated) vs URYVL (responding)
+
+|Time (s)|Response (\Delta F/F\_0)|
+|-|-|
+|-10|0|
+|0|0|
+|10|\~0.8|
+|20|\~0.4|
+|30|\~0.2|
+
+|Trial|-10s|0s|10s|20s|30s|
+|-|-|-|-|-|-|
+|1|Low|Low|Low|Low|Low|
+|2|Low|Low|Low|Low|Low|
+|3|Low|Low|Low|Low|Low|
+|4|Low|Low|Low|Low|Low|
+|5|Low|Low|Low|Low|Low|
+
+Neuropeptide–receptor combinations: FLP-4–NPR-4, FLP-5–NPR-11
+
+### WT
+
+#### AVDR (stimulated) vs AVDL (responding)
+
+|Time (s)|Response (\Delta F/F\_0)|
+|-|-|
+|-10|0|
+|0|0|
+|10|\~0.4|
+|20|\~0.5|
+|30|\~0.4|
+
+|Trial|-10s|0s|10s|20s|30s|
+|-|-|-|-|-|-|
+|1|Low|Low|High|High|Med|
+|2|Low|Low|High|High|Med|
+|3|Low|Low|High|High|Med|
+|4|Low|Low|High|High|Med|
+|5|Low|Low|High|High|Med|
+|6|Low|Low|High|High|Med|
+|7|Low|Low|High|High|Med|
+|8|Low|Low|High|High|Med|
+|9|Low|Low|High|High|Med|
+|10|Low|Low|High|High|Med|
+|11|Low|Low|High|High|Med|
+|12|Low|Low|High|High|Med|
+|13|Low|Low|High|High|Med|
+|14|Low|Low|High|High|Med|
+|15|Low|Low|High|High|Med|
+|16|Low|Low|High|High|Med|
+|17|Low|Low|High|High|Med|
+|18|Low|Low|High|High|Med|
+|19|Low|Low|High|High|Med|
+|20|Low|Low|High|High|Med|
+
+### *unc-31*
+
+#### AVDR (stimulated) vs AVDL (responding)
+
+|Time (s)|Response (\Delta F/F\_0)|
+|-|-|
+|-10|0|
+|0|0|
+|10|\~0.8|
+|20|\~1.0|
+|30|\~0.8|
+
+|Trial|-10s|0s|10s|20s|30s|
+|-|-|-|-|-|-|
+|1|Low|Low|High|High|Med|
+|2|Low|Low|High|High|Med|
+|3|Low|Low|High|High|Med|
+|4|Low|Low|High|High|Med|
+|5|Low|Low|High|High|Med|
+|6|Low|Low|High|High|Med|
+|7|Low|Low|High|High|Med|
+|8|Low|Low|High|High|Med|
+
+Neuropeptide–receptor combinations: NLP-10–NPR-35, FLP-6–FRPR-8
+
+of our signal propagation map to predict worms’ spontaneous activity, and compared this to predictions from anatomy (Fig. 6). Spontaneous activity was measured in immobilized worms lacking optogenetic actuators under bright imaging conditions. A matrix of bare anatomical weights (synapse counts) was a poor predictor of the correlations of spontaneous activity (left bar, Fig. 6), consistent with previous reports^27,41. The connectome-constrained biophysical model from Fig. 3 better predicted spontaneous activity correlations (middle bars, Fig. 6; described in the Methods)—as we would expect because it considers all anatomical paths through the network—but it still performed fairly poorly. Predictions based on our functional measurements of signal propagation kernels (right bars, Fig. 6) performed best of all at predicting spontaneous activity correlations. To generate predictions of correlations either from the biophysical model or from our functional kernel measurements required the activity of a set of neurons to be driven in silico. For the biophysical model, driving all neurons was optimal, but for the kernel-based predictions, driving a specific set of six neurons (‘top-n’) markedly improved performance. We conclude that functionally derived predictions based on our measured signal propagation kernels better agree with spontaneous activity than do either a bare description of anatomical weights or an established model constrained by the connectome, and that some subsets of neurons make outsized contributions to driving spontaneous dynamics. The kernel-based simulation (interactive version at
 
 ) outperforms other models of neural dynamics presumably for two reasons: first, it extracts all relevant parameters directly from
 
 ## Page 8
 
-Fig. 6 | Measured signal propagation better predicts spontaneous activity than anatomy does.
-
-|Agreement with spontaneous activity correlations (Pearson’s corr. coeff.)|0.7All driven|0.7Top-n driven|0.7N/A||
-|-|-|-|-|-|
-|Anatomical weights|0.0|0.0|0.0||
-|Anatomy-derived correlations (biophysical model)|0.1|0.1|0.0||
-|Functionally derived correlations|0.2|0.6|0.6||
+### Fig. 6 | Measured signal propagation better predicts spontaneous activity than anatomy does.
 
 Agreement (as Pearson’s correlation (corr.) coefficient (coeff.)) between the correlation matrix of spontaneous activity recorded from an immobilized animal and various predictions of those correlations, including: the bare anatomical weight matrix (synapse counts) (left); correlations predicted by the anatomy-derived biophysical model (middle); and correlations functionally derived from the measured signal propagation kernels (right). Anatomy-derived and functionally derived correlations are calculated by driving activity in silico in all neurons (dark blue) or only an optimal subset of top-n neurons (light blue). NA, not applicable.
 
-questions that motivate our work, such as how a stimulus in one part of the network drives activity in another. Direct connections are suited for questions of gene expression, development and anatomy, but less so for network function. For example, a direct connection between two neurons could be slow or weak, but might overlook a fast and strong effective connection via other paths through the network.
-
-We used a connectome-constrained biophysical model to provide additional evidence to support our claim that measured signal propagation differs from expectations based on anatomy. The model relies on assumptions of timescales, nonlinearities and other parameters that, if incorrect, would contribute to the observed disagreement between anatomy and function. But even without any biophysical model, discrepancies between anatomy and function are apparent; for example, in pairs of neurons with synaptic connections that are functionally non-connected (Fig. 2g), and in strong functional connections between RID and other neurons that have only weak, variable and indirect synaptic connections (Fig. 4). The challenge of confidently constraining model parameters from anatomy highlights the need for functional measurements, like the ones performed here. These functional measurements fill in fundamental gaps in the translation from anatomical connectome to neural activity. An alternative approach for comparing structure and function would be to infer properties of direct connections from the measured effective connections^55, but this might require a higher signal-to-noise ratio than our current measurements.
-
-The signal propagation atlas presented here informs structure–function investigations at both the circuit and the network level, and enables more accurate brain-wide simulations of neural dynamics. The finding that extrasynaptic peptidergic signalling, which is invisible to anatomy, evokes neural dynamics in *C. elegans* will inform ongoing discussions about how to characterize other brains in more detail and on a larger scale.
+|Agreement with spontaneousactivity correlations(Pearson's corr. coeff.)Method|Agreement with spontaneousactivity correlations(Pearson's corr. coeff.)All driven (Dark Blue)|Top-n driven (Light Blue)|N/A (Grey)|
+|-|-|-|-|
+|Anatomical weights|\~0.01|\~0.01|\~0.02|
+|Anatomy-derived correlations(biophysical model)|\~0.12|\~0.12|-|
+|Functionally derivedcorrelations|\~0.21|\~0.61|-|
 
 the measured kernels, thereby avoiding the need for many assumptions; and second, it captures extrasynaptic signalling not visible from anatomy.
 
@@ -320,13 +321,17 @@ Signal propagation in *C. elegans* measured by neural activation differs from mo
 
 By directly evoking calcium activity on a timescale of seconds, extrasynaptic signalling serves a functional role similar to that of classical neurotransmitters and contributes to neural dynamics. This role is in addition to its better-characterized role in modulating neural excitability over longer timescales.
 
-Peptidergic extrasynaptic signalling relies on diffusion and therefore may be uniquely well suited to *C. elegans*' small size. Mammals also express neuropeptides and receptors, including in the cortex^50, but their larger brains might limit the speed, strength or spatial extent of peptidergic extrasynaptic signalling.
+Peptidergic extrasynaptic signalling relies on diffusion and therefore may be uniquely well suited to *C. elegans'* small size. Mammals also express neuropeptides and receptors, including in the cortex^50, but their larger brains might limit the speed, strength or spatial extent of peptidergic extrasynaptic signalling.
 
 Plasticity, neuromodulation, neural-network state, experience dependence and other longer-timescale effects might contribute to variability in our measured responses or to discrepancies between anatomical and functional descriptions of the *C. elegans* network. A future direction will be to search for latent connections that might become functional only during certain internal states.
 
-Our signal propagation map provides a lower bound on the number of functional connections (Supplementary Information). Our measurements required a trade-off between the animal’s health and its transgenic load. To express the necessary transgenes, we generated a strain that is not behaviourally wild type; its signal propagation might therefore also differ from the wild type. To probe nonlinearities and multi-neuron interactions in the network, future measurements are needed of the network’s response to simultaneous stimulation of multiple neurons.
+Our signal propagation map provides a lower bound on the number of functional connections (Supplementary Information). Our measurements required a trade-off between the animal's health and its transgenic load. To express the necessary transgenes, we generated a strain that is not behaviourally wild type; its signal propagation might therefore also differ from the wild type. To probe nonlinearities and multi-neuron interactions in the network, future measurements are needed of the network's response to simultaneous stimulation of multiple neurons.
 
-Our signal propagation map reports effective connections, not direct connections. Effective connections are useful for the circuit-level
+Our signal propagation map reports effective connections, not direct connections. Effective connections are useful for the circuit-level questions that motivate our work, such as how a stimulus in one part of the network drives activity in another. Direct connections are suited for questions of gene expression, development and anatomy, but less so for network function. For example, a direct connection between two neurons could be slow or weak, but might overlook a fast and strong effective connection via other paths through the network.
+
+We used a connectome-constrained biophysical model to provide additional evidence to support our claim that measured signal propagation differs from expectations based on anatomy. The model relies on assumptions of timescales, nonlinearities and other parameters that, if incorrect, would contribute to the observed disagreement between anatomy and function. But even without any biophysical model, discrepancies between anatomy and function are apparent; for example, in pairs of neurons with synaptic connections that are functionally non-connected (Fig. 2g), and in strong functional connections between RID and other neurons that have only weak, variable and indirect synaptic connections (Fig. 4). The challenge of confidently constraining model parameters from anatomy highlights the need for functional measurements, like the ones performed here. These functional measurements fill in fundamental gaps in the translation from anatomical connectome to neural activity. An alternative approach for comparing structure and function would be to infer properties of direct connections from the measured effective connections^55, but this might require a higher signal-to-noise ratio than our current measurements.
+
+The signal propagation atlas presented here informs structure–function investigations at both the circuit and the network level, and enables more accurate brain-wide simulations of neural dynamics. The finding that extrasynaptic peptidergic signalling, which is invisible to anatomy, evokes neural dynamics in *C. elegans* will inform ongoing discussions about how to characterize other brains in more detail and on a larger scale.
 
 ## Online content
 
@@ -337,7 +342,7 @@ Any methods, additional references, Nature Portfolio reporting summaries, source
 1. White, J. G., Southgate, E., Thomson, J. N. & Brenner, S. The structure of the nervous system of the nematode *Caenorhabditis elegans*. *Phil. Trans. R. Soc. B* **314**, 1–340 (1986).
 2. Mesulam, M. Imaging connectivity in the human cerebral cortex: the next frontier? *Ann. Neurol.* **57**, 5–7 (2005).
 3. Abbott, L. F. et al. The mind of a mouse. *Cell* **182**, 1372–1376 (2020).
-4. Verasztó, C. et al. Whole-animal connectome and cell-type complement of the three-segmented *Platynereis dumerilii* larva. Preprint at bioRxiv  (2020).
+4. Verasztó, C. et al. Whole-animal connectome and cell-type complement of the three-segmented *Platynereis dumerilii* larva. Preprint at bioRxiv https://doi.org/10.1101/2020.08.21.260984 (2020).
 5. Cook, S. J. et al. Whole-animal connectomes of both *Caenorhabditis elegans* sexes. *Nature* **571**, 63–71 (2019).
 6. Witvliet, D. et al. Connectomes across development reveal principles of brain maturation. *Nature* **596**, 257–261 (2021).
 7. Chalfie, M. et al. The neural circuit for touch sensitivity in *Caenorhabditis elegans*. *J. Neurosci.* **5**, 956–964 (1985).
@@ -345,11 +350,11 @@ Any methods, additional references, Nature Portfolio reporting summaries, source
 9. Kunert-Graf, J. M., Shlizerman, E., Walker, A. & Kutz, J. N. Multistability and long-timescale transients encoded by network structure in a model of *C. elegans* connectome dynamics. *Front. Comput. Neurosci.* **11**, 53 (2017).
 10. Yan, G. et al. Network control principles predict neuron function in the *Caenorhabditis elegans* connectome. *Nature* **550**, 519–523 (2017).
 11. Vaaga, C. E., Borisovska, M. & Westbrook, G. L. Dual-transmitter neurons: functional implications of co-release and co-transmission. *Curr. Opin. Neurobiol.* **29**, 25–32 (2014).
-12. O’Malley, D. M., Sandell, J. H. & Masland, R. H. Co-release of acetylcholine and GABA by the starburst amacrine cells. *J. Neurosci.* **12**, 1394–1408 (1992).
+12. O’Malley, D. M., Sandell, J. H. . H. & Masland, R. H. Co-release of acetylcholine and GABA by the starburst amacrine cells. *J. Neurosci.* **12**, 1394–1408 (1992).
 13. Johnson, M. D. Synaptic glutamate release by postnatal rat serotonergic neurons in microculture. *Neuron* **12**, 433–442 (1994).
 14. Yoo, J. H. et al. Ventral tegmental area glutamate neurons co-release GABA and promote positive reinforcement. *Nat. Commun.* **7**, 13697 (2016).
-15. Fisher, Y. E., Lu, J., D’Alessandro, I. & Wilson, R. I. Sensorimotor experience remaps visual input to a heading-direction network. *Nature* **576**, 121–125 (2019).
-16. Harris-Warrick, R. M. & Marder, E. Modulation of neural networks for behavior. *Annu. Rev. Neurosci.* **14**, 39–57 (1991).
+15. Fisher, Y. E., Lu, J., D’Alessandro, I. , I. & Wilson, R. I. Sensorimotor experience remaps visual input to a heading-direction network. *Nature* **576**, 121–125 (2019).
+16. Harris-Warrick, R. M. . M. & Marder, E. Modulation of neural networks for behavior. *Annu. Rev. Neurosci.* **14**, 39–57 (1991).
 
 ## Page 9
 
@@ -367,11 +372,11 @@ Any methods, additional references, Nature Portfolio reporting summaries, source
 
 22. Franconville, R., Beron, C. & Jayaraman, V. Building a functional connectome of the *Drosophila* central complex. *eLife* **7**, e37017 (2018).
 
-23. Sharma, A. K., Randi, F., Kumar, S., Dvali, S. & Leifer, A. M. TWISP: a transgenic worm for interrogating signal propagation in *C. elegans*. Preprint at bioRxiv  (2023).
+23. Sharma, A. K., Randi, F., Kumar, S., Dvali, S. & Leifer, A. M. TWISP: a transgenic worm for interrogating signal propagation in *C. elegans*. Preprint at bioRxiv https://doi.org/10.1101/2023.08.03.551820 (2023).
 
 24. Bhatla, N. & Horvitz, H. R. Light and hydrogen peroxide inhibit *C. elegans* feeding through gustatory receptor orthologs and pharyngeal neurons. *Neuron* **85**, 804–818 (2015).
 
-25. Quintin, S., Aspert, T., Ye, T. & Charvin, G. Distinct mechanisms underlie H2O2 sensing in *C. elegans* head and tail. *PLoS ONE* **17**, e0274226 (2022).
+25. Quintin, S., Aspert, T., Ye, T. , T. & Charvin, G. Distinct mechanisms underlie H2O2 sensing in *C. elegans* head and tail. *PLoS ONE* **17**, e0274226 (2022).
 
 26. Chen, T.-W. et al. Ultrasensitive fluorescent proteins for imaging neuronal activity. *Nature* **499**, 295–300 (2013).
 
@@ -381,7 +386,7 @@ Any methods, additional references, Nature Portfolio reporting summaries, source
 
 29. Hardaker, L. A., Singer, E., Kerr, R., Zhou, G. & Schafer, W. R. Serotonin modulates locomotory behavior and coordinates egg-laying and movement in *Caenorhabditis elegans*. *J. Neurobiol.* **49**, 303–313 (2001).
 
-30. Wicks, S. R., Roehrig, C. J. & Rankin, C. H. A dynamic network simulation of the nematode tap withdrawal circuit: predictions concerning synaptic function using behavioral criteria. *J. Neurosci.* **16**, 4017–4031 (1996).
+30. Wicks, S. R., Roehrig, C. J. . J. & Rankin, C. H. A dynamic network simulation of the nematode tap withdrawal circuit: predictions concerning synaptic function using behavioral criteria. *J. Neurosci.* **16**, 4017–4031 (1996).
 
 31. Kawano, T. et al. An imbalancing act: gap junctions reduce the backward motor circuit activity to bias *C. elegans* for forward locomotion. *Neuron* **72**, 572–586 (2011).
 
@@ -389,7 +394,7 @@ Any methods, additional references, Nature Portfolio reporting summaries, source
 
 33. Faumont, S. et al. An image-free opto-mechanical system for creating virtual environments and imaging neuronal activity in freely moving *Caenorhabditis elegans*. *PLoS ONE* **6**, e24666 (2011).
 
-34. Shipley, F. B., Clark, C. M., Alkema, M. J. & Leifer, A. M. Simultaneous optogenetic manipulation and calcium imaging in freely moving *C. elegans*. *Front. Neural Circuits* **8**, 28 (2014).
+34. Shipley, F. B., Clark, C. M., Alkema, M. J. . J. & Leifer, A. M. Simultaneous optogenetic manipulation and calcium imaging in freely moving *C. elegans*. *Front. Neural Circuits* **8**, 28 (2014).
 
 35. Kato, S. et al. Global brain dynamics embed the motor command sequence of *Caenorhabditis elegans*. *Cell* **163**, 656–669 (2015).
 
@@ -405,25 +410,25 @@ Any methods, additional references, Nature Portfolio reporting summaries, source
 
 41. Uzel, K., Kato, S. & Zimmer, M. A set of hub neurons and non-local connectivity features support global brain dynamics in *C. elegans*. *Curr. Biol.* **32**, 3443–3459 (2022).
 
-42. van Vreeswijk, C. & Sompolinsky, H. Chaos in neuronal networks with balanced excitatory and inhibitory activity. *Science* **274**, 1724–1726 (1996).
+42. van Vreeswijk, C. , C. & Sompolinsky, H. Chaos in neuronal networks with balanced excitatory and inhibitory activity. *Science* **274**, 1724–1726 (1996).
 
-43. Isaacson, J. S. & Scanziani, M. How inhibition shapes cortical activity. *Neuron* **72**, 231–243 (2011).
+43. Isaacson, J. S. . S. & Scanziani, M. How inhibition shapes cortical activity. *Neuron* **72**, 231–243 (2011).
 
-44. Meinecke, D. L. & Peters, A. GABA immunoreactive neurons in rat visual cortex. *J. Comp. Neurol.* **261**, 388–404 (1987).
+44. Meinecke, D. L. . L. & Peters, A. GABA immunoreactive neurons in rat visual cortex. *J. Comp. Neurol.* **261**, 388–404 (1987).
 
-45. Gordus, A., Pokala, N., Levy, S., Flavell, S. W. & Bargmann, C. I. Feedback from network states generates variability in a probabilistic olfactory circuit. *Cell* **161**, 215–227 (2015).
+45. Gordus, A., Pokala, N., Levy, S., Flavell, S. W. . W. & Bargmann, C. I. Feedback from network states generates variability in a probabilistic olfactory circuit. *Cell* **161**, 215–227 (2015).
 
 46. Stern, S., Kirst, C. & Bargmann, C. I. Neuromodulatory control of long-term behavioral patterns and individuality across development. *Cell* **171**, 1649–1662 (2017).
 
-47. Kunert, J., Shlizerman, E. & Kutz, J. N. Low-dimensional functionality of complex network dynamics: neurosensory integration in the *Caenorhabditis* connectome. *Phys. Rev. E* **89**, 052805 (2014).
+47. Kunert, J., Shlizerman, E. , E. & Kutz, J. N. Low-dimensional functionality of complex network dynamics: neurosensory integration in the *Caenorhabditis* connectome. *Phys. Rev. E* **89**, 052805 (2014).
 
-48. Narayan, A., Laurent, G. & Sternberg, P. W. Transfer characteristics of a thermosensory synapse in *Caenorhabditis elegans*. *Proc. Natl Acad. Sci. USA* **108**, 9667–9672 (2011).
+48. Narayan, A., Laurent, G. , G. & Sternberg, P. W. Transfer characteristics of a thermosensory synapse in *Caenorhabditis elegans*. *Proc. Natl Acad. Sci. USA* **108**, 9667–9672 (2011).
 
 49. Bentley, B. et al. The multilayer connectome of *Caenorhabditis elegans*. *PLoS Comput. Biol.* **12**, e1005283 (2016).
 
 50. Smith, S. J. et al. Single-cell transcriptomic evidence for dense intracortical neuropeptide networks. *eLife* **8**, e47889 (2019).
 
-51. Ripoll-Sánchez, L. et al. The neuropeptidergic connectome of *C. elegans*. Preprint at bioRxiv  (2022).
+51. Ripoll-Sánchez, L. et al. The neuropeptidergic connectome of *C. elegans*. Preprint at bioRxiv https://doi.org/10.1101/2022.10.30.514396 (2022).
 
 52. Beets, I. et al. System-wide mapping of neuropeptide–GPCR interactions in *C. elegans*. *Cell Rep.* **42**, 113058 (2023).
 
@@ -433,9 +438,9 @@ Any methods, additional references, Nature Portfolio reporting summaries, source
 
 55. Randi, F. & Leifer, A. M. Nonequilibrium Green’s functions for functional connectivity in the brain. *Phys. Rev. Lett.* **126**, 118102 (2021).
 
-Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+**Publisher's note** Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
 
-Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit
+**Open Access** This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit
 
 .
 
@@ -445,23 +450,23 @@ Open Access This article is licensed under a Creative Commons Attribution 4.0 In
 
 ## Worm maintenance
 
-C. elegans were stored in the dark, and only minimal light was used when transferring worms or mounting worms for experiments. Strains generated in this study (Extended Data Fig. 1a) have been deposited in the Caenorhabditis Genetics Center (CGC), University of Minnesota, for public distribution. Hermaphrodites were used in this study.
+*C. elegans* were stored in the dark, and only minimal light was used when transferring worms or mounting worms for experiments. Strains generated in this study (Extended Data Fig. 1a) have been deposited in the Caenorhabditis Genetics Center (CGC), University of Minnesota, for public distribution. Hermaphrodites were used in this study.
 
 ## Transgenics
 
-We generated a transgenic worm for interrogating signal propagation, TWISP (AML462), which has been described in more detail previously^23. This strain expresses the calcium indicator GCaMP6s in the nucleus of each neuron; a purple-light-sensitive optogenetic protein system (GUR-3 and PRDX-2) in each neuron; and multiple fluorophores of various colours from the NeuroPAL^27 system, also in the nucleus of neurons. We also used a QF-hGR drug-inducible gene-expression strategy to turn on the gene expression of optogenetic actuators only later in development. To create this strain, we first generated an intermediate strain, AML456, by injecting a plasmid mix (75 ng μl^−1 pAS3-5xQUAS::Δ pes-10P::AI::gur-3G::unc-54 + 75 ng μl^−1 pAS3-5xQUAS::Δ pes-10P::AI::prdx-2G::unc-54 + 35 ng μl^−1 pAS-3-rab-3P::AI::QF+GR::unc-54 + 100 ng μl^−1 unc-122::GFP) into CZ20310 worms, followed by UV integration and six outcrosses^56,57. The intermediate strain, AML456, was then crossed into the pan-neuronal GCaMP6s calcium-imaging strain, with NeuroPAL, AML320 (refs. 23,27,58).
+We generated a transgenic worm for interrogating signal propagation, TWISP (AML462), which has been described in more detail previously^23. This strain expresses the calcium indicator GCaMP6s in the nucleus of each neuron; a purple-light-sensitive optogenetic protein system (GUR-3 and PRDX-2) in each neuron; and multiple fluorophores of various colours from the NeuroPAL^27 system, also in the nucleus of neurons. We also used a QF-hGR drug-inducible gene-expression strategy to turn on the gene expression of optogenetic actuators only later in development. To create this strain, we first generated an intermediate strain, AML456, by injecting a plasmid mix (75 ng μl^-1 pAS3-5xQUAS::\Delta pes-10P::AI::gur-3G::unc-54 + 75 ng μl^-1 pAS3-5xQUAS::\Delta pes-10P::AI::prdx-2G::unc-54 + 35 ng μl^-1 pAS-3-rab-3P::AI::QF+GR::unc-54 + 100 ng μl^-1 unc-122::GFP) into CZ20310 worms, followed by UV integration and six outcrosses^56,57. The intermediate strain, AML456, was then crossed into the pan-neuronal GCaMP6s calcium-imaging strain, with NeuroPAL, AML320 (refs. 23,27,58).
 
-Animals exhibited decreased average locomotion compared to the WT (mean speeds of 0.03 mm s^−1 off drug and 0.02 mm s^−1 on drug compared to the mean of 0.15 mm s^−1 in WT animals^23), as expected for NeuroPAL GCaMP6s strains, which are also reported to be overall less active (around 0.09 mm s^−1 during only forward locomotion)^27.
+Animals exhibited decreased average locomotion compared to the WT (mean speeds of 0.03 mm s^-1 off drug and 0.02 mm s^-1 on drug compared to the mean of 0.15 mm s^-1 in WT animals^23), as expected for NeuroPAL GCaMP6s strains, which are also reported to be overall less active (around 0.09 mm s^-1 during only forward locomotion)^27.
 
-An unc-31-mutant background with defects in the dense-core-vesicle-release pathway was used to diminish wireless signalling^53. We created an unc-31-knockout version of our functional connectivity strain by performing CRISPR–Cas9-mediated genome editing on AML462 using a single-strand oligodeoxynucleotide (ssODN)-based homology-dependent repair strategy^59. This approach resulted in strain AML508 (unc-31 (wtf502) IV; otIs669 (NeuroPAL) V 14x; wtfIs145 (30 ng μl^−1 pBX + 30 ng μl^−1 rab-3::his-24::GCaMP6s::unc-54); wtfIs348 (75 ng μl^−1 pAS3-5xQUAS::Δ pes-10P::AI::gur-3G::unc-54 + 75 ng μl^−1 pAS3-5xQUAS::Δ pes-10P::AI::prdx-2G::unc-54 + 35 ng μl^−1 pAS-3-rab-3P::QF+GR::unc-54 + 100 ng μl^−1 unc-122::GFP)).
+An *unc-31*-mutant background with defects in the dense-core-vesicle-release pathway was used to diminish wireless signalling^53. We created an *unc-31*-knockout version of our functional connectivity strain by performing CRISPR–Cas9-mediated genome editing on AML462 using a single-strand oligodeoxynucleotide (ssODN)-based homology-dependent repair strategy^59. This approach resulted in strain AML508 (*unc-31* (wtf502) IV; otIs669 (NeuroPAL) V 14x; wtfIs145 (30 ng μl^-1 *pBX* + 30 ng μl^-1 *rab-3*::*his-24*::*GCaMP6s*::*unc-54*); wtfIs348 (75 ng μl^-1 pAS3-5xQUAS::\Delta pes-10P::AI::gur-3G::unc-54 + 75 ng μl^-1 pAS3-5xQUAS::\Delta pes-10P::AI::prdx-2G::unc-54 + 35 ng μl^-1 pAS-3-rab-3P::QF+GR::unc-54 + 100 ng μl^-1 unc-122::GFP)).
 
-CRISPR–Cas-9 editing was carried out as follows. Protospacer adjacent motif (PAM) sites (denoted in upper case) were selected in the first intron (gagcuucgcaauguugacucCGG) and the last intron (augguacauuggguccguggCGG) of the unc-31 gene (ZK897.1a.1) to delete 12,476 out of 13,169 bp (including the 5′ and 3′ untranslated regions) and 18 out of 20 exons from the genomic locus, while adding 6 bp (GGTACC) for the Kpn-I restriction site (Extended Data Fig. 1b). Alt-R S.p. Cas9 Nuclease V3, Alt-R-single guide RNA (sgRNA) and Alt-R homology-directed repair (HDR)-ODN were used (IDT). We introduced the Kpn-I restriction site, denoted in upper case (gacccagcgaagcaaggatattgaaaacataagtacccttgttgttgtgtGGTACCccacggacccaatgtaccatattttacgagaaatttataatgttcagg) into our repair oligonucleotide to screen and confirm the deletion by PCR followed by restriction digestion. sgRNA and HDR ssODNs were also synthesized for the dpy-10 gene as a reporter, as described previously^59. An injection mix was prepared by sequentially adding Alt-R S.p. Cas9 Nuclease V3 (1 μl of 10 μg μl^−1), 0.25 μl of 1 M KCL, 0.375 μl of 200 mM HEPES (pH 7.4), sgRNAs for unc-31 (1 μl each for both sites) and 0.75 μl for dpy-10 from a stock of 100 μM, ssODNs (1 μl for unc-31 and 0.5 μl for dpy-10 from a stock of 25 μM) and nuclease-free water to a final volume of 10 μl in a PCR tube, kept on ice. The injection mix was then incubated at 37 °C for 15 min before it was injected into the germline of AML462 worms. Progenies from plates showing roller or dumpy phenotypes in the F1 generation after injection were individually propagated and screened by PCR and Kpn-I digestion to confirm deletion. Single-worm PCR was carried out using GXL-PRIME STAR taq-Polymerase (Takara Bio) and the Kpn-1-HF restriction enzyme (NEB). Worms without a roller or dumpy phenotype and homozygous for deletion were confirmed by Sanger sequencing fragment analysis.
+CRISPR–Cas-9 editing was carried out as follows. Protospacer adjacent motif (PAM) sites (denoted in upper case) were selected in the first intron (gagcuucgcaauguugacuc**CGG**) and the last intron (augguacauuggguccgugg**CGG**) of the *unc-31* gene (ZK897.1a.1) to delete 12,476 out of 13,169 bp (including the 5′ and 3′ untranslated regions) and 18 out of 20 exons from the genomic locus, while adding 6 bp (**GGTACC**) for the Kpn-I restriction site (Extended Data Fig. 1b). Alt-R S.p. Cas9 Nuclease V3, Alt-R-single guide RNA (sgRNA) and Alt-R homology-directed repair (HDR)-ODN were used (IDT). We introduced the Kpn-I restriction site, denoted in upper case (gacccagcgaagcaaggatattgaaaacataagtacccttgttgttgtgt**GGTACC**ccacggacccaatgtaccatattttacgagaaatttataatgttcagg) into our repair oligonucleotide to screen and confirm the deletion by PCR followed by restriction digestion. sgRNA and HDR ssODNs were also synthesized for the *dpy-10* gene as a reporter, as described previously^59. An injection mix was prepared by sequentially adding Alt-R S.p. Cas9 Nuclease V3 (1 μl of 10 μg μl^-1), 0.25 μl of 1 M KCL, 0.375 μl of 200 mM HEPES (pH 7.4), sgRNAs for *unc-31* (1 μl each for both sites) and 0.75 μl for *dpy-10* from a stock of 100 μM, ssODNs (1 μl for *unc-31* and 0.5 μl for *dpy-10* from a stock of 25 μM) and nuclease-free water to a final volume of 10 μl in a PCR tube, kept on ice. The injection mix was then incubated at 37 °C for 15 min before it was injected into the germline of AML462 worms. Progenies from plates showing roller or dumpy phenotypes in the F\_1 generation after injection were individually propagated and screened by PCR and Kpn-I digestion to confirm deletion. Single-worm PCR was carried out using GXL-PRIME STAR taq-Polymerase (Takara Bio) and the Kpn-1-HF restriction enzyme (NEB). Worms without a roller or dumpy phenotype and homozygous for deletion were confirmed by Sanger sequencing fragment analysis.
 
-To cross-validate GUR-3/PRDX-2-evoked behaviour responses, we generated the transgenic strain AML546 by injecting a plasmid mix (40 ng μl^−1 pAS3-rig-3P::AI::gur-3G::SL2::tagRFP::unc-54 + 40 ng μl^−1 pAS3-rig-3P::AI::prdx-2G::SL2::tagBFP::unc-54) into N2 worms to generate a transient transgenic line expressing GUR-3/PRDX-2 in AVA neurons.
+To cross-validate GUR-3/PRDX-2-evoked behaviour responses, we generated the transgenic strain AML546 by injecting a plasmid mix (40 ng μl^-1 pAS3-rig-3P::AI::gur-3G::SL2::tagRFP::unc-54 + 40 ng μl^-1 pAS3-rig-3P::AI::prdx-2G::SL2::tagBFP::unc-54) into N2 worms to generate a transient transgenic line expressing GUR-3/PRDX-2 in AVA neurons.
 
 ## Cross-validation of GUR-3/PRDX-2-evoked behaviour
 
-Optogenetic activation of AVA neurons using traditional channelrhodopsins (for example, Chrimson) leads to reversals^45,60. We used worms expressing GUR-3/PRDX-2 in AVA neurons (AML564) to show that GUR-3/PRDX-2 elicits a similar behavioural response. We illuminated freely moving worms with blue light from an LED (peaked at 480 nm, 2.3 mW mm^−2) for 45 s. We compared the number of onsets of reversals in that period of time with a control in which only dim white light was present, as well as with the results of the same assay performed on N2 worms. Animals with GUR-3/PRDX-2 in AVA (n = 11 animals) exhibited more blue-light-evoked reversals per minute than did WT animals (n = 8 animals) (Extended Data Fig. 2h).
+Optogenetic activation of AVA neurons using traditional channelrhodopsins (for example, Chrimson) leads to reversals^45,60. We used worms expressing GUR-3/PRDX-2 in AVA neurons (AML564) to show that GUR-3/PRDX-2 elicits a similar behavioural response. We illuminated freely moving worms with blue light from an LED (peaked at 480 nm, 2.3 mW mm^-2) for 45 s. We compared the number of onsets of reversals in that period of time with a control in which only dim white light was present, as well as with the results of the same assay performed on N2 worms. Animals with GUR-3/PRDX-2 in AVA (n = 11 animals) exhibited more blue-light-evoked reversals per minute than did WT animals (n = 8 animals) (Extended Data Fig. 2h).
 
 ## Dexamethasone treatment
 
@@ -499,9 +504,9 @@ In addition, real-time ‘pseudo’-segmentation of the neurons (described below
 
 ## Calcium imaging
 
-Calcium imaging was performed in a single-photon regime with a 505-nm excitation laser through spinning disk confocal microscopy, at 2 vol s^−1. For functional connectivity experiments, an intensity of 1.4 mW mm^−2 at the sample plane was used to image GCaMP6s, well below the threshold needed to excite the GUR-3/PRDX-2 optogenetic system^24. We note that at this wavelength and intensity, animals exhibited very little spontaneous calcium activity.
+Calcium imaging was performed in a single-photon regime with a 505-nm excitation laser through spinning disk confocal microscopy, at 2 vol s^-1. For functional connectivity experiments, an intensity of 1.4 mW mm^-2 at the sample plane was used to image GCaMP6s, well below the threshold needed to excite the GUR-3/PRDX-2 optogenetic system^24. We note that at this wavelength and intensity, animals exhibited very little spontaneous calcium activity.
 
-For certain analyses (Fig. 6), recordings with ample spontaneous activity were desired. In those cases, we increased the 505-nm intensity sevenfold, to approximately 10 mW mm^−2, and recorded from AML320 strains that lacked exogenous GUR-3/PRDX-2 to avoid potential widespread neural activation. Under these imaging conditions, we observed population-wide slow stereotyped spontaneous oscillatory calcium dynamics, as previously reported^35,68.
+For certain analyses (Fig. 6), recordings with ample spontaneous activity were desired. In those cases, we increased the 505-nm intensity sevenfold, to approximately 10 mW mm^-2, and recorded from AML320 strains that lacked exogenous GUR-3/PRDX-2 to avoid potential widespread neural activation. Under these imaging conditions, we observed population-wide slow stereotyped spontaneous oscillatory calcium dynamics, as previously reported^35,68.
 
 ## Extraction of calcium activity from the images
 
@@ -519,30 +524,29 @@ After neural locations were found in each of the volumetric images, a nonrigid p
 
 ## Calcium pre-processing
 
-The GCaMP6s intensity extracted from the images undergoes the following pre-processing steps. (1) Missing values are interpolated on the basis of neighbouring time points. Missing values can occur when a neuron cannot be identified in a given volumetric image. (2) Photobleaching is removed by fitting a double exponential to the baseline signal. (3) Outliers more than 5 standard deviations away from the average are removed from each trace. (4) Traces are smoothed using a causal polynomial filtering with a window size of 6.5 s and polynomial order of 1 (Savitzky–Golay filters with windows completely ‘in the past’; for example, obtained with scipy.signal.savgol\_coeffs(window\_length=13, polyorder=1, pos=12)). This type of filter with the chosen parameters is able to remove noise without smearing the traces in time. Note that when fits are performed (for example, to calculate kernels), they are always performed on the original, non-smoothed traces.
+The GCaMP6s intensity extracted from the images undergoes the following pre-processing steps. (1) Missing values are interpolated on the basis of neighbouring time points. Missing values can occur when a neuron cannot be identified in a given volumetric image. (2) Photo-bleaching is removed by fitting a double exponential to the baseline signal. (3) Outliers more than 5 standard deviations away from the average are removed from each trace. (4) Traces are smoothed using a causal polynomial filtering with a window size of 6.5 s and polynomial order of 1 (Savitzky–Golay filters with windows completely ‘in the past’; for example, obtained with `scipy.signal.savgol_coeffs(window_length=13, polyorder=1, pos=12)`). This type of filter with the chosen parameters is able to remove noise without smearing the traces in time. Note that when fits are performed (for example, to calculate kernels), they are always performed on the original, non-smoothed traces.
 
 ## Page 12
 
 (5) Where \Delta F/F\_0 of responses is used, F\_0 is defined as the value of F in a 30-s interval before the stimulation time and \Delta F \equiv F - F\_0. In Fig. 2a, for example, \_t refers to the mean over a 30-s post-stimulus window.
 
-## Stimulus delivery and pulsed laser
-
+**Stimulus delivery and pulsed laser**
 For two-photon optogenetic targeting, we used an optical parametric amplifier (OPA; Light Conversion ORPHEUS) pumped by a femtosecond amplified laser (Light Conversion PHAROS). The output of the OPA was tuned to a wavelength of 850 nm, at a 500 kHz repetition rate. We used temporal focusing to spatially restrict the size of the two-photon excitation spot along the microscope axis. A motorized iris was used to set its lateral size. For temporal focusing, the first-order diffraction from a reflective grating, oriented orthogonally to the microscope axis, was collected (as described previously^71) and travelled through the motorized iris, placed on a plane conjugate to the grating. To arbitrarily position the two-photon excitation spot in the sample volume, the beam then travelled through an electrically tunable lens (Optotune EL-16-40-TC, on a plane conjugate to the objective), to set its position along the microscope axis, and finally was reflected by two galvo-mirrors to set its lateral position. The pulsed beam was then combined with the imaging light path by a dichroic mirror immediately before entering the back of the objective.
 
-Most of the stimuli were delivered automatically by computer control. Real-time computer vision software found the position of the neurons for each volumetric image acquired, using only the tagRFP-T channel. To find neural positions, we used the same pseudo-segmentation algorithm described above. The algorithm found neurons in each 2D frame in around 500 \mus as the frames arrived from the camera. In this way, locations for all neurons in a volume were found within a few milliseconds of acquiring the last frame of that volume.
+Most of the stimuli were delivered automatically by computer control. Real-time computer vision software found the position of the neurons for each volumetric image acquired, using only the tagRFP-T channel. To find neural positions, we used the same pseudo-segmentation algorithm described above. The algorithm found neurons in each 2D frame in around 500 μs as the frames arrived from the camera. In this way, locations for all neurons in a volume were found within a few milliseconds of acquiring the last frame of that volume.
 
-Every 30 s, a random neuron was selected among the neurons found in the current volumetric image, on the basis of only its tagRFP-T signal. After galvo-mirrors and the tunable lens set the position of the two-photon spot on that neuron, a 500-ms (300-ms for the unc-31-mutant strain) train of light pulses was used to optogenetically stimulate that neuron. The duration of stimulus illumination for the unc-31-mutant strain was selected to elicit calcium transients in stimulated neurons with a distribution of amplitudes such that the maximum amplitude was similar to those in WT-background animals, (Extended Data Fig. 2f). The output of the laser was controlled through the external interface to its built-in pulse picker, and the power of the laser at the sample was 1.2 mW at 500 kHz. Neuron identities were assigned to stimulated neurons after the completion of experiments using NeuroPAL^27.
+Every 30 s, a random neuron was selected among the neurons found in the current volumetric image, on the basis of only its tagRFP-T signal. After galvo-mirrors and the tunable lens set the position of the two-photon spot on that neuron, a 500-ms (300-ms for the *unc-31*-mutant strain) train of light pulses was used to optogenetically stimulate that neuron. The duration of stimulus illumination for the *unc-31*-mutant strain was selected to elicit calcium transients in stimulated neurons with a distribution of amplitudes such that the maximum amplitude was similar to those in WT-background animals, (Extended Data Fig. 2f). The output of the laser was controlled through the external interface to its built-in pulse picker, and the power of the laser at the sample was 1.2 mW at 500 kHz. Neuron identities were assigned to stimulated neurons after the completion of experiments using NeuroPAL^27.
 
-To probe the AFD→AIY neural connection, a small set of stimuli used variable pulse durations from 100 ms to 500 ms in steps of 50 ms selected randomly to vary the amount of optogenetic activation of AFD. In some cases, neurons of interest were too dim to be detected by the real-time software. For those neurons of interest, additional recordings were performed in which the neuron to be stimulated was manually selected on the basis of its colour, size and position. This was the case for certain stimulations of neurons RID and AFD.
+To probe the AFD\rightarrowAIY neural connection, a small set of stimuli used variable pulse durations from 100 ms to 500 ms in steps of 50 ms selected randomly to vary the amount of optogenetic activation of AFD.
 
-## Characterization of the size of the two-photon excitation spot
+In some cases, neurons of interest were too dim to be detected by the real-time software. For those neurons of interest, additional recordings were performed in which the neuron to be stimulated was manually selected on the basis of its colour, size and position. This was the case for certain stimulations of neurons RID and AFD.
 
+**Characterization of the size of the two-photon excitation spot**
 The lateral (xy) size of the two-photon excitation spot was measured with a fluorescent microscope slide, and the axial (z) size was measured using 0.2-nm fluorescent beads (Suncoast Yellow, Bangs Laboratories), by scanning the z-position of the optogenetic spot while maintaining the imaging focal plane fixed (Extended Data Fig. 2a).
 
-We further tested our targeted stimulation in two ways: selective photobleaching and neuronal activation. First, we targeted individual neurons at various depths in the worm’s brain, and we illuminated them with the pulsed laser to induce selective photobleaching of tagRFP-T. Extended Data Fig. 2c,d shows how our two-photon excitation spot selectively targets individual neurons, because it photobleaches tagRFP-T only in the neuron that we decide to target, and not in nearby neurons. To faithfully characterize the spot size, we set the laser power such that the two-photon interaction probability profile of the excitation spot would not saturate the two-photon absorption probability of tagRFP-T. Second, we showed that our excitation spot is restricted along the z-axis by targeting a neuron and observing its calcium activity. When the excitation was directed at the neuron but shifted by 4 \mum along z, the neuron showed no activation. By contrast, the neuron showed activation when the spot was correctly positioned on the neuron (Extended Data Fig. 2e). To further show that our stimulation is spatially restricted to an individual neuron more broadly throughout our measurements, we show that stimulations do not elicit responses in most of the close neighbours of the targeted neurons (Extended Data Fig. 2i and Supplementary Information).
+We further tested our targeted stimulation in two ways: selective photobleaching and neuronal activation. First, we targeted individual neurons at various depths in the worm’s brain, and we illuminated them with the pulsed laser to induce selective photobleaching of tagRFP-T. Extended Data Fig. 2c,d shows how our two-photon excitation spot selectively targets individual neurons, because it photobleaches tagRFP-T only in the neuron that we decide to target, and not in nearby neurons. To faithfully characterize the spot size, we set the laser power such that the two-photon interaction probability profile of the excitation spot would not saturate the two-photon absorption probability of tagRFP-T. Second, we showed that our excitation spot is restricted along the z-axis by targeting a neuron and observing its calcium activity. When the excitation was directed at the neuron but shifted by 4 μm along z, the neuron showed no activation. By contrast, the neuron showed activation when the spot was correctly positioned on the neuron (Extended Data Fig. 2e). To further show that our stimulation is spatially restricted to an individual neuron more broadly throughout our measurements, we show that stimulations do not elicit responses in most of the close neighbours of the targeted neurons (Extended Data Fig. 2i and Supplementary Information).
 
-## Inclusion criteria
-
+**Inclusion criteria**
 Stimulation events were included for further analysis if they evoked a detectable calcium response in the stimulated neuron (autoresponse). A classifier determined whether the response was detected by inspecting whether the amplitude of both the \Delta F/F\_0 transient and its second derivative exceeded a pair of thresholds. The same threshold values were applied to every animal, strain, neuron and stimulation event, and were originally set to match the human perception of a response above noise. Stimulation events that did not meet both thresholds for a contiguous 4 s were excluded. The RID responses shown in Fig. 4 and Extended Data Fig. 7c are an exception to this policy. RID is visible on the basis of its CyOFP expression, but its tagRFP-T expression is too dim to consistently extract calcium signals. Therefore, in Fig. 4 and Extended Data Fig. 7c (but not in other figures, such as Fig. 2), downstream neurons’ responses to RID stimulation were included even in cases in which it was not possible to extract a calcium-activity trace in RID.
 
 Neuron traces were excluded from analysis if a human was unable to assign an identity or if the imaging time points were absent in a contiguous segment longer than 5% of the response window owing to imaging artefacts or tracking errors. A different policy applies to dim neurons of interest that are not automatically detected by the pseudo-segmentation algorithm in the 3D image used as reference for the point-set registration algorithm. In those cases, we manually added the position of those neurons to the reference 3D image. If these ‘added’ neurons are automatically detected in most of the other 3D images, then a calcium activity trace can be successfully produced by the DSMM nonrigid registration algorithm, and is treated as any other trace. However, if the ‘added’ neurons are too dim to be detected also in the other 3D images and the calcium activity trace cannot be formed for more than 50% of the total time points, the activity trace for those neurons is extracted from the neuron’s position as determined from the position of neighbouring neurons. In the analysis code, we refer to these as ‘matchless’ traces, because the reference neuron is not matched to any detected neuron in the specific 3D image, but its position is just transformed according to the DSMM nonrigid deformation field. In this way, we are able to recover the calcium activity of some neurons whose tagRFP-T expression is otherwise too dim to be reliably detected by the pseudo-segmentation algorithm. Responses to RID stimulation shown in Fig. 4 and Extended Data Fig. 7c are an exception to this policy. In these cases, the activity of any neuron for which there is not a trace for more than 50% of the time points is substituted with the corresponding ‘matchless’ trace, and not just for the manually added neurons. This is important to be able to show responses of neurons such as ADL, which have dim tagRFP-T expression. In the RID-specific case, to exclude responses that become very large solely because of numerical issues in the division by the baseline activity owing to the dim tagRFP-T, we also introduce a threshold excluding \Delta F/F > 2.
@@ -559,7 +563,7 @@ We used two statistical tests to identify neuron pairs that under our stimulatio
 
 To determine whether a pair of neurons can be deemed functionally connected, we calculated the probability of observing the measured calcium response in the downstream neuron given no neural stimulation. We used a two-sided Kolmogorov–Smirnov test to compare the distributions of the downstream neuron’s \Delta F/F\_0 amplitude and its temporal second derivative from all observations of that neuron pair under stimulation to the empirical null distributions taken from control recordings lacking stimulation. P values were calculated separately for \Delta F/F\_0 and its temporal second derivative, and then combined using Fischer’s method to report a single fused P value for each neuron pair. Finally, to account for the large number of hypotheses tested, a false discovery rate was estimated. From the list of P values, each neuron was assigned a q value using the Storey–Tibshirani method^40. q values are interpreted as follows: when considering an ensemble of putative functional connections of q values all less than or equal to q\_c, an approximately q\_c fraction of those connections would have appeared in a recording that lacked any stimulation.
 
-To explicitly test whether a pair of neurons are functionally not connected, taking into account the amplitude of the response, their reliability, the number of observations and multiple hypotheses, we also computed equivalence P\_eq and q\_eq values. This assesses the confidence of a pair not being connected. We test whether our response is equivalent to what we would expect from our control distribution using the two one-sided t-test (TOST)^72. We computed P\_eq values for \Delta F/F\_0 and its temporal second derivative for a given pair being equivalent to the control distributions within an \epsilon = 1.2\sigma\_\Delta F/F\_0, \partial\_t^2. Here, \sigma\_\Delta F/F\_0, \partial\_t^2 is the standard deviation of the corresponding control distribution. We then combined the two P\_eq values into a single one with the Fisher method and computed q\_eq values using the Storey–Tibshirani method^40. Note that, different from the regular P values described above, the equivalence test relies on the arbitrary choice of \epsilon, which defines when we call two distributions equivalent. We chose a conservative value of \epsilon = 1.2\sigma.
+To explicitly test whether a pair of neurons are functionally not connected, taking into account the amplitude of the response, their reliability, the number of observations and multiple hypotheses, we also computed equivalence P\_eq and q\_eq values. This assesses the confidence of a pair not being connected. We test whether our response is equivalent to what we would expect from our control distribution using the two one-sided t-test (TOST)^72. We computed P\_eq values for \Delta F/F\_0 and its temporal second derivative for a given pair being equivalent to the control distributions within an \epsilon = 1.2\sigma\_\Delta F/F\_0, \partial^2\_t. Here, \sigma\_\Delta F/F\_0, \partial^2\_t is the standard deviation of the corresponding control distribution. We then combined the two P\_eq values into a single one with the Fisher method and computed q\_eq values using the Storey–Tibshirani method^40. Note that, different from the regular P values described above, the equivalence test relies on the arbitrary choice of \epsilon, which defines when we call two distributions equivalent. We chose a conservative value of \epsilon = 1.2\sigma.
 
 We note that the statistical framework is stringent and a large fraction of measured neuron pairs fail to pass either statistical test.
 
@@ -573,38 +577,33 @@ In the anatomical connectome (the starting connectome for the first step in the 
 
 Kernels k\_ij(t) were defined as the functions to be convolved with the activity \Delta F\_j of the stimulated neuron to obtain the activity \Delta F\_i of a responding neuron i, such that \Delta F\_i(t) = (k\_ij \* \Delta F\_j)(t). To fit kernels, each kernel k(t) was parametrized as a sum of convolutions of decaying exponentials
 
-k(t) = \sum\_m c\_m (\theta(t)e^-\gamma\_m,0t) \* (\theta(t)e^-\gamma\_m,1t) \* \ldots,
-\quad (1)
+k(t) = \sum\_m c\_m (\theta(t)e^-\gamma\_m,0t) \* (\theta(t)e^-\gamma\_m,1t) \* \dots, \quad (1)
 
 where the indices i,j are omitted for clarity and \theta is the Heaviside function. This parametrization is exact for linear systems, and works as a description of causal signal transmission also in nonlinear systems. Note that increasing the number of terms in the successive convolutions does not lead to overfitting, as would occur by increasing the degree of a polynomial. Overfitting could occur by increasing the number of terms in the sum, which in our fitting is constrained to be a maximum of 2. The presence of two terms in the sum allows the kernels to represent signal transmission with saturation (with c\_0 and c\_1 of opposite signs) and assume a fractional-derivative-like shape.
 
-The convolutions are performed symbolically. The construction of kernels as in equation (1) starts from a symbolically stored, normalized decaying exponential kernel with a factor A, A\gamma\_0\theta(t)e^-\gamma\_0t. Convolutions with normalized exponentials \gamma\_n\theta(t)e^-\gamma\_nt are performed sequentially and symbolically, taking advantage of the fact that successive convolutions of exponentials always produce a sum of functions in the form \propto \theta(t)t^ne^-\gamma t. Once rules are found to convolve an additional exponential with a function in that form, any number of successive convolution can be performed. These rules are as follows:
+The convolutions are performed symbolically. The construction of kernels as in equation (1) starts from a symbolically stored, normalized decaying exponential kernel with a factor A, A\gamma\_0\theta(t)e^-\gamma\_0 t. Convolutions with normalized exponentials \gamma\_n\theta(t)e^-\gamma\_n t are performed sequentially and symbolically, taking advantage of the fact that successive convolutions of exponentials always produce a sum of functions in the form \propto \theta(t)t^n e^-\gamma t. Once rules are found to convolve an additional exponential with a function in that form, any number of successive convolution can be performed. These rules are as follows:
 
-1. If the initial term is a simple exponential with a given factor (not necessarily just the normalization \gamma) c\_i\theta(t)e^-\gamma\_it and \gamma\_i \neq \gamma\_n, then the convolution is
+1. If the initial term is a simple exponential with a given factor (not necessarily just the normalization \gamma) c\_i\theta(t)e^-\gamma\_i t and \gamma\_i \neq \gamma\_n, then the convolution is
 
-c\_i\theta(t)e^-\gamma\_it \* \gamma\_n\theta(t)e^-\gamma\_nt = c\_\mu\theta(t)e^-\gamma\_\mu t + c\_\nu\theta(t)e^-\gamma\_\nu t,
-\quad (2)
+c\_i\theta(t)e^-\gamma\_i t \* \gamma\_n\theta(t)e^-\gamma\_n t = c\_\mu\theta(t)e^-\gamma\_\mu t + c\_\nu\theta(t)e^-\gamma\_\nu t, \quad (2)
 
-with c\_\mu = \frac{c\_i\gamma\_n}{\gamma\_n - \gamma\_i}, c\_\nu = -\frac{c\_i\gamma\_n}{\gamma\_n - \gamma\_i} and \gamma\_\mu = \gamma\_i, \gamma\_\nu = \gamma\_n.
+with c\_\mu = \frac{c\_i\gamma\_n}{\gamma\_i - \gamma\_n}, c\_\nu = -\frac{c\_i\gamma\_n}{\gamma\_n - \gamma\_i} and \gamma\_\mu = \gamma\_i, \gamma\_\nu = \gamma\_n.
 
 2. If the initial term is a simple exponential and \gamma\_i = \gamma\_n, then
 
-c\_i\theta(t)e^-\gamma\_it \* \gamma\_n\theta(t)e^-\gamma\_nt = c\_\mu\theta(t)te^-\gamma\_\mu t,
-\quad (3)
+c\_i\theta(t)e^-\gamma\_i t \* \gamma\_n\theta(t)e^-\gamma\_n t = c\_\mu\theta(t)te^-\gamma\_\mu t, \quad (3)
 
 with c\_\mu = c\_i\gamma\_i and \gamma\_\mu = \gamma\_i.
 
-3. If the initial term is a c\_i\theta(t)t^ne^-\gamma\_it term and \gamma\_i = \gamma\_\mu, then
+3. If the initial term is a c\_i\theta(t)t^n e^-\gamma\_i t term and \gamma\_i = \gamma\_\mu, then
 
-c\_i\theta(t)t^ne^-\gamma\_it \* \gamma\_n\theta(t)e^-\gamma\_nt = c\_\mu\theta(t)t^n+1e^-\gamma\_\mu t,
-\quad (4)
+c\_i\theta(t)t^n e^-\gamma\_i t \* \gamma\_n\theta(t)e^-\gamma\_n t = c\_\mu\theta(t)t^n+1e^-\gamma\_\mu t, \quad (4)
 
 with c\_\mu = \frac{c\_i\gamma\_i}{n+1} and \gamma\_\mu = \gamma\_i.
 
-4. If the initial term is a c\_i\theta(t)t^ne^-\gamma\_it term and \gamma\_i \neq \gamma\_\mu, then
+4. If the initial term is a c\_i\theta(t)t^n e^-\gamma\_i t term and \gamma\_i \neq \gamma\_\mu, then
 
-c\_i\theta(t)t^ne^-\gamma\_it \* \gamma\_n\theta(t)e^-\gamma\_nt = c\_\mu\theta(t)t^ne^-\gamma\_\mu t + c\_\nu(\theta(t)t^n-1e^-\gamma\_it \* \theta(t)e^-\gamma\_nt),
-\quad (5)
+c\_i\theta(t)t^n e^-\gamma\_i t \* \gamma\_n\theta(t)e^-\gamma\_n t = c\_\mu\theta(t)t^n e^-\gamma\_\mu t + c\_\nu(\theta(t)t^n-1e^-\gamma\_i t \* \theta(t)e^-\gamma\_n t), \quad (5)
 
 where c\_\mu = \frac{c\_i\gamma\_n}{\gamma\_n - \gamma\_i}, \gamma\_\mu = \gamma\_i, and c\_\nu = -n\frac{c\_i\gamma\_n}{\gamma\_n - \gamma\_i}.
 
@@ -616,44 +615,45 @@ Using the kernels fitted from our functional data, we can simulate neural activi
 
 ## Page 14
 
-# ki,j (t) with the activity ΔFj(t) induced by the stimulation in neuron j.
+k\_i,j(t) with the activity \Delta F\_j(t) induced by the stimulation in neuron j. The activity of the stimulated neuron can be either the experimentally observed activity or an arbitrarily shaped activity introduced for the purposes of simulation.
 
-The positive or negative). The rise time was zero if the peak of the kernel was at time t = 0. However, saturation of the signal transmission can make kernels appear slower than the connection actually is. For example, the simplest instantaneous connection would be represented by a single decaying exponential in equation (1), which would have its peak at time t = 0. However, if that connection is saturating, a second, opposite-sign term in the sum is needed to fit the kernel. This second term would make the kernel have a later peak, thereby masking the instantaneous nature of the connection. To account for this effect of saturation, we removed terms representing saturation from the kernels and found the rise time of these ‘non-saturating’ kernels.
+To compute kernel-derived neural activity correlations (Fig. 6), we completed the following steps. (1) We computed the responses of all the neurons i to the stimulation of a neuron j chosen to drive activity in the network. To compute the responses, for each pair i,j, we used the kernel \langle k\_i,j(t) \rangle\_trials averaged over multiple trials. For kernel-based analysis, pairs with connections of q > 0.05 were considered not connected. We set the activity \Delta F\_j(t) in the driving neuron to mimic an empirically observed representative activity transient. (2) We computed the correlation coefficient of the resulting activities. (3) We repeated steps 1 and 2 for a set of driving neurons (all or top-n neurons, as in Fig. 6). (4) For each pair k,l, we took the average of the correlations obtained by driving the set of neurons j in step 3.
 
-# To compute kernel-derived neural activity correlations (Fig. 6), we completed the following steps.
+### Anatomy-derived simulations of activity
 
-1. We computed the responses of all the neurons i to the stimulation of a neuron j chosen to drive activity in the network. To compute the responses, for each pair i, j, we used the kernel ki j (t)trials averaged over multiple trials. For kernel-based analysis, pairs with connections of q > 0.05 were considered not connected. We set the activity ΔFj(t) in the driving neuron to mimic an empirically observed representative activity transient.
-2. We computed the correlation coefficient of the resulting activities.
-3. We repeated steps 1 and 2 for a set of driving neurons (all or top-n neurons, as in Fig. 6).
-4. For each pair k, l, we took the average of the correlations obtained by driving the set of neurons j in step 3.
+Anatomy-derived simulations were performed as described previously^47. In brief, this simulation approach uses differential equations to model signal transmission through electrical and chemical synapses and includes a nonlinear equation for synaptic activation variables. We injected current *in silico* into individual neurons and simulated the responses of all the other neurons. Anatomy-derived responses (Fig. 3) of the connection from neuron j to neuron i were computed as the peak of the response of neuron i to the stimulation of j. Anatomy-based predictions of spontaneous correlations in Fig. 6 were calculated analogously to kernel-based predictions.
 
-# Screen for purely extrasynaptic-dependent connections
+In one analysis in Fig. 3d, the synapse weights and polarities were allowed to float and were fitted from the functional measurements. In all other cases, synapse weights were taken as the scaled average of three adult connectomes^1,6 and an L4 connectome^6, and polarities were assigned on the basis of a gene-expression analysis of ligand-gated ionotropic synaptic connections that considered glutamate, acetylcholine and GABA neurotransmitter and receptor expression, as performed in a previous study^37 and taken from CeNGEN^38 and other sources. Specifically, we used a previously published dataset (S1 data in ref. 37) and aggregated polarities across all members of a cellular subtype (for example, polarities from source AVAL and AVAR were combined). In cases of ambiguous polarities, connections were assumed to be excitatory, as in the previous study^37. For other biophysical parameters we chose values commonly used in *C. elegans* modelling efforts^9,30,47,73.
 
-To find candidate purely extrasynaptic-dependent connections, we considered the pairs of neurons that are connected in WT animals (qWT  0.05 to exclude very small responses that are nonetheless significantly different from the control distribution). We list these connections and provide additional examples in Extended Data Fig. 9.
-
-# Anatomy-derived simulations of activity
-
-Anatomy-derived simulations were performed as described previously47. In brief, this simulation approach uses differential equations to model signal transmission through electrical and chemical synapses and includes a nonlinear equation for synaptic activation variables. We injected current in silico into individual neurons and simulated the responses of all the other neurons. Anatomy-derived responses (Fig. 3) of the connection from neuron j to neuron i were computed as the peak of the response of neuron i to the stimulation of j. Anatomy-based predictions of spontaneous correlations in Fig. 6 were calculated analogously to kernel-based predictions.
-
-In one analysis in Fig. 3d, the synapse weights and polarities were allowed to float and were fitted from the functional measurements. In all other cases, synapse weights were taken as the scaled average of three adult connectomes1,6 and an L4 connectome6, and polarities were assigned on the basis of a gene-expression analysis of ligand-gated ionotropic synaptic connections that considered glutamate, acetylcholine and GABA neurotransmitter and receptor expression, as performed in a previous study37 and taken from CeNGEN38 and other sources. Specifically, we used a previously published dataset (S1 data in ref. 37) and aggregated polarities across all members of a cellular subtype (for example, polarities from source AVAL and AVAR were combined). In cases of ambiguous polarities, connections were assumed to be excitatory, as in the previous study37. For other biophysical parameters we chose values commonly used in C. elegans modelling efforts9,30,47,73.
-
-# Characterizing stereotypy of functional connections
+### Characterizing stereotypy of functional connections
 
 To characterize the stereotypy of a neuron pair’s functional connection, its kernels were inspected. A kernel was calculated for every stimulus-response event in which both the upstream and downstream neuron exhibited activity that exceeded a threshold. At least two stimulus-response events that exceeded this threshold were required to calculate their stereotypy. The general strategy for calculating stereotypy was to convolve different kernels with the same stimulus inputs and compare the resulting outputs. The similarity of two outputs is reported as a Pearson’s correlation coefficient. Kernels corresponding to different stimulus-response events of the same pair of neurons were compared with one another round-robin style, one round-robin each for a given input stimulus. For inputs we chose the set of all stimuli delivered to the upstream neuron. The neuron-pairs stereotypy is reported as the average Pearson’s correlation coefficient across all round-robin kernel pairings and across all stimuli.
 
-# Rise time of kernels
+### Rise time of kernels
 
-The rise time of kernels, shown in Fig. 5c and Extended Data Fig. 6d, was defined as the interval between the earliest time at which the value of the kernel was 1/e its peak value and the time of its peak (whether positive or negative).
+The rise time of kernels, shown in Fig. 5c and Extended Data Fig. 6d, was defined as the interval between the earliest time at which the value of the kernel was 1/e its peak value and the time of its peak (whether positive or negative). The rise time was zero if the peak of the kernel was at time t=0. However, saturation of the signal transmission can make kernels appear slower than the connection actually is. For example, the simplest instantaneous connection would be represented by a single decaying exponential in equation (1), which would have its peak at time t=0. However, if that connection is saturating, a second, opposite-sign term in the sum is needed to fit the kernel. This second term would make the kernel have a later peak, thereby masking the instantaneous nature of the connection. To account for this effect of saturation, we removed terms representing saturation from the kernels and found the rise time of these ‘non-saturating’ kernels.
 
-# Data availability
+### Screen for purely extrasynaptic-dependent connections
 
-Machine-readable datasets containing the measurements from this work are publicly accessible through Open Science Foundation repository at
+To find candidate purely extrasynaptic-dependent connections, we considered the pairs of neurons that are connected in WT animals (q^WT  0.05 to exclude very small responses that are nonetheless significantly different from the control distribution). We list these connections and provide additional examples in Extended Data Fig. 9.
+
+Using a recent neuropeptide–GPCR interaction screen in *C. elegans*^52 and gene-expression data from CeNGEN^38, we find putative combinations of neuropeptides and GPCRs that can mediate those connections (Supplementary Table 1). We produced such a list of neuropeptide and GPCR combinations using the Python package Worm Neuro Atlas (
+
+). In the list, we only include transcripts from CeNGEN detected with the highest confidence (threshold 4), as described previously^51. For each neuron pair, we first searched the CeNGEN database for neuropeptides expressed in the upstream neuron, then identified potential GPCR targets for each neuropeptide using information from previous reports^52,74, and finally went back to the CeNGEN database to find whether the downstream neuron in the pair was among the neurons expressing the specific GPCRs. The existence of potential combinations of neuropeptide and GPCR putatively mediating signalling supports our observation that communication in the candidate neuron pairs that we identify can indeed be mediated extrasynaptically through neuropeptidergic machinery.
+
+### Reporting summary
+
+Further information on research design is available in the Nature Portfolio Reporting Summary linked to this article.
+
+### Data availability
+
+Machine-readable datasets containing the measurements from this work are publicly accessible through on Open Science Foundation repository at
 
 . Interactive browsable versions of the same data are available online at
 
 . Source data are provided with this paper.
 
-# Code availability
+### Code availability
 
 ),
 
@@ -665,43 +665,25 @@ Machine-readable datasets containing the measurements from this work are publicl
 
 # Article
 
-56. Noma, K. & Jin, Y. Rapid integration of multi-copy transgenes using optogenetic mutagenesis in *Caenorhabditis elegans*. G3 **8**, 2091–2097 (2018).
-
-57. Evans, T. In WormBook  (2006).
-
-58. Yu, X. et al. Fast deep neural correspondence for tracking and identifying neurons in *C. elegans* using semi-synthetic training. *eLife* **10**, e66410 (2021).
-
-59. Paix, A., Folkmann, A. & Seydoux, G. Precision genome editing using CRISPR–Cas9 and linear repair templates in *C. elegans*. *Methods* **121–122**, 86–93 (2017).
-
-60. Li, Z., Liu, J., Zheng, M. & Xu, X. Z. S. Encoding of both analog- and digital-like behavioral outputs by one *C. elegans* interneuron. *Cell* **159**, 751–765 (2014).
-
-61. Monsalve, G. C., Yamamoto, K. R. & Ward, J. D. A new tool for inducible gene expression in *Caenorhabditis elegans*. *Genetics* **211**, 419–430 (2019).
-
-62. Nguyen, J. P. et al. Whole-brain calcium imaging with cellular resolution in freely behaving *Caenorhabditis elegans*. *Proc. Natl Acad. Sci. USA* **113**, E1074–E1081 (2016).
-
-63. Venkatachalam, V. et al. Pan-neuronal imaging in roaming *Caenorhabditis elegans*. *Proc. Natl Acad. Sci. USA* **113**, E1082–1088 (2016).
-
-64. Denk, W., Strickler, J. H. & Webb, W. W. Two-photon laser scanning fluorescence microscopy. *Science* **248**, 73–76 (1990).
-
-65. Rickgauer, J. P. & Tank, D. W. Two-photon excitation of channelrhodopsin-2 at saturation. *Proc. Natl Acad. Sci. USA* **106**, 15025–15030 (2009).
-
-66. Bhatla, N. C. *elegans* neural network. WormWeb  (2009).
-
-67. Nguyen, J. P. et al. Whole-brain calcium imaging with cellular resolution in freely behaving *Caenorhabditis elegans*. *Proc. Natl Acad. Sci. USA* **113**, E1074–E1081 (2015).
-
-68. Hallinen, K. M. et al. Decoding locomotion from population neural activity in moving *C. elegans*. *eLife* **10**, e66135 (2021).
-
-69. Nguyen, J. P., Linder, A. N., Plummer, G. S., Shaevitz, J. W. & Leifer, A. M. Automatically tracking neurons in a moving and deforming brain. *PLoS Comput. Biol.* **13**, e1005517 (2017).
-
-70. Zhou, Z. et al. Accurate and robust non-rigid point set registration using Student's-t mixture model with prior probability modeling. *Sci. Rep.* **8**, 8742 (2018).
-
-71. Papagiakoumou, E., Sars, V. D., Oron, D. & Emiliani, V. Patterned two-photon illumination by spatiotemporal shaping of ultrashort pulses. *Opt. Express* **16**, 22039–22047 (2008).
-
-72. Schuirmann, D. J. A comparison of the two one-sided tests procedure and the power approach for assessing the equivalence of average bioavailability. *J. Pharmacokinet. Biopharm.* **15**, 657–680 (1987).
-
-73. Izquierdo, E. J. & Beer, R. D. From head to tail: a neuromechanical model of forward locomotion in *Caenorhabditis elegans*. *Phil. Trans. R. Soc. B* **373**, 20170374 (2018).
-
-74. Frooninckx, L. et al. Neuropeptide GPCRs in *C. elegans*. *Front. Endocrinol.* **3**, 167 (2012).
+56. Noma, K. & Jin, Y. Rapid integration of multi-copy transgenes using optogenetic mutagenesis in *Caenorhabditis elegans*. **G3** **8**, 2091–2097 (2018).
+57. Evans, T. In WormBook https://doi.org/10.1895/wormbook.1.108.1 (2006).
+58. Yu, X. et al. Fast deep neural correspondence for tracking and identifying neurons in *C. elegans* using semi-synthetic training. ***eLife*** **10**, e66410 (2021).
+59. Paix, A., Folkmann, A.  A. & Seydoux, G. Precision genome editing using CRISPR–Cas9 and linear repair templates in *C. elegans*. ***Methods*** **121–122**, 86–93 (2017).
+60. Li, Z., Liu, J., Zheng, M. & Xu, X. Z. S. Encoding of both analog- and digital-like behavioral outputs by one *C. elegans* interneuron. ***Cell*** **159**, 751–765 (2014).
+61. Monsalve, G. C., Yamamoto, K. R. & Ward, J. D. A new tool for inducible gene expression in *Caenorhabditis elegans*. ***Genetics*** **211**, 419–430 (2019).
+62. Nguyen, J. P. et al. Whole-brain calcium imaging with cellular resolution in freely behaving *Caenorhabditis elegans*. ***Proc. Natl Acad. Sci. USA*** **113**, E1074–E1081 (2016).
+63. Venkatachalam, V. et al. Pan-neuronal imaging in roaming *Caenorhabditis elegans*. ***Proc. Natl Acad. Sci. USA*** **113**, E1082–1088 (2016).
+64. Denk, W., Strickler, J. H. & Webb, W. W. Two-photon laser scanning fluorescence microscopy. ***Science*** **248**, 73–76 (1990).
+65. Rickgauer, J. P. & Tank, D. W. Two-photon excitation of channelrhodopsin-2 at saturation. ***Proc. Natl Acad. Sci. USA*** **106**, 15025–15030 (2009).
+66. Bhatla, N. *C. elegans* neural network. WormWeb http://wormweb.org/neuralnet (2009).
+67. Nguyen, J. P. et al. Whole-brain calcium imaging with cellular resolution in freely behaving *Caenorhabditis elegans*. ***Proc. Natl Acad. Sci. USA*** **113**, E1074–E1081 (2015).
+68. Hallinen, K. M. et al. Decoding locomotion from population neural activity in moving *C. elegans*. ***eLife*** **10**, e66135 (2021).
+69. Nguyen, J. P., Linder, A. N., Plummer, G. S., Shaevitz, J. W. & Leifer, A. M. Automatically tracking neurons in a moving and deforming brain. ***PLoS Comput. Biol.*** **13**, e1005517 (2017).
+70. Zhou, Z. et al. Accurate and robust non-rigid point set registration using Student’s-t mixture model with prior probability modeling. ***Sci. Rep.*** **8**, 8742 (2018).
+71. Papagiakoumou, E., Sars, V. D., Oron, D. & Emiliani, V. Patterned two-photon illumination by spatiotemporal shaping of ultrashort pulses. ***Opt. Express*** **16**, 22039–22047 (2008).
+72. Schuirmann, D. J. A comparison of the two one-sided tests procedure and the power approach for assessing the equivalence of average bioavailability. ***J. Pharmacokinet. Biopharm.*** **15**, 657–680 (1987).
+73. Izquierdo, E. J. & Beer, R. D. From head to tail: a neuromechanical model of forward locomotion in *Caenorhabditis elegans*. ***Phil. Trans. R. Soc. B*** **373**, 20170374 (2018).
+74. Frooninckx, L. et al. Neuropeptide GPCRs in *C. elegans*. ***Front. Endocrinol.*** **3**, 167 (2012).
 
 **Acknowledgements** We thank J. Bien, A. Falkner, F. Graf Leifer, M. Murthy, E. Naumann, H. S. Seung and J. Shaevitz for comments on the manuscript. Online visualization software and hosting was created by research computing staff in the Lewis-Sigler Institute for Integrative Genomics and the Princeton Neuroscience Institute, with particular thanks to F. Kang, R. Leach, B. Singer, S. Heinicke and L. Parsons. Research reported in this work was supported by the National Institutes of Health National Institute of Neurological Disorders and Stroke under New Innovator award number DP2-NS116768 to A.M.L.; the Simons Foundation under award SCGB 543003 to A.M.L.; the Swartz Foundation through the Swartz Fellowship for Theoretical Neuroscience to F.R.; the National Science Foundation through the Center for the Physics of Biological Function (PHY-1734030); and the Boehringer Ingelheim Fonds to S.D. Strains from this work are being distributed by the CGC, which is funded by the NIH Office of Research Infrastructure Programs (P40 OD010440).
 
@@ -709,13 +691,13 @@ Machine-readable datasets containing the measurements from this work are publicl
 
 **Competing interests** The authors declare no competing interests.
 
+**Additional information**
 **Supplementary information** The online version contains supplementary material available at
 
 .
-
 **Correspondence and requests for materials** should be addressed to Andrew M. Leifer.
-
-**Peer review information** Nature thanks Mei Zhen and the other, anonymous, reviewer(s) for their contribution to the peer review of this work.
+**Peer review information** *Nature* thanks Mei Zhen and the other, anonymous, reviewer(s) for their contribution to the peer review of this work.
+**Reprints and permissions information** is available at
 
 .
 
@@ -723,128 +705,283 @@ Machine-readable datasets containing the measurements from this work are publicl
 
 |Strain|Genotype|Expression|Role|Reference|
 |-|-|-|-|-|
-|AML320|\*otIs669\[NeuroPAL] V 14x; wtfIs145\[pBX + rab-3::his-24::GCaMP6s::unc-54]\*|NeuroPAL (Yemini et al., 2021); GCaMP6s in all neurons|Calcium imaging only, no activation.|(Yu et al., 2021)|
-|AML456|\*wtfIs348 \[pAS3-5xQUAS::Δpes-10P::AI::gur-3G::unc-54 75 ng/ul + pAS3-5xQUAS::Δpes-10P::AI::prdx-2G::unc-54 75 ng/ul + pAS-3-rab-3P::AI::QF+GR::unc-54 35 ng/ul + unc-122::GFP 100 ng/ul]\*|GUR-3 + PRDX-2 in all neurons; GFP in coelomocytes|Optogenetic activator strain, used in creating AML462.|(Sharma et al., 2023) & this work|
-|AML462|\*otIs669\[NeuroPAL] V 14x; wtfIs145\[pBX + rab-3::his-24::GCaMP6s::unc-54]; wtfIs348 \[pAS3-5xQUAS:: Δpes-10P::AI::gur-3G::unc-54 75 ng/ul + pAS3-5xQUAS::Δpes-10P::AI::prdx-2G::unc-54 75 ng/ul + pAS-3-rab-3P::AI::QF+GR::unc-54 35 ng/ul + unc-122::GFP 100ng/ul]\*|NeuroPAL (Yemini et al., 2021); GCaMP6s in all neurons; GUR-3 + PRDX-2 in all neurons; GFP in coelomocytes|Primary strain used for measuring signal propagatin.|(Sharma et al., 2023) & this work|
-|AML508|\*unc-31(wtf502) IV; otIs669\[NeuroPAL] V 14x; wtfIs145 \[pBX + rab-3::his-24::GCaMP6s::unc-54]; wtfIs348 \[pAS3-5xQUAS:: Δpes-10P::AI::gur-3G::unc-54 75 ng/ul + pAS3-5xQUAS:: Δpes-10P::AI::prdx-2G::unc-54 75 ng/ul + pAS-3-rab-3P::AI::QF+GR::unc-54 35 ng/ul + unc-122::GFP 100ng/ul]\*|\*unc-31\* mutant background; NeuroPAL (Yemini et al., 2021); GCaMP6s in all neurons; GUR-3 + PRDX-2 in all neurons; GFP in coelomocytes|Used for measuring signal propagation of \*unc-31\* mutant background.|This work|
-|AML546|\*wtfEx496 \[pAS3-rig-3P::AI::gur-3G::SL2::tagRFP::unc-54 40ng/ul + pAS3-rig-3P::AI::prdx-2G::SL2::tagBFP::unc-54 40ng/ul]\*|GUR-3 + PRDX-2, tagBPF and tagRFP expressed in AVA and some pharyngeal neurons (likely I1, I4, M4 and NSM)|Used to activate AVA and observe behavior|This work|
+|AML320|\*otIs669\*\[\*NeuroPAL\*] \*V 14x\*; \*wtfIs145\*\[\*pBX\* + \*rab-3\*::\*his-24\*::\*GCaMP6s\*::\*unc-54\*]|NeuroPAL (Yemini et al., 2021); GCaMP6s in all neurons|Calcium imaging only, no activation.|(Yu et al., 2021)|
+|AML456|\*wtfIs348\* \[\*pAS3-5xQUAS\*::\*Δpes-10P\*::\*AI\*::\*gur-3G\*::\*unc-54\* 75 ng/ul + \*pAS3-5xQUAS\*::\*Δpes-10P\*::\*AI\*::\*prdx-2G\*::\*unc-54\* 75 ng/ul + \*pAS-3-rab-3P\*::\*AI\*::\*QF+GR\*::\*unc-54\* 35 ng/ul + \*unc-122\*::\*GFP\* 100 ng/ul]|GUR-3 + PRDX-2 in all neurons; GFP in coelomocytes|Optogenetic activator strain, used in creating AML462.|(Sharma et al., 2023) & this work|
+|AML462|\*otIs669\*\[\*NeuroPAL\*] \*V 14x\*; \*wtfIs145\*\[\*pBX\* + \*rab-3\*::\*his-24\*::\*GCaMP6s\*::\*unc-54\*]; \*wtfIs348\* \[\*pAS3-5xQUAS\*::\*Δpes-10P\*::\*AI\*::\*gur-3G\*::\*unc-54\* 75 ng/ul + \*pAS3-5xQUAS\*::\*Δpes-10P\*::\*AI\*::\*prdx-2G\*::\*unc-54\* 75 ng/ul + \*pAS-3-rab-3P\*::\*AI\*::\*QF+GR\*::\*unc-54\* 35 ng/ul + \*unc-122\*::\*GFP\* 100ng/ul]|NeuroPAL (Yemini et al., 2021); GCaMP6s in all neurons; GUR-3 + PRDX-2 in all neurons; GFP in coelomocytes|Primary strain used for measuring signal propagatin.|(Sharma et al., 2023) & this work|
+|AML508|\*unc-31\*(\*wtf502\*) \*IV\*; \*otIs669\*\[\*NeuroPAL\*] \*V 14x\*; \*wtfIs145\* \[\*pBX\* + \*rab-3\*::\*his-24\*::\*GCaMP6s\*::\*unc-54\*]; \*wtfIs348\* \[\*pAS3-5xQUAS\*::\*Δpes-10P\*::\*AI\*::\*gur-3G\*::\*unc-54\* 75 ng/ul + \*pAS3-5xQUAS\*::\*Δpes-10P\*::\*AI\*::\*prdx-2G\*::\*unc-54\* 75 ng/ul + \*pAS-3-rab-3P\*::\*AI\*::\*QF+GR\*::\*unc-54\* 35 ng/ul + \*unc-122\*::\*GFP\* 100ng/ul]|\*unc-31\* mutant background; NeuroPAL (Yemini et al., 2021); GCaMP6s in all neurons; GUR-3 + PRDX-2 in all neurons; GFP in coelomocytes|Used for measuring signal propagation of \*unc-31\* mutant background.|This work|
+|AML546|\*wtfEx496\* \[\*pAS3-rig-3P\*::\*AI\*::\*gur-3G\*::\*SL2\*::\*tagRFP\*::\*unc-54\* 40ng/ul + \*pAS3-rig-3P\*::\*AI\*::\*prdx-2G\*::\*SL2\*::\*tagBFP\*::\*unc-54\* 40ng/ul]|GUR-3 + PRDX-2, tagBPF and tagRFP expressed in AVA and some pharyngeal neurons (likely I1, I4, M4 and NSM)|Used to activate AVA and observe behavior|This work|
 
-Extended Data Fig. 1 | Strains. a, Table of strains used in this work. b, Schematic of CRISPR knockout of *unc-31*.
+|5' UTR E1 E2 E3 E4 E5 E6 E7 E8 E9 E10E11 E12 E13 E14 E15 E16E17E18 E19 E20 3' UTR|
+|-|
+
+gRNA-PAM site1 \hspace{10cm} gRNA-PAM site2
+\hspace{10cm} unc-31/ZK897.1a.1
+\hspace{10cm} 13169 bps
+
+|5' UTR E1 E20 3' UTR|
+|-|
+|unc-31 (\*wtf502\*)|
+|699 bps|
+|Kpn-I|
+
+Extended Data Fig. 1 | Strains. **a**, Table of strains used in this work. **b**, Schematic of CRISPR knockout of *unc-31*.
 
 ## Page 17
 
 # Article
 
-Extended Data Fig. 2 | Characterization of two-photon optogenetic stimulation and evoked response. a, Two-photon (2p) stimulation spot size (point-spread function). b, Imaging excitation wavelength and intensity were chosen to avoid GUR-3/PRDX-2 activation. GCaMP response to 500 nm activation of GUR-3/PRDX-2 expressing neuron as reported in^24. Vertical grey line indicates light intensity typically used for calcium imaging in present work. Inset: GCaMP6 excitation spectra from^26. Vertical cyan line indicates 505-nm imaging excitation wavelength used in present work. c, d, A neuron near (c) and a neuron far (d) from the objective are photobleached to demonstrate targeted illumination. tagRFP-T is photobleached by 2p stim (20 s illumination, 200 µW, 500 kHz repetition rate, 3.1 µm diameter FWHM spot). Difference image shows tagRFP-T fluorescence merged with a false-colour blue-green image to reveal change in intensity after targeted illumination. Only targeted neuron and not nearby neurons appear photobleached. Insets shows zoomed-in image of the targeted neuron's original tagRFP-T intensity (left) and difference image (right). Laser power was chosen to avoid saturated bleaching. For a sense of scale, C. elegans interneuron cell somas are roughly 4 microns in diameter. e, In vivo demonstration of 2p effective spot size. Activity from a neuron expressing GUR-3/PRDX-2 and GCaMP6s is shown in response to a 300-ms 2p stimulation delivered at t=11 s, 4 µm beyond the ≈ 3.5 µm diameter soma on the optical axis (z), and at t = 35 s, centred on the soma (t = 35 s). Only on-target soma stimulation evokes a transient, called an “autoresponse”. A stimulus artefact at t = 35 s is visible because no smoothing or filtering is applied to this trace. Schematic via BioRender. f, Distribution of autoresponses under typical stimulus conditions (1.2 mW, 500 kHz; 0.5 s for WT, 0.3 s for unc-31). Autoresponses are required for inclusion. g, Measured calcium response of neuron AIY to optogenetic stimulation of AFD. Compare to figure 4b in ref. 48. A variety of stimulus durations was used to generate autoresponses of different amplitudes (n = 1 (0.1 s), n = 2 (0.15 s), n = 1 (0.2 s), n = 3 (0.25 s), n = 3 (0.3 s), n = 3 (0.35 s), n = 6 (0.4 s), n = 2 (0.45 s), n = 4 (0.5 s) cross-hairs indicate s.d. h, Blue light evoked more reversals in animals expressing GUR-3/PRDX-2 in AVA (n = 11 animals) than WT (n = 8 animals). \~480 nm peaked light was delivered to freely moving animals. Unpaired t-test, p = 0.025. Bars show mean and s.d. i, j, Probability density (i) and CDF (j) of evoked calcium responses in a 30-s post-stimulus window for the targeted neuron (0 µm) or for neurons different distances away. Autoresponses are required. Cross-hairs in j, 75% cumulative distribution at ΔF/F0 = 0.1.
+**Extended Data Fig. 2 | Characterization of two-photon optogenetic stimulation and evoked response.** **a**, Two-photon (2p) stimulation spot size (point-spread function). **b**, Imaging excitation wavelength and intensity were chosen to avoid GUR-3/PRDX-2 activation. GCaMP response to 500 nm activation of GUR-3/PRDX-2 expressing neuron as reported in^24. Vertical grey line indicates light intensity typically used for calcium imaging in present work. Inset: GCaMP6 excitation spectra from^26. Vertical cyan line indicates 505-nm imaging excitation wavelength used in present work. **c,d**, A neuron near (**c**) and a neuron far (**d**) from the objective are photobleached to demonstrate targeted illumination. tagRFP-T is photobleached by 2p stim (20 s illumination, 200 μW, 500 kHz repetition rate, 3.1 μm diameter FWHM spot). Difference image shows tagRFP-T fluorescence merged with a false-colour blue-green image to reveal change in intensity after targeted illumination. Only targeted neuron and not nearby neurons appear photobleached. Insets shows zoomed-in image of the targeted neuron’s original tagRFP-T intensity (left) and difference image (right). Laser power was chosen to avoid saturated bleaching. For a sense of scale, C. elegans interneuron cell somas are roughly 4 microns in diameter. **e**, In vivo demonstration of 2p effective spot size. Activity from a neuron expressing GUR-3/PRDX-2 and GCaMP6s is shown in response to a 300-ms 2p stimulation delivered at t=11 s, 4  µm beyond the \approx 3.5  µm diameter soma on the optical axis (z), and at t = 35  s, centred on the soma (t = 35  s). Only on-target soma stimulation evokes a transient, called an “autoresponse”. A stimulus artefact at t = 35  s is visible because no smoothing or filtering is applied to this trace. Schematic via BioRender. **f**, Distribution of autoresponses under typical stimulus conditions (1.2 mW, 500 kHz; 0.5 s for WT, 0.3 s for *unc-31*). Autoresponses are required for inclusion. **g**, Measured calcium response of neuron AIY to optogenetic stimulation of AFD. Compare to figure 4b in ref. 48. A variety of stimulus durations was used to generate autoresponses of different amplitudes (n = 1 (0.1 s), n = 2 (0.15 s), n = 1 (0.2 s), n = 3 (0.25 s), n = 3 (0.3 s), n = 3 (0.35 s), n = 6 (0.4 s), n = 2 (0.45 s), n = 4 (0.5 s)) cross-hairs indicate s.d. **h**, Blue light evoked more reversals in animals expressing GUR-3/PRDX-2 in AVA (n = 11 animals) than WT (n = 8 animals). \~480 nm peaked light was delivered to freely moving animals. Unpaired t-test, p = 0.025. Bars show mean and s.d. **i,j**, Probability density (**i**) and CDF (**j**) of evoked calcium responses in a 30-s post-stimulus window for the targeted neuron (0 µm) or for neurons different distances away. Autoresponses are required. Cross-hairs in **j**, 75% cumulative distribution at \Delta F/F\_0 = 0.1.
+
+## Chart Transcriptions
+
+### Chart a: Intensity vs Position
+
+|position (µm)|x|y|z|
+|-|-|-|-|
+|-10|0.0|0.0|0.0|
+|-5|0.1|0.1|0.1|
+|0|1.0|1.0|1.0|
+|5|0.1|0.1|0.1|
+|10|0.0|0.0|0.0|
+
+### Chart b: ΔF/F vs Intensity
+
+|intensity (mW/mm²)|ΔF/F|
+|-|-|
+|10⁰|0.0|
+|10¹|0.9|
+
+### Chart e: ΔF/F vs Time
+
+|Time (s)|ΔF/F|
+|-|-|
+|0|0.0|
+|20|0.0|
+|40|1.5|
+|60|-0.5|
+
+### Chart f: Density of Autoresponses
+
+|autoresponses ΔF/F|wt|unc-31|
+|-|-|-|
+|0.2|10|10|
+|0.4|50|20|
+|0.6|25|15|
+|0.8|5|5|
+|1.0|5|5|
+
+### Chart g: ΔF AIY vs ΔF AFD
+
+|ΔF AFD|ΔF AIY|
+|-|-|
+|0|0|
+|1|1|
+|2|1|
+|3|2|
+|4|1.5|
+
+### Chart h: Reversals/Minute
+
+|Condition|WT|AVA::GUR-3 / AVA::PRDX-2|
+|-|-|-|
+|Blue Light (-)|1.5|1.5|
+|Blue Light (+)|3.0|5.0|
+
+### Chart i: Density of Evoked Calcium Responses
+
+|ΔF/F|0µm, n=1894|4µm-10µm, n=11780|10µm-16µm, n=21211|
+|-|-|-|-|
+|-0.5|0.0|0.0|0.0|
+|0.0|1.0|3.0|5.0|
+|0.5|0.5|1.0|0.5|
+|1.0|0.2|0.2|0.0|
+|1.5|0.1|0.1|0.0|
+|2.0|0.0|0.0|0.0|
+|2.5|0.0|0.0|0.0|
+
+### Chart j: CDF of Evoked Calcium Responses
+
+|ΔF/F|0µm|4µm-10µm|10µm-16µm|
+|-|-|-|-|
+|-0.5|0.0|0.0|0.0|
+|0.0|0.2|0.6|0.8|
+|0.5|0.5|0.8|0.9|
+|1.0|0.8|0.9|1.0|
+|1.5|0.9|1.0|1.0|
+|2.0|1.0|1.0|1.0|
+|2.5|1.0|1.0|1.0|
 
 ## Page 18
 
-**Extended Data Fig. 3 | Signal propagation map.** a, Mean amplitude of neural activity in a post-stimulus time window (\langle \Delta F / F\_0 \rangle\_t) averaged across trials and individuals for WT background. White indicates no measurement. (n = 113 animals) For a measurement to be included, a stimulus event is required to evoke a response in the stimulated neuron. Same measurements as in Fig. 2a, but here all neurons that respond are shown, even if they are never stimulated. b, Number of stimulation events (orange) and number of datasets (animals) in which the neuron was observed (blue) for each neuron is shown.
+|Count|
+|-|
+|Neuron|
+
+Extended Data Fig. 3 | **Signal propagation map.** **a**, Mean amplitude of neural activity in a post-stimulus time window (\langle \Delta F/F\_0 \rangle\_t) averaged across trials and individuals for WT background. White indicates no measurement. (n = 113 animals) For a measurement to be included, a stimulus event is required to evoke a response in the stimulated neuron. Same measurements as in Fig. 2a, but here all neurons that respond are shown, even if they are never stimulated. **b**, Number of stimulation events (orange) and number of datasets (animals) in which the neuron was observed (blue) for each neuron is shown.
 
 ## Page 19
 
-# Extended Data Fig. 4
+# Article
 
-# Observations and false discovery rate of neuron pairs
+## a Number of Observations
 
-in the signal propagation map.
+|responding|
+|-|
+|stimulated|
 
-| a      | Number of Observations | b                                        | q-Values |
-| ------ | ---------------------- | ---------------------------------------- | -------- |
-| -0.6   | 50                     | -0.5                                     | 2        |
-| 402020 | -0.4                   | 30                                       | -0.3     |
-| 20     | -0.2                   | 10                                       | 0.1      |
-| 0.0    | stimulated             | stimulated                               |          |
-| 201.0  | 3711120                | 201.0                                    | 2459820  |
-| 20     | 0.5                    | 18556                                    | D        |
-| 0.5    | 12299                  | 0.0                                      | 0        |
-| 0      | 30                     | 60                                       | 0.00.00  |
-| 0.25   | 0.50                   | Minimum number of observations of a pair | q        |
+## b q-Values
 
-They provide a metric of significance for assessing whether a neuron pair is functionally connected based on the number of observations and the magnitude of the response transients, taking into consideration the number of multiple hypotheses tested. Cumulative distribution is also shown (bottom).
+|responding|
+|-|
+|stimulated|
 
-ASGR often exhibits activity immediately following stimulation of AVJR, but because its q value is greater than 0.05, it does not meet the stringent statistical threshold to be deemed “functionally connected”. Top: mean (blue) and s.d. (shading) across trials and animals.
+* Y-axis: responding
+* X-axis: stimulated
+* Scale: 0.0 to 0.6
+
+### Reverse CDF Neuron Pairs
+
+|Reverse CDF|Neuron Pairs|
+|-|-|
+|1.0 .0|37111|
+|0.5 .5|18556|
+|0.0|0|
+|Minimum number of observations of a pair||
+
+### CDF Observed Pairs
+
+|CDF CDF|Observed Pairs|
+|-|-|
+|1.0 1.0|24598|
+|0.5|12299|
+|0.0|0|
+|q||
+
+## c
+
+|AVJR (Stim)|ASGR (Resp)|
+|-|-|
+|\Delta F/F\_0|\Delta F/F\_0|
+|Time (s) (s)|Time (s)|
+
+**Extended Data Fig. 4 | Observations and false discovery rate of neuron pairs in the signal propagation map.** **a**, Number of observations made of each neuron pair for WT-background animals. To be considered an observation, the upstream neuron must have been stimulated, calcium imaging of both the upstream and downstream neuron must have been recorded, both neurons must have been unambiguosly identified and the upstream neuron must have exhibited an autoresponse. Sorted as in Extended Data Fig. 3a. Reverse cumulative distribution is also shown (bottom) and reports the fraction of pairs (number of observed pairs divided by the total number of possible pairs of neurons in the head). **b**, q values are shown for each neuron pair. q values report the false discovery rate of finding a functional connection. They provide a metric of significance for assessing whether a neuron pair is functionally connected based on the number of observations and the magnitude of the response transients, taking into consideration the number of multiple hypotheses tested. Cumulative distribution is also shown (bottom). **c**, ASGR often exhibits activity immediately following stimulation of AVJR, but because its q value is greater than 0.05, it does not meet the stringent statistical threshold to be deemed “functionally connected”. Top: mean (blue) and s.d. (shading) across trials and animals.
 
 ## Page 20
 
-0.4
--0.3
--0.2
--0.1
-0.0
--0.1
--0.2
--0.3
-<-0.4
-0.5 0.0
-q value
-No
-measurement
-Not
-Displayed
+|responding|
+|-|
+|stimulated|
 
-b
-responding
-stimulated
--0.35
-0.30
-0.25
-0.20
-0.15
-No
-measurement
-Not
-Displayed
-0.10
-0.05
-0.00
-qeq-Values
+|responding|
+|-|
+|stimulated|
 
-Extended Data Fig. 5 | Signal propagation map showing false discovery rates for functional connections and non-connections. a, Map of functional connections showing downstream calcium response amplitude and false discovery rate for WT. Same as Fig. 2 except here neurons that are observed but not stimulated are also included. Note the colour bar has two axes. Mean amplitude of neural activity in a post-stimulus time window (\langle \Delta F / F\_0 \rangle\_t) averaged across trials and individuals is shown. q value reports false discovery rate (more grey is less significant). White indicates no measurement. Autoresponse is required for inclusion and not displayed (black diagonal). (n=113 animals). b, Map of functionally not connected pairs. The false discovery rate, q\_eq, is reported for declaring a neuron pair to be not functionally connected. Lower q\_eq (more red) indicates higher confidence that the observed downstream calcium activity is equivalent within a bound \epsilon to a null distribution of spontaneous activity. The false discovery rate takes into consideration the amplitude of the calcium transient, the number of observations and the number of hypotheses tested.
+Extended Data Fig. 5 | Signal propagation map showing false discovery rates for functional connections and non-connections. **a**, Map of functional connections showing downstream calcium response amplitude and false discovery rate for WT. Same as Fig. 2 except here neurons that are observed but not stimulated are also included. Note the colour bar has two axes. Mean amplitude of neural activity in a post-stimulus time window ((\Delta F/F\_0)*t) averaged across trials and individuals is shown. q value reports false discovery rate (more grey is less significant). White indicates no measurement. Autoresponse is required for inclusion and not displayed (black diagonal). (n=113 animals). **b**, Map of functionally not connected pairs. The false discovery rate, q*{eq}, is reported for declaring a neuron pair to be *not* functionally connected. Lower q\_eq (more red) indicates higher confidence that the observed downstream calcium activity is equivalent within a bound \epsilon to a null distribution of spontaneous activity. The false discovery rate takes into consideration the amplitude of the calcium transient, the number of observations and the number of hypotheses tested.
 
 ## Page 21
 
-# Responses / Observations
+# Article
 
-# AQR → FLPR
+## a Responses / Observations
 
-|      | 1   | AQR (Stim) | Time (s) | FLPR (Resp) |
-| ---- | --- | ---------- | -------- | ----------- |
-| 1.0  | 20₀ | -0.8       | 0        | 5           |
-| 20   | 20  | C          | 10       | 20          |
-| -0.6 | 1   | 1          | 0        | 0           |
-| -10  | 10  | 20         | 30       | 10          |
-| 20   | 30  | 0          | -10      |             |
+|**responding**|**stimulated**|
+|-|-|
+|*Fraction Responding*||
+|*No measurement*||
+|*Not Displayed*||
 
-# Kernel Rise Time
+## b AQR \rightarrow FLPR
 
-# Stereotypy of Kernels
+|**Kernel** {Kernel}|**Time (s)**|
+|-|-|
+|1 1|0|
+|0|5|
+||10|
 
-| Stimulated | No    |
-| ---------- | ----- |
-| 1.00       | 1     |
-| 0.75       |       |
-| 1.5        | 0.50  |
-| 20         | 20    |
-| 0.25       | 20    |
-| 1.0        | 0.00  |
-| -0.25      |       |
-| 0.5        | -0.50 |
-| -0.75      |       |
+## c AQR (Stim) | FLPR (Resp)
 
-# Extended Data Fig. 6
+|**Sorted Trials** Trials}|**AQR (Stim)** im)}|**FLPR (Resp)**|||
+|-|-|-|-|-|
+|1|\parbox{2cm}{\centering Time (s)\\\\-10 0 10 20 30}|\parbox{2cm}{\centering Time (s)\\\\-10 0 10 20 30}|||
+|2|||||
+|3|||||
+|4|||||
+|5|||||
+|6|||||
+|7|||||
+|8|||||
+|9|||||
+|10|||||
+|11|||||
+|12|||||
+|13|||||
+|14|||||
+|15|||||
+|16|||||
+|17|||||
+|18|||||
 
-Timescales and variability of measured functional connectivity. WT. a, The fraction of stimulation events that evoked a downstream “response” is shown for each neuron pair. To be classified as a “response” requires a sufficiently large calcium transient amplitude and derivative. Autoresponses are required and not shown (black diagonal).
+## d Kernel Rise Time
 
-b, Kernels are functions that return the downstream neuron’s activity when convolved with the upstream neuron’s activity. Kernels capture properties of the connection independent of variability in the upstream neuron’s autoresponse. c, Kernels are shown for each FLP response to AQR stimulation.
+|**Responding**|**Stimulated**|
+|-|-|
+|*(rise time (s))*||
+|*q*||
+|*No measurement*||
+|*Not Displayed*||
 
-d, Kernel rise time for each measured neuron pair in WT is a metric of signal propagation speed. e, The stereotypy of kernels within each neuron pair is reported by calculating the average correlation coefficient among them. Only neuron pairs with at least two kernels are considered.
+## e Stereotypy of Kernels
 
-f, Distribution of the correlation-coefficients of convolved kernels, within each pair of neurons (blue, n = 30,406), and across all kernels measured regardless of neuron pair (orange, n = 113,880,912).
+|**responding**|**stimulated**|
+|-|-|
+|*Ave Correlation Coefficient*||
+|*No measurement*||
+|*Not Displayed*||
+
+## f
+
+|**Prob Density** }|**Correlation coefficient**|
+|-|-|
+|3.0|-1.0|
+|1.5|-0.5|
+|0.0|0.0|
+||0.5|
+||1.0|
+
+Responses generated from the same pair of neurons
+All generated responses shuffled
+
+**Extended Data Fig. 6 | Timescales and variability of measured functional connectivity.** WT. **a**, The fraction of stimulation events that evoked a downstream “response” is shown for each neuron pair. To be classified as a “response” requires a sufficiently large calcium transient amplitude and derivative. Autoresponses are required and not shown (black diagonal). **b**, Kernels are functions that return the downstream neuron’s activity when convolved with the upstream neuron’s activity. Kernels capture properties of the connection independent of variability in the upstream neuron’s autoresponse. **c**, Kernels are shown for each FLP response to AQR stimulation. Kernels are only calculated for stimuli that evoked downstream ‘responses’ (indicated in orange). Top: mean (blue) and s.d. (shading) across trials and animals. **d**, Kernel rise time for each measured neuron pair in WT is a metric of signal propagation speed. **e**, The stereotypy of kernels within each neuron pair is reported by calculating the average correlation coefficient among them. Only neuron pairs with at least two kernels are considered. **f**, Distribution of the correlation-coefficients of convolved kernels, within each pair of neurons (blue, n = 30,406), and across all kernels measured regardless of neuron pair (orange, n = 113,880,912).
 
 ## Page 22
 
-Extended Data Fig. 7 | Signal propagation of the *unc-31* background, with defects in dense-core-vesicle-mediated extrasynaptic signalling. a, Same format as Extended Data Fig. 5a. Mean amplitude of neural activity in a post-stimulus time window (\langle \Delta F / F\_0 \rangle\_t) averaged across trials and individuals is shown. q value reports false discovery rate and is a metric of significance (more grey is less significant). White indicates no measurement. Autoresponse is required and not displayed (black diagonal). (n = 18 animals). b, *unc-31* mutants had a smaller proportion of measured pairwise neurons that were functionally connected (q < 0.05) than WT (considering only those pairs for which data is present in both WT and *unc-31* mutants). c, Responses to RID stimulation are shown for WT (blue) and *unc-31* (orange). Points are responses, bar is mean across trials and animals. Neurons with the smallest amplitude responses are not shown. Corresponding traces for ADLR, AWBR and URXL are shown in Fig. 4. As in that figure, responses here are shown even for those cases when RID's calcium activity was not measured and therefore do not appear in a. Different inclusion criteria are used here to accommodate cases in which the tagRFP-T expression is dim, as described in the Methods.
+# Extended Data Fig. 7
+
+Signal propagation of the unc-31 background, with defects in dense-core-vesicle-mediated extrasynaptic signalling.
+
+a, Same format as Extended Data Fig. 5a. Mean amplitude of neural activity in a post-stimulus time window (ΔF/F0t) averaged across trials and individuals is shown. q value reports false discovery rate and is a metric of significance (more grey is less significant). White indicates no measurement. Autoresponse is required and not displayed (black diagonal). (n = 18 animals).
+
+b, unc-31 mutants had a smaller proportion of measured pairwise neurons that were functionally connected (q < 0.05) than WT (considering only those pairs for which data is present in both WT and unc-31 mutants).
+
+c, Responses to RID stimulation are shown for WT (blue) and unc-31 (orange). Points are responses, bar is mean across trials and animals. Neurons with the smallest amplitude responses are not shown. Corresponding traces for ADLR, AWBR and URXL are shown in Fig. 4. As in that figure, responses here are shown even for those cases when RID’s calcium activity was not measured and therefore do not appear in a. Different inclusion criteria are used here to accommodate cases in which the tagRFP-T expression is dim, as described in the Methods.
+
+| a                                                         | 0.4                                      | b       |           |
+| --------------------------------------------------------- | ---------------------------------------- | ------- | --------- |
+| 2                                                         | 0.3                                      | 2020    | 0.075     |
+|                                                           |                                          | 0.050   |           |
+| 0.2                                                       |                                          | 0.025   |           |
+|                                                           |                                          | 0.000   | WT unc-31 |
+| 0.1                                                       |                                          |         |           |
+| 20                                                        | 0.0                                      |         |           |
+|                                                           | --0.1                                    |         |           |
+|                                                           | -0.2                                     |         |           |
+|                                                           | -0.3                                     |         |           |
+|                                                           | 0.0                                      |         |           |
+| >0.5                                                      | <-0.4                                    | q value |           |
+| No                                                        | measurement                              | Not     | displayed |
+| 1.0                                                       | stimulated                               |         |           |
+| DAT                                                       | 0.5                                      | 0.0     | -0.5      |
+| MADATMATADAMAT0 WAEESDATDA ASASSMMNMMAM M2TA BS0 000D0 2ᴹ | ASMMM0NM0 MMA10 ATVITE M0AMM0SA00 BRTMAA |         |           |
 
 ## Page 23
 
@@ -854,208 +991,177 @@ Extended Data Fig. 7 | Signal propagation of the *unc-31* background, with defec
 
 ### WT
 
-||AWBR (Stim)|AWBL (Resp)|
-|-|-|-|
-|\*\*ΔF/F₀\*\*|||
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
+|AWBR (Stim)|AWBL (Resp)|
+|-|-|
+|\*\*AWBR (Stim)\*\*\Delta F/F\_010-10 0 10 20 30 Time (s)|\*\*AWBL (Resp)\*\*\Delta F/F\_010-10 0 10 20 30 Time (s)|
+|\*\*Sorted Trials\*\*123456789101112131415161718-10 0 10 20 30 Time (s)|\*\*Sorted Trials\*\*123456789101112131415161718-10 0 10 20 30 Time (s)|
+|> 1.20< -1.2||
 
 ### unc-31
 
-||AWBR (Stim)|AWBL (Resp)|
-|-|-|-|
-|\*\*ΔF/F₀\*\*|||
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
-
-Extended Data Fig. 8 | Neural responses for some pairs are similar in WT and unc-31-mutant animals. Paired stimulus and response traces of selected neuron pairs with monosynaptic gap junctions (a–c) or monosynaptic chemical synapses (d) are shown in a WT background (left) and in a unc-31-mutant background (right). Top: mean (blue) and s.d. (shading) across trials and animals.
+|AWBR (Stim)|AWBL (Resp)|
+|-|-|
+|\*\*AWBR (Stim)\*\*\Delta F/F\_010-10 0 10 20 30 Time (s)|\*\*AWBL (Resp)\*\*\Delta F/F\_010-10 0 10 20 30 Time (s)|
+|\*\*Sorted Trials\*\*1234-10 0 10 20 30 Time (s)|\*\*Sorted Trials\*\*1234-10 0 10 20 30 Time (s)|
+|> 1.20< -1.2||
 
 ## b
 
-### I3 (Stim)
+### I3 (Stim) | M1 (Resp)
 
-|\*\*ΔF/F₀\*\*|||
-|-|-|-|
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
+|I3 (Stim)|M1 (Resp)|
+|-|-|
+|\*\*I3 (Stim)\*\*\Delta F/F\_0210-10 0 10 20 30 Time (s)|\*\*M1 (Resp)\*\*\Delta F/F\_0210-10 0 10 20 30 Time (s)|
+|\*\*Sorted Trials\*\*1234567-10 0 10 20 30 Time (s)|\*\*Sorted Trials\*\*1234567-10 0 10 20 30 Time (s)|
+|> 1.20< -1.2||
 
-### M1 (Resp)
+### I3 (Stim) | M1 (Resp)
 
-|\*\*ΔF/F₀\*\*|||
-|-|-|-|
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
-
-### I3 (Stim)
-
-|\*\*ΔF/F₀\*\*|||
-|-|-|-|
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
-
-### M1 (Resp)
-
-|\*\*ΔF/F₀\*\*|||
-|-|-|-|
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
+|I3 (Stim)|M1 (Resp)|
+|-|-|
+|\*\*I3 (Stim)\*\*\Delta F/F\_010-10 0 10 20 30 Time (s)|\*\*M1 (Resp)\*\*\Delta F/F\_010-10 0 10 20 30 Time (s)|
+|\*\*Sorted Trials\*\*1234-10 0 10 20 30 Time (s)|\*\*Sorted Trials\*\*1234-10 0 10 20 30 Time (s)|
+|> 1.20< -1.2||
 
 ## c
 
-### RMDL (Stim)
+### RMDL (Stim) | AVEL (Resp)
 
-|\*\*ΔF/F₀\*\*|||
-|-|-|-|
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
+|RMDL (Stim)|AVEL (Resp)|
+|-|-|
+|\*\*RMDL (Stim)\*\*\Delta F/F\_01.00.50.0-10 0 10 20 30 Time (s)|\*\*AVEL (Resp)\*\*\Delta F/F\_01.00.50.0-10 0 10 20 30 Time (s)|
+|\*\*Sorted Trials\*\*123456789-10 0 10 20 30 Time (s)|\*\*Sorted Trials\*\*123456789-10 0 10 20 30 Time (s)|
+|> 1.20< -1.2||
 
-### AVEL (Resp)
+### RMDL (Stim) | AVEL (Resp)
 
-|\*\*ΔF/F₀\*\*|||
-|-|-|-|
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
-
-### RMDL (Stim)
-
-|\*\*ΔF/F₀\*\*|||
-|-|-|-|
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
-
-### AVEL (Resp)
-
-|\*\*ΔF/F₀\*\*|||
-|-|-|-|
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
+|RMDL (Stim)|AVEL (Resp)|
+|-|-|
+|\*\*RMDL (Stim)\*\*\Delta F/F\_010-10 0 10 20 30 Time (s)|\*\*AVEL (Resp)\*\*\Delta F/F\_010-10 0 10 20 30 Time (s)|
+|\*\*Sorted Trials\*\*12-10 0 10 20 30 Time (s)|\*\*Sorted Trials\*\*12-10 0 10 20 30 Time (s)|
+|> 1.20< -1.2||
 
 ## d
 
-### SAAVR (Stim)
+### SAAVR (Stim) | AVAR (Resp)
 
-|\*\*ΔF/F₀\*\*|||
-|-|-|-|
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
+|SAAVR (Stim)|AVAR (Resp)|
+|-|-|
+|\*\*SAAVR (Stim)\*\*\Delta F/F\_010-10 0 10 20 30 Time (s)|\*\*AVAR (Resp)\*\*\Delta F/F\_010-10 0 10 20 30 Time (s)|
+|\*\*Sorted Trials\*\*123456-10 0 10 20 30 Time (s)|\*\*Sorted Trials\*\*123456-10 0 10 20 30 Time (s)|
+|> 1.20< -1.2||
 
-### AVAR (Resp)
+### SAAVR (Stim) | AVAR (Resp)
 
-|\*\*ΔF/F₀\*\*|||
-|-|-|-|
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
+|SAAVR (Stim)|AVAR (Resp)|
+|-|-|
+|\*\*SAAVR (Stim)\*\*\Delta F/F\_010-10 0 10 20 30 Time (s)|\*\*AVAR (Resp)\*\*\Delta F/F\_010-10 0 10 20 30 Time (s)|
+|\*\*Sorted Trials\*\*123-10 0 10 20 30 Time (s)|\*\*Sorted Trials\*\*123-10 0 10 20 30 Time (s)|
+|> 1.20< -1.2||
 
-### SAAVR (Stim)
-
-|\*\*ΔF/F₀\*\*|||
-|-|-|-|
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
-
-### AVAR (Resp)
-
-|\*\*ΔF/F₀\*\*|||
-|-|-|-|
-|\*\*Sorted Trials\*\*|||
-|\*\*Time (s)\*\*|||
+Extended Data Fig. 8 | Neural responses for some pairs are similar in WT and *unc-31*-mutant animals. Paired stimulus and response traces of selected neuron pairs with monosynaptic gap junctions (**a–c**) or monosynaptic chemical synapses (**d**) are shown in a WT background (left) and in a *unc-31*-mutant background (right). Top: mean (blue) and s.d. (shading) across trials and animals.
 
 ## Page 24
 
-# Extended Data Fig. 9 | Examples of candidate purely extrasynaptic pairs.
+**Extended Data Fig. 9 | Examples of candidate purely extrasynaptic pairs.**
 
-a, Change in activity \Delta\langle\Delta F/F\rangle versus number of WT observations for our candidate purely extrasynaptic-dependent pairs. Arrows indicate examples shown below. b, List of candidate entirely extrasynaptic-dependent connections. Relevant neuropeptide GPCR expression is listed in Supplementary Table 1,
+**a**, Change in activity \Delta\langle\Delta F/F\rangle versus number of WT observations for our candidate purely extrasynaptic-dependent pairs. Arrows indicate examples shown below. **b**, List of candidate entirely extrasynaptic-dependent connections. Relevant neuropeptide GPCR expression is listed in Supplementary Table 1, compiled from refs. 38,52, following ref. 51. **c–e**, Paired responses in WT and *unc-31* animals for the candidate extrasynaptic pairs AVER–RMDDR (**c**), AVDR–ASHR (**d**) and RMDDR–RMDDL (**e**), selected among all the candidates as illustrated in **a**. Top: average (blue) and s.d. (shading) across trials and animals.
 
-compiled from refs. 38,52, following ref. 51. c–e, Paired responses in WT and *unc-31* animals for the candidate extrasynaptic pairs AVER–RMDDR (c), AVDR–ASHR (d) and RMDDR–RMDDL (e), selected among all the candidates as illustrated in a. Top: average (blue) and s.d. (shading) across trials and animals.
+|X-axis (Number of observations)|Y-axis (\Delta\langle\Delta F/F\rangle)|Label|
+|-|-|-|
+|\~40|\~0.4|M3L->I2R|
+|\~10|\~0.4|M3L->M1|
+|\~10|\~0.3|VB1->ADLR|
+|\~30|\~0.25|RMDVR->RMEL|
+|\~30|\~0.2|IL1DL->URXL|
+|\~30|\~0.15|AWBR->VB1|
+|\~35|\~0.05|CEPVL->RMDVL|
+|\~10|\~0.0|M3L->URYVL|
+|\~10|\~-0.15|RMEL->AWBR|
+|\~10|\~-0.18|CEPDL->AVJR|
 
-## a
+|Column 1|Column 2|Column 3|Column 4|
+|-|-|-|-|
+|VB1->ADLR|URXR->AWBR|M3L->M1|RMDVR->RMEL|
+|RMDDR->AIMR|RMDL->CEPDL|M3L->M2R|IL1VL->RMER|
+|AVDR->ASHR|RMDL->CEPVL|IL1DL->M3R|M3L->RMER|
+|SAAVL->AVAR|AVDR->FLPR|I3->OLLR|AVKL->URBL|
+|AVDR->AVDL|M3L->FLPR|IL1DL->OLLR|AVDR->URXL|
+|AWBL->AVDR|ASHL->I1L|IL1DL->OLQDR|IL1DL->URXL|
+|RIVR->AVDR|RMDVR->I1L|AWBL->RIVR|M3L->URYVL|
+|M3L->AVEL|FLPR->I1R|RMDDR->RMDDL|AWBR->VB1|
+|AVDR->AVJL|M3L->I1R|AVER->RMDDR||
+|CEPDL->AVJR|M3L->I2L|RID->RMDDR||
+|M3L->AVKL|I3->I2R|RMDDL->RMDL||
+|IL2DR->AWBL|M3L->I3|AWBL->RMDR||
+|AVDR->AWBR|RIVR->IL1VL|RMDVR->RMDR||
+|AWCL->AWBR|M3L->IL2DR|CEPVL->RMDVL||
+|RMEL->AWBR|M3L->IL2R|IL1DL->RMEL||
 
-```html
-|Number of observations|\Delta\langle\Delta F/F\rangle|
-|-|-|
-|0|0.4|
-|10|0.2|
-|20|0.0|
-|30|-0.2|
-
-```
-
-## b
-
-* VB1->ADLR
-* RMDDR->AIMR
-* AVDR->ASHR
-* SAAVL->AVAR
-* AVDR->AVDL
-* AWBL->AVDR
-* RIVR->AVDR
-* M3L->AVEL
-* AVDR->AVJL
-* CEPDL->AVJR
-* M3L->AVKL
-* IL2DR->AWBL
-* AVDR->AWBR
-* AWCL->AWBR
-* RMEL->AWBR
-* URXR->AWBR
-* RMDL->CEPDL
-* RMDL->CEPVL
-* AVDR->FLPR
-* M3L->FLPR
-* ASHL->I1L
-* RMDVR->I1L
-* FLPR->I1R
-* M3L->I1R
-* M3L->I2L
-* I3->I2R
-* M3L->I3
-* RIVR->IL1VL
-* M3L->IL2DR
-* M3L->IL2R
-* M3L->M1
-* M3L->M2R
-* IL1DL->M3R
-* I3->OLLR
-* IL1DL->OLLR
-* IL1DL->OLQDR
-* AWBL->RIVR
-* RMDDR->RMDDL
-* AVER->RMDDR
-* RID->RMDDR
-* RMDDL->RMDL
-* AWBL->RMDR
-* RMDVR->RMDR
-* CEPVL->RMDVL
-* IL1DL->RMEL
-* RMDVR->RMEL
-* IL1VL->RMER
-* M3L->RMER
-* AVKL->URBL
-* AVDR->URXL
-* IL1DL->URXL
-* M3L->URYVL
-* AWBR->VB1
-
-## c
-
-### WT
+### **WT**
 
 #### AVER (Stim)
 
-```html
 |Time (s)|\Delta F/F\_0|
 |-|-|
 |-10|0.0|
 |0|0.0|
-|10|0.5|
-|20|0.5|
-|30|0.5|
-
-```
+|10|0.6|
+|20|0.7|
+|30|0.6|
 
 #### RMDDR (Resp)
 
-```html
+|Time (s)|\Delta F/F\_0|
+|-|-|
+|-10|0.0|
+|0|0.0|
+|10|0.1|
+|20|0.1|
+|30|0.1|
+
+#### Heatmap (Sorted Trials)
+
+|Trial|Response Intensity|
+|-|-|
+|1|High (> 1.2)|
+|2|High (> 1.2)|
+|3|High (> 1.2)|
+|4|High (> 1.2)|
+|5|High (> 1.2)|
+|6|High (> 1.2)|
+|7|High (> 1.2)|
+|8|High (> 1.2)|
+|9|High (> 1.2)|
+|10|High (> 1.2)|
+|11|High (> 1.2)|
+|12|High (> 1.2)|
+|13|High (> 1.2)|
+|14|High (> 1.2)|
+|15|High (> 1.2)|
+|16|High (> 1.2)|
+|17|High (> 1.2)|
+|18|High (> 1.2)|
+|19|High (> 1.2)|
+|20|High (> 1.2)|
+|21|High (> 1.2)|
+|22|High (> 1.2)|
+|23|High (> 1.2)|
+
+### **unc-31**
+
+#### AVER (Stim)
+
+|Time (s)|\Delta F/F\_0|
+|-|-|
+|-10|0.0|
+|0|0.0|
+|10|0.3|
+|20|0.4|
+|30|0.3|
+
+#### RMDDR (Resp)
+
 |Time (s)|\Delta F/F\_0|
 |-|-|
 |-10|0.0|
@@ -1064,28 +1170,82 @@ compiled from refs. 38,52, following ref. 51. c–e, Paired responses in WT and 
 |20|0.0|
 |30|0.0|
 
-```
+#### Heatmap (Sorted Trials)
 
-## d
+|Trial|Response Intensity|
+|-|-|
+|1|Low (< -1.2)|
+|2|Low (< -1.2)|
+|3|Low (< -1.2)|
+|4|Low (< -1.2)|
+|5|Low (< -1.2)|
+|6|Low (< -1.2)|
+|7|Low (< -1.2)|
+|8|Low (< -1.2)|
+|9|Low (< -1.2)|
+|10|Low (< -1.2)|
+|11|Low (< -1.2)|
+|12|Low (< -1.2)|
+|13|Low (< -1.2)|
+|14|Low (< -1.2)|
+|15|Low (< -1.2)|
+|16|Low (< -1.2)|
+|17|Low (< -1.2)|
+|18|Low (< -1.2)|
+|19|Low (< -1.2)|
+|20|Low (< -1.2)|
+|21|Low (< -1.2)|
+|22|Low (< -1.2)|
+|23|Low (< -1.2)|
 
-### WT
+### **WT**
 
 #### AVDR (Stim)
 
-```html
 |Time (s)|\Delta F/F\_0|
 |-|-|
 |-10|0.0|
 |0|0.0|
-|10|0.5|
-|20|0.5|
-|30|0.5|
-
-```
+|10|0.6|
+|20|0.7|
+|30|0.6|
 
 #### ASHR (Resp)
 
-```html
+|Time (s)|\Delta F/F\_0|
+|-|-|
+|-10|0.0|
+|0|0.0|
+|10|0.4|
+|20|0.5|
+|30|0.4|
+
+#### Heatmap (Sorted Trials)
+
+|Trial|Response Intensity|
+|-|-|
+|1|High (> 1.2)|
+|2|High (> 1.2)|
+|3|High (> 1.2)|
+|4|High (> 1.2)|
+|5|High (> 1.2)|
+|6|High (> 1.2)|
+|7|High (> 1.2)|
+
+### **unc-31**
+
+#### AVDR (Stim)
+
+|Time (s)|\Delta F/F\_0|
+|-|-|
+|-10|0.0|
+|0|0.0|
+|10|0.3|
+|20|0.4|
+|30|0.3|
+
+#### ASHR (Resp)
+
 |Time (s)|\Delta F/F\_0|
 |-|-|
 |-10|0.0|
@@ -1094,28 +1254,84 @@ compiled from refs. 38,52, following ref. 51. c–e, Paired responses in WT and 
 |20|0.0|
 |30|0.0|
 
-```
+#### Heatmap (Sorted Trials)
 
-## e
+|Trial|Response Intensity|
+|-|-|
+|1|Low (< -1.2)|
+|2|Low (< -1.2)|
+|3|Low (< -1.2)|
+|4|Low (< -1.2)|
 
-### WT
+### **WT**
 
 #### RMDDR (Stim)
 
-```html
 |Time (s)|\Delta F/F\_0|
 |-|-|
 |-10|0.0|
 |0|0.0|
-|10|0.5|
-|20|0.5|
-|30|0.5|
-
-```
+|10|0.6|
+|20|0.7|
+|30|0.6|
 
 #### RMDDL (Resp)
 
-```html
+|Time (s)|\Delta F/F\_0|
+|-|-|
+|-10|0.0|
+|0|0.0|
+|10|0.4|
+|20|0.5|
+|30|0.4|
+
+#### Heatmap (Sorted Trials)
+
+|Trial|Response Intensity|
+|-|-|
+|1|High (> 1.2)|
+|2|High (> 1.2)|
+|3|High (> 1.2)|
+|4|High (> 1.2)|
+|5|High (> 1.2)|
+|6|High (> 1.2)|
+|7|High (> 1.2)|
+|8|High (> 1.2)|
+|9|High (> 1.2)|
+|10|High (> 1.2)|
+|11|High (> 1.2)|
+|12|High (> 1.2)|
+|13|High (> 1.2)|
+|14|High (> 1.2)|
+|15|High (> 1.2)|
+|16|High (> 1.2)|
+|17|High (> 1.2)|
+|18|High (> 1.2)|
+|19|High (> 1.2)|
+|20|High (> 1.2)|
+|21|High (> 1.2)|
+|22|High (> 1.2)|
+|23|High (> 1.2)|
+|24|High (> 1.2)|
+|25|High (> 1.2)|
+|26|High (> 1.2)|
+|27|High (> 1.2)|
+|28|High (> 1.2)|
+
+### **unc-31**
+
+#### RMDDR (Stim)
+
+|Time (s)|\Delta F/F\_0|
+|-|-|
+|-10|0.0|
+|0|0.0|
+|10|0.3|
+|20|0.4|
+|30|0.3|
+
+#### RMDDL (Resp)
+
 |Time (s)|\Delta F/F\_0|
 |-|-|
 |-10|0.0|
@@ -1124,7 +1340,14 @@ compiled from refs. 38,52, following ref. 51. c–e, Paired responses in WT and 
 |20|0.0|
 |30|0.0|
 
-```
+#### Heatmap (Sorted Trials)
+
+|Trial|Response Intensity|
+|-|-|
+|1|Low (< -1.2)|
+|2|Low (< -1.2)|
+|3|Low (< -1.2)|
+|4|Low (< -1.2)|
 
 ## Page 25
 
@@ -1132,7 +1355,7 @@ compiled from refs. 38,52, following ref. 51. c–e, Paired responses in WT and 
 
 ## Extended Data Table 1 | Selected instances of agreement between measured signal propagation and previously reported functional measurements
 
-|Claim|Evidence|Reference|Figure|Finding|Figure|
+|Claim|Evidence|From Literature Reference|Figure|Finding|From Signal Propagation Atlas (This Work) Figure|
 |-|-|-|-|-|-|
 |Activation of ASH excites AVA|Paired optogenetic activation (ChR2) and electrophysiology (whole cell patch clamp)|Lindsay et al., 2011 https://doi.org/10.1038/ncomms1304|Fig 4|ASHR->AVAR is functionally connected (qAVDL is functionally connected (q<0.05) and excitatory|Fig 2a; Extended Data Fig 4b|
 |Activation of AFD excites AIY and has a linear response|Paired optogenetic stimulation (ChR2) and electrophysiology (whole cell patch clamp)|Narayan et al., 2011 https://doi.org/10.1073/pnas.1106617108|Fig 4|AFD excites AIY and has a linear response|Extended Data Fig 2g|
@@ -1144,7 +1367,12 @@ Comparisons between selected findings from the literature and the current work.
 
 ## Page 26
 
-# Reporting Summary
+# nature portfolio
+
+Corresponding author(s): Andrew Leifer
+Last updated by author(s): 4/10/2023
+
+## Reporting Summary
 
 Nature Portfolio wishes to improve the reproducibility of the work that we publish. This form provides structure for consistency and transparency in reporting. For further information on Nature Portfolio policies, see our Editorial Policies and the Editorial Policy Checklist.
 
@@ -1154,31 +1382,32 @@ For all statistical analyses, confirm that the following items are present in th
 
 |n/a|Confirmed|
 |-|-|
-||☐ The exact sample size (n) for each experimental group/condition, given as a discrete number and unit of measurement|
-||☐ A statement on whether measurements were taken from distinct samples or whether the same sample was measured repeatedly|
-||☐ The statistical test(s) used AND whether they are one- or two-sided\Only common tests should be described solely by name; describe more complex techniques in the Methods section.|
-||☐ A description of all covariates tested|
-||☐ A description of any assumptions or corrections, such as tests of normality and adjustment for multiple comparisons|
-||☐ A full description of the statistical parameters including central tendency (e.g. means) or other basic estimates (e.g. regression coefficient)\AND variation (e.g. standard deviation) or associated estimates of uncertainty (e.g. confidence intervals)|
-||☐ For null hypothesis testing, the test statistic (e.g. F, t, r) with confidence intervals, effect sizes, degrees of freedom and P value noted\Give P values as exact values whenever suitable.|
-||☐ For Bayesian analysis, information on the choice of priors and Markov chain Monte Carlo settings|
-||☐ For hierarchical and complex designs, identification of the appropriate level for tests and full reporting of outcomes|
-||☐ Estimates of effect sizes (e.g. Cohen's d, Pearson's r), indicating how they were calculated|
+|\[x]|The exact sample size (n) for each experimental group/condition, given as a discrete number and unit of measurement|
+|\[x]|A statement on whether measurements were taken from distinct samples or whether the same sample was measured repeatedly|
+|\[x]|The statistical test(s) used AND whether they are one- or two-sided\*Only common tests should be described solely by name; describe more complex techniques in the Methods section.\*|
+|\[x]|A description of all covariates tested|
+|\[x]|A description of any assumptions or corrections, such as tests of normality and adjustment for multiple comparisons|
+|\[x]|A full description of the statistical parameters including central tendency (e.g. means) or other basic estimates (e.g. regression coefficient) AND variation (e.g. standard deviation) or associated estimates of uncertainty (e.g. confidence intervals)|
+|\[x]|For null hypothesis testing, the test statistic (e.g. F, t, r) with confidence intervals, effect sizes, degrees of freedom and P value noted\*Give P values as exact values whenever suitable.\*|
+|\[ ]|For Bayesian analysis, information on the choice of priors and Markov chain Monte Carlo settings|
+|\[ ]|For hierarchical and complex designs, identification of the appropriate level for tests and full reporting of outcomes|
+|\[x]|Estimates of effect sizes (e.g. Cohen's d, Pearson's r), indicating how they were calculated|
 
-Our web collection on statistics for biologists contains articles on many of the points above.
+*Our web collection on statistics for biologists contains articles on many of the points above.*
 
 ## Software and code
 
-* **Data collection** Software to control acquisition hardware is available at  based
-* **Data analysis** All analysis code is publicly available at  (DOI:10.5281/zenodo.8247256),  (DOI:10.5281/zenodo.8247252),  (DOI:10.5281/zenodo.8247242), and  (DOI:10.5281/zenodo.8247254). Hardware acquisition code is available at  (DOI:10.5281/zenodo.8247258).
+|Data collection|Software to control acquisition hardware is available at https://github.com/leiferlab/pump-probe based|
+|-|-|
+|Data analysis|All analysis code is publicly available at https://github.com/leiferlab/pumpprobe (DOI:10.5281/zenodo.8247256), https://github.com/leiferlab/wormdatamodel (DOI:10.5281/zenodo.8247252), https://github.com/leiferlab/wormneuronsegmentation-c (DOI:10.5281/zenodo.8247242), and https://github.com/leiferlab/wormbrain (DOI:10.5281/zenodo.8247254). Hardware acquisition code is available at https://github.com/leiferlab/pump-probe-acquisition (DOI:10.5281/zenodo.8247258).|
 
-For manuscripts utilizing custom algorithms or software that are central to the research but not yet described in published literature, software must be made available to editors and reviewers. We strongly encourage code deposition in a community repository (e.g. GitHub). See the Nature Portfolio guidelines for submitting code & software for further information.
+For manuscripts utilizing custom algorithms or software that are central to the research but not yet described in published literature, software must be made available to editors and reviewers. We strongly encourage code deposition in a community repository (e.g. GitHub). See the Nature Portfolio guidelines for submitting code  code & software for further information.
 
 ## Page 27
 
 # Data
 
-All manuscripts must include a **data availability statement**. This statement should provide the following information, where applicable:
+All manuscripts must include a data availability statement. This statement should provide the following information, where applicable:
 
 * Accession codes, unique identifiers, or web links for publicly available datasets
 * A description of any restrictions on data availability
@@ -1194,14 +1423,11 @@ Machine readable datasets containing the measurements from this work are publicl
 
 Policy information about studies involving human research participants and Sex and Gender in Research.
 
-* Reporting on sex and gender
-  * N/A
-* Population characteristics
-  * N/A
-* Recruitment
-  * N/A
-* Ethics oversight
-  * N/A
+|Reporting on sex and gender|N/A|
+|-|-|
+|Population characteristics|N/A|
+|Recruitment|N/A|
+|Ethics oversight|N/A|
 
 Note that full information on the approval of the study protocol must also be provided in the manuscript.
 
@@ -1209,9 +1435,7 @@ Note that full information on the approval of the study protocol must also be pr
 
 Please select the one below that is the best fit for your research. If you are not sure, read the appropriate sections before making your selection.
 
-* [x] Life sciences
-* [ ] Behavioural & social sciences
-* [ ] Ecological, evolutionary & environmental sciences
+\[☒] Life sciences  Life sciences   Life sciences    Life sciences     \[ ] Behavioural & social sciences  sciences   sciences    sciences     \[ ] Ecological, evolutionary & environmental sciences
 
 For a reference copy of the document with all sections, see nature.com/documents/nr-reporting-summary-flat.pdf
 
@@ -1219,14 +1443,14 @@ For a reference copy of the document with all sections, see nature.com/documents
 
 All studies must disclose on these points even when the disclosure is negative.
 
-* **Sample size**
-  > No sample-size calculation was performed. We recorded from >113 individual WT-background animals and performed over 20,000 pairwise stimulus response measurements. Sample size was chosen to be many fold larger than typical C. elegans calcium imaging experiments in the field, e.g. Hallinen et al., elife 2021.
-* **Data exclusions**
-  > Inclusion and exclusion criteria are described in the "Inclusion criteria" subsection of the Methods, and pasted here:
-  >
-  > Stimulation events were included for further analysis if they evoked a detectable calcium response in the stimulated neuron (autoresponse). A classifier determined whether the response was detected by inspecting whether the amplitude of both the DF/F transient and its second derivative exceeded a pair of thresholds. The same threshold values were applied to every animal, strain, neuron and stimulation event, and were originally set to match human perception of a response above noise. Stimulation events that did not meet both thresholds for a contiguous 4 seconds were excluded. RID responses shown in Fig. 4 and Extended Data Fig. 7c are an exception to this policy. RID is visible based on its CyOFP expression, but its tagRFP-T expression is too dim to consistently extract calcium signals. Therefore in Fig. 4 and Extended Data Fig. 7c (but not in other figures, like Fig. 2) responses to RID stimulation were included even in cases where it was not possible to extract a calcium-activity trace in RID.
-  >
-  > Neuron traces were excluded from analysis if a human was unable to assign an identity or if the imaging time points were absent in a contiguous segment longer than 5% of the response window due to imaging artifacts or tracking errors. A different policy applies to dim neurons of interest that are not automatically detected by the `pseudo''-segmentation algorithm in the 3D image used as reference for the pointset registration algorithm. In those cases, we manually added the position of those neurons to the reference 3D image. If these `added'' neurons are automatically detected in most of the other 3D images, then a calcium activity trace can be successfully produced by the DSMM nonrigid registration algorithm and is treated as any other trace. However, if the `added'' neurons are too dim to be detected also in the other 3D images and the calcium activity trace cannot be formed for more than 50% of the total time points, the activity trace for those neurons is extracted from the neuron's position as determined from the position of neighboring neurons. In the analysis code, we refer to these as `matchless'' traces, because the reference neuron is not matched to any detected neuron in the specific 3D image, but its position is just transformed according to the DSMM nonrigid deformation field. In this way, we are able to recover the calcium activity also of some neurons whose tag-RFP-T expression is otherwise too dim to be reliably detected by the `pseudo''-segmentation algorithm. Responses to RID stimulation shown in Fig. 4 and Extended Data Fig. 7c are an exception to this policy. There, the activity of any neuron for which there is not a trace for more than 50% of the time points is substituted with the corresponding `matchless'' trace, and not just for the manually added neurons. This is important to be able to show responses of neurons like ADL, which have dim tagRFP-T expression. In the RID-specific case, in
+**Sample size**
+No sample-size calculation was performed. We recorded from >113 individual WT-background animals and performed over 20,000 pairwise stimulus response measurements. Sample size was chosen to be many fold larger than typical C. elegans calcium imaging experiments in the field, e.g. Hallinen et al., elife 2021.
+
+**Data exclusions**
+Inclusion and exclusion criteria are described in the "Inclusion criteria" subsection of the Methods, and pasted here:
+Stimulation events were included for further analysis if they evoked a detectable calcium response in the stimulated neuron (autoresponse). A classifier determined whether the response was detected by inspecting whether the amplitude of both the DF/F transient and its second derivative exceeded a pair of thresholds. The same threshold values were applied to every animal, strain, neuron and stimulation event, and were originally set to match human perception of a response above noise. Stimulation events that did not meet both thresholds for a contiguous 4 seconds were excluded. RID responses shown in Fig. 4 and Extended Data Fig. 7c are an exception to this policy. RID is visible based on its CyOFP expression, but its tagRFP-T expression is too dim to consistently extract calcium signals. Therefore in Fig. 4 and Extended Data Fig. 7c (but not in other figures, like Fig. 2) responses to RID stimulation were included even in cases where it was not possible to extract a calcium-activity trace in RID.
+
+Neuron traces were excluded from analysis if a human was unable to assign an identity or if the imaging time points were absent in a contiguous segment longer than 5% of the response window due to imaging artifacts or tracking errors. A different policy applies to dim neurons of interest that are not automatically detected by the `pseudo''-segmentation algorithm in the 3D image used as reference for the pointset registration algorithm. In those cases, we manually added the position of those neurons to the reference 3D image. If these `added'' neurons are automatically detected in most of the other 3D images, then a calcium activity trace can be successfully produced by the DSMM nonrigid registration algorithm and is treated as any other trace. However, if the `added'' neurons are too dim to be detected also in the other 3D images and the calcium activity trace cannot be formed for more than 50% of the total time points, the activity trace for those neurons is extracted from the neuron's position as determined from the position of neighboring neurons. In the analysis code, we refer to these as `matchless'' traces, because the reference neuron is not matched to any detected neuron in the specific 3D image, but its position is just transformed according to the DSMM nonrigid deformation field. In this way, we are able to recover the calcium activity also of some neurons whose tag-RFP-T expression is otherwise too dim to be reliably detected by the `pseudo''-segmentation algorithm. Responses to RID stimulation shown in Fig. 4 and Extended Data Fig. 7c are an exception to this policy. There, the activity of any neuron for which there is not a trace for more than 50% of the time points is substituted with the corresponding `matchless'' trace, and not just for the manually added neurons. This is important to be able to show responses of neurons like ADL, which have dim tagRFP-T expression. In the RID-specific case, in
 
 ## Page 28
 
@@ -1234,43 +1458,43 @@ order to exclude responses that become very large solely because of numerical is
 
 Kernels were computed only for stimulation-response events for which the automatic classifier detected responses in both the stimulated and downstream neurons. If the downstream neuron did not show a response, we considered the downstream response to be below the noise level and the kernel to be zero.
 
-Replication The number of replications for each WT measurement is presented in Supplementary Figure S5a, and additional related information is presented in Supplementary Figure S6.
-
-Randomization Randomization was not relevant to our study because we are not testing an intervention on individuals, but instead mapping out signal propagation in WT and mutant animals.
-
-Blinding Humans were blinded to calcium activity when they assigned neurons their identities. An exception is neuron AIY in experiments associated with Supplementary Fig S11. Because AIY's identity is sometimes ambiguous based on its position and color, calcium activity was occasionally used to confirm AIY's identity.
+|\*\*Replication\*\*|The number of replications for each WT measurement is presented in Supplementary Figure S5a, and additional related information is presented in Supplementary Figure S6.|
+|-|-|
+|\*\*Randomization\*\*|Randomization was not relevant to our study because we are not testing an intervention on individuals, but instead mapping out signal propagation in WT and mutant animals.|
+|\*\*Blinding\*\*|Humans were blinded to calcium activity when they assigned neurons their identities. An exception is neuron AIY in experiments associated with Supplementary Fig S11. Because AIY's identity is sometimes ambiguous based on its position and color, calcium activity was occasionally used to confirm AIY's identity.|
 
 # Reporting for specific materials, systems and methods
 
 We require information from authors about some types of materials, experimental systems and methods used in many studies. Here, indicate whether each material, system or method listed is relevant to your study. If you are not sure if a list item applies to your research, read the appropriate section before selecting a response.
 
-## Materials & experimental systems
+### Materials & experimental systems
 
 |n/a|Involved in the study|
 |-|-|
-||Antibodies|
-||Eukaryotic cell lines|
-||Palaeontology and archaeology|
-||Animals and other organisms|
-||Clinical data|
-||Dual use research of concern|
+|\[x]|Antibodies|
+|\[x]|Eukaryotic cell lines|
+|\[x]|Palaeontology and archaeology|
+|\[ ]|Animals and other organisms|
+|\[x]|Clinical data|
+|\[x]|Dual use research of concern|
 
-## Methods
+### Methods
 
 |n/a|Involved in the study|
 |-|-|
-||ChIP-seq|
-||Flow cytometry|
-||MRI-based neuroimaging|
+|\[x]|ChIP-seq|
+|\[x]|Flow cytometry|
+|\[x]|MRI-based neuroimaging|
 
-# Animals and other research organisms
+## Animals and other research organisms
 
 Policy information about studies involving animals; ARRIVE guidelines recommended for reporting animal research, and Sex and Gender in Research
 
-* **Laboratory animals** C .elegans. Strains used include AML462 and AML508 as described in the "Strains" section of the Materials and Methods.
-* **Wild animals** Only laboratory strains were used.
-* **Reporting on sex** Hermaphrodites were studied because >99.8% of naturally occurring C. elegans are hermaphrodites (Corsi, et al., WormBook 2015)
-* **Field-collected samples** N/A
-* **Ethics oversight** No ethical approval or guidance was required because C. elegans are microscopic invertebrate worms.
+|Laboratory animals|C .elegans. Strains used include AML462 and AML508 as described in the "Strains" section of the Materials and Methods.|
+|-|-|
+|Wild animals|Only laboratory strains were used.|
+|Reporting on sex|Hermaphrodites were studied because >99.8% of naturally occurring C. elegans are hermaphrodites (Corsi, et al., WormBook 2015)|
+|Field-collected samples|N/A|
+|Ethics oversight|No ethical approval or guidance was required because C. elegans are microscopic invertebrate worms.|
 
 Note that full information on the approval of the study protocol must also be provided in the manuscript.

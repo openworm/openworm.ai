@@ -1,0 +1,7 @@
+Host hf.co
+  HostName hf.co
+  User git
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  AddKeysToAgent yes
+  UseKeychain yes

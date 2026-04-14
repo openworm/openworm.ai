@@ -399,7 +399,7 @@ def convert_pdf_via_api(
     }
 
     save_manifest(MANIFEST_PATH, manifest)
-    print_(f"Manifest updated: {MANIFEST_PATH}")
+    print_(f" ----  Manifest updated: {MANIFEST_PATH}")
 
 
 def convert_existing_raw_json(
@@ -466,7 +466,7 @@ if __name__ == "__main__":
                 print_(f"Skipping (fresh + unchanged): {pdf_loc}")
                 continue
 
-            print_(f"Parsing ({reason}): {pdf_loc}")
+            print_(f"Parsing (reason: {reason}): {pdf_loc}")
             convert_pdf_via_api(paper_ref, pdf_path, source_url, manifest)
 
         except Exception as e:
