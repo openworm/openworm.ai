@@ -7,10 +7,11 @@ from langchain.chat_models import init_chat_model
 
 LLM_CMD_LINE_ARGS = {}
 
-LLM_GPT35 = "gpt-3.5-turbo-instruct"
-LLM_CMD_LINE_ARGS["-gpt35"] = LLM_GPT35
+# LLM_GPT35 = "gpt-3.5-turbo-instruct"
 LLM_GPT4 = "gpt-4"
+LLM_GPT4om = "gpt-4o-mini"
 LLM_GPT4o = "gpt-4o"
+LLM_CMD_LINE_ARGS["-gpt4"] = LLM_GPT4o
 
 LLM_LLAMA2 = "LLAMA2"
 LLM_CMD_LINE_ARGS["-l"] = LLM_LLAMA2
@@ -70,13 +71,13 @@ LLM_OLLAMA_FALCON2 = "ollama:falcon2:latest"
 LLM_OLLAMA_OLMO2_7B = "ollama:olmo2:7b"
 LLM_CMD_LINE_ARGS["-o-olmo27b"] = LLM_OLLAMA_OLMO2_7B
 
-OPENAI_LLMS = [LLM_GPT4, LLM_GPT4o]
+OPENAI_LLMS = [LLM_GPT4, LLM_GPT4o, LLM_GPT4om]
 
 PREF_ORDER_LLMS = LLMS_GEMINI + [
     LLM_LLAMA2,
-    LLM_GPT35,
     LLM_GPT4,
     LLM_GPT4o,
+    LLM_GPT4om,
     LLM_CLAUDE37,
     LLM_COHERE,
     # (HF isn't in PREF_ORDER_LLMS because it’s provider-routed; still supported via init_chat_model)

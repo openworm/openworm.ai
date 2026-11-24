@@ -11,7 +11,6 @@ from openworm_ai.utils.llms import (
     LLM_GPT4o,
     LLM_GEMINI_2F,
     LLM_CLAUDE37,
-    LLM_GPT35,
     LLM_OLLAMA_PHI4,
     LLM_OLLAMA_GEMMA2,
     LLM_OLLAMA_GEMMA,
@@ -23,7 +22,6 @@ from openworm_ai.utils.llms import (
 # Define model parameters (LLM parameter sizes in billions)
 llm_parameters = {
     LLM_GPT4o: 1760,
-    LLM_GPT35: 175,
     "GPT3.5": 20,
     "Phi4": 14,
     "Gemma2": 9,
@@ -39,7 +37,6 @@ llm_parameters = {
 # Define model distributors for coloring
 model_distributors = {
     LLM_GPT4o: "OpenAI",
-    LLM_GPT35: "OpenAI",
     "GPT3.5": "OpenAI",
     "GPT4o": "OpenAI",
     "Phi4": "Microsoft",
