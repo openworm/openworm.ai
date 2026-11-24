@@ -23,7 +23,7 @@ elif [ "$1" == "-llm" ]; then
 
     python -m openworm_ai.utils.llms # default - ChatGPT via API
     python -m openworm_ai.utils.llms  -hf-qwen # Qwen via HuggingFace API 
-    python -m openworm_ai.utils.llms -co # Cohere via API - free
+    #python -m openworm_ai.utils.llms -co # Cohere via API - free
     python -m openworm_ai.utils.llms -g25 # gemini-2.5-flash via API - free tier
     python -m openworm_ai.utils.llms -o-l323b # Ollama:llama3.2:3b
     python -m openworm_ai.utils.llms -ge2 # Ollama:gemini2:latest
